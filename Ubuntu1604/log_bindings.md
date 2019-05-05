@@ -1,14 +1,65 @@
-System testing at Sat Mar 30 18:42:07 2019
- # Status :  Passing 
- # [Job url](https://travis-ci.org/shkodm/systemtests/builds/513524773)
-## Triggered by: [push](https://github.com/shkodm/systemtests/compare/2218cb89898b^...77160b8c85dc)
-## Last 100 lines of the job log...
+System testing at Sun May  5 12:21:38 2019
+ # Status : Failing
+ # [Job url](https://travis-ci.org/shkodm/systemtests/builds/528423596)
+## Triggered by: [push](https://github.com/shkodm/systemtests/compare/b16a26eb6775...fb2d43b9934d)
+## Last succesfull commits 
+* [systemtests](https://github.com/precice/systemtests/compare/57b164a8d4112c5e57a4eef1f636d3c109524d69...269012c2748bf5513bc244ad9f50d886de05a18b)
+## Last 100 lines of the job log at the moment of push...
 ```
-  Downloading https://files.pythonhosted.org/packages/c2/34/99ced126b3f41a908d8883570a67fbf900f10eea3cfdd11e388eb8ae9aac/Cython-0.29.6-cp35-cp35m-manylinux1_x86_64.whl (2.0MB)
+Setting up libpython3.5-stdlib:amd64 (3.5.2-2ubuntu0~16.04.5) ...
+Setting up python3.5 (3.5.2-2ubuntu0~16.04.5) ...
+Setting up libpython3-stdlib:amd64 (3.5.1-3) ...
+Setting up libpython3.5:amd64 (3.5.2-2ubuntu0~16.04.5) ...
+Setting up libpython3.5-dev:amd64 (3.5.2-2ubuntu0~16.04.5) ...
+Setting up libpython3-dev:amd64 (3.5.1-3) ...
+Setting up python3.5-dev (3.5.2-2ubuntu0~16.04.5) ...
+Setting up dh-python (2.20151103ubuntu1.1) ...
+Setting up python3 (3.5.1-3) ...
+running python rtupdate hooks for python3.5...
+running python post-rtupdate hooks for python3.5...
+Setting up python3-dev (3.5.1-3) ...
+Processing triggers for libc-bin (2.23-0ubuntu11) ...
+ ---> 25b474963bab
+Removing intermediate container 72a2875dc10a
+Step 6/21 : RUN wget -q https://bootstrap.pypa.io/get-pip.py -O get-pip.py &&     python3 get-pip.py &&     python2 get-pip.py &&     pip2 install Cython mpi4py enum34 &&     pip3 install Cython mpi4py numpy enum34
+ ---> Running in 618a99e3cd64
+Collecting pip
+  Downloading https://files.pythonhosted.org/packages/f9/fb/863012b13912709c13cf5cfdbfb304fa6c727659d6290438e1a88df9d848/pip-19.1-py2.py3-none-any.whl (1.4MB)
+Collecting setuptools
+  Downloading https://files.pythonhosted.org/packages/ec/51/f45cea425fd5cb0b0380f5b0f048ebc1da5b417e48d304838c02d6288a1e/setuptools-41.0.1-py2.py3-none-any.whl (575kB)
+Collecting wheel
+  Downloading https://files.pythonhosted.org/packages/96/ba/a4702cbb6a3a485239fbe9525443446203f00771af9ac000fa3ef2788201/wheel-0.33.1-py2.py3-none-any.whl
+Installing collected packages: pip, setuptools, wheel
+Successfully installed pip-19.1 setuptools-41.0.1 wheel-0.33.1
+[91mDEPRECATION: Python 2.7 will reach the end of its life on January 1st, 2020. Please upgrade your Python as Python 2.7 won't be maintained after that date. A future version of pip will drop support for Python 2.7.
+[0mCollecting pip
+  Using cached https://files.pythonhosted.org/packages/f9/fb/863012b13912709c13cf5cfdbfb304fa6c727659d6290438e1a88df9d848/pip-19.1-py2.py3-none-any.whl
+Collecting setuptools
+  Using cached https://files.pythonhosted.org/packages/ec/51/f45cea425fd5cb0b0380f5b0f048ebc1da5b417e48d304838c02d6288a1e/setuptools-41.0.1-py2.py3-none-any.whl
+Collecting wheel
+  Using cached https://files.pythonhosted.org/packages/96/ba/a4702cbb6a3a485239fbe9525443446203f00771af9ac000fa3ef2788201/wheel-0.33.1-py2.py3-none-any.whl
+Installing collected packages: pip, setuptools, wheel
+Successfully installed pip-19.1 setuptools-41.0.1 wheel-0.33.1
+[91mDEPRECATION: Python 2.7 will reach the end of its life on January 1st, 2020. Please upgrade your Python as Python 2.7 won't be maintained after that date. A future version of pip will drop support for Python 2.7.
+[0mCollecting Cython
+  Downloading https://files.pythonhosted.org/packages/16/7d/30ab222995d7dd551dee875c9f8fecf94b3c16a24f1c34d9a93031b19209/Cython-0.29.7-cp27-cp27mu-manylinux1_x86_64.whl (2.0MB)
+Collecting mpi4py
+  Downloading https://files.pythonhosted.org/packages/55/a2/c827b196070e161357b49287fa46d69f25641930fd5f854722319d431843/mpi4py-3.0.1.tar.gz (1.4MB)
+Collecting enum34
+  Downloading https://files.pythonhosted.org/packages/c5/db/e56e6b4bbac7c4a06de1c50de6fe1ef3810018ae11732a50f15f62c7d050/enum34-1.1.6-py2-none-any.whl
+Building wheels for collected packages: mpi4py
+  Building wheel for mpi4py (setup.py): started
+  Building wheel for mpi4py (setup.py): finished with status 'done'
+  Stored in directory: /root/.cache/pip/wheels/58/43/98/b31d9ba388287a8523b04034f4306d83bb2be0492e2514f0be
+Successfully built mpi4py
+Installing collected packages: Cython, mpi4py, enum34
+Successfully installed Cython-0.29.7 enum34-1.1.6 mpi4py-3.0.1
+Collecting Cython
+  Downloading https://files.pythonhosted.org/packages/e7/bd/59054534d09830394470c14e4dd4a2e8fa64ac14559095a044208bf34c18/Cython-0.29.7-cp35-cp35m-manylinux1_x86_64.whl (2.0MB)
 Collecting mpi4py
   Using cached https://files.pythonhosted.org/packages/55/a2/c827b196070e161357b49287fa46d69f25641930fd5f854722319d431843/mpi4py-3.0.1.tar.gz
 Collecting numpy
-  Downloading https://files.pythonhosted.org/packages/e3/18/4f013c3c3051f4e0ffbaa4bf247050d6d5e527fe9cb1907f5975b172f23f/numpy-1.16.2-cp35-cp35m-manylinux1_x86_64.whl (17.2MB)
+  Downloading https://files.pythonhosted.org/packages/f6/f3/cc6c6745347c1e997cc3e58390584a250b8e22b6dfc45414a7d69a3df016/numpy-1.16.3-cp35-cp35m-manylinux1_x86_64.whl (17.2MB)
 Collecting enum34
   Downloading https://files.pythonhosted.org/packages/af/42/cb9355df32c69b553e72a2e28daee25d1611d2c0d9c272aa1d34204205b2/enum34-1.1.6-py3-none-any.whl
 Building wheels for collected packages: mpi4py
@@ -17,22 +68,10 @@ Building wheels for collected packages: mpi4py
   Stored in directory: /root/.cache/pip/wheels/58/43/98/b31d9ba388287a8523b04034f4306d83bb2be0492e2514f0be
 Successfully built mpi4py
 Installing collected packages: Cython, mpi4py, numpy, enum34
-Successfully installed Cython-0.29.6 enum34-1.1.6 mpi4py-3.0.1 numpy-1.16.2
- ---> 84e380d43ed1
-Removing intermediate container 45488ae63392
+Successfully installed Cython-0.29.7 enum34-1.1.6 mpi4py-3.0.1 numpy-1.16.3
+ ---> 42c8d0cd887c
+Removing intermediate container 618a99e3cd64
 Step 7/21 : WORKDIR $PRECICE_ROOT/src/precice/bindings/python
- ---> 539550750ff3
-Removing intermediate container 5574874c6d2c
-Step 8/21 : RUN python2 setup.py install
- ---> Running in 0b66d8428e9f
-running install
-#####
-calling my_build
-using --mpicompiler=mpic++
-adding extension
-#####
-running build
-running build_ext
 [91m/usr/local/lib/python2.7/dist-packages/Cython/Compiler/Main.py:367: FutureWarning: Cython directive 'language_level' not set, using 2 for now (Py2). This will change in a later release! File: /precice/src/precice/bindings/python/precice.pyx
   tree = Parsing.p_module(s, pxd, full_module_name)
 [0m#####
@@ -66,41 +105,5 @@ writing manifest file 'precice.egg-info/SOURCES.txt'
 reading manifest file 'precice.egg-info/SOURCES.txt'
 writing manifest file 'precice.egg-info/SOURCES.txt'
 Copying precice.egg-info to /usr/local/lib/python2.7/dist-packages/precice-1.4-py2.7.egg-info
- ---> f26d53fc4906
-Removing intermediate container 0b66d8428e9f
-Step 9/21 : WORKDIR $PRECICE_ROOT/src/precice/bindings/python
- ---> 642e1274626d
-Removing intermediate container 0f7e509fab71
-Step 10/21 : RUN python3 setup.py install
- ---> Running in f61832d0fcc3
-running install
-#####
-calling my_build
-using --mpicompiler=mpic++
-adding extension
-#####
-running build
-running build_ext
-#####
-calling my_build_ext
-using --mpicompiler=mpic++
-#####
-building 'precice' extension
-creating build/temp.linux-x86_64-3.5
-creating build/temp.linux-x86_64-3.5/precice
-creating build/temp.linux-x86_64-3.5/precice/src
-creating build/temp.linux-x86_64-3.5/precice/src/precice
-creating build/temp.linux-x86_64-3.5/precice/src/precice/bindings
-creating build/temp.linux-x86_64-3.5/precice/src/precice/bindings/python
-x86_64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -I/usr/include/python3.5m -c /precice/src/precice/bindings/python/precice.cpp -o build/temp.linux-x86_64-3.5/precice/src/precice/bindings/python/precice.o -Wall -std=c++11 -I/usr/lib/openmpi/include/openmpi/opal/mca/event/libevent2021/libevent -I/usr/lib/openmpi/include/openmpi/opal/mca/event/libevent2021/libevent/include -I/usr/lib/openmpi/include -I/usr/lib/openmpi/include/openmpi -pthread
-[91mcc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
-[0m ---> f7011c719711
-Removing intermediate container f61832d0fcc3
-Step 11/21 : WORKDIR $PRECICE_ROOT/tools/solverdummies/python
- ---> 97ac973ad834
-Removing intermediate container c89bbd9b1a40
-Step 12/21 : RUN python2 solverdummy.py precice-config.xml SolverOne MeshOne & python solverdummy.py precice-config.xml SolverTwo MeshTwo
- ---> Running in 1853cbf0d719
-[91mUnexpected end of /proc/mounts line `overlay / overlay rw,relatime,lowerdir=/var/lib/docker/overlay2/l/LYNKI4MHG5IIWBG5XIWOYWJ5ZS:/var/lib/docker/overlay2/l/S4OWCICVGU4W673EGMK7LWLKWH:/var/lib/docker/overlay2/l/IN2ARQRUJPHJPXYBY572LYVSPZ:/var/lib/docker/overlay2/l/R26AV6JLUF65RVQPKBLCFXKJXM:/var/lib/docker/overlay2/l/5DEMJP3QD62DANK42BW2BOEL3V:/var/lib/docker/overlay2/l/SFJEQG2QUANAGM52LOCDCA6GMP:/var/lib/docker/overlay2/l/JV4W7ZXPQIBDSXVCBHVEIN3H2G:/var/lib/docker/overlay2/l/VAV4VQPBKHYCDGRJLOSQXQL6QP:/var/lib/docker/overlay2/l/5A7N6AMU6SLOM'
-Unexpected end of /proc/mounts line `overlay / overlay rw,relatime,lowerdir=/var/lib/docker/overlay2/l/LYNKI4MHG5IIWBG5XIWOYWJ5ZS:/var/lib/docker/overlay2/l/S4OWCICVGU4W673EGMK7LWLKWH:/var/lib/docker/overlay2/l/IN2ARQRUJPHJPXYBY572LYVSPZ:/var/lib/docker/overlay2/l/R26AV6JLUF65RVQPKBLCFXKJXM:/var/lib/docker/overlay2/l/5DEMJP3QD62DANK42BW2BOEL3V:/var/lib/docker/overlay2/l/SFJEQG2QUANAGM52LOCDCA6GMP:/var/lib/docker/overlay2/l/JV4W7ZXPQIBDSXVCBHVEIN3H2G:/var/lib/docker/overlay2/l/VAV4VQPBKHYCDGRJLOSQXQL6QP:/var/lib/docker/overlay2/l/5A7N6AMU6SLOM'
-Unexpected end of /proc/mounts line `WI2NNOV32OAL3:/var/lib/docker/overlay2/l/XLQ5ZF5TQLRC5H22XYVWPO4E4P:/var/lib/docker/overlay2/l/RE7JUBQCFHKXNVVYMHGSQWF4BI:/var/lib/docker/overlay2/l/237NAVZHGXUQRAEAEGMOS46UZG:/var/lib/docker/overlay2/l/YPMNCFEGBTID6DSBQIB3Q5FIVM:/var/lib/docker/overlay2/l/VFIGN5LFGGHAFRJAJTCOFSLRRB:/var/lib/docker/overlay2/l/XTAYZGRWJDQA45BJCHLWPN22Q6,upperdir=/var/lib/docker/overlay2/52f50b9b2cc1952acbe0867cf6457bdd83f27a80cfb805e7654267ea0a9e335e/diff,workdir=/var/lib/docker/overlay2/52f50b9b2cc1952acbe0867cf6457bdd83```
+```
+[Full job log](https://api.travis-ci.org/v3/job/528423603/log.txt)
