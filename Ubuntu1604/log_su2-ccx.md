@@ -1,12 +1,16 @@
-System testing at Sat Mar 30 18:44:23 2019
- # Status :  Passing 
- # [Job url](https://travis-ci.org/shkodm/systemtests/builds/513524773)
-## Triggered by: [push](https://github.com/shkodm/systemtests/compare/2218cb89898b^...77160b8c85dc)
-## Last 100 lines of the job log...
+System testing at Sun May  5 12:23:43 2019
+ # Status : Failing
+ # [Job url](https://travis-ci.org/shkodm/systemtests/builds/528423596)
+## Triggered by: [push](https://github.com/shkodm/systemtests/compare/b16a26eb6775...fb2d43b9934d)
+## Last succesfull commits 
+* [systemtests](https://github.com/precice/systemtests/compare/57b164a8d4112c5e57a4eef1f636d3c109524d69...269012c2748bf5513bc244ad9f50d886de05a18b)
+* [su2-adapter](https://github.com/precice/su2-adapter/compare/a3186951163a...e8f7f22f56cb)
+* [calculix-adapter](https://github.com/precice/calculix-adapter/compare/01ae247b442d...9a98e5f79463)
+## Last 100 lines of the job log at the moment of push...
 ```
 mpicc -Wall -O3 -fopenmp -I./ -I./adapter -I/CalculiX/ccx_2.15/src -I/spooles.2.2 -I/precice/src -I/usr/local/ARPACK  -DARCH="Linux" -DSPOOLES -DARPACK -DMATRIXSTORAGE -c /CalculiX/ccx_2.15/src/stress_sen_dv.c -o bin/stress_sen_dv.o
 [91m/CalculiX/ccx_2.15/src/stress_sen_dv.c: In function 'stress_sen_dv':
-[0m[91m/CalculiX/ccx_2.15/src/stress_sen_dv.c:50:15: warning: unused variable 'kspart' [-Wunused-variable]
+/CalculiX/ccx_2.15/src/stress_sen_dv.c:50:15: warning: unused variable 'kspart' [-Wunused-variable]
      *eme=NULL,kspart,dksper;
                ^
 /CalculiX/ccx_2.15/src/stress_sen_dv.c:46:28: warning: unused variable 'unperturbflag' [-Wunused-variable]
@@ -15,13 +19,13 @@ mpicc -Wall -O3 -fopenmp -I./ -I./adapter -I/CalculiX/ccx_2.15/src -I/spooles.2.
 /CalculiX/ccx_2.15/src/stress_sen_dv.c:46:18: warning: unused variable 'nprintl' [-Wunused-variable]
        *inum=NULL,nprintl=0,unperturbflag,nfield,ndim,iorienglob,
                   ^
-/CalculiX/ccx_2.15/src/stress_sen_dv.c:44:35: warning: unused variable 'iactpos' [-Wunused-variable]
+[0m[91m/CalculiX/ccx_2.15/src/stress_sen_dv.c:44:35: warning: unused variable 'iactpos' [-Wunused-variable]
    ITG symmetryflag=0,mt=mi[1]+1,i,iactpos,calcul_fn,list,
                                    ^
 /CalculiX/ccx_2.15/src/stress_sen_dv.c:44:33: warning: unused variable 'i' [-Wunused-variable]
    ITG symmetryflag=0,mt=mi[1]+1,i,iactpos,calcul_fn,list,
                                  ^
-[0m[91m/CalculiX/ccx_2.15/src/stress_sen_dv.c:44:7: warning: variable 'symmetryflag' set but not used [-Wunused-but-set-variable]
+/CalculiX/ccx_2.15/src/stress_sen_dv.c:44:7: warning: variable 'symmetryflag' set but not used [-Wunused-but-set-variable]
    ITG symmetryflag=0,mt=mi[1]+1,i,iactpos,calcul_fn,list,
        ^
 [0mmpicc -Wall -O3 -fopenmp -I./ -I./adapter -I/CalculiX/ccx_2.15/src -I/spooles.2.2 -I/precice/src -I/usr/local/ARPACK  -DARCH="Linux" -DSPOOLES -DARPACK -DMATRIXSTORAGE -c /CalculiX/ccx_2.15/src/stress_sen_dx.c -o bin/stress_sen_dx.o
@@ -42,7 +46,7 @@ mpicc -Wall -O3 -fopenmp -I./ -I./adapter -I/CalculiX/ccx_2.15/src -I/spooles.2.
    ITG symmetryflag=0,mt=mi[1]+1,i,iactpos,calcul_fn,list,
                                  ^
 /CalculiX/ccx_2.15/src/stress_sen_dx.c:43:7: warning: variable 'symmetryflag' set but not used [-Wunused-but-set-variable]
-   ITG symmetryflag=0,mt=mi[mpicc -Wall -O3 -fopenmp -I./ -I./adapter -I/CalculiX/ccx_2.15/src -I/spooles.2.2 -I/precice/src -I/usr/local/ARPACK  -DARCH="Linux" -DSPOOLES -DARPACK -DMATRIXSTORAGE -c /CalculiX/ccx_2.15/src/strsplt.c -o bin/strsplt.o
+   ITG symmetryflag=0,mt=mi[1]+1,i,iampicc -Wall -O3 -fopenmp -I./ -I./adapter -I/CalculiX/ccx_2.15/src -I/spooles.2.2 -I/precice/src -I/usr/local/ARPACK  -DARCH="Linux" -DSPOOLES -DARPACK -DMATRIXSTORAGE -c /CalculiX/ccx_2.15/src/strsplt.c -o bin/strsplt.o
 mpicc -Wall -O3 -fopenmp -I./ -I./adapter -I/CalculiX/ccx_2.15/src -I/spooles.2.2 -I/precice/src -I/usr/local/ARPACK  -DARCH="Linux" -DSPOOLES -DARPACK -DMATRIXSTORAGE -c /CalculiX/ccx_2.15/src/tau.c -o bin/tau.o
 mpicc -Wall -O3 -fopenmp -I./ -I./adapter -I/CalculiX/ccx_2.15/src -I/spooles.2.2 -I/precice/src -I/usr/local/ARPACK  -DARCH="Linux" -DSPOOLES -DARPACK -DMATRIXSTORAGE -c /CalculiX/ccx_2.15/src/thicknessmain.c -o bin/thicknessmain.o
 [91mIn file included from /CalculiX/ccx_2.15/src/thicknessmain.c:23:0:
@@ -104,3 +108,4 @@ nonlingeo_precice.c:116:69: warning: variable 'iex' set but not used [-Wunused-b
        *nelemface=NULL,*ipoface=NULL,*nodface=NULL,*ifreestream=NULL,iex,
                                                                      ^
 [0m```
+[Full job log](https://api.travis-ci.org/v3/job/528423600/log.txt)
