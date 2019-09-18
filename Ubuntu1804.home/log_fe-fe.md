@@ -1,6 +1,6 @@
  # Status :  Passing 
- # [Job url](https://travis-ci.org/precice/systemtests/builds/586510170) 
-## Triggered by: [push](https://github.com/precice/systemtests/compare/40d6daa277c6...b989e40888b7) 
+ # [Job url](https://travis-ci.org/precice/systemtests/builds/586510218) 
+## Triggered by: [pull_request](https://github.com/precice/systemtests/pull/96) 
 ## Last 100 lines of the job log at the moment of push...
 ```
      command: '/bin/bash -c "python3 /home/[secure]/Data/Input/heat.py -n && cp *.log
@@ -44,11 +44,11 @@ Digest: sha256:72c42ed48c3a2db31b7dafe17d275b634664a708d901ec9fd57b1529280f01fb
 Status: Downloaded newer image for alpine:latest
  ---> 961769676411
 Step 2/7 : ENV tutorial_path tutorials/HT/partitioned-heat/fenics-fenics
- ---> Running in d4ad87fc740c
- ---> ce1fb1cd9de2
-Removing intermediate container d4ad87fc740c
+ ---> Running in 1150ec9ddd39
+ ---> bd72d22abc7d
+Removing intermediate container 1150ec9ddd39
 Step 3/7 : RUN apk add git
- ---> Running in 3aa30e58b63c
+ ---> Running in 76c93eee1bc2
 fetch http://dl-cdn.alpinelinux.org/alpine/v3.10/main/x86_64/APKINDEX.tar.gz
 fetch http://dl-cdn.alpinelinux.org/alpine/v3.10/community/x86_64/APKINDEX.tar.gz
 (1/6) Installing ca-certificates (20190108-r0)
@@ -60,32 +60,32 @@ fetch http://dl-cdn.alpinelinux.org/alpine/v3.10/community/x86_64/APKINDEX.tar.g
 Executing busybox-1.30.1-r2.trigger
 Executing ca-certificates-20190108-r0.trigger
 OK: 21 MiB in 20 packages
- ---> 12d0a05e51b2
-Removing intermediate container 3aa30e58b63c
+ ---> 71bb3d605788
+Removing intermediate container 76c93eee1bc2
 Step 4/7 : RUN git clone https://github.com/[secure]/tutorials
- ---> Running in 2cec196767fa
+ ---> Running in c26e1edbfbae
 [91mCloning into 'tutorials'...
-[0m ---> 5e37b4fda73a
-Removing intermediate container 2cec196767fa
+[0m ---> ef2a625cc139
+Removing intermediate container c26e1edbfbae
 Step 5/7 : RUN mkdir configs && sed -i 's|network="lo"|exchange-directory="/home/[secure]/Data/Exchange/" network="eth0"|g' $tutorial_path/[secure]-config.xml
- ---> Running in ff25d37b9ccc
- ---> 13d24c9b7cd4
-Removing intermediate container ff25d37b9ccc
+ ---> Running in c04e018780d3
+ ---> 2b01c8c1e57e
+Removing intermediate container c04e018780d3
 Step 6/7 : RUN addgroup -g 1000 [secure] && adduser -u 1000 -G [secure] -D [secure] && chown -R [secure]:[secure] tutorials configs
- ---> Running in 5266346501f6
- ---> 06d64565b70a
-Removing intermediate container 5266346501f6
+ ---> Running in c166b74a0991
+ ---> 59271467cf30
+Removing intermediate container c166b74a0991
 Step 7/7 : USER [secure]
- ---> Running in b72877bd5052
- ---> f154eba97d06
-Removing intermediate container b72877bd5052
+ ---> Running in 8ac32cbf3a07
+ ---> 8a16ff434389
+Removing intermediate container 8ac32cbf3a07
 
-Successfully built f154eba97d06
+Successfully built 8a16ff434389
 Successfully tagged testcomposefefeubuntu1804home_tutorial-data:latest
 Image for service tutorial-data was built because it did not already exist. To rebuild this image you must use `docker-compose build` or `docker-compose up --build`.
 Pulling fenics-adapter-dirichlet ([secure]/fenics-adapter-ubuntu1804.home-develop:latest)...
 latest: Pulling from [secure]/fenics-adapter-ubuntu1804.home-develop
-Digest: sha256:a0e39b6e6a96c8ce197035e8dede7416885d5c52fb7fa003a840ba3a75b3c95f
+Digest: sha256:997fe71da448fbd3a0f5520fd6e981a648d790a691d2a453a6237b411d1234ef
 Status: Downloaded newer image for [secure]/fenics-adapter-ubuntu1804.home-develop:latest
 Creating tutorial-data ... 
 Creating tutorial-data
@@ -93,14 +93,14 @@ Creating tutorial-data
 Creating fenics-adapter-dirichlet ... 
 Creating fenics-adapter-neumann
 Creating fenics-adapter-dirichlet
-[1A[2KCreating fenics-adapter-dirichlet ... [32mdone[0m[1B[1A[2KCreating fenics-adapter-neumann ... [32mdone[0m[1BRunning the simulation...Be patient
+[1A[2KCreating fenics-adapter-neumann ... [32mdone[0m[1B[1A[2KCreating fenics-adapter-dirichlet ... [32mdone[0m[1BRunning the simulation...Be patient
 All adapters finished!
 EXECUTING: export PRECICE_BASE=-ubuntu1804.home-develop;  docker-compose config &&
                          bash ../../silent_compose.sh
 EXECUTING: docker cp tutorial-data:/Output .
-travis_time:end:0e5d1a48:start=1568815203176594171,finish=1568815331274965471,duration=128098371300,event=script[0K[32;1mThe command "python system_testing.py -s fe-fe --base Ubuntu1804.home" exited with 0.[0m
+travis_time:end:1068bb80:start=1568817329913784539,finish=1568817457571674525,duration=127657889986,event=script[0K[32;1mThe command "python system_testing.py -s fe-fe --base Ubuntu1804.home" exited with 0.[0m
 
-travis_fold:start:after_success[0Ktravis_time:start:03a4891a[0K$ python push.py -s -t fe-fe --base Ubuntu1804.home
+travis_fold:start:after_success[0Ktravis_time:start:0161ac2d[0K$ python push.py -s -t fe-fe --base Ubuntu1804.home
 Cloning into '[secure]_st_output'...
  ```
-[Full job log](https://api.travis-ci.org/v3/job/586510186/log.txt)
+[Full job log](https://api.travis-ci.org/v3/job/586510234/log.txt)
