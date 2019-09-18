@@ -1,24 +1,23 @@
  # Status :  Passing 
- # [Job url](https://travis-ci.org/precice/systemtests/builds/583929538) 
-## Triggered by: [cron](https://github.com/precice/systemtests/compare/32fdbbbc7d35f2395ee394dc8113d538b3dd86a1...04b8ebd5c55ebbaeb7c87975ab50a3cd63e0c4f4) 
+ # [Job url](https://travis-ci.org/precice/systemtests/builds/586647457) 
+## Triggered by: [push](https://github.com/precice/systemtests/compare/cd89b1900540...aac1a14c474b) 
 ## Last 100 lines of the job log at the moment of push...
 ```
-   Created wheel for mpi4py: filename=mpi4py-3.0.2-cp35-cp35m-linux_x86_64.whl size=2143972 sha256=d5e1517d32d76ae24026bebe7a8252644c3f037538171a10b63c48fca32ef99f
-  Stored in directory: /root/.cache/pip/wheels/a7/12/be/11b9ba83d337f1647a0fdea73fbe28a58b0593e64723233d64
+   Stored in directory: /root/.cache/pip/wheels/a7/12/be/11b9ba83d337f1647a0fdea73fbe28a58b0593e64723233d64
 Successfully built mpi4py
 Installing collected packages: Cython, mpi4py, numpy, enum34
 Successfully installed Cython-0.29.13 enum34-1.1.6 mpi4py-3.0.2 numpy-1.17.2
- ---> e50521da510c
-Removing intermediate container ecdfbc7c287c
+ ---> a68cde82e9a6
+Removing intermediate container be0cfe44122f
 Step 6/14 : USER [secure]
- ---> Running in fb07decab2e8
- ---> 1abaca7768ed
-Removing intermediate container fb07decab2e8
+ ---> Running in d4e6bd069561
+ ---> 6e89bafbfbea
+Removing intermediate container d4e6bd069561
 Step 7/14 : WORKDIR $PRECICE_ROOT/src/[secure]/bindings/python_future
- ---> 41f7d2d5c382
-Removing intermediate container 46509b3bfe67
+ ---> b100087a3c5e
+Removing intermediate container 3d090d87afcc
 Step 8/14 : RUN pip3 install --user .
- ---> Running in 01d4a10f17ee
+ ---> Running in c03c081c8c87
 Processing /home/[secure]/[secure]/src/[secure]/bindings/python_future
   Installing build dependencies: started
   Installing build dependencies: finished with status 'done'
@@ -26,42 +25,42 @@ Processing /home/[secure]/[secure]/src/[secure]/bindings/python_future
   Getting requirements to build wheel: finished with status 'done'
     Preparing wheel metadata: started
     Preparing wheel metadata: finished with status 'done'
-Requirement already satisfied: cython in /usr/local/lib/python3.5/dist-packages (from [secure]-future==1.5.2) (0.29.13)
-Requirement already satisfied: mpi4py in /usr/local/lib/python3.5/dist-packages (from [secure]-future==1.5.2) (3.0.2)
+Requirement already satisfied: mpi4py in /usr/local/lib/python3.5/dist-packages (from [secure]-future==1.6.1) (3.0.2)
+Requirement already satisfied: cython in /usr/local/lib/python3.5/dist-packages (from [secure]-future==1.6.1) (0.29.13)
 Building wheels for collected packages: [secure]-future
   Building wheel for [secure]-future (PEP 517): started
   Building wheel for [secure]-future (PEP 517): finished with status 'done'
-  Created wheel for [secure]-future: filename=[secure]_future-1.5.2-cp35-cp35m-linux_x86_64.whl size=653539 sha256=fd9f8da819aecd79a3a9532820214bdc335eae1720962d8c0d4918b2a62b4999
-  Stored in directory: /tmp/pip-ephem-wheel-cache-a0eazado/wheels/2f/02/43/5cdf49c8639dfe9bda6c53aefb6cc3ac7647ed99b1f83af0ba
+  Created wheel for [secure]-future: filename=[secure]_future-1.6.1-cp35-cp35m-linux_x86_64.whl size=653541 sha256=f9a444c0f5e33c9770f3d8d6310ef0fb48872027408d192c67b145044359506f
+  Stored in directory: /tmp/pip-ephem-wheel-cache-r_9vlb9u/wheels/2f/02/43/5cdf49c8639dfe9bda6c53aefb6cc3ac7647ed99b1f83af0ba
 Successfully built [secure]-future
 Installing collected packages: [secure]-future
-Successfully installed [secure]-future-1.5.2
- ---> 79cf1b130189
-Removing intermediate container 01d4a10f17ee
+Successfully installed [secure]-future-1.6.1
+ ---> 2af6efd973d8
+Removing intermediate container c03c081c8c87
 Step 9/14 : WORKDIR $PRECICE_ROOT/src/[secure]/bindings/python
- ---> 4b0ee597ed7e
-Removing intermediate container 0ca4cfd321fc
+ ---> fc7433e023ee
+Removing intermediate container c9496ff3f17c
 Step 10/14 : RUN pip3 install --user .
- ---> Running in 146d01c2d955
+ ---> Running in 66ab9355c907
 Processing /home/[secure]/[secure]/src/[secure]/bindings/python
-Requirement already satisfied: [secure]_future in /home/[secure]/.local/lib/python3.5/site-packages (from [secure]==1.5.2) (1.5.2)
-Requirement already satisfied: mpi4py in /usr/local/lib/python3.5/dist-packages (from [secure]_future->[secure]==1.5.2) (3.0.2)
-Requirement already satisfied: cython in /usr/local/lib/python3.5/dist-packages (from [secure]_future->[secure]==1.5.2) (0.29.13)
+Requirement already satisfied: [secure]_future in /home/[secure]/.local/lib/python3.5/site-packages (from [secure]==1.6.1) (1.6.1)
+Requirement already satisfied: cython in /usr/local/lib/python3.5/dist-packages (from [secure]_future->[secure]==1.6.1) (0.29.13)
+Requirement already satisfied: mpi4py in /usr/local/lib/python3.5/dist-packages (from [secure]_future->[secure]==1.6.1) (3.0.2)
 Building wheels for collected packages: [secure]
   Building wheel for [secure] (setup.py): started
   Building wheel for [secure] (setup.py): finished with status 'done'
-  Created wheel for [secure]: filename=[secure]-1.5.2-cp35-none-any.whl size=2628 sha256=3317ac17ce56b02eb44d0ce8991510a27667d4b15b93ecd414822bbc83887b9a
-  Stored in directory: /tmp/pip-ephem-wheel-cache-kklhw61z/wheels/e7/1f/7e/67833b7ad05611ebf90b18bfed2767db6e6c0fbf13bd500e29
+  Created wheel for [secure]: filename=[secure]-1.6.1-cp35-none-any.whl size=2625 sha256=015921f310fc5ba063de73b08384fd2a6ea7f18c7b0952f839266169b94ac39b
+  Stored in directory: /tmp/pip-ephem-wheel-cache-y8a3pnn3/wheels/e7/1f/7e/67833b7ad05611ebf90b18bfed2767db6e6c0fbf13bd500e29
 Successfully built [secure]
 Installing collected packages: [secure]
-Successfully installed [secure]-1.5.2
- ---> 57e90c11a695
-Removing intermediate container 146d01c2d955
+Successfully installed [secure]-1.6.1
+ ---> 2dcbfa2fa548
+Removing intermediate container 66ab9355c907
 Step 11/14 : WORKDIR /home/[secure]/
- ---> 1002f99b256d
-Removing intermediate container 7ba53720c8de
+ ---> c8d6e9d0ab25
+Removing intermediate container 9cbae9717454
 Step 12/14 : RUN git clone https://github.com/nutils/nutils.git &&     python3 -m pip install --user --editable nutils
- ---> Running in 7f67ff6e7d91
+ ---> Running in a9b49e46f10b
 [91mCloning into 'nutils'...
 [0mObtaining file:///home/[secure]/nutils
 Requirement already satisfied: numpy>=1.12 in /usr/local/lib/python3.5/dist-packages (from nutils==6.0a0) (1.17.2)
@@ -72,16 +71,16 @@ Collecting stickybar (from nutils==6.0a0)
 Installing collected packages: treelog, stickybar, nutils
   Running setup.py develop for nutils
 Successfully installed nutils stickybar-1.0b2 treelog-1.0b5
- ---> a54c1300d99c
-Removing intermediate container 7f67ff6e7d91
+ ---> 3bbb152e4faf
+Removing intermediate container a9b49e46f10b
 Step 13/14 : RUN mkdir -p Data/Input Data/Output Data/Exchange
- ---> Running in 3e4cad31aaec
- ---> 5957929b508b
-Removing intermediate container 3e4cad31aaec
+ ---> Running in 3862de82e030
+ ---> e30ba32003a9
+Removing intermediate container 3862de82e030
 Step 14/14 : WORKDIR /home/[secure]/nutils
- ---> 6fb9adb99b3c
-Removing intermediate container 1a42a6b374c4
-Successfully built 6fb9adb99b3c
+ ---> f7a82d2e9721
+Removing intermediate container 49adaa55578e
+Successfully built f7a82d2e9721
 Successfully tagged testcomposenutilsof_nutils-adapter:latest
 Image for service nutils-adapter was built because it did not already exist. To rebuild this image you must use `docker-compose build` or `docker-compose up --build`.
 Creating tutorial-data ... 
@@ -92,15 +91,16 @@ Creating nutils-adapter
 Creating openfoam-adapter-outer
 [1A[2KCreating openfoam-adapter-outer ... [32mdone[0m[1B[1A[2KCreating nutils-adapter ... [32mdone[0m[1BRunning the simulation...Be patient
 Running the simulation...Be patient
+Running the simulation...Be patient
 All adapters finished!
 bash: ../compare_results.sh: No such file or directory
 EXECUTING: export PRECICE_BASE=-ubuntu1604.home-develop;  docker-compose config &&
                          bash ../../silent_compose.sh
 EXECUTING: docker cp tutorial-data:/Output .
 EXECUTING: bash ../compare_results.sh /home/travis/build/[secure]/systemtests/tests/TestCompose_nutils-of/referenceOutput /home/travis/build/[secure]/systemtests/tests/TestCompose_nutils-of/Output
-travis_time:end:070e5ecc:start=1568254669214623158,finish=1568254972339016804,duration=303124393646,event=script[0K[32;1mThe command "python system_testing.py -s nutils-of" exited with 0.[0m
+travis_time:end:049b2faa:start=1568831138078194459,finish=1568831510432000765,duration=372353806306,event=script[0K[32;1mThe command "python system_testing.py -s nutils-of" exited with 0.[0m
 
-travis_fold:start:after_success[0Ktravis_time:start:2624858d[0K$ python push.py -s -t nutils-of
+travis_fold:start:after_success[0Ktravis_time:start:1e530002[0K$ python push.py -s -t nutils-of
 Cloning into '[secure]_st_output'...
  ```
-[Full job log](https://api.travis-ci.org/v3/job/583929561/log.txt)
+[Full job log](https://api.travis-ci.org/v3/job/586647476/log.txt)
