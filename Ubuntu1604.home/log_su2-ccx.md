@@ -1,9 +1,10 @@
  # Status :  Passing 
- # [Job url](https://travis-ci.org/precice/systemtests/builds/590479609) 
-## Triggered by: [push](https://github.com/precice/systemtests/compare/0cb7c0ec452f...92a2d96de651) 
+ # [Job url](https://travis-ci.org/precice/systemtests/builds/591102069) 
+## Triggered by: [push](https://github.com/precice/systemtests/compare/887c8e1583c8^...46a3f0d5dc83) 
 ## Last 100 lines of the job log at the moment of push...
 ```
- version: '3.0'
+     - output:/Output:rw
+version: '3.0'
 volumes:
   configs: {}
   exchange: {}
@@ -25,11 +26,11 @@ Digest: sha256:72c42ed48c3a2db31b7dafe17d275b634664a708d901ec9fd57b1529280f01fb
 Status: Downloaded newer image for alpine:latest
  ---> 961769676411
 Step 2/9 : ENV tutorial_path tutorials/FSI/flap_perp/SU2-CalculiX
- ---> Running in 5f23c9bf0c26
- ---> 65aca0192af8
-Removing intermediate container 5f23c9bf0c26
+ ---> Running in 70dd6ffcc4b0
+ ---> 73738259c00e
+Removing intermediate container 70dd6ffcc4b0
 Step 3/9 : RUN apk add git bash
- ---> Running in 86207b5b399a
+ ---> Running in 3d61c1bd0f71
 fetch http://dl-cdn.alpinelinux.org/alpine/v3.10/main/x86_64/APKINDEX.tar.gz
 fetch http://dl-cdn.alpinelinux.org/alpine/v3.10/community/x86_64/APKINDEX.tar.gz
 (1/11) Installing ncurses-terminfo-base (6.1_p20190518-r0)
@@ -47,60 +48,59 @@ Executing bash-5.0.0-r0.post-install
 Executing busybox-1.30.1-r2.trigger
 Executing ca-certificates-20190108-r0.trigger
 OK: 30 MiB in 25 packages
- ---> 38fb728d188c
-Removing intermediate container 86207b5b399a
+ ---> 0a3b50277240
+Removing intermediate container 3d61c1bd0f71
 Step 4/9 : RUN git clone https://github.com/[secure]/tutorials
- ---> Running in 8949556010d1
+ ---> Running in 4810eccf133f
 [91mCloning into 'tutorials'...
-[0m ---> eff078bd688a
-Removing intermediate container 8949556010d1
+[0m ---> 8ea86df099a6
+Removing intermediate container 4810eccf133f
 Step 5/9 : RUN mkdir configs && sed -e 's|exchange-directory="../"|exchange-directory="/home/[secure]/Data/Exchange/" network="eth0"|g'    $tutorial_path/[secure]-config_serial.xml  > configs/[secure]-config.xml
- ---> Running in 7cf059a98f63
- ---> 2fa4db67f00a
-Removing intermediate container 7cf059a98f63
+ ---> Running in c67f400e2740
+ ---> 4db8250b5d48
+Removing intermediate container c67f400e2740
 Step 6/9 : RUN rm $tutorial_path/[secure]-config_serial.xml $tutorial_path/[secure]-config.xml
- ---> Running in 084f6962887b
- ---> 00db6d66d201
-Removing intermediate container 084f6962887b
+ ---> Running in 6f9e106b2d6c
+ ---> 8f8387bba1df
+Removing intermediate container 6f9e106b2d6c
 Step 7/9 : RUN cp $tutorial_path/config.yml configs/
- ---> Running in 8304ff982ab9
- ---> 32f07922be20
-Removing intermediate container 8304ff982ab9
+ ---> Running in da4584c0878a
+ ---> 650f8e6702c0
+Removing intermediate container da4584c0878a
 Step 8/9 : RUN addgroup -g 1000 [secure] && adduser -u 1000 -G [secure] -D [secure] && chown -R [secure]:[secure] tutorials configs
- ---> Running in bc6a0e9f4f99
- ---> 5b24b22b5129
-Removing intermediate container bc6a0e9f4f99
+ ---> Running in 12d3157616fe
+ ---> fdd2be688be7
+Removing intermediate container 12d3157616fe
 Step 9/9 : USER [secure]
- ---> Running in 122293b240b3
- ---> 3a9d58541ded
-Removing intermediate container 122293b240b3
-Successfully built 3a9d58541ded
+ ---> Running in 6af4b281c723
+ ---> 9a2f2078ff3e
+Removing intermediate container 6af4b281c723
+Successfully built 9a2f2078ff3e
 Successfully tagged testcomposesu2ccx_tutorial-data:latest
 Image for service tutorial-data was built because it did not already exist. To rebuild this image you must use `docker-compose build` or `docker-compose up --build`.
 Pulling calculix-adapter ([secure]/calculix-adapter-ubuntu1604.home-develop:latest)...
 latest: Pulling from [secure]/calculix-adapter-ubuntu1604.home-develop
-Digest: sha256:15adf7f16e3c13e87961e833eeae277f031b8fe8de254c27214dbf0bde9c3fc4
+Digest: sha256:ed0a09984e7b01b20177ad00cd47d92b36427f3274b6cccd0b6154eae76789d8
 Status: Downloaded newer image for [secure]/calculix-adapter-ubuntu1604.home-develop:latest
 Pulling su2-adapter ([secure]/su2-adapter-ubuntu1604.home-develop:latest)...
 latest: Pulling from [secure]/su2-adapter-ubuntu1604.home-develop
-Digest: sha256:5e52138c1d931b24344d4209f8b4a7a8cdee4e4dd279c0ef65e58737640b76af
+Digest: sha256:3701b846c3e6d51176f5541c69bf209d1be47c372e0db2ef6604c2784bf1e2ee
 Status: Downloaded newer image for [secure]/su2-adapter-ubuntu1604.home-develop:latest
 Creating tutorial-data ... 
 Creating tutorial-data
-[1A[2KCreating tutorial-data ... [32mdone[0m[1BCreating su2-adapter ... 
-Creating calculix-adapter ... 
-Creating calculix-adapter
+[1A[2KCreating tutorial-data ... [32mdone[0m[1BCreating calculix-adapter ... 
+Creating su2-adapter ... 
 Creating su2-adapter
-[1A[2KCreating calculix-adapter ... [32mdone[0m[1B[1A[2KCreating su2-adapter ... [32mdone[0m[1BRunning the simulation...Be patient
+Creating calculix-adapter
+[1A[2KCreating su2-adapter ... [32mdone[0m[1B[1A[2KCreating calculix-adapter ... [32mdone[0m[1BRunning the simulation...Be patient
 Running the simulation...Be patient
 Running the simulation...Be patient
-All adapters finished!
 EXECUTING: export PRECICE_BASE=-ubuntu1604.home-develop;  docker-compose config &&
                          bash ../../silent_compose.sh
 EXECUTING: docker cp tutorial-data:/Output .
-travis_time:end:0fc3f00a:start=1569603874718053402,finish=1569604163817655010,duration=289099601608,event=script[0K[32;1mThe command "python system_testing.py -s su2-ccx" exited with 0.[0m
+travis_time:end:07b9bf8a:start=1569766623042776615,finish=1569766912390782579,duration=289348005964,event=script[0K[32;1mThe command "python system_testing.py -s su2-ccx" exited with 0.[0m
 
-travis_fold:start:after_success[0Ktravis_time:start:16622052[0K$ python push.py -s -t su2-ccx
+travis_fold:start:after_success[0Ktravis_time:start:0d716b39[0K$ python push.py -s -t su2-ccx
 Cloning into '[secure]_st_output'...
  ```
-[Full job log](https://api.travis-ci.org/v3/job/590479622/log.txt)
+[Full job log](https://api.travis-ci.org/v3/job/591102082/log.txt)
