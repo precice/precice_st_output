@@ -3,26 +3,26 @@
 ## Triggered by: [push](https://github.com/precice/systemtests/compare/ac9e17230162...f01784f81bb4) 
 ## Last 100 lines of the job log at the moment of push...
 ```
-  ---> Running in 46efe1b8c0da
- ---> 7d9d49d14cf0
-Removing intermediate container 46efe1b8c0da
+  ---> Running in 11c1fa6c8441
+ ---> ebab0ce482e5
+Removing intermediate container 11c1fa6c8441
 Step 6/11 : RUN mkdir -p /Output/Postproc
- ---> Running in 9cbf45592e15
- ---> b26af4ff625b
-Removing intermediate container 9cbf45592e15
+ ---> Running in af3a742d5666
+ ---> 687ec1b009c3
+Removing intermediate container af3a742d5666
 Step 7/11 : WORKDIR /home/[secure]/
- ---> 421f4cf0832c
-Removing intermediate container a8e4e00c4eb5
+ ---> 6cf19e61aecf
+Removing intermediate container d8e8c8430d84
 Step 8/11 : RUN git clone https://github.com/Eder-K/elastictube1d.git
- ---> Running in 364a168fb49c
+ ---> Running in 3b763879655f
 [91mCloning into 'elastictube1d'...
-[0m ---> 54041b379b81
-Removing intermediate container 364a168fb49c
+[0m ---> 9c019c65b943
+Removing intermediate container 3b763879655f
 Step 9/11 : WORKDIR /home/[secure]/elastictube1d/elastictube1d-cxx
- ---> 862fee5365cb
-Removing intermediate container 19b47f9b26e9
+ ---> fe5e6750aa85
+Removing intermediate container d2520f3babf6
 Step 10/11 : RUN cmake . && make all && ./Allrun-cxx
- ---> Running in fdebda020751
+ ---> Running in c158055752bf
 -- The CXX compiler identification is GNU 5.4.0
 -- Check for working CXX compiler: /usr/bin/c++
 -- Check for working CXX compiler: /usr/bin/c++ -- works
@@ -84,23 +84,23 @@ Fluid participant finished. Waiting for Structure participant...
 Structure participant finished.
 
 Simulation completed successfully! Output files of the simulation were written to 'Postproc/out_fluid_*.vtk'.
- ---> 14a72b189a87
-Removing intermediate container fdebda020751
+ ---> 9d2b725c433d
+Removing intermediate container c158055752bf
 Step 11/11 : RUN cp *.json *.log /Output/ &&     cp Postproc/*.vtk /Output/Postproc/
- ---> Running in b475d2c57f16
- ---> 433da57609d4
-Removing intermediate container b475d2c57f16
-Successfully built 433da57609d4
+ ---> Running in c4b16b2aa85e
+ ---> 1677d6baa887
+Removing intermediate container c4b16b2aa85e
+Successfully built 1677d6baa887
 Successfully tagged st_1dtube_cxx-ubuntu1604.home-develop:latest
-ca0c827a61eb16d5a7d5c716837de72732f7a1d9cdbd5ce320fa78abca4ceac4
+3fcc3d50be39cf2c31352af3dcf1cbfef2623609283cec5523fc5d0dcb1a6e21
 awk: cmd. line:6: (FILENAME=- FNR=2) fatal: division by zero attempted
 EXECUTING: docker build --network=host --file Dockerfile --tag st_1dtube_cxx-ubuntu1604.home-develop --build-arg from=[secure]/[secure]-ubuntu1604.home-develop:latest .
 EXECUTING: docker run -it -d --name st_1dtube_cxx-ubuntu1604.home-develop st_1dtube_cxx-ubuntu1604.home-develop
 EXECUTING: docker cp st_1dtube_cxx-ubuntu1604.home-develop:Output . 
 EXECUTING: bash ../../compare_results.sh /home/travis/build/[secure]/systemtests/tests/Test_1dtube_cxx/referenceOutput /home/travis/build/[secure]/systemtests/tests/Test_1dtube_cxx/Output
-travis_time:end:1822aa16:start=1570191000295225002,finish=1570191074441993480,duration=74146768478,event=script[0K[32;1mThe command "python system_testing.py -s 1dtube_cxx" exited with 0.[0m
+travis_time:end:066cbc80:start=1570204791804409031,finish=1570204861420136837,duration=69615727806,event=script[0K[32;1mThe command "python system_testing.py -s 1dtube_cxx" exited with 0.[0m
 
-travis_fold:start:after_success[0Ktravis_time:start:093125dc[0K$ python push.py -s -t 1dtube_cxx
+travis_fold:start:after_success[0Ktravis_time:start:19f74f60[0K$ python push.py -s -t 1dtube_cxx
 Cloning into '[secure]_st_output'...
  ```
 [Full job log](https://api.travis-ci.org/v3/job/593511842/log.txt)
