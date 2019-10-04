@@ -1,106 +1,109 @@
- # Status :  Passing 
- # [Job url](https://travis-ci.org/precice/systemtests/builds/590479609) 
-## Triggered by: [push](https://github.com/precice/systemtests/compare/0cb7c0ec452f...92a2d96de651) 
+ # Status : Failing
+ # [Job url](https://travis-ci.org/precice/systemtests/builds/593438448) 
+## Triggered by: [push](https://github.com/precice/systemtests/compare/46a3f0d5dc83...a992016cf5d2) 
+## Last succesfull commits 
+* [fenics-adapter](https://github.com/precice/fenics-adapter/compare/c28dbfc3a7b2...8eb1d2398c1d)
+* [systemtests](https://github.com/precice/systemtests/compare/0cb7c0ec452fe910f18f20068ea48a8454783584...92a2d96de651986b4a651cb923faf4ab421973a6) 
 ## Last 100 lines of the job log at the moment of push...
 ```
-     command: '/bin/bash -c "python3 /home/[secure]/Data/Input/heat.py -n && cp *.log
-      /home/[secure]/Data/Output"
-
-      '
-    container_name: fenics-adapter-neumann
-    depends_on:
-    - tutorial-data
-    image: [secure]/fenics-adapter-ubuntu1804.home-develop:latest
-    networks:
-      [secure]comm: null
-    volumes:
-    - exchange:/home/[secure]/Data/Exchange:rw
-    - output:/home/[secure]/Data/Output:rw
-    - input:/home/[secure]/Data/Input:rw
-  tutorial-data:
-    build:
-      context: /home/travis/build/[secure]/systemtests/tests/TestCompose_fe-fe.Ubuntu1804.home
-      dockerfile: Dockerfile.tutorial_data
-      network: host
-    container_name: tutorial-data
-    volumes:
-    - output:/Output:rw
-    - input:/tutorials/HT/partitioned-heat/fenics-fenics:rw
-version: '3.4'
-volumes:
-  exchange: {}
-  input: {}
-  output: {}
-
-Creating network "testcomposefefeubuntu1804home_default" with the default driver
-Creating network "testcomposefefeubuntu1804home_[secure]comm" with the default driver
-Creating volume "testcomposefefeubuntu1804home_output" with default driver
-Creating volume "testcomposefefeubuntu1804home_input" with default driver
-Creating volume "testcomposefefeubuntu1804home_exchange" with default driver
-Building tutorial-data
-Step 1/7 : FROM alpine
-latest: Pulling from library/alpine
-Digest: sha256:72c42ed48c3a2db31b7dafe17d275b634664a708d901ec9fd57b1529280f01fb
-Status: Downloaded newer image for alpine:latest
- ---> 961769676411
-Step 2/7 : ENV tutorial_path tutorials/HT/partitioned-heat/fenics-fenics
- ---> Running in 0567f1670895
- ---> dc5828269d6d
-Removing intermediate container 0567f1670895
-Step 3/7 : RUN apk add git
- ---> Running in 432cc775cb8f
-fetch http://dl-cdn.alpinelinux.org/alpine/v3.10/main/x86_64/APKINDEX.tar.gz
-fetch http://dl-cdn.alpinelinux.org/alpine/v3.10/community/x86_64/APKINDEX.tar.gz
-(1/6) Installing ca-certificates (20190108-r0)
-(2/6) Installing nghttp2-libs (1.39.2-r0)
-(3/6) Installing libcurl (7.66.0-r0)
-(4/6) Installing expat (2.2.8-r0)
-(5/6) Installing pcre2 (10.33-r0)
-(6/6) Installing git (2.22.0-r0)
-Executing busybox-1.30.1-r2.trigger
-Executing ca-certificates-20190108-r0.trigger
-OK: 21 MiB in 20 packages
- ---> 6be44c195b77
-Removing intermediate container 432cc775cb8f
-Step 4/7 : RUN git clone https://github.com/[secure]/tutorials
- ---> Running in 8667db3d2850
-[91mCloning into 'tutorials'...
-[0m ---> 89a6d70dbf56
-Removing intermediate container 8667db3d2850
-Step 5/7 : RUN mkdir configs && sed -i 's|network="lo"|exchange-directory="/home/[secure]/Data/Exchange/" network="eth0"|g' $tutorial_path/[secure]-config.xml
- ---> Running in f754d1b7cde7
- ---> b93e1ddf62af
-Removing intermediate container f754d1b7cde7
-Step 6/7 : RUN addgroup -g 1000 [secure] && adduser -u 1000 -G [secure] -D [secure] && chown -R [secure]:[secure] tutorials configs
- ---> Running in 413b17020deb
- ---> 37a440d9a680
-Removing intermediate container 413b17020deb
-Step 7/7 : USER [secure]
- ---> Running in 4c03032733d1
- ---> 7a4fec9d9a58
-Removing intermediate container 4c03032733d1
-
-Successfully built 7a4fec9d9a58
-Successfully tagged testcomposefefeubuntu1804home_tutorial-data:latest
-Image for service tutorial-data was built because it did not already exist. To rebuild this image you must use `docker-compose build` or `docker-compose up --build`.
-Pulling fenics-adapter-dirichlet ([secure]/fenics-adapter-ubuntu1804.home-develop:latest)...
-latest: Pulling from [secure]/fenics-adapter-ubuntu1804.home-develop
-Digest: sha256:00923c1952f7f29e9f12a626c305547eac91a3f71e40081afc078983920d7f59
-Status: Downloaded newer image for [secure]/fenics-adapter-ubuntu1804.home-develop:latest
-Creating tutorial-data ... 
-Creating tutorial-data
-[1A[2KCreating tutorial-data ... [32mdone[0m[1BCreating fenics-adapter-neumann ... 
-Creating fenics-adapter-neumann
-Creating fenics-adapter-dirichlet ... 
-Creating fenics-adapter-dirichlet
-[1A[2KCreating fenics-adapter-neumann ... [32mdone[0m[1B[1A[2KCreating fenics-adapter-dirichlet ... [32mdone[0m[1BRunning the simulation...Be patient
-All adapters finished!
+ 5  4  0.0398974557313728  0.0009846075653890  		      |	5  9  0.0001443214512810  0.0000029113186649  
+5  5  0.0160754111142401  0.0006312924446347  		      |	5  10  0.0000315487368698  0.0000001623525488  
+5  6  0.0080577859514326  0.0001421054789917  		      |	5  11  0.0000033385215115  0.0000001344446387  
+5  7  0.0034314447639803  0.0001371332564800  		      |	6  1  0.5773864377559514  0.0472477504016893  
+5  8  0.0015627285442966  0.0000117172331739  		      |	6  2  0.4477838563715916  0.0187881381508740  
+5  9  0.0001331989389550  0.0000028687423308  		      |	6  3  0.2675672363787150  0.0089799625365989  
+5  10  0.0000449334399665  0.0000016482585007  		      |	6  4  0.1230363201171745  0.0019482512970572  
+5  11  0.0000228115194958  0.0000004363917805  		      |	6  5  0.0272226079510281  0.0002173914751305  
+5  12  0.0000055496294308  0.0000000784149986  		      |	6  6  0.0034817706219574  0.0001211005144350  
+6  1  0.6129000100998730  0.0480194482331678  		      |	6  7  0.0019148756759628  0.0000417352825968  
+6  2  0.5606631520314861  0.0248288026770572  		      |	6  8  0.0004638057445527  0.0000140405711166  
+6  3  0.4097075383228934  0.0201472308768107  		      |	6  9  0.0001399503927775  0.0000024114346927  
+6  4  0.1483173707067689  0.0019939426398649  		      |	6  10  0.0000204307525052  0.0000005710056372  
+6  5  0.0283262058680677  0.0006614802268463  		      |	6  11  0.0000113428563303  0.0000003590020985  
+6  6  0.0103356539143614  0.0002791448784702  		      |	6  12  0.0000045640906297  0.0000000521068163  
+6  7  0.0050241811669077  0.0001077217445244  		      |	7  1  0.5773875387663674  0.0461239484046608  
+6  8  0.0016265264592117  0.0000330258359983  		      |	7  2  0.4912808896596543  0.0302590102997296  
+6  9  0.0003587642561266  0.0000037610752456  		      |	7  3  0.2692167037447450  0.0078506001801428  
+6  10  0.0000473807933199  0.0000017379719583  		      |	7  4  0.1036265217319299  0.0023347398183530  
+6  11  0.0000270548252119  0.0000008494468167  		      |	7  5  0.0374915816956710  0.0003270423853732  
+6  12  0.0000113467282426  0.0000001950003635  		      |	7  6  0.0066294580186397  0.0002246766824161  
+6  13  0.0000028302107759  0.0000000895419055  		      |	7  7  0.0031722688953447  0.0000372981336752  
+7  1  0.6129007413894220  0.0468769355029115  		      |	7  8  0.0005357962155046  0.0000159618961516  
+7  2  0.5305896990256342  0.0359751420327076  		      |	7  9  0.0001392232325390  0.0000020260989329  
+7  3  0.3148077353679011  0.0074788942399147  		      |	7  10  0.0000157804938422  0.0000002281129799  
+7  4  0.0754384087321535  0.0022386057334733  		      |	7  11  0.0000059756585757  0.0000001460461334  
+7  5  0.0333229041430417  0.0005321958187837  		      |	8  1  0.5773866239246183  0.0450515901894404  
+7  6  0.0064654482902442  0.0003651703292731  		      |	8  2  0.4065756416311708  0.0121097593339036  
+7  7  0.0037499067057719  0.0001180570275352  		      |	8  3  0.2091237612796973  0.0069185817220920  
+7  8  0.0013724839979006  0.0000570592311113  		      |	8  4  0.0918369266964342  0.0019637888671384  
+7  9  0.0004363887502437  0.0000063876887790  		      |	8  5  0.0175641387692533  0.0002153075968631  
+7  10  0.0000937863031666  0.0000008219391965  		      |	8  6  0.0029421371987430  0.0001088176188899  
+7  11  0.0000144465689074  0.0000008478620537  		      |	8  7  0.0016397921626190  0.0000345752245471  
+7  12  0.0000067548789368  0.0000000663536214  		      |	8  8  0.0003319381478118  0.0000161509154926  
+8  1  0.6128997614466178  0.0457867177003582  		      |	8  9  0.0001513642716616  0.0000019276912463  
+8  2  0.4934728994661802  0.0251687710521076  		      |	8  10  0.0000230517513779  0.0000009681074040  
+8  3  0.1830809046742427  0.0028783923369588  		      |	8  11  0.0000101568653865  0.0000004359382407  
+8  4  0.0376799452899698  0.0011633057915324  		      |	8  12  0.0000047078501133  0.0000000946490906  
+8  5  0.0229592822872534  0.0007410379816957  		      |	9  1  0.5773879765741439  0.0440272808891134  
+8  6  0.0092450656374225  0.0002461720479086  		      |	9  2  0.4486314594373313  0.0309747024085652  
+8  7  0.0036880026445446  0.0000568242590985  		      |	9  3  0.2547003280755751  0.0054290326999253  
+8  8  0.0009904179439722  0.0000370674300643  		      |	9  4  0.0816411645825179  0.0021812602416524  
+8  9  0.0004018376761739  0.0000081520651485  		      |	9  5  0.0306501389404518  0.0009519387040694  
+8  10  0.0000873905022252  0.0000034293522594  		      |	9  6  0.0117918555365827  0.0004524530449082  
+8  11  0.0000483591758082  0.0000020880006479  		      |	9  7  0.0052577418924427  0.0000762925084174  
+8  12  0.0000268679524503  0.0000008926603000  		      |	9  8  0.0006925222057367  0.0000228004420586  
+8  13  0.0000112570048192  0.0000002509027517  		      |	9  9  0.0003462164014076  0.0000127920979233  
+8  14  0.0000038223869474  0.0000001018994911  		      |	9  10  0.0001697577429251  0.0000033804603545  
+9  1  0.6129004327324123  0.0447454313126148  		      |	9  11  0.0000408604872548  0.0000016702645063  
+9  2  0.4965650280370596  0.0144052990937400  		      |	9  12  0.0000187420679095  0.0000005679986529  
+9  3  0.2286622867227555  0.0067116947489691  		      |	9  13  0.0000066231233041  0.0000002788522865  
+9  4  0.1063536994289927  0.0013422142865998  		      |	10  1  0.5773855978866291  0.0430477183944912  
+9  5  0.0202883515473711  0.0006591043457816  		      |	10  2  0.4357559415899134  0.0165148205383456  
+9  6  0.0097374138534394  0.0003591839948441  		      |	10  3  0.1983328926060829  0.0016253185356612  
+9  7  0.0041402378059474  0.0000746948400545  		      |	10  4  0.0195554510530730  0.0004943163304756  
+9  8  0.0008258330035626  0.0000390767812907  		      |	10  5  0.0079613764950604  0.0002295107295112  
+9  9  0.0002961275180526  0.0000068897263580  		      |	10  6  0.0030812676957070  0.0001138777535444  
+9  10  0.0001480443521036  0.0000029569446321  		      |	10  7  0.0011437405802240  0.0000166847757995  
+9  11  0.0000464462335330  0.0000015433272840  		      |	10  8  0.0003103617804750  0.0000114213488087  
+9  12  0.0000124857364186  0.0000003774682286  		      |	10  9  0.0001124546557041  0.0000004777724625  
+9  13  0.0000040854128253  0.0000001977875414  		      |	10  10  0.0000107677281232  0.0000003589436993  
+10  1  0.6129030853192259  0.0437499779924135  		      /	10  11  0.0000045904820376  0.0000000798279775  
+10  2  0.4433867373315146  0.0185253556081828  		      <
+10  3  0.1857639373503414  0.0040710782450363  		      <
+10  4  0.0711239133776517  0.0018348452733170  		      <
+10  5  0.0265804301295128  0.0010868274118437  		      <
+10  6  0.0115198850127717  0.0004764794001793  		      <
+10  7  0.0041927356703566  0.0000620394228931  		      <
+10  8  0.0008263256372713  0.0000161684726014  		      <
+10  9  0.0003458321905152  0.0000109656803373  		      <
+10  10  0.0001597982642529  0.0000027722836653  	      <
+10  11  0.0000377702461550  0.0000015251742199  	      <
+10  12  0.0000154431419619  0.0000006227455876  	      <
+10  13  0.0000071634606555  0.0000003001017592  	      <
+Difference between numerical fields in /home/travis/build/[secure]/systemtests/tests/TestCompose_fe-fe.Ubuntu1804.home/referenceOutput/[secure]-HeatNeumann-convergence.log and /home/travis/build/[secure]/systemtests/tests/TestCompose_fe-fe.Ubuntu1804.home/Output/[secure]-HeatNeumann-convergence.log -  Average: 0.00787401. Maximum: 1
+1  12  12  1  0.3715616102598612  0.3445686492351818  0       |	1  10  10  1  0.3071536924339849  0.2889898989300566  0  
+2  23  11  1  0.3666180696592574  0.3471901695269535  0       |	2  21  11  1  0.3119856214182579  0.2902122390083726  0  
+3  37  14  1  0.4404819408194758  0.4173415191345802  0       |	3  33  12  1  0.3302226955925499  0.3148462844810831  0  
+4  50  13  1  0.4030501483986469  0.3970396799831213  0       |	4  45  12  1  0.3538039940566847  0.3182810648424516  0  
+5  62  12  1  0.3799613561941489  0.3287425927220093  0       |	5  56  11  1  0.3340612190696269  0.3125070595752893  0  
+6  75  13  1  0.3886614559269135  0.3624746408494867  0       |	6  68  12  1  0.3756851021835566  0.3188179636900371  0  
+7  87  12  1  0.3862355860424141  0.3255183320162658  0       |	7  79  11  1  0.3522173626515339  0.3162650745808530  0  
+8  101  14  1  0.4248252984832733  0.3946800538821063  0      |	8  91  12  1  0.3766572452122456  0.3364086803531406  0  
+9  114  13  1  0.3997921931025659  0.3873571318385259  0      |	9  104  13  1  0.4168394883915895  0.3982237002924955  0  
+10  127  13  1  0.4174406114302069  0.4006743974443382  0     |	10  115  11  1  0.3438739712492138  0.3012504651631491  0  
+Difference between numerical fields in /home/travis/build/[secure]/systemtests/tests/TestCompose_fe-fe.Ubuntu1804.home/referenceOutput/[secure]-HeatNeumann-iterations.log and /home/travis/build/[secure]/systemtests/tests/TestCompose_fe-fe.Ubuntu1804.home/Output/[secure]-HeatNeumann-iterations.log -  Average: 0.00961012. Maximum: 0.248141
+Only in /home/travis/build/[secure]/systemtests/tests/TestCompose_fe-fe.Ubuntu1804.home/referenceOutput: .gitkeep
 EXECUTING: export PRECICE_BASE=-ubuntu1804.home-develop;  docker-compose config &&
                          bash ../../silent_compose.sh
 EXECUTING: docker cp tutorial-data:/Output .
-travis_time:end:1676d4e2:start=1569603885394303814,finish=1569604012247823667,duration=126853519853,event=script[0K[32;1mThe command "python system_testing.py -s fe-fe --base Ubuntu1804.home" exited with 0.[0m
+EXECUTING: bash ../../compare_results.sh /home/travis/build/[secure]/systemtests/tests/TestCompose_fe-fe.Ubuntu1804.home/referenceOutput /home/travis/build/[secure]/systemtests/tests/TestCompose_fe-fe.Ubuntu1804.home/Output
+TESTS FAILED WITH: Output files do not match reference
+Files differing               : ['[secure]-HeatDirichlet-iterations.log', '[secure]-HeatNeumann-iterations.log', '[secure]-HeatNeumann-convergence.log']
+Files only in reference (left): []
+Files only in output(right)   : []
+travis_time:end:02a16c0e:start=1570181494135691564,finish=1570181622542039757,duration=128406348193,event=script[0K[31;1mThe command "python system_testing.py -s fe-fe --base Ubuntu1804.home" exited with 1.[0m
 
-travis_fold:start:after_success[0Ktravis_time:start:08bd87c8[0K$ python push.py -s -t fe-fe --base Ubuntu1804.home
+travis_fold:start:after_failure[0Ktravis_time:start:0367c6f0[0K$ python push.py -t fe-fe --base Ubuntu1804.home
 Cloning into '[secure]_st_output'...
  ```
-[Full job log](https://api.travis-ci.org/v3/job/590479625/log.txt)
+[Full job log](https://api.travis-ci.org/v3/job/593438472/log.txt)
