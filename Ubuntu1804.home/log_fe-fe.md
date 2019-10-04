@@ -2,8 +2,8 @@
  # [Job url](https://travis-ci.org/precice/systemtests/builds/593511816) 
 ## Triggered by: [push](https://github.com/precice/systemtests/compare/ac9e17230162...f01784f81bb4) 
 ## Last succesfull commits 
-* [systemtests](https://github.com/precice/systemtests/compare/0cb7c0ec452fe910f18f20068ea48a8454783584...92a2d96de651986b4a651cb923faf4ab421973a6)
-* [fenics-adapter](https://github.com/precice/fenics-adapter/compare/c28dbfc3a7b2...8eb1d2398c1d) 
+* [fenics-adapter](https://github.com/precice/fenics-adapter/compare/c28dbfc3a7b2...8eb1d2398c1d)
+* [systemtests](https://github.com/precice/systemtests/compare/0cb7c0ec452fe910f18f20068ea48a8454783584...92a2d96de651986b4a651cb923faf4ab421973a6) 
 ## Last 100 lines of the job log at the moment of push...
 ```
  5  4  0.0398974557313728  0.0009846075653890  		      |	5  9  0.0001443214512810  0.0000029113186649  
@@ -98,12 +98,12 @@ EXECUTING: export PRECICE_BASE=-ubuntu1804.home-develop;  docker-compose config 
 EXECUTING: docker cp tutorial-data:/Output .
 EXECUTING: bash ../../compare_results.sh /home/travis/build/[secure]/systemtests/tests/TestCompose_fe-fe.Ubuntu1804.home/referenceOutput /home/travis/build/[secure]/systemtests/tests/TestCompose_fe-fe.Ubuntu1804.home/Output
 TESTS FAILED WITH: Output files do not match reference
-Files differing               : ['[secure]-HeatDirichlet-iterations.log', '[secure]-HeatNeumann-convergence.log', '[secure]-HeatNeumann-iterations.log']
+Files differing               : ['[secure]-HeatDirichlet-iterations.log', '[secure]-HeatNeumann-iterations.log', '[secure]-HeatNeumann-convergence.log']
 Files only in reference (left): []
 Files only in output(right)   : []
-travis_time:end:19df9a4e:start=1570204158442580259,finish=1570204286257153909,duration=127814573650,event=script[0K[31;1mThe command "python system_testing.py -s fe-fe --base Ubuntu1804.home" exited with 1.[0m
+travis_time:end:02101728:start=1570207275864979949,finish=1570207403735263076,duration=127870283127,event=script[0K[31;1mThe command "python system_testing.py -s fe-fe --base Ubuntu1804.home" exited with 1.[0m
 
-travis_fold:start:after_failure[0Ktravis_time:start:1635d69b[0K$ python push.py -t fe-fe --base Ubuntu1804.home
+travis_fold:start:after_failure[0Ktravis_time:start:0ffd0237[0K$ python push.py -t fe-fe --base Ubuntu1804.home
 Cloning into '[secure]_st_output'...
  ```
 [Full job log](https://api.travis-ci.org/v3/job/593511835/log.txt)
