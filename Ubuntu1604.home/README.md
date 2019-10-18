@@ -1,8 +1,5 @@
 # Systemtests
 
-* [1dtube_cxx](./log_1dtube_cxx.md)
-* [1dtube](./log_1dtube.md)
-* [1dtube_py](./log_1dtube_py.md)
 * [bindings](./log_bindings.md)
 * [dealii-of](./log_dealii-of.md)
 * [fe-fe](./log_fe-fe.md)
