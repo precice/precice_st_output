@@ -1,16 +1,22 @@
-## Status: Failure 
-Build: [993](https://travis-ci.org/precice/systemtests/builds/600693901) 
+## Status: Passing 
+Build: [1000](https://travis-ci.org/precice/systemtests/builds/601988696) 
 
-Job: [993.16](https://travis-ci.org/precice/systemtests/jobs/600693918) 
+Job: [1000.16](https://travis-ci.org/precice/systemtests/jobs/601988712) 
 
-Triggered by: [push](https://github.com/precice/systemtests/compare/a84a139c2665...500cfbb53a97) 
-Last successful commits 
-* [systemtests](https://github.com/precice/systemtests/compare/67d50405729725689cb7247b9b7b61e8cd0610e4...430ac8e48acf364daf6e1430ae60c277229d8f41)
-* [fenics-adapter](https://github.com/precice/fenics-adapter/compare/135839b9de3f...ff8730f2c0fc) 
+Triggered by: [push](https://github.com/precice/systemtests/compare/500cfbb53a97...73300f5bea0c) 
 
 ---
 Last 100 lines of the job log at the moment of push:
 ```
+    command: '/bin/bash -c "python3 /home/[secure]/Data/Input/heat.py -n -i simple
+      && cp *.log /home/[secure]/Data/Output"
+
+      '
+    container_name: fenics-adapter-neumann
+    depends_on:
+    - tutorial-data
+    image: [secure]/fenics-adapter-ubuntu1804.home-develop:latest
+    networks:
       [secure]comm: null
     volumes:
     - exchange:/home/[secure]/Data/Exchange:rw
@@ -39,15 +45,15 @@ Creating volume "testcomposefefeubuntu1804home_exchange" with default driver
 Building tutorial-data
 Step 1/7 : FROM alpine
 latest: Pulling from library/alpine
-Digest: sha256:72c42ed48c3a2db31b7dafe17d275b634664a708d901ec9fd57b1529280f01fb
+Digest: sha256:c19173c5ada610a5989151111163d28a67368362762534d8a8121ce95cf2bd5a
 Status: Downloaded newer image for alpine:latest
- ---> 961769676411
+ ---> 965ea09ff2eb
 Step 2/7 : ENV tutorial_path tutorials/HT/partitioned-heat/fenics-fenics
- ---> Running in 8cc2b72388ad
- ---> 62592196ffbf
-Removing intermediate container 8cc2b72388ad
+ ---> Running in 6340dd2d27ae
+ ---> 223ef13f0e3d
+Removing intermediate container 6340dd2d27ae
 Step 3/7 : RUN apk add git
- ---> Running in 5145f480c1e2
+ ---> Running in d77de4f6bd2f
 fetch http://dl-cdn.alpinelinux.org/alpine/v3.10/main/x86_64/APKINDEX.tar.gz
 fetch http://dl-cdn.alpinelinux.org/alpine/v3.10/community/x86_64/APKINDEX.tar.gz
 (1/6) Installing ca-certificates (20190108-r0)
@@ -59,58 +65,49 @@ fetch http://dl-cdn.alpinelinux.org/alpine/v3.10/community/x86_64/APKINDEX.tar.g
 Executing busybox-1.30.1-r2.trigger
 Executing ca-certificates-20190108-r0.trigger
 OK: 21 MiB in 20 packages
- ---> 92e49719851b
-Removing intermediate container 5145f480c1e2
+ ---> 791e790e1444
+Removing intermediate container d77de4f6bd2f
 Step 4/7 : RUN git clone https://github.com/[secure]/tutorials
- ---> Running in 8c40df44b0fa
+ ---> Running in c4adb0244173
 [91mCloning into 'tutorials'...
-[0m ---> 961075547a4c
-Removing intermediate container 8c40df44b0fa
+[0m ---> 9662438d1625
+Removing intermediate container c4adb0244173
 Step 5/7 : RUN mkdir configs && sed -i 's|network="lo"|exchange-directory="/home/[secure]/Data/Exchange/" network="eth0"|g' $tutorial_path/[secure]-config.xml
- ---> Running in 20f11fb858a4
- ---> 13465e3cd0f7
-Removing intermediate container 20f11fb858a4
+ ---> Running in 8199fa0a916a
+ ---> cee063d05e19
+Removing intermediate container 8199fa0a916a
 Step 6/7 : RUN addgroup -g 1000 [secure] && adduser -u 1000 -G [secure] -D [secure] && chown -R [secure]:[secure] tutorials configs
- ---> Running in d1e5bfa3ebe8
- ---> fb9d0d630a74
-Removing intermediate container d1e5bfa3ebe8
+ ---> Running in d4c1a281a98a
+ ---> 42f30235fd07
+Removing intermediate container d4c1a281a98a
 Step 7/7 : USER [secure]
- ---> Running in 3d05e1279474
- ---> 3106ea7e08e0
-Removing intermediate container 3d05e1279474
+ ---> Running in f30ffcc69bba
+ ---> 5d2df3836610
+Removing intermediate container f30ffcc69bba
 
-Successfully built 3106ea7e08e0
+Successfully built 5d2df3836610
 Successfully tagged testcomposefefeubuntu1804home_tutorial-data:latest
 Image for service tutorial-data was built because it did not already exist. To rebuild this image you must use `docker-compose build` or `docker-compose up --build`.
 Pulling fenics-adapter-dirichlet ([secure]/fenics-adapter-ubuntu1804.home-develop:latest)...
 latest: Pulling from [secure]/fenics-adapter-ubuntu1804.home-develop
-Digest: sha256:3c5cff20b46878c222af1da93c4b46d35b8c496b90a5b7a89ed1c89f69f4f25a
+Digest: sha256:0ede11993b70952cb5ed1869766de19ed3b9842d686cdb4f93fbb0d6c7e4426f
 Status: Downloaded newer image for [secure]/fenics-adapter-ubuntu1804.home-develop:latest
 Creating tutorial-data ... 
 Creating tutorial-data
-[1A[2KCreating tutorial-data ... [32mdone[0m[1BCreating fenics-adapter-neumann ... 
-Creating fenics-adapter-dirichlet ... 
-Creating fenics-adapter-neumann
+[1A[2KCreating tutorial-data ... [32mdone[0m[1BCreating fenics-adapter-dirichlet ... 
+Creating fenics-adapter-neumann ... 
 Creating fenics-adapter-dirichlet
+Creating fenics-adapter-neumann
 [1A[2KCreating fenics-adapter-dirichlet ... [32mdone[0m[1B[1A[2KCreating fenics-adapter-neumann ... [32mdone[0m[1BRunning the simulation...Be patient
 All adapters finished!
-Only in /home/travis/build/[secure]/systemtests/tests/TestCompose_fe-fe.Ubuntu1804.home/referenceOutput: .gitkeep
-Only in /home/travis/build/[secure]/systemtests/tests/TestCompose_fe-fe.Ubuntu1804.home/referenceOutput: [secure]-HeatDirichlet-iterations.log
-Only in /home/travis/build/[secure]/systemtests/tests/TestCompose_fe-fe.Ubuntu1804.home/referenceOutput: [secure]-HeatNeumann-convergence.log
-Only in /home/travis/build/[secure]/systemtests/tests/TestCompose_fe-fe.Ubuntu1804.home/referenceOutput: [secure]-HeatNeumann-iterations.log
 EXECUTING: export PRECICE_BASE=-ubuntu1804.home-develop;  docker-compose config &&
                          bash ../../silent_compose.sh
 EXECUTING: docker cp tutorial-data:/Output .
-EXECUTING: bash ../../compare_results.sh /home/travis/build/[secure]/systemtests/tests/TestCompose_fe-fe.Ubuntu1804.home/referenceOutput /home/travis/build/[secure]/systemtests/tests/TestCompose_fe-fe.Ubuntu1804.home/Output
-TESTS FAILED WITH: Output files do not match reference
-Files differing               : []
-Files only in reference (left): ['[secure]-HeatDirichlet-iterations.log', '[secure]-HeatNeumann-convergence.log', '[secure]-HeatNeumann-iterations.log']
-Files only in output(right)   : []
-travis_time:end:29b44687:start=1571660735103928112,finish=1571660863712035841,duration=128608107729,event=script[0K[31;1mThe command "python system_testing.py -s fe-fe --base Ubuntu1804.home" exited with 1.[0m
+travis_time:end:1c21be28:start=1571863604568038478,finish=1571863731622176984,duration=127054138506,event=script[0K[32;1mThe command "python system_testing.py -s fe-fe --base Ubuntu1804.home" exited with 0.[0m
 
-travis_fold:start:after_failure[0Ktravis_time:start:1632a400[0K$ python push.py -t fe-fe --base Ubuntu1804.home
+travis_fold:start:after_success[0Ktravis_time:start:0c8c7b9e[0K$ python push.py -s -t fe-fe --base Ubuntu1804.home
 Cloning into '[secure]_st_output'...
 
 ```
 [
-Full job log](https://api.travis-ci.org/v3/job/600693918/log.txt)
+Full job log](https://api.travis-ci.org/v3/job/601988712/log.txt)
