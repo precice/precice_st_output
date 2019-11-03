@@ -1,30 +1,37 @@
 ## Status: Passing 
-Build: [1054](https://travis-ci.org/precice/systemtests/builds/606282132) 
+Build: [1055](https://travis-ci.org/precice/systemtests/builds/606615476) 
 
-Job: [1054.18](https://travis-ci.org/precice/systemtests/jobs/606282156) 
+Job: [1055.18](https://travis-ci.org/precice/systemtests/jobs/606615494) 
 
 Triggered by: [cron](https://github.com/precice/systemtests/compare/9921a3e9e3f7596df67493847bbc01f17a3b226e...e3f7960c948ea9ade7a2b19f1bd7d3b6497a2c13) 
 
 ---
 Last 100 lines of the job log at the moment of push:
 ```
-travis_time:end:0bb41c6c:start=1572662583360322463,finish=1572662583367072968,duration=6750505,event=show_system_info[0Ktravis_time:start:06e87c5a[0Ktravis_time:end:06e87c5a:start=1572662583370369209,finish=1572662583402252772,duration=31883563,event=rm_riak_source[0Ktravis_time:start:0f2ac108[0Ktravis_time:end:0f2ac108:start=1572662583406887567,finish=1572662583413963926,duration=7076359,event=fix_rwky_redis[0Ktravis_time:start:1b36f479[0Ktravis_time:end:1b36f479:start=1572662583418104663,finish=1572662583822744306,duration=404639643,event=wait_for_network[0Ktravis_time:start:01eac798[0Ktravis_time:end:01eac798:start=1572662583835618496,finish=1572662585435033525,duration=1599415029,event=update_apt_keys[0Ktravis_time:start:0d9928c8[0Ktravis_time:end:0d9928c8:start=1572662585442482098,finish=1572662586539008339,duration=1096526241,event=fix_hhvm_source[0Ktravis_time:start:08064480[0Ktravis_time:end:08064480:start=1572662586545479376,finish=1572662586557246003,duration=11766627,event=update_mongo_arch[0Ktravis_time:start:18179f52[0Ktravis_time:end:18179f52:start=1572662586562883535,finish=1572662586609190307,duration=46306772,event=fix_sudo_enabled_trusty[0Ktravis_time:start:2146ad51[0Ktravis_time:end:2146ad51:start=1572662586614762150,finish=1572662586618553703,duration=3791553,event=update_glibc[0Ktravis_time:start:03beb768[0Ktravis_time:end:03beb768:start=1572662586623948548,finish=1572662586635513224,duration=11564676,event=clean_up_path[0Ktravis_time:start:0b8c0b26[0Ktravis_time:end:0b8c0b26:start=1572662586642747479,finish=1572662586652752771,duration=10005292,event=fix_resolv_conf[0Ktravis_time:start:085b5e2b[0Ktravis_time:end:085b5e2b:start=1572662586660929328,finish=1572662586672008941,duration=11079613,event=fix_etc_hosts[0Ktravis_time:start:13142514[0Ktravis_time:end:13142514:start=1572662586677834525,finish=1572662586690200035,duration=12365510,event=fix_mvn_settings_xml[0Ktravis_time:start:0a235940[0Ktravis_time:end:0a235940:start=1572662586695136328,finish=1572662586706590183,duration=11453855,event=no_ipv6_localhost[0Ktravis_time:start:0c6f84a5[0Ktravis_time:end:0c6f84a5:start=1572662586710786023,finish=1572662586713741301,duration=2955278,event=fix_etc_mavenrc[0Ktravis_time:start:1671c0e5[0Ktravis_time:end:1671c0e5:start=1572662586717770229,finish=1572662586721717268,duration=3947039,event=fix_wwdr_certificate[0Ktravis_time:start:2204cd48[0Ktravis_time:end:2204cd48:start=1572662586725765796,finish=1572662586757521946,duration=31756150,event=put_localhost_first[0Ktravis_time:start:1d51e0a8[0Ktravis_time:end:1d51e0a8:start=1572662586761878306,finish=1572662586766090643,duration=4212337,event=home_paths[0Ktravis_time:start:2c085d34[0Ktravis_time:end:2c085d34:start=1572662586771290431,finish=1572662586788013746,duration=16723315,event=disable_initramfs[0Ktravis_time:start:04bc97eb[0Ktravis_time:end:04bc97eb:start=1572662586794177525,finish=1572662587152951515,duration=358773990,event=disable_ssh_roaming[0Ktravis_time:start:17d63645[0Ktravis_time:end:17d63645:start=1572662587159036519,finish=1572662587161881945,duration=2845426,event=debug_tools[0Ktravis_time:start:13c9bdd4[0Ktravis_time:end:13c9bdd4:start=1572662587166391421,finish=1572662587170013194,duration=3621773,event=uninstall_oclint[0Ktravis_time:start:045f1eea[0Ktravis_time:end:045f1eea:start=1572662587174453167,finish=1572662587178349915,duration=3896748,event=rvm_use[0Ktravis_time:start:00d0ae08[0Ktravis_time:end:00d0ae08:start=1572662587184966582,finish=1572662587194547738,duration=9581156,event=rm_etc_boto_cfg[0Ktravis_time:start:0e1e1a50[0Ktravis_time:end:0e1e1a50:start=1572662587199725545,finish=1572662587205604430,duration=5878885,event=rm_oraclejdk8_symlink[0Ktravis_time:start:0f0a5fc0[0Ktravis_time:end:0f0a5fc0:start=1572662587211306911,finish=1572662587273880733,duration=62573822,event=enable_i386[0Ktravis_time:start:074e9ed8[0Ktravis_time:end:074e9ed8:start=1572662587279584832,finish=1572662587285257832,duration=5673000,event=update_rubygems[0Ktravis_time:start:27424a56[0Ktravis_time:end:27424a56:start=1572662587292435943,finish=1572662588493153694,duration=1200717751,event=ensure_path_components[0Ktravis_time:start:06d125c0[0Ktravis_time:end:06d125c0:start=1572662588498500303,finish=1572662588501755366,duration=3255063,event=redefine_curl[0Ktravis_time:start:077de448[0Ktravis_time:end:077de448:start=1572662588506916110,finish=1572662588565773402,duration=58857292,event=nonblock_pipe[0Ktravis_time:start:0f81f8cb[0Ktravis_time:end:0f81f8cb:start=1572662588571022579,finish=1572662591618394911,duration=3047372332,event=apt_get_update[0Ktravis_time:start:0c1ce36c[0Ktravis_time:end:0c1ce36c:start=1572662591623880422,finish=1572662591627337315,duration=3456893,event=deprecate_xcode_64[0Ktravis_time:start:0890223a[0Ktravis_time:end:0890223a:start=1572662591632946127,finish=1572662596787627578,duration=5154681451,event=update_heroku[0Ktravis_time:start:200313a8[0Ktravis_time:end:200313a8:start=1572662596793145830,finish=1572662596796972311,duration=3826481,event=shell_session_update[0Ktravis_time:start:0a027e0c[0Ktravis_fold:start:docker_mtu[0Kdocker stop/waiting
-docker start/running, process 3895
-travis_fold:end:docker_mtu[0Ktravis_time:end:0a027e0c:start=1572662596801732348,finish=1572662598014263266,duration=1212530918,event=set_docker_mtu[0Ktravis_time:start:337107c0[0Ktravis_fold:start:resolvconf[0Kresolvconf stop/waiting
+[34m[1mcomposer --version[0m
+Composer version 1.5.2 2017-09-11 16:59:25
+[34m[1mPre-installed Ruby versions[0m
+ruby-2.2.7
+ruby-2.3.4
+ruby-2.4.1
+travis_fold:end:system_info[0K
+travis_time:end:0f5c8c50:start=1572748831775367629,finish=1572748831785179251,duration=9811622,event=show_system_info[0Ktravis_time:start:11b811ca[0Ktravis_time:end:11b811ca:start=1572748831789711904,finish=1572748831821874038,duration=32162134,event=rm_riak_source[0Ktravis_time:start:2ee547e2[0Ktravis_time:end:2ee547e2:start=1572748831826076458,finish=1572748831834479609,duration=8403151,event=fix_rwky_redis[0Ktravis_time:start:1c55a204[0Ktravis_time:end:1c55a204:start=1572748831838938049,finish=1572748832200313410,duration=361375361,event=wait_for_network[0Ktravis_time:start:02be9987[0Ktravis_time:end:02be9987:start=1572748832207305670,finish=1572748833844995525,duration=1637689855,event=update_apt_keys[0Ktravis_time:start:07f2cb6c[0Ktravis_time:end:07f2cb6c:start=1572748833851971270,finish=1572748834979585100,duration=1127613830,event=fix_hhvm_source[0Ktravis_time:start:0c3448ef[0Ktravis_time:end:0c3448ef:start=1572748834986154261,finish=1572748834999157392,duration=13003131,event=update_mongo_arch[0Ktravis_time:start:2029b231[0Ktravis_time:end:2029b231:start=1572748835004883932,finish=1572748835056926510,duration=52042578,event=fix_sudo_enabled_trusty[0Ktravis_time:start:000b539e[0Ktravis_time:end:000b539e:start=1572748835062529304,finish=1572748835066973846,duration=4444542,event=update_glibc[0Ktravis_time:start:0482497b[0Ktravis_time:end:0482497b:start=1572748835072508201,finish=1572748835084568584,duration=12060383,event=clean_up_path[0Ktravis_time:start:08831807[0Ktravis_time:end:08831807:start=1572748835090665888,finish=1572748835102135602,duration=11469714,event=fix_resolv_conf[0Ktravis_time:start:03591d0a[0Ktravis_time:end:03591d0a:start=1572748835110787803,finish=1572748835123893502,duration=13105699,event=fix_etc_hosts[0Ktravis_time:start:1434048b[0Ktravis_time:end:1434048b:start=1572748835129593798,finish=1572748835142195960,duration=12602162,event=fix_mvn_settings_xml[0Ktravis_time:start:087ca98c[0Ktravis_time:end:087ca98c:start=1572748835147261997,finish=1572748835162053226,duration=14791229,event=no_ipv6_localhost[0Ktravis_time:start:0974d562[0Ktravis_time:end:0974d562:start=1572748835167694164,finish=1572748835171617326,duration=3923162,event=fix_etc_mavenrc[0Ktravis_time:start:00e757d8[0Ktravis_time:end:00e757d8:start=1572748835178294232,finish=1572748835183126438,duration=4832206,event=fix_wwdr_certificate[0Ktravis_time:start:0cc7edcb[0Ktravis_time:end:0cc7edcb:start=1572748835188124126,finish=1572748835224582832,duration=36458706,event=put_localhost_first[0Ktravis_time:start:1217e35c[0Ktravis_time:end:1217e35c:start=1572748835230814844,finish=1572748835237085449,duration=6270605,event=home_paths[0Ktravis_time:start:015231c0[0Ktravis_time:end:015231c0:start=1572748835242534163,finish=1572748835260648572,duration=18114409,event=disable_initramfs[0Ktravis_time:start:08158a2b[0Ktravis_time:end:08158a2b:start=1572748835266798664,finish=1572748835636763551,duration=369964887,event=disable_ssh_roaming[0Ktravis_time:start:000e5a2e[0Ktravis_time:end:000e5a2e:start=1572748835641221714,finish=1572748835644544080,duration=3322366,event=debug_tools[0Ktravis_time:start:094a3744[0Ktravis_time:end:094a3744:start=1572748835648929818,finish=1572748835653252253,duration=4322435,event=uninstall_oclint[0Ktravis_time:start:1b5fd9f0[0Ktravis_time:end:1b5fd9f0:start=1572748835659799746,finish=1572748835664181619,duration=4381873,event=rvm_use[0Ktravis_time:start:10ec0b19[0Ktravis_time:end:10ec0b19:start=1572748835668655362,finish=1572748835682599848,duration=13944486,event=rm_etc_boto_cfg[0Ktravis_time:start:110b5f8a[0Ktravis_time:end:110b5f8a:start=1572748835687710838,finish=1572748835691309250,duration=3598412,event=rm_oraclejdk8_symlink[0Ktravis_time:start:018ffdf0[0Ktravis_time:end:018ffdf0:start=1572748835695949524,finish=1572748835763002435,duration=67052911,event=enable_i386[0Ktravis_time:start:014bedb7[0Ktravis_time:end:014bedb7:start=1572748835768969660,finish=1572748835775352842,duration=6383182,event=update_rubygems[0Ktravis_time:start:0b9991b3[0Ktravis_time:end:0b9991b3:start=1572748835779873082,finish=1572748836966334154,duration=1186461072,event=ensure_path_components[0Ktravis_time:start:2d6c4572[0Ktravis_time:end:2d6c4572:start=1572748836971947926,finish=1572748836975439069,duration=3491143,event=redefine_curl[0Ktravis_time:start:0037d263[0Ktravis_time:end:0037d263:start=1572748836980542688,finish=1572748837037973165,duration=57430477,event=nonblock_pipe[0Ktravis_time:start:01660c61[0Ktravis_time:end:01660c61:start=1572748837043917300,finish=1572748840124283104,duration=3080365804,event=apt_get_update[0Ktravis_time:start:08c0eb00[0Ktravis_time:end:08c0eb00:start=1572748840130620318,finish=1572748840135838304,duration=5217986,event=deprecate_xcode_64[0Ktravis_time:start:16957a94[0Ktravis_time:end:16957a94:start=1572748840141101157,finish=1572748845194987254,duration=5053886097,event=update_heroku[0Ktravis_time:start:345533d4[0Ktravis_time:end:345533d4:start=1572748845201261439,finish=1572748845206576711,duration=5315272,event=shell_session_update[0Ktravis_time:start:00bd01ff[0Ktravis_fold:start:docker_mtu[0Kdocker stop/waiting
+docker start/running, process 3856
+travis_fold:end:docker_mtu[0Ktravis_time:end:00bd01ff:start=1572748845211682968,finish=1572748846425996094,duration=1214313126,event=set_docker_mtu[0Ktravis_time:start:379d9838[0Ktravis_fold:start:resolvconf[0Kresolvconf stop/waiting
 resolvconf start/running
-travis_fold:end:resolvconf[0Ktravis_time:end:337107c0:start=1572662598019662900,finish=1572662598095965200,duration=76302300,event=resolvconf[0Ktravis_time:start:0c2ea1c9[0Ktravis_time:end:0c2ea1c9:start=1572662598102490987,finish=1572662598215871087,duration=113380100,event=maven_central_mirror[0K[33;1m3.5 is not installed; attempting download[0m
+travis_fold:end:resolvconf[0Ktravis_time:end:379d9838:start=1572748846431361277,finish=1572748846519008383,duration=87647106,event=resolvconf[0Ktravis_time:start:16ec89a0[0Ktravis_time:end:16ec89a0:start=1572748846525412557,finish=1572748846647648110,duration=122235553,event=maven_central_mirror[0K[33;1m3.5 is not installed; attempting download[0m
 [33;1mDownloading archive: https://storage.googleapis.com/travis-ci-language-archives/python/binaries/ubuntu/14.04/x86_64/python-3.5.tar.bz2[0m
-travis_time:start:0a2a3eb2[0K$ curl -sSf -o python-3.5.tar.bz2 ${archive_url}
-travis_time:end:0a2a3eb2:start=1572662598307842855,finish=1572662598558090196,duration=250247341,event=configure[0Ktravis_time:start:090de540[0K$ sudo tar xjf python-3.5.tar.bz2 --directory /
-travis_time:end:090de540:start=1572662598563961056,finish=1572662610055875076,duration=11491914020,event=configure[0Ktravis_time:start:07c706a2[0Ktravis_fold:start:services[0Ktravis_time:start:12082140[0K$ sudo service docker start
+travis_time:start:026fb149[0K$ curl -sSf -o python-3.5.tar.bz2 ${archive_url}
+travis_time:end:026fb149:start=1572748846745415527,finish=1572748847009419763,duration=264004236,event=configure[0Ktravis_time:start:16e5045c[0K$ sudo tar xjf python-3.5.tar.bz2 --directory /
+travis_time:end:16e5045c:start=1572748847016233410,finish=1572748862475445759,duration=15459212349,event=configure[0Ktravis_time:start:1428a177[0Ktravis_fold:start:services[0Ktravis_time:start:00330fea[0K$ sudo service docker start
 start: Job is already running: docker
-travis_time:end:12082140:start=1572662610084041371,finish=1572662610100654826,duration=16613455,event=prepare[0Ktravis_fold:end:services[0Ktravis_time:end:12082140:start=1572662610084041371,finish=1572662613106904749,duration=3022863378,event=services[0Ktravis_time:start:2379d8e6[0Ktravis_time:end:2379d8e6:start=1572662613112527402,finish=1572662613116453812,duration=3926410,event=fix_ps4[0Ktravis_time:start:00b45460[0K
-travis_fold:start:git.checkout[0Ktravis_time:start:0814a29e[0K$ git clone --depth=50 --branch=master https://github.com/[secure]/systemtests.git [secure]/systemtests
+travis_time:end:00330fea:start=1572748862503411317,finish=1572748862521147510,duration=17736193,event=prepare[0Ktravis_fold:end:services[0Ktravis_time:end:00330fea:start=1572748862503411317,finish=1572748865527211418,duration=3023800101,event=services[0Ktravis_time:start:17976fb2[0Ktravis_time:end:17976fb2:start=1572748865532844628,finish=1572748865537731440,duration=4886812,event=fix_ps4[0Ktravis_time:start:00f7721d[0K
+travis_fold:start:git.checkout[0Ktravis_time:start:09ca3a13[0K$ git clone --depth=50 --branch=master https://github.com/[secure]/systemtests.git [secure]/systemtests
 Cloning into '[secure]/systemtests'...
-travis_time:end:0814a29e:start=1572662613125717622,finish=1572662619588832159,duration=6463114537,event=checkout[0K$ cd [secure]/systemtests
+travis_time:end:09ca3a13:start=1572748865547740315,finish=1572748871955367023,duration=6407626708,event=checkout[0K$ cd [secure]/systemtests
 $ git checkout -qf e3f7960c948ea9ade7a2b19f1bd7d3b6497a2c13
 travis_fold:end:git.checkout[0K
-travis_time:end:0814a29e:start=1572662613125717622,finish=1572662620049969569,duration=6924251947,event=checkout[0Ktravis_time:start:092dfa02[0K
+travis_time:end:09ca3a13:start=1572748865547740315,finish=1572748872807105801,duration=7259365486,event=checkout[0Ktravis_time:start:0434f178[0K
 [33;1mSetting environment variables from repository settings[0m
 $ export DOCKER_PASSWORD=[secure]
 $ export DOCKER_USERNAME=[secure]
@@ -32,13 +39,13 @@ $ export TRAVIS_ACCESS_TOKEN=[secure]
 $ export PRECICE_BOT_EMAIL=[secure]
 $ export GH_TOKEN=[secure]
 
-travis_time:end:092dfa02:start=1572662620055134915,finish=1572662620067604150,duration=12469235,event=env[0Ktravis_time:start:14c58094[0K$ source ~/virtualenv/python3.5/bin/activate
-travis_time:end:14c58094:start=1572662620073245272,finish=1572662620080462499,duration=7217227,event=[0K$ python --version
+travis_time:end:0434f178:start=1572748872813620785,finish=1572748872826761302,duration=13140517,event=env[0Ktravis_time:start:00ccd77d[0K$ source ~/virtualenv/python3.5/bin/activate
+travis_time:end:00ccd77d:start=1572748872832716615,finish=1572748872843336720,duration=10620105,event=[0K$ python --version
 Python 3.5.6
 $ pip --version
 pip 18.0 from /home/travis/virtualenv/python3.5.6/lib/python3.5/site-packages/pip (python 3.5)
 Could not locate requirements.txt. Override the install: key in your .travis.yml to install dependencies.
-travis_time:start:14d0c9ba[0K$ python system_testing.py -s of-of
+travis_time:start:37388616[0K$ python system_testing.py -s of-of
 networks:
   [secure]comm: {}
 services:
@@ -90,24 +97,17 @@ Digest: sha256:c19173c5ada610a5989151111163d28a67368362762534d8a8121ce95cf2bd5a
 Status: Downloaded newer image for alpine:latest
 Pulling openfoam-adapter-fluid ([secure]/openfoam-adapter-ubuntu1604.home-develop:latest)...
 latest: Pulling from [secure]/openfoam-adapter-ubuntu1604.home-develop
-Digest: sha256:7b35f009c5169ca242753a754e0675197b77bde0b0ee3330c95449a33e668f39
+Digest: sha256:e1ede29dae04cac520d17c81301087123c03455b9bb7251d4b5da0388fc8b489
 Status: Downloaded newer image for [secure]/openfoam-adapter-ubuntu1604.home-develop:latest
-Creating openfoam-adapter-fluid ... 
 Creating tutorial-data ... 
 Creating openfoam-adapter-solid ... 
+Creating openfoam-adapter-fluid ... 
 Creating tutorial-data
-Creating openfoam-adapter-fluid
 Creating openfoam-adapter-solid
-[1A[2KCreating openfoam-adapter-fluid ... [32mdone[0m[1B[1A[2KCreating openfoam-adapter-solid ... [32mdone[0m[1B[1A[2KCreating tutorial-data ... [32mdone[0m[1BRunning the simulation...Be patient
+Creating openfoam-adapter-fluid
+[1A[2KCreating openfoam-adapter-fluid ... [32mdone[0m[1B[1A[2KCreating tutorial-data ... [32mdone[0m[1B[1A[2KCreating openfoam-adapter-solid ... [32mdone[0m[1BRunning the simulation...Be patient
 All adapters finished!
-EXECUTING: export PRECICE_BASE=-ubuntu1604.home-develop;  docker-compose config &&
-                         bash ../../silent_compose.sh
-EXECUTING: docker cp tutorial-data:/Output .
-travis_time:end:14d0c9ba:start=1572662620485908196,finish=1572662742481296736,duration=121995388540,event=script[0K[32;1mThe command "python system_testing.py -s of-of" exited with 0.[0m
-
-travis_fold:start:after_success[0Ktravis_time:start:00c806f1[0K$ python push.py -s -t of-of
-Cloning into '[secure]_st_output'...
 
 ```
 [
-Full job log](https://api.travis-ci.org/v3/job/606282156/log.txt)
+Full job log](https://api.travis-ci.org/v3/job/606615494/log.txt)
