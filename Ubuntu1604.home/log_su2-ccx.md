@@ -1,18 +1,13 @@
 ## Status: Passing 
-Build: [1071](https://travis-ci.org/precice/systemtests/builds/610072373) 
+Build: [1082](https://travis-ci.org/precice/systemtests/builds/610801800) 
 
-Job: [1071.13](https://travis-ci.org/precice/systemtests/jobs/610072387) 
+Job: [1082.14](https://travis-ci.org/precice/systemtests/jobs/610801825) 
 
-Triggered by: [push](https://github.com/precice/systemtests/compare/ffab6e4cf6eb...2e77de77c876) 
+Triggered by: [push](https://github.com/precice/systemtests/compare/2e77de77c876...846ecee12afc) 
 
 ---
 Last 100 lines of the job log at the moment of push:
 ```
-Creating volume "testcomposesu2ccx_output" with default driver
-Creating volume "testcomposesu2ccx_configs" with default driver
-Creating volume "testcomposesu2ccx_input_solid" with default driver
-Creating volume "testcomposesu2ccx_input_fluid" with default driver
-Creating volume "testcomposesu2ccx_exchange" with default driver
 Building tutorial-data
 Step 1/9 : FROM alpine
 latest: Pulling from library/alpine
@@ -20,11 +15,11 @@ Digest: sha256:c19173c5ada610a5989151111163d28a67368362762534d8a8121ce95cf2bd5a
 Status: Downloaded newer image for alpine:latest
  ---> 965ea09ff2eb
 Step 2/9 : ENV tutorial_path tutorials/FSI/flap_perp/SU2-CalculiX
- ---> Running in ed61716d8a9d
- ---> f4518e808559
-Removing intermediate container ed61716d8a9d
+ ---> Running in d498def22439
+ ---> 51834c4413fd
+Removing intermediate container d498def22439
 Step 3/9 : RUN apk add git bash
- ---> Running in e92b15daa724
+ ---> Running in 179481e6b440
 fetch http://dl-cdn.alpinelinux.org/alpine/v3.10/main/x86_64/APKINDEX.tar.gz
 fetch http://dl-cdn.alpinelinux.org/alpine/v3.10/community/x86_64/APKINDEX.tar.gz
 (1/11) Installing ncurses-terminfo-base (6.1_p20190518-r0)
@@ -42,48 +37,48 @@ Executing bash-5.0.0-r0.post-install
 Executing busybox-1.30.1-r2.trigger
 Executing ca-certificates-20190108-r0.trigger
 OK: 30 MiB in 25 packages
- ---> d49590280642
-Removing intermediate container e92b15daa724
+ ---> 8573511ead03
+Removing intermediate container 179481e6b440
 Step 4/9 : RUN git clone https://github.com/[secure]/tutorials
- ---> Running in ae588df7d261
+ ---> Running in 0a60120b3bf3
 [91mCloning into 'tutorials'...
-[0m ---> 641a99c6112c
-Removing intermediate container ae588df7d261
+[0m ---> 609bd8ba2a37
+Removing intermediate container 0a60120b3bf3
 Step 5/9 : RUN mkdir configs && sed -e 's|exchange-directory="../"|exchange-directory="/home/[secure]/Data/Exchange/" network="eth0"|g'    $tutorial_path/[secure]-config_serial.xml  > configs/[secure]-config.xml
- ---> Running in f140855cbc36
- ---> d67d0880a07f
-Removing intermediate container f140855cbc36
+ ---> Running in 6e38300b3eda
+ ---> b5ce77236d48
+Removing intermediate container 6e38300b3eda
 Step 6/9 : RUN rm $tutorial_path/[secure]-config_serial.xml $tutorial_path/[secure]-config.xml
- ---> Running in 5a58e7a9695e
- ---> ae1bc50fbfde
-Removing intermediate container 5a58e7a9695e
+ ---> Running in fab392a701cd
+ ---> 5822a1ae268b
+Removing intermediate container fab392a701cd
 Step 7/9 : RUN cp $tutorial_path/config.yml configs/
- ---> Running in 4a8cae69e421
- ---> 8c33b0f7df38
-Removing intermediate container 4a8cae69e421
+ ---> Running in fcd4247a1efb
+ ---> 58bfe6701c99
+Removing intermediate container fcd4247a1efb
 Step 8/9 : RUN addgroup -g 1000 [secure] && adduser -u 1000 -G [secure] -D [secure] && chown -R [secure]:[secure] tutorials configs
- ---> Running in 1ab7fc5de4d2
- ---> f4b01986fd48
-Removing intermediate container 1ab7fc5de4d2
+ ---> Running in f68817e3de54
+ ---> c01fdf511dc5
+Removing intermediate container f68817e3de54
 Step 9/9 : USER [secure]
- ---> Running in 38688272697a
- ---> 5e43a30f40bb
-Removing intermediate container 38688272697a
-Successfully built 5e43a30f40bb
+ ---> Running in 9687e9b38eb1
+ ---> 90f57460adbe
+Removing intermediate container 9687e9b38eb1
+Successfully built 90f57460adbe
 Successfully tagged testcomposesu2ccx_tutorial-data:latest
 Image for service tutorial-data was built because it did not already exist. To rebuild this image you must use `docker-compose build` or `docker-compose up --build`.
 Pulling calculix-adapter ([secure]/calculix-adapter-ubuntu1604.home-develop:latest)...
 latest: Pulling from [secure]/calculix-adapter-ubuntu1604.home-develop
-Digest: sha256:150441b2553ec18c0e0243cef43db9f7fa116d3c9fcb49bfdd3d0022e39f5911
+Digest: sha256:ed700d0d63ebf6e829866e47d408fe7c6a474250f469fc29ba97b7f69908f862
 Status: Downloaded newer image for [secure]/calculix-adapter-ubuntu1604.home-develop:latest
 Pulling su2-adapter ([secure]/su2-adapter-ubuntu1604.home-develop:latest)...
 latest: Pulling from [secure]/su2-adapter-ubuntu1604.home-develop
-Digest: sha256:7c8e63f897ca75ecf705e7403700ddd563951560acda3df5279befc49d13f06c
+Digest: sha256:d3663325365ffe53b1975fd9f81d2d2bf2d7c655721a8d7b0149de88bd5ebffc
 Status: Downloaded newer image for [secure]/su2-adapter-ubuntu1604.home-develop:latest
 Creating tutorial-data ... 
 Creating tutorial-data
-[1A[2KCreating tutorial-data ... [32mdone[0m[1BCreating calculix-adapter ... 
-Creating su2-adapter ... 
+[1A[2KCreating tutorial-data ... [32mdone[0m[1BCreating su2-adapter ... 
+Creating calculix-adapter ... 
 Creating calculix-adapter
 Creating su2-adapter
 [1A[2KCreating calculix-adapter ... [32mdone[0m[1B[1A[2KCreating su2-adapter ... [32mdone[0m[1BRunning the simulation...Be patient
@@ -93,10 +88,15 @@ All adapters finished!
 EXECUTING: export PRECICE_BASE=-ubuntu1604.home-develop;  docker-compose config &&
                          bash ../../silent_compose.sh
 EXECUTING: docker cp tutorial-data:/Output .
-travis_time:end:0c762297:start=1573425385567406952,finish=1573425674611323775,duration=289043916823,event=script[0K[32;1mThe command "python system_testing.py -s su2-ccx" exited with 0.[0m
+travis_time:end:0f6619da:start=1573559644936256465,finish=1573559932952701307,duration=288016444842,event=script[0K[32;1mThe command "python system_testing.py -s su2-ccx" exited with 0.[0m
 
-travis_fold:start:dpl_0[0Ktravis_time:start:01c5a098[0K$ rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install dpl
-travis_fold:start:dpl.1[33mInstalling deploy dependencies[0m
+travis_fold:start:dpl_0[0Ktravis_time:start:1241935c[0K$ rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install dpl
+Successfully installed dpl-1.10.13
+Parsing documentation for dpl-1.10.13
+Installing ri documentation for dpl-1.10.13
+Done installing documentation for dpl after 0 seconds
+1 gem installed
+travis_time:end:1241935c:start=1573559937458971503,finish=1573559939107880528,duration=1648909025,event=after_success[0Ktravis_fold:end:dpl_0[0Ktravis_time:start:03e31a22[0Ktravis_fold:start:dpl.1[33mInstalling deploy dependencies[0m
 Successfully installed dpl-script-1.10.13
 Parsing documentation for dpl-script-1.10.13
 Installing ri documentation for dpl-script-1.10.13
@@ -110,4 +110,4 @@ Cloning into '[secure]_st_output'...
 
 ```
 [
-Full job log](https://api.travis-ci.org/v3/job/610072387/log.txt)
+Full job log](https://api.travis-ci.org/v3/job/610801825/log.txt)
