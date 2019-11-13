@@ -1,9 +1,9 @@
 ## Status: Passing 
-Build: [1082](https://travis-ci.org/precice/systemtests/builds/610801800) 
+Build: [1085](https://travis-ci.org/precice/systemtests/builds/611163313) 
 
-Job: [1082.22](https://travis-ci.org/precice/systemtests/jobs/610801833) 
+Job: [1085.25](https://travis-ci.org/precice/systemtests/jobs/611163338) 
 
-Triggered by: [push](https://github.com/precice/systemtests/compare/2e77de77c876...846ecee12afc) 
+Triggered by: [cron](https://github.com/precice/systemtests/compare/be03fa4f457521db4ca77bac58da891a5245c954...e39228c1c8cf63923ead04a7e05071545b49caa0) 
 
 ---
 Last 100 lines of the job log at the moment of push:
@@ -12,11 +12,11 @@ Digest: sha256:c19173c5ada610a5989151111163d28a67368362762534d8a8121ce95cf2bd5a
 Status: Downloaded newer image for alpine:latest
  ---> 965ea09ff2eb
 Step 2/11 : ENV tutorial_path /tutorials/FSI/flap_perp/OpenFOAM-CalculiX
- ---> Running in a5b4a14f037d
- ---> 31d5a5525931
-Removing intermediate container a5b4a14f037d
+ ---> Running in 828a5f641c63
+ ---> 2c11370b5d95
+Removing intermediate container 828a5f641c63
 Step 3/11 : RUN apk add git bash
- ---> Running in ab696a26a848
+ ---> Running in bba76152af1c
 fetch http://dl-cdn.alpinelinux.org/alpine/v3.10/main/x86_64/APKINDEX.tar.gz
 fetch http://dl-cdn.alpinelinux.org/alpine/v3.10/community/x86_64/APKINDEX.tar.gz
 (1/11) Installing ncurses-terminfo-base (6.1_p20190518-r0)
@@ -34,48 +34,48 @@ Executing bash-5.0.0-r0.post-install
 Executing busybox-1.30.1-r2.trigger
 Executing ca-certificates-20190108-r0.trigger
 OK: 30 MiB in 25 packages
- ---> 69acae50ba60
-Removing intermediate container ab696a26a848
+ ---> a102745f746e
+Removing intermediate container bba76152af1c
 Step 4/11 : RUN git clone https://github.com/[secure]/tutorials
- ---> Running in 4bf472288fbd
+ ---> Running in 8bbf301abe60
 [91mCloning into 'tutorials'...
-[0m ---> 4ff0769768ba
-Removing intermediate container 4bf472288fbd
+[0m ---> baf336c15ea2
+Removing intermediate container 8bbf301abe60
 Step 5/11 : WORKDIR /
- ---> 889884372b77
-Removing intermediate container cb8db70e6756
+ ---> 8ab31e32ae0d
+Removing intermediate container b80171dcd739
 Step 6/11 : COPY interface_beam.nam fix1_beam.nam all.msh $tutorial_path/Solid/
- ---> 492f1d21ff86
+ ---> 4a0591ab49b4
 Step 7/11 : RUN sed -i '/application     pimpleFoam/d; s/\/\/ application     pimpleDyMFoam/application    pimpleDyMFoam/g'     $tutorial_path/Fluid/system/controlDict
- ---> Running in 5378f8413a53
- ---> abf8353ae305
-Removing intermediate container 5378f8413a53
+ ---> Running in 4a11c6bdfbdb
+ ---> 5f1815baa5ba
+Removing intermediate container 4a11c6bdfbdb
 Step 8/11 : RUN mkdir configs &&      sed 's|distribution-type="gather-scatter"|distribution-type="gather-scatter" exchange-directory="/home/[secure]/Data/Exchange/" network="eth0"|g'     $tutorial_path/[secure]-config_serial.xml > configs/[secure]-config.xml && cp $tutorial_path/config.yml configs/
- ---> Running in 40c087c900e9
- ---> 3bd771a6f82d
-Removing intermediate container 40c087c900e9
+ ---> Running in 32ffab59201a
+ ---> 43f00c5ca71c
+Removing intermediate container 32ffab59201a
 Step 9/11 : RUN rm $tutorial_path/[secure]-config_serial.xml $tutorial_path/[secure]-config.xml
- ---> Running in df87d552c049
- ---> c8327aa839ba
-Removing intermediate container df87d552c049
+ ---> Running in 9c0bc6d2a817
+ ---> 883cfc40d924
+Removing intermediate container 9c0bc6d2a817
 Step 10/11 : RUN addgroup -g 1000 [secure] && adduser -u 1000 -G [secure] -D [secure] && chown -R [secure]:[secure] tutorials configs
- ---> Running in 1327d2f686ab
- ---> 6b0e3297450e
-Removing intermediate container 1327d2f686ab
+ ---> Running in ec5f8a0d4680
+ ---> e7b21aba9058
+Removing intermediate container ec5f8a0d4680
 Step 11/11 : USER [secure]
- ---> Running in 1429ac214c08
- ---> b0c2891c28cd
-Removing intermediate container 1429ac214c08
-Successfully built b0c2891c28cd
+ ---> Running in 2b9168d6b015
+ ---> debb57938505
+Removing intermediate container 2b9168d6b015
+Successfully built debb57938505
 Successfully tagged testcomposeofccxfsiubuntu1604homepetsc_tutorial-data:latest
 Image for service tutorial-data was built because it did not already exist. To rebuild this image you must use `docker-compose build` or `docker-compose up --build`.
 Pulling openfoam-adapter-fluid ([secure]/openfoam-adapter-ubuntu1604.home.petsc-develop:latest)...
 latest: Pulling from [secure]/openfoam-adapter-ubuntu1604.home.petsc-develop
-Digest: sha256:27dea0539b0f0967813aeecf008b85986b659bf5b2f25d2607091cf899ce01bd
+Digest: sha256:81beed55a2cafd61db44e141353255fec3dbf12b52e4193ee814d60b79425526
 Status: Downloaded newer image for [secure]/openfoam-adapter-ubuntu1604.home.petsc-develop:latest
 Pulling calculix-adapter-solid ([secure]/calculix-adapter-ubuntu1604.home.petsc-develop:latest)...
 latest: Pulling from [secure]/calculix-adapter-ubuntu1604.home.petsc-develop
-Digest: sha256:be2e20982530fd7090bcff0cfd05e5d1e83cc72a701b108e1940e8b663989af8
+Digest: sha256:c48e8a9763e28af4d4e88988fb3b8030bbfd5f26759a35199cf1f59557cca478
 Status: Downloaded newer image for [secure]/calculix-adapter-ubuntu1604.home.petsc-develop:latest
 Creating tutorial-data ... 
 Creating tutorial-data
@@ -83,20 +83,20 @@ Creating tutorial-data
 Creating calculix-adapter-solid ... 
 Creating openfoam-adapter-fluid
 Creating calculix-adapter-solid
-[1A[2KCreating calculix-adapter-solid ... [32mdone[0m[1B[1A[2KCreating openfoam-adapter-fluid ... [32mdone[0m[1BRunning the simulation...Be patient
+[1A[2KCreating openfoam-adapter-fluid ... [32mdone[0m[1B[1A[2KCreating calculix-adapter-solid ... [32mdone[0m[1BRunning the simulation...Be patient
 All adapters finished!
 EXECUTING: export PRECICE_BASE=-ubuntu1604.home.petsc-develop;  docker-compose config &&
                          bash ../../silent_compose.sh
 EXECUTING: docker cp tutorial-data:/Output .
-travis_time:end:056cf19c:start=1573560027646295960,finish=1573560175594964506,duration=147948668546,event=script[0K[32;1mThe command "python system_testing.py -s of-ccx_fsi --base Ubuntu1604.home.PETSc" exited with 0.[0m
+travis_time:end:02edd948:start=1573613838137589985,finish=1573613985721474935,duration=147583884950,event=script[0K[32;1mThe command "python system_testing.py -s of-ccx_fsi --base Ubuntu1604.home.PETSc" exited with 0.[0m
 
-travis_fold:start:dpl_0[0Ktravis_time:start:02df7de4[0K$ rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install dpl
+travis_fold:start:dpl_0[0Ktravis_time:start:0ff1f66c[0K$ rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install dpl
 Successfully installed dpl-1.10.13
 Parsing documentation for dpl-1.10.13
 Installing ri documentation for dpl-1.10.13
 Done installing documentation for dpl after 0 seconds
 1 gem installed
-travis_time:end:02df7de4:start=1573560181034180789,finish=1573560182970399487,duration=1936218698,event=after_success[0Ktravis_fold:end:dpl_0[0Ktravis_time:start:0167a353[0Ktravis_fold:start:dpl.1[33mInstalling deploy dependencies[0m
+travis_time:end:0ff1f66c:start=1573613990578523019,finish=1573613992325316381,duration=1746793362,event=after_success[0Ktravis_fold:end:dpl_0[0Ktravis_time:start:0803f180[0Ktravis_fold:start:dpl.1[33mInstalling deploy dependencies[0m
 Successfully installed dpl-script-1.10.13
 Parsing documentation for dpl-script-1.10.13
 Installing ri documentation for dpl-script-1.10.13
@@ -110,4 +110,4 @@ Cloning into '[secure]_st_output'...
 
 ```
 [
-Full job log](https://api.travis-ci.org/v3/job/610801833/log.txt)
+Full job log](https://api.travis-ci.org/v3/job/611163338/log.txt)
