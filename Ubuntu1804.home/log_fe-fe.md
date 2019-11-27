@@ -1,9 +1,9 @@
 ## Status: Passing 
-Build: [1158](https://travis-ci.org/precice/systemtests/builds/617673343) 
+Build: [1161](https://travis-ci.org/precice/systemtests/builds/617683464) 
 
-Job: [1158.16](https://travis-ci.org/precice/systemtests/jobs/617673359) 
+Job: [1161.16](https://travis-ci.org/precice/systemtests/jobs/617683481) 
 
-Triggered by: [push](https://github.com/precice/systemtests/commit/d97574ad98bc) 
+Triggered by: [push](https://github.com/precice/systemtests/compare/ec4ef9d4aedd...6a636c04a7f9) 
 
 ---
 Last 100 lines of the job log at the moment of push:
@@ -30,11 +30,11 @@ Digest: sha256:c19173c5ada610a5989151111163d28a67368362762534d8a8121ce95cf2bd5a
 Status: Downloaded newer image for alpine:latest
  ---> 965ea09ff2eb
 Step 2/8 : ENV tutorial_path tutorials/HT/partitioned-heat/fenics-fenics
- ---> Running in e065595f07b3
- ---> 40648cb6da8f
-Removing intermediate container e065595f07b3
+ ---> Running in d773c3ec1e05
+ ---> 8f721ccdc209
+Removing intermediate container d773c3ec1e05
 Step 3/8 : RUN apk add git
- ---> Running in bfa2684b09bc
+ ---> Running in 315d81308e21
 fetch http://dl-cdn.alpinelinux.org/alpine/v3.10/main/x86_64/APKINDEX.tar.gz
 fetch http://dl-cdn.alpinelinux.org/alpine/v3.10/community/x86_64/APKINDEX.tar.gz
 (1/6) Installing ca-certificates (20190108-r0)
@@ -46,57 +46,57 @@ fetch http://dl-cdn.alpinelinux.org/alpine/v3.10/community/x86_64/APKINDEX.tar.g
 Executing busybox-1.30.1-r2.trigger
 Executing ca-certificates-20190108-r0.trigger
 OK: 21 MiB in 20 packages
- ---> f92c8735e968
-Removing intermediate container bfa2684b09bc
+ ---> 958e44c2ad8a
+Removing intermediate container 315d81308e21
 Step 4/8 : ARG branch=develop
- ---> Running in d31f5e7c5516
- ---> fbae7bb9cb43
-Removing intermediate container d31f5e7c5516
+ ---> Running in 8a87e9df9d56
+ ---> 4a7e846af83a
+Removing intermediate container 8a87e9df9d56
 Step 5/8 : RUN git clone --branch $branch https://github.com/[secure]/tutorials
- ---> Running in e6d37b9a9c19
+ ---> Running in c5e77fedd7b1
 [91mCloning into 'tutorials'...
-[0m ---> 9b4e0265420e
-Removing intermediate container e6d37b9a9c19
+[0m ---> 2439861bc1da
+Removing intermediate container c5e77fedd7b1
 Step 6/8 : RUN mkdir configs && sed -i 's|network="lo"|exchange-directory="/home/[secure]/Data/Exchange/" network="eth0"|g' $tutorial_path/[secure]-config.xml
- ---> Running in 69e123a36ae9
- ---> 7da60ef501be
-Removing intermediate container 69e123a36ae9
+ ---> Running in 65c1ca14f7e1
+ ---> d886dd600463
+Removing intermediate container 65c1ca14f7e1
 Step 7/8 : RUN addgroup -g 1000 [secure] && adduser -u 1000 -G [secure] -D [secure] && chown -R [secure]:[secure] tutorials configs
- ---> Running in e1eb1e1259fb
- ---> a3793d5ca266
-Removing intermediate container e1eb1e1259fb
+ ---> Running in 6fcc8a9df760
+ ---> 8dc46a799bfe
+Removing intermediate container 6fcc8a9df760
 Step 8/8 : USER [secure]
- ---> Running in d07325e685bb
- ---> 919eca8c28e1
-Removing intermediate container d07325e685bb
+ ---> Running in e136934a2fc9
+ ---> 9680f9994d09
+Removing intermediate container e136934a2fc9
 
-Successfully built 919eca8c28e1
+Successfully built 9680f9994d09
 Successfully tagged testcomposefefeubuntu1804home_tutorial-data:latest
 Image for service tutorial-data was built because it did not already exist. To rebuild this image you must use `docker-compose build` or `docker-compose up --build`.
 Pulling fenics-adapter-dirichlet ([secure]/fenics-adapter-ubuntu1804.home-develop:latest)...
 latest: Pulling from [secure]/fenics-adapter-ubuntu1804.home-develop
-Digest: sha256:be685c825ac73107df4310084a4954926f891c444b7a83449b6863082cd9b524
+Digest: sha256:586539c3f7a0c66485780e4e4da773a93250ecc19a24f9d06da2e6105c354b26
 Status: Downloaded newer image for [secure]/fenics-adapter-ubuntu1804.home-develop:latest
 Creating tutorial-data ... 
 Creating tutorial-data
-[1A[2KCreating tutorial-data ... [32mdone[0m[1BCreating fenics-adapter-neumann ... 
-Creating fenics-adapter-dirichlet ... 
+[1A[2KCreating tutorial-data ... [32mdone[0m[1BCreating fenics-adapter-dirichlet ... 
+Creating fenics-adapter-neumann ... 
 Creating fenics-adapter-dirichlet
 Creating fenics-adapter-neumann
-[1A[2KCreating fenics-adapter-dirichlet ... [32mdone[0m[1B[1A[2KCreating fenics-adapter-neumann ... [32mdone[0m[1BRunning the simulation...Be patient
+[1A[2KCreating fenics-adapter-neumann ... [32mdone[0m[1B[1A[2KCreating fenics-adapter-dirichlet ... [32mdone[0m[1BRunning the simulation...Be patient
 All adapters finished!
 EXECUTING: export PRECICE_BASE=-ubuntu1804.home-develop;  docker-compose config &&
                          bash ../../silent_compose.sh
 EXECUTING: docker cp tutorial-data:/Output .
-travis_time:end:008e4a7c:start=1574858098909994262,finish=1574858229470224401,duration=130560230139,event=script[0K[32;1mThe command "python system_testing.py -s fe-fe --base Ubuntu1804.home" exited with 0.[0m
+travis_time:end:02149ced:start=1574861381463668026,finish=1574861510232344425,duration=128768676399,event=script[0K[32;1mThe command "python system_testing.py -s fe-fe --base Ubuntu1804.home" exited with 0.[0m
 
-travis_fold:start:dpl_0[0Ktravis_time:start:125030c9[0K$ rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install dpl
+travis_fold:start:dpl_0[0Ktravis_time:start:26517180[0K$ rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install dpl
 Successfully installed dpl-1.10.14
 Parsing documentation for dpl-1.10.14
 Installing ri documentation for dpl-1.10.14
 Done installing documentation for dpl after 0 seconds
 1 gem installed
-travis_time:end:125030c9:start=1574858234164816424,finish=1574858235783869871,duration=1619053447,event=after_success[0Ktravis_fold:end:dpl_0[0Ktravis_time:start:10e72c04[0Ktravis_fold:start:dpl.1[33mInstalling deploy dependencies[0m
+travis_time:end:26517180:start=1574861514994701624,finish=1574861516754011993,duration=1759310369,event=after_success[0Ktravis_fold:end:dpl_0[0Ktravis_time:start:16525a3a[0Ktravis_fold:start:dpl.1[33mInstalling deploy dependencies[0m
 Successfully installed dpl-script-1.10.14
 Parsing documentation for dpl-script-1.10.14
 Installing ri documentation for dpl-script-1.10.14
@@ -110,4 +110,4 @@ Cloning into '[secure]_st_output'...
 
 ```
 [
-Full job log](https://api.travis-ci.org/v3/job/617673359/log.txt)
+Full job log](https://api.travis-ci.org/v3/job/617683481/log.txt)
