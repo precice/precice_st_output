@@ -1,9 +1,9 @@
 ## Status: Passing 
-Build: [1227](https://travis-ci.org/precice/systemtests/builds/618560778) 
+Build: [1205](https://travis-ci.org/precice/systemtests/builds/618334138) 
 
-Job: [1227.13](https://travis-ci.org/precice/systemtests/jobs/618560793) 
+Job: [1205.13](https://travis-ci.org/precice/systemtests/jobs/618334151) 
 
-Triggered by: [push](https://github.com/precice/systemtests/compare/d440b60eb25a...e486b1f8560f) 
+Triggered by: [push](https://github.com/precice/systemtests/compare/f6ac64c472af...3b2ed1c3a41a) 
 
 ---
 Last 100 lines of the job log at the moment of push:
@@ -11,11 +11,11 @@ Last 100 lines of the job log at the moment of push:
 Status: Downloaded newer image for alpine:latest
  ---> 965ea09ff2eb
 Step 2/10 : ENV tutorial_path tutorials/FSI/flap_perp/SU2-CalculiX
- ---> Running in 579679b309e8
- ---> 868af23916c3
-Removing intermediate container 579679b309e8
+ ---> Running in 9aabc37132b2
+ ---> d17d62d72726
+Removing intermediate container 9aabc37132b2
 Step 3/10 : RUN apk add git bash
- ---> Running in 8c4b2c057893
+ ---> Running in 7b92d5387937
 fetch http://dl-cdn.alpinelinux.org/alpine/v3.10/main/x86_64/APKINDEX.tar.gz
 fetch http://dl-cdn.alpinelinux.org/alpine/v3.10/community/x86_64/APKINDEX.tar.gz
 (1/11) Installing ncurses-terminfo-base (6.1_p20190518-r0)
@@ -33,54 +33,54 @@ Executing bash-5.0.0-r0.post-install
 Executing busybox-1.30.1-r2.trigger
 Executing ca-certificates-20190108-r0.trigger
 OK: 30 MiB in 25 packages
- ---> dbf91d710d4e
-Removing intermediate container 8c4b2c057893
+ ---> ee577552c420
+Removing intermediate container 7b92d5387937
 Step 4/10 : ARG branch=develop
- ---> Running in 1e7584986a1b
- ---> d93eeb596f99
-Removing intermediate container 1e7584986a1b
+ ---> Running in 123791b8bab3
+ ---> d21d4fb1f8dd
+Removing intermediate container 123791b8bab3
 Step 5/10 : RUN git clone --branch $branch https://github.com/[secure]/tutorials
- ---> Running in 3fab648d531d
+ ---> Running in 082c618aca01
 [91mCloning into 'tutorials'...
-[0m ---> 0bb991ca85bc
-Removing intermediate container 3fab648d531d
+[0m ---> eff059db5f7e
+Removing intermediate container 082c618aca01
 Step 6/10 : RUN mkdir configs && sed -e 's|exchange-directory="../"|exchange-directory="/home/[secure]/Data/Exchange/" network="eth0"|g'    $tutorial_path/[secure]-config_serial.xml  > configs/[secure]-config.xml
- ---> Running in 4644feb9280d
- ---> 625ebc9cfcb7
-Removing intermediate container 4644feb9280d
+ ---> Running in ab61404fc0b9
+ ---> 3674a6c52659
+Removing intermediate container ab61404fc0b9
 Step 7/10 : RUN rm $tutorial_path/[secure]-config_serial.xml $tutorial_path/[secure]-config.xml
- ---> Running in d5f632185f26
- ---> bdb589a35b81
-Removing intermediate container d5f632185f26
+ ---> Running in a629018bc4c3
+ ---> c84fac910183
+Removing intermediate container a629018bc4c3
 Step 8/10 : RUN cp $tutorial_path/config.yml configs/
- ---> Running in 0bd3ed9611ac
- ---> 30c946adf8b3
-Removing intermediate container 0bd3ed9611ac
+ ---> Running in f57ecd69ad87
+ ---> 38dbbed8fed1
+Removing intermediate container f57ecd69ad87
 Step 9/10 : RUN addgroup -g 1000 [secure] && adduser -u 1000 -G [secure] -D [secure] && chown -R [secure]:[secure] tutorials configs
- ---> Running in 047020337b3f
- ---> 261676db42d4
-Removing intermediate container 047020337b3f
+ ---> Running in 2bc10a34ac00
+ ---> 01f5402a9a2f
+Removing intermediate container 2bc10a34ac00
 Step 10/10 : USER [secure]
- ---> Running in dec1ea27583e
- ---> 5690b5ef5226
-Removing intermediate container dec1ea27583e
-Successfully built 5690b5ef5226
+ ---> Running in dde05e351d69
+ ---> 9d5d56ca82c7
+Removing intermediate container dde05e351d69
+Successfully built 9d5d56ca82c7
 Successfully tagged testcomposesu2ccx_tutorial-data:latest
 Image for service tutorial-data was built because it did not already exist. To rebuild this image you must use `docker-compose build` or `docker-compose up --build`.
 Pulling calculix-adapter ([secure]/calculix-adapter-ubuntu1604.home-develop:latest)...
 latest: Pulling from [secure]/calculix-adapter-ubuntu1604.home-develop
-Digest: sha256:1816597e56233bf073df0f07c6697126b6edaecbb0ef01a761e52cb6fd17a8dc
+Digest: sha256:4174e4b498a6d21c3425f9480b871a5c0cacbf300264230688b561c96dd6641b
 Status: Downloaded newer image for [secure]/calculix-adapter-ubuntu1604.home-develop:latest
 Pulling su2-adapter ([secure]/su2-adapter-ubuntu1604.home-develop:latest)...
 latest: Pulling from [secure]/su2-adapter-ubuntu1604.home-develop
-Digest: sha256:30ff6f2d96538f561a5878a7f0a706973e9452a7b8291d8bde557a7a51dd26ae
+Digest: sha256:dad04c7db82a975ed9176b64cc2158e80750462f283b29d293b5c20288a3a032
 Status: Downloaded newer image for [secure]/su2-adapter-ubuntu1604.home-develop:latest
 Creating tutorial-data ... 
 Creating tutorial-data
 [1A[2KCreating tutorial-data ... [32mdone[0m[1BCreating calculix-adapter ... 
 Creating su2-adapter ... 
-Creating calculix-adapter
 Creating su2-adapter
+Creating calculix-adapter
 [1A[2KCreating calculix-adapter ... [32mdone[0m[1B[1A[2KCreating su2-adapter ... [32mdone[0m[1BRunning the simulation...Be patient
 Running the simulation...Be patient
 Running the simulation...Be patient
@@ -88,15 +88,15 @@ All adapters finished!
 EXECUTING: export PRECICE_BASE=-ubuntu1604.home-develop;  docker-compose config &&
                          bash ../../silent_compose.sh
 EXECUTING: docker cp tutorial-data:/Output .
-travis_time:end:0ea17f6c:start=1575030554750193457,finish=1575030843378459833,duration=288628266376,event=script[0K[32;1mThe command "python system_testing.py -s su2-ccx" exited with 0.[0m
+travis_time:end:114ecff7:start=1575051705306935304,finish=1575051993818601051,duration=288511665747,event=script[0K[32;1mThe command "python system_testing.py -s su2-ccx" exited with 0.[0m
 
-travis_fold:start:dpl_0[0Ktravis_time:start:253e10b9[0K$ rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install dpl
+travis_fold:start:dpl_0[0Ktravis_time:start:296a01c0[0K$ rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install dpl
 Successfully installed dpl-1.10.14
 Parsing documentation for dpl-1.10.14
 Installing ri documentation for dpl-1.10.14
 Done installing documentation for dpl after 0 seconds
 1 gem installed
-travis_time:end:253e10b9:start=1575030847960942188,finish=1575030849567707303,duration=1606765115,event=after_success[0Ktravis_fold:end:dpl_0[0Ktravis_time:start:14821a34[0Ktravis_fold:start:dpl.1[33mInstalling deploy dependencies[0m
+travis_time:end:296a01c0:start=1575051998296574834,finish=1575051999926081837,duration=1629507003,event=after_success[0Ktravis_fold:end:dpl_0[0Ktravis_time:start:141b7fb0[0Ktravis_fold:start:dpl.1[33mInstalling deploy dependencies[0m
 Successfully installed dpl-script-1.10.14
 Parsing documentation for dpl-script-1.10.14
 Installing ri documentation for dpl-script-1.10.14
@@ -110,4 +110,4 @@ Cloning into '[secure]_st_output'...
 
 ```
 [
-Full job log](https://api.travis-ci.org/v3/job/618560793/log.txt)
+Full job log](https://api.travis-ci.org/v3/job/618334151/log.txt)
