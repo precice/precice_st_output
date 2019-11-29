@@ -1,19 +1,13 @@
 ## Status: Passing 
-Build: [1215](https://travis-ci.org/precice/systemtests/builds/618378110) 
+Build: [1219](https://travis-ci.org/precice/systemtests/builds/618379002) 
 
-Job: [1215.16](https://travis-ci.org/precice/systemtests/jobs/618378126) 
+Job: [1219.16](https://travis-ci.org/precice/systemtests/jobs/618379018) 
 
-Triggered by: [push](https://github.com/precice/systemtests/compare/95fbdb5c2d24...03b1aca5c88d) 
+Triggered by: [push](https://github.com/precice/systemtests/compare/7189d2841f25...dca772ad009c) 
 
 ---
 Last 100 lines of the job log at the moment of push:
 ```
-      '
-    container_name: fenics-adapter-neumann
-    depends_on:
-    - tutorial-data
-    image: [secure]/fenics-adapter-ubuntu1804.home-develop:latest
-    networks:
       [secure]comm: null
     volumes:
     - exchange:/home/[secure]/Data/Exchange:rw
@@ -46,11 +40,11 @@ Digest: sha256:c19173c5ada610a5989151111163d28a67368362762534d8a8121ce95cf2bd5a
 Status: Downloaded newer image for alpine:latest
  ---> 965ea09ff2eb
 Step 2/8 : ENV tutorial_path tutorials/HT/partitioned-heat/fenics-fenics
- ---> Running in 9c7a0de8267a
- ---> 4c8dab2ab1e5
-Removing intermediate container 9c7a0de8267a
+ ---> Running in eb91b57086af
+ ---> 13b4d13ba740
+Removing intermediate container eb91b57086af
 Step 3/8 : RUN apk add git
- ---> Running in fae487255302
+ ---> Running in f737b0713304
 fetch http://dl-cdn.alpinelinux.org/alpine/v3.10/main/x86_64/APKINDEX.tar.gz
 fetch http://dl-cdn.alpinelinux.org/alpine/v3.10/community/x86_64/APKINDEX.tar.gz
 (1/6) Installing ca-certificates (20190108-r0)
@@ -62,36 +56,36 @@ fetch http://dl-cdn.alpinelinux.org/alpine/v3.10/community/x86_64/APKINDEX.tar.g
 Executing busybox-1.30.1-r2.trigger
 Executing ca-certificates-20190108-r0.trigger
 OK: 21 MiB in 20 packages
- ---> 0ac23ac32b79
-Removing intermediate container fae487255302
+ ---> 12b54b54d7ea
+Removing intermediate container f737b0713304
 Step 4/8 : ARG branch=develop
- ---> Running in c61e1cce85c6
- ---> ba8f048cd5ba
-Removing intermediate container c61e1cce85c6
+ ---> Running in dd3e67872d5c
+ ---> 750c73eed256
+Removing intermediate container dd3e67872d5c
 Step 5/8 : RUN git clone --branch $branch https://github.com/[secure]/tutorials
- ---> Running in d7f486c58654
+ ---> Running in a211f744df0e
 [91mCloning into 'tutorials'...
-[0m ---> b3d078f477bf
-Removing intermediate container d7f486c58654
+[0m ---> ddb2b3fc15de
+Removing intermediate container a211f744df0e
 Step 6/8 : RUN mkdir configs && sed -i 's|network="lo"|exchange-directory="/home/[secure]/Data/Exchange/" network="eth0"|g' $tutorial_path/[secure]-config.xml
- ---> Running in a10d8f35b0c0
- ---> 3908a7d27d6a
-Removing intermediate container a10d8f35b0c0
+ ---> Running in 913cfcf2dea1
+ ---> efa1f5af9514
+Removing intermediate container 913cfcf2dea1
 Step 7/8 : RUN addgroup -g 1000 [secure] && adduser -u 1000 -G [secure] -D [secure] && chown -R [secure]:[secure] tutorials configs
- ---> Running in dd8e4847bce1
- ---> a14e7dd9bc24
-Removing intermediate container dd8e4847bce1
+ ---> Running in 368dbcd5f700
+ ---> 3bb2d87cd5e5
+Removing intermediate container 368dbcd5f700
 Step 8/8 : USER [secure]
- ---> Running in 9558dc54e8f1
- ---> 949ee0fcdc51
-Removing intermediate container 9558dc54e8f1
+ ---> Running in 344640fed677
+ ---> 4ada28c86a4c
+Removing intermediate container 344640fed677
 
-Successfully built 949ee0fcdc51
+Successfully built 4ada28c86a4c
 Successfully tagged testcomposefefeubuntu1804home_tutorial-data:latest
 Image for service tutorial-data was built because it did not already exist. To rebuild this image you must use `docker-compose build` or `docker-compose up --build`.
 Pulling fenics-adapter-dirichlet ([secure]/fenics-adapter-ubuntu1804.home-develop:latest)...
 latest: Pulling from [secure]/fenics-adapter-ubuntu1804.home-develop
-Digest: sha256:8996333448b7f62839bb6a15a454d5b349704342c33df0a7939cd3035acaec10
+Digest: sha256:d5679385978db4dbb477b1312b5cbbfac32ab5f26d3aa731f2617790e71b8565
 Status: Downloaded newer image for [secure]/fenics-adapter-ubuntu1804.home-develop:latest
 Creating tutorial-data ... 
 Creating tutorial-data
@@ -99,15 +93,21 @@ Creating tutorial-data
 Creating fenics-adapter-dirichlet ... 
 Creating fenics-adapter-neumann
 Creating fenics-adapter-dirichlet
-[1A[2KCreating fenics-adapter-neumann ... [32mdone[0m[1B[1A[2KCreating fenics-adapter-dirichlet ... [32mdone[0m[1BRunning the simulation...Be patient
+[1A[2KCreating fenics-adapter-dirichlet ... [32mdone[0m[1B[1A[2KCreating fenics-adapter-neumann ... [32mdone[0m[1BRunning the simulation...Be patient
 All adapters finished!
 EXECUTING: export PRECICE_BASE=-ubuntu1804.home-develop;  docker-compose config &&
                          bash ../../silent_compose.sh
 EXECUTING: docker cp tutorial-data:/Output .
-travis_time:end:0029ba8c:start=1575001679078934832,finish=1575001807248936369,duration=128170001537,event=script[0K[32;1mThe command "python system_testing.py -s fe-fe --base Ubuntu1804.home" exited with 0.[0m
+travis_time:end:12dbcc36:start=1575009321982970306,finish=1575009450762213705,duration=128779243399,event=script[0K[32;1mThe command "python system_testing.py -s fe-fe --base Ubuntu1804.home" exited with 0.[0m
 
-travis_fold:start:dpl_0[0Ktravis_time:start:182c1e9d[0K$ rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install dpl
+travis_fold:start:dpl_0[0Ktravis_time:start:0c0cafb3[0K$ rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install dpl
+Successfully installed dpl-1.10.14
+Parsing documentation for dpl-1.10.14
+Installing ri documentation for dpl-1.10.14
+Done installing documentation for dpl after 0 seconds
+1 gem installed
+travis_time:end:0c0cafb3:start=1575009455467894641,finish=1575009457157633789,duration=1689739148,event=after_success[0Ktravis_fold:end:dpl_0[0Ktravis_time:start:073e9ee8[0Ktravis_fold:start:dpl.1[33mInstalling deploy dependencies[0m
 
 ```
 [
-Full job log](https://api.travis-ci.org/v3/job/618378126/log.txt)
+Full job log](https://api.travis-ci.org/v3/job/618379018/log.txt)
