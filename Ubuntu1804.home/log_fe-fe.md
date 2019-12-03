@@ -1,9 +1,9 @@
 ## Status: Passing 
-Build: [1250](https://travis-ci.org/precice/systemtests/builds/620248621) 
+Build: [1253](https://travis-ci.org/precice/systemtests/builds/620270666) 
 
-Job: [1250.16](https://travis-ci.org/precice/systemtests/jobs/620248637) 
+Job: [1253.17](https://travis-ci.org/precice/systemtests/jobs/620270683) 
 
-Triggered by: [push](https://github.com/precice/systemtests/compare/25da98cf068b...23fe0b4a3d6a) 
+Triggered by: [push](https://github.com/precice/systemtests/compare/d9baae2f9648...db99b1df1818) 
 
 ---
 Last 100 lines of the job log at the moment of push:
@@ -30,11 +30,11 @@ Digest: sha256:c19173c5ada610a5989151111163d28a67368362762534d8a8121ce95cf2bd5a
 Status: Downloaded newer image for alpine:latest
  ---> 965ea09ff2eb
 Step 2/8 : ENV tutorial_path tutorials/HT/partitioned-heat/fenics-fenics
- ---> Running in f929d09e12da
- ---> 3b7d211ed7de
-Removing intermediate container f929d09e12da
+ ---> Running in 69d168377eb3
+ ---> 8854c4c1fb2d
+Removing intermediate container 69d168377eb3
 Step 3/8 : RUN apk add git
- ---> Running in 3ad0870a7818
+ ---> Running in eaff18e24258
 fetch http://dl-cdn.alpinelinux.org/alpine/v3.10/main/x86_64/APKINDEX.tar.gz
 fetch http://dl-cdn.alpinelinux.org/alpine/v3.10/community/x86_64/APKINDEX.tar.gz
 (1/6) Installing ca-certificates (20190108-r0)
@@ -46,36 +46,36 @@ fetch http://dl-cdn.alpinelinux.org/alpine/v3.10/community/x86_64/APKINDEX.tar.g
 Executing busybox-1.30.1-r2.trigger
 Executing ca-certificates-20190108-r0.trigger
 OK: 21 MiB in 20 packages
- ---> 481e2b0e1fb5
-Removing intermediate container 3ad0870a7818
+ ---> dae06a1b9d25
+Removing intermediate container eaff18e24258
 Step 4/8 : ARG branch=develop
- ---> Running in f2ccc23fe9e6
- ---> 2e3b32a12342
-Removing intermediate container f2ccc23fe9e6
+ ---> Running in 3de51e142b51
+ ---> 38192316029f
+Removing intermediate container 3de51e142b51
 Step 5/8 : RUN git clone --branch $branch https://github.com/[secure]/tutorials
- ---> Running in e1f20c2ad5a8
+ ---> Running in 44ed5e59ec3e
 [91mCloning into 'tutorials'...
-[0m ---> 3aef00809561
-Removing intermediate container e1f20c2ad5a8
+[0m ---> 69fef0fedda7
+Removing intermediate container 44ed5e59ec3e
 Step 6/8 : RUN mkdir configs && sed -i 's|network="lo"|exchange-directory="/home/[secure]/Data/Exchange/" network="eth0"|g' $tutorial_path/[secure]-config.xml
- ---> Running in 3df776dc0497
- ---> 8818faac759a
-Removing intermediate container 3df776dc0497
+ ---> Running in 0ed66ee28a5b
+ ---> b92a941a912a
+Removing intermediate container 0ed66ee28a5b
 Step 7/8 : RUN addgroup -g 1000 [secure] && adduser -u 1000 -G [secure] -D [secure] && chown -R [secure]:[secure] tutorials configs
- ---> Running in b8859f8e15fc
- ---> e4f2f8a94829
-Removing intermediate container b8859f8e15fc
+ ---> Running in 73ec6792eb4c
+ ---> 6d49a0aa40d1
+Removing intermediate container 73ec6792eb4c
 Step 8/8 : USER [secure]
- ---> Running in 2c41a1d4effc
- ---> 0237fc73d419
-Removing intermediate container 2c41a1d4effc
+ ---> Running in bbbac02afcba
+ ---> b94079201007
+Removing intermediate container bbbac02afcba
 
-Successfully built 0237fc73d419
+Successfully built b94079201007
 Successfully tagged testcomposefefeubuntu1804home_tutorial-data:latest
 Image for service tutorial-data was built because it did not already exist. To rebuild this image you must use `docker-compose build` or `docker-compose up --build`.
 Pulling fenics-adapter-dirichlet ([secure]/fenics-adapter-ubuntu1804.home-develop:latest)...
 latest: Pulling from [secure]/fenics-adapter-ubuntu1804.home-develop
-Digest: sha256:8bd5b01a900d92a3e2e6d58a1fdf2299238ddbc26538813f4f1aa57e71564500
+Digest: sha256:8100f84e6800d3f294c8b65141e6da1c81d0a7791f88e1941315577cec718ff3
 Status: Downloaded newer image for [secure]/fenics-adapter-ubuntu1804.home-develop:latest
 Creating tutorial-data ... 
 Creating tutorial-data
@@ -88,15 +88,15 @@ All adapters finished!
 EXECUTING: export PRECICE_BASE=-ubuntu1804.home-develop;  docker-compose config &&
                          bash ../../silent_compose.sh
 EXECUTING: docker cp tutorial-data:/Output .
-travis_time:end:04e2a65a:start=1575404499992477954,finish=1575404628157720086,duration=128165242132,event=script[0K[32;1mThe command "python system_testing.py -s fe-fe --base Ubuntu1804.home" exited with 0.[0m
+travis_time:end:0f50f7a0:start=1575408880689648092,finish=1575409008220627620,duration=127530979528,event=script[0K[32;1mThe command "python system_testing.py -s fe-fe --base Ubuntu1804.home" exited with 0.[0m
 
-travis_fold:start:dpl_0[0Ktravis_time:start:10a0938c[0K$ rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install dpl
+travis_fold:start:dpl_0[0Ktravis_time:start:1e8f8be4[0K$ rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install dpl
 Successfully installed dpl-1.10.14
 Parsing documentation for dpl-1.10.14
 Installing ri documentation for dpl-1.10.14
 Done installing documentation for dpl after 0 seconds
 1 gem installed
-travis_time:end:10a0938c:start=1575404632816217245,finish=1575404634582382213,duration=1766164968,event=after_success[0Ktravis_fold:end:dpl_0[0Ktravis_time:start:0685888e[0Ktravis_fold:start:dpl.1[33mInstalling deploy dependencies[0m
+travis_time:end:1e8f8be4:start=1575409012692281391,finish=1575409014311718894,duration=1619437503,event=after_success[0Ktravis_fold:end:dpl_0[0Ktravis_time:start:0fe3bb24[0Ktravis_fold:start:dpl.1[33mInstalling deploy dependencies[0m
 Successfully installed dpl-script-1.10.14
 Parsing documentation for dpl-script-1.10.14
 Installing ri documentation for dpl-script-1.10.14
@@ -110,4 +110,4 @@ Cloning into '[secure]_st_output'...
 
 ```
 [
-Full job log](https://api.travis-ci.org/v3/job/620248637/log.txt)
+Full job log](https://api.travis-ci.org/v3/job/620270683/log.txt)
