@@ -1,18 +1,16 @@
-## Status: Passing 
-Build: [1256](https://travis-ci.org/precice/systemtests/builds/620607294) 
+## Status: Failure 
+Build: [1258](https://travis-ci.org/precice/systemtests/builds/620625719) 
 
-Job: [1256.17](https://travis-ci.org/precice/systemtests/jobs/620607320) 
+Job: [1258.16](https://travis-ci.org/precice/systemtests/jobs/620625735) 
 
-Triggered by: [push](https://github.com/precice/systemtests/compare/db99b1df1818...f0c87c5da690) 
+Triggered by: [push](https://github.com/precice/systemtests/compare/23fe0b4a3d6a...ff51dfcb2467) 
+Last successful commits 
+* [fenics-adapter](https://github.com/precice/fenics-adapter/compare/e7c68d5a86fd...311abf90d162)
+* [systemtests](https://github.com/precice/systemtests/compare/e39228c1c8cf63923ead04a7e05071545b49caa0...ec4ef9d4aedd0087dfb3a8ed98fdf7a1267c7751) 
 
 ---
 Last 100 lines of the job log at the moment of push:
 ```
-    container_name: tutorial-data
-    volumes:
-    - output:/Output:rw
-    - input:/tutorials/HT/partitioned-heat/fenics-fenics:rw
-version: '3.4'
 volumes:
   exchange: {}
   input: {}
@@ -30,11 +28,11 @@ Digest: sha256:c19173c5ada610a5989151111163d28a67368362762534d8a8121ce95cf2bd5a
 Status: Downloaded newer image for alpine:latest
  ---> 965ea09ff2eb
 Step 2/8 : ENV tutorial_path tutorials/HT/partitioned-heat/fenics-fenics
- ---> Running in 223c7c4192d6
- ---> 3e04ddeb23ac
-Removing intermediate container 223c7c4192d6
+ ---> Running in 894bbdbca20c
+ ---> 845ebd772212
+Removing intermediate container 894bbdbca20c
 Step 3/8 : RUN apk add git
- ---> Running in b76eee486fdc
+ ---> Running in 4b8643a55fe6
 fetch http://dl-cdn.alpinelinux.org/alpine/v3.10/main/x86_64/APKINDEX.tar.gz
 fetch http://dl-cdn.alpinelinux.org/alpine/v3.10/community/x86_64/APKINDEX.tar.gz
 (1/6) Installing ca-certificates (20190108-r0)
@@ -46,68 +44,73 @@ fetch http://dl-cdn.alpinelinux.org/alpine/v3.10/community/x86_64/APKINDEX.tar.g
 Executing busybox-1.30.1-r2.trigger
 Executing ca-certificates-20190108-r0.trigger
 OK: 21 MiB in 20 packages
- ---> ec2b6b4758de
-Removing intermediate container b76eee486fdc
+ ---> 1116aa14efc1
+Removing intermediate container 4b8643a55fe6
 Step 4/8 : ARG branch=develop
- ---> Running in 72ba9a1ad81f
- ---> f426b964b06c
-Removing intermediate container 72ba9a1ad81f
+ ---> Running in 92196745dd91
+ ---> f75012d2d729
+Removing intermediate container 92196745dd91
 Step 5/8 : RUN git clone --branch $branch https://github.com/[secure]/tutorials
- ---> Running in 2ae94cec2862
+ ---> Running in a08d9ff77fb6
 [91mCloning into 'tutorials'...
-[0m ---> f4d97cdb3c6b
-Removing intermediate container 2ae94cec2862
+[0m ---> 4b609eb8b2ed
+Removing intermediate container a08d9ff77fb6
 Step 6/8 : RUN mkdir configs && sed -i 's|network="lo"|exchange-directory="/home/[secure]/Data/Exchange/" network="eth0"|g' $tutorial_path/[secure]-config.xml
- ---> Running in 293b5fd746d8
- ---> 3e3b406ee473
-Removing intermediate container 293b5fd746d8
+ ---> Running in 01a50a3b6b5b
+ ---> 598c3531c99f
+Removing intermediate container 01a50a3b6b5b
 Step 7/8 : RUN addgroup -g 1000 [secure] && adduser -u 1000 -G [secure] -D [secure] && chown -R [secure]:[secure] tutorials configs
- ---> Running in 515c48002d83
- ---> 11b12da46dab
-Removing intermediate container 515c48002d83
+ ---> Running in 831c937566b7
+ ---> 0d2c3ddad116
+Removing intermediate container 831c937566b7
 Step 8/8 : USER [secure]
- ---> Running in 6856a8c9294f
- ---> 59f74795d31a
-Removing intermediate container 6856a8c9294f
+ ---> Running in 4584ad202df0
+ ---> 784a17e8087f
+Removing intermediate container 4584ad202df0
 
-Successfully built 59f74795d31a
+Successfully built 784a17e8087f
 Successfully tagged testcomposefefeubuntu1804home_tutorial-data:latest
 Image for service tutorial-data was built because it did not already exist. To rebuild this image you must use `docker-compose build` or `docker-compose up --build`.
 Pulling fenics-adapter-dirichlet ([secure]/fenics-adapter-ubuntu1804.home-develop:latest)...
 latest: Pulling from [secure]/fenics-adapter-ubuntu1804.home-develop
-Digest: sha256:b5c84b2964008c9fb28995d11997997d3e28470988434bad0da798e8eacbb448
+Digest: sha256:e6399dfe1966ca7be2eb2a0eabcc69d43dab4b52fcf868e012912f4866d5de04
 Status: Downloaded newer image for [secure]/fenics-adapter-ubuntu1804.home-develop:latest
 Creating tutorial-data ... 
 Creating tutorial-data
-[1A[2KCreating tutorial-data ... [32mdone[0m[1BCreating fenics-adapter-neumann ... 
-Creating fenics-adapter-dirichlet ... 
-Creating fenics-adapter-neumann
+[1A[2KCreating tutorial-data ... [32mdone[0m[1BCreating fenics-adapter-dirichlet ... 
+Creating fenics-adapter-neumann ... 
 Creating fenics-adapter-dirichlet
+Creating fenics-adapter-neumann
 [1A[2KCreating fenics-adapter-neumann ... [32mdone[0m[1B[1A[2KCreating fenics-adapter-dirichlet ... [32mdone[0m[1BRunning the simulation...Be patient
-All adapters finished!
-EXECUTING: export PRECICE_BASE=-ubuntu1804.home-develop;  docker-compose config &&
+Running the simulation...Be patient
+Running the simulation...Be patient
+Running the simulation...Be patient
+Running the simulation...Be patient
+Running the simulation...Be patient
+Running the simulation...Be patient
+Running the simulation...Be patient
+Running the simulation...Be patient
+Running the simulation...Be patient
+Attaching to fenics-adapter-dirichlet
+[36mfenics-adapter-dirichlet    |[0m Default domain partitioning for simple interface is used: Left part of domain is a Dirichlet-type problem; right part is a Neumann-type problem
+[36mfenics-adapter-dirichlet    |[0m Calling FFC just-in-time (JIT) compiler, this may take some time.
+[36mfenics-adapter-dirichlet    |[0m Calling FFC just-in-time (JIT) compiler, this may take some time.
+[36mfenics-adapter-dirichlet    |[0m Calling FFC just-in-time (JIT) compiler, this may take some time.
+[36mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m This is preCICE version 1.6.1
+[36mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m Revision info: v1.6.1-139-g0fd27c29
+[36mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m Configuring preCICE with configuration: "/home/[secure]/Data/Input/[secure]-config.xml"
+[36mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m Run in coupling mode
+[36mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m Setting up master communication to coupling partner/s
+Stopping fenics-adapter-dirichlet ... 
+[1A[2KStopping fenics-adapter-dirichlet ... [32mdone[0m[1BEXECUTING: export PRECICE_BASE=-ubuntu1804.home-develop;  docker-compose config &&
                          bash ../../silent_compose.sh
-EXECUTING: docker cp tutorial-data:/Output .
-travis_time:end:05e55418:start=1575467500104707942,finish=1575467618416623908,duration=118311915966,event=script[0K[32;1mThe command "python system_testing.py -s fe-fe --base Ubuntu1804.home" exited with 0.[0m
+TESTS FAILED WITH: Command 'export PRECICE_BASE=-ubuntu1804.home-develop;  docker-compose config &&
+                         bash ../../silent_compose.sh' returned non-zero exit status 1
+travis_time:end:07adf18e:start=1575471108722834355,finish=1575471789610387121,duration=680887552766,event=script[0K[31;1mThe command "python system_testing.py -s fe-fe --base Ubuntu1804.home" exited with 1.[0m
 
-travis_fold:start:dpl_0[0Ktravis_time:start:027e7295[0K$ rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install dpl
-Successfully installed dpl-1.10.14
-Parsing documentation for dpl-1.10.14
-Installing ri documentation for dpl-1.10.14
-Done installing documentation for dpl after 0 seconds
-1 gem installed
-travis_time:end:027e7295:start=1575467622215388459,finish=1575467623598195926,duration=1382807467,event=after_success[0Ktravis_fold:end:dpl_0[0Ktravis_time:start:0fdfb7c2[0Ktravis_fold:start:dpl.1[33mInstalling deploy dependencies[0m
-Successfully installed dpl-script-1.10.14
-Parsing documentation for dpl-script-1.10.14
-Installing ri documentation for dpl-script-1.10.14
-Done installing documentation for dpl-script after 0 seconds
-1 gem installed
-
-travis_fold:end:dpl.1travis_fold:start:dpl.2[33mPreparing deploy[0m
-
-travis_fold:end:dpl.2travis_fold:start:dpl.3[33mDeploying application[0m
+travis_fold:start:after_failure[0Ktravis_time:start:055dd888[0K$ python push.py -t fe-fe --base Ubuntu1804.home
 Cloning into '[secure]_st_output'...
 
 ```
 [
-Full job log](https://api.travis-ci.org/v3/job/620607320/log.txt)
+Full job log](https://api.travis-ci.org/v3/job/620625735/log.txt)
