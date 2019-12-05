@@ -1,24 +1,14 @@
 ## Status: Passing 
-Build: [1261](https://travis-ci.org/precice/systemtests/builds/620720012) 
+Build: [1264](https://travis-ci.org/precice/systemtests/builds/621025152) 
 
-Job: [1261.19](https://travis-ci.org/precice/systemtests/jobs/620720031) 
+Job: [1264.19](https://travis-ci.org/precice/systemtests/jobs/621025171) 
 
-Triggered by: [push](https://github.com/precice/systemtests/compare/f0c87c5da690...4b1d49be8e29) 
+Triggered by: [push](https://github.com/precice/systemtests/compare/4b1d49be8e29...13952c2945a9) 
 
 ---
 Last 100 lines of the job log at the moment of push:
 ```
-Step 1/12 : FROM alpine
-latest: Pulling from library/alpine
-Digest: sha256:c19173c5ada610a5989151111163d28a67368362762534d8a8121ce95cf2bd5a
-Status: Downloaded newer image for alpine:latest
- ---> 965ea09ff2eb
-Step 2/12 : ENV tutorial_path tutorials/FSI/flap_perp/OpenFOAM-deal.II
- ---> Running in 0cb17ac824be
- ---> ceb3913cf850
-Removing intermediate container 0cb17ac824be
-Step 3/12 : RUN apk add git
- ---> Running in b7aeed7d4b25
+ ---> Running in 172480dba008
 fetch http://dl-cdn.alpinelinux.org/alpine/v3.10/main/x86_64/APKINDEX.tar.gz
 fetch http://dl-cdn.alpinelinux.org/alpine/v3.10/community/x86_64/APKINDEX.tar.gz
 (1/6) Installing ca-certificates (20190108-r0)
@@ -30,60 +20,60 @@ fetch http://dl-cdn.alpinelinux.org/alpine/v3.10/community/x86_64/APKINDEX.tar.g
 Executing busybox-1.30.1-r2.trigger
 Executing ca-certificates-20190108-r0.trigger
 OK: 21 MiB in 20 packages
- ---> dc80b4380c94
-Removing intermediate container b7aeed7d4b25
+ ---> 72e105c60273
+Removing intermediate container 172480dba008
 Step 4/12 : ARG branch=develop
- ---> Running in f39b0f2cb0cf
- ---> 6fae279bd47a
-Removing intermediate container f39b0f2cb0cf
+ ---> Running in c4a3200f45e1
+ ---> 2d6ee6d754b2
+Removing intermediate container c4a3200f45e1
 Step 5/12 : RUN git clone --branch $branch https://github.com/[secure]/tutorials
- ---> Running in 37e5fd8d6e2a
+ ---> Running in 4ab36a06ecd6
 [91mCloning into 'tutorials'...
-[0m ---> 79e96cd39c0c
-Removing intermediate container 37e5fd8d6e2a
+[0m ---> b5a7e4d1ed36
+Removing intermediate container 4ab36a06ecd6
 Step 6/12 : RUN mkdir configs && sed -e 's|gather-scatter"|gather-scatter" exchange-directory="/home/[secure]/Data/Exchange/" network="eth0"|g' $tutorial_path/[secure]-config_serial.xml > configs/[secure]-config.xml
- ---> Running in 7f69823bf079
- ---> 97736a13289f
-Removing intermediate container 7f69823bf079
+ ---> Running in 244b49f281ea
+ ---> c7f07d4e0722
+Removing intermediate container 244b49f281ea
 Step 7/12 : RUN sed -i '/application     pimpleFoam/d; s/\/\/ application     pimpleDyMFoam/application    pimpleDyMFoam/g'     $tutorial_path/Fluid/system/controlDict
- ---> Running in 6760274a361e
- ---> aaad1cd72f2e
-Removing intermediate container 6760274a361e
+ ---> Running in 07060549e7a1
+ ---> fd6ce1ecf09d
+Removing intermediate container 07060549e7a1
 Step 8/12 : RUN rm $tutorial_path/[secure]-config_serial.xml $tutorial_path/[secure]-config.xml
- ---> Running in 7d3448146378
- ---> 8659caf4ce54
-Removing intermediate container 7d3448146378
+ ---> Running in 1a6fe6f53768
+ ---> ebcb0feaff5d
+Removing intermediate container 1a6fe6f53768
 Step 9/12 : RUN rm -rfv $tutorial_path/Fluid/0/
- ---> Running in ee05e1976a74
+ ---> Running in e9e1b164bae6
 removed 'tutorials/FSI/flap_perp/OpenFOAM-deal.II/Fluid/0/p'
 removed 'tutorials/FSI/flap_perp/OpenFOAM-deal.II/Fluid/0/phi'
 removed 'tutorials/FSI/flap_perp/OpenFOAM-deal.II/Fluid/0/U'
 removed 'tutorials/FSI/flap_perp/OpenFOAM-deal.II/Fluid/0/pointDisplacement'
 removed directory: 'tutorials/FSI/flap_perp/OpenFOAM-deal.II/Fluid/0'
- ---> d99789d13c24
-Removing intermediate container ee05e1976a74
+ ---> 0cbbf096ed99
+Removing intermediate container e9e1b164bae6
 Step 10/12 : RUN cp -r $tutorial_path/Fluid/0.orig/ $tutorial_path/Fluid/0/
- ---> Running in a032021025af
- ---> 70ca96db2a98
-Removing intermediate container a032021025af
+ ---> Running in 0fd970bc5d95
+ ---> 45c4cfd22b29
+Removing intermediate container 0fd970bc5d95
 Step 11/12 : RUN addgroup -g 1000 [secure] && adduser -u 1000 -G [secure] -D [secure] && chown -R [secure]:[secure] tutorials configs
- ---> Running in 2c0c31f36437
- ---> e58ef2c0b5b2
-Removing intermediate container 2c0c31f36437
+ ---> Running in 713b88a786f7
+ ---> b72cc110ec6a
+Removing intermediate container 713b88a786f7
 Step 12/12 : USER [secure]
- ---> Running in bb09cbc00ff7
- ---> acfa21159be4
-Removing intermediate container bb09cbc00ff7
-Successfully built acfa21159be4
+ ---> Running in 9d034d105d77
+ ---> 01937c2c83da
+Removing intermediate container 9d034d105d77
+Successfully built 01937c2c83da
 Successfully tagged testcomposedealiiof_tutorial-data:latest
 Image for service tutorial-data was built because it did not already exist. To rebuild this image you must use `docker-compose build` or `docker-compose up --build`.
 Pulling openfoam-adapter ([secure]/openfoam-adapter-ubuntu1604.home-develop:latest)...
 latest: Pulling from [secure]/openfoam-adapter-ubuntu1604.home-develop
-Digest: sha256:adb0bdf9d85c4e2e5a8575830f7c1ee523d8d89a96ef8f07ecee9346af7b4ee6
+Digest: sha256:64bb4629f0595f8e57a085825919ea335ffcf293a1cbd4b373ac03ea321a9673
 Status: Downloaded newer image for [secure]/openfoam-adapter-ubuntu1604.home-develop:latest
 Pulling dealii-adapter ([secure]/dealii-adapter-ubuntu1604.home-develop:latest)...
 latest: Pulling from [secure]/dealii-adapter-ubuntu1604.home-develop
-Digest: sha256:20c07b878037f9d891cf19e14ea2a60898cd2a48cbe9bcd0432d821cba2e303b
+Digest: sha256:844957915331a4f5feb452ab7399469716abc3bc96f91bc1c073ede73e9c1dac
 Status: Downloaded newer image for [secure]/dealii-adapter-ubuntu1604.home-develop:latest
 Creating tutorial-data ... 
 Creating tutorial-data
@@ -98,16 +88,26 @@ All adapters finished!
 EXECUTING: export PRECICE_BASE=-ubuntu1604.home-develop;  docker-compose config &&
                          bash ../../silent_compose.sh
 EXECUTING: docker cp tutorial-data:/Output .
-travis_time:end:003d0270:start=1575482078895688822,finish=1575482349598177299,duration=270702488477,event=script[0K[32;1mThe command "python system_testing.py -s dealii-of" exited with 0.[0m
+travis_time:end:071c4c60:start=1575540589659033707,finish=1575540861153890467,duration=271494856760,event=script[0K[32;1mThe command "python system_testing.py -s dealii-of" exited with 0.[0m
 
-travis_fold:start:dpl_0[0Ktravis_time:start:1196ca4b[0K$ rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install dpl
+travis_fold:start:dpl_0[0Ktravis_time:start:2abb928a[0K$ rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install dpl
 Successfully installed dpl-1.10.14
 Parsing documentation for dpl-1.10.14
 Installing ri documentation for dpl-1.10.14
 Done installing documentation for dpl after 0 seconds
 1 gem installed
-travis_fold:start:dpl.1[33mInstalling deploy dependencies[0m
+travis_time:end:2abb928a:start=1575540865690925373,finish=1575540867273215026,duration=1582289653,event=after_success[0Ktravis_fold:end:dpl_0[0Ktravis_time:start:16e6db90[0Ktravis_fold:start:dpl.1[33mInstalling deploy dependencies[0m
+Successfully installed dpl-script-1.10.14
+Parsing documentation for dpl-script-1.10.14
+Installing ri documentation for dpl-script-1.10.14
+Done installing documentation for dpl-script after 0 seconds
+1 gem installed
+
+travis_fold:end:dpl.1travis_fold:start:dpl.2[33mPreparing deploy[0m
+
+travis_fold:end:dpl.2travis_fold:start:dpl.3[33mDeploying application[0m
+Cloning into '[secure]_st_output'...
 
 ```
 [
-Full job log](https://api.travis-ci.org/v3/job/620720031/log.txt)
+Full job log](https://api.travis-ci.org/v3/job/621025171/log.txt)
