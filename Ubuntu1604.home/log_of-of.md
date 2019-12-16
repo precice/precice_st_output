@@ -1,113 +1,113 @@
 ## Status: Passing 
-Build: [1275](https://travis-ci.org/precice/systemtests/builds/621555096) 
+Build: [1319](https://travis-ci.org/precice/systemtests/builds/625610178) 
 
-Job: [1275.15](https://travis-ci.org/precice/systemtests/jobs/621555111) 
+Job: [1319.18](https://travis-ci.org/precice/systemtests/jobs/625610196) 
 
-Triggered by: [push](https://github.com/precice/systemtests/compare/b8adc727aafb...aff84f792bf7) 
+Triggered by: [cron](https://github.com/precice/systemtests/compare/4f15349af2e6b142f80dbeffbfffd5e75ea93b7e...ff457bed2521c9ab78f7f6e490c7785219151c1e) 
 
 ---
 Last 100 lines of the job log at the moment of push:
 ```
-instance: travis-job-0905653b-a97f-4707-8544-f3edf14a7002 travis-ci-garnet-trusty-1512502259-986baf0 (via amqp)
-startup: 6.366891381s
-travis_fold:end:worker_info[0Ktravis_time:start:022f05dc[0Ktravis_time:end:022f05dc:start=1575641424753466647,finish=1575641424955442611,duration=201975964,event=no_world_writable_dirs[0Ktravis_time:start:1e87bc0a[0Ksing  EditLine wrapper
-[34m[1mopenssl version[0m
-OpenSSL 1.0.1f 6 Jan 2014
-[34m[1mpacker version[0m
-Packer v1.0.2
+travis_fold:end:git.checkout[0K
+travis_time:end:001c9db3:start=1576495606254091156,finish=1576495613083218141,duration=6829126985,event=checkout[0Ktravis_time:start:09039354[0K
+[33;1mSetting environment variables from repository settings[0m
+$ export DOCKER_PASSWORD=[secure]
+$ export DOCKER_USERNAME=[secure]
+$ export TRAVIS_ACCESS_TOKEN=[secure]
+$ export PRECICE_BOT_EMAIL=[secure]
+$ export GH_TOKEN=[secure]
 
-Your version of Packer is out of date! The latest version
-is 1.1.2. You can update by downloading from www.packer.io
-[34m[1mpostgresql client version[0m
-psql (PostgreSQL) 9.6.6
-[34m[1mragel version[0m
-Ragel State Machine Compiler version 6.8 Feb 2013
-Copyright (c) 2001-2009 by Adrian Thurston
-[34m[1msubversion version[0m
-svn, version 1.8.8 (r1568071)
-   compiled Aug 10 2017, 17:20:39 on x86_64-pc-linux-gnu
+travis_time:end:09039354:start=1576495613088635669,finish=1576495613100403422,duration=11767753,event=env[0Ktravis_time:start:116c8368[0K$ source ~/virtualenv/python3.5/bin/activate
+travis_time:end:116c8368:start=1576495613106394360,finish=1576495613112651772,duration=6257412,event=[0K$ python --version
+Python 3.5.6
+$ pip --version
+pip 18.0 from /home/travis/virtualenv/python3.5.6/lib/python3.5/site-packages/pip (python 3.5)
+Could not locate requirements.txt. Override the install: key in your .travis.yml to install dependencies.
+travis_time:start:2442e1be[0K$ python system_testing.py -s of-of
+networks:
+  [secure]comm: {}
+services:
+  openfoam-adapter-fluid:
+    command: '/bin/bash -c "source /opt/openfoam4/etc/bashrc &&  cd /home/[secure]/openfoam-adapter/tutorials/CHT/flow-over-plate/buoyantPimpleFoam-laplacianFoam
+      && sed -i ''s|gather-scatter\"|gather-scatter\" exchange-directory=\"/home/[secure]/Data/Exchange/\"
+      network=\"eth0\"|g'' [secure]-config_serial.xml && ./runFluid && cp -r Fluid/
+      /home/[secure]/Data/Output/"
 
-Copyright (C) 2013 The Apache Software Foundation.
-This software consists of contributions made by many people;
-see the NOTICE file for more information.
-Subversion is open source software, see http://subversion.apache.org/
+      '
+    container_name: openfoam-adapter-fluid
+    image: [secure]/openfoam-adapter-ubuntu1604.home-develop:latest
+    networks:
+      [secure]comm: null
+    volumes:
+    - exchange:/home/[secure]/Data/Exchange:rw
+    - output:/home/[secure]/Data/Output:rw
+  openfoam-adapter-solid:
+    command: '/bin/bash -c "source /opt/openfoam4/etc/bashrc &&  cd /home/[secure]/openfoam-adapter/tutorials/CHT/flow-over-plate/buoyantPimpleFoam-laplacianFoam
+      && sed -i ''s|gather-scatter\"|gather-scatter\" exchange-directory=\"/home/[secure]/Data/Exchange/\"
+      network=\"eth0\"|g'' [secure]-config_serial.xml && ./runSolid && cp -r Solid/
+      /home/[secure]/Data/Output/"
 
-The following repository access (RA) modules are available:
+      '
+    container_name: openfoam-adapter-solid
+    image: [secure]/openfoam-adapter-ubuntu1604.home-develop:latest
+    networks:
+      [secure]comm: null
+    volumes:
+    - exchange:/home/[secure]/Data/Exchange:rw
+    - output:/home/[secure]/Data/Output:rw
+  tutorial-data:
+    container_name: tutorial-data
+    image: alpine
+    volumes:
+    - output:/Output:rw
+version: '3.0'
+volumes:
+  exchange: {}
+  output: {}
 
-* ra_svn : Module for accessing a repository using the svn network protocol.
-  - with Cyrus SASL authentication
-  - handles 'svn' scheme
-* ra_local : Module for accessing a repository on local disk.
-  - handles 'file' scheme
-* ra_serf : Module for accessing a repository via WebDAV protocol using serf.
-  - using serf 1.3.3
-  - handles 'http' scheme
-  - handles 'https' scheme
+Creating network "testcomposeofof_default" with the default driver
+Creating network "testcomposeofof_[secure]comm" with the default driver
+Creating volume "testcomposeofof_output" with default driver
+Creating volume "testcomposeofof_exchange" with default driver
+Pulling tutorial-data (alpine:latest)...
+latest: Pulling from library/alpine
+Digest: sha256:c19173c5ada610a5989151111163d28a67368362762534d8a8121ce95cf2bd5a
+Status: Downloaded newer image for alpine:latest
+Pulling openfoam-adapter-fluid ([secure]/openfoam-adapter-ubuntu1604.home-develop:latest)...
+latest: Pulling from [secure]/openfoam-adapter-ubuntu1604.home-develop
+Digest: sha256:1ba6b0e960501300870aabf7bfa64d904caeff59808132a5da9e69953621da51
+Status: Downloaded newer image for [secure]/openfoam-adapter-ubuntu1604.home-develop:latest
+Creating openfoam-adapter-fluid ... 
+Creating tutorial-data ... 
+Creating openfoam-adapter-solid ... 
+Creating openfoam-adapter-fluid
+Creating tutorial-data
+Creating openfoam-adapter-solid
+[1A[2KCreating openfoam-adapter-solid ... [32mdone[0m[1B[1A[2KCreating tutorial-data ... [32mdone[0m[1B[1A[2KCreating openfoam-adapter-fluid ... [32mdone[0m[1BRunning the simulation...Be patient
+All adapters finished!
+EXECUTING: export PRECICE_BASE=-ubuntu1604.home-develop;  docker-compose config &&
+                         bash ../../silent_compose.sh
+EXECUTING: docker cp tutorial-data:/Output .
+travis_time:end:2442e1be:start=1576495613467610834,finish=1576495733586134654,duration=120118523820,event=script[0K[32;1mThe command "python system_testing.py -s of-of" exited with 0.[0m
 
-[34m[1msudo version[0m
-Sudo version 1.8.9p5
-Configure options: --prefix=/usr -v --with-all-insults --with-pam --with-fqdn --with-logging=syslog --with-logfac=authpriv --with-env-editor --with-editor=/usr/bin/editor --with-timeout=15 --with-password-timeout=0 --with-passprompt=[sudo] password for %p:  --without-lecture --with-tty-tickets --disable-root-mailer --enable-admin-flag --with-sendmail=/usr/sbin/seon Regulations (section 740.13(e)) of 6 June 2002.
+travis_fold:start:dpl_0[0Ktravis_time:start:0ab3bed8[0K$ rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install dpl
+Successfully installed dpl-1.10.14
+Parsing documentation for dpl-1.10.14
+Installing ri documentation for dpl-1.10.14
+Done installing documentation for dpl after 0 seconds
+1 gem installed
+travis_time:end:0ab3bed8:start=1576495738575710136,finish=1576495740306977771,duration=1731267635,event=after_success[0Ktravis_fold:end:dpl_0[0Ktravis_time:start:12ea1a94[0Ktravis_fold:start:dpl.1[33mInstalling deploy dependencies[0m
+Successfully installed dpl-script-1.10.14
+Parsing documentation for dpl-script-1.10.14
+Installing ri documentation for dpl-script-1.10.14
+Done installing documentation for dpl-script after 0 seconds
+1 gem installed
 
-Zip environment options:
-             ZIP:  [none]
-          ZIPOPT:  [none]
-[34m[1mvim version[0m
-VIM - Vi IMproved 7.4 (2013 Aug 10, compiled Nov 24 2016 16:43:18)
-Included patches: 1-52
-Extra patches: 8.0.0056
-Modified by pkg-vim-maintainers@lists.alioth.debian.org
-Compiled by buildd@
-Huge version without GUI.  Features included (+) or not (-):
-+acl             +farsi           +mouse_netterm   +syntax
-+arabic          +file_in_path    +mouse_sgr       +tag_binary
-+autocmd         +find_in_path    -mouse_sysmouse  +tag_old_static
--balloon_eval    +float           +mouse_urxvt     -tag_any_white
--browse          +folding         +mouse_xterm     -tcl
-++builtin_terms  -footer          +multi_byte      +terminfo
-+byte_offset     +fork()          +multi_lang      +termresponse
-+cindent         +gettext         -mzscheme        +textobjects
--clientserver    -hangul_input    +netbeans_intg   +title
--clipboard       +iconv           +path_extra      -toolbar
-+cmdline_compl   +insert_expand   -perl            +user_commands
-+cmdline_hist    +jumplist        +persistent_undo +vertsplit
-+cmdline_info    +keymap          +postscript      +virtualedit
-+comments        +langmap         +printer         +visual
-+conceal         +libcall         +profile         +visualextra
-+cryptv          +linebreak       +python          +viminfo
-+cscope          +lispindent      -python3         +vreplace
-+cursorbind      +listcmds        +quickfix        +wildignore
-+cursorshape     +localmap        +reltime         +wildmenu
-+dialog_con      -lua             +rightleft       +windows
-+diff            +menu            -ruby            +writebackup
-+digraphs        +mksession       +scrollbind      -X11
--dnd             +modify_fname    +signs           -xfontset
--ebcdic          +mouse           +smartindent     -xim
-+emacs_tags      -mouseshape      -sniff           -xsmp
-+eval            +mouse_dec       +startuptime     -xterm_clipboard
-+ex_extra        +mouse_gpm       +statusline      -xterm_save
-+extra_search    -mouse_jsbterm   -sun_workshop    -xpm
-   system vimrc file: "$VIM/vimrc"
-     user vimrc file: "$HOME/.vimrc"
- 2nd user vimrc file: "~/.vim/vimrc"
-      user exrc file: "$HOME/.exrc"
-  fall-back for $VIM: "/usr/share/vim"
-Compilation: gcc -c -I. -Iproto -DHAVE_CONFIG_H     -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1      
-Linking: gcc   -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,--as-needed -o vim        -lm -ltinfo -lnsl  -lselinux  -lacl -lattr -lgpm -ldl    -L/usr/lib/python2.7/config-x86_64-linux-gnu -lpython2.7 -lpthread -ldl -lutil -lm -Xlinker -export-dynamic -Wl,-O1 -Wl,-Bsymbolic-functions      
-[34m[1miptables version[0m
-iptables v1.4.21
-[34m[1mcurl version[0m
-curl 7.35.0 (x86_64-pc-linux-gnu) libcurl/7.35.0 OpenSSL/1.0.1f zlib/1.2.8 libidn/1.28 librtmp/2.3
-[34m[1mwget version[0m
-GNU Wget 1.15 built on linux-gnu.
-[34m[1mrsync version[0m
-rsync  version 3.1.0  protocol version 31
-[34m[1mgimme version[0m
-v1.2.0
-[34m[1mnvm version[0m
-0.33.6
-[34m[1mperlbrew version[0m
-/home/travis/perl5/perlbrew/bin/perlbrew  - App::perlbrew/0.80
-[34m[1mtravis_time:end:06c13e14:start=1575641425444224632,finish=1575641426511962461,duration=1067737829,event=update_apt_keys[0Ktravis_time:start:31841501[0Ktravis_time:end:31841501:start=1575641426516284846,finish=1575641427566446305,duration=1050161459,event=fix_hhvm_source[0Ktravis_time:start:229883c4[0Ktravis_time:end:229883c4:start=1575641427570706279,finish=1575641427581827543,duration=11121264,event=update_mongo_arch[0Ktravis_time:start:0a4f8530[0K
+travis_fold:end:dpl.1travis_fold:start:dpl.2[33mPreparing deploy[0m
+
+travis_fold:end:dpl.2travis_fold:start:dpl.3[33mDeploying application[0m
+Cloning into '[secure]_st_output'...
+
 ```
 [
-Full job log](https://api.travis-ci.org/v3/job/621555111/log.txt)
+Full job log](https://api.travis-ci.org/v3/job/625610196/log.txt)
