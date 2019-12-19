@@ -14,11 +14,11 @@ Last 100 lines of the job log at the moment of push:
 Status: Downloaded newer image for alpine:latest
  ---> 965ea09ff2eb
 Step 2/8 : ENV tutorial_path tutorials/HT/partitioned-heat/fenics-fenics
- ---> Running in 3939256fd627
- ---> b9241d9abb41
-Removing intermediate container 3939256fd627
+ ---> Running in 61225aa4d10d
+ ---> 49b3e1d49325
+Removing intermediate container 61225aa4d10d
 Step 3/8 : RUN apk add git
- ---> Running in 92624fb314e6
+ ---> Running in 791751ed456b
 fetch http://dl-cdn.alpinelinux.org/alpine/v3.10/main/x86_64/APKINDEX.tar.gz
 fetch http://dl-cdn.alpinelinux.org/alpine/v3.10/community/x86_64/APKINDEX.tar.gz
 (1/6) Installing ca-certificates (20190108-r0)
@@ -30,31 +30,31 @@ fetch http://dl-cdn.alpinelinux.org/alpine/v3.10/community/x86_64/APKINDEX.tar.g
 Executing busybox-1.30.1-r2.trigger
 Executing ca-certificates-20190108-r0.trigger
 OK: 21 MiB in 20 packages
- ---> 3ee95a0932fc
-Removing intermediate container 92624fb314e6
+ ---> 314a100dcc93
+Removing intermediate container 791751ed456b
 Step 4/8 : ARG branch=develop
- ---> Running in 948ab92370e7
- ---> 130e21e260cd
-Removing intermediate container 948ab92370e7
+ ---> Running in 6f7d10888e80
+ ---> 921da01d641b
+Removing intermediate container 6f7d10888e80
 Step 5/8 : RUN git clone --branch $branch https://github.com/[secure]/tutorials
- ---> Running in 8bde8feb6e9f
+ ---> Running in 5c44432be3e0
 [91mCloning into 'tutorials'...
-[0m ---> 6cb135203f49
-Removing intermediate container 8bde8feb6e9f
+[0m ---> e1ae1dbd5cb1
+Removing intermediate container 5c44432be3e0
 Step 6/8 : RUN mkdir configs && sed -i 's|network="lo"|exchange-directory="/home/[secure]/Data/Exchange/" network="eth0"|g' $tutorial_path/[secure]-config.xml
- ---> Running in a13a943de7b2
- ---> c2fb0627b7a8
-Removing intermediate container a13a943de7b2
+ ---> Running in 0880a52493f6
+ ---> 9b73118400da
+Removing intermediate container 0880a52493f6
 Step 7/8 : RUN addgroup -g 1000 [secure] && adduser -u 1000 -G [secure] -D [secure] && chown -R [secure]:[secure] tutorials configs
- ---> Running in 7e188ed2736d
- ---> ad5eb9a0a9fd
-Removing intermediate container 7e188ed2736d
+ ---> Running in 7b5fb0600395
+ ---> cd5a7d8bdfec
+Removing intermediate container 7b5fb0600395
 Step 8/8 : USER [secure]
- ---> Running in 3fa0ae2ae5ad
- ---> 61a2e91e31c8
-Removing intermediate container 3fa0ae2ae5ad
+ ---> Running in bc8c6afe7b24
+ ---> cc8a1962eab9
+Removing intermediate container bc8c6afe7b24
 
-Successfully built 61a2e91e31c8
+Successfully built cc8a1962eab9
 Successfully tagged testcomposefefeubuntu1804home_tutorial-data:latest
 Image for service tutorial-data was built because it did not already exist. To rebuild this image you must use `docker-compose build` or `docker-compose up --build`.
 Pulling fenics-adapter-dirichlet ([secure]/fenics-adapter-ubuntu1804.home-develop:latest)...
@@ -65,9 +65,9 @@ Creating tutorial-data ...
 Creating tutorial-data
 [1A[2KCreating tutorial-data ... [32mdone[0m[1BCreating fenics-adapter-neumann ... 
 Creating fenics-adapter-dirichlet ... 
-Creating fenics-adapter-dirichlet
 Creating fenics-adapter-neumann
-[1A[2KCreating fenics-adapter-dirichlet ... [32mdone[0m[1B[1A[2KCreating fenics-adapter-neumann ... [32mdone[0m[1BRunning the simulation...Be patient
+Creating fenics-adapter-dirichlet
+[1A[2KCreating fenics-adapter-neumann ... [32mdone[0m[1B[1A[2KCreating fenics-adapter-dirichlet ... [32mdone[0m[1BRunning the simulation...Be patient
 Running the simulation...Be patient
 Running the simulation...Be patient
 Running the simulation...Be patient
@@ -106,9 +106,9 @@ EXECUTING: export PRECICE_BASE=-ubuntu1804.home-develop;  docker-compose config 
                          bash ../../silent_compose.sh
 TESTS FAILED WITH: Command 'export PRECICE_BASE=-ubuntu1804.home-develop;  docker-compose config &&
                          bash ../../silent_compose.sh' returned non-zero exit status 1
-travis_time:end:0c61b169:start=1576764366445735468,finish=1576765045561912201,duration=679116176733,event=script[0K[31;1mThe command "python system_testing.py -s fe-fe --base Ubuntu1804.home" exited with 1.[0m
+travis_time:end:005a1040:start=1576765405758101298,finish=1576766084667459946,duration=678909358648,event=script[0K[31;1mThe command "python system_testing.py -s fe-fe --base Ubuntu1804.home" exited with 1.[0m
 
-travis_fold:start:after_failure[0Ktravis_time:start:02793f16[0K$ python push.py -t fe-fe --base Ubuntu1804.home
+travis_fold:start:after_failure[0Ktravis_time:start:0057e7a8[0K$ python push.py -t fe-fe --base Ubuntu1804.home
 Cloning into '[secure]_st_output'...
 
 ```
