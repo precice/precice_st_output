@@ -1,50 +1,27 @@
-## Status: Passing 
-Build: [1324](https://travis-ci.org/precice/systemtests/builds/626625324) 
+## Status: Failure 
+Build: [1326](https://travis-ci.org/precice/systemtests/builds/627156304) 
 
-Job: [1324.20](https://travis-ci.org/precice/systemtests/jobs/626625352) 
+Job: [1326.20](https://travis-ci.org/precice/systemtests/jobs/627156324) 
 
 Triggered by: [cron](https://github.com/precice/systemtests/compare/4f15349af2e6b142f80dbeffbfffd5e75ea93b7e...ff457bed2521c9ab78f7f6e490c7785219151c1e) 
+Last successful commits 
+* [systemtests](https://github.com/precice/systemtests/compare/4f15349af2e6b142f80dbeffbfffd5e75ea93b7e...ff457bed2521c9ab78f7f6e490c7785219151c1e)
+* [fenics-adapter](https://github.com/precice/fenics-adapter/compare/e7c68d5a86fd...311abf90d162) 
 
 ---
 Last 100 lines of the job log at the moment of push:
 ```
-      [secure]comm: null
-    volumes:
-    - exchange:/home/[secure]/Data/Exchange:rw
-    - output:/home/[secure]/Data/Output:rw
-    - input:/home/[secure]/Data/Input:rw
-  tutorial-data:
-    build:
-      context: /home/travis/build/[secure]/systemtests/tests/TestCompose_fe-fe.Ubuntu1804.home
-      dockerfile: Dockerfile.tutorial_data
-      network: host
-    container_name: tutorial-data
-    volumes:
-    - output:/Output:rw
-    - input:/tutorials/HT/partitioned-heat/fenics-fenics:rw
-version: '3.4'
-volumes:
-  exchange: {}
-  input: {}
-  output: {}
-
-Creating network "testcomposefefeubuntu1804home_default" with the default driver
-Creating network "testcomposefefeubuntu1804home_[secure]comm" with the default driver
-Creating volume "testcomposefefeubuntu1804home_output" with default driver
-Creating volume "testcomposefefeubuntu1804home_input" with default driver
-Creating volume "testcomposefefeubuntu1804home_exchange" with default driver
-Building tutorial-data
 Step 1/8 : FROM alpine
 latest: Pulling from library/alpine
 Digest: sha256:c19173c5ada610a5989151111163d28a67368362762534d8a8121ce95cf2bd5a
 Status: Downloaded newer image for alpine:latest
  ---> 965ea09ff2eb
 Step 2/8 : ENV tutorial_path tutorials/HT/partitioned-heat/fenics-fenics
- ---> Running in 02f89b86dd83
- ---> 17c47b47f8f8
-Removing intermediate container 02f89b86dd83
+ ---> Running in 59145260e5de
+ ---> 144339a6246e
+Removing intermediate container 59145260e5de
 Step 3/8 : RUN apk add git
- ---> Running in 3a8c34259fdd
+ ---> Running in da7809780ec4
 fetch http://dl-cdn.alpinelinux.org/alpine/v3.10/main/x86_64/APKINDEX.tar.gz
 fetch http://dl-cdn.alpinelinux.org/alpine/v3.10/community/x86_64/APKINDEX.tar.gz
 (1/6) Installing ca-certificates (20190108-r0)
@@ -56,58 +33,84 @@ fetch http://dl-cdn.alpinelinux.org/alpine/v3.10/community/x86_64/APKINDEX.tar.g
 Executing busybox-1.30.1-r2.trigger
 Executing ca-certificates-20190108-r0.trigger
 OK: 21 MiB in 20 packages
- ---> 64ce07d99fa6
-Removing intermediate container 3a8c34259fdd
+ ---> 0c76eea1620e
+Removing intermediate container da7809780ec4
 Step 4/8 : ARG branch=develop
- ---> Running in 2630afd916a0
- ---> fdce3e435b29
-Removing intermediate container 2630afd916a0
+ ---> Running in b30dbfebdc84
+ ---> 7f8a3775b8fd
+Removing intermediate container b30dbfebdc84
 Step 5/8 : RUN git clone --branch $branch https://github.com/[secure]/tutorials
- ---> Running in ea33fd533d14
+ ---> Running in e982d8421e1c
 [91mCloning into 'tutorials'...
-[0m ---> aa27bacf48f4
-Removing intermediate container ea33fd533d14
+[0m ---> 8afbc16163a4
+Removing intermediate container e982d8421e1c
 Step 6/8 : RUN mkdir configs && sed -i 's|network="lo"|exchange-directory="/home/[secure]/Data/Exchange/" network="eth0"|g' $tutorial_path/[secure]-config.xml
- ---> Running in e3a60429bb1c
- ---> a98e3065f36d
-Removing intermediate container e3a60429bb1c
+ ---> Running in fde76b8a3515
+ ---> 22ff248622a0
+Removing intermediate container fde76b8a3515
 Step 7/8 : RUN addgroup -g 1000 [secure] && adduser -u 1000 -G [secure] -D [secure] && chown -R [secure]:[secure] tutorials configs
- ---> Running in de98b3bed7c0
- ---> e2837d40cabe
-Removing intermediate container de98b3bed7c0
+ ---> Running in ea8b366cc405
+ ---> f0c7ee2883f0
+Removing intermediate container ea8b366cc405
 Step 8/8 : USER [secure]
- ---> Running in 1cad6dfbd906
- ---> ebe9bfb53641
-Removing intermediate container 1cad6dfbd906
+ ---> Running in 2b6251f13690
+ ---> 9d2f7fe224b8
+Removing intermediate container 2b6251f13690
 
-Successfully built ebe9bfb53641
+Successfully built 9d2f7fe224b8
 Successfully tagged testcomposefefeubuntu1804home_tutorial-data:latest
 Image for service tutorial-data was built because it did not already exist. To rebuild this image you must use `docker-compose build` or `docker-compose up --build`.
 Pulling fenics-adapter-dirichlet ([secure]/fenics-adapter-ubuntu1804.home-develop:latest)...
 latest: Pulling from [secure]/fenics-adapter-ubuntu1804.home-develop
-Digest: sha256:24fb0fa5713d51a5f6084db891561076450d74e7d77820f14c59595470714e44
+Digest: sha256:cbe3d752e45d650f5874e97da02d75f111335dd1af323047ce3c7a89616daa27
 Status: Downloaded newer image for [secure]/fenics-adapter-ubuntu1804.home-develop:latest
 Creating tutorial-data ... 
 Creating tutorial-data
 [1A[2KCreating tutorial-data ... [32mdone[0m[1BCreating fenics-adapter-dirichlet ... 
 Creating fenics-adapter-neumann ... 
-Creating fenics-adapter-neumann
 Creating fenics-adapter-dirichlet
+Creating fenics-adapter-neumann
 [1A[2KCreating fenics-adapter-dirichlet ... [32mdone[0m[1B[1A[2KCreating fenics-adapter-neumann ... [32mdone[0m[1BRunning the simulation...Be patient
-All adapters finished!
-EXECUTING: export PRECICE_BASE=-ubuntu1804.home-develop;  docker-compose config &&
+Running the simulation...Be patient
+Running the simulation...Be patient
+Running the simulation...Be patient
+Running the simulation...Be patient
+Running the simulation...Be patient
+Running the simulation...Be patient
+Running the simulation...Be patient
+Running the simulation...Be patient
+Running the simulation...Be patient
+Attaching to fenics-adapter-dirichlet
+[36mfenics-adapter-dirichlet    |[0m Default domain partitioning for simple interface is used: Left part of domain is a Dirichlet-type problem; right part is a Neumann-type problem
+[36mfenics-adapter-dirichlet    |[0m Calling FFC just-in-time (JIT) compiler, this may take some time.
+[36mfenics-adapter-dirichlet    |[0m Calling FFC just-in-time (JIT) compiler, this may take some time.
+[36mfenics-adapter-dirichlet    |[0m Calling FFC just-in-time (JIT) compiler, this may take some time.
+[36mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m This is preCICE version 1.6.1
+[36mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m Revision info: v1.6.1-171-gefeebbfe
+[36mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m Configuring preCICE with configuration: "/home/[secure]/Data/Input/[secure]-config.xml"
+[36mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m Run in coupling mode
+[36mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m Setting up master communication to coupling partner/s
+Stopping fenics-adapter-dirichlet ... 
+[1A[2KStopping fenics-adapter-dirichlet ... [32mdone[0m[1BAttaching to fenics-adapter-neumann
+[36mfenics-adapter-neumann      |[0m Default domain partitioning for simple interface is used: Left part of domain is a Dirichlet-type problem; right part is a Neumann-type problem
+[36mfenics-adapter-neumann      |[0m Calling FFC just-in-time (JIT) compiler, this may take some time.
+[36mfenics-adapter-neumann      |[0m Calling FFC just-in-time (JIT) compiler, this may take some time.
+[36mfenics-adapter-neumann      |[0m Calling FFC just-in-time (JIT) compiler, this may take some time.
+[36mfenics-adapter-neumann      |[0m ---[[secure]] [0m This is preCICE version 1.6.1
+[36mfenics-adapter-neumann      |[0m ---[[secure]] [0m Revision info: v1.6.1-171-gefeebbfe
+[36mfenics-adapter-neumann      |[0m ---[[secure]] [0m Configuring preCICE with configuration: "/home/[secure]/Data/Input/[secure]-config.xml"
+[36mfenics-adapter-neumann      |[0m ---[[secure]] [0m Run in coupling mode
+[36mfenics-adapter-neumann      |[0m ---[[secure]] [0m Setting up master communication to coupling partner/s
+Stopping fenics-adapter-neumann ... 
+[1A[2KStopping fenics-adapter-neumann ... [32mdone[0m[1BEXECUTING: export PRECICE_BASE=-ubuntu1804.home-develop;  docker-compose config &&
                          bash ../../silent_compose.sh
-EXECUTING: docker cp tutorial-data:/Output .
-travis_time:end:1461e1d1:start=1576670224585209304,finish=1576670347288775480,duration=122703566176,event=script[0K[32;1mThe command "python system_testing.py -s fe-fe --base Ubuntu1804.home" exited with 0.[0m
+TESTS FAILED WITH: Command 'export PRECICE_BASE=-ubuntu1804.home-develop;  docker-compose config &&
+                         bash ../../silent_compose.sh' returned non-zero exit status 1
+travis_time:end:1a96d1b2:start=1576754639014016190,finish=1576755316891868602,duration=677877852412,event=script[0K[31;1mThe command "python system_testing.py -s fe-fe --base Ubuntu1804.home" exited with 1.[0m
 
-travis_fold:start:dpl_0[0Ktravis_time:start:2951fe02[0K$ rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install dpl
-Successfully installed dpl-1.10.14
-Parsing documentation for dpl-1.10.14
-Installing ri documentation for dpl-1.10.14
-Done installing documentation for dpl after 0 seconds
-1 gem installed
-travis_time:end:2951fe02:start=1576670352016557912,finish=1576670353628021750,duration=1611463838,event=after_success[0Ktravis_fold:end:dpl_0[0Ktravis_time:start:03395df0[0Ktravis_fold:start:dpl.1[33mInstalling deploy dependencies[0m
+travis_fold:start:after_failure[0Ktravis_time:start:0a53fa41[0K$ python push.py -t fe-fe --base Ubuntu1804.home
+Cloning into '[secure]_st_output'...
 
 ```
 [
-Full job log](https://api.travis-ci.org/v3/job/626625352/log.txt)
+Full job log](https://api.travis-ci.org/v3/job/627156324/log.txt)
