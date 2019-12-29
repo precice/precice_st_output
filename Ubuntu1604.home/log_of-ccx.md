@@ -1,53 +1,68 @@
 ## Status: Failure 
-Build: [1366](https://travis-ci.org/precice/systemtests/builds/630280475) 
+Build: [1370](https://travis-ci.org/precice/systemtests/builds/630566787) 
 
-Job: [1366.19](https://travis-ci.org/precice/systemtests/jobs/630280495) 
+Job: [1370.19](https://travis-ci.org/precice/systemtests/jobs/630566806) 
 
 Triggered by: [cron](https://github.com/precice/systemtests/compare/ff457bed2521c9ab78f7f6e490c7785219151c1e...968fe698268820917cf52199d2d3dcbaaf61fbaf) 
 Last successful commits 
+* [openfoam-adapter](https://github.com/precice/openfoam-adapter/compare/7566319387fe...59b44bf3cbdc)
 * [calculix-adapter](https://github.com/precice/calculix-adapter/compare/6e941caa282e...b01641e40c11)
-* [systemtests](https://github.com/precice/systemtests/compare/4f15349af2e6b142f80dbeffbfffd5e75ea93b7e...ff457bed2521c9ab78f7f6e490c7785219151c1e)
-* [openfoam-adapter](https://github.com/precice/openfoam-adapter/compare/7566319387fe...59b44bf3cbdc) 
+* [systemtests](https://github.com/precice/systemtests/compare/4f15349af2e6b142f80dbeffbfffd5e75ea93b7e...ff457bed2521c9ab78f7f6e490c7785219151c1e) 
 
 ---
 Last 100 lines of the job log at the moment of push:
 ```
-[0m[91m-                     26% |********                        | 6834k  0:00:49 ETA
-[0m[91m-                     28% |*********                       | 7397k  0:00:46 ETA
-[0m[91m-                     31% |**********                      | 8022k  0:00:43 ETA
-[0m[91m-                     33% |**********                      | 8594k  0:00:41 ETA
-[0m[91m-                     35% |***********                     | 9166k  0:00:39 ETA
-[0m[91m-                     36% |***********                     | 9287k  0:00:40 ETA
-[0m[91m-                     37% |************                    | 9689k  0:00:39 ETA
-[0m[91m-                     40% |************                    | 10.0M  0:00:37 ETA
-[0m[91m-                     42% [0m[91m|*************                   | 10.5M  0:00:35 ETA
-[0m[91m-                     44% |**************                  | 11.1M  0:00:33 ETA
-[0m[91m-                     46% |***************                 | 11.7M  0:00:31 ETA
-[0m[91m-                     49% |***************                 | 12.2M  0:00:30 ETA
-[0m[91m-                     51% |****************                | 12.9M  0:00:28 ETA
-[0m[91m-                    [0m[91m 53% |*****************               | 13.4M  0:00:26 ETA
-[0m[91m-                     56% |*****************               | 14.0M  0:00:25 ETA
-[0m[91m-                     58% |******************              | 14.6M  0:00:23 ETA
-[0m[91m-                     60% |*******************             | 15.1M  0:00:21 ETA
-[0m[91m-                     62% |********************            | 15.7M  0:00:20 ETA
-[0m[91m-                     65% |********************            | 16.3M  0:00:19 ETA
-[0m[91m-                     67% |*********************           | 16.9M  0:00:17 ETA[0m[91m
-[0m[91m-                     70% |**********************          | 17.5M  0:00:16 ETA
+[0m[91m-                      4% |*                               | 1176k  0:01:02 ETA
+[0m[91m-                      6% |**                              | 1745k  0:00:54 ETA
+[0m[91m-                      9% |**                              | 2310k  0:00:50 ETA
+[0m[91m-                     11% |***                             | 2858k  0:00:47 ETA
+[0m[91m-                     13% |****                            | 3429k  0:00:45 ETA
+[0m[91m-                     15% |****                            | 3951k  0:00:43 ETA
+[0m[91m-                     17% |*****                           | 4512k  0:00:42 ETA
+[0m[91m-                     19% |******                          | 5090k  0:00:40 ETA
+[0m[91m-                     22% |*******                         | 5639k  0:00:38 ETA
+[0m[91m-                     24% |*******                         | 6155k  0:00:37 ETA
+[0m[91m-                     26% |********                        | 6718k  0:00:36 ETA
+[0m[91m-                     28% |*********                       | 7294k  0:00:35 ETA
+[0m[91m-                     30% |*********                       | 7856k  0:00:33 ETA
+[0m[91m-                     32% |**********                      | 8398k  0:00:32 ETA
+[0m[91m-                     34% |***********                     | 8927k  0:00:31 ETA
+[0m[91m-                     36% |***********                     | 9362k  0:00:31 ETA
+[0m[91m-                     37% |***********                     | 9536k  0:00:32 ETA
+[0m[91m-                     38% |************                    | 9937k  0:00:31 ETA
+[0m[91m-                     40% |*************                   | 10.1M  0:00:30 ETA
+[0m[91m-                     42% |*************                   | 10.7M  0:00:29 ETA
+[0m[91m-                     45% |**************                  | 11.2M  0:00:28 ETA
+[0m[91m-                     47% |***************                 | 11.8M  0:00:26 ETA
+[0m[91m-                     49% [0m[91m|***************                 | 12.3M  0:00:25 ETA
+[0m[91m-                     51% |****************                | 12.8M  0:00:24 ETA
+[0m[91m-                     51% |****************                | 12.9M  0:00:25 ETA
+[0m[91m-                     53% |*****************               | 13.3M  0:00:24 ETA
+[0m[91m-                     55% |*****************               | 13.7M  0:00:23 ETA
+[0m[91m-                     57% |******************              | 14.2M  0:00:22 ETA
+[0m[91m-                     59% [0m[91m|******************              | 14.8M  0:00:21 ETA
+[0m[91m-                     61% |*******************             | 15.3M  0:00:20 ETA
+[0m[91m-                     63% |********************            | 15.9M  0:00:18 ETA
+[0m[91m-                     65% |*********************           | 16.4M  0:00:17 ETA
+[0m[91m-                     67% [0m[91m|*********************           | 16.9M  0:00:16 ETA
+[0m[91m-                    [0m[91m 70% |**********************          | 17.5M  0:00:15 ETA
 [0m[91m-                     72% |***********************         | 18.0M  0:00:14 ETA
-[0m[91m-                     74% |***********************         | 18.6M  0:00:13 ETA
-[0m[91m-                    [0m[91m 76% |************************        | 19.2M  0:00:12 ETA
-[0m[91m-                     79% |*************************       | 19.8M  0:00:11 ETA
-[0m[91m-                    [0m[91m 81% |**************************      | 20.3M  0:00:09 ETA
+[0m[91m-                     74% |***********************         | 18.6M  0:00:12 ETA
+[0m[91m-                     76% |************************        | 19.2M  0:00:11 ETA
+[0m[91m-                     78% |*************************       | 19.6M  0:00:10 ETA
+[0m[91m-                     80% |*************************       | 20.2M  0:00:09 ETA
+[0m[91m-                     82% |**************************      | 20.6M  0:00:08 ETA
+[0m[91m-                     83% |**************************      | 20.8M  0:00:08 ETA
 [0m[91m-                     83% |**************************      | 20.9M  0:00:08 ETA
-[0m[91m-                     86% |***************************     | 21.5M  0:00:07 ETA
-[0m[91m-                     88% |****************************    | 22.1M  0:00:05 ETA
-[0m[91m-                     90% |*****************************   | 22.7M  0:00:04 ETA
-[0m[91m-                     92% |*****************************   | [0m[91m23.2M  0:00:03 ETA
-[0m[91m-                     95% |******************************  | 23.8M  0:00:02 ETA
-[0m[91m-                     96% |******************************  | 24.0M  0:00:01 ETA
-[0m[91m-                     97% |******************************* | 24.4M  0:00:01 ETA
-[0m[91m-                     99% |******************************* | 24.9M  0:00:00 ETA
-[0m[91m-                    100% |********************************| 25.0M  0:00:00 ETA[0m[91m
+[0m[91m-                     84% |***************************     | 21.1M  0:00:08 ETA
+[0m[91m-                     85% |***************************     | 21.4M  0:00:07 ETA
+[0m[91m-                     87% |***************************     | 21.8M  0:00:06 ETA
+[0m[91m-                     89% |****************************    | 22.4M  0:00:05 ETA
+[0m[91m-                    [0m[91m 91% |*****************************   | 22.9M  0:00:04 ETA
+[0m[91m-                     93% |******************************  | 23.4M  0:00:03 ETA
+[0m[91m-                     96% |******************************  | 24.0M  0:00:02 ETA
+[0m[91m-                     98% |******************************* | 24.5M  0:00:00 ETA
+[0m[91m-                    100% [0m[91m|********************************| 25.0M  0:00:00 ETA
 written to stdout
 [0mpolyMesh.org/neighbour.gz
 polyMesh.org/points.gz
@@ -59,59 +74,44 @@ polyMesh.org/faces.gz
 polyMesh.org/blockMeshDict
 polyMesh.org/
 Completed.
- ---> 490e78425efb
-Removing intermediate container 4126d03f9b55
+ ---> 1053e7f9c757
+Removing intermediate container 543a6fa184cf
 Step 11/14 : WORKDIR /
- ---> 07f089208944
-Removing intermediate container d07b2a335166
+ ---> 959a4b3ba088
+Removing intermediate container 79e9f12cfb3c
 Step 12/14 : RUN sed -i 's|exchange-directory\="."|exchange-directory="/home/[secure]/Data/Exchange/" network="eth0"|g'     configs/[secure]-config.xml && cp $tutorial_path/config.yml  configs/config.yml
- ---> Running in 3eddcd1a5cc6
- ---> 4921221e1642
-Removing intermediate container 3eddcd1a5cc6
+ ---> Running in c5612719f8b5
+ ---> b4dd83401107
+Removing intermediate container c5612719f8b5
 Step 13/14 : RUN addgroup -g 1000 [secure] && adduser -u 1000 -G [secure] -D [secure] && chown -R [secure]:[secure] tutorials configs
- ---> Running in aa589a1fd041
- ---> bbdb0a5b536d
-Removing intermediate container aa589a1fd041
+ ---> Running in 64aeafa97c87
+ ---> fe989f28192e
+Removing intermediate container 64aeafa97c87
 Step 14/14 : USER [secure]
- ---> Running in e8e46d2ee5dc
- ---> c761b814ae07
-Removing intermediate container e8e46d2ee5dc
-Successfully built c761b814ae07
+ ---> Running in 0e73170adf13
+ ---> 858f43727327
+Removing intermediate container 0e73170adf13
+Successfully built 858f43727327
 Successfully tagged testcomposeofccx_tutorial-data:latest
 Image for service tutorial-data was built because it did not already exist. To rebuild this image you must use `docker-compose build` or `docker-compose up --build`.
 Pulling openfoam-adapter-outer ([secure]/openfoam-adapter-ubuntu1604.home-develop:latest)...
 latest: Pulling from [secure]/openfoam-adapter-ubuntu1604.home-develop
-Digest: sha256:9024986cf3d867f75dc706a8ccb49bb4481849776cc904724de2d76405d11b2c
+Digest: sha256:44465d4255e3c47b043e030c3c8d52eacf4282d397c2100d6851f1ef21b87da9
 Status: Downloaded newer image for [secure]/openfoam-adapter-ubuntu1604.home-develop:latest
 Pulling calculix-adapter-solid ([secure]/calculix-adapter-ubuntu1604.home-develop:latest)...
 latest: Pulling from [secure]/calculix-adapter-ubuntu1604.home-develop
-Digest: sha256:623ab068cff8f3dfcac4a74805d3fd47bca3fb14f53283b20cc7348800681673
+Digest: sha256:d835615611d03345dd74b34833a0ea3f8b8d944bba1c09fd04d682b79e789c95
 Status: Downloaded newer image for [secure]/calculix-adapter-ubuntu1604.home-develop:latest
 Creating tutorial-data ... 
 Creating tutorial-data
 [1A[2KCreating tutorial-data ... [32mdone[0m[1BCreating openfoam-adapter-outer ... 
-Creating calculix-adapter-solid ... 
 Creating openfoam-adapter-inner ... 
+Creating calculix-adapter-solid ... 
+Creating openfoam-adapter-outer
 Creating openfoam-adapter-inner
 Creating calculix-adapter-solid
-Creating openfoam-adapter-outer
-[1A[2KCreating openfoam-adapter-inner ... [32mdone[0m[1B[1A[2KCreating openfoam-adapter-outer ... [32mdone[0m[1B[1A[2KCreating calculix-adapter-solid ... [32mdone[0m[1BRunning the simulation...Be patient
-All adapters finished!
-Only in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-ccx/referenceOutput: Inner-Fluid
-Only in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-ccx/referenceOutput: Outer-Fluid
-EXECUTING: export PRECICE_BASE=-ubuntu1604.home-develop;  docker-compose config &&
-                         bash ../../silent_compose.sh
-EXECUTING: docker cp tutorial-data:/Output .
-EXECUTING: bash ../../compare_results.sh /home/travis/build/[secure]/systemtests/tests/TestCompose_of-ccx/referenceOutput /home/travis/build/[secure]/systemtests/tests/TestCompose_of-ccx/Output
-TESTS FAILED WITH: Output files do not match reference
-Files differing               : []
-Files only in reference (left): ['Outer-Fluid', 'Inner-Fluid']
-Files only in output(right)   : []
-travis_time:end:14ba22b6:start=1577532333712117425,finish=1577532548384966979,duration=214672849554,event=script[0K[31;1mThe command "python system_testing.py -s of-ccx" exited with 1.[0m
-
-travis_fold:start:after_failure[0Ktravis_time:start:006eb226[0K$ python push.py -t of-ccx
-Cloning into '[secure]_st_output'...
+[1A[2KCreating openfoam-adapter-outer ... [32mdone[0m[1B[1A[2KCreating openfoam-adapter-inner ... [32mdone[0m[1B[1A[2KCreating calculix-adapter-solid ... [32mdone[0m[1BRunning the simulation...Be patient
 
 ```
 [
-Full job log](https://api.travis-ci.org/v3/job/630280495/log.txt)
+Full job log](https://api.travis-ci.org/v3/job/630566806/log.txt)
