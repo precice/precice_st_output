@@ -1,13 +1,13 @@
 ## Status: Failure 
-Build: [1387](https://travis-ci.org/precice/systemtests/builds/632233818) 
+Build: [1388](https://travis-ci.org/precice/systemtests/builds/632603195) 
 
-Job: [1387.23](https://travis-ci.org/precice/systemtests/jobs/632233841) 
+Job: [1388.23](https://travis-ci.org/precice/systemtests/jobs/632603218) 
 
 Triggered by: [cron](https://github.com/precice/systemtests/compare/968fe698268820917cf52199d2d3dcbaaf61fbaf...4c749ac41fec1ac0cc04f8e71fcd731e33705ab1) 
 Last successful commits 
+* [dealii-adapter](https://github.com/precice/dealii-adapter/compare/1cefd5edac2aea69ea37978eeb5479db3ada0042...d9a7dc3ed7e75c17e88adc4757c7bd5f44719b24)
 * [openfoam-adapter](https://github.com/precice/openfoam-adapter/compare/7566319387fe...59b44bf3cbdc)
-* [systemtests](https://github.com/precice/systemtests/compare/4f15349af2e6b142f80dbeffbfffd5e75ea93b7e...ff457bed2521c9ab78f7f6e490c7785219151c1e)
-* [dealii-adapter](https://github.com/precice/dealii-adapter/compare/1cefd5edac2aea69ea37978eeb5479db3ada0042...d9a7dc3ed7e75c17e88adc4757c7bd5f44719b24) 
+* [systemtests](https://github.com/precice/systemtests/compare/4f15349af2e6b142f80dbeffbfffd5e75ea93b7e...ff457bed2521c9ab78f7f6e490c7785219151c1e) 
 
 ---
 Last 100 lines of the job log at the moment of push:
@@ -20,11 +20,11 @@ Digest: sha256:2171658620155679240babee0a7714f6509fae66898db422ad803b951257db78
 Status: Downloaded newer image for alpine:latest
  ---> cc0abc535e36
 Step 2/12 : ENV tutorial_path tutorials/FSI/flap_perp/OpenFOAM-deal.II
- ---> Running in 2c877fd5cf0f
- ---> 456b840b999c
-Removing intermediate container 2c877fd5cf0f
+ ---> Running in 799fd2d59a53
+ ---> 090356b2fd5b
+Removing intermediate container 799fd2d59a53
 Step 3/12 : RUN apk add git
- ---> Running in 2b9798f39000
+ ---> Running in 95944ad00228
 fetch http://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/APKINDEX.tar.gz
 fetch http://dl-cdn.alpinelinux.org/alpine/v3.11/community/x86_64/APKINDEX.tar.gz
 (1/6) Installing ca-certificates (20191127-r0)
@@ -36,60 +36,60 @@ fetch http://dl-cdn.alpinelinux.org/alpine/v3.11/community/x86_64/APKINDEX.tar.g
 Executing busybox-1.31.1-r8.trigger
 Executing ca-certificates-20191127-r0.trigger
 OK: 22 MiB in 20 packages
- ---> 1bbd059dd05e
-Removing intermediate container 2b9798f39000
+ ---> dc6af7f653d4
+Removing intermediate container 95944ad00228
 Step 4/12 : ARG branch=develop
- ---> Running in 21b2f7810f1c
- ---> 41dce6fe1428
-Removing intermediate container 21b2f7810f1c
+ ---> Running in 4c5e28840122
+ ---> cfa236ab5139
+Removing intermediate container 4c5e28840122
 Step 5/12 : RUN git clone --branch $branch https://github.com/[secure]/tutorials
- ---> Running in 2126734eb916
+ ---> Running in 6305a2ff5c2a
 [91mCloning into 'tutorials'...
-[0m ---> 41923f84703d
-Removing intermediate container 2126734eb916
+[0m ---> b754eca06f4e
+Removing intermediate container 6305a2ff5c2a
 Step 6/12 : RUN mkdir configs && sed -e 's|gather-scatter"|gather-scatter" exchange-directory="/home/[secure]/Data/Exchange/" network="eth0"|g' $tutorial_path/[secure]-config_serial.xml > configs/[secure]-config.xml
- ---> Running in b616b0f71756
- ---> f956151ccacc
-Removing intermediate container b616b0f71756
+ ---> Running in c4ad498443fa
+ ---> 73ce9f52810d
+Removing intermediate container c4ad498443fa
 Step 7/12 : RUN sed -i '/application     pimpleFoam/d; s/\/\/ application     pimpleDyMFoam/application    pimpleDyMFoam/g'     $tutorial_path/Fluid/system/controlDict
- ---> Running in d1b2c697388d
- ---> 1d2912e21d8c
-Removing intermediate container d1b2c697388d
+ ---> Running in dd95326c49d3
+ ---> 048c33467e58
+Removing intermediate container dd95326c49d3
 Step 8/12 : RUN rm $tutorial_path/[secure]-config_serial.xml $tutorial_path/[secure]-config.xml
- ---> Running in b1ec5d920b21
- ---> 79c38f7ce25a
-Removing intermediate container b1ec5d920b21
+ ---> Running in 87cdd8782b21
+ ---> 6e5d807ebd2c
+Removing intermediate container 87cdd8782b21
 Step 9/12 : RUN rm -rfv $tutorial_path/Fluid/0/
- ---> Running in 0e0d1c69aa8f
+ ---> Running in 980a7fb86132
 removed 'tutorials/FSI/flap_perp/OpenFOAM-deal.II/Fluid/0/p'
 removed 'tutorials/FSI/flap_perp/OpenFOAM-deal.II/Fluid/0/phi'
 removed 'tutorials/FSI/flap_perp/OpenFOAM-deal.II/Fluid/0/U'
 removed 'tutorials/FSI/flap_perp/OpenFOAM-deal.II/Fluid/0/pointDisplacement'
 removed directory: 'tutorials/FSI/flap_perp/OpenFOAM-deal.II/Fluid/0'
- ---> aa5336a87585
-Removing intermediate container 0e0d1c69aa8f
+ ---> dc4c2dbee0e2
+Removing intermediate container 980a7fb86132
 Step 10/12 : RUN cp -r $tutorial_path/Fluid/0.orig/ $tutorial_path/Fluid/0/
- ---> Running in 2f66bc8792d6
- ---> 2bd118786a85
-Removing intermediate container 2f66bc8792d6
+ ---> Running in ee7119d37287
+ ---> fc216af6d3ce
+Removing intermediate container ee7119d37287
 Step 11/12 : RUN addgroup -g 1000 [secure] && adduser -u 1000 -G [secure] -D [secure] && chown -R [secure]:[secure] tutorials configs
- ---> Running in 64dec5a77a77
- ---> a1dd1e37d8ae
-Removing intermediate container 64dec5a77a77
+ ---> Running in 78f841d945e8
+ ---> 081d7c908bfb
+Removing intermediate container 78f841d945e8
 Step 12/12 : USER [secure]
- ---> Running in abf9a15eff43
- ---> 8ba33efb281b
-Removing intermediate container abf9a15eff43
-Successfully built 8ba33efb281b
+ ---> Running in 5ff2617dd09e
+ ---> 74c601f24049
+Removing intermediate container 5ff2617dd09e
+Successfully built 74c601f24049
 Successfully tagged testcomposedealiiof_tutorial-data:latest
 Image for service tutorial-data was built because it did not already exist. To rebuild this image you must use `docker-compose build` or `docker-compose up --build`.
 Pulling openfoam-adapter ([secure]/openfoam-adapter-ubuntu1604.home-develop:latest)...
 latest: Pulling from [secure]/openfoam-adapter-ubuntu1604.home-develop
-Digest: sha256:713a8d86b01d5d1b07c8c18b342b15aca6af21d0e6e71e742b87ff29d17e28ed
+Digest: sha256:0a70c4bda4b8a4b21007a5392fa06b986eb68a743e629af06920da7302579693
 Status: Downloaded newer image for [secure]/openfoam-adapter-ubuntu1604.home-develop:latest
 Pulling dealii-adapter ([secure]/dealii-adapter-ubuntu1604.home-develop:latest)...
 latest: Pulling from [secure]/dealii-adapter-ubuntu1604.home-develop
-Digest: sha256:2ff87c58f50801a22c428d54d774bdea7890e10d64ee2d7ea51f9e0f01e7021c
+Digest: sha256:e2873a180f4507dd433f2521d0116283a148be285bdc4c08826de67bd509427e
 Status: Downloaded newer image for [secure]/dealii-adapter-ubuntu1604.home-develop:latest
 Creating tutorial-data ... 
 Creating tutorial-data
@@ -107,11 +107,11 @@ TESTS FAILED WITH: Output files do not match reference
 Files differing               : []
 Files only in reference (left): ['Fluid']
 Files only in output(right)   : []
-travis_time:end:01374f48:start=1578051074368101743,finish=1578051152318835532,duration=77950733789,event=script[0K[31;1mThe command "python system_testing.py -s dealii-of" exited with 1.[0m
+travis_time:end:0324a1d0:start=1578137534659390251,finish=1578137609817303497,duration=75157913246,event=script[0K[31;1mThe command "python system_testing.py -s dealii-of" exited with 1.[0m
 
-travis_fold:start:after_failure[0Ktravis_time:start:043ac9ce[0K$ python push.py -t dealii-of
+travis_fold:start:after_failure[0Ktravis_time:start:0a18d79c[0K$ python push.py -t dealii-of
 Cloning into '[secure]_st_output'...
 
 ```
 [
-Full job log](https://api.travis-ci.org/v3/job/632233841/log.txt)
+Full job log](https://api.travis-ci.org/v3/job/632603218/log.txt)
