@@ -1,12 +1,12 @@
 ## Status: Failure 
-Build: [1401](https://travis-ci.org/precice/systemtests/builds/634176339) 
+Build: [1402](https://travis-ci.org/precice/systemtests/builds/634229912) 
 
-Job: [1401.21](https://travis-ci.org/precice/systemtests/jobs/634176365) 
+Job: [1402.17](https://travis-ci.org/precice/systemtests/jobs/634229929) 
 
-Triggered by: [cron](https://github.com/precice/systemtests/compare/968fe698268820917cf52199d2d3dcbaaf61fbaf...4c749ac41fec1ac0cc04f8e71fcd731e33705ab1) 
+Triggered by: [pull_request](https://github.com/precice/systemtests/pull/129) 
 Last successful commits 
-* [systemtests](https://github.com/precice/systemtests/compare/4f15349af2e6b142f80dbeffbfffd5e75ea93b7e...ff457bed2521c9ab78f7f6e490c7785219151c1e)
-* [fenics-adapter](https://github.com/precice/fenics-adapter/compare/150697fca846...bd6a64d89c81) 
+* [fenics-adapter](https://github.com/precice/fenics-adapter/compare/150697fca846...bd6a64d89c81)
+* [systemtests](https://github.com/precice/systemtests/compare/4f15349af2e6b142f80dbeffbfffd5e75ea93b7e...ff457bed2521c9ab78f7f6e490c7785219151c1e) 
 
 ---
 Last 100 lines of the job log at the moment of push:
@@ -39,11 +39,11 @@ Digest: sha256:2171658620155679240babee0a7714f6509fae66898db422ad803b951257db78
 Status: Downloaded newer image for alpine:latest
  ---> cc0abc535e36
 Step 2/8 : ENV tutorial_path tutorials/HT/partitioned-heat/fenics-fenics
- ---> Running in beead67f7bce
- ---> 7c2a4fc1cc9d
-Removing intermediate container beead67f7bce
+ ---> Running in 9eb0010c28a2
+ ---> 0b1756813ecf
+Removing intermediate container 9eb0010c28a2
 Step 3/8 : RUN apk add git
- ---> Running in ea213821ec14
+ ---> Running in 8ea70ff0e7f9
 fetch http://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/APKINDEX.tar.gz
 fetch http://dl-cdn.alpinelinux.org/alpine/v3.11/community/x86_64/APKINDEX.tar.gz
 (1/6) Installing ca-certificates (20191127-r0)
@@ -55,31 +55,31 @@ fetch http://dl-cdn.alpinelinux.org/alpine/v3.11/community/x86_64/APKINDEX.tar.g
 Executing busybox-1.31.1-r8.trigger
 Executing ca-certificates-20191127-r0.trigger
 OK: 22 MiB in 20 packages
- ---> 7f2b7add736e
-Removing intermediate container ea213821ec14
+ ---> ca2ccb230343
+Removing intermediate container 8ea70ff0e7f9
 Step 4/8 : ARG branch=develop
- ---> Running in f66e34a9c152
- ---> afc1f1404a35
-Removing intermediate container f66e34a9c152
+ ---> Running in 89afe052db69
+ ---> 4132b9835a3c
+Removing intermediate container 89afe052db69
 Step 5/8 : RUN git clone --branch $branch https://github.com/[secure]/tutorials
- ---> Running in 8d523939175a
+ ---> Running in 2bd8045ea0ba
 [91mCloning into 'tutorials'...
-[0m ---> c459242d8ff4
-Removing intermediate container 8d523939175a
+[0m ---> 3cc8b0ab408d
+Removing intermediate container 2bd8045ea0ba
 Step 6/8 : RUN mkdir configs && sed -i 's|network="lo"|exchange-directory="/home/[secure]/Data/Exchange/" network="eth0"|g' $tutorial_path/[secure]-config.xml
- ---> Running in 946586987e59
- ---> c9e1d8d8cd38
-Removing intermediate container 946586987e59
+ ---> Running in 0aed83df6ddd
+ ---> 28627ffa789b
+Removing intermediate container 0aed83df6ddd
 Step 7/8 : RUN addgroup -g 1000 [secure] && adduser -u 1000 -G [secure] -D [secure] && chown -R [secure]:[secure] tutorials configs
- ---> Running in 7cc4e17e4462
- ---> 4115d591d2c3
-Removing intermediate container 7cc4e17e4462
+ ---> Running in e2362e833cc6
+ ---> 8f6878a25f6a
+Removing intermediate container e2362e833cc6
 Step 8/8 : USER [secure]
- ---> Running in 1810675435e6
- ---> ef96073b6761
-Removing intermediate container 1810675435e6
+ ---> Running in fb0ae772e690
+ ---> e5382d0bbc0e
+Removing intermediate container fb0ae772e690
 
-Successfully built ef96073b6761
+Successfully built e5382d0bbc0e
 Successfully tagged testcomposefefeubuntu1804home_tutorial-data:latest
 Image for service tutorial-data was built because it did not already exist. To rebuild this image you must use `docker-compose build` or `docker-compose up --build`.
 Pulling fenics-adapter-dirichlet ([secure]/fenics-adapter-ubuntu1804.home-develop:latest)...
@@ -90,9 +90,9 @@ Creating tutorial-data ...
 Creating tutorial-data
 [1A[2KCreating tutorial-data ... [32mdone[0m[1BCreating fenics-adapter-neumann ... 
 Creating fenics-adapter-dirichlet ... 
-Creating fenics-adapter-dirichlet
 Creating fenics-adapter-neumann
-[1A[2KCreating fenics-adapter-dirichlet ... [32mdone[0m[1B[1A[2KCreating fenics-adapter-neumann ... [32mdone[0m[1BRunning the simulation...Be patient
+Creating fenics-adapter-dirichlet
+[1A[2KCreating fenics-adapter-neumann ... [32mdone[0m[1B[1A[2KCreating fenics-adapter-dirichlet ... [32mdone[0m[1BRunning the simulation...Be patient
 All adapters finished!
 Only in /home/travis/build/[secure]/systemtests/tests/TestCompose_fe-fe.Ubuntu1804.home/referenceOutput: .gitkeep
 Only in /home/travis/build/[secure]/systemtests/tests/TestCompose_fe-fe.Ubuntu1804.home/referenceOutput: [secure]-HeatDirichlet-iterations.log
@@ -104,13 +104,13 @@ EXECUTING: docker cp tutorial-data:/Output .
 EXECUTING: bash ../../compare_results.sh /home/travis/build/[secure]/systemtests/tests/TestCompose_fe-fe.Ubuntu1804.home/referenceOutput /home/travis/build/[secure]/systemtests/tests/TestCompose_fe-fe.Ubuntu1804.home/Output
 TESTS FAILED WITH: Output files do not match reference
 Files differing               : []
-Files only in reference (left): ['[secure]-HeatNeumann-convergence.log', '[secure]-HeatNeumann-iterations.log', '[secure]-HeatDirichlet-iterations.log']
+Files only in reference (left): ['[secure]-HeatDirichlet-iterations.log', '[secure]-HeatNeumann-iterations.log', '[secure]-HeatNeumann-convergence.log']
 Files only in output(right)   : []
-travis_time:end:1ad36e10:start=1578484564001120275,finish=1578484677666582819,duration=113665462544,event=script[0K[31;1mThe command "python system_testing.py -s fe-fe --base Ubuntu1804.home" exited with 1.[0m
+travis_time:end:000758de:start=1578491613551138820,finish=1578491727730951181,duration=114179812361,event=script[0K[31;1mThe command "python system_testing.py -s fe-fe --base Ubuntu1804.home" exited with 1.[0m
 
-travis_fold:start:after_failure[0Ktravis_time:start:0d969500[0K$ python push.py -t fe-fe --base Ubuntu1804.home
+travis_fold:start:after_failure[0Ktravis_time:start:0427caf4[0K$ python push.py -t fe-fe --base Ubuntu1804.home
 Cloning into '[secure]_st_output'...
 
 ```
 [
-Full job log](https://api.travis-ci.org/v3/job/634176365/log.txt)
+Full job log](https://api.travis-ci.org/v3/job/634229929/log.txt)
