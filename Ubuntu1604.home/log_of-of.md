@@ -1,7 +1,7 @@
 ## Status: Failure 
-Build: [1407](https://travis-ci.org/precice/systemtests/builds/634304738) 
+Build: [1408](https://travis-ci.org/precice/systemtests/builds/634323804) 
 
-Job: [1407.15](https://travis-ci.org/precice/systemtests/jobs/634304753) 
+Job: [1408.15](https://travis-ci.org/precice/systemtests/jobs/634323828) 
 
 Triggered by: [pull_request](https://github.com/precice/systemtests/pull/131) 
 Last successful commits 
@@ -12,16 +12,16 @@ Last successful commits
 Last 100 lines of the job log at the moment of push:
 ```
 start: Job is already running: docker
-travis_time:end:000d2180:start=1578501080867378890,finish=1578501080879923904,duration=12545014,event=prepare[0Ktravis_fold:end:services[0Ktravis_time:end:000d2180:start=1578501080867378890,finish=1578501083885966349,duration=3018587459,event=services[0Ktravis_time:start:02e7c83c[0Ktravis_time:end:02e7c83c:start=1578501083890067235,finish=1578501083892644788,duration=2577553,event=fix_ps4[0Ktravis_time:start:087b68f0[0K
-travis_fold:start:git.checkout[0Ktravis_time:start:1249b401[0K$ git clone --depth=50 https://github.com/[secure]/systemtests.git [secure]/systemtests
+travis_time:end:09eae190:start=1578503852327093669,finish=1578503852339368339,duration=12274670,event=prepare[0Ktravis_fold:end:services[0Ktravis_time:end:09eae190:start=1578503852327093669,finish=1578503855344077439,duration=3016983770,event=services[0Ktravis_time:start:008c2d2e[0Ktravis_time:end:008c2d2e:start=1578503855348345287,finish=1578503855351044179,duration=2698892,event=fix_ps4[0Ktravis_time:start:003ade96[0K
+travis_fold:start:git.checkout[0Ktravis_time:start:14c14b4d[0K$ git clone --depth=50 https://github.com/[secure]/systemtests.git [secure]/systemtests
 Cloning into '[secure]/systemtests'...
-travis_time:end:1249b401:start=1578501083900660476,finish=1578501089132462339,duration=5231801863,event=checkout[0K$ cd [secure]/systemtests
-travis_time:start:075ba3e1[0K$ git fetch origin +refs/pull/131/merge:
+travis_time:end:14c14b4d:start=1578503855359352627,finish=1578503860804585502,duration=5445232875,event=checkout[0K$ cd [secure]/systemtests
+travis_time:start:1473a99b[0K$ git fetch origin +refs/pull/131/merge:
 From https://github.com/[secure]/systemtests
  * branch            refs/pull/131/merge -> FETCH_HEAD
-travis_time:end:075ba3e1:start=1578501089137602507,finish=1578501092646955909,duration=3509353402,event=checkout[0K$ git checkout -qf FETCH_HEAD
+travis_time:end:1473a99b:start=1578503860809426673,finish=1578503864387730740,duration=3578304067,event=checkout[0K$ git checkout -qf FETCH_HEAD
 travis_fold:end:git.checkout[0K
-travis_time:end:075ba3e1:start=1578501089137602507,finish=1578501092754083051,duration=3616480544,event=checkout[0Ktravis_time:start:01cd3aa2[0K
+travis_time:end:1473a99b:start=1578503860809426673,finish=1578503865145598435,duration=4336171762,event=checkout[0Ktravis_time:start:118fc08c[0K
 [33;1mSetting environment variables from repository settings[0m
 $ export DOCKER_PASSWORD=[secure]
 $ export DOCKER_USERNAME=[secure]
@@ -29,13 +29,13 @@ $ export TRAVIS_ACCESS_TOKEN=[secure]
 $ export PRECICE_BOT_EMAIL=[secure]
 $ export GH_TOKEN=[secure]
 
-travis_time:end:01cd3aa2:start=1578501092759449626,finish=1578501092770099769,duration=10650143,event=env[0Ktravis_time:start:2a2eb5f4[0K$ source ~/virtualenv/python3.5/bin/activate
-travis_time:end:2a2eb5f4:start=1578501092774412275,finish=1578501092782977624,duration=8565349,event=[0K$ python --version
+travis_time:end:118fc08c:start=1578503865149796211,finish=1578503865160464497,duration=10668286,event=env[0Ktravis_time:start:016da312[0K$ source ~/virtualenv/python3.5/bin/activate
+travis_time:end:016da312:start=1578503865167081015,finish=1578503865172532624,duration=5451609,event=[0K$ python --version
 Python 3.5.6
 $ pip --version
 pip 18.0 from /home/travis/virtualenv/python3.5.6/lib/python3.5/site-packages/pip (python 3.5)
 Could not locate requirements.txt. Override the install: key in your .travis.yml to install dependencies.
-travis_time:start:258d0ad6[0K$ python system_testing.py -s of-of
+travis_time:start:25ef41ea[0K$ python system_testing.py -s of-of
 networks:
   [secure]comm: {}
 services:
@@ -89,11 +89,11 @@ Pulling openfoam-adapter-fluid ([secure]/openfoam-adapter-ubuntu1604.home-develo
 latest: Pulling from [secure]/openfoam-adapter-ubuntu1604.home-develop
 Digest: sha256:e442f33a6f3cab80648fc9ce72f80770ee8c748f2969dc4cd39d3ccd02fd4e5a
 Status: Downloaded newer image for [secure]/openfoam-adapter-ubuntu1604.home-develop:latest
+Creating tutorial-data ... 
 Creating openfoam-adapter-fluid ... 
 Creating openfoam-adapter-solid ... 
-Creating tutorial-data ... 
-Creating openfoam-adapter-fluid
 Creating tutorial-data
+Creating openfoam-adapter-fluid
 Creating openfoam-adapter-solid
 [1A[2KCreating openfoam-adapter-fluid ... [32mdone[0m[1B[1A[2KCreating tutorial-data ... [32mdone[0m[1B[1A[2KCreating openfoam-adapter-solid ... [32mdone[0m[1BAll adapters finished!
 Only in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of/referenceOutput: Fluid
@@ -106,11 +106,11 @@ TESTS FAILED WITH: Output files do not match reference
 Files differing               : []
 Files only in reference (left): ['Solid', 'Fluid']
 Files only in output(right)   : []
-travis_time:end:258d0ad6:start=1578501093084885813,finish=1578501156021644737,duration=62936758924,event=script[0K[31;1mThe command "python system_testing.py -s of-of" exited with 1.[0m
+travis_time:end:25ef41ea:start=1578503865449900866,finish=1578503928349258170,duration=62899357304,event=script[0K[31;1mThe command "python system_testing.py -s of-of" exited with 1.[0m
 
-travis_fold:start:after_failure[0Ktravis_time:start:07fc7874[0K$ python push.py -t of-of
+travis_fold:start:after_failure[0Ktravis_time:start:000bf42c[0K$ python push.py -t of-of
 Cloning into '[secure]_st_output'...
 
 ```
 [
-Full job log](https://api.travis-ci.org/v3/job/634304753/log.txt)
+Full job log](https://api.travis-ci.org/v3/job/634323828/log.txt)
