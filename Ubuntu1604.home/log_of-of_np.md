@@ -1,102 +1,102 @@
 ## Status: Failure 
-Build: [1414](https://travis-ci.org/precice/systemtests/builds/634663511) 
+Build: [1415](https://travis-ci.org/precice/systemtests/builds/634678414) 
 
-Job: [1414.8](https://travis-ci.org/precice/systemtests/jobs/634663519) 
+Job: [1415.25](https://travis-ci.org/precice/systemtests/jobs/634678441) 
 
-Triggered by: [pull_request](https://github.com/precice/systemtests/pull/148) 
+Triggered by: [cron](https://github.com/precice/systemtests/compare/968fe698268820917cf52199d2d3dcbaaf61fbaf...4c749ac41fec1ac0cc04f8e71fcd731e33705ab1) 
 Last successful commits 
-* [openfoam-adapter](https://github.com/precice/openfoam-adapter/compare/7566319387fe...59b44bf3cbdc)
-* [systemtests](https://github.com/precice/systemtests/compare/4f15349af2e6b142f80dbeffbfffd5e75ea93b7e...ff457bed2521c9ab78f7f6e490c7785219151c1e) 
+* [systemtests](https://github.com/precice/systemtests/compare/4f15349af2e6b142f80dbeffbfffd5e75ea93b7e...ff457bed2521c9ab78f7f6e490c7785219151c1e)
+* [openfoam-adapter](https://github.com/precice/openfoam-adapter/compare/7566319387fe...59b44bf3cbdc) 
 
 ---
 Last 100 lines of the job log at the moment of push:
 ```
-[33mopenfoam-adapter-fluid    |[0m points
-[33mopenfoam-adapter-fluid    |[0m neighbour
-[33mopenfoam-adapter-fluid    |[0m thermo:mu
-[33mopenfoam-adapter-fluid    |[0m MRFProperties
-[33mopenfoam-adapter-fluid    |[0m thermo:psi
-[33mopenfoam-adapter-fluid    |[0m K
-[33mopenfoam-adapter-fluid    |[0m ghf
-[33mopenfoam-adapter-fluid    |[0m h
-[33mopenfoam-adapter-fluid    |[0m faces
-[33mopenfoam-adapter-fluid    |[0m U
-[33mopenfoam-adapter-fluid    |[0m rho
-[33mopenfoam-adapter-fluid    |[0m radiationProperties
-[33mopenfoam-adapter-fluid    |[0m turbulenceProperties
-[33mopenfoam-adapter-fluid    |[0m fvSchemes
-[33mopenfoam-adapter-fluid    |[0m fvOptions
-[33mopenfoam-adapter-fluid    |[0m faceZones
-[33mopenfoam-adapter-fluid    |[0m fvSolution
-[33mopenfoam-adapter-fluid    |[0m p_rgh
-[33mopenfoam-adapter-fluid    |[0m thermophysicalProperties
-[33mopenfoam-adapter-fluid    |[0m dpdt
-[33mopenfoam-adapter-fluid    |[0m phi
-[33mopenfoam-adapter-fluid    |[0m owner
-[33mopenfoam-adapter-fluid    |[0m gh
-[33mopenfoam-adapter-fluid    |[0m data
-[33mopenfoam-adapter-fluid    |[0m cellZones
-[33mopenfoam-adapter-fluid    |[0m boundary
-[33mopenfoam-adapter-fluid    |[0m g
-[33mopenfoam-adapter-fluid    |[0m p
-[33mopenfoam-adapter-fluid    |[0m T
-[33mopenfoam-adapter-fluid    |[0m hRef
-[33mopenfoam-adapter-fluid    |[0m thermo:rho
-[33mopenfoam-adapter-fluid    |[0m pointZones
-[33mopenfoam-adapter-fluid    |[0m thermo:alpha
-[33mopenfoam-adapter-fluid    |[0m )
-[33mopenfoam-adapter-fluid    |[0m 
-[33mopenfoam-adapter-fluid    |[0m Unexpected end of /proc/mounts line `overlay / overlay rw,relatime,lowerdir=/var/lib/docker/overlay2/l/CZ5KX745UK5ZBO437IPXGVIX2J:/var/lib/docker/overlay2/l/2PTQOIIXAHMWVHDIO2NLWGMC43:/var/lib/docker/overlay2/l/Q3EAS2H2ENS4HDJWQFVV26XKHB:/var/lib/docker/overlay2/l/XXXTH7T33JRKE4REA6ZOL57JWT:/var/lib/docker/overlay2/l/WTDO7QZMFFCLEHWJMJMUOEMVR3:/var/lib/docker/overlay2/l/TQSO355ZTBQPZP4INVJGVT4FJ6:/var/lib/docker/overlay2/l/XCVXB2W4OBN7GZGZ6632L5Y7OC:/var/lib/docker/overlay2/l/72SE3OWQ5EMA4T5ZQKP5J4UVI7:/var/lib/docker/overlay2/l/6BK5H4SCVABJX'
-[33mopenfoam-adapter-fluid    |[0m Unexpected end of /proc/mounts line `VXDIXWXE5ISYS:/var/lib/docker/overlay2/l/GBI4WS6VK5E22XU3XISCNVIKZW:/var/lib/docker/overlay2/l/ERHNMVKOUWNBCZFAEM4BWIEHGO:/var/lib/docker/overlay2/l/3JPQAPMXL274BBL6GXWFAUNAHI:/var/lib/docker/overlay2/l/CHVILKC7M7BMC6I72D5G6WOF2T:/var/lib/docker/overlay2/l/6IE27FY3AMT4ZWP22MMPNIO63V:/var/lib/docker/overlay2/l/63PYY7GG26B2WXJ5I4WD6N7FW2:/var/lib/docker/overlay2/l/AIWGW5LFQGCWPF3DF5TSHULC46:/var/lib/docker/overlay2/l/FDXRWVYZT6JEDC4ANL2UYHXWUK:/var/lib/docker/overlay2/l/53246SCBXY2TPK35W2FJMU2LBC:/var/lib/do'
-[33mopenfoam-adapter-fluid    |[0m ---[[secure]Adapter] Reading the adapter's YAML configuration file ./Fluid/[secure]-adapter-config.yml...
-[33mopenfoam-adapter-fluid    |[0m ---[[secure]Adapter] [DEBUG] Checking the adapter's YAML configuration file...
-[33mopenfoam-adapter-fluid    |[0m ---[[secure]Adapter] [DEBUG]   participant : Fluid
-[33mopenfoam-adapter-fluid    |[0m ---[[secure]Adapter] [DEBUG]   [secure]-config-file : [secure]-config.xml
-[33mopenfoam-adapter-fluid    |[0m ---[[secure]Adapter] [DEBUG]   interfaces : 
-[33mopenfoam-adapter-fluid    |[0m ---[[secure]Adapter] [DEBUG]   - mesh      : Fluid-Mesh-Centers
-[33mopenfoam-adapter-fluid    |[0m ---[[secure]Adapter] [DEBUG]     locations : faceCenters
-[33mopenfoam-adapter-fluid    |[0m ---[[secure]Adapter] [DEBUG]     Provide mesh connectivity : 0
-[33mopenfoam-adapter-fluid    |[0m ---[[secure]Adapter] [DEBUG]     patches   : 
-[33mopenfoam-adapter-fluid    |[0m ---[[secure]Adapter] [DEBUG]       interface
-[33mopenfoam-adapter-fluid    |[0m ---[[secure]Adapter] [DEBUG]     read-data : 
-[33mopenfoam-adapter-fluid    |[0m ---[[secure]Adapter] [DEBUG]       Heat-Flux
-[33mopenfoam-adapter-fluid    |[0m ---[[secure]Adapter] [DEBUG]   - mesh      : Fluid-Mesh-Nodes
-[33mopenfoam-adapter-fluid    |[0m ---[[secure]Adapter] [DEBUG]     locations : faceNodes
-[33mopenfoam-adapter-fluid    |[0m ---[[secure]Adapter] [DEBUG]     Provide mesh connectivity : 1
-[33mopenfoam-adapter-fluid    |[0m ---[[secure]Adapter] [DEBUG]     patches   : 
-[33mopenfoam-adapter-fluid    |[0m ---[[secure]Adapter] [DEBUG]       interface
-[33mopenfoam-adapter-fluid    |[0m ---[[secure]Adapter] [DEBUG]     write-data : 
-[33mopenfoam-adapter-fluid    |[0m ---[[secure]Adapter] [DEBUG]       Temperature
-[33mopenfoam-adapter-fluid    |[0m ---[[secure]Adapter] [DEBUG]     subcycling : 1
-[33mopenfoam-adapter-fluid    |[0m ---[[secure]Adapter] [DEBUG]     prevent early exit : 1
-[33mopenfoam-adapter-fluid    |[0m ---[[secure]Adapter] [DEBUG]     evaluate boundaries : 1
-[33mopenfoam-adapter-fluid    |[0m ---[[secure]Adapter] [DEBUG]     disable checkpointing : 0
-[33mopenfoam-adapter-fluid    |[0m ---[[secure]Adapter] [DEBUG]     CHT module enabled : 1
-[33mopenfoam-adapter-fluid    |[0m ---[[secure]Adapter] [DEBUG]     FSI module enabled : 0
-[33mopenfoam-adapter-fluid    |[0m ---[[secure]Adapter] [DEBUG] Configuring the CHT module...
-[33mopenfoam-adapter-fluid    |[0m ---[[secure]Adapter] [DEBUG]     user-defined solver type : none
-[33mopenfoam-adapter-fluid    |[0m ---[[secure]Adapter] [DEBUG]     temperature field name : T
-[33mopenfoam-adapter-fluid    |[0m ---[[secure]Adapter] [DEBUG]     transportProperties name : transportProperties
-[33mopenfoam-adapter-fluid    |[0m ---[[secure]Adapter] [DEBUG]     conductivity name for basic solvers : k
-[33mopenfoam-adapter-fluid    |[0m ---[[secure]Adapter] [DEBUG]     density name for incompressible solvers : rho
-[33mopenfoam-adapter-fluid    |[0m ---[[secure]Adapter] [DEBUG]     heat capacity name for incompressible solvers : Cp
-[33mopenfoam-adapter-fluid    |[0m ---[[secure]Adapter] [DEBUG]     Prandtl number name for incompressible solvers : Pr
-[33mopenfoam-adapter-fluid    |[0m ---[[secure]Adapter] [DEBUG]     Turbulent thermal diffusivity field name for incompressible solvers : alphat
-[33mopenfoam-adapter-fluid    |[0m ---[[secure]Adapter] [DEBUG] Determining the solver type...
-[33mopenfoam-adapter-fluid    |[0m ---[[secure]Adapter] [DEBUG] Did not find the transportProperties dictionary.
-[33mopenfoam-adapter-fluid    |[0m ---[[secure]Adapter] [DEBUG] Found the turbulenceProperties dictionary.
-[33mopenfoam-adapter-fluid    |[0m ---[[secure]Adapter] [DEBUG] Found the thermophysicalProperties dictionary.
-[33mopenfoam-adapter-fluid    |[0m ---[[secure]Adapter] [DEBUG] This is a compressible flow solver, as turbulence and thermophysical properties are provided.
-[33mopenfoam-adapter-fluid    |[0m ---[[secure]Adapter] [DEBUG] Checking the timestep type (fixed vs adjustable)...
-[33mopenfoam-adapter-fluid    |[0m ---[[secure]Adapter] [DEBUG]   Timestep type: fixed.
-[33mopenfoam-adapter-fluid    |[0m ---[[secure]Adapter] [DEBUG] Creating the preCICE solver interface...
-[33mopenfoam-adapter-fluid    |[0m ---[[secure]Adapter] [DEBUG]   Number of processes: 1
-[33mopenfoam-adapter-fluid    |[0m ---[[secure]Adapter] [DEBUG]   MPI rank: 0
-[33mopenfoam-adapter-fluid    |[0m ---[[secure]Adapter] [DEBUG]   preCICE solver interface was created.
-[33mopenfoam-adapter-fluid    |[0m ---[[secure]Adapter] [DEBUG] Configuring preCICE...
-[33mopenfoam-adapter-fluid    |[0m ---[[secure]] [31mERROR: [0m Wrong attribute "distribution-type"
-[33mopenfoam-adapter-fluid exited with code 255
-[0mOnly in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput: Fluid
+travis_time:start:0e408a68[0K$ curl -sSf --retry 5 -o python-3.5.tar.bz2 ${archive_url}
+travis_time:end:0e408a68:start=1578569627855338247,finish=1578569628344015056,duration=488676809,event=configure[0Ktravis_time:start:0758c4a8[0K$ sudo tar xjf python-3.5.tar.bz2 --directory /
+travis_time:end:0758c4a8:start=1578569628348881503,finish=1578569636338540661,duration=7989659158,event=configure[0Ktravis_time:start:15b5eb2c[0Ktravis_fold:start:services[0Ktravis_time:start:00582a1e[0K$ sudo service docker start
+start: Job is already running: docker
+travis_time:end:00582a1e:start=1578569636361042112,finish=1578569636372922149,duration=11880037,event=prepare[0Ktravis_fold:end:services[0Ktravis_time:end:00582a1e:start=1578569636361042112,finish=1578569639378435580,duration=3017393468,event=services[0Ktravis_time:start:1e486821[0Ktravis_time:end:1e486821:start=1578569639383063215,finish=1578569639385843704,duration=2780489,event=fix_ps4[0Ktravis_time:start:0b29cede[0K
+travis_fold:start:git.checkout[0Ktravis_time:start:040b7947[0K$ git clone --depth=50 --branch=develop https://github.com/[secure]/systemtests.git [secure]/systemtests
+Cloning into '[secure]/systemtests'...
+travis_time:end:040b7947:start=1578569639393852187,finish=1578569644882719027,duration=5488866840,event=checkout[0K$ cd [secure]/systemtests
+$ git checkout -qf 4c749ac41fec1ac0cc04f8e71fcd731e33705ab1
+travis_fold:end:git.checkout[0K
+travis_time:end:040b7947:start=1578569639393852187,finish=1578569645726580893,duration=6332728706,event=checkout[0Ktravis_time:start:02df2a30[0K
+[33;1mSetting environment variables from repository settings[0m
+$ export DOCKER_PASSWORD=[secure]
+$ export DOCKER_USERNAME=[secure]
+$ export TRAVIS_ACCESS_TOKEN=[secure]
+$ export PRECICE_BOT_EMAIL=[secure]
+$ export GH_TOKEN=[secure]
+
+travis_time:end:02df2a30:start=1578569645730635524,finish=1578569645741877982,duration=11242458,event=env[0Ktravis_time:start:2a9cfe76[0K$ source ~/virtualenv/python3.5/bin/activate
+travis_time:end:2a9cfe76:start=1578569645746544436,finish=1578569645755765284,duration=9220848,event=[0K$ python --version
+Python 3.5.6
+$ pip --version
+pip 18.0 from /home/travis/virtualenv/python3.5.6/lib/python3.5/site-packages/pip (python 3.5)
+Could not locate requirements.txt. Override the install: key in your .travis.yml to install dependencies.
+travis_time:start:087a555b[0K$ python system_testing.py -s of-of_np
+networks:
+  [secure]comm: {}
+services:
+  openfoam-adapter-fluid:
+    command: '/bin/bash -c "source /opt/openfoam4/etc/bashrc &&  cd /home/[secure]/openfoam-adapter/tutorials/CHT/flow-over-plate/buoyantPimpleFoam-laplacianFoam_nearest-projection
+      && sed -i ''s|gather-scatter\"|gather-scatter\" exchange-directory=\"/home/[secure]/Data/Exchange/\"
+      network=\"eth0\"|g'' [secure]-config_serial.xml && ./runFluid && cp -r Fluid/
+      /home/[secure]/Data/Output/"
+
+      '
+    container_name: openfoam-adapter-fluid
+    image: [secure]/openfoam-adapter-ubuntu1604.home-develop:latest
+    networks:
+      [secure]comm: null
+    volumes:
+    - exchange:/home/[secure]/Data/Exchange:rw
+    - output:/home/[secure]/Data/Output:rw
+  openfoam-adapter-solid:
+    command: '/bin/bash -c "source /opt/openfoam4/etc/bashrc &&  cd /home/[secure]/openfoam-adapter/tutorials/CHT/flow-over-plate/buoyantPimpleFoam-laplacianFoam_nearest-projection
+      && sed -i ''s|gather-scatter\"|gather-scatter\" exchange-directory=\"/home/[secure]/Data/Exchange/\"
+      network=\"eth0\"|g'' [secure]-config_serial.xml && ./runSolid && cp -r Solid/
+      /home/[secure]/Data/Output/"
+
+      '
+    container_name: openfoam-adapter-solid
+    image: [secure]/openfoam-adapter-ubuntu1604.home-develop:latest
+    networks:
+      [secure]comm: null
+    volumes:
+    - exchange:/home/[secure]/Data/Exchange:rw
+    - output:/home/[secure]/Data/Output:rw
+  tutorial-data:
+    container_name: tutorial-data
+    image: alpine
+    volumes:
+    - output:/Output:rw
+version: '3.0'
+volumes:
+  exchange: {}
+  output: {}
+
+Creating network "testcomposeofofnp_default" with the default driver
+Creating network "testcomposeofofnp_[secure]comm" with the default driver
+Creating volume "testcomposeofofnp_output" with default driver
+Creating volume "testcomposeofofnp_exchange" with default driver
+Pulling tutorial-data (alpine:latest)...
+latest: Pulling from library/alpine
+Digest: sha256:2171658620155679240babee0a7714f6509fae66898db422ad803b951257db78
+Status: Downloaded newer image for alpine:latest
+Pulling openfoam-adapter-fluid ([secure]/openfoam-adapter-ubuntu1604.home-develop:latest)...
+latest: Pulling from [secure]/openfoam-adapter-ubuntu1604.home-develop
+Digest: sha256:8469fc15e29f7e13ef656170fc50b2543001183fb3f84c25ed30090dae8831c6
+Status: Downloaded newer image for [secure]/openfoam-adapter-ubuntu1604.home-develop:latest
+Creating tutorial-data ... 
+Creating openfoam-adapter-fluid ... 
+Creating openfoam-adapter-solid ... 
+Creating tutorial-data
+Creating openfoam-adapter-solid
+Creating openfoam-adapter-fluid
+[1A[2KCreating openfoam-adapter-fluid ... [32mdone[0m[1B[1A[2KCreating openfoam-adapter-solid ... [32mdone[0m[1B[1A[2KCreating tutorial-data ... [32mdone[0m[1BAll adapters finished!
+Only in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput: Fluid
 Only in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput: Solid
 EXECUTING: export PRECICE_BASE=-ubuntu1604.home-develop;  docker-compose config &&
                          bash ../../silent_compose.sh
@@ -106,11 +106,11 @@ TESTS FAILED WITH: Output files do not match reference
 Files differing               : []
 Files only in reference (left): ['Fluid', 'Solid']
 Files only in output(right)   : []
-travis_time:end:086e0d4f:start=1578564137673786896,finish=1578564205220961290,duration=67547174394,event=script[0K[31;1mThe command "python system_testing.py -s of-of_np" exited with 1.[0m
+travis_time:end:087a555b:start=1578569646033639167,finish=1578569712875721580,duration=66842082413,event=script[0K[31;1mThe command "python system_testing.py -s of-of_np" exited with 1.[0m
 
-travis_fold:start:after_failure[0Ktravis_time:start:063851ca[0K$ python push.py -t of-of_np
+travis_fold:start:after_failure[0Ktravis_time:start:0356ffdc[0K$ python push.py -t of-of_np
 Cloning into '[secure]_st_output'...
 
 ```
 [
-Full job log](https://api.travis-ci.org/v3/job/634663519/log.txt)
+Full job log](https://api.travis-ci.org/v3/job/634678441/log.txt)
