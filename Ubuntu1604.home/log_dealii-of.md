@@ -1,104 +1,104 @@
 ## Status: Failure 
-Build: [1413](https://travis-ci.org/precice/systemtests/builds/634661128) 
+Build: [1414](https://travis-ci.org/precice/systemtests/builds/634663511) 
 
-Job: [1413.6](https://travis-ci.org/precice/systemtests/jobs/634661134) 
+Job: [1414.6](https://travis-ci.org/precice/systemtests/jobs/634663517) 
 
 Triggered by: [pull_request](https://github.com/precice/systemtests/pull/148) 
 Last successful commits 
-* [dealii-adapter](https://github.com/precice/dealii-adapter/compare/1cefd5edac2aea69ea37978eeb5479db3ada0042...d9a7dc3ed7e75c17e88adc4757c7bd5f44719b24)
+* [openfoam-adapter](https://github.com/precice/openfoam-adapter/compare/7566319387fe...59b44bf3cbdc)
 * [systemtests](https://github.com/precice/systemtests/compare/4f15349af2e6b142f80dbeffbfffd5e75ea93b7e...ff457bed2521c9ab78f7f6e490c7785219151c1e)
-* [openfoam-adapter](https://github.com/precice/openfoam-adapter/compare/7566319387fe...59b44bf3cbdc) 
+* [dealii-adapter](https://github.com/precice/dealii-adapter/compare/1cefd5edac2aea69ea37978eeb5479db3ada0042...d9a7dc3ed7e75c17e88adc4757c7bd5f44719b24) 
 
 ---
 Last 100 lines of the job log at the moment of push:
 ```
-Creating volume "testcomposedealiiof_input_of" with default driver
-Creating volume "testcomposedealiiof_exchange" with default driver
-Building tutorial-data
-Step 1/12 : FROM alpine
-latest: Pulling from library/alpine
-Digest: sha256:2171658620155679240babee0a7714f6509fae66898db422ad803b951257db78
-Status: Downloaded newer image for alpine:latest
- ---> cc0abc535e36
-Step 2/12 : ENV tutorial_path tutorials/FSI/flap_perp/OpenFOAM-deal.II
- ---> Running in f4d9dc10cbc0
- ---> 6420f3b65eff
-Removing intermediate container f4d9dc10cbc0
-Step 3/12 : RUN apk add git
- ---> Running in 89c8968ae48f
-fetch http://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/APKINDEX.tar.gz
-fetch http://dl-cdn.alpinelinux.org/alpine/v3.11/community/x86_64/APKINDEX.tar.gz
-(1/6) Installing ca-certificates (20191127-r0)
-(2/6) Installing nghttp2-libs (1.40.0-r0)
-(3/6) Installing libcurl (7.67.0-r0)
-(4/6) Installing expat (2.2.9-r1)
-(5/6) Installing pcre2 (10.34-r1)
-(6/6) Installing git (2.24.1-r0)
-Executing busybox-1.31.1-r8.trigger
-Executing ca-certificates-20191127-r0.trigger
-OK: 22 MiB in 20 packages
- ---> 7beec64a9f6b
-Removing intermediate container 89c8968ae48f
-Step 4/12 : ARG branch=develop
- ---> Running in 1c93fef7c755
- ---> 8f695f32fc98
-Removing intermediate container 1c93fef7c755
-Step 5/12 : RUN git clone --branch $branch https://github.com/[secure]/tutorials
- ---> Running in 506ed78c86e1
-[91mCloning into 'tutorials'...
-[0m ---> be9d5ef697f2
-Removing intermediate container 506ed78c86e1
-Step 6/12 : RUN mkdir configs && sed -e 's|gather-scatter"|gather-scatter" exchange-directory="/home/[secure]/Data/Exchange/" network="eth0"|g' $tutorial_path/[secure]-config_serial.xml > configs/[secure]-config.xml
- ---> Running in 3a914ca4e4a4
- ---> 9b49c330b3f2
-Removing intermediate container 3a914ca4e4a4
-Step 7/12 : RUN sed -i '/application     pimpleFoam/d; s/\/\/ application     pimpleDyMFoam/application    pimpleDyMFoam/g'     $tutorial_path/Fluid/system/controlDict
- ---> Running in 07e81ecbcaab
- ---> 5abbc8388607
-Removing intermediate container 07e81ecbcaab
-Step 8/12 : RUN rm $tutorial_path/[secure]-config_serial.xml $tutorial_path/[secure]-config.xml
- ---> Running in e1355c3b0132
- ---> f3617f4de1b2
-Removing intermediate container e1355c3b0132
-Step 9/12 : RUN rm -rfv $tutorial_path/Fluid/0/
- ---> Running in b73336c3365f
-removed 'tutorials/FSI/flap_perp/OpenFOAM-deal.II/Fluid/0/p'
-removed 'tutorials/FSI/flap_perp/OpenFOAM-deal.II/Fluid/0/phi'
-removed 'tutorials/FSI/flap_perp/OpenFOAM-deal.II/Fluid/0/U'
-removed 'tutorials/FSI/flap_perp/OpenFOAM-deal.II/Fluid/0/pointDisplacement'
-removed directory: 'tutorials/FSI/flap_perp/OpenFOAM-deal.II/Fluid/0'
- ---> 520c426026df
-Removing intermediate container b73336c3365f
-Step 10/12 : RUN cp -r $tutorial_path/Fluid/0.orig/ $tutorial_path/Fluid/0/
- ---> Running in 62a3cc4a1dc5
- ---> ca49c6ce91d0
-Removing intermediate container 62a3cc4a1dc5
-Step 11/12 : RUN addgroup -g 1000 [secure] && adduser -u 1000 -G [secure] -D [secure] && chown -R [secure]:[secure] tutorials configs
- ---> Running in 1303ac51af2f
- ---> 91f2d46c1e14
-Removing intermediate container 1303ac51af2f
-Step 12/12 : USER [secure]
- ---> Running in c694fa01503c
- ---> 8e3625f44806
-Removing intermediate container c694fa01503c
-Successfully built 8e3625f44806
-Successfully tagged testcomposedealiiof_tutorial-data:latest
-Image for service tutorial-data was built because it did not already exist. To rebuild this image you must use `docker-compose build` or `docker-compose up --build`.
-Pulling openfoam-adapter ([secure]/openfoam-adapter-ubuntu1604.home-develop:latest)...
-latest: Pulling from [secure]/openfoam-adapter-ubuntu1604.home-develop
-Digest: sha256:e442f33a6f3cab80648fc9ce72f80770ee8c748f2969dc4cd39d3ccd02fd4e5a
-Status: Downloaded newer image for [secure]/openfoam-adapter-ubuntu1604.home-develop:latest
-Pulling dealii-adapter ([secure]/dealii-adapter-ubuntu1604.home-develop:latest)...
-latest: Pulling from [secure]/dealii-adapter-ubuntu1604.home-develop
-Digest: sha256:5e53d207d24d4c37e7dcc0fe0d1eca9c227632473df210e4f50b926bd5b73c10
-Status: Downloaded newer image for [secure]/dealii-adapter-ubuntu1604.home-develop:latest
-Creating tutorial-data ... 
-Creating tutorial-data
-[1A[2KCreating tutorial-data ... [32mdone[0m[1BCreating openfoam-adapter ... 
-Creating openfoam-adapter
-[1A[2KCreating openfoam-adapter ... [32mdone[0m[1BCreating dealii-adapter ... 
-Creating dealii-adapter
-[1A[2KCreating dealii-adapter ... [32mdone[0m[1BOnly in /home/travis/build/[secure]/systemtests/tests/TestCompose_dealii-of/referenceOutput: Fluid
+[33mopenfoam-adapter    |[0m (
+[33mopenfoam-adapter    |[0m points
+[33mopenfoam-adapter    |[0m neighbour
+[33mopenfoam-adapter    |[0m faceDiffusivity
+[33mopenfoam-adapter    |[0m MRFProperties
+[33mopenfoam-adapter    |[0m pointMesh
+[33mopenfoam-adapter    |[0m pointDisplacement
+[33mopenfoam-adapter    |[0m faces
+[33mopenfoam-adapter    |[0m U
+[33mopenfoam-adapter    |[0m turbulenceProperties
+[33mopenfoam-adapter    |[0m fvSchemes
+[33mopenfoam-adapter    |[0m fvOptions
+[33mopenfoam-adapter    |[0m faceZones
+[33mopenfoam-adapter    |[0m fvSolution
+[33mopenfoam-adapter    |[0m Uf
+[33mopenfoam-adapter    |[0m nu
+[33mopenfoam-adapter    |[0m phi
+[33mopenfoam-adapter    |[0m owner
+[33mopenfoam-adapter    |[0m data
+[33mopenfoam-adapter    |[0m cellZones
+[33mopenfoam-adapter    |[0m boundary
+[33mopenfoam-adapter    |[0m dynamicMeshDict
+[33mopenfoam-adapter    |[0m p
+[33mopenfoam-adapter    |[0m cellDisplacement
+[33mopenfoam-adapter    |[0m pointZones
+[33mopenfoam-adapter    |[0m transportProperties
+[33mopenfoam-adapter    |[0m )
+[33mopenfoam-adapter    |[0m 
+[33mopenfoam-adapter    |[0m Unexpected end of /proc/mounts line `overlay / overlay rw,relatime,lowerdir=/var/lib/docker/overlay2/l/XCG44VMM3CEKCCB4JEMRLBMJGC:/var/lib/docker/overlay2/l/T5SCRLWP3BV7AOCJS5ZEVTCGTQ:/var/lib/docker/overlay2/l/4OTEMNQAYU7MSD6PETFPNFKB64:/var/lib/docker/overlay2/l/LTZAFBMPNMYJP3YY6MRP2F2F73:/var/lib/docker/overlay2/l/HJJT3ESMVHHIONRCC2GYX4XA65:/var/lib/docker/overlay2/l/YAHUMQD5IP7RSNAT6TUJGZQ5HH:/var/lib/docker/overlay2/l/JEPBYJ34SRIZGGEVXKCS3LPQ5Q:/var/lib/docker/overlay2/l/ZGWKISTPYPCGOKTINMKLAK7JAH:/var/lib/docker/overlay2/l/SQO4WHTU3DMEE'
+[33mopenfoam-adapter    |[0m Unexpected end of /proc/mounts line `TYTJ7M65YQVV4:/var/lib/docker/overlay2/l/MXAEEWXAD3DJUB7XFIQKFEGSHJ:/var/lib/docker/overlay2/l/LVTFHWJU5ZAFDYSYWAVVTTX7FL:/var/lib/docker/overlay2/l/DT5RAQE62KUTRSZUXPC6475FKC:/var/lib/docker/overlay2/l/EZHQOXHLGW5MVHWPE2Z7K2LL57:/var/lib/docker/overlay2/l/5UCLK5FOE6DNHLPEZFIIATFEEE:/var/lib/docker/overlay2/l/PYPP5ZX2PD63DIEXRLTUNNK3EZ:/var/lib/docker/overlay2/l/D7MZV2O6VDSSS3XPV4ZW7ZJIUN:/var/lib/docker/overlay2/l/Z35XILM3JGFMWCH326LUWJHHUC:/var/lib/docker/overlay2/l/ZPZWLFR5MHSR3SQATYJ5W73ZZZ:/var/lib/do'
+[32mdealii-adapter      |[0m --------------------------------------------------
+[32mdealii-adapter      |[0m              Running deal.ii solver 
+[32mdealii-adapter      |[0m --------------------------------------------------
+[32mdealii-adapter      |[0m 
+[32mdealii-adapter      |[0m   Create mesh: 
+[32mdealii-adapter      |[0m 	 Number of active cells:       150
+[32mdealii-adapter      |[0m   Setup system: 
+[32mdealii-adapter      |[0m 	 Number of degrees of freedom: 1116
+[32mdealii-adapter      |[0m 	 Output written to solution-0.vtk 
+[32mdealii-adapter      |[0m 
+[32mdealii-adapter      |[0m Unexpected end of /proc/mounts line `overlay / overlay rw,relatime,lowerdir=/var/lib/docker/overlay2/l/47FCVLY6MLSORS3A5KCTZSS3ZX:/var/lib/docker/overlay2/l/I7I4O3ERJR2VXPUBGZST7QDOLT:/var/lib/docker/overlay2/l/HF43Q6HJ6KL7I7KNT4XYFBPO2Q:/var/lib/docker/overlay2/l/I6ECUKHNXZ5SVAGSKRUULFDTDZ:/var/lib/docker/overlay2/l/KH5SVZLDLIT57OOUSUNZINGEYM:/var/lib/docker/overlay2/l/JEPBYJ34SRIZGGEVXKCS3LPQ5Q:/var/lib/docker/overlay2/l/ZGWKISTPYPCGOKTINMKLAK7JAH:/var/lib/docker/overlay2/l/SQO4WHTU3DMEETYTJ7M65YQVV4:/var/lib/docker/overlay2/l/MXAEEWXAD3DJU'
+[32mdealii-adapter      |[0m Unexpected end of /proc/mounts line `B7XFIQKFEGSHJ:/var/lib/docker/overlay2/l/LVTFHWJU5ZAFDYSYWAVVTTX7FL:/var/lib/docker/overlay2/l/DT5RAQE62KUTRSZUXPC6475FKC:/var/lib/docker/overlay2/l/EZHQOXHLGW5MVHWPE2Z7K2LL57:/var/lib/docker/overlay2/l/5UCLK5FOE6DNHLPEZFIIATFEEE:/var/lib/docker/overlay2/l/PYPP5ZX2PD63DIEXRLTUNNK3EZ:/var/lib/docker/overlay2/l/D7MZV2O6VDSSS3XPV4ZW7ZJIUN:/var/lib/docker/overlay2/l/Z35XILM3JGFMWCH326LUWJHHUC:/var/lib/docker/overlay2/l/ZPZWLFR5MHSR3SQATYJ5W73ZZZ:/var/lib/docker/overlay2/l/M63WO4K2CMF6T7ESAHI4I7UW73,upperdir=/v'
+[33mopenfoam-adapter    |[0m ---[[secure]Adapter] Reading the adapter's YAML configuration file /home/[secure]/Data/Input/[secure]-adapter-config.yml...
+[33mopenfoam-adapter    |[0m ---[[secure]Adapter] [DEBUG] Checking the adapter's YAML configuration file...
+[33mopenfoam-adapter    |[0m ---[[secure]Adapter] [DEBUG]   participant : Fluid
+[33mopenfoam-adapter    |[0m ---[[secure]Adapter] [DEBUG]   [secure]-config-file : [secure]-config.xml
+[33mopenfoam-adapter    |[0m ---[[secure]Adapter] [DEBUG]   interfaces : 
+[33mopenfoam-adapter    |[0m ---[[secure]Adapter] [DEBUG]   - mesh      : Fluid-Mesh-Centers
+[33mopenfoam-adapter    |[0m ---[[secure]Adapter] [DEBUG]     locations : faceCenters
+[33mopenfoam-adapter    |[0m ---[[secure]Adapter] [DEBUG]     Provide mesh connectivity : 0
+[33mopenfoam-adapter    |[0m ---[[secure]Adapter] [DEBUG]     patches   : 
+[33mopenfoam-adapter    |[0m ---[[secure]Adapter] [DEBUG]       flap
+[33mopenfoam-adapter    |[0m ---[[secure]Adapter] [DEBUG]     write-data : 
+[33mopenfoam-adapter    |[0m ---[[secure]Adapter] [DEBUG]       Force
+[33mopenfoam-adapter    |[0m ---[[secure]Adapter] [DEBUG]   - mesh      : Fluid-Mesh-Nodes
+[33mopenfoam-adapter    |[0m ---[[secure]Adapter] [DEBUG]     locations : faceNodes
+[33mopenfoam-adapter    |[0m ---[[secure]Adapter] [DEBUG]     Provide mesh connectivity : 0
+[33mopenfoam-adapter    |[0m ---[[secure]Adapter] [DEBUG]     patches   : 
+[33mopenfoam-adapter    |[0m ---[[secure]Adapter] [DEBUG]       flap
+[33mopenfoam-adapter    |[0m ---[[secure]Adapter] [DEBUG]     read-data : 
+[33mopenfoam-adapter    |[0m ---[[secure]Adapter] [DEBUG]       Displacement
+[33mopenfoam-adapter    |[0m ---[[secure]Adapter] [DEBUG]     subcycling : 1
+[33mopenfoam-adapter    |[0m ---[[secure]Adapter] [DEBUG]     prevent early exit : 1
+[33mopenfoam-adapter    |[0m ---[[secure]Adapter] [DEBUG]     evaluate boundaries : 1
+[33mopenfoam-adapter    |[0m ---[[secure]Adapter] [DEBUG]     disable checkpointing : 0
+[33mopenfoam-adapter    |[0m ---[[secure]Adapter] [DEBUG]     CHT module enabled : 0
+[33mopenfoam-adapter    |[0m ---[[secure]Adapter] [DEBUG]     FSI module enabled : 1
+[33mopenfoam-adapter    |[0m ---[[secure]Adapter] [DEBUG] Configuring the FSI module...
+[33mopenfoam-adapter    |[0m ---[[secure]Adapter] [DEBUG]     user-defined solver type : none
+[33mopenfoam-adapter    |[0m ---[[secure]Adapter] [DEBUG]     pointDisplacement field name : pointDisplacement
+[33mopenfoam-adapter    |[0m ---[[secure]Adapter] [DEBUG] Determining the solver type...
+[33mopenfoam-adapter    |[0m ---[[secure]Adapter] [DEBUG] Found the transportProperties dictionary.
+[33mopenfoam-adapter    |[0m ---[[secure]Adapter] [DEBUG] Found the turbulenceProperties dictionary.
+[33mopenfoam-adapter    |[0m ---[[secure]Adapter] [DEBUG] Did not find the thermophysicalProperties dictionary.
+[33mopenfoam-adapter    |[0m ---[[secure]Adapter] [DEBUG] This is an incompressible flow solver, as turbulence and transport properties are provided.
+[33mopenfoam-adapter    |[0m ---[[secure]Adapter] [DEBUG] Checking the timestep type (fixed vs adjustable)...
+[33mopenfoam-adapter    |[0m ---[[secure]Adapter] [DEBUG]   Timestep type: fixed.
+[33mopenfoam-adapter    |[0m ---[[secure]Adapter] [DEBUG] Creating the preCICE solver interface...
+[33mopenfoam-adapter    |[0m ---[[secure]Adapter] [DEBUG]   Number of processes: 1
+[33mopenfoam-adapter    |[0m ---[[secure]Adapter] [DEBUG]   MPI rank: 0
+[33mopenfoam-adapter    |[0m ---[[secure]Adapter] [DEBUG]   preCICE solver interface was created.
+[33mopenfoam-adapter    |[0m ---[[secure]Adapter] [DEBUG] Configuring preCICE...
+[33mopenfoam-adapter    |[0m ---[[secure]] [31mERROR: [0m Wrong attribute "distribution-type"
+[32mdealii-adapter      |[0m ---[[secure]] [31mERROR: [0m Wrong attribute "distribution-type"
+[33mopenfoam-adapter exited with code 255
+[0m[32mdealii-adapter exited with code 255
+[0mOnly in /home/travis/build/[secure]/systemtests/tests/TestCompose_dealii-of/referenceOutput: Fluid
 EXECUTING: export PRECICE_BASE=-ubuntu1604.home-develop;  docker-compose config &&
                          bash ../../silent_compose.sh
 EXECUTING: docker cp tutorial-data:/Output .
@@ -107,11 +107,11 @@ TESTS FAILED WITH: Output files do not match reference
 Files differing               : []
 Files only in reference (left): ['Fluid']
 Files only in output(right)   : []
-travis_time:end:1004f6ec:start=1578563734062475188,finish=1578563808804130449,duration=74741655261,event=script[0K[31;1mThe command "python system_testing.py -s dealii-of" exited with 1.[0m
+travis_time:end:206da13a:start=1578564101379584172,finish=1578564175621245237,duration=74241661065,event=script[0K[31;1mThe command "python system_testing.py -s dealii-of" exited with 1.[0m
 
-travis_fold:start:after_failure[0Ktravis_time:start:01539710[0K$ python push.py -t dealii-of
+travis_fold:start:after_failure[0Ktravis_time:start:0feec7c0[0K$ python push.py -t dealii-of
 Cloning into '[secure]_st_output'...
 
 ```
 [
-Full job log](https://api.travis-ci.org/v3/job/634661134/log.txt)
+Full job log](https://api.travis-ci.org/v3/job/634663517/log.txt)
