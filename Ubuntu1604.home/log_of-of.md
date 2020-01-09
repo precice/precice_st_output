@@ -1,28 +1,27 @@
 ## Status: Failure 
-Build: [1413](https://travis-ci.org/precice/systemtests/builds/634661128) 
+Build: [1415](https://travis-ci.org/precice/systemtests/builds/634678414) 
 
-Job: [1413.2](https://travis-ci.org/precice/systemtests/jobs/634661130) 
+Job: [1415.19](https://travis-ci.org/precice/systemtests/jobs/634678435) 
 
-Triggered by: [pull_request](https://github.com/precice/systemtests/pull/148) 
+Triggered by: [cron](https://github.com/precice/systemtests/compare/968fe698268820917cf52199d2d3dcbaaf61fbaf...4c749ac41fec1ac0cc04f8e71fcd731e33705ab1) 
 Last successful commits 
-* [openfoam-adapter](https://github.com/precice/openfoam-adapter/compare/7566319387fe...59b44bf3cbdc)
-* [systemtests](https://github.com/precice/systemtests/compare/4f15349af2e6b142f80dbeffbfffd5e75ea93b7e...ff457bed2521c9ab78f7f6e490c7785219151c1e) 
+* [systemtests](https://github.com/precice/systemtests/compare/4f15349af2e6b142f80dbeffbfffd5e75ea93b7e...ff457bed2521c9ab78f7f6e490c7785219151c1e)
+* [openfoam-adapter](https://github.com/precice/openfoam-adapter/compare/7566319387fe...59b44bf3cbdc) 
 
 ---
 Last 100 lines of the job log at the moment of push:
 ```
-travis_time:end:00626805:start=1578563574049085422,finish=1578563582265333018,duration=8216247596,event=configure[0Ktravis_time:start:0ae8acc4[0Ktravis_fold:start:services[0Ktravis_time:start:038d0630[0K$ sudo service docker start
+travis_time:start:1e428988[0K$ curl -sSf --retry 5 -o python-3.5.tar.bz2 ${archive_url}
+travis_time:end:1e428988:start=1578569431422189344,finish=1578569432349743042,duration=927553698,event=configure[0Ktravis_time:start:0fd6182a[0K$ sudo tar xjf python-3.5.tar.bz2 --directory /
+travis_time:end:0fd6182a:start=1578569432354724121,finish=1578569440949491820,duration=8594767699,event=configure[0Ktravis_time:start:0cda1ed8[0Ktravis_fold:start:services[0Ktravis_time:start:032c9778[0K$ sudo service docker start
 start: Job is already running: docker
-travis_time:end:038d0630:start=1578563582287617876,finish=1578563582300756787,duration=13138911,event=prepare[0Ktravis_fold:end:services[0Ktravis_time:end:038d0630:start=1578563582287617876,finish=1578563585305826115,duration=3018208239,event=services[0Ktravis_time:start:115a5da0[0Ktravis_time:end:115a5da0:start=1578563585310997199,finish=1578563585313820678,duration=2823479,event=fix_ps4[0Ktravis_time:start:02686300[0K
-travis_fold:start:git.checkout[0Ktravis_time:start:0ff6e376[0K$ git clone --depth=50 https://github.com/[secure]/systemtests.git [secure]/systemtests
+travis_time:end:032c9778:start=1578569440971857177,finish=1578569440985028772,duration=13171595,event=prepare[0Ktravis_fold:end:services[0Ktravis_time:end:032c9778:start=1578569440971857177,finish=1578569443990544389,duration=3018687212,event=services[0Ktravis_time:start:11dd4358[0Ktravis_time:end:11dd4358:start=1578569443995485916,finish=1578569443998190930,duration=2705014,event=fix_ps4[0Ktravis_time:start:13936e18[0K
+travis_fold:start:git.checkout[0Ktravis_time:start:0e8cdfb8[0K$ git clone --depth=50 --branch=develop https://github.com/[secure]/systemtests.git [secure]/systemtests
 Cloning into '[secure]/systemtests'...
-travis_time:end:0ff6e376:start=1578563585323206473,finish=1578563590769156637,duration=5445950164,event=checkout[0K$ cd [secure]/systemtests
-travis_time:start:0e7393f4[0K$ git fetch origin +refs/pull/148/merge:
-From https://github.com/[secure]/systemtests
- * branch            refs/pull/148/merge -> FETCH_HEAD
-travis_time:end:0e7393f4:start=1578563590773758267,finish=1578563591118196770,duration=344438503,event=checkout[0K$ git checkout -qf FETCH_HEAD
+travis_time:end:0e8cdfb8:start=1578569444006573964,finish=1578569449689737213,duration=5683163249,event=checkout[0K$ cd [secure]/systemtests
+$ git checkout -qf 4c749ac41fec1ac0cc04f8e71fcd731e33705ab1
 travis_fold:end:git.checkout[0K
-travis_time:end:0e7393f4:start=1578563590773758267,finish=1578563591811859633,duration=1038101366,event=checkout[0Ktravis_time:start:0cf07290[0K
+travis_time:end:0e8cdfb8:start=1578569444006573964,finish=1578569450301484242,duration=6294910278,event=checkout[0Ktravis_time:start:0b01ef32[0K
 [33;1mSetting environment variables from repository settings[0m
 $ export DOCKER_PASSWORD=[secure]
 $ export DOCKER_USERNAME=[secure]
@@ -30,13 +29,13 @@ $ export TRAVIS_ACCESS_TOKEN=[secure]
 $ export PRECICE_BOT_EMAIL=[secure]
 $ export GH_TOKEN=[secure]
 
-travis_time:end:0cf07290:start=1578563591816081567,finish=1578563591826068835,duration=9987268,event=env[0Ktravis_time:start:1678e618[0K$ source ~/virtualenv/python3.5/bin/activate
-travis_time:end:1678e618:start=1578563591829518168,finish=1578563591834590405,duration=5072237,event=[0K$ python --version
+travis_time:end:0b01ef32:start=1578569450306842811,finish=1578569450316631950,duration=9789139,event=env[0Ktravis_time:start:11d42d08[0K$ source ~/virtualenv/python3.5/bin/activate
+travis_time:end:11d42d08:start=1578569450320747438,finish=1578569450326488619,duration=5741181,event=[0K$ python --version
 Python 3.5.6
 $ pip --version
 pip 18.0 from /home/travis/virtualenv/python3.5.6/lib/python3.5/site-packages/pip (python 3.5)
 Could not locate requirements.txt. Override the install: key in your .travis.yml to install dependencies.
-travis_time:start:07844898[0K$ python system_testing.py -s of-of
+travis_time:start:28470e25[0K$ python system_testing.py -s of-of
 networks:
   [secure]comm: {}
 services:
@@ -88,7 +87,7 @@ Digest: sha256:2171658620155679240babee0a7714f6509fae66898db422ad803b951257db78
 Status: Downloaded newer image for alpine:latest
 Pulling openfoam-adapter-fluid ([secure]/openfoam-adapter-ubuntu1604.home-develop:latest)...
 latest: Pulling from [secure]/openfoam-adapter-ubuntu1604.home-develop
-Digest: sha256:e442f33a6f3cab80648fc9ce72f80770ee8c748f2969dc4cd39d3ccd02fd4e5a
+Digest: sha256:8469fc15e29f7e13ef656170fc50b2543001183fb3f84c25ed30090dae8831c6
 Status: Downloaded newer image for [secure]/openfoam-adapter-ubuntu1604.home-develop:latest
 Creating openfoam-adapter-fluid ... 
 Creating tutorial-data ... 
@@ -96,7 +95,8 @@ Creating openfoam-adapter-solid ...
 Creating tutorial-data
 Creating openfoam-adapter-fluid
 Creating openfoam-adapter-solid
-[1A[2KCreating tutorial-data ... [32mdone[0m[1B[1A[2KCreating openfoam-adapter-solid ... [32mdone[0m[1B[1A[2KCreating openfoam-adapter-fluid ... [32mdone[0m[1BOnly in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of/referenceOutput: Fluid
+[1A[2KCreating openfoam-adapter-fluid ... [32mdone[0m[1B[1A[2KCreating tutorial-data ... [32mdone[0m[1B[1A[2KCreating openfoam-adapter-solid ... [32mdone[0m[1BAll adapters finished!
+Only in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of/referenceOutput: Fluid
 Only in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of/referenceOutput: Solid
 EXECUTING: export PRECICE_BASE=-ubuntu1604.home-develop;  docker-compose config &&
                          bash ../../silent_compose.sh
@@ -104,13 +104,13 @@ EXECUTING: docker cp tutorial-data:/Output .
 EXECUTING: bash ../../compare_results.sh /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of/referenceOutput /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of/Output
 TESTS FAILED WITH: Output files do not match reference
 Files differing               : []
-Files only in reference (left): ['Fluid', 'Solid']
+Files only in reference (left): ['Solid', 'Fluid']
 Files only in output(right)   : []
-travis_time:end:07844898:start=1578563592112105584,finish=1578563656109374846,duration=63997269262,event=script[0K[31;1mThe command "python system_testing.py -s of-of" exited with 1.[0m
+travis_time:end:28470e25:start=1578569450629581389,finish=1578569516547557498,duration=65917976109,event=script[0K[31;1mThe command "python system_testing.py -s of-of" exited with 1.[0m
 
-travis_fold:start:after_failure[0Ktravis_time:start:05002126[0K$ python push.py -t of-of
+travis_fold:start:after_failure[0Ktravis_time:start:1d5eae3c[0K$ python push.py -t of-of
 Cloning into '[secure]_st_output'...
 
 ```
 [
-Full job log](https://api.travis-ci.org/v3/job/634661130/log.txt)
+Full job log](https://api.travis-ci.org/v3/job/634678435/log.txt)
