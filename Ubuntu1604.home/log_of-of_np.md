@@ -1,9 +1,9 @@
 ## Status: Failure 
-Build: [1422](https://travis-ci.org/precice/systemtests/builds/635287877) 
+Build: [1423](https://travis-ci.org/precice/systemtests/builds/635300170) 
 
-Job: [1422.8](https://travis-ci.org/precice/systemtests/jobs/635287885) 
+Job: [1423.8](https://travis-ci.org/precice/systemtests/jobs/635300178) 
 
-Triggered by: [pull_request](https://github.com/precice/systemtests/pull/148) 
+Triggered by: [pull_request](https://github.com/precice/systemtests/pull/150) 
 Last successful commits 
 * [systemtests](https://github.com/precice/systemtests/compare/4f15349af2e6b142f80dbeffbfffd5e75ea93b7e...ff457bed2521c9ab78f7f6e490c7785219151c1e)
 * [openfoam-adapter](https://github.com/precice/openfoam-adapter/compare/7566319387fe...59b44bf3cbdc) 
@@ -46,8 +46,8 @@ Last 100 lines of the job log at the moment of push:
 [33mopenfoam-adapter-fluid    |[0m thermo:alpha
 [33mopenfoam-adapter-fluid    |[0m )
 [33mopenfoam-adapter-fluid    |[0m 
-[33mopenfoam-adapter-fluid    |[0m Unexpected end of /proc/mounts line `overlay / overlay rw,relatime,lowerdir=/var/lib/docker/overlay2/l/RFNMC7LWPN67DZDXLUVGYLCG3L:/var/lib/docker/overlay2/l/2ZJOK7KMI6OWAK3GCEBDGX2YYR:/var/lib/docker/overlay2/l/RMJLXOTMV4M4ASNVI2AGL66ATT:/var/lib/docker/overlay2/l/27YB3QVQIIUQJTX7WT3LXSXYSP:/var/lib/docker/overlay2/l/Y2YHZB4RUW37AOGSP7JF6FAEFD:/var/lib/docker/overlay2/l/ET6A6BWOVWIZEKJV2OEWIQMSFE:/var/lib/docker/overlay2/l/DHZHLBWSXWPQ36M43T56PHGGM3:/var/lib/docker/overlay2/l/IEJZEPTWJWYEOPWADVOL7ZZSV4:/var/lib/docker/overlay2/l/A6CXHZ6DAJUAU'
-[33mopenfoam-adapter-fluid    |[0m Unexpected end of /proc/mounts line `IAET4SCBUZNST:/var/lib/docker/overlay2/l/HYAF6NXZQZTAA3PTJN4E5ZRUY6:/var/lib/docker/overlay2/l/7ISP7UBTD2RY4ATIZ4PVNJV3TT:/var/lib/docker/overlay2/l/32SGFFI7OIT4HZOG5VXDIIMDLM:/var/lib/docker/overlay2/l/MOWLL2JDRJBLGSCUIJTER37CVD:/var/lib/docker/overlay2/l/747QQ5477TZQZ7LJHXXBWKRGFS:/var/lib/docker/overlay2/l/PNE7PBDZ5SFVM64BRSFBUEG42C:/var/lib/docker/overlay2/l/VTAWWKC4T65U7CFFU7STCGPC5Y:/var/lib/docker/overlay2/l/YRYQ5DXIOCUQ2EBXTXPRN66PVH:/var/lib/docker/overlay2/l/2FMLG2CE5F4HYVBZ7PE4CCYDSJ:/var/lib/do'
+[33mopenfoam-adapter-fluid    |[0m Unexpected end of /proc/mounts line `overlay / overlay rw,relatime,lowerdir=/var/lib/docker/overlay2/l/KPE7WIOUK5UHNZ3VF2IHABCL22:/var/lib/docker/overlay2/l/Q6A2WZILK7PXXL7TFVJRNRQ35Y:/var/lib/docker/overlay2/l/HMB665DD4SLTZFU2MC2DUWGWYX:/var/lib/docker/overlay2/l/J5AZEQUUFTSPVE2GFXNCKNFWNU:/var/lib/docker/overlay2/l/2BH2PIGFSXN2DM2L244AXZKBIN:/var/lib/docker/overlay2/l/BKSX54CKPU3GW7KQ6H4Z6HWWJZ:/var/lib/docker/overlay2/l/TU7ZLTTX6EQVVGQVEP7OVOIC2L:/var/lib/docker/overlay2/l/I2KXOWXAFXAFCVS53HG5O6WO7X:/var/lib/docker/overlay2/l/NC5M7EXS4MIP5'
+[33mopenfoam-adapter-fluid    |[0m Unexpected end of /proc/mounts line `BXULGNDGAUZGK:/var/lib/docker/overlay2/l/EFU3XGDFQ6KHC2B5XM6ENLVE75:/var/lib/docker/overlay2/l/7OD5T72U6TQCUZMMBDGZKEZRAG:/var/lib/docker/overlay2/l/GTDDPTX3XT7QMBCZ5GBBOZVAIE:/var/lib/docker/overlay2/l/MZS65BUVDB47A45CM2JRYTP2CX:/var/lib/docker/overlay2/l/DQYPSKIM4ACGAZHDRS4BKR3PLV:/var/lib/docker/overlay2/l/555ZHNUHUCJPNT4EEOSOJJI2WT:/var/lib/docker/overlay2/l/IDKEC62KMCTFOLA7A3PUAKZNKT:/var/lib/docker/overlay2/l/I6CUR6THVBWX6SIMOLNFWR4SN3:/var/lib/docker/overlay2/l/NVX3LNGSCDQALV2MB3W3IHFN3R:/var/lib/do'
 [33mopenfoam-adapter-fluid    |[0m ---[[secure]Adapter] Reading the adapter's YAML configuration file ./Fluid/[secure]-adapter-config.yml...
 [33mopenfoam-adapter-fluid    |[0m ---[[secure]Adapter] [DEBUG] Checking the adapter's YAML configuration file...
 [33mopenfoam-adapter-fluid    |[0m ---[[secure]Adapter] [DEBUG]   participant : Fluid
@@ -104,13 +104,13 @@ EXECUTING: docker cp tutorial-data:/Output .
 EXECUTING: bash ../../compare_results.sh /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output
 TESTS FAILED WITH: Output files do not match reference
 Files differing               : []
-Files only in reference (left): ['Solid', 'Fluid']
+Files only in reference (left): ['Fluid', 'Solid']
 Files only in output(right)   : []
-travis_time:end:134e159b:start=1578666911462798990,finish=1578666977623981358,duration=66161182368,event=script[0K[31;1mThe command "python system_testing.py -s of-of_np" exited with 1.[0m
+travis_time:end:0ca85505:start=1578668350248962218,finish=1578668417097437998,duration=66848475780,event=script[0K[31;1mThe command "python system_testing.py -s of-of_np" exited with 1.[0m
 
-travis_fold:start:after_failure[0Ktravis_time:start:00691aea[0K$ python push.py -t of-of_np
+travis_fold:start:after_failure[0Ktravis_time:start:130b83c7[0K$ python push.py -t of-of_np
 Cloning into '[secure]_st_output'...
 
 ```
 [
-Full job log](https://api.travis-ci.org/v3/job/635287885/log.txt)
+Full job log](https://api.travis-ci.org/v3/job/635300178/log.txt)
