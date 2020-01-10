@@ -1,13 +1,13 @@
 ## Status: Failure 
-Build: [1429](https://travis-ci.org/precice/systemtests/builds/635333660) 
+Build: [1431](https://travis-ci.org/precice/systemtests/builds/635347829) 
 
-Job: [1429.6](https://travis-ci.org/precice/systemtests/jobs/635333666) 
+Job: [1431.6](https://travis-ci.org/precice/systemtests/jobs/635347835) 
 
 Triggered by: [pull_request](https://github.com/precice/systemtests/pull/150) 
 Last successful commits 
 * [systemtests](https://github.com/precice/systemtests/compare/4f15349af2e6b142f80dbeffbfffd5e75ea93b7e...ff457bed2521c9ab78f7f6e490c7785219151c1e)
-* [dealii-adapter](https://github.com/precice/dealii-adapter/compare/1cefd5edac2aea69ea37978eeb5479db3ada0042...d9a7dc3ed7e75c17e88adc4757c7bd5f44719b24)
-* [openfoam-adapter](https://github.com/precice/openfoam-adapter/compare/7566319387fe...59b44bf3cbdc) 
+* [openfoam-adapter](https://github.com/precice/openfoam-adapter/compare/7566319387fe...59b44bf3cbdc)
+* [dealii-adapter](https://github.com/precice/dealii-adapter/compare/1cefd5edac2aea69ea37978eeb5479db3ada0042...d9a7dc3ed7e75c17e88adc4757c7bd5f44719b24) 
 
 ---
 Last 100 lines of the job log at the moment of push:
@@ -40,8 +40,15 @@ Last 100 lines of the job log at the moment of push:
 [33mopenfoam-adapter    |[0m transportProperties
 [33mopenfoam-adapter    |[0m )
 [33mopenfoam-adapter    |[0m 
-[33mopenfoam-adapter    |[0m Unexpected end of /proc/mounts line `overlay / overlay rw,relatime,lowerdir=/var/lib/docker/overlay2/l/DYCZQ6RGTWKV4MILCDC3JH4A2K:/var/lib/docker/overlay2/l/QFCZQSPZQDUVHGSLQAGTWMWYVE:/var/lib/docker/overlay2/l/DWUDYO3ONP3HBM7PPCMVNGVKHI:/var/lib/docker/overlay2/l/APDUMIME45IG2K3W5JWZ2E2JWG:/var/lib/docker/overlay2/l/RWE4SSWU3OASQP2V7B5463QDUM:/var/lib/docker/overlay2/l/OJGYJ7HHLOY3LV2XNCPGBPMVGA:/var/lib/docker/overlay2/l/I43US3WH3B5NHEUSMELWLOPQHF:/var/lib/docker/overlay2/l/ZAOM5GKQKTDQZGZYXWWEXAZW77:/var/lib/docker/overlay2/l/C7HU3SAI5DG4K'
-[33mopenfoam-adapter    |[0m Unexpected end of /proc/mounts line `KVIB7N32ENAI3:/var/lib/docker/overlay2/l/NF7R4FWH6VWF4IKHGCD6R24HCH:/var/lib/docker/overlay2/l/6GFNLQQ2HLZJHTHWEFZOZL5Y5R:/var/lib/docker/overlay2/l/5JUUCUFNXCMJ34TY44GGTIFD7N:/var/lib/docker/overlay2/l/BL7AUZLQTEVEZQ6BW4AQNZ6LOQ:/var/lib/docker/overlay2/l/4T3UCMDAYQSGYZM3TGJIKB4SXD:/var/lib/docker/overlay2/l/5TSDHVYNZBIRJRAV6JXKMQKU5Z:/var/lib/docker/overlay2/l/5MGOFCFELVRM53Z2SOSLWIVZZ2:/var/lib/docker/overlay2/l/2HLB3HZUIWHVKTQWMKLEVLGWYY:/var/lib/docker/overlay2/l/EEZUBW77DJR5DC6YWOS2XEYZE5:/var/lib/do'
+[33mopenfoam-adapter    |[0m Unexpected end of /proc/mounts line `overlay / overlay rw,relatime,lowerdir=/var/lib/docker/overlay2/l/QHJ2HAXYPGBF3YUG3SLM3GC6XO:/var/lib/docker/overlay2/l/ENAIQB7QDUOHGIQOTD5VGO4MDD:/var/lib/docker/overlay2/l/Y4MSDX3XN7GBVHHLEDE7YCGZPV:/var/lib/docker/overlay2/l/ZZ5Z4BK4SHZNZ63ONZZJ4WXA3W:/var/lib/docker/overlay2/l/N6OFYEMD3A7DPSMN5ELBQDCRKR:/var/lib/docker/overlay2/l/WGPNBWWMATVO6SO4VOUSPMHYQV:/var/lib/docker/overlay2/l/RHL54GPHL55GLMTTZ3LPCEPE3Q:/var/lib/docker/overlay2/l/W7GVW4ZMNHRWCJ7R7B2QBY4CBH:/var/lib/docker/overlay2/l/FD4W4SM6SH7BI'
+[33mopenfoam-adapter    |[0m Unexpected end of /proc/mounts line `OMFXYDQ2ZBVLG:/var/lib/docker/overlay2/l/KJ4GGO3BFEYQE2EB4LNKHRJ6MT:/var/lib/docker/overlay2/l/MP6M4YPMMFK2J7XF34HOXFQOLM:/var/lib/docker/overlay2/l/SO7VVOJHDANHQOOJDBJ7MRGKVZ:/var/lib/docker/overlay2/l/42XAFC5EZOB3IZ5GN5L3KGICTT:/var/lib/docker/overlay2/l/XTOVKEWUMRQB72UDNDECQ22NMU:/var/lib/docker/overlay2/l/QVVKKTI7X4DUAKHB2XO2XC4HJZ:/var/lib/docker/overlay2/l/YHZ2NICMPFISRXC4RUSETKLZO3:/var/lib/docker/overlay2/l/XFSWOQTQITR72L3FSJ6SJKDHK5:/var/lib/docker/overlay2/l/2WA434EBLNU6I5DN7OYRSRZF2I:/var/lib/do'
+[32mdealii-adapter      |[0m --------------------------------------------------
+[32mdealii-adapter      |[0m              Running deal.ii solver 
+[32mdealii-adapter      |[0m --------------------------------------------------
+[32mdealii-adapter      |[0m 
+[32mdealii-adapter      |[0m   Create mesh: 
+[32mdealii-adapter      |[0m 	 Number of active cells:       150
+[32mdealii-adapter      |[0m   Setup system: 
 [33mopenfoam-adapter    |[0m ---[[secure]Adapter] Reading the adapter's YAML configuration file /home/[secure]/Data/Input/[secure]-adapter-config.yml...
 [33mopenfoam-adapter    |[0m ---[[secure]Adapter] [DEBUG] Checking the adapter's YAML configuration file...
 [33mopenfoam-adapter    |[0m ---[[secure]Adapter] [DEBUG]   participant : Fluid
@@ -83,18 +90,11 @@ Last 100 lines of the job log at the moment of push:
 [33mopenfoam-adapter    |[0m ---[[secure]Adapter] [DEBUG]   preCICE solver interface was created.
 [33mopenfoam-adapter    |[0m ---[[secure]Adapter] [DEBUG] Configuring preCICE...
 [33mopenfoam-adapter    |[0m ---[[secure]] [31mERROR: [0m Wrong attribute "distribution-type"
-[32mdealii-adapter      |[0m --------------------------------------------------
-[32mdealii-adapter      |[0m              Running deal.ii solver 
-[32mdealii-adapter      |[0m --------------------------------------------------
-[32mdealii-adapter      |[0m 
-[32mdealii-adapter      |[0m   Create mesh: 
-[32mdealii-adapter      |[0m 	 Number of active cells:       150
-[32mdealii-adapter      |[0m   Setup system: 
 [32mdealii-adapter      |[0m 	 Number of degrees of freedom: 1116
 [32mdealii-adapter      |[0m 	 Output written to solution-0.vtk 
 [32mdealii-adapter      |[0m 
-[32mdealii-adapter      |[0m Unexpected end of /proc/mounts line `overlay / overlay rw,relatime,lowerdir=/var/lib/docker/overlay2/l/IXTW76EZSJYCAJJCTRG2V76FIS:/var/lib/docker/overlay2/l/AVKMRZKYQZTCOHL4653ZLGRESF:/var/lib/docker/overlay2/l/QEZN2ULLQKM26IKDZTDXY4TVTG:/var/lib/docker/overlay2/l/P6AIRJONDWDM3UUWEYF4W52R24:/var/lib/docker/overlay2/l/GIUCW4TGGUCAXL7FM56JW7DNQR:/var/lib/docker/overlay2/l/I43US3WH3B5NHEUSMELWLOPQHF:/var/lib/docker/overlay2/l/ZAOM5GKQKTDQZGZYXWWEXAZW77:/var/lib/docker/overlay2/l/C7HU3SAI5DG4KKVIB7N32ENAI3:/var/lib/docker/overlay2/l/NF7R4FWH6VWF4'
-[32mdealii-adapter      |[0m Unexpected end of /proc/mounts line `IKHGCD6R24HCH:/var/lib/docker/overlay2/l/6GFNLQQ2HLZJHTHWEFZOZL5Y5R:/var/lib/docker/overlay2/l/5JUUCUFNXCMJ34TY44GGTIFD7N:/var/lib/docker/overlay2/l/BL7AUZLQTEVEZQ6BW4AQNZ6LOQ:/var/lib/docker/overlay2/l/4T3UCMDAYQSGYZM3TGJIKB4SXD:/var/lib/docker/overlay2/l/5TSDHVYNZBIRJRAV6JXKMQKU5Z:/var/lib/docker/overlay2/l/5MGOFCFELVRM53Z2SOSLWIVZZ2:/var/lib/docker/overlay2/l/2HLB3HZUIWHVKTQWMKLEVLGWYY:/var/lib/docker/overlay2/l/EEZUBW77DJR5DC6YWOS2XEYZE5:/var/lib/docker/overlay2/l/OO2LOI7UBJH5YDTK6GEJ3TAR3Y,upperdir=/v'
+[32mdealii-adapter      |[0m Unexpected end of /proc/mounts line `overlay / overlay rw,relatime,lowerdir=/var/lib/docker/overlay2/l/4TYS3M3PZ5W2PEN5DVXCCIH6PJ:/var/lib/docker/overlay2/l/NG5JRHPBYEXPHTV7B3VUDQ3NGC:/var/lib/docker/overlay2/l/7M5NGNYFFHD4IDRM52H5UKC7EZ:/var/lib/docker/overlay2/l/M56XTBSMXZHZLQ5MP76NJJ734J:/var/lib/docker/overlay2/l/WAR7J7AKDXTEHI2Q6FZBNA3X4I:/var/lib/docker/overlay2/l/RHL54GPHL55GLMTTZ3LPCEPE3Q:/var/lib/docker/overlay2/l/W7GVW4ZMNHRWCJ7R7B2QBY4CBH:/var/lib/docker/overlay2/l/FD4W4SM6SH7BIOMFXYDQ2ZBVLG:/var/lib/docker/overlay2/l/KJ4GGO3BFEYQE'
+[32mdealii-adapter      |[0m Unexpected end of /proc/mounts line `2EB4LNKHRJ6MT:/var/lib/docker/overlay2/l/MP6M4YPMMFK2J7XF34HOXFQOLM:/var/lib/docker/overlay2/l/SO7VVOJHDANHQOOJDBJ7MRGKVZ:/var/lib/docker/overlay2/l/42XAFC5EZOB3IZ5GN5L3KGICTT:/var/lib/docker/overlay2/l/XTOVKEWUMRQB72UDNDECQ22NMU:/var/lib/docker/overlay2/l/QVVKKTI7X4DUAKHB2XO2XC4HJZ:/var/lib/docker/overlay2/l/YHZ2NICMPFISRXC4RUSETKLZO3:/var/lib/docker/overlay2/l/XFSWOQTQITR72L3FSJ6SJKDHK5:/var/lib/docker/overlay2/l/2WA434EBLNU6I5DN7OYRSRZF2I:/var/lib/docker/overlay2/l/IOH5DPXHG4JKKMF2YSAQTRVWGO,upperdir=/v'
 [33mopenfoam-adapter exited with code 255
 [0m[32mdealii-adapter      |[0m ---[[secure]] [31mERROR: [0m Wrong attribute "distribution-type"
 [32mdealii-adapter exited with code 255
@@ -107,11 +107,11 @@ TESTS FAILED WITH: Output files do not match reference
 Files differing               : []
 Files only in reference (left): ['Fluid']
 Files only in output(right)   : []
-travis_time:end:171360d6:start=1578672542947796431,finish=1578672617653371235,duration=74705574804,event=script[0K[31;1mThe command "python system_testing.py -s dealii-of" exited with 1.[0m
+travis_time:end:156fd25a:start=1578674326188760552,finish=1578674403621165246,duration=77432404694,event=script[0K[31;1mThe command "python system_testing.py -s dealii-of" exited with 1.[0m
 
-travis_fold:start:after_failure[0Ktravis_time:start:00a36074[0K$ python push.py -t dealii-of
+travis_fold:start:after_failure[0Ktravis_time:start:05377790[0K$ python push.py -t dealii-of
 Cloning into '[secure]_st_output'...
 
 ```
 [
-Full job log](https://api.travis-ci.org/v3/job/635333666/log.txt)
+Full job log](https://api.travis-ci.org/v3/job/635347835/log.txt)
