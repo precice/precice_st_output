@@ -1,27 +1,18 @@
 ## Status: Failure 
-Build: [1422](https://travis-ci.org/precice/systemtests/builds/635287877) 
+Build: [1423](https://travis-ci.org/precice/systemtests/builds/635300170) 
 
-Job: [1422.6](https://travis-ci.org/precice/systemtests/jobs/635287883) 
+Job: [1423.6](https://travis-ci.org/precice/systemtests/jobs/635300176) 
 
-Triggered by: [pull_request](https://github.com/precice/systemtests/pull/148) 
+Triggered by: [pull_request](https://github.com/precice/systemtests/pull/150) 
 Last successful commits 
-* [dealii-adapter](https://github.com/precice/dealii-adapter/compare/1cefd5edac2aea69ea37978eeb5479db3ada0042...d9a7dc3ed7e75c17e88adc4757c7bd5f44719b24)
 * [openfoam-adapter](https://github.com/precice/openfoam-adapter/compare/7566319387fe...59b44bf3cbdc)
-* [systemtests](https://github.com/precice/systemtests/compare/4f15349af2e6b142f80dbeffbfffd5e75ea93b7e...ff457bed2521c9ab78f7f6e490c7785219151c1e) 
+* [systemtests](https://github.com/precice/systemtests/compare/4f15349af2e6b142f80dbeffbfffd5e75ea93b7e...ff457bed2521c9ab78f7f6e490c7785219151c1e)
+* [dealii-adapter](https://github.com/precice/dealii-adapter/compare/1cefd5edac2aea69ea37978eeb5479db3ada0042...d9a7dc3ed7e75c17e88adc4757c7bd5f44719b24) 
 
 ---
 Last 100 lines of the job log at the moment of push:
 ```
-[33mopenfoam-adapter    |[0m 
-[33mopenfoam-adapter    |[0m Reading/calculating face velocity Uf
-[33mopenfoam-adapter    |[0m 
-[33mopenfoam-adapter    |[0m No finite volume options present
-[33mopenfoam-adapter    |[0m 
-[33mopenfoam-adapter    |[0m Courant Number mean: 0 max: 0
-[33mopenfoam-adapter    |[0m 
-[33mopenfoam-adapter    |[0m Starting time loop
-[33mopenfoam-adapter    |[0m 
-[32mdealii-adapter      |[0m ---[[secure]] [31mERROR: [0m Wrong attribute "distribution-type"
+[32mdealii-adapter      |[0m 
 [33mopenfoam-adapter    |[0m ---[[secure]Adapter] The [secure]Adapter was loaded.
 [33mopenfoam-adapter    |[0m Registered objects: 
 [33mopenfoam-adapter    |[0m 25
@@ -53,8 +44,12 @@ Last 100 lines of the job log at the moment of push:
 [33mopenfoam-adapter    |[0m transportProperties
 [33mopenfoam-adapter    |[0m )
 [33mopenfoam-adapter    |[0m 
-[33mopenfoam-adapter    |[0m Unexpected end of /proc/mounts line `overlay / overlay rw,relatime,lowerdir=/var/lib/docker/overlay2/l/W3KIAGZXQQLKB2USIG2DP7A4PX:/var/lib/docker/overlay2/l/2HGCSGXU3CJ3L7PL53ECAYRVN6:/var/lib/docker/overlay2/l/BDCHZUXFNNL5I4N3PZBMN3XH36:/var/lib/docker/overlay2/l/BLVOO6XLHSLCTMCCLQFWGEM4TI:/var/lib/docker/overlay2/l/4DYPVTIC5PJBKABTGSUEYC7ASM:/var/lib/docker/overlay2/l/NCFYXL2LVP3WWQMFFVONT6VSZ6:/var/lib/docker/overlay2/l/2HNHMIGJUMPFZTP4RWY2BKYQJK:/var/lib/docker/overlay2/l/ETO7JVV3EBXNHXHJ44HOQXBI5R:/var/lib/docker/overlay2/l/SB6N3TCAS2Y4E'
-[33mopenfoam-adapter    |[0m Unexpected end of /proc/mounts line `EOKLXUKJKZKDK:/var/lib/docker/overlay2/l/BMBWBWQTWQBEM3BXBU4H36DVZQ:/var/lib/docker/overlay2/l/GBR5TBBZSC7E6YGFXZSDAZ25OF:/var/lib/docker/overlay2/l/BH2OXN7LH4D47RWFGRR56IWEDJ:/var/lib/docker/overlay2/l/Q3TH7A5RW7AAMYOIK6P3FXXOWP:/var/lib/docker/overlay2/l/A5GQIJWYR57BRTTSB73AJY7ROZ:/var/lib/docker/overlay2/l/2BD7WXRQ67LRRTTKN4KETYJNUG:/var/lib/docker/overlay2/l/ADGZE2GL3NM2YVLYW4RL23FBGH:/var/lib/docker/overlay2/l/5XFCLNMZ4YM4GQQA43DZO5DEXG:/var/lib/docker/overlay2/l/GVH4RJ5TTRH32L57R25XXYZSVP:/var/lib/do'
+[33mopenfoam-adapter    |[0m Unexpected end of /proc/mounts line `overlay / overlay rw,relatime,lowerdir=/var/lib/docker/overlay2/l/FMJIV3NQRYMVTPBKZM6BHSBARM:/var/lib/docker/overlay2/l/5OG6DUMMMRWGDZUOVPFON2Q5OJ:/var/lib/docker/overlay2/l/X4FRCJYXY2MHX2Z5RPS7H6WC3P:/var/lib/docker/overlay2/l/YF6L4WD56P7C7EGF6QASRFCO5L:/var/lib/docker/overlay2/l/QOBV3HGMQUNDQXQJ2A2BVV772G:/var/lib/docker/overlay2/l/EQI4Y436PYCXZ7IONPIWGWLLM5:/var/lib/docker/overlay2/l/LUMCLTVSU4FWCCYOJM5REL2ZCB:/var/lib/docker/overlay2/l/CHT3HHMPPCMRHIXMVEG4ZSJ6BD:/var/lib/docker/overlay2/l/7IN43PKDRYTNY'
+[33mopenfoam-adapter    |[0m Unexpected end of /proc/mounts line `5QTDNRY4S5772:/var/lib/docker/overlay2/l/BI5IVKGEDTCM5OCKVKPVA2DHYF:/var/lib/docker/overlay2/l/TLXRYUF4UZHBONREB5C7DHXITO:/var/lib/docker/overlay2/l/6CLGOVQSHUGODPXXOTNPPZGAHM:/var/lib/docker/overlay2/l/U6FZTJX6OIDXMVBJLTKSDY5XL2:/var/lib/docker/overlay2/l/NTPVZDW77HLKPE43K6NLAUQ2D3:/var/lib/docker/overlay2/l/H6BGYXNN5QA35YG6KXFERJCG6M:/var/lib/docker/overlay2/l/EL4GRHOL2WYWKJAOBNSLMEYJJI:/var/lib/docker/overlay2/l/QNPH4U7FTNAY6PAX4ZKUDDGVCR:/var/lib/docker/overlay2/l/CICT7Z4PLVYMY7J7MEJ2RH6AUX:/var/lib/do'
+[32mdealii-adapter      |[0m   Create mesh: 
+[32mdealii-adapter      |[0m 	 Number of active cells:       150
+[32mdealii-adapter      |[0m   Setup system: 
+[32mdealii-adapter      |[0m 	 Number of degrees of freedom: 1116
 [33mopenfoam-adapter    |[0m ---[[secure]Adapter] Reading the adapter's YAML configuration file /home/[secure]/Data/Input/[secure]-adapter-config.yml...
 [33mopenfoam-adapter    |[0m ---[[secure]Adapter] [DEBUG] Checking the adapter's YAML configuration file...
 [33mopenfoam-adapter    |[0m ---[[secure]Adapter] [DEBUG]   participant : Fluid
@@ -96,8 +91,13 @@ Last 100 lines of the job log at the moment of push:
 [33mopenfoam-adapter    |[0m ---[[secure]Adapter] [DEBUG]   preCICE solver interface was created.
 [33mopenfoam-adapter    |[0m ---[[secure]Adapter] [DEBUG] Configuring preCICE...
 [33mopenfoam-adapter    |[0m ---[[secure]] [31mERROR: [0m Wrong attribute "distribution-type"
-[32mdealii-adapter exited with code 255
-[0m[33mopenfoam-adapter exited with code 255
+[32mdealii-adapter      |[0m 	 Output written to solution-0.vtk 
+[32mdealii-adapter      |[0m 
+[32mdealii-adapter      |[0m Unexpected end of /proc/mounts line `overlay / overlay rw,relatime,lowerdir=/var/lib/docker/overlay2/l/IL3OGEULCRBRDOJ6KQP5UXAWOT:/var/lib/docker/overlay2/l/THPH2DBOT3PP5K6ORXYRAPSF52:/var/lib/docker/overlay2/l/M5WQH356MQ4MJ4C2YDN4P3SIHJ:/var/lib/docker/overlay2/l/TINOKJ4QNSDBGPY5NGT2RGK7Z2:/var/lib/docker/overlay2/l/IQXDBTMNPE62ZUBGJFAYTDIRJO:/var/lib/docker/overlay2/l/LUMCLTVSU4FWCCYOJM5REL2ZCB:/var/lib/docker/overlay2/l/CHT3HHMPPCMRHIXMVEG4ZSJ6BD:/var/lib/docker/overlay2/l/7IN43PKDRYTNY5QTDNRY4S5772:/var/lib/docker/overlay2/l/BI5IVKGEDTCM5'
+[32mdealii-adapter      |[0m Unexpected end of /proc/mounts line `OCKVKPVA2DHYF:/var/lib/docker/overlay2/l/TLXRYUF4UZHBONREB5C7DHXITO:/var/lib/docker/overlay2/l/6CLGOVQSHUGODPXXOTNPPZGAHM:/var/lib/docker/overlay2/l/U6FZTJX6OIDXMVBJLTKSDY5XL2:/var/lib/docker/overlay2/l/NTPVZDW77HLKPE43K6NLAUQ2D3:/var/lib/docker/overlay2/l/H6BGYXNN5QA35YG6KXFERJCG6M:/var/lib/docker/overlay2/l/EL4GRHOL2WYWKJAOBNSLMEYJJI:/var/lib/docker/overlay2/l/QNPH4U7FTNAY6PAX4ZKUDDGVCR:/var/lib/docker/overlay2/l/CICT7Z4PLVYMY7J7MEJ2RH6AUX:/var/lib/docker/overlay2/l/O3E4YLXWNG3QNK4ONJBKOTBEH4,upperdir=/v'
+[32mdealii-adapter      |[0m ---[[secure]] [31mERROR: [0m Wrong attribute "distribution-type"
+[33mopenfoam-adapter exited with code 255
+[0m[32mdealii-adapter exited with code 255
 [0mOnly in /home/travis/build/[secure]/systemtests/tests/TestCompose_dealii-of/referenceOutput: Fluid
 EXECUTING: export PRECICE_BASE=-ubuntu1604.home-develop;  docker-compose config &&
                          bash ../../silent_compose.sh
@@ -107,11 +107,11 @@ TESTS FAILED WITH: Output files do not match reference
 Files differing               : []
 Files only in reference (left): ['Fluid']
 Files only in output(right)   : []
-travis_time:end:042d95c0:start=1578666814393541549,finish=1578666888430768900,duration=74037227351,event=script[0K[31;1mThe command "python system_testing.py -s dealii-of" exited with 1.[0m
+travis_time:end:00e667c8:start=1578668312897760731,finish=1578668390309109251,duration=77411348520,event=script[0K[31;1mThe command "python system_testing.py -s dealii-of" exited with 1.[0m
 
-travis_fold:start:after_failure[0Ktravis_time:start:14af8268[0K$ python push.py -t dealii-of
+travis_fold:start:after_failure[0Ktravis_time:start:0a203366[0K$ python push.py -t dealii-of
 Cloning into '[secure]_st_output'...
 
 ```
 [
-Full job log](https://api.travis-ci.org/v3/job/635287883/log.txt)
+Full job log](https://api.travis-ci.org/v3/job/635300176/log.txt)
