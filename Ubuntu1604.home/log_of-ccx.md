@@ -1,13 +1,13 @@
 ## Status: Failure 
-Build: [1420](https://travis-ci.org/precice/systemtests/builds/635276412) 
+Build: [1422](https://travis-ci.org/precice/systemtests/builds/635287877) 
 
-Job: [1420.3](https://travis-ci.org/precice/systemtests/jobs/635276416) 
+Job: [1422.3](https://travis-ci.org/precice/systemtests/jobs/635287880) 
 
-Triggered by: [pull_request](https://github.com/precice/systemtests/pull/149) 
+Triggered by: [pull_request](https://github.com/precice/systemtests/pull/148) 
 Last successful commits 
 * [calculix-adapter](https://github.com/precice/calculix-adapter/compare/6e941caa282e...b01641e40c11)
-* [systemtests](https://github.com/precice/systemtests/compare/4f15349af2e6b142f80dbeffbfffd5e75ea93b7e...ff457bed2521c9ab78f7f6e490c7785219151c1e)
-* [openfoam-adapter](https://github.com/precice/openfoam-adapter/compare/7566319387fe...59b44bf3cbdc) 
+* [openfoam-adapter](https://github.com/precice/openfoam-adapter/compare/7566319387fe...59b44bf3cbdc)
+* [systemtests](https://github.com/precice/systemtests/compare/4f15349af2e6b142f80dbeffbfffd5e75ea93b7e...ff457bed2521c9ab78f7f6e490c7785219151c1e) 
 
 ---
 Last 100 lines of the job log at the moment of push:
@@ -48,8 +48,8 @@ Last 100 lines of the job log at the moment of push:
 [32mopenfoam-adapter-outer    |[0m thermo:alpha
 [32mopenfoam-adapter-outer    |[0m )
 [32mopenfoam-adapter-outer    |[0m 
-[32mopenfoam-adapter-outer    |[0m Unexpected end of /proc/mounts line `overlay / overlay rw,relatime,lowerdir=/var/lib/docker/overlay2/l/XNB4PUAD5A4QUEBUCTCWF63CAV:/var/lib/docker/overlay2/l/D54QKCC6VL7AP2DIJNDWIYRXOQ:/var/lib/docker/overlay2/l/QTPYGGKM6A7VOMAYIJS6YT52KT:/var/lib/docker/overlay2/l/3EBARTKTYCIT33QW6RXN3UUF3W:/var/lib/docker/overlay2/l/HENFPPVYIZWBDJCWXLBGQSCJ3L:/var/lib/docker/overlay2/l/ZVX6OTBDTIRGVV3AFCEPJN4BKM:/var/lib/docker/overlay2/l/LC5EK3QYMZSMFTYK72NBYWKYG3:/var/lib/docker/overlay2/l/2Y3YV3WSWKJFJNCBQTVZXWYTTT:/var/lib/docker/overlay2/l/BYS5FWRMF5LDI'
-[32mopenfoam-adapter-outer    |[0m Unexpected end of /proc/mounts line `E2NPWLNCUOCGY:/var/lib/docker/overlay2/l/7JYWLWVSZ2K5NIGEO2MLESVLSD:/var/lib/docker/overlay2/l/HAM46Z3T2VANQLQWNNUEYIOMAE:/var/lib/docker/overlay2/l/AYZIIGB6FRXMI5JA7V3BNH5EJU:/var/lib/docker/overlay2/l/GT6IS2T6GALJ5ZBDGO2G4D7TIF:/var/lib/docker/overlay2/l/P76X6VWGZMEBIO7NGYAHNIXMDB:/var/lib/docker/overlay2/l/FTHT2CBTEAEV5Z4MP4CNG7CN65:/var/lib/docker/overlay2/l/ZUBH2KNPRTXTLHDFFB7YJORT5U:/var/lib/docker/overlay2/l/WDQKQLSIVB62DJVBYQMHX4TQ3B:/var/lib/docker/overlay2/l/MB3CSXG5VRWZEQN6TRXTEXHMB2:/var/lib/do'
+[32mopenfoam-adapter-outer    |[0m Unexpected end of /proc/mounts line `overlay / overlay rw,relatime,lowerdir=/var/lib/docker/overlay2/l/AKZVES23PD3BZWHZS5IV55KION:/var/lib/docker/overlay2/l/23MOHWAXP3NKXXGHJM7Z65Y3AP:/var/lib/docker/overlay2/l/UZ3MNMTQKEP6ZTY4UMUB7VDHA5:/var/lib/docker/overlay2/l/VVAG6C7MNOK6TRDSRIXFHLBF5E:/var/lib/docker/overlay2/l/PQKHYFBJI6TKNREBIRNLUFNSR2:/var/lib/docker/overlay2/l/NEOB7BOFZUHRMV4ANJZBPQ6EDQ:/var/lib/docker/overlay2/l/X7MX57XV4TB45JLFZNZRKIIPKN:/var/lib/docker/overlay2/l/WXXJEZOZDZN2ASUXJT7HCGRFKX:/var/lib/docker/overlay2/l/B4FEFFTDYJFZ2'
+[32mopenfoam-adapter-outer    |[0m Unexpected end of /proc/mounts line `EF6X6GC37B564:/var/lib/docker/overlay2/l/RUCVCQHMZSBEQ2NJHL76AVWCHE:/var/lib/docker/overlay2/l/ZWKVUWZ6KFFFH6YWMFNNWPO67I:/var/lib/docker/overlay2/l/COYEAFZNV6ELKDZXSTFRAHDMOD:/var/lib/docker/overlay2/l/27N2GF6DO6PBYBNSFU3V5D7VHA:/var/lib/docker/overlay2/l/V4AW4F663FN4ARHNH2FMFD3IKH:/var/lib/docker/overlay2/l/7DAYSJ4ZBPHGZTCSK6BJELSWK5:/var/lib/docker/overlay2/l/QBISSQF634PVAOYAM4VATPH5Q2:/var/lib/docker/overlay2/l/WX5Z7BFMJW7KBP3MNNJLESI2YO:/var/lib/docker/overlay2/l/Q4FNT2KXXLKD4YZDVBU2WJGFMN:/var/lib/do'
 [32mopenfoam-adapter-outer    |[0m ---[[secure]Adapter] Reading the adapter's YAML configuration file /home/[secure]/Data/Input/[secure]-adapter-config.yml...
 [32mopenfoam-adapter-outer    |[0m ---[[secure]Adapter] [DEBUG] Checking the adapter's YAML configuration file...
 [32mopenfoam-adapter-outer    |[0m ---[[secure]Adapter] [DEBUG]   participant : Outer-Fluid
@@ -93,7 +93,7 @@ Last 100 lines of the job log at the moment of push:
 [32mopenfoam-adapter-outer    |[0m ---[[secure]Adapter] [DEBUG]   MPI rank: 0
 [32mopenfoam-adapter-outer    |[0m ---[[secure]Adapter] [DEBUG]   preCICE solver interface was created.
 [32mopenfoam-adapter-outer    |[0m ---[[secure]Adapter] [DEBUG] Configuring preCICE...
-[32mopenfoam-adapter-outer    |[0m (0) 14:06:38 [xml::XMLTag]:163 in readAttributes: [31mERROR: [0mWrong attribute "distribution-type"
+[32mopenfoam-adapter-outer    |[0m (0) 14:33:41 [xml::XMLTag]:163 in readAttributes: [31mERROR: [0mWrong attribute "distribution-type"
 [33mopenfoam-adapter-inner exited with code 255
 [0m[35mcalculix-adapter-solid exited with code 255
 [0m[32mopenfoam-adapter-outer exited with code 255
@@ -105,13 +105,13 @@ EXECUTING: docker cp tutorial-data:/Output .
 EXECUTING: bash ../../compare_results.sh /home/travis/build/[secure]/systemtests/tests/TestCompose_of-ccx/referenceOutput /home/travis/build/[secure]/systemtests/tests/TestCompose_of-ccx/Output
 TESTS FAILED WITH: Output files do not match reference
 Files differing               : []
-Files only in reference (left): ['Inner-Fluid', 'Outer-Fluid']
+Files only in reference (left): ['Outer-Fluid', 'Inner-Fluid']
 Files only in output(right)   : []
-travis_time:end:0ea20568:start=1578665040959263094,finish=1578665204449307440,duration=163490044346,event=script[0K[31;1mThe command "python system_testing.py -s of-ccx" exited with 1.[0m
+travis_time:end:0b37d038:start=1578666655974548655,finish=1578666828528560891,duration=172554012236,event=script[0K[31;1mThe command "python system_testing.py -s of-ccx" exited with 1.[0m
 
-travis_fold:start:after_failure[0Ktravis_time:start:1d8ab56c[0K$ python push.py -t of-ccx
+travis_fold:start:after_failure[0Ktravis_time:start:055b4a70[0K$ python push.py -t of-ccx
 Cloning into '[secure]_st_output'...
 
 ```
 [
-Full job log](https://api.travis-ci.org/v3/job/635276416/log.txt)
+Full job log](https://api.travis-ci.org/v3/job/635287880/log.txt)
