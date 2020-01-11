@@ -5,8 +5,8 @@ Job: [1431.6](https://travis-ci.org/precice/systemtests/jobs/635347835)
 
 Triggered by: [pull_request](https://github.com/precice/systemtests/pull/150) 
 Last successful commits 
-* [openfoam-adapter](https://github.com/precice/openfoam-adapter/compare/7566319387fe...59b44bf3cbdc)
 * [dealii-adapter](https://github.com/precice/dealii-adapter/compare/1cefd5edac2aea69ea37978eeb5479db3ada0042...d9a7dc3ed7e75c17e88adc4757c7bd5f44719b24)
+* [openfoam-adapter](https://github.com/precice/openfoam-adapter/compare/7566319387fe...59b44bf3cbdc)
 * [systemtests](https://github.com/precice/systemtests/compare/4f15349af2e6b142f80dbeffbfffd5e75ea93b7e...ff457bed2521c9ab78f7f6e490c7785219151c1e) 
 
 ---
@@ -72,11 +72,11 @@ Digest: sha256:2171658620155679240babee0a7714f6509fae66898db422ad803b951257db78
 Status: Downloaded newer image for alpine:latest
  ---> cc0abc535e36
 Step 2/12 : ENV tutorial_path tutorials/FSI/flap_perp/OpenFOAM-deal.II
- ---> Running in e0f3168d0ebd
- ---> f89e6d42371c
-Removing intermediate container e0f3168d0ebd
+ ---> Running in f047c22491d9
+ ---> 1f612a49b382
+Removing intermediate container f047c22491d9
 Step 3/12 : RUN apk add git
- ---> Running in f7e3fdad35f8
+ ---> Running in 0a92f6b4b564
 fetch http://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/APKINDEX.tar.gz
 fetch http://dl-cdn.alpinelinux.org/alpine/v3.11/community/x86_64/APKINDEX.tar.gz
 (1/6) Installing ca-certificates (20191127-r0)
@@ -88,28 +88,28 @@ fetch http://dl-cdn.alpinelinux.org/alpine/v3.11/community/x86_64/APKINDEX.tar.g
 Executing busybox-1.31.1-r8.trigger
 Executing ca-certificates-20191127-r0.trigger
 OK: 22 MiB in 20 packages
- ---> 2ef2441c8e52
-Removing intermediate container f7e3fdad35f8
+ ---> 274d1887cf51
+Removing intermediate container 0a92f6b4b564
 Step 4/12 : ARG branch=develop
- ---> Running in fb13344edbeb
- ---> 53826448657b
-Removing intermediate container fb13344edbeb
+ ---> Running in 899212ac0e24
+ ---> 137c8136ead8
+Removing intermediate container 899212ac0e24
 Step 5/12 : RUN git clone --branch $branch https://github.com/[secure]/tutorials
- ---> Running in dd75ddd3ed48
+ ---> Running in 9289bece907f
 [91mCloning into 'tutorials'...
-[0m ---> 98c48083a062
-Removing intermediate container dd75ddd3ed48
+[0m ---> ce1023e2417a
+Removing intermediate container 9289bece907f
 Step 6/12 : RUN mkdir configs && sed -e 's|gather-scatter"|gather-scatter" exchange-directory="/home/[secure]/Data/Exchange/" network="eth0"|g' $tutorial_path/[secure]-config_serial.xml > configs/[secure]-config.xml
- ---> Running in 12abcd878e20
+ ---> Running in 49aadc09710f
 [91msed: tutorials/FSI/flap_perp/OpenFOAM-deal.II/[secure]-config_serial.xml: No such file or directory
 [0mService 'tutorial-data' failed to build: The command '/bin/sh -c mkdir configs && sed -e 's|gather-scatter"|gather-scatter" exchange-directory="/home/[secure]/Data/Exchange/" network="eth0"|g' $tutorial_path/[secure]-config_serial.xml > configs/[secure]-config.xml' returned a non-zero code: 1
 EXECUTING: export PRECICE_BASE=-ubuntu1604.home-develop;  docker-compose config &&
                          bash ../../silent_compose.sh
 TESTS FAILED WITH: Command 'export PRECICE_BASE=-ubuntu1604.home-develop;  docker-compose config &&
                          bash ../../silent_compose.sh' returned non-zero exit status 1
-travis_time:end:2cf21399:start=1578780726366539019,finish=1578780737380038485,duration=11013499466,event=script[0K[31;1mThe command "python system_testing.py -s dealii-of" exited with 1.[0m
+travis_time:end:0b58abf0:start=1578782511814422533,finish=1578782520082512532,duration=8268089999,event=script[0K[31;1mThe command "python system_testing.py -s dealii-of" exited with 1.[0m
 
-travis_fold:start:after_failure[0Ktravis_time:start:11870c29[0K$ python push.py -t dealii-of
+travis_fold:start:after_failure[0Ktravis_time:start:04da1d9a[0K$ python push.py -t dealii-of
 Cloning into '[secure]_st_output'...
 
 ```
