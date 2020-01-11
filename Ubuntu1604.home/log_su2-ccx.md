@@ -6,8 +6,8 @@ Job: [1431.1](https://travis-ci.org/precice/systemtests/jobs/635347830)
 Triggered by: [pull_request](https://github.com/precice/systemtests/pull/150) 
 Last successful commits 
 * [systemtests](https://github.com/precice/systemtests/compare/4f15349af2e6b142f80dbeffbfffd5e75ea93b7e...ff457bed2521c9ab78f7f6e490c7785219151c1e)
-* [calculix-adapter](https://github.com/precice/calculix-adapter/compare/6e941caa282e...b01641e40c11)
-* [su2-adapter](https://github.com/precice/su2-adapter/compare/a3186951163a...e8f7f22f56cb) 
+* [su2-adapter](https://github.com/precice/su2-adapter/compare/a3186951163a...e8f7f22f56cb)
+* [calculix-adapter](https://github.com/precice/calculix-adapter/compare/6e941caa282e...b01641e40c11) 
 
 ---
 Last 100 lines of the job log at the moment of push:
@@ -66,11 +66,11 @@ Digest: sha256:2171658620155679240babee0a7714f6509fae66898db422ad803b951257db78
 Status: Downloaded newer image for alpine:latest
  ---> cc0abc535e36
 Step 2/10 : ENV tutorial_path tutorials/FSI/flap_perp/SU2-CalculiX
- ---> Running in 07ebfd99a127
- ---> 8ed0e4f269f3
-Removing intermediate container 07ebfd99a127
+ ---> Running in fdcdd51df038
+ ---> fa84c22d171c
+Removing intermediate container fdcdd51df038
 Step 3/10 : RUN apk add git bash
- ---> Running in 020cda504f51
+ ---> Running in 19868454d183
 fetch http://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/APKINDEX.tar.gz
 fetch http://dl-cdn.alpinelinux.org/alpine/v3.11/community/x86_64/APKINDEX.tar.gz
 (1/11) Installing ncurses-terminfo-base (6.1_p20191130-r0)
@@ -88,28 +88,28 @@ Executing bash-5.0.11-r1.post-install
 Executing busybox-1.31.1-r8.trigger
 Executing ca-certificates-20191127-r0.trigger
 OK: 31 MiB in 25 packages
- ---> b3ed34cf859b
-Removing intermediate container 020cda504f51
+ ---> 17c64102af74
+Removing intermediate container 19868454d183
 Step 4/10 : ARG branch=develop
- ---> Running in f91b079fafff
- ---> 0c74e6e3f358
-Removing intermediate container f91b079fafff
+ ---> Running in 475bef558714
+ ---> b9af3c04b855
+Removing intermediate container 475bef558714
 Step 5/10 : RUN git clone --branch $branch https://github.com/[secure]/tutorials
- ---> Running in 468761e775b5
+ ---> Running in 0ac2506dc9ec
 [91mCloning into 'tutorials'...
-[0m ---> d7fcd3b3b6da
-Removing intermediate container 468761e775b5
+[0m ---> 9b251acd81f6
+Removing intermediate container 0ac2506dc9ec
 Step 6/10 : RUN mkdir configs && sed -e 's|exchange-directory="../"|exchange-directory="/home/[secure]/Data/Exchange/" network="eth0"|g'    $tutorial_path/[secure]-config_serial.xml  > configs/[secure]-config.xml
- ---> Running in 4f809d58e1b3
+ ---> Running in 763a53854bf1
 [91msed: tutorials/FSI/flap_perp/SU2-CalculiX/[secure]-config_serial.xml: No such file or directory
 [0mService 'tutorial-data' failed to build: The command '/bin/sh -c mkdir configs && sed -e 's|exchange-directory="../"|exchange-directory="/home/[secure]/Data/Exchange/" network="eth0"|g'    $tutorial_path/[secure]-config_serial.xml  > configs/[secure]-config.xml' returned a non-zero code: 1
 EXECUTING: export PRECICE_BASE=-ubuntu1604.home-develop;  docker-compose config &&
                          bash ../../silent_compose.sh
 TESTS FAILED WITH: Command 'export PRECICE_BASE=-ubuntu1604.home-develop;  docker-compose config &&
                          bash ../../silent_compose.sh' returned non-zero exit status 1
-travis_time:end:13972694:start=1578780480129421423,finish=1578780490585512881,duration=10456091458,event=script[0K[31;1mThe command "python system_testing.py -s su2-ccx" exited with 1.[0m
+travis_time:end:228efc58:start=1578782420680150452,finish=1578782431113889854,duration=10433739402,event=script[0K[31;1mThe command "python system_testing.py -s su2-ccx" exited with 1.[0m
 
-travis_fold:start:after_failure[0Ktravis_time:start:0bd5614f[0K$ python push.py -t su2-ccx
+travis_fold:start:after_failure[0Ktravis_time:start:1ac84b38[0K$ python push.py -t su2-ccx
 Cloning into '[secure]_st_output'...
 
 ```
