@@ -1,13 +1,13 @@
 ## Status: Failure 
-Build: [1440](https://travis-ci.org/precice/systemtests/builds/635915025) 
+Build: [1442](https://travis-ci.org/precice/systemtests/builds/635918218) 
 
-Job: [1440.6](https://travis-ci.org/precice/systemtests/jobs/635915031) 
+Job: [1442.6](https://travis-ci.org/precice/systemtests/jobs/635918224) 
 
 Triggered by: [pull_request](https://github.com/precice/systemtests/pull/152) 
 Last successful commits 
-* [openfoam-adapter](https://github.com/precice/openfoam-adapter/compare/7566319387fe...59b44bf3cbdc)
+* [dealii-adapter](https://github.com/precice/dealii-adapter/compare/1cefd5edac2aea69ea37978eeb5479db3ada0042...d9a7dc3ed7e75c17e88adc4757c7bd5f44719b24)
 * [systemtests](https://github.com/precice/systemtests/compare/4f15349af2e6b142f80dbeffbfffd5e75ea93b7e...ff457bed2521c9ab78f7f6e490c7785219151c1e)
-* [dealii-adapter](https://github.com/precice/dealii-adapter/compare/1cefd5edac2aea69ea37978eeb5479db3ada0042...d9a7dc3ed7e75c17e88adc4757c7bd5f44719b24) 
+* [openfoam-adapter](https://github.com/precice/openfoam-adapter/compare/7566319387fe...59b44bf3cbdc) 
 
 ---
 Last 100 lines of the job log at the moment of push:
@@ -72,11 +72,11 @@ Digest: sha256:2171658620155679240babee0a7714f6509fae66898db422ad803b951257db78
 Status: Downloaded newer image for alpine:latest
  ---> cc0abc535e36
 Step 2/12 : ENV tutorial_path tutorials/FSI/flap_perp/OpenFOAM-deal.II
- ---> Running in 9e52fa162944
- ---> 607fbd77dac2
-Removing intermediate container 9e52fa162944
+ ---> Running in 3f96f790e90c
+ ---> eea21ebf8180
+Removing intermediate container 3f96f790e90c
 Step 3/12 : RUN apk add git
- ---> Running in 4c12d7696e1a
+ ---> Running in d388f879678e
 fetch http://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/APKINDEX.tar.gz
 fetch http://dl-cdn.alpinelinux.org/alpine/v3.11/community/x86_64/APKINDEX.tar.gz
 (1/6) Installing ca-certificates (20191127-r0)
@@ -88,30 +88,30 @@ fetch http://dl-cdn.alpinelinux.org/alpine/v3.11/community/x86_64/APKINDEX.tar.g
 Executing busybox-1.31.1-r8.trigger
 Executing ca-certificates-20191127-r0.trigger
 OK: 22 MiB in 20 packages
- ---> 6489697a3381
-Removing intermediate container 4c12d7696e1a
+ ---> e279934ecf0b
+Removing intermediate container d388f879678e
 Step 4/12 : ARG branch=develop
- ---> Running in 2785075e8cbc
- ---> f35dfbf70ef7
-Removing intermediate container 2785075e8cbc
+ ---> Running in c01750c3421a
+ ---> 84968efd7e3f
+Removing intermediate container c01750c3421a
 Step 5/12 : RUN git clone --branch $branch https://github.com/[secure]/tutorials
- ---> Running in 2434f887639b
+ ---> Running in 4dbfc1b8e41a
 [91mCloning into 'tutorials'...
-[0m ---> be0464ce3b15
-Removing intermediate container 2434f887639b
+[0m ---> 8ac8bbdf7dc3
+Removing intermediate container 4dbfc1b8e41a
 Step 6/12 : RUN mkdir configs && sed -e 's|gather-scatter"|gather-scatter" exchange-directory="/home/[secure]/Data/Exchange/" network="eth0"|g' $tutorial_path/[secure]-config_serial.xml > configs/[secure]-config.xml
- ---> Running in 81786b02f8f0
+ ---> Running in 6fb510452bc0
 [91msed: tutorials/FSI/flap_perp/OpenFOAM-deal.II/[secure]-config_serial.xml: No such file or directory
 [0mService 'tutorial-data' failed to build: The command '/bin/sh -c mkdir configs && sed -e 's|gather-scatter"|gather-scatter" exchange-directory="/home/[secure]/Data/Exchange/" network="eth0"|g' $tutorial_path/[secure]-config_serial.xml > configs/[secure]-config.xml' returned a non-zero code: 1
 EXECUTING: export PRECICE_BASE=-ubuntu1604.home-develop;  docker-compose config &&
                          bash ../../silent_compose.sh
 TESTS FAILED WITH: Command 'export PRECICE_BASE=-ubuntu1604.home-develop;  docker-compose config &&
                          bash ../../silent_compose.sh' returned non-zero exit status 1
-travis_time:end:0f47b2b4:start=1578821502638970407,finish=1578821513067215403,duration=10428244996,event=script[0K[31;1mThe command "python system_testing.py -s dealii-of" exited with 1.[0m
+travis_time:end:05d17c84:start=1578822618319028940,finish=1578822628954331273,duration=10635302333,event=script[0K[31;1mThe command "python system_testing.py -s dealii-of" exited with 1.[0m
 
-travis_fold:start:after_failure[0Ktravis_time:start:11d70e1c[0K$ python push.py -t dealii-of
+travis_fold:start:after_failure[0Ktravis_time:start:087dc020[0K$ python push.py -t dealii-of
 Cloning into '[secure]_st_output'...
 
 ```
 [
-Full job log](https://api.travis-ci.org/v3/job/635915031/log.txt)
+Full job log](https://api.travis-ci.org/v3/job/635918224/log.txt)
