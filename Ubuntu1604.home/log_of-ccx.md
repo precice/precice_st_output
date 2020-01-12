@@ -1,7 +1,7 @@
 ## Status: Failure 
-Build: [1431](https://travis-ci.org/precice/systemtests/builds/635347829) 
+Build: [1438](https://travis-ci.org/precice/systemtests/builds/635907468) 
 
-Job: [1431.3](https://travis-ci.org/precice/systemtests/jobs/635347832) 
+Job: [1438.3](https://travis-ci.org/precice/systemtests/jobs/635907471) 
 
 Triggered by: [pull_request](https://github.com/precice/systemtests/pull/150) 
 Last successful commits 
@@ -12,6 +12,20 @@ Last successful commits
 ---
 Last 100 lines of the job log at the moment of push:
 ```
+[32mopenfoam-adapter-outer    |[0m Reading hRef
+[32mopenfoam-adapter-outer    |[0m Calculating field g.h
+[32mopenfoam-adapter-outer    |[0m 
+[32mopenfoam-adapter-outer    |[0m Reading field p_rgh
+[32mopenfoam-adapter-outer    |[0m 
+[32mopenfoam-adapter-outer    |[0m No MRF models present
+[32mopenfoam-adapter-outer    |[0m 
+[32mopenfoam-adapter-outer    |[0m Selecting radiationModel none
+[32mopenfoam-adapter-outer    |[0m Creating finite volume options from "system/fvOptions"
+[32mopenfoam-adapter-outer    |[0m 
+[32mopenfoam-adapter-outer    |[0m 
+[32mopenfoam-adapter-outer    |[0m Starting time loop
+[32mopenfoam-adapter-outer    |[0m 
+[32mopenfoam-adapter-outer    |[0m ---[[secure]Adapter] The [secure]Adapter was loaded.
 [32mopenfoam-adapter-outer    |[0m Registered objects: 
 [32mopenfoam-adapter-outer    |[0m 31
 [32mopenfoam-adapter-outer    |[0m (
@@ -48,8 +62,8 @@ Last 100 lines of the job log at the moment of push:
 [32mopenfoam-adapter-outer    |[0m thermo:alpha
 [32mopenfoam-adapter-outer    |[0m )
 [32mopenfoam-adapter-outer    |[0m 
-[32mopenfoam-adapter-outer    |[0m Unexpected end of /proc/mounts line `overlay / overlay rw,relatime,lowerdir=/var/lib/docker/overlay2/l/BPBRGHDLYYQP6FOBX7TNXNXQQ2:/var/lib/docker/overlay2/l/PS7XPTHDCIVQEHXJTFSZB5IPBM:/var/lib/docker/overlay2/l/BSB433EKJQXSMAFER3TZZQVI4R:/var/lib/docker/overlay2/l/YCCO4XOVBMCP5FICD2FA75NVRY:/var/lib/docker/overlay2/l/J7EQG7KQZC3OIDDL2POAVO5NG7:/var/lib/docker/overlay2/l/ULTTPHOL6AUBRO23WWEW6RKCAN:/var/lib/docker/overlay2/l/5EPA7UUJRZMTBMRW5DXDJW5JT4:/var/lib/docker/overlay2/l/QLUOGHQMVTRTP4IXJSVIFBYWFP:/var/lib/docker/overlay2/l/DR2DNLIQNZE57'
-[32mopenfoam-adapter-outer    |[0m Unexpected end of /proc/mounts line `GJKQE7IKXQYLX:/var/lib/docker/overlay2/l/ZYG4QNYFTFAUZXY74M6I4PR33W:/var/lib/docker/overlay2/l/RRKCP5YJJ6GV5P2T2VPE5MW2BC:/var/lib/docker/overlay2/l/AI2TUO5YZJIWWNSFDAJ5OTMWLB:/var/lib/docker/overlay2/l/P2RMFFGFBV5S53XKHFYJKQELMY:/var/lib/docker/overlay2/l/AZZPTDPPOUJBKHD5LKYGGIBSVN:/var/lib/docker/overlay2/l/6KNLH3NILUSEYGSC6DEQLHJMB6:/var/lib/docker/overlay2/l/ZUOO33SFKE5LXGGEBMJUXZN7DB:/var/lib/docker/overlay2/l/QCRXS3GMZMR6JORED7UXSMCBB6:/var/lib/docker/overlay2/l/7U3GR7C53CNPGRTWWPY6QUTHZD:/var/lib/do'
+[32mopenfoam-adapter-outer    |[0m Unexpected end of /proc/mounts line `overlay / overlay rw,relatime,lowerdir=/var/lib/docker/overlay2/l/ZIOQAMJJUL27PETBJIKTCOTRFA:/var/lib/docker/overlay2/l/WDSLK4K4IWIZSWFUABAJTMCH2Q:/var/lib/docker/overlay2/l/QKMM3GOUIFEH4IO3CYIUDRGELW:/var/lib/docker/overlay2/l/CYKC7QMKSVQJTSCB3Q7SGH6YEK:/var/lib/docker/overlay2/l/DWKBVYA5PPHNKX2OMTBP5GV5WA:/var/lib/docker/overlay2/l/5VZKEVRGPT7JCJC7TKGB5WDDD6:/var/lib/docker/overlay2/l/DR7NA2PZJMBRZL4X3T75N5JC2R:/var/lib/docker/overlay2/l/KW525TNDXEPXWFRHGIPGCI3HZC:/var/lib/docker/overlay2/l/CICJV3OVL2QOM'
+[32mopenfoam-adapter-outer    |[0m Unexpected end of /proc/mounts line `DYGLFSSKDBA26:/var/lib/docker/overlay2/l/IBBMVOLVPPXLTRUPNT7V6ERLIU:/var/lib/docker/overlay2/l/AUQS2NT3JEMDW3PR44PJA7EORL:/var/lib/docker/overlay2/l/XZZ2RT6QB7FEHWE6NAEMEASV4I:/var/lib/docker/overlay2/l/QCJ5IN76BGWHNLMP2UM4XR4KIG:/var/lib/docker/overlay2/l/YUGH7SRCYPGQX3TUT7R2I2HYVT:/var/lib/docker/overlay2/l/SSC65ICK5H2CEXKEBKCZDWH7UJ:/var/lib/docker/overlay2/l/HP7BZLYPC6MOH75UIAPWRLQ3GN:/var/lib/docker/overlay2/l/7MW5OWDPEOU446B2MU45CVAJIJ:/var/lib/docker/overlay2/l/4UCYF3ZHGNU7VT62VRT7PQ5ZYA:/var/lib/do'
 [32mopenfoam-adapter-outer    |[0m ---[[secure]Adapter] Reading the adapter's YAML configuration file /home/[secure]/Data/Input/[secure]-adapter-config.yml...
 [32mopenfoam-adapter-outer    |[0m ---[[secure]Adapter] [DEBUG] Checking the adapter's YAML configuration file...
 [32mopenfoam-adapter-outer    |[0m ---[[secure]Adapter] [DEBUG]   participant : Outer-Fluid
@@ -93,25 +107,11 @@ Last 100 lines of the job log at the moment of push:
 [32mopenfoam-adapter-outer    |[0m ---[[secure]Adapter] [DEBUG]   MPI rank: 0
 [32mopenfoam-adapter-outer    |[0m ---[[secure]Adapter] [DEBUG]   preCICE solver interface was created.
 [32mopenfoam-adapter-outer    |[0m ---[[secure]Adapter] [DEBUG] Configuring preCICE...
-[32mopenfoam-adapter-outer    |[0m (0) 22:43:19 [xml::XMLTag]:163 in readAttributes: [31mERROR: [0mWrong attribute "distribution-type"
+[32mopenfoam-adapter-outer    |[0m (0) 08:41:28 [xml::XMLTag]:163 in readAttributes: [31mERROR: [0mWrong attribute "distribution-type"
 [33mopenfoam-adapter-inner exited with code 255
 [0m[35mcalculix-adapter-solid exited with code 255
 [0m[32mopenfoam-adapter-outer exited with code 255
-[0mOnly in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-ccx/referenceOutput: Inner-Fluid
-Only in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-ccx/referenceOutput: Outer-Fluid
-EXECUTING: export PRECICE_BASE=-ubuntu1604.home-develop;  docker-compose config &&
-                         bash ../../silent_compose.sh
-EXECUTING: docker cp tutorial-data:/Output .
-EXECUTING: bash ../../compare_results.sh /home/travis/build/[secure]/systemtests/tests/TestCompose_of-ccx/referenceOutput /home/travis/build/[secure]/systemtests/tests/TestCompose_of-ccx/Output
-TESTS FAILED WITH: Output files do not match reference
-Files differing               : []
-Files only in reference (left): ['Inner-Fluid', 'Outer-Fluid']
-Files only in output(right)   : []
-travis_time:end:06a60760:start=1578782435724221989,finish=1578782606077311718,duration=170353089729,event=script[0K[31;1mThe command "python system_testing.py -s of-ccx" exited with 1.[0m
-
-travis_fold:start:after_failure[0Ktravis_time:start:001107d8[0K$ python push.py -t of-ccx
-Cloning into '[secure]_st_output'...
-
+[0m
 ```
 [
-Full job log](https://api.travis-ci.org/v3/job/635347832/log.txt)
+Full job log](https://api.travis-ci.org/v3/job/635907471/log.txt)
