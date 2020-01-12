@@ -1,9 +1,9 @@
 ## Status: Failure 
-Build: [1442](https://travis-ci.org/precice/systemtests/builds/635918218) 
+Build: [1444](https://travis-ci.org/precice/systemtests/builds/635921768) 
 
-Job: [1442.1](https://travis-ci.org/precice/systemtests/jobs/635918219) 
+Job: [1444.1](https://travis-ci.org/precice/systemtests/jobs/635921769) 
 
-Triggered by: [pull_request](https://github.com/precice/systemtests/pull/152) 
+Triggered by: [pull_request](https://github.com/precice/systemtests/pull/153) 
 Last successful commits 
 * [systemtests](https://github.com/precice/systemtests/compare/4f15349af2e6b142f80dbeffbfffd5e75ea93b7e...ff457bed2521c9ab78f7f6e490c7785219151c1e)
 * [su2-adapter](https://github.com/precice/su2-adapter/compare/a3186951163a...e8f7f22f56cb)
@@ -12,106 +12,106 @@ Last successful commits
 ---
 Last 100 lines of the job log at the moment of push:
 ```
-[32msu2-adapter         |[0m  Computing grid velocities by finite differencing due to preCICE simulation.
-[32msu2-adapter         |[0m 
-[32msu2-adapter         |[0m Min DT: 6.90855e-05.Max DT: 0.000319416.Dual Time step: 0.01.
-[32msu2-adapter         |[0m ----------------------- Residual Evolution Summary ----------------------
-[32msu2-adapter         |[0m log10[Maximum residual]: -3.05341.
-[32msu2-adapter         |[0m Maximum residual point 53, located at (0.569149, 0.3, 0.505287).
-[32msu2-adapter         |[0m -------------------------------------------------------------------------
-[32msu2-adapter         |[0m 
-[32msu2-adapter         |[0m  IntIter ExtIter     Res[Rho]     Res[RhoE]      CL(Total)      CD(Total)
-[32msu2-adapter         |[0m        0     400    -3.831056      1.619262       0.000000       0.000000
-[32msu2-adapter         |[0m        1     400    -3.905523      1.539099       0.000000       0.000000
-[32msu2-adapter         |[0m        2     400    -4.011551      1.425152       0.000000       0.000000
-[32msu2-adapter         |[0m        3     400    -4.156666      1.267519       0.000000       0.000000
-[32msu2-adapter         |[0m        4     400    -4.349312      1.053101       0.000000       0.000000
-[32msu2-adapter         |[0m        5     400    -4.555565      0.834533       0.000000       0.000000
-[32msu2-adapter         |[0m        6     400    -4.566696      0.890016       0.000000       0.000000
-[32msu2-adapter         |[0m        7     400    -4.429679      1.051060       0.000000       0.000000
-[32msu2-adapter         |[0m        8     400    -4.318016      1.164327       0.000000       0.000000
-[32msu2-adapter         |[0m        9     400    -4.242495      1.239121       0.000000       0.000000
-[32msu2-adapter         |[0m       10     400    -4.191053      1.290231       0.000000       0.000000
-[32msu2-adapter         |[0m 
-[32msu2-adapter         |[0m ------------------------ Evaluate Special Output ------------------------
-[32msu2-adapter         |[0m Writing the forces breakdown file (forces_breakdown.dat).
-[32msu2-adapter         |[0m -------------------------------------------------------------------------
-[32msu2-adapter         |[0m 
-[32msu2-adapter         |[0m 
-[32msu2-adapter         |[0m ---[[secure]] [0m Timestep completed
-[32msu2-adapter         |[0m ---[[secure]] [0m it 1 of 50 | dt# 401 of 400 | t 4 | dt 0.01 | max dt 0.01 | ongoing no | dt complete yes | 
-[32msu2-adapter         |[0m 
-[32msu2-adapter         |[0m -------------------------- File Output Summary --------------------------
-[32msu2-adapter         |[0m Writing comma-separated values (CSV) surface files.
-[32msu2-adapter         |[0m Loading solution output data locally on each rank.
-[32msu2-adapter         |[0m Sorting output data across all ranks.
-[32msu2-adapter         |[0m Writing ASCII SU2 native restart file.
-[32msu2-adapter         |[0m Preparing element connectivity across all ranks.
-[32msu2-adapter         |[0m Writing Paraview ASCII volume solution file.
-[32msu2-adapter         |[0m -------------------------------------------------------------------------
-[32msu2-adapter         |[0m 
-[32msu2-adapter         |[0m 
-[32msu2-adapter         |[0m ------------------------- Solver Postprocessing -------------------------
-[32msu2-adapter         |[0m Deleted CNumerics container.
-[32msu2-adapter         |[0m Deleted CIntegration container.
-[32msu2-adapter         |[0m Deleted CSolver container.
-[32msu2-adapter         |[0m Deleted CIteration container.
-[32msu2-adapter         |[0m Deleted CInterpolator container.
-[32msu2-adapter         |[0m Deleted CTransfer container.
-[32msu2-adapter         |[0m Deleted CGeometry container.
-[32msu2-adapter         |[0m Deleted CFreeFormDefBox class.
-[32msu2-adapter         |[0m Deleted CSurfaceMovement class.
-[32msu2-adapter         |[0m Deleted CVolumetricMovement class.
-[32msu2-adapter         |[0m Deleted CConfig container.
-[32msu2-adapter         |[0m Deleted COutput class.
-[32msu2-adapter         |[0m -------------------------------------------------------------------------
-[32msu2-adapter         |[0m 
-[32msu2-adapter         |[0m Completed in 156.463497 seconds on 1 core.
-[32msu2-adapter         |[0m Process #0/0: Finalizing preCICE...
-[32msu2-adapter         |[0m Run finished at Sun Jan 12 09:52:06 2020
-[32msu2-adapter         |[0m Global runtime       = 175253.000000ms / 175.253000s
-[32msu2-adapter         |[0m Number of processors = 1
-[32msu2-adapter         |[0m # Rank: 0
-[32msu2-adapter         |[0m 
-[32msu2-adapter         |[0m                                                                          Event |      Count |  Total[ms] |    Max[ms] |    Min[ms] |    Avg[ms] | Time Ratio |
-[32msu2-adapter         |[0m --------------------------------------------------------------------------------------------------------------------------------------------------------------
-[32msu2-adapter         |[0m                                                                        _GLOBAL |          1 |     175253 |     175253 |     175253 |     175253 |      1.000 |
-[32msu2-adapter         |[0m                                                                        advance |        934 |       1337 |         11 |          0 |          1 |      0.008 |
-[32msu2-adapter         |[0m                                                        advance/m2n.receiveData |        934 |        162 |          6 |          0 |          0 |      0.001 |
-[32msu2-adapter         |[0m                                                           advance/m2n.sendData |        934 |        409 |          9 |          0 |          0 |      0.002 |
-[32msu2-adapter         |[0m                     advance/map.nn.computeMapping.FromCalculix_MeshToSU2_Mesh0 |          1 |          0 |          0 |          0 |          0 |      0.000 |
-[32msu2-adapter         |[0m  advance/map.nn.computeMapping.FromCalculix_MeshToSU2_Mesh0.getIndexOnVertices |          1 |          0 |          0 |          0 |          0 |      0.000 |
-[32msu2-adapter         |[0m                     advance/map.nn.computeMapping.FromSU2_Mesh0ToCalculix_Mesh |          1 |          0 |          0 |          0 |          0 |      0.000 |
-[32msu2-adapter         |[0m  advance/map.nn.computeMapping.FromSU2_Mesh0ToCalculix_Mesh.getIndexOnVertices |          1 |          0 |          0 |          0 |          0 |      0.000 |
-[32msu2-adapter         |[0m                            advance/map.nn.mapData.FromCalculix_MeshToSU2_Mesh0 |        934 |          1 |          0 |          0 |          0 |      0.000 |
-[32msu2-adapter         |[0m                            advance/map.nn.mapData.FromSU2_Mesh0ToCalculix_Mesh |        934 |          3 |          1 |          0 |          0 |      0.000 |
-[32msu2-adapter         |[0m                                                                      configure |          1 |          0 |          0 |          0 |          0 |      0.000 |
-[32msu2-adapter         |[0m                                                                       finalize |          1 |         37 |         37 |         37 |         37 |      0.000 |
-[32msu2-adapter         |[0m                                                                     initialize |          1 |         48 |         48 |         48 |         48 |      0.000 |
-[32msu2-adapter         |[0m                                    initialize/m2n.broadcastVertexDistributions |          1 |          0 |          0 |          0 |          0 |      0.000 |
-[32msu2-adapter         |[0m                                           initialize/m2n.buildCommunicationMap |          1 |          0 |          0 |          0 |          0 |      0.000 |
-[32msu2-adapter         |[0m                                            initialize/m2n.createCommunications |          1 |          1 |          1 |          1 |          1 |      0.000 |
-[32msu2-adapter         |[0m                ----------------------------------------------------------
-[32msu2-adapter         |[0m                                                                        _GLOBAL | 175253.000000 |          0 | 175253.000000 |          0 |   1.000000 |
-[32msu2-adapter         |[0m                                                                        advance |  11.000000 |          0 |   0.000000 |          0 |   0.000000 |
-[32msu2-adapter         |[0m                                                        advance/m2n.receiveData |   6.000000 |          0 |   0.000000 |          0 |   0.000000 |
-[32msu2-adapter         |[0m                                                           advance/m2n.sendData |   9.000000 |          0 |   0.000000 |          0 |   0.000000 |
-[32msu2-adapter         |[0m                     advance/map.nn.computeMapping.FromCalculix_MeshToSU2_Mesh0 |   0.000000 |          0 |   0.000000 |          0 |   0.000000 |
-[32msu2-adapter         |[0m  advance/map.nn.computeMapping.FromCalculix_MeshToSU2_Mesh0.getIndexOnVertices |   0.000000 |          0 |   0.000000 |          0 |   0.000000 |
-[32msu2-adapter         |[0m                     advance/map.nn.computeMapping.FromSU2_Mesh0ToCalculix_Mesh |   0.000000 |          0 |   0.000000 |          0 |   0.000000 |
-[32msu2-adapter         |[0m  advance/map.nn.computeMapping.FromSU2_Mesh0ToCalculix_Mesh.getIndexOnVertices |   0.000000 |          0 |   0.000000 |          0 |   0.000000 |
-[32msu2-adapter         |[0m                            advance/map.nn.mapData.FromCalculix_MeshToSU2_Mesh0 |   0.000000 |          0 |   0.000000 |          0 |   0.000000 |
-[32msu2-adapter         |[0m                            advance/map.nn.mapData.FromSU2_Mesh0ToCalculix_Mesh |   1.000000 |          0 |   0.000000 |          0 |   0.000000 |
-[32msu2-adapter         |[0m                                                                      configure |   0.000000 |          0 |   0.000000 |          0 |   0.000000 |
-[32msu2-adapter         |[0m                                                                       finalize |  37.000000 |          0 |  37.000000 |          0 |   1.000000 |
-[32msu2-adapter         |[0m                                                                     initialize |  48.000000 |          0 |  48.000000 |          0 |   1.000000 |
-[32msu2-adapter         |[0m                                    initialize/m2n.broadcastVertexDistributions |   0.000000 |          0 |   0.000000 |          0 |   0.000000 |
-[32msu2-adapter         |[0m                                           initialize/m2n.buildCommunicationMap |   0.000000 |          0 |   0.000000 |          0 |   0.000000 |
-[32msu2-adapter         |[0m                                            initialize/m2n.createCommunications |   1.000000 |          0 |   1.000000 |          0 |   1.000000 |
-[32msu2-adapter         |[0m                                      initialize/m2n.exchangeVertexDistribution |  42.000000 |          0 |  42.000000 |          0 |   1.000000 |
-[32msu2-adapter         |[0m                                         initialize/m2n.requestMasterConnection |   1.000000 |          0 |   1.000000 |          0 |   1.000000 |
-[32msu2-adapter         |[0m      [32msu2-adapter exited with code 0
-[0m
+    networks:
+      [secure]comm: null
+    volumes:
+    - exchange:/home/[secure]/Data/Exchange:rw
+    - output:/home/[secure]/Data/Output:rw
+    - input_solid:/home/[secure]/Data/Input:rw
+    - configs:/home/[secure]/calculix-adapter/configs:rw
+  su2-adapter:
+    command: "/bin/bash -c \"ln -sf /home/[secure]/Data/Input Fluid && \n  ln -sf /home/[secure]/su2-adapter/configs/*\
+      \ . &&\n  SU2_CFD Fluid/euler_config_coupled.cfg &&\n  cp flow*.vtk *.csv *.dat\
+      \ *SU2*.log /home/[secure]/Data/Output/\"\n"
+    container_name: su2-adapter
+    depends_on:
+    - tutorial-data
+    image: [secure]/su2-adapter-ubuntu1604.home-develop:latest
+    networks:
+      [secure]comm: null
+    volumes:
+    - exchange:/home/[secure]/Data/Exchange:rw
+    - output:/home/[secure]/Data/Output:rw
+    - input_fluid:/home/[secure]/Data/Input:rw
+    - configs:/home/[secure]/su2-adapter/configs:rw
+  tutorial-data:
+    build:
+      context: /home/travis/build/[secure]/systemtests/tests/TestCompose_su2-ccx
+      dockerfile: Dockerfile.tutorial_data
+    container_name: tutorial-data
+    volumes:
+    - input_solid:/tutorials/FSI/flap_perp/SU2-CalculiX/Solid:rw
+    - input_fluid:/tutorials/FSI/flap_perp/SU2-CalculiX/Fluid:rw
+    - configs:/configs:rw
+    - output:/Output:rw
+version: '3.0'
+volumes:
+  configs: {}
+  exchange: {}
+  input_fluid: {}
+  input_solid: {}
+  output: {}
+
+Creating network "testcomposesu2ccx_default" with the default driver
+Creating network "testcomposesu2ccx_[secure]comm" with the default driver
+Creating volume "testcomposesu2ccx_output" with default driver
+Creating volume "testcomposesu2ccx_configs" with default driver
+Creating volume "testcomposesu2ccx_input_solid" with default driver
+Creating volume "testcomposesu2ccx_input_fluid" with default driver
+Creating volume "testcomposesu2ccx_exchange" with default driver
+Building tutorial-data
+Step 1/10 : FROM alpine
+latest: Pulling from library/alpine
+Digest: sha256:2171658620155679240babee0a7714f6509fae66898db422ad803b951257db78
+Status: Downloaded newer image for alpine:latest
+ ---> cc0abc535e36
+Step 2/10 : ENV tutorial_path tutorials/FSI/flap_perp/SU2-CalculiX
+ ---> Running in f6f907f1c0d6
+ ---> 3b852737ba3b
+Removing intermediate container f6f907f1c0d6
+Step 3/10 : RUN apk add git bash
+ ---> Running in b415bbc87101
+fetch http://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/APKINDEX.tar.gz
+fetch http://dl-cdn.alpinelinux.org/alpine/v3.11/community/x86_64/APKINDEX.tar.gz
+(1/11) Installing ncurses-terminfo-base (6.1_p20191130-r0)
+(2/11) Installing ncurses-terminfo (6.1_p20191130-r0)
+(3/11) Installing ncurses-libs (6.1_p20191130-r0)
+(4/11) Installing readline (8.0.1-r0)
+(5/11) Installing bash (5.0.11-r1)
+Executing bash-5.0.11-r1.post-install
+(6/11) Installing ca-certificates (20191127-r0)
+(7/11) Installing nghttp2-libs (1.40.0-r0)
+(8/11) Installing libcurl (7.67.0-r0)
+(9/11) Installing expat (2.2.9-r1)
+(10/11) Installing pcre2 (10.34-r1)
+(11/11) Installing git (2.24.1-r0)
+Executing busybox-1.31.1-r8.trigger
+Executing ca-certificates-20191127-r0.trigger
+OK: 31 MiB in 25 packages
+ ---> 28cb609bda19
+Removing intermediate container b415bbc87101
+Step 4/10 : ARG branch=develop
+ ---> Running in 6d2ccef87011
+ ---> ef451711828a
+Removing intermediate container 6d2ccef87011
+Step 5/10 : RUN git clone --branch $branch https://github.com/[secure]/tutorials
+ ---> Running in ee2d0c26ffb7
+[91mCloning into 'tutorials'...
+[0m ---> 81e6aec18839
+Removing intermediate container ee2d0c26ffb7
+Step 6/10 : RUN mkdir configs && sed -e 's|exchange-directory="../"|exchange-directory="/home/[secure]/Data/Exchange/" network="eth0"|g'    $tutorial_path/[secure]-config_serial.xml  > configs/[secure]-config.xml
+ ---> Running in 362a1753f910
+[91msed: tutorials/FSI/flap_perp/SU2-CalculiX/[secure]-config_serial.xml: No such file or directory
+[0mService 'tutorial-data' failed to build: The command '/bin/sh -c mkdir configs && sed -e 's|exchange-directory="../"|exchange-directory="/home/[secure]/Data/Exchange/" network="eth0"|g'    $tutorial_path/[secure]-config_serial.xml  > configs/[secure]-config.xml' returned a non-zero code: 1
+EXECUTING: export PRECICE_BASE=-ubuntu1604.home-develop;  docker-compose config &&
+                         bash ../../silent_compose.sh
+TESTS FAILED WITH: Command 'export PRECICE_BASE=-ubuntu1604.home-develop;  docker-compose config &&
+                         bash ../../silent_compose.sh' returned non-zero exit status 1
+travis_time:end:17cbfc98:start=1578824001746774839,finish=1578824012210644458,duration=10463869619,event=script[0K[31;1mThe command "python system_testing.py -s su2-ccx" exited with 1.[0m
+
+travis_fold:start:after_failure[0Ktravis_time:start:0eb3623c[0K$ python push.py -t su2-ccx
+Cloning into '[secure]_st_output'...
+
 ```
 [
-Full job log](https://api.travis-ci.org/v3/job/635918219/log.txt)
+Full job log](https://api.travis-ci.org/v3/job/635921769/log.txt)
