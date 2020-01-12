@@ -1,17 +1,18 @@
 ## Status: Failure 
-Build: [1438](https://travis-ci.org/precice/systemtests/builds/635907468) 
+Build: [1439](https://travis-ci.org/precice/systemtests/builds/635909108) 
 
-Job: [1438.3](https://travis-ci.org/precice/systemtests/jobs/635907471) 
+Job: [1439.3](https://travis-ci.org/precice/systemtests/jobs/635909111) 
 
-Triggered by: [pull_request](https://github.com/precice/systemtests/pull/150) 
+Triggered by: [pull_request](https://github.com/precice/systemtests/pull/148) 
 Last successful commits 
-* [systemtests](https://github.com/precice/systemtests/compare/4f15349af2e6b142f80dbeffbfffd5e75ea93b7e...ff457bed2521c9ab78f7f6e490c7785219151c1e)
 * [calculix-adapter](https://github.com/precice/calculix-adapter/compare/6e941caa282e...b01641e40c11)
+* [systemtests](https://github.com/precice/systemtests/compare/4f15349af2e6b142f80dbeffbfffd5e75ea93b7e...ff457bed2521c9ab78f7f6e490c7785219151c1e)
 * [openfoam-adapter](https://github.com/precice/openfoam-adapter/compare/7566319387fe...59b44bf3cbdc) 
 
 ---
 Last 100 lines of the job log at the moment of push:
 ```
+[32mopenfoam-adapter-outer    |[0m 
 [32mopenfoam-adapter-outer    |[0m Reading hRef
 [32mopenfoam-adapter-outer    |[0m Calculating field g.h
 [32mopenfoam-adapter-outer    |[0m 
@@ -62,8 +63,8 @@ Last 100 lines of the job log at the moment of push:
 [32mopenfoam-adapter-outer    |[0m thermo:alpha
 [32mopenfoam-adapter-outer    |[0m )
 [32mopenfoam-adapter-outer    |[0m 
-[32mopenfoam-adapter-outer    |[0m Unexpected end of /proc/mounts line `overlay / overlay rw,relatime,lowerdir=/var/lib/docker/overlay2/l/ZIOQAMJJUL27PETBJIKTCOTRFA:/var/lib/docker/overlay2/l/WDSLK4K4IWIZSWFUABAJTMCH2Q:/var/lib/docker/overlay2/l/QKMM3GOUIFEH4IO3CYIUDRGELW:/var/lib/docker/overlay2/l/CYKC7QMKSVQJTSCB3Q7SGH6YEK:/var/lib/docker/overlay2/l/DWKBVYA5PPHNKX2OMTBP5GV5WA:/var/lib/docker/overlay2/l/5VZKEVRGPT7JCJC7TKGB5WDDD6:/var/lib/docker/overlay2/l/DR7NA2PZJMBRZL4X3T75N5JC2R:/var/lib/docker/overlay2/l/KW525TNDXEPXWFRHGIPGCI3HZC:/var/lib/docker/overlay2/l/CICJV3OVL2QOM'
-[32mopenfoam-adapter-outer    |[0m Unexpected end of /proc/mounts line `DYGLFSSKDBA26:/var/lib/docker/overlay2/l/IBBMVOLVPPXLTRUPNT7V6ERLIU:/var/lib/docker/overlay2/l/AUQS2NT3JEMDW3PR44PJA7EORL:/var/lib/docker/overlay2/l/XZZ2RT6QB7FEHWE6NAEMEASV4I:/var/lib/docker/overlay2/l/QCJ5IN76BGWHNLMP2UM4XR4KIG:/var/lib/docker/overlay2/l/YUGH7SRCYPGQX3TUT7R2I2HYVT:/var/lib/docker/overlay2/l/SSC65ICK5H2CEXKEBKCZDWH7UJ:/var/lib/docker/overlay2/l/HP7BZLYPC6MOH75UIAPWRLQ3GN:/var/lib/docker/overlay2/l/7MW5OWDPEOU446B2MU45CVAJIJ:/var/lib/docker/overlay2/l/4UCYF3ZHGNU7VT62VRT7PQ5ZYA:/var/lib/do'
+[32mopenfoam-adapter-outer    |[0m Unexpected end of /proc/mounts line `overlay / overlay rw,relatime,lowerdir=/var/lib/docker/overlay2/l/RCF5AVLRSUGPKUKHGWFD3TOK64:/var/lib/docker/overlay2/l/2P3ODHW3SNK22PI7OP2C7UX34L:/var/lib/docker/overlay2/l/MCVK5DRW4QUGSJ2SRTDKE5YNT7:/var/lib/docker/overlay2/l/SIVLK3HDOHZHZ5MFDN3L4JKCHX:/var/lib/docker/overlay2/l/AWWS4UTJGTFAX3CSPM6TBQEBOY:/var/lib/docker/overlay2/l/HJJRPQS2YX7SW3ZJ2VLTDKWWRU:/var/lib/docker/overlay2/l/TPHL3FV4TM63VL5E3MRIF64XMF:/var/lib/docker/overlay2/l/L6ZGQD7ITX7RUKWUDGIEHHVSLV:/var/lib/docker/overlay2/l/XMFK4PUJR6BUO'
+[32mopenfoam-adapter-outer    |[0m Unexpected end of /proc/mounts line `3MTOAQGXV2EM4:/var/lib/docker/overlay2/l/Q75A64GX6WFVSNVQ5KPBJ3UKAJ:/var/lib/docker/overlay2/l/46AQDGGJSEOKYFFT3BCMJ34MN2:/var/lib/docker/overlay2/l/4X35FCFGXG6QRYK7XU2HFXOR3Q:/var/lib/docker/overlay2/l/TXOQGHYK2HDTPH2PLPXHRWJOZR:/var/lib/docker/overlay2/l/ZKMWKIWQQVGVKKUSJYP2UA3LOG:/var/lib/docker/overlay2/l/74SPVA6O56W5NEUH33YAKDBDYY:/var/lib/docker/overlay2/l/LFBFY3HO3MWTCLUQ7GHX3ODNZD:/var/lib/docker/overlay2/l/ZP2VV72FQ6T6CIY2ABUVNYS5ZX:/var/lib/docker/overlay2/l/ANJIFEEXXWZF7H4LCBI7XWEX6H:/var/lib/do'
 [32mopenfoam-adapter-outer    |[0m ---[[secure]Adapter] Reading the adapter's YAML configuration file /home/[secure]/Data/Input/[secure]-adapter-config.yml...
 [32mopenfoam-adapter-outer    |[0m ---[[secure]Adapter] [DEBUG] Checking the adapter's YAML configuration file...
 [32mopenfoam-adapter-outer    |[0m ---[[secure]Adapter] [DEBUG]   participant : Outer-Fluid
@@ -107,11 +108,10 @@ Last 100 lines of the job log at the moment of push:
 [32mopenfoam-adapter-outer    |[0m ---[[secure]Adapter] [DEBUG]   MPI rank: 0
 [32mopenfoam-adapter-outer    |[0m ---[[secure]Adapter] [DEBUG]   preCICE solver interface was created.
 [32mopenfoam-adapter-outer    |[0m ---[[secure]Adapter] [DEBUG] Configuring preCICE...
-[32mopenfoam-adapter-outer    |[0m (0) 08:41:28 [xml::XMLTag]:163 in readAttributes: [31mERROR: [0mWrong attribute "distribution-type"
+[32mopenfoam-adapter-outer    |[0m (0) 08:54:14 [xml::XMLTag]:163 in readAttributes: [31mERROR: [0mWrong attribute "distribution-type"
 [33mopenfoam-adapter-inner exited with code 255
 [0m[35mcalculix-adapter-solid exited with code 255
-[0m[32mopenfoam-adapter-outer exited with code 255
 [0m
 ```
 [
-Full job log](https://api.travis-ci.org/v3/job/635907471/log.txt)
+Full job log](https://api.travis-ci.org/v3/job/635909111/log.txt)
