@@ -1,13 +1,13 @@
 ## Status: Failure 
-Build: [1453](https://travis-ci.org/precice/systemtests/builds/636291850) 
+Build: [1454](https://travis-ci.org/precice/systemtests/builds/636821308) 
 
-Job: [1453.26](https://travis-ci.org/precice/systemtests/jobs/636291881) 
+Job: [1454.26](https://travis-ci.org/precice/systemtests/jobs/636821334) 
 
 Triggered by: [cron](https://github.com/precice/systemtests/compare/968fe698268820917cf52199d2d3dcbaaf61fbaf...4c749ac41fec1ac0cc04f8e71fcd731e33705ab1) 
 Last successful commits 
 * [calculix-adapter](https://github.com/precice/calculix-adapter/compare/6e941caa282e...b01641e40c11)
-* [systemtests](https://github.com/precice/systemtests/compare/4f15349af2e6b142f80dbeffbfffd5e75ea93b7e...ff457bed2521c9ab78f7f6e490c7785219151c1e)
-* [openfoam-adapter](https://github.com/precice/openfoam-adapter/compare/7566319387fe...59b44bf3cbdc) 
+* [openfoam-adapter](https://github.com/precice/openfoam-adapter/compare/7566319387fe...59b44bf3cbdc)
+* [systemtests](https://github.com/precice/systemtests/compare/4f15349af2e6b142f80dbeffbfffd5e75ea93b7e...ff457bed2521c9ab78f7f6e490c7785219151c1e) 
 
 ---
 Last 100 lines of the job log at the moment of push:
@@ -57,11 +57,11 @@ Digest: sha256:2171658620155679240babee0a7714f6509fae66898db422ad803b951257db78
 Status: Downloaded newer image for alpine:latest
  ---> cc0abc535e36
 Step 2/12 : ENV tutorial_path /tutorials/FSI/flap_perp/OpenFOAM-CalculiX
- ---> Running in c1969f6a215d
- ---> cfc0340d9827
-Removing intermediate container c1969f6a215d
+ ---> Running in ee7be02d51aa
+ ---> 29539714d7e3
+Removing intermediate container ee7be02d51aa
 Step 3/12 : RUN apk add git bash
- ---> Running in 8ea4580fdc1e
+ ---> Running in 3624a0a86e01
 fetch http://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/APKINDEX.tar.gz
 fetch http://dl-cdn.alpinelinux.org/alpine/v3.11/community/x86_64/APKINDEX.tar.gz
 (1/11) Installing ncurses-terminfo-base (6.1_p20191130-r0)
@@ -79,39 +79,39 @@ Executing bash-5.0.11-r1.post-install
 Executing busybox-1.31.1-r8.trigger
 Executing ca-certificates-20191127-r0.trigger
 OK: 31 MiB in 25 packages
- ---> e7a639f12667
-Removing intermediate container 8ea4580fdc1e
+ ---> 6619f7ed3141
+Removing intermediate container 3624a0a86e01
 Step 4/12 : ARG branch=develop
- ---> Running in 45eed4169845
- ---> 10c4a007f5a3
-Removing intermediate container 45eed4169845
+ ---> Running in 7eae2bbc57ed
+ ---> 7c7bf1af7d90
+Removing intermediate container 7eae2bbc57ed
 Step 5/12 : RUN git clone --branch $branch https://github.com/[secure]/tutorials
- ---> Running in a0253d6a2f0d
+ ---> Running in c457d4c28616
 [91mCloning into 'tutorials'...
-[0m ---> 57a81815f790
-Removing intermediate container a0253d6a2f0d
+[0m ---> 2d28812f6d72
+Removing intermediate container c457d4c28616
 Step 6/12 : WORKDIR /
- ---> 4e2a775532d2
-Removing intermediate container 0139f998bf43
+ ---> aedd10281387
+Removing intermediate container 0ee32bf5c327
 Step 7/12 : COPY interface_beam.nam fix1_beam.nam all.msh $tutorial_path/Solid/
- ---> e34c1451550d
+ ---> 952b407818ce
 Step 8/12 : RUN sed -i '/application     pimpleFoam/d; s/\/\/ application     pimpleDyMFoam/application    pimpleDyMFoam/g'     $tutorial_path/Fluid/system/controlDict
- ---> Running in 611c77f952ea
- ---> ecb196ffd480
-Removing intermediate container 611c77f952ea
+ ---> Running in 86d2881c2a45
+ ---> 90a64b9f9641
+Removing intermediate container 86d2881c2a45
 Step 9/12 : RUN mkdir configs &&      sed 's|distribution-type="gather-scatter"|distribution-type="gather-scatter" exchange-directory="/home/[secure]/Data/Exchange/" network="eth0"|g'     $tutorial_path/[secure]-config_serial.xml > configs/[secure]-config.xml && cp $tutorial_path/config.yml configs/
- ---> Running in 7ce131d337c4
+ ---> Running in ff7d5b7af39f
 [91msed: /tutorials/FSI/flap_perp/OpenFOAM-CalculiX/[secure]-config_serial.xml: No such file or directory
 [0mService 'tutorial-data' failed to build: The command '/bin/sh -c mkdir configs &&      sed 's|distribution-type="gather-scatter"|distribution-type="gather-scatter" exchange-directory="/home/[secure]/Data/Exchange/" network="eth0"|g'     $tutorial_path/[secure]-config_serial.xml > configs/[secure]-config.xml && cp $tutorial_path/config.yml configs/' returned a non-zero code: 1
 EXECUTING: export PRECICE_BASE=-ubuntu1604.home.petsc-develop;  docker-compose config &&
                          bash ../../silent_compose.sh
 TESTS FAILED WITH: Command 'export PRECICE_BASE=-ubuntu1604.home.petsc-develop;  docker-compose config &&
                          bash ../../silent_compose.sh' returned non-zero exit status 1
-travis_time:end:2562acfd:start=1578915520423126773,finish=1578915531857489518,duration=11434362745,event=script[0K[31;1mThe command "python system_testing.py -s of-ccx_fsi --base Ubuntu1604.home.PETSc" exited with 1.[0m
+travis_time:end:22f849f2:start=1579001789977996893,finish=1579001801855903694,duration=11877906801,event=script[0K[31;1mThe command "python system_testing.py -s of-ccx_fsi --base Ubuntu1604.home.PETSc" exited with 1.[0m
 
-travis_fold:start:after_failure[0Ktravis_time:start:073acee3[0K$ python push.py -t of-ccx_fsi
+travis_fold:start:after_failure[0Ktravis_time:start:0a9cb351[0K$ python push.py -t of-ccx_fsi
 Cloning into '[secure]_st_output'...
 
 ```
 [
-Full job log](https://api.travis-ci.org/v3/job/636291881/log.txt)
+Full job log](https://api.travis-ci.org/v3/job/636821334/log.txt)
