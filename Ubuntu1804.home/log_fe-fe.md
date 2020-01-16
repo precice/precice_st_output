@@ -5,17 +5,17 @@ Job: [1461.4](https://travis-ci.org/precice/systemtests/jobs/637943415)
 
 Triggered by: [pull_request](https://github.com/precice/systemtests/pull/148) 
 Last successful commits 
-* [systemtests](https://github.com/precice/systemtests/compare/4f15349af2e6b142f80dbeffbfffd5e75ea93b7e...ff457bed2521c9ab78f7f6e490c7785219151c1e)
-* [fenics-adapter](https://github.com/precice/fenics-adapter/compare/150697fca846...bd6a64d89c81) 
+* [fenics-adapter](https://github.com/precice/fenics-adapter/compare/150697fca846...bd6a64d89c81)
+* [systemtests](https://github.com/precice/systemtests/compare/4f15349af2e6b142f80dbeffbfffd5e75ea93b7e...ff457bed2521c9ab78f7f6e490c7785219151c1e) 
 
 ---
 Last 100 lines of the job log at the moment of push:
 ```
- ---> Running in 85bfa3442b80
- ---> 1059d9c20ea5
-Removing intermediate container 85bfa3442b80
+ ---> Running in e0c34e8b7bd8
+ ---> 686c1aa7a5e7
+Removing intermediate container e0c34e8b7bd8
 Step 3/8 : RUN apk add git
- ---> Running in 1d4c0ad23779
+ ---> Running in 338d6698f432
 fetch http://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/APKINDEX.tar.gz
 fetch http://dl-cdn.alpinelinux.org/alpine/v3.11/community/x86_64/APKINDEX.tar.gz
 (1/6) Installing ca-certificates (20191127-r0)
@@ -27,31 +27,31 @@ fetch http://dl-cdn.alpinelinux.org/alpine/v3.11/community/x86_64/APKINDEX.tar.g
 Executing busybox-1.31.1-r8.trigger
 Executing ca-certificates-20191127-r0.trigger
 OK: 22 MiB in 20 packages
- ---> 155c3fdaf8d4
-Removing intermediate container 1d4c0ad23779
+ ---> 1d41f1789437
+Removing intermediate container 338d6698f432
 Step 4/8 : ARG branch=develop
- ---> Running in e7b2f4827ad9
- ---> bb0c0bf1bcd7
-Removing intermediate container e7b2f4827ad9
+ ---> Running in 9c8fc38f8d00
+ ---> deb85e6eba43
+Removing intermediate container 9c8fc38f8d00
 Step 5/8 : RUN git clone --branch $branch https://github.com/[secure]/tutorials
- ---> Running in 81d16e911bd4
+ ---> Running in 458df3ff458d
 [91mCloning into 'tutorials'...
-[0m ---> 2186e1b8b447
-Removing intermediate container 81d16e911bd4
+[0m ---> 128afa25f106
+Removing intermediate container 458df3ff458d
 Step 6/8 : RUN mkdir configs && sed -i 's|<m2n:sockets from="HeatDirichlet" to="HeatNeumann"/>|<m2n:sockets from="HeatDirichlet" to="HeatNeumann" exchange-directory="/home/[secure]/Data/Exchange/" network="eth0"/>|g' $tutorial_path/[secure]-config.xml
- ---> Running in 9436de22d242
- ---> 20fcc34d4057
-Removing intermediate container 9436de22d242
+ ---> Running in 7d6e10ee4861
+ ---> 8ab5941fec75
+Removing intermediate container 7d6e10ee4861
 Step 7/8 : RUN addgroup -g 1000 [secure] && adduser -u 1000 -G [secure] -D [secure] && chown -R [secure]:[secure] tutorials configs
- ---> Running in e335586bfc76
- ---> c8c2f2ec53fd
-Removing intermediate container e335586bfc76
+ ---> Running in 93160486793c
+ ---> 67fdcebefabb
+Removing intermediate container 93160486793c
 Step 8/8 : USER [secure]
- ---> Running in 02bb206c6324
- ---> bbabec8e08c6
-Removing intermediate container 02bb206c6324
+ ---> Running in de2e31a65638
+ ---> eca9d9a51bc3
+Removing intermediate container de2e31a65638
 
-Successfully built bbabec8e08c6
+Successfully built eca9d9a51bc3
 Successfully tagged testcomposefefeubuntu1804home_tutorial-data:latest
 Image for service tutorial-data was built because it did not already exist. To rebuild this image you must use `docker-compose build` or `docker-compose up --build`.
 Pulling fenics-adapter-dirichlet ([secure]/fenics-adapter-ubuntu1804.home-develop:latest)...
@@ -61,39 +61,39 @@ Status: Downloaded newer image for [secure]/fenics-adapter-ubuntu1804.home-devel
 Creating tutorial-data ... 
 Creating tutorial-data
 [1A[2KCreating tutorial-data ... [32mdone[0m[1BCreating fenics-adapter-dirichlet ... 
-Creating fenics-adapter-neumann ... 
 Creating fenics-adapter-dirichlet
+Creating fenics-adapter-neumann ... 
 Creating fenics-adapter-neumann
-[1A[2KCreating fenics-adapter-neumann ... [32mdone[0m[1B[1A[2KCreating fenics-adapter-dirichlet ... [32mdone[0m[1BAttaching to tutorial-data, fenics-adapter-neumann, fenics-adapter-dirichlet
+[1A[2KCreating fenics-adapter-dirichlet ... [32mdone[0m[1B[1A[2KCreating fenics-adapter-neumann ... [32mdone[0m[1BAttaching to tutorial-data, fenics-adapter-dirichlet, fenics-adapter-neumann
 [36mtutorial-data exited with code 0
-[0m[33mfenics-adapter-neumann      |[0m Default domain partitioning for simple interface is used: Left part of domain is a Dirichlet-type problem; right part is a Neumann-type problem
-[33mfenics-adapter-neumann      |[0m Calling FFC just-in-time (JIT) compiler, this may take some time.
-[32mfenics-adapter-dirichlet    |[0m Default domain partitioning for simple interface is used: Left part of domain is a Dirichlet-type problem; right part is a Neumann-type problem
-[32mfenics-adapter-dirichlet    |[0m Calling FFC just-in-time (JIT) compiler, this may take some time.
-[33mfenics-adapter-neumann      |[0m Calling FFC just-in-time (JIT) compiler, this may take some time.
-[32mfenics-adapter-dirichlet    |[0m Calling FFC just-in-time (JIT) compiler, this may take some time.
-[33mfenics-adapter-neumann      |[0m Calling FFC just-in-time (JIT) compiler, this may take some time.
-[32mfenics-adapter-dirichlet    |[0m Calling FFC just-in-time (JIT) compiler, this may take some time.
-[33mfenics-adapter-neumann      |[0m /usr/lib/python3.6/importlib/_bootstrap.py:219: UserWarning: Please don't import mpi4py before importing [secure], since this may lead to errors. If you need to import mpi4py, you can do so after importing [secure].
-[33mfenics-adapter-neumann      |[0m   return f(*args, **kwds)
-[32mfenics-adapter-dirichlet    |[0m /usr/lib/python3.6/importlib/_bootstrap.py:219: UserWarning: Please don't import mpi4py before importing [secure], since this may lead to errors. If you need to import mpi4py, you can do so after importing [secure].
-[32mfenics-adapter-dirichlet    |[0m   return f(*args, **kwds)
-[32mfenics-adapter-dirichlet    |[0m Traceback (most recent call last):
-[32mfenics-adapter-dirichlet    |[0m   File "/home/[secure]/Data/Input/heat.py", line 116, in <module>
-[32mfenics-adapter-dirichlet    |[0m     [secure] = Adapter(adapter_config_filename, interpolation_strategy=interpolation_strategy)
-[32mfenics-adapter-dirichlet    |[0m   File "/home/[secure]/.local/lib/python3.6/site-packages/fenicsadapter/fenicsadapter.py", line 259, in __init__
-[32mfenics-adapter-dirichlet    |[0m     self._interface = [secure].Interface(self._solver_name, 0, 1)
-[32mfenics-adapter-dirichlet    |[0m   File "[secure].pyx", line 35, in [secure].Interface.__cinit__
-[32mfenics-adapter-dirichlet    |[0m TypeError: __cinit__() takes exactly 4 positional arguments (3 given)
-[33mfenics-adapter-neumann      |[0m Traceback (most recent call last):
-[33mfenics-adapter-neumann      |[0m   File "/home/[secure]/Data/Input/heat.py", line 116, in <module>
-[33mfenics-adapter-neumann      |[0m     [secure] = Adapter(adapter_config_filename, interpolation_strategy=interpolation_strategy)
-[33mfenics-adapter-neumann      |[0m   File "/home/[secure]/.local/lib/python3.6/site-packages/fenicsadapter/fenicsadapter.py", line 259, in __init__
-[33mfenics-adapter-neumann      |[0m     self._interface = [secure].Interface(self._solver_name, 0, 1)
-[33mfenics-adapter-neumann      |[0m   File "[secure].pyx", line 35, in [secure].Interface.__cinit__
-[33mfenics-adapter-neumann      |[0m TypeError: __cinit__() takes exactly 4 positional arguments (3 given)
-[33mfenics-adapter-neumann exited with code 1
-[0m[32mfenics-adapter-dirichlet exited with code 1
+[0m[33mfenics-adapter-dirichlet    |[0m Default domain partitioning for simple interface is used: Left part of domain is a Dirichlet-type problem; right part is a Neumann-type problem
+[33mfenics-adapter-dirichlet    |[0m Calling FFC just-in-time (JIT) compiler, this may take some time.
+[32mfenics-adapter-neumann      |[0m Default domain partitioning for simple interface is used: Left part of domain is a Dirichlet-type problem; right part is a Neumann-type problem
+[32mfenics-adapter-neumann      |[0m Calling FFC just-in-time (JIT) compiler, this may take some time.
+[33mfenics-adapter-dirichlet    |[0m Calling FFC just-in-time (JIT) compiler, this may take some time.
+[33mfenics-adapter-dirichlet    |[0m Calling FFC just-in-time (JIT) compiler, this may take some time.
+[32mfenics-adapter-neumann      |[0m Calling FFC just-in-time (JIT) compiler, this may take some time.
+[32mfenics-adapter-neumann      |[0m Calling FFC just-in-time (JIT) compiler, this may take some time.
+[32mfenics-adapter-neumann      |[0m /usr/lib/python3.6/importlib/_bootstrap.py:219: UserWarning: Please don't import mpi4py before importing [secure], since this may lead to errors. If you need to import mpi4py, you can do so after importing [secure].
+[32mfenics-adapter-neumann      |[0m   return f(*args, **kwds)
+[33mfenics-adapter-dirichlet    |[0m /usr/lib/python3.6/importlib/_bootstrap.py:219: UserWarning: Please don't import mpi4py before importing [secure], since this may lead to errors. If you need to import mpi4py, you can do so after importing [secure].
+[33mfenics-adapter-dirichlet    |[0m   return f(*args, **kwds)
+[32mfenics-adapter-neumann      |[0m Traceback (most recent call last):
+[32mfenics-adapter-neumann      |[0m   File "/home/[secure]/Data/Input/heat.py", line 116, in <module>
+[32mfenics-adapter-neumann      |[0m     [secure] = Adapter(adapter_config_filename, interpolation_strategy=interpolation_strategy)
+[32mfenics-adapter-neumann      |[0m   File "/home/[secure]/.local/lib/python3.6/site-packages/fenicsadapter/fenicsadapter.py", line 259, in __init__
+[32mfenics-adapter-neumann      |[0m     self._interface = [secure].Interface(self._solver_name, 0, 1)
+[32mfenics-adapter-neumann      |[0m   File "[secure].pyx", line 35, in [secure].Interface.__cinit__
+[32mfenics-adapter-neumann      |[0m TypeError: __cinit__() takes exactly 4 positional arguments (3 given)
+[33mfenics-adapter-dirichlet    |[0m Traceback (most recent call last):
+[33mfenics-adapter-dirichlet    |[0m   File "/home/[secure]/Data/Input/heat.py", line 116, in <module>
+[33mfenics-adapter-dirichlet    |[0m     [secure] = Adapter(adapter_config_filename, interpolation_strategy=interpolation_strategy)
+[33mfenics-adapter-dirichlet    |[0m   File "/home/[secure]/.local/lib/python3.6/site-packages/fenicsadapter/fenicsadapter.py", line 259, in __init__
+[33mfenics-adapter-dirichlet    |[0m     self._interface = [secure].Interface(self._solver_name, 0, 1)
+[33mfenics-adapter-dirichlet    |[0m   File "[secure].pyx", line 35, in [secure].Interface.__cinit__
+[33mfenics-adapter-dirichlet    |[0m TypeError: __cinit__() takes exactly 4 positional arguments (3 given)
+[32mfenics-adapter-neumann exited with code 1
+[0m[33mfenics-adapter-dirichlet exited with code 1
 [0mOnly in /home/travis/build/[secure]/systemtests/tests/TestCompose_fe-fe.Ubuntu1804.home/referenceOutput: .gitkeep
 Only in /home/travis/build/[secure]/systemtests/tests/TestCompose_fe-fe.Ubuntu1804.home/referenceOutput: [secure]-HeatDirichlet-iterations.log
 Only in /home/travis/build/[secure]/systemtests/tests/TestCompose_fe-fe.Ubuntu1804.home/referenceOutput: [secure]-HeatNeumann-convergence.log
@@ -104,11 +104,11 @@ EXECUTING: docker cp tutorial-data:/Output .
 EXECUTING: bash ../../compare_results.sh /home/travis/build/[secure]/systemtests/tests/TestCompose_fe-fe.Ubuntu1804.home/referenceOutput /home/travis/build/[secure]/systemtests/tests/TestCompose_fe-fe.Ubuntu1804.home/Output
 TESTS FAILED WITH: Output files do not match reference
 Files differing               : []
-Files only in reference (left): ['[secure]-HeatDirichlet-iterations.log', '[secure]-HeatNeumann-iterations.log', '[secure]-HeatNeumann-convergence.log']
+Files only in reference (left): ['[secure]-HeatNeumann-iterations.log', '[secure]-HeatNeumann-convergence.log', '[secure]-HeatDirichlet-iterations.log']
 Files only in output(right)   : []
-travis_time:end:0fbd5d8a:start=1579180701271772418,finish=1579180769059781385,duration=67788008967,event=script[0K[31;1mThe command "python system_testing.py -s fe-fe --base Ubuntu1804.home" exited with 1.[0m
+travis_time:end:10e67c0a:start=1579185579699395443,finish=1579185647795354607,duration=68095959164,event=script[0K[31;1mThe command "python system_testing.py -s fe-fe --base Ubuntu1804.home" exited with 1.[0m
 
-travis_fold:start:after_failure[0Ktravis_time:start:00b2ce39[0K$ python push.py -t fe-fe --base Ubuntu1804.home
+travis_fold:start:after_failure[0Ktravis_time:start:00e2e9e2[0K$ python push.py -t fe-fe --base Ubuntu1804.home
 Cloning into '[secure]_st_output'...
 
 ```
