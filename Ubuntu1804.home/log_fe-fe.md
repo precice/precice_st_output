@@ -11,11 +11,11 @@ Last successful commits
 ---
 Last 100 lines of the job log at the moment of push:
 ```
- ---> Running in 00b6650b7dda
- ---> 858ffcf92edb
-Removing intermediate container 00b6650b7dda
+ ---> Running in 85bfa3442b80
+ ---> 1059d9c20ea5
+Removing intermediate container 85bfa3442b80
 Step 3/8 : RUN apk add git
- ---> Running in 285e16b44afd
+ ---> Running in 1d4c0ad23779
 fetch http://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/APKINDEX.tar.gz
 fetch http://dl-cdn.alpinelinux.org/alpine/v3.11/community/x86_64/APKINDEX.tar.gz
 (1/6) Installing ca-certificates (20191127-r0)
@@ -27,31 +27,31 @@ fetch http://dl-cdn.alpinelinux.org/alpine/v3.11/community/x86_64/APKINDEX.tar.g
 Executing busybox-1.31.1-r8.trigger
 Executing ca-certificates-20191127-r0.trigger
 OK: 22 MiB in 20 packages
- ---> ce88e3741988
-Removing intermediate container 285e16b44afd
+ ---> 155c3fdaf8d4
+Removing intermediate container 1d4c0ad23779
 Step 4/8 : ARG branch=develop
- ---> Running in 02839e9c0b8f
- ---> 50fa4b13167b
-Removing intermediate container 02839e9c0b8f
+ ---> Running in e7b2f4827ad9
+ ---> bb0c0bf1bcd7
+Removing intermediate container e7b2f4827ad9
 Step 5/8 : RUN git clone --branch $branch https://github.com/[secure]/tutorials
- ---> Running in 1ea8df8f7480
+ ---> Running in 81d16e911bd4
 [91mCloning into 'tutorials'...
-[0m ---> abdd7393a843
-Removing intermediate container 1ea8df8f7480
+[0m ---> 2186e1b8b447
+Removing intermediate container 81d16e911bd4
 Step 6/8 : RUN mkdir configs && sed -i 's|<m2n:sockets from="HeatDirichlet" to="HeatNeumann"/>|<m2n:sockets from="HeatDirichlet" to="HeatNeumann" exchange-directory="/home/[secure]/Data/Exchange/" network="eth0"/>|g' $tutorial_path/[secure]-config.xml
- ---> Running in 5e65f25bd2a8
- ---> 8e256e050120
-Removing intermediate container 5e65f25bd2a8
+ ---> Running in 9436de22d242
+ ---> 20fcc34d4057
+Removing intermediate container 9436de22d242
 Step 7/8 : RUN addgroup -g 1000 [secure] && adduser -u 1000 -G [secure] -D [secure] && chown -R [secure]:[secure] tutorials configs
- ---> Running in df4ac9b96b4b
- ---> b5a1d356c240
-Removing intermediate container df4ac9b96b4b
+ ---> Running in e335586bfc76
+ ---> c8c2f2ec53fd
+Removing intermediate container e335586bfc76
 Step 8/8 : USER [secure]
- ---> Running in 6e72ab8a9bb7
- ---> 9bcdacd52e4d
-Removing intermediate container 6e72ab8a9bb7
+ ---> Running in 02bb206c6324
+ ---> bbabec8e08c6
+Removing intermediate container 02bb206c6324
 
-Successfully built 9bcdacd52e4d
+Successfully built bbabec8e08c6
 Successfully tagged testcomposefefeubuntu1804home_tutorial-data:latest
 Image for service tutorial-data was built because it did not already exist. To rebuild this image you must use `docker-compose build` or `docker-compose up --build`.
 Pulling fenics-adapter-dirichlet ([secure]/fenics-adapter-ubuntu1804.home-develop:latest)...
@@ -70,10 +70,10 @@ Creating fenics-adapter-neumann
 [33mfenics-adapter-neumann      |[0m Calling FFC just-in-time (JIT) compiler, this may take some time.
 [32mfenics-adapter-dirichlet    |[0m Default domain partitioning for simple interface is used: Left part of domain is a Dirichlet-type problem; right part is a Neumann-type problem
 [32mfenics-adapter-dirichlet    |[0m Calling FFC just-in-time (JIT) compiler, this may take some time.
-[32mfenics-adapter-dirichlet    |[0m Calling FFC just-in-time (JIT) compiler, this may take some time.
 [33mfenics-adapter-neumann      |[0m Calling FFC just-in-time (JIT) compiler, this may take some time.
 [32mfenics-adapter-dirichlet    |[0m Calling FFC just-in-time (JIT) compiler, this may take some time.
 [33mfenics-adapter-neumann      |[0m Calling FFC just-in-time (JIT) compiler, this may take some time.
+[32mfenics-adapter-dirichlet    |[0m Calling FFC just-in-time (JIT) compiler, this may take some time.
 [33mfenics-adapter-neumann      |[0m /usr/lib/python3.6/importlib/_bootstrap.py:219: UserWarning: Please don't import mpi4py before importing [secure], since this may lead to errors. If you need to import mpi4py, you can do so after importing [secure].
 [33mfenics-adapter-neumann      |[0m   return f(*args, **kwds)
 [32mfenics-adapter-dirichlet    |[0m /usr/lib/python3.6/importlib/_bootstrap.py:219: UserWarning: Please don't import mpi4py before importing [secure], since this may lead to errors. If you need to import mpi4py, you can do so after importing [secure].
@@ -92,8 +92,8 @@ Creating fenics-adapter-neumann
 [33mfenics-adapter-neumann      |[0m     self._interface = [secure].Interface(self._solver_name, 0, 1)
 [33mfenics-adapter-neumann      |[0m   File "[secure].pyx", line 35, in [secure].Interface.__cinit__
 [33mfenics-adapter-neumann      |[0m TypeError: __cinit__() takes exactly 4 positional arguments (3 given)
-[32mfenics-adapter-dirichlet exited with code 1
-[0m[33mfenics-adapter-neumann exited with code 1
+[33mfenics-adapter-neumann exited with code 1
+[0m[32mfenics-adapter-dirichlet exited with code 1
 [0mOnly in /home/travis/build/[secure]/systemtests/tests/TestCompose_fe-fe.Ubuntu1804.home/referenceOutput: .gitkeep
 Only in /home/travis/build/[secure]/systemtests/tests/TestCompose_fe-fe.Ubuntu1804.home/referenceOutput: [secure]-HeatDirichlet-iterations.log
 Only in /home/travis/build/[secure]/systemtests/tests/TestCompose_fe-fe.Ubuntu1804.home/referenceOutput: [secure]-HeatNeumann-convergence.log
@@ -104,11 +104,11 @@ EXECUTING: docker cp tutorial-data:/Output .
 EXECUTING: bash ../../compare_results.sh /home/travis/build/[secure]/systemtests/tests/TestCompose_fe-fe.Ubuntu1804.home/referenceOutput /home/travis/build/[secure]/systemtests/tests/TestCompose_fe-fe.Ubuntu1804.home/Output
 TESTS FAILED WITH: Output files do not match reference
 Files differing               : []
-Files only in reference (left): ['[secure]-HeatNeumann-iterations.log', '[secure]-HeatDirichlet-iterations.log', '[secure]-HeatNeumann-convergence.log']
+Files only in reference (left): ['[secure]-HeatDirichlet-iterations.log', '[secure]-HeatNeumann-iterations.log', '[secure]-HeatNeumann-convergence.log']
 Files only in output(right)   : []
-travis_time:end:2382eb27:start=1579180289020862903,finish=1579180355615910603,duration=66595047700,event=script[0K[31;1mThe command "python system_testing.py -s fe-fe --base Ubuntu1804.home" exited with 1.[0m
+travis_time:end:0fbd5d8a:start=1579180701271772418,finish=1579180769059781385,duration=67788008967,event=script[0K[31;1mThe command "python system_testing.py -s fe-fe --base Ubuntu1804.home" exited with 1.[0m
 
-travis_fold:start:after_failure[0Ktravis_time:start:052aa494[0K$ python push.py -t fe-fe --base Ubuntu1804.home
+travis_fold:start:after_failure[0Ktravis_time:start:00b2ce39[0K$ python push.py -t fe-fe --base Ubuntu1804.home
 Cloning into '[secure]_st_output'...
 
 ```
