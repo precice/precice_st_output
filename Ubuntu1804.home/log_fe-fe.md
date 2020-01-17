@@ -1,12 +1,12 @@
 ## Status: Failure 
-Build: [1467](https://travis-ci.org/precice/systemtests/builds/638371833) 
+Build: [1468](https://travis-ci.org/precice/systemtests/builds/638588714) 
 
-Job: [1467.21](https://travis-ci.org/precice/systemtests/jobs/638371856) 
+Job: [1468.17](https://travis-ci.org/precice/systemtests/jobs/638588731) 
 
-Triggered by: [cron](https://github.com/precice/systemtests/compare/968fe698268820917cf52199d2d3dcbaaf61fbaf...4c749ac41fec1ac0cc04f8e71fcd731e33705ab1) 
+Triggered by: [pull_request](https://github.com/precice/systemtests/pull/128) 
 Last successful commits 
-* [systemtests](https://github.com/precice/systemtests/compare/4f15349af2e6b142f80dbeffbfffd5e75ea93b7e...ff457bed2521c9ab78f7f6e490c7785219151c1e)
-* [fenics-adapter](https://github.com/precice/fenics-adapter/compare/150697fca846...bd6a64d89c81) 
+* [fenics-adapter](https://github.com/precice/fenics-adapter/compare/150697fca846...bd6a64d89c81)
+* [systemtests](https://github.com/precice/systemtests/compare/4f15349af2e6b142f80dbeffbfffd5e75ea93b7e...ff457bed2521c9ab78f7f6e490c7785219151c1e) 
 
 ---
 Last 100 lines of the job log at the moment of push:
@@ -17,11 +17,11 @@ Digest: sha256:2171658620155679240babee0a7714f6509fae66898db422ad803b951257db78
 Status: Downloaded newer image for alpine:latest
  ---> cc0abc535e36
 Step 2/8 : ENV tutorial_path tutorials/HT/partitioned-heat/fenics-fenics
- ---> Running in af1d480807e3
- ---> ad5f3e7c3bf1
-Removing intermediate container af1d480807e3
+ ---> Running in 054f87d5bfbf
+ ---> d027ea322a81
+Removing intermediate container 054f87d5bfbf
 Step 3/8 : RUN apk add git
- ---> Running in fd44fa33f4fc
+ ---> Running in 05fd1dba695f
 fetch http://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/APKINDEX.tar.gz
 fetch http://dl-cdn.alpinelinux.org/alpine/v3.11/community/x86_64/APKINDEX.tar.gz
 (1/6) Installing ca-certificates (20191127-r0)
@@ -33,31 +33,31 @@ fetch http://dl-cdn.alpinelinux.org/alpine/v3.11/community/x86_64/APKINDEX.tar.g
 Executing busybox-1.31.1-r8.trigger
 Executing ca-certificates-20191127-r0.trigger
 OK: 22 MiB in 20 packages
- ---> edcfd29b6363
-Removing intermediate container fd44fa33f4fc
+ ---> 7f3b7f4881e6
+Removing intermediate container 05fd1dba695f
 Step 4/8 : ARG branch=develop
- ---> Running in e043be5d9733
- ---> 8a969bdf3341
-Removing intermediate container e043be5d9733
+ ---> Running in c91e3521372d
+ ---> 8766dc7e5408
+Removing intermediate container c91e3521372d
 Step 5/8 : RUN git clone --branch $branch https://github.com/[secure]/tutorials
- ---> Running in edf2298458fa
+ ---> Running in 32dc26e5cf26
 [91mCloning into 'tutorials'...
-[0m ---> e1af5d483c49
-Removing intermediate container edf2298458fa
+[0m ---> 65367307638d
+Removing intermediate container 32dc26e5cf26
 Step 6/8 : RUN mkdir configs && sed -i 's|network="lo"|exchange-directory="/home/[secure]/Data/Exchange/" network="eth0"|g' $tutorial_path/[secure]-config.xml
- ---> Running in a01154dda8c5
- ---> 98e17a3d8499
-Removing intermediate container a01154dda8c5
+ ---> Running in 65fe314cf039
+ ---> 8d34353f6f93
+Removing intermediate container 65fe314cf039
 Step 7/8 : RUN addgroup -g 1000 [secure] && adduser -u 1000 -G [secure] -D [secure] && chown -R [secure]:[secure] tutorials configs
- ---> Running in 84579cc97737
- ---> 5aadef3a69b6
-Removing intermediate container 84579cc97737
+ ---> Running in 4f9b1a887ec3
+ ---> 21be7779d4f1
+Removing intermediate container 4f9b1a887ec3
 Step 8/8 : USER [secure]
- ---> Running in e0384719ff79
- ---> cd4ecbbe649b
-Removing intermediate container e0384719ff79
+ ---> Running in de5acaba65bb
+ ---> e37e6c42f58d
+Removing intermediate container de5acaba65bb
 
-Successfully built cd4ecbbe649b
+Successfully built e37e6c42f58d
 Successfully tagged testcomposefefeubuntu1804home_tutorial-data:latest
 Image for service tutorial-data was built because it did not already exist. To rebuild this image you must use `docker-compose build` or `docker-compose up --build`.
 Pulling fenics-adapter-dirichlet ([secure]/fenics-adapter-ubuntu1804.home-develop:latest)...
@@ -66,10 +66,10 @@ Digest: sha256:b4183a4fc55293ac53a6e2ac46de7698e0b51ea512fc98bf099e97e88ef8b560
 Status: Downloaded newer image for [secure]/fenics-adapter-ubuntu1804.home-develop:latest
 Creating tutorial-data ... 
 Creating tutorial-data
-[1A[2KCreating tutorial-data ... [32mdone[0m[1BCreating fenics-adapter-neumann ... 
-Creating fenics-adapter-dirichlet ... 
-Creating fenics-adapter-neumann
+[1A[2KCreating tutorial-data ... [32mdone[0m[1BCreating fenics-adapter-dirichlet ... 
+Creating fenics-adapter-neumann ... 
 Creating fenics-adapter-dirichlet
+Creating fenics-adapter-neumann
 [1A[2KCreating fenics-adapter-dirichlet ... [32mdone[0m[1B[1A[2KCreating fenics-adapter-neumann ... [32mdone[0m[1BRunning the simulation...Be patient
 Running the simulation...Be patient
 Running the simulation...Be patient
@@ -106,11 +106,11 @@ Stopping fenics-adapter-neumann ...
                          bash ../../silent_compose.sh
 TESTS FAILED WITH: Command 'export PRECICE_BASE=-ubuntu1804.home-develop;  docker-compose config &&
                          bash ../../silent_compose.sh' returned non-zero exit status 1
-travis_time:end:1cec5364:start=1579260973017034406,finish=1579261650136336387,duration=677119301981,event=script[0K[31;1mThe command "python system_testing.py -s fe-fe --base Ubuntu1804.home" exited with 1.[0m
+travis_time:end:05ad082c:start=1579291380698912575,finish=1579292058300354427,duration=677601441852,event=script[0K[31;1mThe command "python system_testing.py -s fe-fe --base Ubuntu1804.home" exited with 1.[0m
 
-travis_fold:start:after_failure[0Ktravis_time:start:1dcc4dba[0K$ python push.py -t fe-fe --base Ubuntu1804.home
+travis_fold:start:after_failure[0Ktravis_time:start:25f57792[0K$ python push.py -t fe-fe --base Ubuntu1804.home
 Cloning into '[secure]_st_output'...
 
 ```
 [
-Full job log](https://api.travis-ci.org/v3/job/638371856/log.txt)
+Full job log](https://api.travis-ci.org/v3/job/638588731/log.txt)
