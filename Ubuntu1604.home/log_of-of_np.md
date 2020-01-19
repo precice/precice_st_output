@@ -1,7 +1,7 @@
 ## Status: Failure 
-Build: [1470](https://travis-ci.org/precice/systemtests/builds/638788530) 
+Build: [1471](https://travis-ci.org/precice/systemtests/builds/639080221) 
 
-Job: [1470.25](https://travis-ci.org/precice/systemtests/jobs/638788558) 
+Job: [1471.25](https://travis-ci.org/precice/systemtests/jobs/639080246) 
 
 Triggered by: [cron](https://github.com/precice/systemtests/compare/968fe698268820917cf52199d2d3dcbaaf61fbaf...4c749ac41fec1ac0cc04f8e71fcd731e33705ab1) 
 Last successful commits 
@@ -11,17 +11,17 @@ Last successful commits
 ---
 Last 100 lines of the job log at the moment of push:
 ```
-travis_time:start:0065fc6c[0K$ curl -sSf --retry 5 -o python-3.5.tar.bz2 ${archive_url}
-travis_time:end:0065fc6c:start=1579347550128642901,finish=1579347550550091111,duration=421448210,event=configure[0Ktravis_time:start:050068e3[0K$ sudo tar xjf python-3.5.tar.bz2 --directory /
-travis_time:end:050068e3:start=1579347550554923192,finish=1579347558443467949,duration=7888544757,event=configure[0Ktravis_time:start:054d7b08[0Ktravis_fold:start:services[0Ktravis_time:start:0b31b859[0K$ sudo service docker start
+travis_time:start:09ef9004[0K$ curl -sSf --retry 5 -o python-3.5.tar.bz2 ${archive_url}
+travis_time:end:09ef9004:start=1579434019712327180,finish=1579434020111262737,duration=398935557,event=configure[0Ktravis_time:start:1c5e09e0[0K$ sudo tar xjf python-3.5.tar.bz2 --directory /
+travis_time:end:1c5e09e0:start=1579434020116348781,finish=1579434028138704943,duration=8022356162,event=configure[0Ktravis_time:start:1c6c282a[0Ktravis_fold:start:services[0Ktravis_time:start:02a9eac9[0K$ sudo service docker start
 start: Job is already running: docker
-travis_time:end:0b31b859:start=1579347558467099091,finish=1579347558479213197,duration=12114106,event=prepare[0Ktravis_fold:end:services[0Ktravis_time:end:0b31b859:start=1579347558467099091,finish=1579347561484440803,duration=3017341712,event=services[0Ktravis_time:start:0b6eea9b[0Ktravis_time:end:0b6eea9b:start=1579347561488768379,finish=1579347561491313216,duration=2544837,event=fix_ps4[0Ktravis_time:start:1eba0720[0K
-travis_fold:start:git.checkout[0Ktravis_time:start:2bd56a51[0K$ git clone --depth=50 --branch=develop https://github.com/[secure]/systemtests.git [secure]/systemtests
+travis_time:end:02a9eac9:start=1579434028160817913,finish=1579434028173116710,duration=12298797,event=prepare[0Ktravis_fold:end:services[0Ktravis_time:end:02a9eac9:start=1579434028160817913,finish=1579434031178954983,duration=3018137070,event=services[0Ktravis_time:start:20577540[0Ktravis_time:end:20577540:start=1579434031182596164,finish=1579434031185110152,duration=2513988,event=fix_ps4[0Ktravis_time:start:16874b74[0K
+travis_fold:start:git.checkout[0Ktravis_time:start:046996a9[0K$ git clone --depth=50 --branch=develop https://github.com/[secure]/systemtests.git [secure]/systemtests
 Cloning into '[secure]/systemtests'...
-travis_time:end:2bd56a51:start=1579347561500715239,finish=1579347566744823519,duration=5244108280,event=checkout[0K$ cd [secure]/systemtests
+travis_time:end:046996a9:start=1579434031191770612,finish=1579434036618178715,duration=5426408103,event=checkout[0K$ cd [secure]/systemtests
 $ git checkout -qf 4c749ac41fec1ac0cc04f8e71fcd731e33705ab1
 travis_fold:end:git.checkout[0K
-travis_time:end:2bd56a51:start=1579347561500715239,finish=1579347567442931177,duration=5942215938,event=checkout[0Ktravis_time:start:14a447d5[0K
+travis_time:end:046996a9:start=1579434031191770612,finish=1579434037149006016,duration=5957235404,event=checkout[0Ktravis_time:start:00e5db20[0K
 [33;1mSetting environment variables from repository settings[0m
 $ export DOCKER_PASSWORD=[secure]
 $ export DOCKER_USERNAME=[secure]
@@ -29,13 +29,13 @@ $ export TRAVIS_ACCESS_TOKEN=[secure]
 $ export PRECICE_BOT_EMAIL=[secure]
 $ export GH_TOKEN=[secure]
 
-travis_time:end:14a447d5:start=1579347567447613618,finish=1579347567455613859,duration=8000241,event=env[0Ktravis_time:start:071982bd[0K$ source ~/virtualenv/python3.5/bin/activate
-travis_time:end:071982bd:start=1579347567459368303,finish=1579347567464551248,duration=5182945,event=[0K$ python --version
+travis_time:end:00e5db20:start=1579434037152462688,finish=1579434037162649221,duration=10186533,event=env[0Ktravis_time:start:06bcbe30[0K$ source ~/virtualenv/python3.5/bin/activate
+travis_time:end:06bcbe30:start=1579434037166278643,finish=1579434037171252407,duration=4973764,event=[0K$ python --version
 Python 3.5.6
 $ pip --version
 pip 18.0 from /home/travis/virtualenv/python3.5.6/lib/python3.5/site-packages/pip (python 3.5)
 Could not locate requirements.txt. Override the install: key in your .travis.yml to install dependencies.
-travis_time:start:08de3694[0K$ python system_testing.py -s of-of_np
+travis_time:start:0631f7a8[0K$ python system_testing.py -s of-of_np
 networks:
   [secure]comm: {}
 services:
@@ -87,15 +87,15 @@ Digest: sha256:ab00606a42621fb68f2ed6ad3c88be54397f981a7b70a79db3d1172b11c4367d
 Status: Downloaded newer image for alpine:latest
 Pulling openfoam-adapter-fluid ([secure]/openfoam-adapter-ubuntu1604.home-develop:latest)...
 latest: Pulling from [secure]/openfoam-adapter-ubuntu1604.home-develop
-Digest: sha256:a099ace4643792acd70c35520276d6669dbd04a47f197a6f6de0ddf94630b17d
+Digest: sha256:e4de376786b7727b70b70636a97096b966a0f7bddbb83d89710ee940d6a9b906
 Status: Downloaded newer image for [secure]/openfoam-adapter-ubuntu1604.home-develop:latest
+Creating openfoam-adapter-solid ... 
 Creating openfoam-adapter-fluid ... 
 Creating tutorial-data ... 
-Creating openfoam-adapter-solid ... 
-Creating tutorial-data
-Creating openfoam-adapter-fluid
 Creating openfoam-adapter-solid
-[1A[2KCreating openfoam-adapter-solid ... [32mdone[0m[1B[1A[2KCreating openfoam-adapter-fluid ... [32mdone[0m[1B[1A[2KCreating tutorial-data ... [32mdone[0m[1BAll adapters finished!
+Creating openfoam-adapter-fluid
+Creating tutorial-data
+[1A[2KCreating openfoam-adapter-fluid ... [32mdone[0m[1B[1A[2KCreating openfoam-adapter-solid ... [32mdone[0m[1B[1A[2KCreating tutorial-data ... [32mdone[0m[1BAll adapters finished!
 Only in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput: Fluid
 Only in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput: Solid
 EXECUTING: export PRECICE_BASE=-ubuntu1604.home-develop;  docker-compose config &&
@@ -106,11 +106,11 @@ TESTS FAILED WITH: Output files do not match reference
 Files differing               : []
 Files only in reference (left): ['Solid', 'Fluid']
 Files only in output(right)   : []
-travis_time:end:08de3694:start=1579347567733867286,finish=1579347622279145385,duration=54545278099,event=script[0K[31;1mThe command "python system_testing.py -s of-of_np" exited with 1.[0m
+travis_time:end:0631f7a8:start=1579434037458813216,finish=1579434095810853873,duration=58352040657,event=script[0K[31;1mThe command "python system_testing.py -s of-of_np" exited with 1.[0m
 
-travis_fold:start:after_failure[0Ktravis_time:start:11d9adc0[0K$ python push.py -t of-of_np
+travis_fold:start:after_failure[0Ktravis_time:start:3cb31b1c[0K$ python push.py -t of-of_np
 Cloning into '[secure]_st_output'...
 
 ```
 [
-Full job log](https://api.travis-ci.org/v3/job/638788558/log.txt)
+Full job log](https://api.travis-ci.org/v3/job/639080246/log.txt)
