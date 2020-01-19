@@ -1,13 +1,13 @@
 ## Status: Failure 
-Build: [1470](https://travis-ci.org/precice/systemtests/builds/638788530) 
+Build: [1471](https://travis-ci.org/precice/systemtests/builds/639080221) 
 
-Job: [1470.18](https://travis-ci.org/precice/systemtests/jobs/638788550) 
+Job: [1471.18](https://travis-ci.org/precice/systemtests/jobs/639080239) 
 
 Triggered by: [cron](https://github.com/precice/systemtests/compare/968fe698268820917cf52199d2d3dcbaaf61fbaf...4c749ac41fec1ac0cc04f8e71fcd731e33705ab1) 
 Last successful commits 
+* [calculix-adapter](https://github.com/precice/calculix-adapter/compare/6e941caa282e...b01641e40c11)
 * [systemtests](https://github.com/precice/systemtests/compare/4f15349af2e6b142f80dbeffbfffd5e75ea93b7e...ff457bed2521c9ab78f7f6e490c7785219151c1e)
-* [su2-adapter](https://github.com/precice/su2-adapter/compare/a3186951163a...e8f7f22f56cb)
-* [calculix-adapter](https://github.com/precice/calculix-adapter/compare/6e941caa282e...b01641e40c11) 
+* [su2-adapter](https://github.com/precice/su2-adapter/compare/a3186951163a...e8f7f22f56cb) 
 
 ---
 Last 100 lines of the job log at the moment of push:
@@ -66,11 +66,11 @@ Digest: sha256:ab00606a42621fb68f2ed6ad3c88be54397f981a7b70a79db3d1172b11c4367d
 Status: Downloaded newer image for alpine:latest
  ---> e7d92cdc71fe
 Step 2/10 : ENV tutorial_path tutorials/FSI/flap_perp/SU2-CalculiX
- ---> Running in d6ead760be02
- ---> 68f4daba5def
-Removing intermediate container d6ead760be02
+ ---> Running in 7e15db5a7fe3
+ ---> 9f1e265a76ad
+Removing intermediate container 7e15db5a7fe3
 Step 3/10 : RUN apk add git bash
- ---> Running in bf7344c8be67
+ ---> Running in c02e8f0616b3
 fetch http://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/APKINDEX.tar.gz
 fetch http://dl-cdn.alpinelinux.org/alpine/v3.11/community/x86_64/APKINDEX.tar.gz
 (1/11) Installing ncurses-terminfo-base (6.1_p20191130-r0)
@@ -88,30 +88,30 @@ Executing bash-5.0.11-r1.post-install
 Executing busybox-1.31.1-r9.trigger
 Executing ca-certificates-20191127-r0.trigger
 OK: 31 MiB in 25 packages
- ---> 6447753f15f3
-Removing intermediate container bf7344c8be67
+ ---> ced86b3fe63c
+Removing intermediate container c02e8f0616b3
 Step 4/10 : ARG branch=develop
- ---> Running in c56eea383e00
- ---> 938a4dc20ac0
-Removing intermediate container c56eea383e00
+ ---> Running in a9ea74998fc4
+ ---> 40f081dd9be7
+Removing intermediate container a9ea74998fc4
 Step 5/10 : RUN git clone --branch $branch https://github.com/[secure]/tutorials
- ---> Running in 07fc692d9406
+ ---> Running in 03baa150cb44
 [91mCloning into 'tutorials'...
-[0m ---> dd2f1c9d2f0c
-Removing intermediate container 07fc692d9406
+[0m ---> 48adc7ad402f
+Removing intermediate container 03baa150cb44
 Step 6/10 : RUN mkdir configs && sed -e 's|exchange-directory="../"|exchange-directory="/home/[secure]/Data/Exchange/" network="eth0"|g'    $tutorial_path/[secure]-config_serial.xml  > configs/[secure]-config.xml
- ---> Running in 3e1f1a09dbe7
+ ---> Running in 88eee19a9f47
 [91msed: tutorials/FSI/flap_perp/SU2-CalculiX/[secure]-config_serial.xml: No such file or directory
 [0mService 'tutorial-data' failed to build: The command '/bin/sh -c mkdir configs && sed -e 's|exchange-directory="../"|exchange-directory="/home/[secure]/Data/Exchange/" network="eth0"|g'    $tutorial_path/[secure]-config_serial.xml  > configs/[secure]-config.xml' returned a non-zero code: 1
 EXECUTING: export PRECICE_BASE=-ubuntu1604.home-develop;  docker-compose config &&
                          bash ../../silent_compose.sh
 TESTS FAILED WITH: Command 'export PRECICE_BASE=-ubuntu1604.home-develop;  docker-compose config &&
                          bash ../../silent_compose.sh' returned non-zero exit status 1
-travis_time:end:028bd0d4:start=1579347386015125549,finish=1579347396463239506,duration=10448113957,event=script[0K[31;1mThe command "python system_testing.py -s su2-ccx" exited with 1.[0m
+travis_time:end:2c0f2974:start=1579433851811647083,finish=1579433862574217049,duration=10762569966,event=script[0K[31;1mThe command "python system_testing.py -s su2-ccx" exited with 1.[0m
 
-travis_fold:start:after_failure[0Ktravis_time:start:23566056[0K$ python push.py -t su2-ccx
+travis_fold:start:after_failure[0Ktravis_time:start:070d072b[0K$ python push.py -t su2-ccx
 Cloning into '[secure]_st_output'...
 
 ```
 [
-Full job log](https://api.travis-ci.org/v3/job/638788550/log.txt)
+Full job log](https://api.travis-ci.org/v3/job/639080239/log.txt)
