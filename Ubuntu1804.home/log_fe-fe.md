@@ -1,12 +1,12 @@
 ## Status: Failure 
-Build: [1473](https://travis-ci.org/precice/systemtests/builds/639882085) 
+Build: [1475](https://travis-ci.org/precice/systemtests/builds/640388632) 
 
-Job: [1473.21](https://travis-ci.org/precice/systemtests/jobs/639882108) 
+Job: [1475.21](https://travis-ci.org/precice/systemtests/jobs/640388653) 
 
 Triggered by: [cron](https://github.com/precice/systemtests/compare/968fe698268820917cf52199d2d3dcbaaf61fbaf...4c749ac41fec1ac0cc04f8e71fcd731e33705ab1) 
 Last successful commits 
-* [fenics-adapter](https://github.com/precice/fenics-adapter/compare/150697fca846...bd6a64d89c81)
-* [systemtests](https://github.com/precice/systemtests/compare/4f15349af2e6b142f80dbeffbfffd5e75ea93b7e...ff457bed2521c9ab78f7f6e490c7785219151c1e) 
+* [systemtests](https://github.com/precice/systemtests/compare/4f15349af2e6b142f80dbeffbfffd5e75ea93b7e...ff457bed2521c9ab78f7f6e490c7785219151c1e)
+* [fenics-adapter](https://github.com/precice/fenics-adapter/compare/150697fca846...bd6a64d89c81) 
 
 ---
 Last 100 lines of the job log at the moment of push:
@@ -17,11 +17,11 @@ Digest: sha256:ab00606a42621fb68f2ed6ad3c88be54397f981a7b70a79db3d1172b11c4367d
 Status: Downloaded newer image for alpine:latest
  ---> e7d92cdc71fe
 Step 2/8 : ENV tutorial_path tutorials/HT/partitioned-heat/fenics-fenics
- ---> Running in 0b31bd4054e4
- ---> 727f204ec2b2
-Removing intermediate container 0b31bd4054e4
+ ---> Running in 2640f8ed0143
+ ---> 8a228870d811
+Removing intermediate container 2640f8ed0143
 Step 3/8 : RUN apk add git
- ---> Running in ace05c30fb27
+ ---> Running in beb3769a0b1b
 fetch http://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/APKINDEX.tar.gz
 fetch http://dl-cdn.alpinelinux.org/alpine/v3.11/community/x86_64/APKINDEX.tar.gz
 (1/6) Installing ca-certificates (20191127-r0)
@@ -33,43 +33,43 @@ fetch http://dl-cdn.alpinelinux.org/alpine/v3.11/community/x86_64/APKINDEX.tar.g
 Executing busybox-1.31.1-r9.trigger
 Executing ca-certificates-20191127-r0.trigger
 OK: 22 MiB in 20 packages
- ---> 23f8bd576a0f
-Removing intermediate container ace05c30fb27
+ ---> be5fe8a1785d
+Removing intermediate container beb3769a0b1b
 Step 4/8 : ARG branch=develop
- ---> Running in d273c253d1c7
- ---> 813a10387ae0
-Removing intermediate container d273c253d1c7
+ ---> Running in 85c4e163c1cd
+ ---> ac8e17510514
+Removing intermediate container 85c4e163c1cd
 Step 5/8 : RUN git clone --branch $branch https://github.com/[secure]/tutorials
- ---> Running in 6e4aa35f25c8
+ ---> Running in fb453896d0ba
 [91mCloning into 'tutorials'...
-[0m ---> 629fe7dacfb2
-Removing intermediate container 6e4aa35f25c8
+[0m ---> f76dfa77bd38
+Removing intermediate container fb453896d0ba
 Step 6/8 : RUN mkdir configs && sed -i 's|network="lo"|exchange-directory="/home/[secure]/Data/Exchange/" network="eth0"|g' $tutorial_path/[secure]-config.xml
- ---> Running in 07863567c5c4
- ---> 2502a66e63ea
-Removing intermediate container 07863567c5c4
+ ---> Running in c3131c274d10
+ ---> 31413e89e8f3
+Removing intermediate container c3131c274d10
 Step 7/8 : RUN addgroup -g 1000 [secure] && adduser -u 1000 -G [secure] -D [secure] && chown -R [secure]:[secure] tutorials configs
- ---> Running in 65f742b54f0a
- ---> cf9d530247ef
-Removing intermediate container 65f742b54f0a
+ ---> Running in b1bad8083ae8
+ ---> 7c920a6a6683
+Removing intermediate container b1bad8083ae8
 Step 8/8 : USER [secure]
- ---> Running in 7fb3a61cc678
- ---> 034f847647d4
-Removing intermediate container 7fb3a61cc678
+ ---> Running in 85d28814a118
+ ---> 954db236e9f6
+Removing intermediate container 85d28814a118
 
-Successfully built 034f847647d4
+Successfully built 954db236e9f6
 Successfully tagged testcomposefefeubuntu1804home_tutorial-data:latest
 Image for service tutorial-data was built because it did not already exist. To rebuild this image you must use `docker-compose build` or `docker-compose up --build`.
 Pulling fenics-adapter-dirichlet ([secure]/fenics-adapter-ubuntu1804.home-develop:latest)...
 latest: Pulling from [secure]/fenics-adapter-ubuntu1804.home-develop
-Digest: sha256:40eafb006c7b37bb003c2de3d97badc423e3adc2bc3e1ca134443165b50de189
+Digest: sha256:e3fc41dd551b7c51246310b6997541c64eb4a655408c836079a192760966842e
 Status: Downloaded newer image for [secure]/fenics-adapter-ubuntu1804.home-develop:latest
 Creating tutorial-data ... 
 Creating tutorial-data
 [1A[2KCreating tutorial-data ... [32mdone[0m[1BCreating fenics-adapter-dirichlet ... 
 Creating fenics-adapter-neumann ... 
-Creating fenics-adapter-dirichlet
 Creating fenics-adapter-neumann
+Creating fenics-adapter-dirichlet
 [1A[2KCreating fenics-adapter-neumann ... [32mdone[0m[1B[1A[2KCreating fenics-adapter-dirichlet ... [32mdone[0m[1BRunning the simulation...Be patient
 Running the simulation...Be patient
 Running the simulation...Be patient
@@ -88,7 +88,7 @@ Attaching to fenics-adapter-dirichlet
 [36mfenics-adapter-dirichlet    |[0m Calling FFC just-in-time (JIT) compiler, this may take some time.
 [36mfenics-adapter-dirichlet    |[0m Calling FFC just-in-time (JIT) compiler, this may take some time.
 [36mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m This is preCICE version 1.6.1
-[36mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m Revision info: v1.6.1-213-g9f778290
+[36mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m Revision info: v1.6.1-215-gc0548c72
 [36mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m Configuring preCICE with configuration: "/home/[secure]/Data/Input/[secure]-config.xml"
 [36mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m Setting up master communication to coupling partner/s
 Stopping fenics-adapter-dirichlet ... 
@@ -98,7 +98,7 @@ Stopping fenics-adapter-dirichlet ...
 [36mfenics-adapter-neumann      |[0m Calling FFC just-in-time (JIT) compiler, this may take some time.
 [36mfenics-adapter-neumann      |[0m Calling FFC just-in-time (JIT) compiler, this may take some time.
 [36mfenics-adapter-neumann      |[0m ---[[secure]] [0m This is preCICE version 1.6.1
-[36mfenics-adapter-neumann      |[0m ---[[secure]] [0m Revision info: v1.6.1-213-g9f778290
+[36mfenics-adapter-neumann      |[0m ---[[secure]] [0m Revision info: v1.6.1-215-gc0548c72
 [36mfenics-adapter-neumann      |[0m ---[[secure]] [0m Configuring preCICE with configuration: "/home/[secure]/Data/Input/[secure]-config.xml"
 [36mfenics-adapter-neumann      |[0m ---[[secure]] [0m Setting up master communication to coupling partner/s
 Stopping fenics-adapter-neumann ... 
@@ -106,11 +106,11 @@ Stopping fenics-adapter-neumann ...
                          bash ../../silent_compose.sh
 TESTS FAILED WITH: Command 'export PRECICE_BASE=-ubuntu1804.home-develop;  docker-compose config &&
                          bash ../../silent_compose.sh' returned non-zero exit status 1
-travis_time:end:119d0eca:start=1579606962207812876,finish=1579607639729156013,duration=677521343137,event=script[0K[31;1mThe command "python system_testing.py -s fe-fe --base Ubuntu1804.home" exited with 1.[0m
+travis_time:end:174c06c0:start=1579694375434689086,finish=1579695052969423700,duration=677534734614,event=script[0K[31;1mThe command "python system_testing.py -s fe-fe --base Ubuntu1804.home" exited with 1.[0m
 
-travis_fold:start:after_failure[0Ktravis_time:start:00a3d7ba[0K$ python push.py -t fe-fe --base Ubuntu1804.home
+travis_fold:start:after_failure[0Ktravis_time:start:0ccb3716[0K$ python push.py -t fe-fe --base Ubuntu1804.home
 Cloning into '[secure]_st_output'...
 
 ```
 [
-Full job log](https://api.travis-ci.org/v3/job/639882108/log.txt)
+Full job log](https://api.travis-ci.org/v3/job/640388653/log.txt)
