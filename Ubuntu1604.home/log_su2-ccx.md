@@ -1,13 +1,13 @@
 ## Status: Failure 
-Build: [1475](https://travis-ci.org/precice/systemtests/builds/640388632) 
+Build: [1476](https://travis-ci.org/precice/systemtests/builds/640842744) 
 
-Job: [1475.18](https://travis-ci.org/precice/systemtests/jobs/640388650) 
+Job: [1476.18](https://travis-ci.org/precice/systemtests/jobs/640842762) 
 
 Triggered by: [cron](https://github.com/precice/systemtests/compare/968fe698268820917cf52199d2d3dcbaaf61fbaf...4c749ac41fec1ac0cc04f8e71fcd731e33705ab1) 
 Last successful commits 
 * [calculix-adapter](https://github.com/precice/calculix-adapter/compare/6e941caa282e...b01641e40c11)
-* [systemtests](https://github.com/precice/systemtests/compare/4f15349af2e6b142f80dbeffbfffd5e75ea93b7e...ff457bed2521c9ab78f7f6e490c7785219151c1e)
-* [su2-adapter](https://github.com/precice/su2-adapter/compare/a3186951163a...e8f7f22f56cb) 
+* [su2-adapter](https://github.com/precice/su2-adapter/compare/a3186951163a...e8f7f22f56cb)
+* [systemtests](https://github.com/precice/systemtests/compare/4f15349af2e6b142f80dbeffbfffd5e75ea93b7e...ff457bed2521c9ab78f7f6e490c7785219151c1e) 
 
 ---
 Last 100 lines of the job log at the moment of push:
@@ -66,11 +66,11 @@ Digest: sha256:ab00606a42621fb68f2ed6ad3c88be54397f981a7b70a79db3d1172b11c4367d
 Status: Downloaded newer image for alpine:latest
  ---> e7d92cdc71fe
 Step 2/10 : ENV tutorial_path tutorials/FSI/flap_perp/SU2-CalculiX
- ---> Running in 2e18b9bfcb08
- ---> fe805aa8ba36
-Removing intermediate container 2e18b9bfcb08
+ ---> Running in 5e689a2ab4d2
+ ---> 3c00feed0a51
+Removing intermediate container 5e689a2ab4d2
 Step 3/10 : RUN apk add git bash
- ---> Running in 5e70272832e3
+ ---> Running in 1c7e87aa5ecb
 fetch http://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/APKINDEX.tar.gz
 fetch http://dl-cdn.alpinelinux.org/alpine/v3.11/community/x86_64/APKINDEX.tar.gz
 (1/11) Installing ncurses-terminfo-base (6.1_p20191130-r0)
@@ -88,30 +88,30 @@ Executing bash-5.0.11-r1.post-install
 Executing busybox-1.31.1-r9.trigger
 Executing ca-certificates-20191127-r0.trigger
 OK: 31 MiB in 25 packages
- ---> e7e4481cddb3
-Removing intermediate container 5e70272832e3
+ ---> 371ffe171c2d
+Removing intermediate container 1c7e87aa5ecb
 Step 4/10 : ARG branch=develop
- ---> Running in 8e2820539756
- ---> fa7987a82fef
-Removing intermediate container 8e2820539756
+ ---> Running in 42966cae6ae8
+ ---> 8687fbdabbeb
+Removing intermediate container 42966cae6ae8
 Step 5/10 : RUN git clone --branch $branch https://github.com/[secure]/tutorials
- ---> Running in e045ad995c32
+ ---> Running in 5f8c23f51ca1
 [91mCloning into 'tutorials'...
-[0m ---> f3264c32cb53
-Removing intermediate container e045ad995c32
+[0m ---> 930578699db0
+Removing intermediate container 5f8c23f51ca1
 Step 6/10 : RUN mkdir configs && sed -e 's|exchange-directory="../"|exchange-directory="/home/[secure]/Data/Exchange/" network="eth0"|g'    $tutorial_path/[secure]-config_serial.xml  > configs/[secure]-config.xml
- ---> Running in 277ffbd70f97
+ ---> Running in 148c1860e999
 [91msed: tutorials/FSI/flap_perp/SU2-CalculiX/[secure]-config_serial.xml: No such file or directory
 [0mService 'tutorial-data' failed to build: The command '/bin/sh -c mkdir configs && sed -e 's|exchange-directory="../"|exchange-directory="/home/[secure]/Data/Exchange/" network="eth0"|g'    $tutorial_path/[secure]-config_serial.xml  > configs/[secure]-config.xml' returned a non-zero code: 1
 EXECUTING: export PRECICE_BASE=-ubuntu1604.home-develop;  docker-compose config &&
                          bash ../../silent_compose.sh
 TESTS FAILED WITH: Command 'export PRECICE_BASE=-ubuntu1604.home-develop;  docker-compose config &&
                          bash ../../silent_compose.sh' returned non-zero exit status 1
-travis_time:end:12ebc8f9:start=1579694290342492390,finish=1579694300693364640,duration=10350872250,event=script[0K[31;1mThe command "python system_testing.py -s su2-ccx" exited with 1.[0m
+travis_time:end:0268c22d:start=1579779732371628534,finish=1579779742750570316,duration=10378941782,event=script[0K[31;1mThe command "python system_testing.py -s su2-ccx" exited with 1.[0m
 
-travis_fold:start:after_failure[0Ktravis_time:start:1c062c18[0K$ python push.py -t su2-ccx
+travis_fold:start:after_failure[0Ktravis_time:start:097bea68[0K$ python push.py -t su2-ccx
 Cloning into '[secure]_st_output'...
 
 ```
 [
-Full job log](https://api.travis-ci.org/v3/job/640388650/log.txt)
+Full job log](https://api.travis-ci.org/v3/job/640842762/log.txt)
