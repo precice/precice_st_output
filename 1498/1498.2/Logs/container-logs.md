@@ -1,3 +1,4 @@
+```
 Attaching to openfoam-adapter-fluid, openfoam-adapter-solid, tutorial-data
 [33mopenfoam-adapter-solid    |[0m /*---------------------------------------------------------------------------*\
 [33mopenfoam-adapter-solid    |[0m | =========                 |                                                 |
@@ -10046,3 +10047,4 @@ Attaching to openfoam-adapter-fluid, openfoam-adapter-solid, tutorial-data
 [36mopenfoam-adapter-fluid    |[0m ---[preciceAdapter] The simulation was ended by preCICE. Calling the end() methods of any functionObject explicitly.
 [36mopenfoam-adapter-fluid    |[0m End
 [36mopenfoam-adapter-fluid    |[0m 
+```
