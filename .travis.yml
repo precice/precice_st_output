@@ -1,0 +1,11 @@
+sudo: true
+dist: trusty
+language: python
+python:
+  - "3.7"
+
+jobs:
+  include:
+    - name: 'Archive old build folders'
+      script:
+        - python archived/archive_builds.py
