@@ -7,5 +7,6 @@ python:
 jobs:
   include:
     - name: 'Archive old build folders'
+      if: type = cron
       script:
         - python archived/archive_builds.py
