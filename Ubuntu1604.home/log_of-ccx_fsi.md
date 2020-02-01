@@ -1,13 +1,13 @@
 ## Status: Failure 
-Build: [1521](https://travis-ci.org/precice/systemtests/builds/642317432) 
+Build: [1574](https://travis-ci.org/precice/systemtests/builds/644725337) 
 
-Job: [1521.26](https://travis-ci.org/precice/systemtests/jobs/642317458) 
+Job: [1574.25](https://travis-ci.org/precice/systemtests/jobs/644725362) 
 
-Triggered by: [cron](https://github.com/precice/systemtests/compare/41581e838945d44f597d37ae02844ddc5bcaa133...feb7379d4291423a8ea6ec40728f855e8268130b) 
+Triggered by: [cron](https://github.com/precice/systemtests/compare/4999f333493e1d71bc360afa644a77d2630ce82e...b42adf2e689a763071326fd2ccb4fad54589f1aa) 
 Last successful commits 
+* [openfoam-adapter](https://github.com/precice/openfoam-adapter/compare/7566319387fe...59b44bf3cbdc)
 * [calculix-adapter](https://github.com/precice/calculix-adapter/compare/6e941caa282e...b01641e40c11)
-* [systemtests](https://github.com/precice/systemtests/compare/41581e838945d44f597d37ae02844ddc5bcaa133...feb7379d4291423a8ea6ec40728f855e8268130b)
-* [openfoam-adapter](https://github.com/precice/openfoam-adapter/compare/7566319387fe...59b44bf3cbdc) 
+* [systemtests](https://github.com/precice/systemtests/compare/41581e838945d44f597d37ae02844ddc5bcaa133...feb7379d4291423a8ea6ec40728f855e8268130b) 
 
 ---
 Last 100 lines of the job log at the moment of push:
@@ -23,11 +23,11 @@ Digest: sha256:ab00606a42621fb68f2ed6ad3c88be54397f981a7b70a79db3d1172b11c4367d
 Status: Downloaded newer image for alpine:latest
  ---> e7d92cdc71fe
 Step 2/12 : ENV tutorial_path /tutorials/FSI/flap_perp/OpenFOAM-CalculiX
- ---> Running in ed58046fd45d
- ---> 7db56b2b1c26
-Removing intermediate container ed58046fd45d
+ ---> Running in 946d8c42f5ac
+ ---> b160e07ed9c6
+Removing intermediate container 946d8c42f5ac
 Step 3/12 : RUN apk add git bash
- ---> Running in 28dbc62b9251
+ ---> Running in 349f6ec66468
 fetch http://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/APKINDEX.tar.gz
 fetch http://dl-cdn.alpinelinux.org/alpine/v3.11/community/x86_64/APKINDEX.tar.gz
 (1/11) Installing ncurses-terminfo-base (6.1_p20191130-r0)
@@ -45,43 +45,43 @@ Executing bash-5.0.11-r1.post-install
 Executing busybox-1.31.1-r9.trigger
 Executing ca-certificates-20191127-r0.trigger
 OK: 31 MiB in 25 packages
- ---> a7ddf852be62
-Removing intermediate container 28dbc62b9251
+ ---> 4fa27e2a3144
+Removing intermediate container 349f6ec66468
 Step 4/12 : ARG branch=develop
- ---> Running in 33fb7393b76d
- ---> edec991adc99
-Removing intermediate container 33fb7393b76d
+ ---> Running in 3b9085e28379
+ ---> 122d1bef7fc9
+Removing intermediate container 3b9085e28379
 Step 5/12 : RUN git clone --branch $branch https://github.com/[secure]/tutorials
- ---> Running in 207d1dd9bc76
+ ---> Running in e4f2d916fe09
 [91mCloning into 'tutorials'...
-[0m ---> 576b22ea4197
-Removing intermediate container 207d1dd9bc76
+[0m ---> 6506d9c1fc5c
+Removing intermediate container e4f2d916fe09
 Step 6/12 : WORKDIR /
- ---> 28b436b1fa55
-Removing intermediate container 18049d6afc8d
+ ---> cd798c419f99
+Removing intermediate container dc13669195d4
 Step 7/12 : COPY interface_beam.nam fix1_beam.nam all.msh $tutorial_path/Solid/
- ---> 95537e133341
+ ---> cb1c9091ddea
 Step 8/12 : RUN sed -i '/application     pimpleFoam/d; s/\/\/ application     pimpleDyMFoam/application    pimpleDyMFoam/g'     $tutorial_path/Fluid/system/controlDict
- ---> Running in 5438511182d4
- ---> 69bb8d8c29a6
-Removing intermediate container 5438511182d4
+ ---> Running in f34807ef7f9c
+ ---> f9b4d5e6d4b0
+Removing intermediate container f34807ef7f9c
 Step 9/12 : RUN mkdir configs &&      sed -e 's|<m2n:sockets from=\"Fluid\" to=\"Calculix\"|<m2n:sockets from=\"Fluid\" to=\"Calculix\" exchange-directory=\"/home/[secure]/Data/Exchange/\" network=\"eth0\"/>|g'     $tutorial_path/[secure]-config.xml > configs/[secure]-config.xml && cp $tutorial_path/config.yml configs/
- ---> Running in 09c8eec44414
- ---> a6851faf3648
-Removing intermediate container 09c8eec44414
+ ---> Running in de78fc870ba2
+ ---> da4368322dd0
+Removing intermediate container de78fc870ba2
 Step 10/12 : RUN rm $tutorial_path/[secure]-config.xml
- ---> Running in c66bdad440ee
- ---> 37cc2a2c8009
-Removing intermediate container c66bdad440ee
+ ---> Running in 94e9e007932d
+ ---> c0969b76a06b
+Removing intermediate container 94e9e007932d
 Step 11/12 : RUN addgroup -g 1000 [secure] && adduser -u 1000 -G [secure] -D [secure] && chown -R [secure]:[secure] tutorials configs
- ---> Running in dcc2ef51f61c
- ---> 52e292e8227e
-Removing intermediate container dcc2ef51f61c
+ ---> Running in 9a54a0cced1a
+ ---> 11ec3298b2e3
+Removing intermediate container 9a54a0cced1a
 Step 12/12 : USER [secure]
- ---> Running in c2555d28e7bd
- ---> 54025a20a7f9
-Removing intermediate container c2555d28e7bd
-Successfully built 54025a20a7f9
+ ---> Running in b5d8ce8bbf38
+ ---> 3bebd29a4c94
+Removing intermediate container b5d8ce8bbf38
+Successfully built 3bebd29a4c94
 Successfully tagged testcomposeofccxfsiubuntu1604homepetsc_tutorial-data:latest
 Image for service tutorial-data was built because it did not already exist. To rebuild this image you must use `docker-compose build` or `docker-compose up --build`.
 Pulling openfoam-adapter-fluid ([secure]/openfoam-adapter-ubuntu1604.home.petsc-develop:latest)...
@@ -90,15 +90,15 @@ Digest: sha256:9a83191571c17d4ca1de3d6d1c5325ec44bb7d4412dff2d3524176f8a2a56452
 Status: Downloaded newer image for [secure]/openfoam-adapter-ubuntu1604.home.petsc-develop:latest
 Pulling calculix-adapter-solid ([secure]/calculix-adapter-ubuntu1604.home.petsc-develop:latest)...
 latest: Pulling from [secure]/calculix-adapter-ubuntu1604.home.petsc-develop
-Digest: sha256:8bcbcc3a936f72beffc45cbc9c9a7e84e91eef909fa428f1f53ef15dc2a04da8
+Digest: sha256:f0d3230a746a245d299b4c5d478356198010d869c76d5561e3b5f44b5f3efdbb
 Status: Downloaded newer image for [secure]/calculix-adapter-ubuntu1604.home.petsc-develop:latest
 Creating tutorial-data ... 
 Creating tutorial-data
 [1A[2KCreating tutorial-data ... [32mdone[0m[1BCreating openfoam-adapter-fluid ... 
 Creating calculix-adapter-solid ... 
-Creating calculix-adapter-solid
 Creating openfoam-adapter-fluid
-[1A[2KCreating openfoam-adapter-fluid ... [32mdone[0m[1B[1A[2KCreating calculix-adapter-solid ... [32mdone[0m[1BAll adapters finished!
+Creating calculix-adapter-solid
+[1A[2KCreating calculix-adapter-solid ... [32mdone[0m[1B[1A[2KCreating openfoam-adapter-fluid ... [32mdone[0m[1BAll adapters finished!
 Only in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-ccx_fsi.Ubuntu1604.home.PETSc/referenceOutput: Fluid
 EXECUTING: export PRECICE_BASE=-ubuntu1604.home.petsc-develop; docker-compose config && bash ../../silent_compose.sh 
 EXECUTING: docker cp tutorial-data:/Output .
@@ -107,11 +107,11 @@ TESTS FAILED WITH: Output files do not match reference
 Files differing               : []
 Files only in reference (left): ['Fluid']
 Files only in output(right)   : []
-travis_time:end:032b96c8:start=1580125595344279203,finish=1580125670698331863,duration=75354052660,event=script[0K[31;1mThe command "python system_testing.py -s of-ccx_fsi --base Ubuntu1604.home.PETSc" exited with 1.[0m
+travis_time:end:06434436:start=1580557925019194824,finish=1580558002317372064,duration=77298177240,event=script[0K[31;1mThe command "python system_testing.py -s of-ccx_fsi --base Ubuntu1604.home.PETSc" exited with 1.[0m
 
-travis_fold:start:after_failure[0Ktravis_time:start:21c3349e[0K$ python push.py -t of-ccx_fsi
+travis_fold:start:after_failure[0Ktravis_time:start:05fc4db0[0K$ python push.py -t of-ccx_fsi
 Cloning into '[secure]_st_output'...
 
 ```
 [
-Full job log](https://api.travis-ci.org/v3/job/642317458/log.txt)
+Full job log](https://api.travis-ci.org/v3/job/644725362/log.txt)
