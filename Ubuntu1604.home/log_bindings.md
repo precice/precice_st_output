@@ -1,74 +1,64 @@
 ## Status: Passing 
-Build: [1521](https://travis-ci.org/precice/systemtests/builds/642317432) 
+Build: [1574](https://travis-ci.org/precice/systemtests/builds/644725337) 
 
-Job: [1521.22](https://travis-ci.org/precice/systemtests/jobs/642317454) 
+Job: [1574.21](https://travis-ci.org/precice/systemtests/jobs/644725358) 
 
-Triggered by: [cron](https://github.com/precice/systemtests/compare/41581e838945d44f597d37ae02844ddc5bcaa133...feb7379d4291423a8ea6ec40728f855e8268130b) 
+Triggered by: [cron](https://github.com/precice/systemtests/compare/4999f333493e1d71bc360afa644a77d2630ce82e...b42adf2e689a763071326fd2ccb4fad54589f1aa) 
 
 ---
 Last 100 lines of the job log at the moment of push:
 ```
+                           initializeData/map.nn.mapData.FromMeshTwoToMeshOne |          1 |          0 |          0 |          0 |          0 |          0 |
+                           initializeData/map.np.mapData.FromMeshOneToMeshTwo |          1 |          0 |          0 |          0 |          0 |          0 |
+                                                               solver.advance |         30 |          0 |          0 |          0 |          0 |          0 |
+                                                            solver.initialize |          1 |          2 |          2 |          2 |          2 |     0.0137 |
+
+
+                                                                         Name |        Max |  MaxOnRank |        Min |  MinOnRank |    Min/Max |
+------------------------------------------------------------------------------------------------------------------------------------------------
+                                                                      _GLOBAL |        146 |          0 |        146 |          0 |          1 |
+                                                                      advance |         37 |          0 |          0 |          0 |          0 |
+                                                      advance/m2n.receiveData |         36 |          0 |          0 |          0 |          0 |
+                                                         advance/m2n.sendData |          0 |          0 |          0 |          0 |          0 |
+                                  advance/map.nn.mapData.FromMeshTwoToMeshOne |          0 |          0 |          0 |          0 |          0 |
+                                  advance/map.np.mapData.FromMeshOneToMeshTwo |          0 |          0 |          0 |          0 |          0 |
+                                                                    configure |          0 |          0 |          0 |          0 |          0 |
+                                                                     finalize |          0 |          0 |          0 |          0 |          0 |
+                                                                   initialize |         91 |          0 |         91 |          0 |          1 |
+                                        initialize/m2n.acceptMasterConnection |          2 |          0 |          2 |          0 |          1 |
                                         initialize/m2n.acceptSlavesConnection |         42 |          0 |         42 |          0 |          1 |
                                   initialize/m2n.broadcastVertexDistributions |          0 |          0 |          0 |          0 |          0 |
                                          initialize/m2n.buildCommunicationMap |          0 |          0 |          0 |          0 |          0 |
                                           initialize/m2n.createCommunications |          2 |          0 |          2 |          0 |          1 |
                                     initialize/m2n.exchangeVertexDistribution |         40 |          0 |         40 |          0 |          1 |
                                                    initialize/m2n.receiveData |          0 |          0 |          0 |          0 |          0 |
-                        initialize/map.np.computeMapping.FromMeshOneToMeshTwo |          0 |          0 |          0 |          0 |          0 |
-        initialize/map.np.computeMapping.FromMeshOneToMeshTwo.getIndexOnEdges |          0 |          0 |          0 |          0 |          0 |
+                        initialize/map.np.computeMapping.FromMeshOneToMeshTwo |          4 |          0 |          4 |          0 |          1 |
+        initialize/map.np.computeMapping.FromMeshOneToMeshTwo.getIndexOnEdges |          1 |          0 |          1 |          0 |          1 |
      initialize/map.np.computeMapping.FromMeshOneToMeshTwo.getIndexOnVertices |          0 |          0 |          0 |          0 |          0 |
                                initialize/map.np.mapData.FromMeshOneToMeshTwo |          0 |          0 |          0 |          0 |          0 |
-                                    initialize/partition.feedbackMesh.MeshTwo |          0 |          0 |          0 |          0 |          0 |
-                               initialize/partition.receiveGlobalMesh.MeshOne |         33 |          0 |         33 |          0 |          1 |
-                                                               initializeData |          0 |          0 |          0 |          0 |          0 |
+                                     initialize/partition.prepareMesh.MeshTwo |          0 |          0 |          0 |          0 |          0 |
+                               initialize/partition.receiveGlobalMesh.MeshOne |         38 |          0 |         38 |          0 |          1 |
+                                                               initializeData |          3 |          0 |          3 |          0 |          1 |
                     initializeData/map.nn.computeMapping.FromMeshTwoToMeshOne |          0 |          0 |          0 |          0 |          0 |
  initializeData/map.nn.computeMapping.FromMeshTwoToMeshOne.getIndexOnVertices |          0 |          0 |          0 |          0 |          0 |
                            initializeData/map.nn.mapData.FromMeshTwoToMeshOne |          0 |          0 |          0 |          0 |          0 |
-                           initializRun finished at Mon Jan 27 11:42:28 2020
-Global runtime       = 163ms / 0.163s
-Number of processors = 1
-# Rank: 0
-
-                                       Event |      Count |  Total[ms] |    Max[ms] |    Min[ms] |    Avg[ms] | Time Ratio |
-----------------------------------------------------------------------------------------------------------------------------
-                                     _GLOBAL |          1 |        163 |        163 |        163 |        163 |          1 |
-                                     advance |         30 |         66 |         40 |          0 |          2 |      0.405 |
-                     advance/m2n.receiveData |         30 |         10 |          7 |          0 |          0 |     0.0613 |
-                        advance/m2n.sendData |         30 |          0 |          0 |          0 |          0 |          0 |
-                                   configure |          1 |          0 |          0 |          0 |          0 |          0 |
-                                    finalize |          1 |          9 |          9 |          9 |          9 |     0.0552 |
-                                  initialize |          1 |         85 |         85 |         85 |         85 |      0.521 |
- initialize/m2n.broadcastVertexDistributions |          1 |          0 |          0 |          0 |          0 |          0 |
-        initialize/m2n.buildCommunicationMap |          1 |          0 |          0 |          0 |          0 |          0 |
-         initialize/m2n.createCommunications |          1 |          2 |          2 |          2 |          2 |     0.0123 |
-   initialize/m2n.exchangeVertexDistribution |          1 |         73 |         73 |         73 |         73 |      0.448 |
-      initialize/m2n.requestMasterConnection |          1 |          5 |          5 |          5 |          5 |     0.0307 |
-      initialize/m2n.requestSlavesConnection |          1 |         78 |         78 |         78 |         78 |      0.479 |
-   initialize/partition.feedbackMesh.MeshOne |          1 |          0 |          0 |          0 |          0 |          0 |
-     initialize/partition.gatherMesh.MeshOne |          1 |          0 |          0 |          0 |          0 |          0 |
- initialize/partition.sendGlobalMesh.MeshOne |          1 |          0 |          0 |          0 |          0 |          0 |
-                              initializeData |          1 |          0 |          0 |          0 |          0 |          0 |
-                              solver.advance |         30 |          0 |          0 |          0 |          0 |          0 |
-                           solver.initialize |          1 |          0 |          0 |          0 |          0 |          0 |
-
-
-                                        Name |        Max |  MaxOnRank |        Min |  MinOnRank |    Min/Max |
+                           initializ                                        Name |        Max |  MaxOnRank |        Min |  MinOnRank |    Min/Max |
 ---------------------------------------------------------------------------------------------------------------
-                                     _GLOBAL |        163 |          0 |        163 |          0 |          1 |
-                                     advance |         40 |          0 |          0 |          0 |          0 |
-                     advance/m2n.receiveData |          7 |          0 |          0 |          0 |          0 |
+                                     _GLOBAL |        151 |          0 |        151 |          0 |          1 |
+                                     advance |         49 |          0 |          0 |          0 |          0 |
+                     advance/m2n.receiveData |          0 |          0 |          0 |          0 |          0 |
                         advance/m2n.sendData |          0 |          0 |          0 |          0 |          0 |
                                    configure |          0 |          0 |          0 |          0 |          0 |
-                                    finalize |          9 |          0 |          9 |          0 |          1 |
-                                  initialize |         85 |          0 |         85 |          0 |          1 |
+                                    finalize |          0 |          0 |          0 |          0 |          0 |
+                                  initialize |         89 |          0 |         89 |          0 |          1 |
  initialize/m2n.broadcastVertexDistributions |          0 |          0 |          0 |          0 |          0 |
         initialize/m2n.buildCommunicationMap |          0 |          0 |          0 |          0 |          0 |
          initialize/m2n.createCommunications |          2 |          0 |          2 |          0 |          1 |
-   initialize/m2n.exchangeVertexDistribution |         73 |          0 |         73 |          0 |          1 |
-      initialize/m2n.requestMasterConnection |          5 |          0 |          5 |          0 |          1 |
-      initialize/m2n.requestSlavesConnection |         78 |          0 |         78 |          0 |          1 |
-   initialize/partition.feedbackMesh.MeshOne |          0 |          0 |          0 |          0 |          0 |
+   initialize/m2n.exchangeVertexDistribution |         75 |          0 |         75 |          0 |          1 |
+      initialize/m2n.requestMasterConnection |          9 |          0 |          9 |          0 |          1 |
+      initialize/m2n.requestSlavesConnection |         77 |          0 |         77 |          0 |          1 |
      initialize/partition.gatherMesh.MeshOne |          0 |          0 |          0 |          0 |          0 |
+    initialize/partition.prepareMesh.MeshOne |          0 |          0 |          0 |          0 |          0 |
  initialize/partition.sendGlobalMesh.MeshOne |          0 |          0 |          0 |          0 |          0 |
                               initializeData |          0 |          0 |          0 |          0 |          0 |
                               solver.advance |          0 |          0 |          0 |          0 |          0 |
@@ -76,38 +66,48 @@ Number of processors = 1
  DUMMY: Closing Fortran solver dummy...
 eData/map.np.mapData.FromMeshOneToMeshTwo |          0 |          0 |          0 |          0 |          0 |
                                                                solver.advance |          0 |          0 |          0 |          0 |          0 |
-                                                            solver.initialize |          0 |          0 |          0 |          0 |          0 |
+                                                            solver.initialize |          2 |          0 |          2 |          0 |          1 |
  DUMMY: Closing Fortran solver dummy...
- ---> 09c35b630a43
-Removing intermediate container 4ca893541809
-Step 27/29 : USER root
- ---> Running in 7cd5da1f6886
- ---> b56a8e1666c2
-Removing intermediate container 7cd5da1f6886
-Step 28/29 : RUN mkdir /Output
- ---> Running in 6d63ca08caee
- ---> fe4948f6c257
-Removing intermediate container 6d63ca08caee
-Step 29/29 : USER [secure]
- ---> Running in 0851b780bef9
- ---> 845ecf1975d6
-Removing intermediate container 0851b780bef9
-Successfully built 845ecf1975d6
+ ---> 8e1fc470f65f
+Removing intermediate container 3a428ee4d70c
+Step 34/36 : USER root
+ ---> Running in 0077e59559b0
+ ---> 9a5678e9117e
+Removing intermediate container 0077e59559b0
+Step 35/36 : RUN mkdir /Output
+ ---> Running in a5e9a3c1aec8
+ ---> d09649e659a5
+Removing intermediate container a5e9a3c1aec8
+Step 36/36 : USER [secure]
+ ---> Running in cfdbbea0086f
+ ---> 62f57e60f15d
+Removing intermediate container cfdbbea0086f
+Successfully built 62f57e60f15d
 Successfully tagged st_bindings-ubuntu1604.home-develop:latest
-3b5cfe41a02e152484b38f2f84d06d7e86f0bd747a4ae71934e0bd75d553c186
+443873a2869a6636dfb59f9e5269d5851833ebffe6234f3d740f3589f5af5b8b
 EXECUTING: docker build --network=host --file Dockerfile --tag st_bindings-ubuntu1604.home-develop --build-arg from=[secure]/[secure]-ubuntu1604.home-develop:latest .
 EXECUTING: docker run -it -d --name st_bindings-ubuntu1604.home-develop st_bindings-ubuntu1604.home-develop
 EXECUTING: docker cp st_bindings-ubuntu1604.home-develop:Output . 
 TEST SUCCEEDED - No difference to referenceOutput found.
-travis_time:end:031f3800:start=1580125234958486517,finish=1580125349247559308,duration=114289072791,event=script[0K[32;1mThe command "python system_testing.py -s bindings" exited with 0.[0m
+travis_time:end:0020c698:start=1580557689200240776,finish=1580557799960579792,duration=110760339016,event=script[0K[32;1mThe command "python system_testing.py -s bindings" exited with 0.[0m
 
-travis_fold:start:dpl_0[0Ktravis_time:start:097cf994[0K$ rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install dpl
-Successfully installed dpl-1.10.14
+travis_fold:start:dpl_0[0KSuccessfully installed dpl-1.10.14
 Parsing documentation for dpl-1.10.14
 Installing ri documentation for dpl-1.10.14
 Done installing documentation for dpl after 0 seconds
 1 gem installed
-travis_time:end:097cf994:start=1580125353526012022,finish=1580125354958095154,duration=1432083132,event=after_success[0Ktravis_fold:end:dpl_0[0Ktravis_time:start:038928c6[0K
+travis_time:end:01e77b5f:start=1580557803850418216,finish=1580557805209514585,duration=1359096369,event=after_success[0Ktravis_fold:end:dpl_0[0Ktravis_time:start:11a88a34[0Ktravis_fold:start:dpl.1[33mInstalling deploy dependencies[0m
+Successfully installed dpl-script-1.10.14
+Parsing documentation for dpl-script-1.10.14
+Installing ri documentation for dpl-script-1.10.14
+Done installing documentation for dpl-script after 0 seconds
+1 gem installed
+
+travis_fold:end:dpl.1travis_fold:start:dpl.2[33mPreparing deploy[0m
+
+travis_fold:end:dpl.2travis_fold:start:dpl.3[33mDeploying application[0m
+Cloning into '[secure]_st_output'...
+
 ```
 [
-Full job log](https://api.travis-ci.org/v3/job/642317454/log.txt)
+Full job log](https://api.travis-ci.org/v3/job/644725358/log.txt)
