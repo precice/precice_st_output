@@ -1,116 +1,116 @@
 ## Status: Failure 
-Build: [1577](https://travis-ci.org/precice/systemtests/builds/644790884) 
+Build: [1580](https://travis-ci.org/precice/systemtests/builds/645031917) 
 
-Job: [1577.17](https://travis-ci.org/precice/systemtests/jobs/644790901) 
+Job: [1580.20](https://travis-ci.org/precice/systemtests/jobs/645031937) 
 
-Triggered by: [pull_request](https://github.com/precice/systemtests/pull/167) 
+Triggered by: [cron](https://github.com/precice/systemtests/compare/b42adf2e689a763071326fd2ccb4fad54589f1aa...0b61ba36cce94a5b89e38963d3eebc970dbfd8a0) 
 Last successful commits 
-* [systemtests](https://github.com/precice/systemtests/compare/41581e838945d44f597d37ae02844ddc5bcaa133...feb7379d4291423a8ea6ec40728f855e8268130b)
-* [fenics-adapter](https://github.com/precice/fenics-adapter/compare/741a9374da6f...6ef13f08e3bc) 
+* [fenics-adapter](https://github.com/precice/fenics-adapter/compare/741a9374da6f...6ef13f08e3bc)
+* [systemtests](https://github.com/precice/systemtests/compare/41581e838945d44f597d37ae02844ddc5bcaa133...feb7379d4291423a8ea6ec40728f855e8268130b) 
 
 ---
 Last 100 lines of the job log at the moment of push:
 ```
-8  9  0.0000875083107859  0.0000012631659962  		      |	8  5  0.0119133482274468  0.0002716025469397  
-8  10  0.0000269129776102  0.0000006506191204  		      |	8  6  0.0041358463374960  0.0000640721330837  
-8  11  0.0000090798716284  0.0000002060977735  		      |	8  7  0.0007678793692241  0.0000534211546781  
-9  1  0.3065738344077059  0.0442321601123686  		      |	8  8  0.0002785237232260  0.0000061312377965  
-9  2  0.4191594280452355  0.0436019993651179  		      |	8  9  0.0000737861182434  0.0000005527725372  
-9  3  0.2076986721300502  0.0023715368237493  		      |	8  10  0.0000090183015980  0.0000001936339605  
-9  4  0.0313617386124345  0.0006943062532130  		      |	9  1  0.3065759208365174  0.0442321600799987  
-9  5  0.0125809981956948  0.0003168662610195  		      |	9  2  0.4324327665319296  0.0275718317067062  
-9  6  0.0034944432098362  0.00008  0.3349284167333776  0  
-8  89  11  1  0.3875450217950287  0.3268852527003541  0       |	8  92  10  1  0.3522565652571723  0.2904863133797659  0  
-9  100  11  1  0.3695512754254098  0.3299281308610052  0      |	9  104  12  1  0.4219148653784606  0.3553356117436034  0  
-10  112  12  1  0.3975941779515912  0.3276407162139220  0     |	10  115  11  1  0.3764051441645771  0.3294642361432096  0  Difference between numerical fields in /home/travis/build/[secure]/systemtests/tests/TestCompose_fe-fe.Ubuntu1804.home/referenceOutput/[secure]-HeatNeumann-iterations.log and /home/travis/build/[secure]/systemtests/tests/TestCompose_fe-fe.Ubuntu1804.home/Output/[secure]-HeatNeumann-iterations.log -  Average: 0.00241397. Maximum: 0.0833333
-Only in /home/travis/build/[secure]/systemtests/tests/TestCompose_fe-fe.Ubuntu1804.home/referenceOutput: .gitkeep
-diff -yr --suppress-common-lines /home/travis/build/[secure]/systemtests/tests/TestCompose_fe-fe.Ubuntu1804.home/referenceOutput/[secure]-HeatDirichlet-iterations.log /home/travis/build/[secure]/systemtests/tests/TestCompose_fe-fe.Ubuntu1804.home/Output/[secure]-HeatDirichlet-iterations.log
-Timesteps  Total_Iterations  Iterations  Convergence  	      |	Timestep  TotalIterations  Iteration  Convergence  
-1  10  10  1  						      |	1  13  13  1  
-2  21  11  1  						      |	2  25  12  1  
-3  32  11  1  						      |	3  36  11  1  
-4  44  12  1  						      |	4  48  12  1  
-5  55  11  1  						      |	5  60  12  1  
-6  67  12  1  						      |	6  71  11  1  
-7  78  11  1  						      |	7  82  11  1  
-8  89  11  1  						      |	8  92  10  1  
-9  100  11  1  						      |	9  104  1	      |	1  12  0.0000220114207137  0.0000009225285579  
-2  3  0.1696886779230287  0.0029244535086341  		      |	1  13  0.0000092692933856  0.0000000295021622  
-2  4  0.0421668026195298  0.0011322431167148  		      |	2  1  0.3065743125348938  0.0525794649243881  
-2  5  0.0167835118471290  0.0002474896097522  		      |	2  2  0.4689891184487098  0.0423305914168259  
-2  6  0.0028581560233157  0.0001418694278483  		      |	2  3  0.3154943690875744  0.0044240325081260  
-2  7  0.0009206465020265  0.0000172451030892  		      |	2  4  0.0468548997458985  0.0022199863091878  
-2  8  0.0002066770721792  0.0000039262806446  		      |	2  5  0.0199775581280040  0.0006377946293865  
-2  9  0.0000508908619696  0.0000016424828309  		      |	2  6  0.0076940975548577  0.0002722653689413  
-2  10  0.0000165842578176  0.0000001679732586  		      |	2  7  0.0033651548120740  0.0000656989043798  
-2  11  0.0000034575239666  0.0000000795454346  		      |	2  8  0.0007356594956374  0.0000142137138083  
-3  1  0.3065747676623771  0.0512026695507092  		      |	2  9  0.0001847517515464  0.0000077869064137  
-3  2  0.3473018207509722  0.0277727345628623  		      |	2  10  0.0000735499426394  0.0000012134566877  
-3  3  0.2656158854202202  0.0095191795251364  		      |	2  11  0.0000141357109195  0.0000004952049834  
-3  4  0.1011215977181207  0.0026346627145511  		      |	2  12  0.0000066785914778  0.0000002428962717  
-3  5  0.0249196586855552  0.0002786797179284  		      |	3  1  0.3065737274975608  0.0512027363310201  
-3  6  0.0033730186469595  0.0001395123309996  		      |	3  2  0.3951949626787493  0.0362941927966337  
-3  7  0.0017152285541736  0.00059003612143  0.0000002088326091  		      |	4  8  0.0006260840616345  0.0000224180771905  
-5  1  0.3065748375261543  0.0486512243895784  		      |	4  9  0.0002100245379285  0.0000052077601533  
-5  2  0.4252725580531733  0.0425369660125258  		      |	4  10  0.0000898249776093  0.0000032244362129  
-5  3  0.2956166220713041  0.0076412410869183  		      |	4  11  0.0000361639903686  0.0000002785757584  
-5  4  0.0777178596064743  0.0008364034926464  		      |	4  12  0.0000057724967072  0.0000002105268862  
-5  5  0.0105745360024735  0.0003397741068756  		      |	5  1  0.3065737765478885  0.0486512755458994  
-5  6  0.0035736399247157  0.0000937153216058  		      |	5  2  0.4646093696959856  0.0426620014471210  
-5  7  0.0010572411082767  0.0000583588513550  		      |	5  3  0.3180918425228340  0.0030226794380725  
-5  8  0.0005139584096240  0.0000119858512682  		      |	5  4  0.0458863293420689  0.0010208044089152  
-5  9  0.0001105641479890  0.0000012558475189  		      |	5  5  0.0162941188229955  0.0005004036444563  
-5  10  0.0000188701059081  0.0000003718384550  		      |	5  6  0.0068782058328085  0.0001109356947380  
-5  11  0.0000043856904104  0.0000002464671679  		      |	5  7  0.0021078435922186  0.0000695518337713  
-6  1  0.3065746167961686  0.0474669343032916  		      |	5  8  0.0006914934393651  0.0000067119729781  
-6  2  0.4118758443175934  0.0368027673656381  		      |	5  9  0.0000865300482416  0.0000018821341871  
-6  3  0.2770965251782466  0.0043919011273187  		      |	5  10  0.0000340600524008  0.0000012350370321  
-6  4  0.0598125071744315  0.0024876588863895  		      |	5  11  0.0000146019062169  0.0000001171372  0.0018385624058545  
-7  9  0.0001851644919383  0.0000008453377714  		      |	7  5  0.0197963970752541  0.0006046205898615  
-7  10  0.0000142416335055  0.0000006610270873  		      |	7  6  0.0087266277318924  0.0003051624433378  
-7  11  0.0000060314804146  0.0000000157302256  		      |	7  7  0.0039061979647140  0.0000361496928815  
-8  1  0.3065744237325679  0.0452610570158164  		      |	7  8  0.0005554114358701  0.0000257074932768  
-8  2  0.3652357795056483  0.0208259873754585  		      |	7  9  0.0001883952797033  0.0000012233950888  
-8  3  0.2229148489768495  0.0038059974778592  		      |	7  10  0.0000235942306995  0.0000008002113152  
-8  4  0.0695980656515270  0.0012525303647575  		      |	7  11  0.0000095721281440  0.0000002756829123  
-8  5  0.0206266314607364  0.0005653154907254  		      |	8  1  0.3065729226430877  0.0452610661252335  
-8  6  0.0057572661869541  0.0001948802422977  		      |	8  2  0.3747158624863648  0.0239782771317707  
-8  7  0.0024322127297874  0.0000267256220684  		      |	8  3  0.2842477818648273  0.0116551324915549  
-8  8  0.0003683388089234  0.0000094232974962  		      |	8  4  0.1130938461173497  0.0005651512569123  
-8  9  0.0000875083107859  0.0000012631659962  		      |	8  5  0.0119133482274468  0.0002716025469397  
-8  10  0.0000269129776102  0.0000006506191204  		      |	8  6  0.0041358463374960  0.0000640721330837  
-8  11  0.0000090798716284  0.0000002060977735  		      |	8  7  0.0007678793692241  0.0000534211546781  
-9  1  0.3065738344077059  0.0442321601123686  		      |	8  8  0.0002785237232260  0.0000061312377965  
-9  2  0.4191594280452355  0.0436019993651179  		      |	8  9  0.0000737861182434  0.0000005527725372  
-9  3  0.2076986721300502  0.0023715368237493  		      |	8  10  0.0000090183015980  0.0000001936339605  
-9  4  0.0313617386124345  0.0006943062532130  		      |	9  1  0.3065759208365174  0.0442321600799987  
-9  5  0.0125809981956948  0.0003168662610195  		      |	9  2  0.4324327665319296  0.0275718317067062  
-9  6  0.0034944432098362  0.0000869854410408  		      |	9  3  0.3066774698000502  0.0106916092497464  
-9  7  0.0014205638193729  0.0000503693232127  		      |	9  4  0.0955769077238792  0.0009957612509405  
-9  8  0.0003615357197210  0.0000165174165906  		      |	9  5  0.0178055479245056  0.0006051222799006  
-9  9  0.0001452468305793  0.0000026986525890  		      |	9  6  0.0068447933034644  0.0001598993452677  
-9  10  0.0000236211914368  0.0000002644017794  		      |	9  7  0.0030379031854973  0.0000679177859732  
-9  11  0.0000053821629976  0.0000002230236720  		      |	9  8  0.0007055885520408  0.0000191782912931  
-10  1  0.3065739027833141  0.0432483962031703  		      |	9  9  0.0001237888912930  0.0000047774621541  
-10  2  0.4340255314790312  0.0167925163157128  		      |	9  10  0.0000489386592400  0.0000014917946695  
-10  3  0.3624938820069654  0.0067208321347789  		      |	9  11  0.0000225691700509  0.0000009691363745  
-10  4  0.1080398364712988  0.0022125410530713  		      |	9  12  0.0000097551952861  0.0000001792268058  
-10  5  0.0237199040096110  0.0002479454923493  		      |	10  1  0.3065742012706563  0.0432484159206605  
-10  6  0.0033039039900501  0.0000910191867006  		      |	10  2  0.4453350261307856  0.0385958955410368  
-10  7  0.0019071330709685  0.0000553237891262  		      |	10  3  0.3245052474634607  0.0079265150384103  
-10  8  0.0006155781143919  0.0000170079621278  		      |	10  4  0.0673984566313788  0.0006130907677320  
-10  9  0.0001365517096829  0.0000016423362890  		      |	10  5  0.0058465671162645  0.0002395584297477  
-10  10  0.0000227874887406  0.0000005831379395  	      |	10  6  0.0035881551683865  0.0001076142717016  
-10  11  0.0000140561326847  0.0000003406923919  	      |	10  7  0.0009951483954338  0.0000550481859111  
-10  12  0.0000047842666657  0.0000000661826887  	      \	10  8  0.0004001664244566  0.0000051670763011  
-							      >	10  9  0.0000722633768888  0.0000014463811636  
-							      >	10  10  0.0000126567895774  0.0000004391358242  
-							      >	10  11  0.0000065878948183  0.0000002147144459  diff -yr --suppress-common-lines /home/travis/build/[secure]/systemtests/tests/TestCompose_fe-fe.Ubuntu1804.home/referenceOutput/[secure]-HeatNeumann-iterations.log /home/travis/build/[secure]/systemtests/tests/TestCompose_fe-fe.Ubuntu1804.home/Output/[secure]-HeatNeumann-iterations.log
-Timesteps  Total_Iterations  Iterations  Convergence  avgConv |	Timestep  TotalIterations  Iteration  Convergence  AvgConvRat
-1  10  10  1  0.3045404350460303  0.2786432187347547  0       |	1  13  13  1  0.4100622030887942  0.2634862691878023  0  
-2  21  11  1  0.3549790438495221  0.2957268946442810  0       |	2  25  12  1  0.4088014488437615  0.3592392027365099  0  
-3  32  11  1  0.3701497273033688  0.3268613841856929  0       |	3  36  11  1  0.3814859996332346  0.3239898028456002  0  
-4  44  12  1  0.4046024422412207  0.3562966865979547  0       |	4  48  12  1  
+    - output:/home/[secure]/Data/Output:rw
+    - input:/home/[secure]/Data/Input:rw
+  fenics-adapter-neumann:
+    command: '/bin/bash -c "cd /home/[secure]  && python3 /home/[secure]/Data/Input/heat.py
+      -n -i simple && cp *.log /home/[secure]/Data/Output"
+
+      '
+    container_name: fenics-adapter-neumann
+    depends_on:
+    - tutorial-data
+    image: [secure]/fenics-adapter-ubuntu1804.home-develop:latest
+    networks:
+      [secure]comm: null
+    volumes:
+    - exchange:/home/[secure]/Data/Exchange:rw
+    - output:/home/[secure]/Data/Output:rw
+    - input:/home/[secure]/Data/Input:rw
+  tutorial-data:
+    build:
+      context: /home/travis/build/[secure]/systemtests/tests/TestCompose_fe-fe.Ubuntu1804.home
+      dockerfile: Dockerfile.tutorial_data
+      network: host
+    container_name: tutorial-data
+    volumes:
+    - output:/Output:rw
+    - input:/tutorials/HT/partitioned-heat/fenics-fenics:rw
+version: '3.4'
+volumes:
+  exchange: {}
+  input: {}
+  output: {}
+
+Creating network "testcomposefefeubuntu1804home_default" with the default driver
+Creating network "testcomposefefeubuntu1804home_[secure]comm" with the default driver
+Creating volume "testcomposefefeubuntu1804home_output" with default driver
+Creating volume "testcomposefefeubuntu1804home_input" with default driver
+Creating volume "testcomposefefeubuntu1804home_exchange" with default driver
+Building tutorial-data
+Step 1/8 : FROM alpine
+latest: Pulling from library/alpine
+Digest: sha256:ab00606a42621fb68f2ed6ad3c88be54397f981a7b70a79db3d1172b11c4367d
+Status: Downloaded newer image for alpine:latest
+ ---> e7d92cdc71fe
+Step 2/8 : ENV tutorial_path tutorials/HT/partitioned-heat/fenics-fenics
+ ---> Running in 145cf6101c9d
+ ---> 7943e7aef004
+Removing intermediate container 145cf6101c9d
+Step 3/8 : RUN apk add git
+ ---> Running in 84faf16b36b2
+fetch http://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/APKINDEX.tar.gz
+fetch http://dl-cdn.alpinelinux.org/alpine/v3.11/community/x86_64/APKINDEX.tar.gz
+(1/6) Installing ca-certificates (20191127-r0)
+(2/6) Installing nghttp2-libs (1.40.0-r0)
+(3/6) Installing libcurl (7.67.0-r0)
+(4/6) Installing expat (2.2.9-r1)
+(5/6) Installing pcre2 (10.34-r1)
+(6/6) Installing git (2.24.1-r0)
+Executing busybox-1.31.1-r9.trigger
+Executing ca-certificates-20191127-r0.trigger
+OK: 22 MiB in 20 packages
+ ---> eaeaf0724142
+Removing intermediate container 84faf16b36b2
+Step 4/8 : ARG branch=develop
+ ---> Running in b813577a23c2
+ ---> 04549da877a0
+Removing intermediate container b813577a23c2
+Step 5/8 : RUN git clone --branch $branch https://github.com/[secure]/tutorials
+ ---> Running in b23f30549b0e
+[91mCloning into 'tutorials'...
+[0m ---> 9355860bc1e3
+Removing intermediate container b23f30549b0e
+Step 6/8 : RUN mkdir configs && sed -i 's|<m2n:sockets from="HeatDirichlet" to="HeatNeumann"/>|<m2n:sockets from="HeatDirichlet" to="HeatNeumann" exchange-directory="/home/[secure]/Data/Exchange/" network="eth0"/>|g' $tutorial_path/[secure]-config.xml
+ ---> Running in 1a59a51574ad
+ ---> 8bb00be0cedc
+Removing intermediate container 1a59a51574ad
+Step 7/8 : RUN addgroup -g 1000 [secure] && adduser -u 1000 -G [secure] -D [secure] && chown -R [secure]:[secure] tutorials configs
+ ---> Running in d53d1edba0ec
+ ---> 18f4ac01867c
+Removing intermediate container d53d1edba0ec
+Step 8/8 : USER [secure]
+ ---> Running in cd5561333457
+ ---> 7d37e76b0a19
+Removing intermediate container cd5561333457
+
+Successfully built 7d37e76b0a19
+Successfully tagged testcomposefefeubuntu1804home_tutorial-data:latest
+Image for service tutorial-data was built because it did not already exist. To rebuild this image you must use `docker-compose build` or `docker-compose up --build`.
+Pulling fenics-adapter-dirichlet ([secure]/fenics-adapter-ubuntu1804.home-develop:latest)...
+latest: Pulling from [secure]/fenics-adapter-ubuntu1804.home-develop
+Digest: sha256:a587586f1a753ac3616bd6285471cc11a8b92fd25fca54f21738c020513ac426
+Status: Downloaded newer image for [secure]/fenics-adapter-ubuntu1804.home-develop:latest
+Creating tutorial-data ... 
+Creating tutorial-data
+[1A[2KCreating tutorial-data ... [32mdone[0m[1BCreating fenics-adapter-dirichlet ... 
+Creating fenics-adapter-neumann ... 
+Creating fenics-adapter-dirichlet
+Creating fenics-adapter-neumann
+[1A[2KCreating fenics-adapter-dirichlet ... [32mdone[0m[1B[1A[2KCreating fenics-adapter-neumann ... [32mdone[0m[1BRunning the simulation...Be patient
+Cloning into '[secure]_st_output'...
+
 ```
 [
-Full job log](https://api.travis-ci.org/v3/job/644790901/log.txt)
+Full job log](https://api.travis-ci.org/v3/job/645031937/log.txt)
