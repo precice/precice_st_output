@@ -1,30 +1,44 @@
 ## Status: Passing 
-Build: [1521](https://travis-ci.org/precice/systemtests/builds/642317432) 
+Build: [1580](https://travis-ci.org/precice/systemtests/builds/645031917) 
 
-Job: [1521.24](https://travis-ci.org/precice/systemtests/jobs/642317456) 
+Job: [1580.23](https://travis-ci.org/precice/systemtests/jobs/645031940) 
 
-Triggered by: [cron](https://github.com/precice/systemtests/compare/41581e838945d44f597d37ae02844ddc5bcaa133...feb7379d4291423a8ea6ec40728f855e8268130b) 
+Triggered by: [cron](https://github.com/precice/systemtests/compare/b42adf2e689a763071326fd2ccb4fad54589f1aa...0b61ba36cce94a5b89e38963d3eebc970dbfd8a0) 
 
 ---
 Last 100 lines of the job log at the moment of push:
 ```
-  Created wheel for mpi4py: filename=mpi4py-3.0.3-cp36-cp36m-linux_x86_64.whl size=2074580 sha256=a2d012e5469e7e0f02f7cc9f55c0b15f17884876ab503fa03b45eda6b6e8dcdd
+  Downloading setuptools-45.1.0-py3-none-any.whl (583 kB)
+Collecting wheel
+  Downloading wheel-0.34.2-py2.py3-none-any.whl (26 kB)
+Installing collected packages: pip, setuptools, wheel
+Successfully installed pip-20.0.2 setuptools-45.1.0 wheel-0.34.2
+Collecting Cython
+  Downloading Cython-0.29.14-cp36-cp36m-manylinux1_x86_64.whl (2.1 MB)
+Collecting mpi4py
+  Downloading mpi4py-3.0.3.tar.gz (1.4 MB)
+Collecting numpy
+  Downloading numpy-1.18.1-cp36-cp36m-manylinux1_x86_64.whl (20.1 MB)
+Building wheels for collected packages: mpi4py
+  Building wheel for mpi4py (setup.py): started
+  Building wheel for mpi4py (setup.py): finished with status 'done'
+  Created wheel for mpi4py: filename=mpi4py-3.0.3-cp36-cp36m-linux_x86_64.whl size=2074602 sha256=92fe37017be252c9261da64a09cae6d936e0034da920fb9192727011845780ed
   Stored in directory: /root/.cache/pip/wheels/d6/73/83/ad9dd3ebae512829ab3f21657f76403dc4aa6649e1118c9369
 Successfully built mpi4py
 Installing collected packages: Cython, mpi4py, numpy
 Successfully installed Cython-0.29.14 mpi4py-3.0.3 numpy-1.18.1
- ---> 594341620e06
-Removing intermediate container a9b0e9f96160
+ ---> b2ffdf5d0178
+Removing intermediate container a6865c0c2daf
 Step 6/12 : USER [secure]
- ---> Running in 76c595d41f0f
- ---> 74905db886cb
-Removing intermediate container 76c595d41f0f
+ ---> Running in c22562d33e8a
+ ---> bf1db286ee09
+Removing intermediate container c22562d33e8a
 Step 7/12 : ARG branch=develop
- ---> Running in c79f5ed9bbbc
- ---> 2bd2697994a7
-Removing intermediate container c79f5ed9bbbc
+ ---> Running in 797f26ce7333
+ ---> 2930bcf0c57f
+Removing intermediate container 797f26ce7333
 Step 8/12 : RUN pip3 install --user https://github.com/[secure]/python-bindings/archive/$branch.zip
- ---> Running in e2e93d72071a
+ ---> Running in c91635b3bf44
 Collecting https://github.com/[secure]/python-bindings/archive/develop.zip
   Downloading https://github.com/[secure]/python-bindings/archive/develop.zip
   Installing build dependencies: started
@@ -33,23 +47,23 @@ Collecting https://github.com/[secure]/python-bindings/archive/develop.zip
   Getting requirements to build wheel: finished with status 'done'
     Preparing wheel metadata: started
     Preparing wheel metadata: finished with status 'done'
-Requirement already satisfied: cython in /usr/local/lib/python3.6/dist-packages (from [secure]==2.0.0) (0.29.14)
-Requirement already satisfied: mpi4py in /usr/local/lib/python3.6/dist-packages (from [secure]==2.0.0) (3.0.3)
-Building wheels for collected packages: [secure]
-  Building wheel for [secure] (PEP 517): started
-  Building wheel for [secure] (PEP 517): finished with status 'done'
-  Created wheel for [secure]: filename=[secure]-2.0.0-cp36-cp36m-linux_x86_64.whl size=676451 sha256=63ec884bc00bf3a5dedbcccf7fe7625f356b869a8ca82e770fcbe1a038632763
-  Stored in directory: /tmp/pip-ephem-wheel-cache-8suma0ns/wheels/8d/4d/18/308222d4aaadc3616c73ac4d4563793feb863232b1b31836e3
-Successfully built [secure]
-Installing collected packages: [secure]
-Successfully installed [secure]-2.0.0
- ---> fcd9934baccc
-Removing intermediate container e2e93d72071a
+Requirement already satisfied: mpi4py in /usr/local/lib/python3.6/dist-packages (from py[secure]==0.1.0) (3.0.3)
+Requirement already satisfied: cython in /usr/local/lib/python3.6/dist-packages (from py[secure]==0.1.0) (0.29.14)
+Building wheels for collected packages: py[secure]
+  Building wheel for py[secure] (PEP 517): started
+  Building wheel for py[secure] (PEP 517): finished with status 'done'
+  Created wheel for py[secure]: filename=py[secure]-0.1.0-cp36-cp36m-linux_x86_64.whl size=703105 sha256=400330542a52f0b18b4cb281f6666a6fb61331f0ba785797d9f5d42849d7ae8a
+  Stored in directory: /tmp/pip-ephem-wheel-cache-o5egh6_0/wheels/8d/4d/18/308222d4aaadc3616c73ac4d4563793feb863232b1b31836e3
+Successfully built py[secure]
+Installing collected packages: py[secure]
+Successfully installed py[secure]-0.1.0
+ ---> d19b7acea4be
+Removing intermediate container c91635b3bf44
 Step 9/12 : WORKDIR /home/[secure]/
- ---> 2ba466cbf82e
-Removing intermediate container 62369ba9fba5
+ ---> 7c9b89ddef1a
+Removing intermediate container 74fb424b8e12
 Step 10/12 : RUN git clone https://github.com/nutils/nutils.git &&     python3 -m pip install --user --editable nutils
- ---> Running in d17a81aa4937
+ ---> Running in 2a342caca87d
 [91mCloning into 'nutils'...
 [0mObtaining file:///home/[secure]/nutils
 Requirement already satisfied: numpy>=1.12 in /usr/local/lib/python3.6/dist-packages (from nutils==6.0a0) (1.18.1)
@@ -64,16 +78,16 @@ Collecting typing-extensions
 Installing collected packages: typing-extensions, treelog, stickybar, stringly, nutils
   Running setup.py develop for nutils
 Successfully installed nutils stickybar-1.0 stringly-1.0b1 treelog-1.0b7 typing-extensions-3.7.4.1
- ---> 5dcdcb553e7f
-Removing intermediate container d17a81aa4937
+ ---> 8514181789fe
+Removing intermediate container 2a342caca87d
 Step 11/12 : RUN mkdir -p Data/Input Data/Output Data/Exchange
- ---> Running in 0c2656470451
- ---> 83ee84270337
-Removing intermediate container 0c2656470451
+ ---> Running in 955f27ac4af8
+ ---> 3a1acb4aa853
+Removing intermediate container 955f27ac4af8
 Step 12/12 : WORKDIR /home/[secure]/nutils
- ---> c1a4756bcc5a
-Removing intermediate container e787ef9861b0
-Successfully built c1a4756bcc5a
+ ---> 86f81bf02518
+Removing intermediate container 8ce0cd82a976
+Successfully built 86f81bf02518
 Successfully tagged testcomposenutilsofubuntu1804_nutils-adapter:latest
 Image for service nutils-adapter was built because it did not already exist. To rebuild this image you must use `docker-compose build` or `docker-compose up --build`.
 Creating tutorial-data ... 
@@ -82,32 +96,18 @@ Creating tutorial-data
 Creating nutils-adapter ... 
 Creating nutils-adapter
 Creating openfoam-adapter-outer
-[1A[2KCreating nutils-adapter ... [32mdone[0m[1B[1A[2KCreating openfoam-adapter-outer ... [32mdone[0m[1BRunning the simulation...Be patient
+[1A[2KCreating openfoam-adapter-outer ... [32mdone[0m[1B[1A[2KCreating nutils-adapter ... [32mdone[0m[1BRunning the simulation...Be patient
 Running the simulation...Be patient
 All adapters finished!
 EXECUTING: export PRECICE_BASE=-ubuntu1804.home-develop; docker-compose config && bash ../../silent_compose.sh 
 EXECUTING: docker cp tutorial-data:/Output .
-TEST SUCCEEDED - No difference to referenceOutput found.
-travis_time:end:191e2c22:start=1580125438967014488,finish=1580125707390027935,duration=268423013447,event=script[0K[32;1mThe command "python system_testing.py -s nutils-of --base Ubuntu1804.home" exited with 0.[0m
+EXECUTING: bash ../../compare_results.sh /home/travis/build/[secure]/systemtests/tests/TestCompose_nutils-of.Ubuntu1804/referenceOutput /home/travis/build/[secure]/systemtests/tests/TestCompose_nutils-of.Ubuntu1804/Output
+TEST SUCCEEDED - Differences to referenceOutput within tolerance.
+travis_time:end:03922a82:start=1580643918452986047,finish=1580644190947823930,duration=272494837883,event=script[0K[32;1mThe command "python system_testing.py -s nutils-of --base Ubuntu1804.home" exited with 0.[0m
 
-travis_fold:start:dpl_0[0Ktravis_time:start:04660903[0K$ rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install dpl
-Successfully installed dpl-1.10.14
-Parsing documentation for dpl-1.10.14
-Installing ri documentation for dpl-1.10.14
-Done installing documentation for dpl after 0 seconds
-1 gem installed
-travis_time:end:04660903:start=1580125711661433375,finish=1580125713126565775,duration=1465132400,event=after_success[0Ktravis_fold:end:dpl_0[0Ktravis_time:start:0dc95216[0Ktravis_fold:start:dpl.1[33mInstalling deploy dependencies[0m
-Successfully installed dpl-script-1.10.14
-Parsing documentation for dpl-script-1.10.14
-Installing ri documentation for dpl-script-1.10.14
-Done installing documentation for dpl-script after 0 seconds
-1 gem installed
-
-travis_fold:end:dpl.1travis_fold:start:dpl.2[33mPreparing deploy[0m
-
-travis_fold:end:dpl.2travis_fold:start:dpl.3[33mDeploying application[0m
-Cloning into '[secure]_st_output'...
+travis_fold:start:dpl_0[0Ktravis_time:start:1edbd220[0K$ rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install dpl
+travis_fold:start:dpl.1[33mInstalling deploy dependencies[0m
 
 ```
 [
-Full job log](https://api.travis-ci.org/v3/job/642317456/log.txt)
+Full job log](https://api.travis-ci.org/v3/job/645031940/log.txt)
