@@ -1,9 +1,9 @@
 ## Status: Failure 
-Build: [1587](https://travis-ci.org/precice/systemtests/builds/645394789) 
+Build: [1588](https://travis-ci.org/precice/systemtests/builds/645563898) 
 
-Job: [1587.20](https://travis-ci.org/precice/systemtests/jobs/645394818) 
+Job: [1588.17](https://travis-ci.org/precice/systemtests/jobs/645563915) 
 
-Triggered by: [cron](https://github.com/precice/systemtests/compare/b42adf2e689a763071326fd2ccb4fad54589f1aa...0b61ba36cce94a5b89e38963d3eebc970dbfd8a0) 
+Triggered by: [pull_request](https://github.com/precice/systemtests/pull/172) 
 Last successful commits 
 * [systemtests](https://github.com/precice/systemtests/compare/41581e838945d44f597d37ae02844ddc5bcaa133...feb7379d4291423a8ea6ec40728f855e8268130b)
 * [fenics-adapter](https://github.com/precice/fenics-adapter/compare/741a9374da6f...6ef13f08e3bc) 
@@ -43,11 +43,11 @@ Digest: sha256:ab00606a42621fb68f2ed6ad3c88be54397f981a7b70a79db3d1172b11c4367d
 Status: Downloaded newer image for alpine:latest
  ---> e7d92cdc71fe
 Step 2/8 : ENV tutorial_path tutorials/HT/partitioned-heat/fenics-fenics
- ---> Running in 681d80e9ae3c
- ---> 8ed7bc4679ba
-Removing intermediate container 681d80e9ae3c
+ ---> Running in deb3b0b52329
+ ---> 71ed34a99d0d
+Removing intermediate container deb3b0b52329
 Step 3/8 : RUN apk add git
- ---> Running in 64aa5c66b68a
+ ---> Running in 2871c2868b45
 fetch http://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/APKINDEX.tar.gz
 fetch http://dl-cdn.alpinelinux.org/alpine/v3.11/community/x86_64/APKINDEX.tar.gz
 (1/6) Installing ca-certificates (20191127-r0)
@@ -59,31 +59,31 @@ fetch http://dl-cdn.alpinelinux.org/alpine/v3.11/community/x86_64/APKINDEX.tar.g
 Executing busybox-1.31.1-r9.trigger
 Executing ca-certificates-20191127-r0.trigger
 OK: 22 MiB in 20 packages
- ---> b1e99a9f68a2
-Removing intermediate container 64aa5c66b68a
+ ---> 6f620aa110bd
+Removing intermediate container 2871c2868b45
 Step 4/8 : ARG branch=develop
- ---> Running in 240172ba7ed2
- ---> 3c601baa21b4
-Removing intermediate container 240172ba7ed2
+ ---> Running in c36192ec0e0b
+ ---> 4bd0dd352cae
+Removing intermediate container c36192ec0e0b
 Step 5/8 : RUN git clone --branch $branch https://github.com/[secure]/tutorials
- ---> Running in b1748e57537e
+ ---> Running in b80e52e2dec2
 [91mCloning into 'tutorials'...
-[0m ---> 41a70f1cf950
-Removing intermediate container b1748e57537e
+[0m ---> 79e539d5d136
+Removing intermediate container b80e52e2dec2
 Step 6/8 : RUN mkdir configs && sed -i 's|<m2n:sockets from="HeatDirichlet" to="HeatNeumann"/>|<m2n:sockets from="HeatDirichlet" to="HeatNeumann" exchange-directory="/home/[secure]/Data/Exchange/" network="eth0"/>|g' $tutorial_path/[secure]-config.xml
- ---> Running in 15d275c00aaa
- ---> e7af5b4e036e
-Removing intermediate container 15d275c00aaa
+ ---> Running in 99f4b07fdc31
+ ---> a3fb0453ab63
+Removing intermediate container 99f4b07fdc31
 Step 7/8 : RUN addgroup -g 1000 [secure] && adduser -u 1000 -G [secure] -D [secure] && chown -R [secure]:[secure] tutorials configs
- ---> Running in 4fb35dd5b178
- ---> 1e56370637fb
-Removing intermediate container 4fb35dd5b178
+ ---> Running in 4526300853fd
+ ---> 59e0532405e4
+Removing intermediate container 4526300853fd
 Step 8/8 : USER [secure]
- ---> Running in be3c9f4005db
- ---> 439c9e777a36
-Removing intermediate container be3c9f4005db
+ ---> Running in fc721118cddf
+ ---> 2da9d3033c14
+Removing intermediate container fc721118cddf
 
-Successfully built 439c9e777a36
+Successfully built 2da9d3033c14
 Successfully tagged testcomposefefeubuntu1804home_tutorial-data:latest
 Image for service tutorial-data was built because it did not already exist. To rebuild this image you must use `docker-compose build` or `docker-compose up --build`.
 Pulling fenics-adapter-dirichlet ([secure]/fenics-adapter-ubuntu1804.home-develop:latest)...
@@ -94,23 +94,23 @@ Creating tutorial-data ...
 Creating tutorial-data
 [1A[2KCreating tutorial-data ... [32mdone[0m[1BCreating fenics-adapter-dirichlet ... 
 Creating fenics-adapter-neumann ... 
-Creating fenics-adapter-dirichlet
 Creating fenics-adapter-neumann
-[1A[2KCreating fenics-adapter-dirichlet ... [32mdone[0m[1B[1A[2KCreating fenics-adapter-neumann ... [32mdone[0m[1BRunning the simulation...Be patient
+Creating fenics-adapter-dirichlet
+[1A[2KCreating fenics-adapter-neumann ... [32mdone[0m[1B[1A[2KCreating fenics-adapter-dirichlet ... [32mdone[0m[1BRunning the simulation...Be patient
 All adapters finished!
 Only in /home/travis/build/[secure]/systemtests/tests/TestCompose_fe-fe.Ubuntu1804.home/referenceOutput: .gitkeep
 EXECUTING: export PRECICE_BASE=-ubuntu1804.home-develop; docker-compose config && bash ../../silent_compose.sh 
 EXECUTING: docker cp tutorial-data:/Output .
 EXECUTING: bash ../../compare_results.sh /home/travis/build/[secure]/systemtests/tests/TestCompose_fe-fe.Ubuntu1804.home/referenceOutput /home/travis/build/[secure]/systemtests/tests/TestCompose_fe-fe.Ubuntu1804.home/Output
 TESTS FAILED WITH: Output files do not match reference
-Files differing               : ['[secure]-HeatNeumann-convergence.log', '[secure]-HeatNeumann-iterations.log', '[secure]-HeatDirichlet-iterations.log']
+Files differing               : ['[secure]-HeatNeumann-iterations.log', '[secure]-HeatNeumann-convergence.log', '[secure]-HeatDirichlet-iterations.log']
 Files only in reference (left): []
 Files only in output(right)   : []
-travis_time:end:03c49db4:start=1580730179674738178,finish=1580730294767553933,duration=115092815755,event=script[0K[31;1mThe command "python system_testing.py -s fe-fe --base Ubuntu1804.home" exited with 1.[0m
+travis_time:end:05e18681:start=1580753295181455668,finish=1580753411009462423,duration=115828006755,event=script[0K[31;1mThe command "python system_testing.py -s fe-fe --base Ubuntu1804.home" exited with 1.[0m
 
-travis_fold:start:after_failure[0Ktravis_time:start:08fa2d20[0K$ python push.py -t fe-fe --base Ubuntu1804.home
+travis_fold:start:after_failure[0Ktravis_time:start:06855c51[0K$ python push.py -t fe-fe --base Ubuntu1804.home
 Cloning into '[secure]_st_output'...
 
 ```
 [
-Full job log](https://api.travis-ci.org/v3/job/645394818/log.txt)
+Full job log](https://api.travis-ci.org/v3/job/645563915/log.txt)
