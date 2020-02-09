@@ -1,19 +1,25 @@
 ## Status: Passing 
-Build: [1614](https://travis-ci.org/precice/systemtests/builds/647676484) 
+Build: [1623](https://travis-ci.org/precice/systemtests/builds/647989489) 
 
-Job: [1614.24](https://travis-ci.org/precice/systemtests/jobs/647676508) 
+Job: [1623.24](https://travis-ci.org/precice/systemtests/jobs/647989513) 
 
 Triggered by: [cron](https://github.com/precice/systemtests/compare/6213c52a25101c0051df0fbc215ba9f941209daa...000ab5ae1cde5210e654ffa14b06aa7e98916477) 
 
 ---
 Last 100 lines of the job log at the moment of push:
 ```
-travis_fold:start:git.checkout[0Ktravis_time:start:002d68c4[0K$ git clone --depth=50 --branch=develop https://github.com/[secure]/systemtests.git [secure]/systemtests
+[33;1mDownloading archive: https://storage.googleapis.com/travis-ci-language-archives/python/binaries/ubuntu/14.04/x86_64/python-3.5.tar.bz2[0m
+travis_time:start:0c0d9ad6[0K$ curl -sSf --retry 5 -o python-3.5.tar.bz2 ${archive_url}
+travis_time:end:0c0d9ad6:start=1581249053212861892,finish=1581249053576266553,duration=363404661,event=configure[0Ktravis_time:start:06721e51[0K$ sudo tar xjf python-3.5.tar.bz2 --directory /
+travis_time:end:06721e51:start=1581249053580927165,finish=1581249063001620915,duration=9420693750,event=configure[0Ktravis_time:start:1692102c[0Ktravis_fold:start:services[0Ktravis_time:start:2681d89d[0K$ sudo service docker start
+start: Job is already running: docker
+travis_time:end:2681d89d:start=1581249063025951897,finish=1581249063039591297,duration=13639400,event=prepare[0Ktravis_fold:end:services[0Ktravis_time:end:2681d89d:start=1581249063025951897,finish=1581249066045290659,duration=3019338762,event=services[0Ktravis_time:start:2424a716[0Ktravis_time:end:2424a716:start=1581249066049406739,finish=1581249066052356593,duration=2949854,event=fix_ps4[0Ktravis_time:start:041a6d23[0K
+travis_fold:start:git.checkout[0Ktravis_time:start:1d9654b2[0K$ git clone --depth=50 --branch=develop https://github.com/[secure]/systemtests.git [secure]/systemtests
 Cloning into '[secure]/systemtests'...
-travis_time:end:002d68c4:start=1581164000367328817,finish=1581164006731355730,duration=6364026913,event=checkout[0K$ cd [secure]/systemtests
+travis_time:end:1d9654b2:start=1581249066060916154,finish=1581249072468057846,duration=6407141692,event=checkout[0K$ cd [secure]/systemtests
 $ git checkout -qf 000ab5ae1cde5210e654ffa14b06aa7e98916477
 travis_fold:end:git.checkout[0K
-travis_time:end:002d68c4:start=1581164000367328817,finish=1581164007343459548,duration=6976130731,event=checkout[0Ktravis_time:start:17f1ed0e[0K
+travis_time:end:1d9654b2:start=1581249066060916154,finish=1581249072819364017,duration=6758447863,event=checkout[0Ktravis_time:start:2cbf2190[0K
 [33;1mSetting environment variables from repository settings[0m
 $ export DOCKER_PASSWORD=[secure]
 $ export DOCKER_USERNAME=[secure]
@@ -21,13 +27,13 @@ $ export TRAVIS_ACCESS_TOKEN=[secure]
 $ export PRECICE_BOT_EMAIL=[secure]
 $ export GH_TOKEN=[secure]
 
-travis_time:end:17f1ed0e:start=1581164007347342266,finish=1581164007358847001,duration=11504735,event=env[0Ktravis_time:start:07953b77[0K$ source ~/virtualenv/python3.5/bin/activate
-travis_time:end:07953b77:start=1581164007363168833,finish=1581164007369049174,duration=5880341,event=[0K$ python --version
+travis_time:end:2cbf2190:start=1581249072825295646,finish=1581249072837455973,duration=12160327,event=env[0Ktravis_time:start:199e6954[0K$ source ~/virtualenv/python3.5/bin/activate
+travis_time:end:199e6954:start=1581249072842342122,finish=1581249072851520686,duration=9178564,event=[0K$ python --version
 Python 3.5.6
 $ pip --version
 pip 18.0 from /home/travis/virtualenv/python3.5.6/lib/python3.5/site-packages/pip (python 3.5)
 Could not locate requirements.txt. Override the install: key in your .travis.yml to install dependencies.
-travis_time:start:0a04f320[0K$ python system_testing.py -s of-of_np
+travis_time:start:29a53eec[0K$ python system_testing.py -s of-of_np
 networks:
   [secure]comm: {}
 services:
@@ -79,35 +85,29 @@ Digest: sha256:ab00606a42621fb68f2ed6ad3c88be54397f981a7b70a79db3d1172b11c4367d
 Status: Downloaded newer image for alpine:latest
 Pulling openfoam-adapter-fluid ([secure]/openfoam-adapter-ubuntu1604.home-develop:latest)...
 latest: Pulling from [secure]/openfoam-adapter-ubuntu1604.home-develop
-Digest: sha256:08037ad0689fcc7b24aa612d394381d671f0d8ba40060fc9465f18a16d60da48
+Digest: sha256:78f3861a694fedc4f3d0974b44ef5e5edf890039de3b77f73db8e8d2c6a261fd
 Status: Downloaded newer image for [secure]/openfoam-adapter-ubuntu1604.home-develop:latest
-Creating tutorial-data ... 
 Creating openfoam-adapter-solid ... 
 Creating openfoam-adapter-fluid ... 
-Creating openfoam-adapter-fluid
+Creating tutorial-data ... 
 Creating tutorial-data
+Creating openfoam-adapter-fluid
 Creating openfoam-adapter-solid
-[1A[2KCreating openfoam-adapter-fluid ... [32mdone[0m[1B[1A[2KCreating openfoam-adapter-solid ... [32mdone[0m[1B[1A[2KCreating tutorial-data ... [32mdone[0m[1BRunning the simulation...Be patient
+[1A[2KCreating tutorial-data ... [32mdone[0m[1B[1A[2KCreating openfoam-adapter-solid ... [32mdone[0m[1B[1A[2KCreating openfoam-adapter-fluid ... [32mdone[0m[1BRunning the simulation...Be patient
 All adapters finished!
 EXECUTING: export PRECICE_BASE=-ubuntu1604.home-develop; docker-compose config && bash ../../silent_compose.sh 
 EXECUTING: docker cp tutorial-data:/Output .
 EXECUTING: bash ../../compare_results.sh /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output
 TEST SUCCEEDED - Differences to referenceOutput within tolerance.
-travis_time:end:0a04f320:start=1581164007672734799,finish=1581164134804183946,duration=127131449147,event=script[0K[32;1mThe command "python system_testing.py -s of-of_np" exited with 0.[0m
+travis_time:end:29a53eec:start=1581249073153142350,finish=1581249200603651794,duration=127450509444,event=script[0K[32;1mThe command "python system_testing.py -s of-of_np" exited with 0.[0m
 
-travis_fold:start:dpl_0[0Ktravis_time:start:1066f881[0K$ rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install dpl
-travis_fold:start:dpl.1[33mInstalling deploy dependencies[0m
-Successfully installed dpl-script-1.10.14
-Parsing documentation for dpl-script-1.10.14
-Installing ri documentation for dpl-script-1.10.14
-Done installing documentation for dpl-script after 0 seconds
+travis_fold:start:dpl_0[0KSuccessfully installed dpl-1.10.14
+Parsing documentation for dpl-1.10.14
+Installing ri documentation for dpl-1.10.14
+Done installing documentation for dpl after 0 seconds
 1 gem installed
-
-travis_fold:end:dpl.1travis_fold:start:dpl.2[33mPreparing deploy[0m
-
-travis_fold:end:dpl.2travis_fold:start:dpl.3[33mDeploying application[0m
-Cloning into '[secure]_st_output'...
+travis_time:end:0914ea20:start=1581249205089639511,finish=1581249206609784052,duration=1520144541,event=after_success[0Ktravis_fold:end:dpl_0[0Ktravis_time:start:1f234413[0Ktravis_fold:start:dpl.1[33mInstalling deploy dependencies[0m
 
 ```
 [
-Full job log](https://api.travis-ci.org/v3/job/647676508/log.txt)
+Full job log](https://api.travis-ci.org/v3/job/647989513/log.txt)
