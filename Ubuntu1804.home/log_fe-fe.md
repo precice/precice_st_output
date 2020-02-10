@@ -1,7 +1,7 @@
 ## Status: Passing 
-Build: [1614](https://travis-ci.org/precice/systemtests/builds/647676484) 
+Build: [1650](https://travis-ci.org/precice/systemtests/builds/648350351) 
 
-Job: [1614.20](https://travis-ci.org/precice/systemtests/jobs/647676504) 
+Job: [1650.20](https://travis-ci.org/precice/systemtests/jobs/648350371) 
 
 Triggered by: [cron](https://github.com/precice/systemtests/compare/6213c52a25101c0051df0fbc215ba9f941209daa...000ab5ae1cde5210e654ffa14b06aa7e98916477) 
 
@@ -31,11 +31,11 @@ Digest: sha256:ab00606a42621fb68f2ed6ad3c88be54397f981a7b70a79db3d1172b11c4367d
 Status: Downloaded newer image for alpine:latest
  ---> e7d92cdc71fe
 Step 2/8 : ENV tutorial_path tutorials/HT/partitioned-heat/fenics-fenics
- ---> Running in d91995a2df57
- ---> 3ca7996d8925
-Removing intermediate container d91995a2df57
+ ---> Running in d1c625b5a4e1
+ ---> c1e34dcd1f44
+Removing intermediate container d1c625b5a4e1
 Step 3/8 : RUN apk add git
- ---> Running in fc9794d8fd2d
+ ---> Running in dbcfb593418d
 fetch http://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/APKINDEX.tar.gz
 fetch http://dl-cdn.alpinelinux.org/alpine/v3.11/community/x86_64/APKINDEX.tar.gz
 (1/6) Installing ca-certificates (20191127-r1)
@@ -47,57 +47,57 @@ fetch http://dl-cdn.alpinelinux.org/alpine/v3.11/community/x86_64/APKINDEX.tar.g
 Executing busybox-1.31.1-r9.trigger
 Executing ca-certificates-20191127-r1.trigger
 OK: 22 MiB in 20 packages
- ---> c98d5506720f
-Removing intermediate container fc9794d8fd2d
+ ---> c17af82ae698
+Removing intermediate container dbcfb593418d
 Step 4/8 : ARG branch=develop
- ---> Running in e12b69a4fbdd
- ---> d289609e3f97
-Removing intermediate container e12b69a4fbdd
+ ---> Running in 27de1838df77
+ ---> d5c03da2afe8
+Removing intermediate container 27de1838df77
 Step 5/8 : RUN git clone --branch $branch https://github.com/[secure]/tutorials
- ---> Running in aa25625ed78c
+ ---> Running in b848abe3bda4
 [91mCloning into 'tutorials'...
-[0m ---> 4e00d901de9d
-Removing intermediate container aa25625ed78c
+[0m ---> 3be898d6b876
+Removing intermediate container b848abe3bda4
 Step 6/8 : RUN mkdir configs && sed -i 's|<m2n:sockets from="HeatDirichlet" to="HeatNeumann"/>|<m2n:sockets from="HeatDirichlet" to="HeatNeumann" exchange-directory="/home/[secure]/Data/Exchange/" network="eth0"/>|g' $tutorial_path/[secure]-config.xml
- ---> Running in 7a8494c7080e
- ---> d2e921a13def
-Removing intermediate container 7a8494c7080e
+ ---> Running in 211f073b2ead
+ ---> bd91341667b3
+Removing intermediate container 211f073b2ead
 Step 7/8 : RUN addgroup -g 1000 [secure] && adduser -u 1000 -G [secure] -D [secure] && chown -R [secure]:[secure] tutorials configs
- ---> Running in 6a17b3f84416
- ---> ff3b91540734
-Removing intermediate container 6a17b3f84416
+ ---> Running in 8961f8032daf
+ ---> c91c974a73a9
+Removing intermediate container 8961f8032daf
 Step 8/8 : USER [secure]
- ---> Running in 7d18bf50e584
- ---> c0507ab933ee
-Removing intermediate container 7d18bf50e584
+ ---> Running in 106e694d3ad3
+ ---> aae253d4290a
+Removing intermediate container 106e694d3ad3
 
-Successfully built c0507ab933ee
+Successfully built aae253d4290a
 Successfully tagged testcomposefefeubuntu1804home_tutorial-data:latest
 Image for service tutorial-data was built because it did not already exist. To rebuild this image you must use `docker-compose build` or `docker-compose up --build`.
 Pulling fenics-adapter-dirichlet ([secure]/fenics-adapter-ubuntu1804.home-develop:latest)...
 latest: Pulling from [secure]/fenics-adapter-ubuntu1804.home-develop
-Digest: sha256:de99aab7da1c493a569d2d93f506ae6315e02702f62801b0189f6a028827bfa2
+Digest: sha256:9265811329342630e75a43916554f7f0fa30955c0bc1039764329d480bdd4fd1
 Status: Downloaded newer image for [secure]/fenics-adapter-ubuntu1804.home-develop:latest
 Creating tutorial-data ... 
 Creating tutorial-data
 [1A[2KCreating tutorial-data ... [32mdone[0m[1BCreating fenics-adapter-neumann ... 
 Creating fenics-adapter-dirichlet ... 
-Creating fenics-adapter-dirichlet
 Creating fenics-adapter-neumann
+Creating fenics-adapter-dirichlet
 [1A[2KCreating fenics-adapter-neumann ... [32mdone[0m[1B[1A[2KCreating fenics-adapter-dirichlet ... [32mdone[0m[1BRunning the simulation...Be patient
 All adapters finished!
 EXECUTING: export PRECICE_BASE=-ubuntu1804.home-develop; docker-compose config && bash ../../silent_compose.sh 
 EXECUTING: docker cp tutorial-data:/Output .
 TEST SUCCEEDED - No difference to referenceOutput found.
-travis_time:end:1f095f78:start=1581163366681726401,finish=1581163480740104141,duration=114058377740,event=script[0K[32;1mThe command "python system_testing.py -s fe-fe --base Ubuntu1804.home" exited with 0.[0m
+travis_time:end:265e6516:start=1581335255794814439,finish=1581335371401234290,duration=115606419851,event=script[0K[32;1mThe command "python system_testing.py -s fe-fe --base Ubuntu1804.home" exited with 0.[0m
 
-travis_fold:start:dpl_0[0Ktravis_time:start:2863c6ae[0K$ rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install dpl
+travis_fold:start:dpl_0[0Ktravis_time:start:02c5f0e6[0K$ rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install dpl
 Successfully installed dpl-1.10.14
 Parsing documentation for dpl-1.10.14
 Installing ri documentation for dpl-1.10.14
 Done installing documentation for dpl after 0 seconds
 1 gem installed
-travis_time:end:2863c6ae:start=1581163484682664176,finish=1581163485995547367,duration=1312883191,event=after_success[0Ktravis_fold:end:dpl_0[0Ktravis_time:start:0049f266[0KSuccessfully installed dpl-script-1.10.14
+travis_time:end:02c5f0e6:start=1581335375798600359,finish=1581335377217204410,duration=1418604051,event=after_success[0Ktravis_fold:end:dpl_0[0Ktravis_time:start:1ac7c2b6[0KSuccessfully installed dpl-script-1.10.14
 Parsing documentation for dpl-script-1.10.14
 Installing ri documentation for dpl-script-1.10.14
 Done installing documentation for dpl-script after 0 seconds
@@ -110,4 +110,4 @@ Cloning into '[secure]_st_output'...
 
 ```
 [
-Full job log](https://api.travis-ci.org/v3/job/647676504/log.txt)
+Full job log](https://api.travis-ci.org/v3/job/648350371/log.txt)
