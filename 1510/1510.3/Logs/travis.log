@@ -1,753 +1,0 @@
-travis_fold:start:worker_info[0K[33;1mWorker information[0m
-hostname: 804cf65d-d0e8-4fb1-84e6-93ee3e7f7e31@1.worker-org-85d846cc5-wzf25.gce-production-1
-version: v6.2.6 https://github.com/travis-ci/worker/tree/ba21bd30589fd152126e13df30e0cc78ccdf2837
-instance: travis-job-6cc10ee9-1b3c-42c3-8d31-4c9193341a88 travis-ci-garnet-trusty-1512502259-986baf0 (via amqp)
-startup: 6.122261751s
-travis_fold:end:worker_info[0Ktravis_time:start:068cabd5[0Ktravis_time:end:068cabd5:start=1579961575234686710,finish=1579961575401519357,duration=166832647,event=no_world_writable_dirs[0Ktravis_time:start:2b9d6ac0[0Ktravis_time:end:2b9d6ac0:start=1579961575404043514,finish=1579961575406902609,duration=2859095,event=setup_filter[0Ktravis_time:start:159f27c3[0Ktravis_time:end:159f27c3:start=1579961575410795547,finish=1579961575422975431,duration=12179884,event=agent[0Ktravis_time:start:2593cc13[0Ktravis_time:end:2593cc13:start=1579961575425708276,finish=1579961575427651861,duration=1943585,event=check_unsupported[0Ktravis_time:start:11b0f1b0[0Ktravis_fold:start:system_info[0K[33;1mBuild system information[0m
-Build language: python
-Build group: stable
-Build dist: trusty
-Build id: 641735046
-Job id: 641735049
-Runtime kernel version: 4.4.0-101-generic
-travis-build version: 74fa7e3af
-[34m[1mBuild image provisioning date and time[0m
-Tue Dec  5 19:58:13 UTC 2017
-[34m[1mOperating System Details[0m
-Distributor ID:	Ubuntu
-Description:	Ubuntu 14.04.5 LTS
-Release:	14.04
-Codename:	trusty
-[34m[1mCookbooks Version[0m
-7c2c6a6 https://github.com/travis-ci/travis-cookbooks/tree/7c2c6a6
-[34m[1mgit version[0m
-git version 2.15.1
-[34m[1mbash version[0m
-GNU bash, version 4.3.11(1)-release (x86_64-pc-linux-gnu)
-[34m[1mgcc version[0m
-gcc (Ubuntu 4.8.4-2ubuntu1~14.04.3) 4.8.4
-Copyright (C) 2013 Free Software Foundation, Inc.
-This is free software; see the source for copying conditions.  There is NO
-warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
-
-[34m[1mdocker version[0m
-Client:
- Version:      17.09.0-ce
- API version:  1.32
- Go version:   go1.8.3
- Git commit:   afdb6d4
- Built:        Tue Sep 26 22:42:38 2017
- OS/Arch:      linux/amd64
-
-Server:
- Version:      17.09.0-ce
- API version:  1.32 (minimum version 1.12)
- Go version:   go1.8.3
- Git commit:   afdb6d4
- Built:        Tue Sep 26 22:41:20 2017
- OS/Arch:      linux/amd64
- Experimental: false
-[34m[1mclang version[0m
-clang version 5.0.0 (tags/RELEASE_500/final)
-Target: x86_64-unknown-linux-gnu
-Thread model: posix
-InstalledDir: /usr/local/clang-5.0.0/bin
-[34m[1mjq version[0m
-jq-1.5
-[34m[1mbats version[0m
-Bats 0.4.0
-[34m[1mshellcheck version[0m
-0.4.6
-[34m[1mshfmt version[0m
-v2.0.0
-[34m[1mccache version[0m
-ccache version 3.1.9
-
-Copyright (C) 2002-2007 Andrew Tridgell
-Copyright (C) 2009-2011 Joel Rosdahl
-
-This program is free software; you can redistribute it and/or modify it under
-the terms of the GNU General Public License as published by the Free Software
-Foundation; either version 3 of the License, or (at your option) any later
-version.
-[34m[1mcmake version[0m
-cmake version 3.9.2
-
-CMake suite maintained and supported by Kitware (kitware.com/cmake).
-[34m[1mheroku version[0m
-heroku-cli/6.14.39-addc925 (linux-x64) node-v9.2.0
-[34m[1mimagemagick version[0m
-Version: ImageMagick 6.7.7-10 2017-07-31 Q16 http://www.imagemagick.org
-[34m[1mmd5deep version[0m
-4.2
-[34m[1mmercurial version[0m
-Mercurial Distributed SCM (version 4.2.2)
-(see https://mercurial-scm.org for more information)
-
-Copyright (C) 2005-2017 Matt Mackall and others
-This is free software; see the source for copying conditions. There is NO
-warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
-[34m[1mmysql version[0m
-mysql  Ver 14.14 Distrib 5.6.33, for debian-linux-gnu (x86_64) using  EditLine wrapper
-[34m[1mopenssl version[0m
-OpenSSL 1.0.1f 6 Jan 2014
-[34m[1mpacker version[0m
-Packer v1.0.2
-
-Your version of Packer is out of date! The latest version
-is 1.1.2. You can update by downloading from www.packer.io
-[34m[1mpostgresql client version[0m
-psql (PostgreSQL) 9.6.6
-[34m[1mragel version[0m
-Ragel State Machine Compiler version 6.8 Feb 2013
-Copyright (c) 2001-2009 by Adrian Thurston
-[34m[1msubversion version[0m
-svn, version 1.8.8 (r1568071)
-   compiled Aug 10 2017, 17:20:39 on x86_64-pc-linux-gnu
-
-Copyright (C) 2013 The Apache Software Foundation.
-This software consists of contributions made by many people;
-see the NOTICE file for more information.
-Subversion is open source software, see http://subversion.apache.org/
-
-The following repository access (RA) modules are available:
-
-* ra_svn : Module for accessing a repository using the svn network protocol.
-  - with Cyrus SASL authentication
-  - handles 'svn' scheme
-* ra_local : Module for accessing a repository on local disk.
-  - handles 'file' scheme
-* ra_serf : Module for accessing a repository via WebDAV protocol using serf.
-  - using serf 1.3.3
-  - handles 'http' scheme
-  - handles 'https' scheme
-
-[34m[1msudo version[0m
-Sudo version 1.8.9p5
-Configure options: --prefix=/usr -v --with-all-insults --with-pam --with-fqdn --with-logging=syslog --with-logfac=authpriv --with-env-editor --with-editor=/usr/bin/editor --with-timeout=15 --with-password-timeout=0 --with-passprompt=[sudo] password for %p:  --without-lecture --with-tty-tickets --disable-root-mailer --enable-admin-flag --with-sendmail=/usr/sbin/sendmail --with-timedir=/var/lib/sudo --mandir=/usr/share/man --libexecdir=/usr/lib/sudo --with-sssd --with-sssd-lib=/usr/lib/x86_64-linux-gnu --with-selinux
-Sudoers policy plugin version 1.8.9p5
-Sudoers file grammar version 43
-
-Sudoers path: /etc/sudoers
-Authentication methods: 'pam'
-Syslog facility if syslog is being used for logging: authpriv
-Syslog priority to use when user authenticates successfully: notice
-Syslog priority to use when user authenticates unsuccessfully: alert
-Send mail if the user is not in sudoers
-Use a separate timestamp for each user/tty combo
-Lecture user the first time they run sudo
-Root may run sudo
-Allow some information gathering to give useful error messages
-Require fully-qualified hostnames in the sudoers file
-Visudo will honor the EDITOR environment variable
-Set the LOGNAME and USER environment variables
-Length at which to wrap log file lines (0 for no wrap): 80
-Authentication timestamp timeout: 15.0 minutes
-Password prompt timeout: 0.0 minutes
-Number of tries to enter a password: 3
-Umask to use or 0777 to use user's: 022
-Path to mail program: /usr/sbin/sendmail
-Flags for mail program: -t
-Address to send mail to: root
-Subject line for mail messages: *** SECURITY information for %h ***
-Incorrect password message: Sorry, try again.
-Path to authentication timestamp dir: /var/lib/sudo
-Default password prompt: [sudo] password for %p: 
-Default user to run commands as: root
-Value to override user's $PATH with: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin
-Path to the editor for use by visudo: /usr/bin/editor
-When to require a password for 'list' pseudocommand: any
-When to require a password for 'verify' pseudocommand: all
-File descriptors >= 3 will be closed before executing a command
-Environment variables to check for sanity:
-	TZ
-	TERM
-	LINGUAS
-	LC_*
-	LANGUAGE
-	LANG
-	COLORTERM
-Environment variables to remove:
-	RUBYOPT
-	RUBYLIB
-	PYTHONUSERBASE
-	PYTHONINSPECT
-	PYTHONPATH
-	PYTHONHOME
-	TMPPREFIX
-	ZDOTDIR
-	READNULLCMD
-	NULLCMD
-	FPATH
-	PERL5DB
-	PERL5OPT
-	PERL5LIB
-	PERLLIB
-	PERLIO_DEBUG 
-	JAVA_TOOL_OPTIONS
-	SHELLOPTS
-	GLOBIGNORE
-	PS4
-	BASH_ENV
-	ENV
-	TERMCAP
-	TERMPATH
-	TERMINFO_DIRS
-	TERMINFO
-	_RLD*
-	LD_*
-	PATH_LOCALE
-	NLSPATH
-	HOSTALIASES
-	RES_OPTIONS
-	LOCALDOMAIN
-	CDPATH
-	IFS
-Environment variables to preserve:
-	JAVA_HOME
-	TRAVIS
-	CI
-	DEBIAN_FRONTEND
-	XAUTHORIZATION
-	XAUTHORITY
-	PS2
-	PS1
-	PATH
-	LS_COLORS
-	KRB5CCNAME
-	HOSTNAME
-	HOME
-	DISPLAY
-	COLORS
-Locale to use while parsing sudoers: C
-Directory in which to store input/output logs: /var/log/sudo-io
-File in which to store the input/output log: %{seq}
-Add an entry to the utmp/utmpx file when allocating a pty
-PAM service name to use
-PAM service name to use for login shells
-Create a new PAM session for the command to run in
-Maximum I/O log sequence number: 0
-
-Local IP address and netmask pairs:
-	10.240.0.28/255.255.255.255
-	172.17.0.1/255.255.0.0
-
-Sudoers I/O plugin version 1.8.9p5
-[34m[1mgzip version[0m
-gzip 1.6
-Copyright (C) 2007, 2010, 2011 Free Software Foundation, Inc.
-Copyright (C) 1993 Jean-loup Gailly.
-This is free software.  You may redistribute copies of it under the terms of
-the GNU General Public License <http://www.gnu.org/licenses/gpl.html>.
-There is NO WARRANTY, to the extent permitted by law.
-
-Written by Jean-loup Gailly.
-[34m[1mzip version[0m
-Copyright (c) 1990-2008 Info-ZIP - Type 'zip "-L"' for software license.
-This is Zip 3.0 (July 5th 2008), by Info-ZIP.
-Currently maintained by E. Gordon.  Please send bug reports to
-the authors using the web page at www.info-zip.org; see README for details.
-
-Latest sources and executables are at ftp://ftp.info-zip.org/pub/infozip,
-as of above date; see http://www.info-zip.org/ for other sites.
-
-Compiled with gcc 4.8.2 for Unix (Linux ELF) on Oct 21 2013.
-
-Zip special compilation options:
-	USE_EF_UT_TIME       (store Universal Time)
-	BZIP2_SUPPORT        (bzip2 library version 1.0.6, 6-Sept-2010)
-	    bzip2 code and library copyright (c) Julian R Seward
-	    (See the bzip2 license for terms of use)
-	SYMLINK_SUPPORT      (symbolic links supported)
-	LARGE_FILE_SUPPORT   (can read and write large files on file system)
-	ZIP64_SUPPORT        (use Zip64 to store large files in archives)
-	UNICODE_SUPPORT      (store and read UTF-8 Unicode paths)
-	STORE_UNIX_UIDs_GIDs (store UID/GID sizes/values using new extra field)
-	UIDGID_NOT_16BIT     (old Unix 16-bit UID/GID extra field not used)
-	[encryption, version 2.91 of 05 Jan 2007] (modified for Zip 3)
-
-Encryption notice:
-	The encryption code of this program is not copyrighted and is
-	put in the public domain.  It was originally written in Europe
-	and, to the best of our knowledge, can be freely distributed
-	in both source and object forms from any country, including
-	the USA under License Exception TSU of the U.S. Export
-	Administration Regulations (section 740.13(e)) of 6 June 2002.
-
-Zip environment options:
-             ZIP:  [none]
-          ZIPOPT:  [none]
-[34m[1mvim version[0m
-VIM - Vi IMproved 7.4 (2013 Aug 10, compiled Nov 24 2016 16:43:18)
-Included patches: 1-52
-Extra patches: 8.0.0056
-Modified by pkg-vim-maintainers@lists.alioth.debian.org
-Compiled by buildd@
-Huge version without GUI.  Features included (+) or not (-):
-+acl             +farsi           +mouse_netterm   +syntax
-+arabic          +file_in_path    +mouse_sgr       +tag_binary
-+autocmd         +find_in_path    -mouse_sysmouse  +tag_old_static
--balloon_eval    +float           +mouse_urxvt     -tag_any_white
--browse          +folding         +mouse_xterm     -tcl
-++builtin_terms  -footer          +multi_byte      +terminfo
-+byte_offset     +fork()          +multi_lang      +termresponse
-+cindent         +gettext         -mzscheme        +textobjects
--clientserver    -hangul_input    +netbeans_intg   +title
--clipboard       +iconv           +path_extra      -toolbar
-+cmdline_compl   +insert_expand   -perl            +user_commands
-+cmdline_hist    +jumplist        +persistent_undo +vertsplit
-+cmdline_info    +keymap          +postscript      +virtualedit
-+comments        +langmap         +printer         +visual
-+conceal         +libcall         +profile         +visualextra
-+cryptv          +linebreak       +python          +viminfo
-+cscope          +lispindent      -python3         +vreplace
-+cursorbind      +listcmds        +quickfix        +wildignore
-+cursorshape     +localmap        +reltime         +wildmenu
-+dialog_con      -lua             +rightleft       +windows
-+diff            +menu            -ruby            +writebackup
-+digraphs        +mksession       +scrollbind      -X11
--dnd             +modify_fname    +signs           -xfontset
--ebcdic          +mouse           +smartindent     -xim
-+emacs_tags      -mouseshape      -sniff           -xsmp
-+eval            +mouse_dec       +startuptime     -xterm_clipboard
-+ex_extra        +mouse_gpm       +statusline      -xterm_save
-+extra_search    -mouse_jsbterm   -sun_workshop    -xpm
-   system vimrc file: "$VIM/vimrc"
-     user vimrc file: "$HOME/.vimrc"
- 2nd user vimrc file: "~/.vim/vimrc"
-      user exrc file: "$HOME/.exrc"
-  fall-back for $VIM: "/usr/share/vim"
-Compilation: gcc -c -I. -Iproto -DHAVE_CONFIG_H     -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1      
-Linking: gcc   -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,--as-needed -o vim        -lm -ltinfo -lnsl  -lselinux  -lacl -lattr -lgpm -ldl    -L/usr/lib/python2.7/config-x86_64-linux-gnu -lpython2.7 -lpthread -ldl -lutil -lm -Xlinker -export-dynamic -Wl,-O1 -Wl,-Bsymbolic-functions      
-[34m[1miptables version[0m
-iptables v1.4.21
-[34m[1mcurl version[0m
-curl 7.35.0 (x86_64-pc-linux-gnu) libcurl/7.35.0 OpenSSL/1.0.1f zlib/1.2.8 libidn/1.28 librtmp/2.3
-[34m[1mwget version[0m
-GNU Wget 1.15 built on linux-gnu.
-[34m[1mrsync version[0m
-rsync  version 3.1.0  protocol version 31
-[34m[1mgimme version[0m
-v1.2.0
-[34m[1mnvm version[0m
-0.33.6
-[34m[1mperlbrew version[0m
-/home/travis/perl5/perlbrew/bin/perlbrew  - App::perlbrew/0.80
-[34m[1mphpenv version[0m
-rbenv 1.1.1-25-g6aa70b6
-[34m[1mrvm version[0m
-rvm 1.29.3 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
-[34m[1mdefault ruby version[0m
-ruby 2.4.1p111 (2017-03-22 revision 58053) [x86_64-linux]
-[34m[1mCouchDB version[0m
-couchdb 1.6.1
-[34m[1mElasticSearch version[0m
-5.5.0
-[34m[1mInstalled Firefox version[0m
-firefox 56.0.2
-[34m[1mMongoDB version[0m
-MongoDB 3.4.10
-[34m[1mPhantomJS version[0m
-2.1.1
-[34m[1mPre-installed PostgreSQL versions[0m
-9.2.24
-9.3.20
-9.4.15
-9.5.10
-9.6.6
-[34m[1mRabbitMQ Version[0m
-3.6.14
-[34m[1mRedis version[0m
-redis-server 4.0.6
-[34m[1mriak version[0m
-2.2.3
-[34m[1mPre-installed Go versions[0m
-1.7.4
-[34m[1mant version[0m
-Apache Ant(TM) version 1.9.3 compiled on April 8 2014
-[34m[1mmvn version[0m
-Apache Maven 3.5.2 (138edd61fd100ec658bfa2d307c43b76940a5d7d; 2017-10-18T07:58:13Z)
-Maven home: /usr/local/maven-3.5.2
-Java version: 1.8.0_151, vendor: Oracle Corporation
-Java home: /usr/lib/jvm/java-8-oracle/jre
-Default locale: en_US, platform encoding: UTF-8
-OS name: "linux", version: "4.4.0-98-generic", arch: "amd64", family: "unix"
-[34m[1mgradle version[0m
-
-------------------------------------------------------------
-Gradle 4.0.1
-------------------------------------------------------------
-
-Build time:   2017-07-07 14:02:41 UTC
-Revision:     38e5dc0f772daecca1d2681885d3d85414eb6826
-
-Groovy:       2.4.11
-Ant:          Apache Ant(TM) version 1.9.6 compiled on June 29 2015
-JVM:          1.8.0_151 (Oracle Corporation 25.151-b12)
-OS:           Linux 4.4.0-98-generic amd64
-
-[34m[1mlein version[0m
-Leiningen 2.8.1 on Java 1.8.0_151 Java HotSpot(TM) 64-Bit Server VM
-[34m[1mPre-installed Node.js versions[0m
-v4.8.6
-v6.12.0
-v6.12.1
-v8.9
-v8.9.1
-[34m[1mphpenv versions[0m
-  system
-  5.6
-* 5.6.32 (set by /home/travis/.phpenv/version)
-  7.0
-  7.0.25
-  7.1
-  7.1.11
-  hhvm
-  hhvm-stable
-[34m[1mcomposer --version[0m
-Composer version 1.5.2 2017-09-11 16:59:25
-[34m[1mPre-installed Ruby versions[0m
-ruby-2.2.7
-ruby-2.3.4
-ruby-2.4.1
-travis_fold:end:system_info[0K
-travis_time:end:11b0f1b0:start=1579961575430629265,finish=1579961575435512412,duration=4883147,event=show_system_info[0Ktravis_time:start:006dc53a[0Ktravis_time:end:006dc53a:start=1579961575438501481,finish=1579961575457716820,duration=19215339,event=rm_riak_source[0Ktravis_time:start:06e4578a[0Ktravis_time:end:06e4578a:start=1579961575461890567,finish=1579961575469594526,duration=7703959,event=fix_rwky_redis[0Ktravis_time:start:0e340789[0Ktravis_time:end:0e340789:start=1579961575472619966,finish=1579961575789495398,duration=316875432,event=wait_for_network[0Ktravis_time:start:170b7baa[0Ktravis_time:end:170b7baa:start=1579961575793665526,finish=1579961576823527780,duration=1029862254,event=update_apt_keys[0Ktravis_time:start:05edecc0[0Ktravis_time:end:05edecc0:start=1579961576827645839,finish=1579961577689596417,duration=861950578,event=fix_hhvm_source[0Ktravis_time:start:087fabf0[0Ktravis_time:end:087fabf0:start=1579961577696843677,finish=1579961577706338009,duration=9494332,event=update_mongo_arch[0Ktravis_time:start:10c2be9a[0Ktravis_time:end:10c2be9a:start=1579961577709951243,finish=1579961577749292982,duration=39341739,event=fix_sudo_enabled_trusty[0Ktravis_time:start:07c95706[0Ktravis_time:end:07c95706:start=1579961577753982244,finish=1579961577756617483,duration=2635239,event=update_glibc[0Ktravis_time:start:05ecf2f0[0Ktravis_time:end:05ecf2f0:start=1579961577760882609,finish=1579961577769025443,duration=8142834,event=clean_up_path[0Ktravis_time:start:040f8d74[0Ktravis_time:end:040f8d74:start=1579961577772984594,finish=1579961577782106422,duration=9121828,event=fix_resolv_conf[0Ktravis_time:start:226ef0e4[0Ktravis_time:end:226ef0e4:start=1579961577786307724,finish=1579961577796683484,duration=10375760,event=fix_etc_hosts[0Ktravis_time:start:14457111[0Ktravis_time:end:14457111:start=1579961577804817991,finish=1579961577812446392,duration=7628401,event=fix_mvn_settings_xml[0Ktravis_time:start:13f8643d[0Ktravis_time:end:13f8643d:start=1579961577816757523,finish=1579961577826352223,duration=9594700,event=no_ipv6_localhost[0Ktravis_time:start:069a0898[0Ktravis_time:end:069a0898:start=1579961577830385325,finish=1579961577833408164,duration=3022839,event=fix_etc_mavenrc[0Ktravis_time:start:0508c99c[0Ktravis_time:end:0508c99c:start=1579961577837362439,finish=1579961577841248026,duration=3885587,event=fix_wwdr_certificate[0Ktravis_time:start:02bf892e[0Ktravis_time:end:02bf892e:start=1579961577849910270,finish=1579961577872342856,duration=22432586,event=put_localhost_first[0Ktravis_time:start:0304f954[0Ktravis_time:end:0304f954:start=1579961577876334783,finish=1579961577879708673,duration=3373890,event=home_paths[0Ktravis_time:start:1a36efec[0Ktravis_time:end:1a36efec:start=1579961577883567107,finish=1579961577898224257,duration=14657150,event=disable_initramfs[0Ktravis_time:start:00092553[0Ktravis_time:end:00092553:start=1579961577903057819,finish=1579961578123241163,duration=220183344,event=disable_ssh_roaming[0Ktravis_time:start:03c42471[0Ktravis_time:end:03c42471:start=1579961578127089494,finish=1579961578129654990,duration=2565496,event=debug_tools[0Ktravis_time:start:243b22d3[0Ktravis_time:end:243b22d3:start=1579961578136454093,finish=1579961578139823316,duration=3369223,event=uninstall_oclint[0Ktravis_time:start:0e231f1c[0Ktravis_time:end:0e231f1c:start=1579961578144181074,finish=1579961578147470458,duration=3289384,event=rvm_use[0Ktravis_time:start:00c57ae6[0Ktravis_time:end:00c57ae6:start=1579961578151477378,finish=1579961578160696462,duration=9219084,event=rm_etc_boto_cfg[0Ktravis_time:start:19a3f568[0Ktravis_time:end:19a3f568:start=1579961578164989083,finish=1579961578167288853,duration=2299770,event=rm_oraclejdk8_symlink[0Ktravis_time:start:001ce7ce[0Ktravis_time:end:001ce7ce:start=1579961578171844435,finish=1579961578217758776,duration=45914341,event=enable_i386[0Ktravis_time:start:10afb5f0[0Ktravis_time:end:10afb5f0:start=1579961578221701318,finish=1579961578225579977,duration=3878659,event=update_rubygems[0Ktravis_time:start:098766c4[0Ktravis_time:end:098766c4:start=1579961578230528223,finish=1579961579082882144,duration=852353921,event=ensure_path_components[0Ktravis_time:start:13f18d45[0Ktravis_time:end:13f18d45:start=1579961579087769967,finish=1579961579090354204,duration=2584237,event=redefine_curl[0Ktravis_time:start:001858e4[0Ktravis_time:end:001858e4:start=1579961579093961165,finish=1579961579139540365,duration=45579200,event=nonblock_pipe[0Ktravis_time:start:29f0b9f8[0Ktravis_time:end:29f0b9f8:start=1579961579143431256,finish=1579961585175161689,duration=6031730433,event=apt_get_update[0Ktravis_time:start:0dd8296e[0Ktravis_time:end:0dd8296e:start=1579961585179957145,finish=1579961585182962839,duration=3005694,event=deprecate_xcode_64[0Ktravis_time:start:04fdc692[0Ktravis_time:end:04fdc692:start=1579961585187381840,finish=1579961588740879083,duration=3553497243,event=update_heroku[0Ktravis_time:start:0bac4739[0Ktravis_time:end:0bac4739:start=1579961588745700416,finish=1579961588748118108,duration=2417692,event=shell_session_update[0Ktravis_time:start:2da665e1[0Ktravis_fold:start:docker_mtu[0Kdocker stop/waiting
-docker start/running, process 3959
-travis_fold:end:docker_mtu[0Ktravis_time:end:2da665e1:start=1579961588752151667,finish=1579961589935832453,duration=1183680786,event=set_docker_mtu[0Ktravis_time:start:16689c54[0Ktravis_fold:start:resolvconf[0Kresolvconf stop/waiting
-resolvconf start/running
-travis_fold:end:resolvconf[0Ktravis_time:end:16689c54:start=1579961589939110715,finish=1579961589995820897,duration=56710182,event=resolvconf[0Ktravis_time:start:04a135f4[0Ktravis_time:end:04a135f4:start=1579961589999748066,finish=1579961590073576377,duration=73828311,event=maven_central_mirror[0Ktravis_time:start:0020e180[0Ktravis_time:end:0020e180:start=1579961590076964845,finish=1579961590141956042,duration=64991197,event=maven_https[0K[33;1m3.5 is not installed; attempting download[0m
-[33;1mDownloading archive: https://storage.googleapis.com/travis-ci-language-archives/python/binaries/ubuntu/14.04/x86_64/python-3.5.tar.bz2[0m
-travis_time:start:0a3d5c50[0K$ curl -sSf --retry 5 -o python-3.5.tar.bz2 ${archive_url}
-travis_time:end:0a3d5c50:start=1579961590212008221,finish=1579961590893694179,duration=681685958,event=configure[0Ktravis_time:start:0a0b0ce9[0K$ sudo tar xjf python-3.5.tar.bz2 --directory /
-travis_time:end:0a0b0ce9:start=1579961590897836856,finish=1579961599151021788,duration=8253184932,event=configure[0Ktravis_time:start:08f1facc[0Ktravis_fold:start:services[0Ktravis_time:start:1d6b6e59[0K$ sudo service docker start
-start: Job is already running: docker
-travis_time:end:1d6b6e59:start=1579961599174642572,finish=1579961599186510293,duration=11867721,event=prepare[0Ktravis_fold:end:services[0Ktravis_time:end:1d6b6e59:start=1579961599174642572,finish=1579961602191853316,duration=3017210744,event=services[0Ktravis_time:start:0460c08e[0Ktravis_time:end:0460c08e:start=1579961602195988081,finish=1579961602198601900,duration=2613819,event=fix_ps4[0Ktravis_time:start:1f0210a0[0K
-travis_fold:start:git.checkout[0Ktravis_time:start:0c08f5e4[0K$ git clone --depth=50 https://github.com/[secure]/systemtests.git [secure]/systemtests
-Cloning into '[secure]/systemtests'...
-travis_time:end:0c08f5e4:start=1579961602206246992,finish=1579961607459955716,duration=5253708724,event=checkout[0K$ cd [secure]/systemtests
-travis_time:start:1d7b416d[0K$ git fetch origin +refs/pull/147/merge:
-From https://github.com/[secure]/systemtests
- * branch            refs/pull/147/merge -> FETCH_HEAD
-travis_time:end:1d7b416d:start=1579961607464505968,finish=1579961607858528945,duration=394022977,event=checkout[0K$ git checkout -qf FETCH_HEAD
-travis_fold:end:git.checkout[0K
-travis_time:end:1d7b416d:start=1579961607464505968,finish=1579961608251121186,duration=786615218,event=checkout[0Ktravis_time:start:0cda3c5f[0K
-[33;1mSetting environment variables from repository settings[0m
-$ export DOCKER_PASSWORD=[secure]
-$ export DOCKER_USERNAME=[secure]
-$ export TRAVIS_ACCESS_TOKEN=[secure]
-$ export PRECICE_BOT_EMAIL=[secure]
-$ export GH_TOKEN=[secure]
-
-travis_time:end:0cda3c5f:start=1579961608255367409,finish=1579961608264833905,duration=9466496,event=env[0Ktravis_time:start:1d1d7d10[0K$ source ~/virtualenv/python3.5/bin/activate
-travis_time:end:1d1d7d10:start=1579961608269163913,finish=1579961608274401234,duration=5237321,event=[0K$ python --version
-Python 3.5.6
-$ pip --version
-pip 18.0 from /home/travis/virtualenv/python3.5.6/lib/python3.5/site-packages/pip (python 3.5)
-Could not locate requirements.txt. Override the install: key in your .travis.yml to install dependencies.
-travis_time:start:047db406[0K$ python system_testing.py -s of-ccx
-networks:
-  [secure]comm: {}
-services:
-  calculix-adapter-solid:
-    command: '/bin/bash -c "ln -s /home/[secure]/Data/Input/ Solid && ln -sf configs/*
-      .  && ccx_preCICE -i Solid/solid -[secure]-participant Solid"
-
-      '
-    container_name: calculix-adapter-solid
-    depends_on:
-    - tutorial-data
-    image: [secure]/calculix-adapter-ubuntu1604.home-develop:latest
-    networks:
-      [secure]comm: null
-    volumes:
-    - exchange:/home/[secure]/Data/Exchange:rw
-    - output:/home/[secure]/Data/Output:rw
-    - solid_input:/home/[secure]/Data/Input:rw
-    - configs:/home/[secure]/calculix-adapter/configs:rw
-  openfoam-adapter-inner:
-    command: "/bin/bash -c \"source /opt/openfoam4/etc/bashrc  && ln -sf configs/*\
-      \ .  && buoyantSimpleFoam -case /home/[secure]/Data/Input && cp -r /home/[secure]/Data/Input/.\
-      \ /home/[secure]/Data/Output/Inner-Fluid\" \n"
-    container_name: openfoam-adapter-inner
-    depends_on:
-    - tutorial-data
-    image: [secure]/openfoam-adapter-ubuntu1604.home-develop:latest
-    networks:
-      [secure]comm: null
-    volumes:
-    - exchange:/home/[secure]/Data/Exchange:rw
-    - output:/home/[secure]/Data/Output:rw
-    - inner_fluid_input:/home/[secure]/Data/Input:rw
-    - configs:/home/[secure]/openfoam-adapter/configs:rw
-  openfoam-adapter-outer:
-    command: "/bin/bash -c \"source /opt/openfoam4/etc/bashrc && ln -sf configs/*\
-      \ .  && buoyantSimpleFoam -case /home/[secure]/Data/Input && cp -r /home/[secure]/Data/Input/.\
-      \ /home/[secure]/Data/Output/Outer-Fluid\" \n"
-    container_name: openfoam-adapter-outer
-    depends_on:
-    - tutorial-data
-    image: [secure]/openfoam-adapter-ubuntu1604.home-develop:latest
-    networks:
-      [secure]comm: null
-    volumes:
-    - exchange:/home/[secure]/Data/Exchange:rw
-    - output:/home/[secure]/Data/Output:rw
-    - outer_fluid_input:/home/[secure]/Data/Input:rw
-    - configs:/home/[secure]/openfoam-adapter/configs:rw
-  tutorial-data:
-    build:
-      context: /home/travis/build/[secure]/systemtests/tests/TestCompose_of-ccx
-      dockerfile: Dockerfile.tutorial_data
-    container_name: tutorial-data
-    volumes:
-    - solid_input:/tutorials/CHT/heat_exchanger/buoyantSimpleFoam-CalculiX/Solid:rw
-    - outer_fluid_input:/tutorials/CHT/heat_exchanger/buoyantSimpleFoam-CalculiX/Outer-Fluid:rw
-    - inner_fluid_input:/tutorials/CHT/heat_exchanger/buoyantSimpleFoam-CalculiX/Inner-Fluid:rw
-    - configs:/configs:rw
-    - output:/Output:rw
-version: '3.0'
-volumes:
-  configs: {}
-  exchange: {}
-  inner_fluid_input: {}
-  outer_fluid_input: {}
-  output: {}
-  solid_input: {}
-
-Creating network "testcomposeofccx_default" with the default driver
-Creating network "testcomposeofccx_[secure]comm" with the default driver
-Creating volume "testcomposeofccx_exchange" with default driver
-Creating volume "testcomposeofccx_solid_input" with default driver
-Creating volume "testcomposeofccx_inner_fluid_input" with default driver
-Creating volume "testcomposeofccx_output" with default driver
-Creating volume "testcomposeofccx_configs" with default driver
-Creating volume "testcomposeofccx_outer_fluid_input" with default driver
-Building tutorial-data
-Step 1/14 : FROM alpine
-latest: Pulling from library/alpine
-Digest: sha256:ab00606a42621fb68f2ed6ad3c88be54397f981a7b70a79db3d1172b11c4367d
-Status: Downloaded newer image for alpine:latest
- ---> e7d92cdc71fe
-Step 2/14 : ENV tutorial_path /tutorials/CHT/heat_exchanger/buoyantSimpleFoam-CalculiX
- ---> Running in dd13a55522f5
- ---> 95b1fd2a90c0
-Removing intermediate container dd13a55522f5
-Step 3/14 : RUN apk add git bash
- ---> Running in e4bbe16794d4
-fetch http://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/APKINDEX.tar.gz
-fetch http://dl-cdn.alpinelinux.org/alpine/v3.11/community/x86_64/APKINDEX.tar.gz
-(1/11) Installing ncurses-terminfo-base (6.1_p20191130-r0)
-(2/11) Installing ncurses-terminfo (6.1_p20191130-r0)
-(3/11) Installing ncurses-libs (6.1_p20191130-r0)
-(4/11) Installing readline (8.0.1-r0)
-(5/11) Installing bash (5.0.11-r1)
-Executing bash-5.0.11-r1.post-install
-(6/11) Installing ca-certificates (20191127-r0)
-(7/11) Installing nghttp2-libs (1.40.0-r0)
-(8/11) Installing libcurl (7.67.0-r0)
-(9/11) Installing expat (2.2.9-r1)
-(10/11) Installing pcre2 (10.34-r1)
-(11/11) Installing git (2.24.1-r0)
-Executing busybox-1.31.1-r9.trigger
-Executing ca-certificates-20191127-r0.trigger
-OK: 31 MiB in 25 packages
- ---> 7785b01409d7
-Removing intermediate container e4bbe16794d4
-Step 4/14 : ARG branch=develop
- ---> Running in 56657ed7b126
- ---> 6a0989bc46c4
-Removing intermediate container 56657ed7b126
-Step 5/14 : RUN git clone --branch $branch https://github.com/[secure]/tutorials
- ---> Running in ed972f216b28
-[91mCloning into 'tutorials'...
-[0m ---> a23d9de1dc7f
-Removing intermediate container ed972f216b28
-Step 6/14 : COPY controlDict $tutorial_path/Inner-Fluid/system/controlDict
- ---> af5bb24d2a26
-Step 7/14 : COPY controlDict $tutorial_path/Outer-Fluid/system/controlDict
- ---> df775b09151d
-Step 8/14 : COPY [secure]-config.xml configs/[secure]-config.xml
- ---> 8b3e3bb26c03
-Step 9/14 : WORKDIR $tutorial_path
- ---> 228000cfaa87
-Removing intermediate container 71fe7364878b
-Step 10/14 : RUN bash ./Download_meshes &&     cp -r Inner-Fluid/constant/polyMesh.org Inner-Fluid/constant/polyMesh &&     cp -r Outer-Fluid/constant/polyMesh.org Outer-Fluid/constant/polyMesh
- ---> Running in 2ef5fb02418b
-This tutorial is based on a case prepared with SimScale.
-Since the mesh files are several MB large, we don't store them in the Git repository.
-This script downloads and extracts the missing files.
-
-Downloading the Solid case...
-[91mConnecting to syncandshare.lrz.de (129.187.255.213:443)
-[0m[91mwriting to stdout
-[0mSolid/solid.inp
-[91m-                      9% |***                             |  156k  0:00:09 ETA
-[0m[91m-                     45% |**************                  |  725k  0:00:02 ETA
-[0m[91m-                     80% |*************************       | 1288k  0:00:00 ETA
-[0m[91m-                    100% |********************************| 1592k  0:00:00 ETA
-written to stdout
-[0mSolid/outer-interface.sur
-Solid/adiabatic.dfl
-Solid/inner-interface.sur
-Solid/outer-interface.nam
-Solid/inner-interface.nam
-Solid/
-Solid/outer-interface.flm
-Solid/inner-interface.flm
-Solid/all.msh
-Downloading and extracting the Inner-Fluid mesh...
-[91mConnecting to syncandshare.lrz.de (129.187.255.213:443)
-[0m[91mwriting to stdout
-[0mpolyMesh.org/boundary
-[91m-                      1% |                                |  221k  0:01:05 ETA
-[0m[91m-                      5% |*                               |  849k  0:00:32 ETA
-[0m[91m-                      9% |***                             | 1410k  0:00:28 ETA
-[0m[91m-                     13% |****                            | 1981k  0:00:25 ETA
-[0m[91m-                     17% |*****                           | 2605k  0:00:23 ETA
-[0m[91m-                     20% |******                          | 3061k  0:00:22 ETA
-[0m[91m-                     21% |******                          | 3201k  0:00:25 ETA
-[0m[91m-                     24% |*******                         | 3579k  0:00:24 ETA
-[0m[91m-                     27% |********                        | 4082k  0:00:23 ETA
-[0m[91m-                     28% |*********                       | 4227k  0:00:24 ETA
-[0m[91m-                     31% |**********                      | 4626k  0:00:24 ETA
-[0m[91m-                     34% |***********                     | 5152k  0:00:22 ETA
-[0m[91m-                     39% |************                    | 5775k  0:00:20 ETA
-[0m[91m-                     43% |*************                   | 6341k  0:00:18 ETA
-[0m[91m-                     47% |***************                 | 6981k  0:00:16 ETA
-[0m[91m-                     51% |****************                | 7533k  0:00:15 ETA
-[0m[91m-                     55% |*****************               | 8111k  0:00:13 ETA
-[0m[91m-                     59% |******************              | 8736k  0:00:12 ETA
-[0m[91m-                     60% |*******************             | 8915k  0:00:12 ETA
-[0m[91m-                     62% |*******************             | 9197k  0:00:12 ETA
-[0m[91m-                     65% |*********************           | 9669k  0:00:10 ETA
-[0m[91m-                     69% |**********************          |  9.9M  0:00:09 ETA
-[0m[91m-                     73% |***********************         | 10.6M  0:00:08 ETA
-[0m[91m-                     77% |************************        | 11.1M  0:00:06 ETA
-[0m[91m-                     81% |**************************      | 11.7M  0:00:05 ETA
-[0m[91m-                     85% |***************************     | 12.3M  0:00:04 ETA
-[0m[91m-                     86% |***************************     | 12.3M  0:00:04 ETA
-[0m[91m-                    [0m[91m 88% |****************************    | 12.7M  0:00:03 ETA
-[0m[91m-                     91% |*****************************   | 13.1M  0:00:02 ETA
-[0m[91m-                     95% |******************************  | 13.7M  0:00:01 ETA
-[0m[91m-                     99% |******************************* | 14.3M[0m[91m  0:00:00 ETA
--                    [0m[91m100% |********************************| 14.3M  0:00:00 ETA
-written to stdout
-[0mpolyMesh.org/neighbour.gz
-polyMesh.org/points.gz
-polyMesh.org/cellZones.gz
-polyMesh.org/owner.gz
-polyMesh.org/pointZones.gz
-polyMesh.org/faceZones.gz
-polyMesh.org/faces.gz
-polyMesh.org/blockMeshDict
-polyMesh.org/
-Downloading and extracting the Outer-Fluid mesh...
-[91mConnecting to syncandshare.lrz.de (129.187.255.213:443)
-[0m[91mwriting to stdout
-[0m[91m-                      0% |                                | 16384  0:26:40 ETA
-[0mpolyMesh.org/boundary
-[91m-                      1% |                                |  382k  0:02:12 ETA
-[0m[91m-                      3% |*                               |  991k  0:01:14 ETA
-[0m[91m-                      6% |*                               | 1577k  0:01:00 ETA
-[0m[91m-                      6% |**                              | 1731k  0:01:09 ETA
-[0m[91m-                    [0m[91m  8% |**                              | 2164k  0:01:05 ETA
-[0m[91m-                      9% |***                             | 2520k  0:01:04 ETA
-[0m[91m-                     10% |***                             | 2801k  0:01:05 ETA
-[0m[91m-                     12% |****                            | 3312k  0:01:00 ETA
-[0m[91m-                     15% |****                            | 3864k  0:00:56 ETA
-[0m[91m-                     17% |*****                           | 4444k  0:00:52 ETA
-[0m[91m-                     19% |******                          | 5077k  0:00:48 ETA
-[0m[91m-                     21% |*******                         | 5636k  0:00:46 ETA[0m[91m
-[0m[91m-                     24% |*******                         | 6208k  0:00:43 ETA
-[0m[91m-                    [0m[91m 26% [0m[91m|********                        | 6833k  0:00:41 ETA
-[0m[91m-                     28% |*********                       | 7411k  0:00:39 ETA
-[0m[91m-                     31% |*********                       | 7975k  0:00:37 ETA
-[0m[91m-                     33% |**********                      | 8600k  0:00:35 ETA
-[0m[91m-                     35% |***********                     | 9171k  0:00:34 ETA
-[0m[91m-                     38% |************                    | 9796k  0:00:32 ETA
-[0m[91m-                    [0m[91m 40% |************                    | 10.1M  0:00:30 ETA
-[0m[91m-                     42% |*************                   | 10.6M  0:00:29 ETA
-[0m[91m-                     45% |**************                  | 11.2M  0:00:27 ETA
-[0m[91m-                     47% |***************                 | 11.8M  0:00:26 ETA
-[0m[91m-                     49% |***************                 | 12.3M  0:00:25 ETA
-[0m[91m-                     51% |****************                | 13.0M  0:00:24 ETA
-[0m[91m-                     54% |*****************               | 13.5M  0:00:22 ETA
-[0m[91m-                     56% |******************              | 14.1M  0:00:21 ETA
-[0m[91m-                     58% |******************              | 14.7M[0m[91m  0:00:20 ETA
-[0m[91m-                     61% |*******************             | 15.2M  0:00:19 ETA
-[0m[91m-                     63% |********************            | 15.8M  0:00:17 ETA
-[0m[91m-                     65% |*********************           | 16.4M  0:00:16 ETA
-[0m[91m-                     67% |*********************           | 17.0M  0:00:15 ETA
-[0m[91m-                     70% |**********************          | 17.6M  0:00:14 ETA
-[0m[91m-                     72% |***********************         | 18.1M  0:00:13 ETA
-[0m[91m-                     74% |***********************         | 18.7M  0:00:12 ETA
-[0m[91m-                     77% |************************        | 19.3M  0:00:10 ETA
-[0m[91m-                     79% |*************************       | 19.9M  0:00:09 ETA
-[0m[91m-                     81% |**************************      | 20.4M  0:00:08 ETA
-[0m[91m-                     84% |**************************      | 21.0M  0:00:07 ETA
-[0m[91m-                     86% [0m[91m|***************************     | 21.6M  0:00:06 ETA
-[0m[91m-                     87% |****************************    | 21.9M  0:00:05 ETA
-[0m[91m-                     88% |****************************    | 22.1M  0:00:05 ETA
-[0m[91m-                     90% |****************************    | 22.5M  0:00:04 ETA
-[0m[91m-                     92% |*****************************   | 23.1M  0:00:03 ETA
-[0m[91m-                     94% |******************************  | 23.7M  0:00:02 ETA
-[0m[91m-                     97% |******************************* | 24.2M  0:00:01 ETA
-[0m[91m-                     99% |******************************* | 24.9M  0:00:00 ETA[0m[91m
-[0m[91m-                    100% |********************************| 25.0M[0m[91m  0:00:00 ETA
-written to stdout
-[0mpolyMesh.org/neighbour.gz
-polyMesh.org/points.gz
-polyMesh.org/cellZones.gz
-polyMesh.org/owner.gz
-polyMesh.org/pointZones.gz
-polyMesh.org/faceZones.gz
-polyMesh.org/faces.gz
-polyMesh.org/blockMeshDict
-polyMesh.org/
-Completed.
- ---> f7b196b3c06d
-Removing intermediate container 2ef5fb02418b
-Step 11/14 : WORKDIR /
- ---> bd73f29e6ce7
-Removing intermediate container 73cd6b1ea809
-Step 12/14 : RUN sed -i 's|exchange-directory\="."|exchange-directory="/home/[secure]/Data/Exchange/" network="eth0"|g'     configs/[secure]-config.xml && cp $tutorial_path/config.yml  configs/config.yml
- ---> Running in 0b16cc196bdf
- ---> fff373af487b
-Removing intermediate container 0b16cc196bdf
-Step 13/14 : RUN addgroup -g 1000 [secure] && adduser -u 1000 -G [secure] -D [secure] && chown -R [secure]:[secure] tutorials configs
- ---> Running in b8a6c6875246
- ---> ebf6f801d313
-Removing intermediate container b8a6c6875246
-Step 14/14 : USER [secure]
- ---> Running in 95064883637a
- ---> acf90e3e7b87
-Removing intermediate container 95064883637a
-Successfully built acf90e3e7b87
-Successfully tagged testcomposeofccx_tutorial-data:latest
-Image for service tutorial-data was built because it did not already exist. To rebuild this image you must use `docker-compose build` or `docker-compose up --build`.
-Pulling openfoam-adapter-outer ([secure]/openfoam-adapter-ubuntu1604.home-develop:latest)...
-latest: Pulling from [secure]/openfoam-adapter-ubuntu1604.home-develop
-Digest: sha256:edd42af17d76ea7004b08ea6bb8c97b89ef0348a654c7c7f8bc0d9769d18e065
-Status: Downloaded newer image for [secure]/openfoam-adapter-ubuntu1604.home-develop:latest
-Pulling calculix-adapter-solid ([secure]/calculix-adapter-ubuntu1604.home-develop:latest)...
-latest: Pulling from [secure]/calculix-adapter-ubuntu1604.home-develop
-Digest: sha256:4abd1f2ac4bffcb3907cb7ebf5dda44a6d5d63654715968a60549d591774ef2f
-Status: Downloaded newer image for [secure]/calculix-adapter-ubuntu1604.home-develop:latest
-Creating tutorial-data ... 
-Creating tutorial-data
-[1A[2KCreating tutorial-data ... [32mdone[0m[1BCreating openfoam-adapter-outer ... 
-Creating openfoam-adapter-inner ... 
-Creating calculix-adapter-solid ... 
-Creating openfoam-adapter-inner
-Creating openfoam-adapter-outer
-Creating calculix-adapter-solid
-[1A[2KCreating openfoam-adapter-inner ... [32mdone[0m[1B[1A[2KCreating openfoam-adapter-outer ... [32mdone[0m[1B[1A[2KCreating calculix-adapter-solid ... [32mdone[0m[1BRunning the simulation...Be patient
-Running the simulation...Be patient
-All adapters finished!
-EXECUTING: export PRECICE_BASE=-ubuntu1604.home-develop; docker-compose config && bash ../../silent_compose.sh 
-EXECUTING: docker cp tutorial-data:/Output .
-EXECUTING: mkdir Logs && docker-compose logs > Logs/container.log
-TEST SUCCEEDED - No difference to referenceOutput found.
-travis_time:end:047db406:start=1579961608564098675,finish=1579961880837175423,duration=272273076748,event=script[0K[32;1mThe command "python system_testing.py -s of-ccx" exited with 0.[0m
-travis_time:start:2674bb04[0K$ python push.py -t of-ccx
-Cloning into '[secure]_st_output'...

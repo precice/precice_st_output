@@ -1,516 +1,0 @@
-travis_fold:start:worker_info[0K[33;1mWorker information[0m
-hostname: 9b164997-fb90-47b9-b300-70ebf3145c3c@1.worker-org-88fdd6b59-pktz6.gce-production-2
-version: v6.2.6 https://github.com/travis-ci/worker/tree/ba21bd30589fd152126e13df30e0cc78ccdf2837
-instance: travis-job-90fce577-f3fa-43e7-8ef2-187e228f8c5d travis-ci-garnet-trusty-1512502259-986baf0 (via amqp)
-startup: 6.285232293s
-travis_fold:end:worker_info[0Ktravis_time:start:18b42088[0Ktravis_time:end:18b42088:start=1580034715284283834,finish=1580034715433246989,duration=148963155,event=no_world_writable_dirs[0Ktravis_time:start:1c946116[0Ktravis_time:end:1c946116:start=1580034715435747055,finish=1580034715438817342,duration=3070287,event=setup_filter[0Ktravis_time:start:16ebae22[0Ktravis_time:end:16ebae22:start=1580034715443538467,finish=1580034715450561042,duration=7022575,event=agent[0Ktravis_time:start:36b3dd44[0Ktravis_time:end:36b3dd44:start=1580034715452988658,finish=1580034715454793750,duration=1805092,event=check_unsupported[0Ktravis_time:start:0e938ce1[0Ktravis_fold:start:system_info[0K[33;1mBuild system information[0m
-Build language: python
-Build group: stable
-Build dist: trusty
-Build id: 641970567
-Job id: 641970582
-Runtime kernel version: 4.4.0-101-generic
-travis-build version: 74fa7e3af
-[34m[1mBuild image provisioning date and time[0m
-Tue Dec  5 19:58:13 UTC 2017
-[34m[1mOperating System Details[0m
-Distributor ID:	Ubuntu
-Description:	Ubuntu 14.04.5 LTS
-Release:	14.04
-Codename:	trusty
-[34m[1mCookbooks Version[0m
-7c2c6a6 https://github.com/travis-ci/travis-cookbooks/tree/7c2c6a6
-[34m[1mgit version[0m
-git version 2.15.1
-[34m[1mbash version[0m
-GNU bash, version 4.3.11(1)-release (x86_64-pc-linux-gnu)
-[34m[1mgcc version[0m
-gcc (Ubuntu 4.8.4-2ubuntu1~14.04.3) 4.8.4
-Copyright (C) 2013 Free Software Foundation, Inc.
-This is free software; see the source for copying conditions.  There is NO
-warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
-
-[34m[1mdocker version[0m
-Client:
- Version:      17.09.0-ce
- API version:  1.32
- Go version:   go1.8.3
- Git commit:   afdb6d4
- Built:        Tue Sep 26 22:42:38 2017
- OS/Arch:      linux/amd64
-
-Server:
- Version:      17.09.0-ce
- API version:  1.32 (minimum version 1.12)
- Go version:   go1.8.3
- Git commit:   afdb6d4
- Built:        Tue Sep 26 22:41:20 2017
- OS/Arch:      linux/amd64
- Experimental: false
-[34m[1mclang version[0m
-clang version 5.0.0 (tags/RELEASE_500/final)
-Target: x86_64-unknown-linux-gnu
-Thread model: posix
-InstalledDir: /usr/local/clang-5.0.0/bin
-[34m[1mjq version[0m
-jq-1.5
-[34m[1mbats version[0m
-Bats 0.4.0
-[34m[1mshellcheck version[0m
-0.4.6
-[34m[1mshfmt version[0m
-v2.0.0
-[34m[1mccache version[0m
-ccache version 3.1.9
-
-Copyright (C) 2002-2007 Andrew Tridgell
-Copyright (C) 2009-2011 Joel Rosdahl
-
-This program is free software; you can redistribute it and/or modify it under
-the terms of the GNU General Public License as published by the Free Software
-Foundation; either version 3 of the License, or (at your option) any later
-version.
-[34m[1mcmake version[0m
-cmake version 3.9.2
-
-CMake suite maintained and supported by Kitware (kitware.com/cmake).
-[34m[1mheroku version[0m
-heroku-cli/6.14.39-addc925 (linux-x64) node-v9.2.0
-[34m[1mimagemagick version[0m
-Version: ImageMagick 6.7.7-10 2017-07-31 Q16 http://www.imagemagick.org
-[34m[1mmd5deep version[0m
-4.2
-[34m[1mmercurial version[0m
-Mercurial Distributed SCM (version 4.2.2)
-(see https://mercurial-scm.org for more information)
-
-Copyright (C) 2005-2017 Matt Mackall and others
-This is free software; see the source for copying conditions. There is NO
-warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
-[34m[1mmysql version[0m
-mysql  Ver 14.14 Distrib 5.6.33, for debian-linux-gnu (x86_64) using  EditLine wrapper
-[34m[1mopenssl version[0m
-OpenSSL 1.0.1f 6 Jan 2014
-[34m[1mpacker version[0m
-Packer v1.0.2
-
-Your version of Packer is out of date! The latest version
-is 1.1.2. You can update by downloading from www.packer.io
-[34m[1mpostgresql client version[0m
-psql (PostgreSQL) 9.6.6
-[34m[1mragel version[0m
-Ragel State Machine Compiler version 6.8 Feb 2013
-Copyright (c) 2001-2009 by Adrian Thurston
-[34m[1msubversion version[0m
-svn, version 1.8.8 (r1568071)
-   compiled Aug 10 2017, 17:20:39 on x86_64-pc-linux-gnu
-
-Copyright (C) 2013 The Apache Software Foundation.
-This software consists of contributions made by many people;
-see the NOTICE file for more information.
-Subversion is open source software, see http://subversion.apache.org/
-
-The following repository access (RA) modules are available:
-
-* ra_svn : Module for accessing a repository using the svn network protocol.
-  - with Cyrus SASL authentication
-  - handles 'svn' scheme
-* ra_local : Module for accessing a repository on local disk.
-  - handles 'file' scheme
-* ra_serf : Module for accessing a repository via WebDAV protocol using serf.
-  - using serf 1.3.3
-  - handles 'http' scheme
-  - handles 'https' scheme
-
-[34m[1msudo version[0m
-Sudo version 1.8.9p5
-Configure options: --prefix=/usr -v --with-all-insults --with-pam --with-fqdn --with-logging=syslog --with-logfac=authpriv --with-env-editor --with-editor=/usr/bin/editor --with-timeout=15 --with-password-timeout=0 --with-passprompt=[sudo] password for %p:  --without-lecture --with-tty-tickets --disable-root-mailer --enable-admin-flag --with-sendmail=/usr/sbin/sendmail --with-timedir=/var/lib/sudo --mandir=/usr/share/man --libexecdir=/usr/lib/sudo --with-sssd --with-sssd-lib=/usr/lib/x86_64-linux-gnu --with-selinux
-Sudoers policy plugin version 1.8.9p5
-Sudoers file grammar version 43
-
-Sudoers path: /etc/sudoers
-Authentication methods: 'pam'
-Syslog facility if syslog is being used for logging: authpriv
-Syslog priority to use when user authenticates successfully: notice
-Syslog priority to use when user authenticates unsuccessfully: alert
-Send mail if the user is not in sudoers
-Use a separate timestamp for each user/tty combo
-Lecture user the first time they run sudo
-Root may run sudo
-Allow some information gathering to give useful error messages
-Require fully-qualified hostnames in the sudoers file
-Visudo will honor the EDITOR environment variable
-Set the LOGNAME and USER environment variables
-Length at which to wrap log file lines (0 for no wrap): 80
-Authentication timestamp timeout: 15.0 minutes
-Password prompt timeout: 0.0 minutes
-Number of tries to enter a password: 3
-Umask to use or 0777 to use user's: 022
-Path to mail program: /usr/sbin/sendmail
-Flags for mail program: -t
-Address to send mail to: root
-Subject line for mail messages: *** SECURITY information for %h ***
-Incorrect password message: Sorry, try again.
-Path to authentication timestamp dir: /var/lib/sudo
-Default password prompt: [sudo] password for %p: 
-Default user to run commands as: root
-Value to override user's $PATH with: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin
-Path to the editor for use by visudo: /usr/bin/editor
-When to require a password for 'list' pseudocommand: any
-When to require a password for 'verify' pseudocommand: all
-File descriptors >= 3 will be closed before executing a command
-Environment variables to check for sanity:
-	TZ
-	TERM
-	LINGUAS
-	LC_*
-	LANGUAGE
-	LANG
-	COLORTERM
-Environment variables to remove:
-	RUBYOPT
-	RUBYLIB
-	PYTHONUSERBASE
-	PYTHONINSPECT
-	PYTHONPATH
-	PYTHONHOME
-	TMPPREFIX
-	ZDOTDIR
-	READNULLCMD
-	NULLCMD
-	FPATH
-	PERL5DB
-	PERL5OPT
-	PERL5LIB
-	PERLLIB
-	PERLIO_DEBUG 
-	JAVA_TOOL_OPTIONS
-	SHELLOPTS
-	GLOBIGNORE
-	PS4
-	BASH_ENV
-	ENV
-	TERMCAP
-	TERMPATH
-	TERMINFO_DIRS
-	TERMINFO
-	_RLD*
-	LD_*
-	PATH_LOCALE
-	NLSPATH
-	HOSTALIASES
-	RES_OPTIONS
-	LOCALDOMAIN
-	CDPATH
-	IFS
-Environment variables to preserve:
-	JAVA_HOME
-	TRAVIS
-	CI
-	DEBIAN_FRONTEND
-	XAUTHORIZATION
-	XAUTHORITY
-	PS2
-	PS1
-	PATH
-	LS_COLORS
-	KRB5CCNAME
-	HOSTNAME
-	HOME
-	DISPLAY
-	COLORS
-Locale to use while parsing sudoers: C
-Directory in which to store input/output logs: /var/log/sudo-io
-File in which to store the input/output log: %{seq}
-Add an entry to the utmp/utmpx file when allocating a pty
-PAM service name to use
-PAM service name to use for login shells
-Create a new PAM session for the command to run in
-Maximum I/O log sequence number: 0
-
-Local IP address and netmask pairs:
-	10.240.0.28/255.255.255.255
-	172.17.0.1/255.255.0.0
-
-Sudoers I/O plugin version 1.8.9p5
-[34m[1mgzip version[0m
-gzip 1.6
-Copyright (C) 2007, 2010, 2011 Free Software Foundation, Inc.
-Copyright (C) 1993 Jean-loup Gailly.
-This is free software.  You may redistribute copies of it under the terms of
-the GNU General Public License <http://www.gnu.org/licenses/gpl.html>.
-There is NO WARRANTY, to the extent permitted by law.
-
-Written by Jean-loup Gailly.
-[34m[1mzip version[0m
-Copyright (c) 1990-2008 Info-ZIP - Type 'zip "-L"' for software license.
-This is Zip 3.0 (July 5th 2008), by Info-ZIP.
-Currently maintained by E. Gordon.  Please send bug reports to
-the authors using the web page at www.info-zip.org; see README for details.
-
-Latest sources and executables are at ftp://ftp.info-zip.org/pub/infozip,
-as of above date; see http://www.info-zip.org/ for other sites.
-
-Compiled with gcc 4.8.2 for Unix (Linux ELF) on Oct 21 2013.
-
-Zip special compilation options:
-	USE_EF_UT_TIME       (store Universal Time)
-	BZIP2_SUPPORT        (bzip2 library version 1.0.6, 6-Sept-2010)
-	    bzip2 code and library copyright (c) Julian R Seward
-	    (See the bzip2 license for terms of use)
-	SYMLINK_SUPPORT      (symbolic links supported)
-	LARGE_FILE_SUPPORT   (can read and write large files on file system)
-	ZIP64_SUPPORT        (use Zip64 to store large files in archives)
-	UNICODE_SUPPORT      (store and read UTF-8 Unicode paths)
-	STORE_UNIX_UIDs_GIDs (store UID/GID sizes/values using new extra field)
-	UIDGID_NOT_16BIT     (old Unix 16-bit UID/GID extra field not used)
-	[encryption, version 2.91 of 05 Jan 2007] (modified for Zip 3)
-
-Encryption notice:
-	The encryption code of this program is not copyrighted and is
-	put in the public domain.  It was originally written in Europe
-	and, to the best of our knowledge, can be freely distributed
-	in both source and object forms from any country, including
-	the USA under License Exception TSU of the U.S. Export
-	Administration Regulations (section 740.13(e)) of 6 June 2002.
-
-Zip environment options:
-             ZIP:  [none]
-          ZIPOPT:  [none]
-[34m[1mvim version[0m
-VIM - Vi IMproved 7.4 (2013 Aug 10, compiled Nov 24 2016 16:43:18)
-Included patches: 1-52
-Extra patches: 8.0.0056
-Modified by pkg-vim-maintainers@lists.alioth.debian.org
-Compiled by buildd@
-Huge version without GUI.  Features included (+) or not (-):
-+acl             +farsi           +mouse_netterm   +syntax
-+arabic          +file_in_path    +mouse_sgr       +tag_binary
-+autocmd         +find_in_path    -mouse_sysmouse  +tag_old_static
--balloon_eval    +float           +mouse_urxvt     -tag_any_white
--browse          +folding         +mouse_xterm     -tcl
-++builtin_terms  -footer          +multi_byte      +terminfo
-+byte_offset     +fork()          +multi_lang      +termresponse
-+cindent         +gettext         -mzscheme        +textobjects
--clientserver    -hangul_input    +netbeans_intg   +title
--clipboard       +iconv           +path_extra      -toolbar
-+cmdline_compl   +insert_expand   -perl            +user_commands
-+cmdline_hist    +jumplist        +persistent_undo +vertsplit
-+cmdline_info    +keymap          +postscript      +virtualedit
-+comments        +langmap         +printer         +visual
-+conceal         +libcall         +profile         +visualextra
-+cryptv          +linebreak       +python          +viminfo
-+cscope          +lispindent      -python3         +vreplace
-+cursorbind      +listcmds        +quickfix        +wildignore
-+cursorshape     +localmap        +reltime         +wildmenu
-+dialog_con      -lua             +rightleft       +windows
-+diff            +menu            -ruby            +writebackup
-+digraphs        +mksession       +scrollbind      -X11
--dnd             +modify_fname    +signs           -xfontset
--ebcdic          +mouse           +smartindent     -xim
-+emacs_tags      -mouseshape      -sniff           -xsmp
-+eval            +mouse_dec       +startuptime     -xterm_clipboard
-+ex_extra        +mouse_gpm       +statusline      -xterm_save
-+extra_search    -mouse_jsbterm   -sun_workshop    -xpm
-   system vimrc file: "$VIM/vimrc"
-     user vimrc file: "$HOME/.vimrc"
- 2nd user vimrc file: "~/.vim/vimrc"
-      user exrc file: "$HOME/.exrc"
-  fall-back for $VIM: "/usr/share/vim"
-Compilation: gcc -c -I. -Iproto -DHAVE_CONFIG_H     -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1      
-Linking: gcc   -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,--as-needed -o vim        -lm -ltinfo -lnsl  -lselinux  -lacl -lattr -lgpm -ldl    -L/usr/lib/python2.7/config-x86_64-linux-gnu -lpython2.7 -lpthread -ldl -lutil -lm -Xlinker -export-dynamic -Wl,-O1 -Wl,-Bsymbolic-functions      
-[34m[1miptables version[0m
-iptables v1.4.21
-[34m[1mcurl version[0m
-curl 7.35.0 (x86_64-pc-linux-gnu) libcurl/7.35.0 OpenSSL/1.0.1f zlib/1.2.8 libidn/1.28 librtmp/2.3
-[34m[1mwget version[0m
-GNU Wget 1.15 built on linux-gnu.
-[34m[1mrsync version[0m
-rsync  version 3.1.0  protocol version 31
-[34m[1mgimme version[0m
-v1.2.0
-[34m[1mnvm version[0m
-0.33.6
-[34m[1mperlbrew version[0m
-/home/travis/perl5/perlbrew/bin/perlbrew  - App::perlbrew/0.80
-[34m[1mphpenv version[0m
-rbenv 1.1.1-25-g6aa70b6
-[34m[1mrvm version[0m
-rvm 1.29.3 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
-[34m[1mdefault ruby version[0m
-ruby 2.4.1p111 (2017-03-22 revision 58053) [x86_64-linux]
-[34m[1mCouchDB version[0m
-couchdb 1.6.1
-[34m[1mElasticSearch version[0m
-5.5.0
-[34m[1mInstalled Firefox version[0m
-firefox 56.0.2
-[34m[1mMongoDB version[0m
-MongoDB 3.4.10
-[34m[1mPhantomJS version[0m
-2.1.1
-[34m[1mPre-installed PostgreSQL versions[0m
-9.2.24
-9.3.20
-9.4.15
-9.5.10
-9.6.6
-[34m[1mRabbitMQ Version[0m
-3.6.14
-[34m[1mRedis version[0m
-redis-server 4.0.6
-[34m[1mriak version[0m
-2.2.3
-[34m[1mPre-installed Go versions[0m
-1.7.4
-[34m[1mant version[0m
-Apache Ant(TM) version 1.9.3 compiled on April 8 2014
-[34m[1mmvn version[0m
-Apache Maven 3.5.2 (138edd61fd100ec658bfa2d307c43b76940a5d7d; 2017-10-18T07:58:13Z)
-Maven home: /usr/local/maven-3.5.2
-Java version: 1.8.0_151, vendor: Oracle Corporation
-Java home: /usr/lib/jvm/java-8-oracle/jre
-Default locale: en_US, platform encoding: UTF-8
-OS name: "linux", version: "4.4.0-98-generic", arch: "amd64", family: "unix"
-[34m[1mgradle version[0m
-
-------------------------------------------------------------
-Gradle 4.0.1
-------------------------------------------------------------
-
-Build time:   2017-07-07 14:02:41 UTC
-Revision:     38e5dc0f772daecca1d2681885d3d85414eb6826
-
-Groovy:       2.4.11
-Ant:          Apache Ant(TM) version 1.9.6 compiled on June 29 2015
-JVM:          1.8.0_151 (Oracle Corporation 25.151-b12)
-OS:           Linux 4.4.0-98-generic amd64
-
-[34m[1mlein version[0m
-Leiningen 2.8.1 on Java 1.8.0_151 Java HotSpot(TM) 64-Bit Server VM
-[34m[1mPre-installed Node.js versions[0m
-v4.8.6
-v6.12.0
-v6.12.1
-v8.9
-v8.9.1
-[34m[1mphpenv versions[0m
-  system
-  5.6
-* 5.6.32 (set by /home/travis/.phpenv/version)
-  7.0
-  7.0.25
-  7.1
-  7.1.11
-  hhvm
-  hhvm-stable
-[34m[1mcomposer --version[0m
-Composer version 1.5.2 2017-09-11 16:59:25
-[34m[1mPre-installed Ruby versions[0m
-ruby-2.2.7
-ruby-2.3.4
-ruby-2.4.1
-travis_fold:end:system_info[0K
-travis_time:end:0e938ce1:start=1580034715457300054,finish=1580034715462466442,duration=5166388,event=show_system_info[0Ktravis_time:start:015c1600[0Ktravis_time:end:015c1600:start=1580034715464903944,finish=1580034715485001078,duration=20097134,event=rm_riak_source[0Ktravis_time:start:32c4aa00[0Ktravis_time:end:32c4aa00:start=1580034715487776117,finish=1580034715493943349,duration=6167232,event=fix_rwky_redis[0Ktravis_time:start:05098d40[0Ktravis_time:end:05098d40:start=1580034715496632798,finish=1580034715983050320,duration=486417522,event=wait_for_network[0Ktravis_time:start:01a80f95[0Ktravis_time:end:01a80f95:start=1580034715987818500,finish=1580034716898380938,duration=910562438,event=update_apt_keys[0Ktravis_time:start:228a6478[0Ktravis_time:end:228a6478:start=1580034716902701857,finish=1580034717817933672,duration=915231815,event=fix_hhvm_source[0Ktravis_time:start:15d366a0[0Ktravis_time:end:15d366a0:start=1580034717822902914,finish=1580034717833134015,duration=10231101,event=update_mongo_arch[0Ktravis_time:start:00ae6a05[0Ktravis_time:end:00ae6a05:start=1580034717836804108,finish=1580034717874213732,duration=37409624,event=fix_sudo_enabled_trusty[0Ktravis_time:start:0434a4db[0Ktravis_time:end:0434a4db:start=1580034717878457932,finish=1580034717881494039,duration=3036107,event=update_glibc[0Ktravis_time:start:209eee3a[0Ktravis_time:end:209eee3a:start=1580034717885339574,finish=1580034717897443881,duration=12104307,event=clean_up_path[0Ktravis_time:start:11628c3c[0Ktravis_time:end:11628c3c:start=1580034717901219862,finish=1580034717911382123,duration=10162261,event=fix_resolv_conf[0Ktravis_time:start:199026c0[0Ktravis_time:end:199026c0:start=1580034717918480893,finish=1580034717927159130,duration=8678237,event=fix_etc_hosts[0Ktravis_time:start:1162dc82[0Ktravis_time:end:1162dc82:start=1580034717931389727,finish=1580034717940731744,duration=9342017,event=fix_mvn_settings_xml[0Ktravis_time:start:087d48fa[0Ktravis_time:end:087d48fa:start=1580034717946369753,finish=1580034717954748805,duration=8379052,event=no_ipv6_localhost[0Ktravis_time:start:053b0c94[0Ktravis_time:end:053b0c94:start=1580034717959109813,finish=1580034717961530687,duration=2420874,event=fix_etc_mavenrc[0Ktravis_time:start:177ff325[0Ktravis_time:end:177ff325:start=1580034717966714784,finish=1580034717969829757,duration=3114973,event=fix_wwdr_certificate[0Ktravis_time:start:00b14a94[0Ktravis_time:end:00b14a94:start=1580034717973974018,finish=1580034717995288451,duration=21314433,event=put_localhost_first[0Ktravis_time:start:1031426a[0Ktravis_time:end:1031426a:start=1580034717999386197,finish=1580034718002211409,duration=2825212,event=home_paths[0Ktravis_time:start:02c28b1b[0Ktravis_time:end:02c28b1b:start=1580034718007391432,finish=1580034718017362923,duration=9971491,event=disable_initramfs[0Ktravis_time:start:00ebe4a8[0Ktravis_time:end:00ebe4a8:start=1580034718020306150,finish=1580034718273506095,duration=253199945,event=disable_ssh_roaming[0Ktravis_time:start:01ce9f04[0Ktravis_time:end:01ce9f04:start=1580034718277853653,finish=1580034718281448031,duration=3594378,event=debug_tools[0Ktravis_time:start:02a06ed3[0Ktravis_time:end:02a06ed3:start=1580034718285211832,finish=1580034718288071739,duration=2859907,event=uninstall_oclint[0Ktravis_time:start:12d55499[0Ktravis_time:end:12d55499:start=1580034718291666161,finish=1580034718294549281,duration=2883120,event=rvm_use[0Ktravis_time:start:11aef89b[0Ktravis_time:end:11aef89b:start=1580034718298275365,finish=1580034718308261646,duration=9986281,event=rm_etc_boto_cfg[0Ktravis_time:start:05a05942[0Ktravis_time:end:05a05942:start=1580034718312064916,finish=1580034718314229228,duration=2164312,event=rm_oraclejdk8_symlink[0Ktravis_time:start:08d684b5[0Ktravis_time:end:08d684b5:start=1580034718318014047,finish=1580034718363561110,duration=45547063,event=enable_i386[0Ktravis_time:start:01738b82[0Ktravis_time:end:01738b82:start=1580034718368375680,finish=1580034718373431784,duration=5056104,event=update_rubygems[0Ktravis_time:start:31359f81[0Ktravis_time:end:31359f81:start=1580034718377877030,finish=1580034719219044731,duration=841167701,event=ensure_path_components[0Ktravis_time:start:010c1fc2[0Ktravis_time:end:010c1fc2:start=1580034719225112267,finish=1580034719227626790,duration=2514523,event=redefine_curl[0Ktravis_time:start:0d2cd8d3[0Ktravis_time:end:0d2cd8d3:start=1580034719232113968,finish=1580034719279700032,duration=47586064,event=nonblock_pipe[0Ktravis_time:start:00bc93e6[0Ktravis_time:end:00bc93e6:start=1580034719284805806,finish=1580034725315283149,duration=6030477343,event=apt_get_update[0Ktravis_time:start:246a46c1[0Ktravis_time:end:246a46c1:start=1580034725319261846,finish=1580034725321589193,duration=2327347,event=deprecate_xcode_64[0Ktravis_time:start:17d640c0[0Ktravis_time:end:17d640c0:start=1580034725324615852,finish=1580034729062864642,duration=3738248790,event=update_heroku[0Ktravis_time:start:04a8fc20[0Ktravis_time:end:04a8fc20:start=1580034729066144130,finish=1580034729068483285,duration=2339155,event=shell_session_update[0Ktravis_time:start:0cc2cb10[0Ktravis_fold:start:docker_mtu[0Kdocker stop/waiting
-docker start/running, process 3908
-travis_fold:end:docker_mtu[0Ktravis_time:end:0cc2cb10:start=1580034729071550351,finish=1580034730255233618,duration=1183683267,event=set_docker_mtu[0Ktravis_time:start:014e97ad[0Ktravis_fold:start:resolvconf[0Kresolvconf stop/waiting
-resolvconf start/running
-travis_fold:end:resolvconf[0Ktravis_time:end:014e97ad:start=1580034730260068203,finish=1580034730320123597,duration=60055394,event=resolvconf[0Ktravis_time:start:136e93cc[0Ktravis_time:end:136e93cc:start=1580034730323661980,finish=1580034730413017009,duration=89355029,event=maven_central_mirror[0Ktravis_time:start:308aa80f[0Ktravis_time:end:308aa80f:start=1580034730417323148,finish=1580034730480991052,duration=63667904,event=maven_https[0K[33;1m3.5 is not installed; attempting download[0m
-[33;1mDownloading archive: https://storage.googleapis.com/travis-ci-language-archives/python/binaries/ubuntu/14.04/x86_64/python-3.5.tar.bz2[0m
-travis_time:start:0755a630[0K$ curl -sSf --retry 5 -o python-3.5.tar.bz2 ${archive_url}
-travis_time:end:0755a630:start=1580034730551623719,finish=1580034731004736363,duration=453112644,event=configure[0Ktravis_time:start:1a616c78[0K$ sudo tar xjf python-3.5.tar.bz2 --directory /
-travis_time:end:1a616c78:start=1580034731009629179,finish=1580034739005559257,duration=7995930078,event=configure[0Ktravis_time:start:12f535ae[0Ktravis_fold:start:services[0Ktravis_time:start:100641f8[0K$ sudo service docker start
-start: Job is already running: docker
-travis_time:end:100641f8:start=1580034739027302176,finish=1580034739042046069,duration=14743893,event=prepare[0Ktravis_fold:end:services[0Ktravis_time:end:100641f8:start=1580034739027302176,finish=1580034742046210011,duration=3018907835,event=services[0Ktravis_time:start:01a68eb8[0Ktravis_time:end:01a68eb8:start=1580034742050556828,finish=1580034742052928385,duration=2371557,event=fix_ps4[0Ktravis_time:start:0fdc7a09[0K
-travis_fold:start:git.checkout[0Ktravis_time:start:0e51d66c[0K$ git clone --depth=50 https://github.com/[secure]/systemtests.git [secure]/systemtests
-Cloning into '[secure]/systemtests'...
-travis_time:end:0e51d66c:start=1580034742060508549,finish=1580034747465870416,duration=5405361867,event=checkout[0K$ cd [secure]/systemtests
-travis_time:start:06b6af20[0K$ git fetch origin +refs/pull/147/merge:
-From https://github.com/[secure]/systemtests
- * branch            refs/pull/147/merge -> FETCH_HEAD
-travis_time:end:06b6af20:start=1580034747471200594,finish=1580034747950445598,duration=479245004,event=checkout[0K$ git checkout -qf FETCH_HEAD
-travis_fold:end:git.checkout[0K
-travis_time:end:06b6af20:start=1580034747471200594,finish=1580034748334883728,duration=863683134,event=checkout[0Ktravis_time:start:12c07f1b[0K
-[33;1mSetting environment variables from repository settings[0m
-$ export DOCKER_PASSWORD=[secure]
-$ export DOCKER_USERNAME=[secure]
-$ export TRAVIS_ACCESS_TOKEN=[secure]
-$ export PRECICE_BOT_EMAIL=[secure]
-$ export GH_TOKEN=[secure]
-
-travis_time:end:12c07f1b:start=1580034748339931900,finish=1580034748349618529,duration=9686629,event=env[0Ktravis_time:start:0a28b5a0[0K$ source ~/virtualenv/python3.5/bin/activate
-travis_time:end:0a28b5a0:start=1580034748354988245,finish=1580034748365216367,duration=10228122,event=[0K$ python --version
-Python 3.5.6
-$ pip --version
-pip 18.0 from /home/travis/virtualenv/python3.5.6/lib/python3.5/site-packages/pip (python 3.5)
-Could not locate requirements.txt. Override the install: key in your .travis.yml to install dependencies.
-travis_time:start:04f7ca3f[0K$ python system_testing.py -s of-of
-networks:
-  [secure]comm: {}
-services:
-  openfoam-adapter-fluid:
-    command: '/bin/bash -c "source /opt/openfoam4/etc/bashrc &&  cd /home/[secure]/openfoam-adapter/tutorials/CHT/flow-over-plate/buoyantPimpleFoam-laplacianFoam
-      && sed -i ''s|<m2n:sockets from=\"Fluid\" to=\"Solid\"/>|<m2n:sockets from=\"Fluid\"
-      to=\"Solid\" exchange-directory=\"/home/[secure]/Data/Exchange/\" network=\"eth0\"/>|g''
-      [secure]-config.xml && ./runFluid && cp -r Fluid/ /home/[secure]/Data/Output/"
-
-      '
-    container_name: openfoam-adapter-fluid
-    image: [secure]/openfoam-adapter-ubuntu1604.home-develop:latest
-    networks:
-      [secure]comm: null
-    volumes:
-    - exchange:/home/[secure]/Data/Exchange:rw
-    - output:/home/[secure]/Data/Output:rw
-  openfoam-adapter-solid:
-    command: '/bin/bash -c "source /opt/openfoam4/etc/bashrc &&  cd /home/[secure]/openfoam-adapter/tutorials/CHT/flow-over-plate/buoyantPimpleFoam-laplacianFoam
-      && sed -i ''s|<m2n:sockets from=\"Fluid\" to=\"Solid\"/>|<m2n:sockets from=\"Fluid\"
-      to=\"Solid\" exchange-directory=\"/home/[secure]/Data/Exchange/\" network=\"eth0\"/>|g''
-      [secure]-config.xml && ./runSolid && cp -r Solid/ /home/[secure]/Data/Output/"
-
-      '
-    container_name: openfoam-adapter-solid
-    image: [secure]/openfoam-adapter-ubuntu1604.home-develop:latest
-    networks:
-      [secure]comm: null
-    volumes:
-    - exchange:/home/[secure]/Data/Exchange:rw
-    - output:/home/[secure]/Data/Output:rw
-  tutorial-data:
-    container_name: tutorial-data
-    image: alpine
-    volumes:
-    - output:/Output:rw
-version: '3.0'
-volumes:
-  exchange: {}
-  output: {}
-
-Creating network "testcomposeofof_default" with the default driver
-Creating network "testcomposeofof_[secure]comm" with the default driver
-Creating volume "testcomposeofof_output" with default driver
-Creating volume "testcomposeofof_exchange" with default driver
-Pulling tutorial-data (alpine:latest)...
-latest: Pulling from library/alpine
-Digest: sha256:ab00606a42621fb68f2ed6ad3c88be54397f981a7b70a79db3d1172b11c4367d
-Status: Downloaded newer image for alpine:latest
-Pulling openfoam-adapter-fluid ([secure]/openfoam-adapter-ubuntu1604.home-develop:latest)...
-latest: Pulling from [secure]/openfoam-adapter-ubuntu1604.home-develop
-Digest: sha256:ab232f3ec4153d1e6e56dc63acc9ebce94d07174940d32a6b37e4e1c545878e8
-Status: Downloaded newer image for [secure]/openfoam-adapter-ubuntu1604.home-develop:latest
-Creating openfoam-adapter-fluid ... 
-Creating openfoam-adapter-solid ... 
-Creating tutorial-data ... 
-Creating tutorial-data
-Creating openfoam-adapter-fluid
-Creating openfoam-adapter-solid
-[1A[2KCreating openfoam-adapter-fluid ... [32mdone[0m[1B[1A[2KCreating openfoam-adapter-solid ... [32mdone[0m[1B[1A[2KCreating tutorial-data ... [32mdone[0m[1BRunning the simulation...Be patient
-All adapters finished!
-EXECUTING: export PRECICE_BASE=-ubuntu1604.home-develop; docker-compose config && bash ../../silent_compose.sh 
-EXECUTING: docker cp tutorial-data:/Output .
-EXECUTING: mkdir Logs && docker-compose logs > Logs/container.log
-EXECUTING: bash ../../compare_results.sh /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of/referenceOutput /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of/Output
-TEST SUCCEEDED - Differences to referenceOutput within tolerance.
-travis_time:end:04f7ca3f:start=1580034748646452365,finish=1580034876705823670,duration=128059371305,event=script[0K[32;1mThe command "python system_testing.py -s of-of" exited with 0.[0m
-travis_time:start:0fcb8540[0K$ python push.py -t of-of
-Cloning into '[secure]_st_output'...

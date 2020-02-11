@@ -72,6 +72,8 @@ if __name__ == "__main__":
 
     parser = argparse.ArgumentParser(description="Clean up repository by archiving older build folders.")
     parser.add_argument('-b', '--branch', type=str, help="Branch of precice_st_output to clean.", default=default_st_branch)
+    parser.add_argument('-n', '--num-builds', type=int, help="Number of build folders to preserve.", default=maximum_builds)
+
     args = parser.parse_args()
 
     # TODO: change default to master branch when merging
