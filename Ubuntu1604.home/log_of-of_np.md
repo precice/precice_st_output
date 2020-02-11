@@ -1,14 +1,25 @@
-## Status: Passing 
-Build: [1650](https://travis-ci.org/precice/systemtests/builds/648350351) 
+## Status: Failure 
+Build: [1666](https://travis-ci.org/precice/systemtests/builds/648938191) 
 
-Job: [1650.24](https://travis-ci.org/precice/systemtests/jobs/648350375) 
+Job: [1666.16](https://travis-ci.org/precice/systemtests/jobs/648938207) 
 
-Triggered by: [cron](https://github.com/precice/systemtests/compare/6213c52a25101c0051df0fbc215ba9f941209daa...000ab5ae1cde5210e654ffa14b06aa7e98916477) 
+Triggered by: [pull_request](https://github.com/precice/systemtests/pull/174) 
+Last successful commits 
+* [openfoam-adapter](https://github.com/precice/openfoam-adapter/compare/7566319387fe...59b44bf3cbdc)
+* [systemtests](https://github.com/precice/systemtests/compare/6213c52a25101c0051df0fbc215ba9f941209daa...000ab5ae1cde5210e654ffa14b06aa7e98916477) 
 
 ---
 Last 100 lines of the job log at the moment of push:
 ```
-travis_time:end:1b478dd8:start=1581335458086119090,finish=1581335464670729119,duration=6584610029,event=checkout[0Ktravis_time:start:05dbf3e0[0K
+travis_fold:start:git.checkout[0Ktravis_time:start:1928f2e8[0K$ git clone --depth=50 https://github.com/[secure]/systemtests.git [secure]/systemtests
+Cloning into '[secure]/systemtests'...
+travis_time:end:1928f2e8:start=1581433462505147296,finish=1581433468794873909,duration=6289726613,event=checkout[0K$ cd [secure]/systemtests
+travis_time:start:122da548[0K$ git fetch origin +refs/pull/174/merge:
+From https://github.com/[secure]/systemtests
+ * branch            refs/pull/174/merge -> FETCH_HEAD
+travis_time:end:122da548:start=1581433468799413198,finish=1581433469182620656,duration=383207458,event=checkout[0K$ git checkout -qf FETCH_HEAD
+travis_fold:end:git.checkout[0K
+travis_time:end:122da548:start=1581433468799413198,finish=1581433469885337943,duration=1085924745,event=checkout[0Ktravis_time:start:08feef38[0K
 [33;1mSetting environment variables from repository settings[0m
 $ export DOCKER_PASSWORD=[secure]
 $ export DOCKER_USERNAME=[secure]
@@ -16,13 +27,13 @@ $ export TRAVIS_ACCESS_TOKEN=[secure]
 $ export PRECICE_BOT_EMAIL=[secure]
 $ export GH_TOKEN=[secure]
 
-travis_time:end:05dbf3e0:start=1581335464675247805,finish=1581335464684974290,duration=9726485,event=env[0Ktravis_time:start:0a7516d0[0K$ source ~/virtualenv/python3.5/bin/activate
-travis_time:end:0a7516d0:start=1581335464689031865,finish=1581335464698652979,duration=9621114,event=[0K$ python --version
+travis_time:end:08feef38:start=1581433469890125798,finish=1581433469902326987,duration=12201189,event=env[0Ktravis_time:start:1651a668[0K$ source ~/virtualenv/python3.5/bin/activate
+travis_time:end:1651a668:start=1581433469906607411,finish=1581433469912974367,duration=6366956,event=[0K$ python --version
 Python 3.5.6
 $ pip --version
 pip 18.0 from /home/travis/virtualenv/python3.5.6/lib/python3.5/site-packages/pip (python 3.5)
 Could not locate requirements.txt. Override the install: key in your .travis.yml to install dependencies.
-travis_time:start:06ef2646[0K$ python system_testing.py -s of-of_np
+travis_time:start:0cff35a0[0K$ python system_testing.py -s of-of_np
 networks:
   [secure]comm: {}
 services:
@@ -76,38 +87,30 @@ Pulling openfoam-adapter-fluid ([secure]/openfoam-adapter-ubuntu1604.home-develo
 latest: Pulling from [secure]/openfoam-adapter-ubuntu1604.home-develop
 Digest: sha256:f4a35c80e3584b3e11b7da5bf50b88da768fe5fe965b027645946b3c174412f9
 Status: Downloaded newer image for [secure]/openfoam-adapter-ubuntu1604.home-develop:latest
-Creating tutorial-data ... 
 Creating openfoam-adapter-solid ... 
+Creating tutorial-data ... 
 Creating openfoam-adapter-fluid ... 
-Creating tutorial-data
 Creating openfoam-adapter-solid
+Creating tutorial-data
 Creating openfoam-adapter-fluid
-[1A[2KCreating tutorial-data ... [32mdone[0m[1B[1A[2KCreating openfoam-adapter-fluid ... [32mdone[0m[1B[1A[2KCreating openfoam-adapter-solid ... [32mdone[0m[1BRunning the simulation...Be patient
+[1A[2KCreating tutorial-data ... [32mdone[0m[1B[1A[2KCreating openfoam-adapter-solid ... [32mdone[0m[1B[1A[2KCreating openfoam-adapter-fluid ... [32mdone[0m[1BRunning the simulation...Be patient
 All adapters finished!
+Only in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output/Fluid: [secure]-adapter-config.yml
+Only in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput/Fluid/system: [secure]Dict
+Only in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output/Solid: [secure]-adapter-config.yml
+Only in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput/Solid/system: [secure]Dict
 EXECUTING: export PRECICE_BASE=-ubuntu1604.home-develop; docker-compose config && bash ../../silent_compose.sh 
 EXECUTING: docker cp tutorial-data:/Output .
 EXECUTING: bash ../../compare_results.sh /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output
-TEST SUCCEEDED - Differences to referenceOutput within tolerance.
-travis_time:end:06ef2646:start=1581335464971084112,finish=1581335591041520869,duration=126070436757,event=script[0K[32;1mThe command "python system_testing.py -s of-of_np" exited with 0.[0m
+TESTS FAILED WITH: Output files do not match reference
+Files differing               : ['gradTx', 'gradTy', 'gradTx', 'gradTy', 'gradTx', 'gradTx', 'gradTy', 'gradTx', 'gradTy', 'T', 'U', 'phi', 'T', 'U', 'phi', 'U', 'phi', 'T', 'U', 'phi', 'T', 'U', 'phi']
+Files only in reference (left): ['[secure]Dict', '[secure]Dict']
+Files only in output(right)   : ['[secure]-adapter-config.yml', '[secure]-adapter-config.yml']
+travis_time:end:0cff35a0:start=1581433470194426437,finish=1581433590131075602,duration=119936649165,event=script[0K[31;1mThe command "python system_testing.py -s of-of_np" exited with 1.[0m
 
-travis_fold:start:dpl_0[0Ktravis_time:start:0c468a18[0K$ rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install dpl
-Successfully installed dpl-1.10.14
-Parsing documentation for dpl-1.10.14
-Installing ri documentation for dpl-1.10.14
-Done installing documentation for dpl after 0 seconds
-1 gem installed
-travis_time:end:0c468a18:start=1581335595140396672,finish=1581335596466800336,duration=1326403664,event=after_success[0Ktravis_fold:end:dpl_0[0Ktravis_time:start:0244c69d[0Ktravis_fold:start:dpl.1[33mInstalling deploy dependencies[0m
-Successfully installed dpl-script-1.10.14
-Parsing documentation for dpl-script-1.10.14
-Installing ri documentation for dpl-script-1.10.14
-Done installing documentation for dpl-script after 0 seconds
-1 gem installed
-
-travis_fold:end:dpl.1travis_fold:start:dpl.2[33mPreparing deploy[0m
-
-travis_fold:end:dpl.2travis_fold:start:dpl.3[33mDeploying application[0m
+travis_fold:start:after_failure[0Ktravis_time:start:0ada492c[0K$ python push.py -t of-of_np
 Cloning into '[secure]_st_output'...
 
 ```
 [
-Full job log](https://api.travis-ci.org/v3/job/648350375/log.txt)
+Full job log](https://api.travis-ci.org/v3/job/648938207/log.txt)
