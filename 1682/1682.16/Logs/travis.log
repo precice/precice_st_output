@@ -1,0 +1,741 @@
+travis_fold:start:worker_info[0K[33;1mWorker information[0m
+hostname: 318bd885-5355-4f23-8959-26f02262224e@1.worker-org-7d9f8bbbf5-fctc8.gce-production-3
+version: v6.2.8 https://github.com/travis-ci/worker/tree/6d3048d96b26562be21fa1a8b8144f4c4cecd083
+instance: travis-job-8b98cb7b-8669-4240-a76b-c0939ce9bb4b travis-ci-garnet-trusty-1512502259-986baf0 (via amqp)
+startup: 7.113869333s
+travis_fold:end:worker_info[0Ktravis_time:start:04d5940e[0Ktravis_time:end:04d5940e:start=1581508426576258927,finish=1581508426748749987,duration=172491060,event=no_world_writable_dirs[0Ktravis_time:start:03b05506[0Ktravis_time:end:03b05506:start=1581508426751542368,finish=1581508426754419801,duration=2877433,event=setup_filter[0Ktravis_time:start:1a6f70ba[0Ktravis_time:end:1a6f70ba:start=1581508426758829759,finish=1581508426766996324,duration=8166565,event=agent[0Ktravis_time:start:328e2223[0Ktravis_time:end:328e2223:start=1581508426769694856,finish=1581508426771579620,duration=1884764,event=check_unsupported[0Ktravis_time:start:090706fc[0Ktravis_fold:start:system_info[0K[33;1mBuild system information[0m
+Build language: python
+Build group: stable
+Build dist: trusty
+Build id: 649390027
+Job id: 649390043
+Runtime kernel version: 4.4.0-101-generic
+travis-build version: 08047b878
+[34m[1mBuild image provisioning date and time[0m
+Tue Dec  5 19:58:13 UTC 2017
+[34m[1mOperating System Details[0m
+Distributor ID:	Ubuntu
+Description:	Ubuntu 14.04.5 LTS
+Release:	14.04
+Codename:	trusty
+[34m[1mCookbooks Version[0m
+7c2c6a6 https://github.com/travis-ci/travis-cookbooks/tree/7c2c6a6
+[34m[1mgit version[0m
+git version 2.15.1
+[34m[1mbash version[0m
+GNU bash, version 4.3.11(1)-release (x86_64-pc-linux-gnu)
+[34m[1mgcc version[0m
+gcc (Ubuntu 4.8.4-2ubuntu1~14.04.3) 4.8.4
+Copyright (C) 2013 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+[34m[1mdocker version[0m
+Client:
+ Version:      17.09.0-ce
+ API version:  1.32
+ Go version:   go1.8.3
+ Git commit:   afdb6d4
+ Built:        Tue Sep 26 22:42:38 2017
+ OS/Arch:      linux/amd64
+
+Server:
+ Version:      17.09.0-ce
+ API version:  1.32 (minimum version 1.12)
+ Go version:   go1.8.3
+ Git commit:   afdb6d4
+ Built:        Tue Sep 26 22:41:20 2017
+ OS/Arch:      linux/amd64
+ Experimental: false
+[34m[1mclang version[0m
+clang version 5.0.0 (tags/RELEASE_500/final)
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /usr/local/clang-5.0.0/bin
+[34m[1mjq version[0m
+jq-1.5
+[34m[1mbats version[0m
+Bats 0.4.0
+[34m[1mshellcheck version[0m
+0.4.6
+[34m[1mshfmt version[0m
+v2.0.0
+[34m[1mccache version[0m
+ccache version 3.1.9
+
+Copyright (C) 2002-2007 Andrew Tridgell
+Copyright (C) 2009-2011 Joel Rosdahl
+
+This program is free software; you can redistribute it and/or modify it under
+the terms of the GNU General Public License as published by the Free Software
+Foundation; either version 3 of the License, or (at your option) any later
+version.
+[34m[1mcmake version[0m
+cmake version 3.9.2
+
+CMake suite maintained and supported by Kitware (kitware.com/cmake).
+[34m[1mheroku version[0m
+heroku-cli/6.14.39-addc925 (linux-x64) node-v9.2.0
+[34m[1mimagemagick version[0m
+Version: ImageMagick 6.7.7-10 2017-07-31 Q16 http://www.imagemagick.org
+[34m[1mmd5deep version[0m
+4.2
+[34m[1mmercurial version[0m
+Mercurial Distributed SCM (version 4.2.2)
+(see https://mercurial-scm.org for more information)
+
+Copyright (C) 2005-2017 Matt Mackall and others
+This is free software; see the source for copying conditions. There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+[34m[1mmysql version[0m
+mysql  Ver 14.14 Distrib 5.6.33, for debian-linux-gnu (x86_64) using  EditLine wrapper
+[34m[1mopenssl version[0m
+OpenSSL 1.0.1f 6 Jan 2014
+[34m[1mpacker version[0m
+Packer v1.0.2
+
+Your version of Packer is out of date! The latest version
+is 1.1.2. You can update by downloading from www.packer.io
+[34m[1mpostgresql client version[0m
+psql (PostgreSQL) 9.6.6
+[34m[1mragel version[0m
+Ragel State Machine Compiler version 6.8 Feb 2013
+Copyright (c) 2001-2009 by Adrian Thurston
+[34m[1msubversion version[0m
+svn, version 1.8.8 (r1568071)
+   compiled Aug 10 2017, 17:20:39 on x86_64-pc-linux-gnu
+
+Copyright (C) 2013 The Apache Software Foundation.
+This software consists of contributions made by many people;
+see the NOTICE file for more information.
+Subversion is open source software, see http://subversion.apache.org/
+
+The following repository access (RA) modules are available:
+
+* ra_svn : Module for accessing a repository using the svn network protocol.
+  - with Cyrus SASL authentication
+  - handles 'svn' scheme
+* ra_local : Module for accessing a repository on local disk.
+  - handles 'file' scheme
+* ra_serf : Module for accessing a repository via WebDAV protocol using serf.
+  - using serf 1.3.3
+  - handles 'http' scheme
+  - handles 'https' scheme
+
+[34m[1msudo version[0m
+Sudo version 1.8.9p5
+Configure options: --prefix=/usr -v --with-all-insults --with-pam --with-fqdn --with-logging=syslog --with-logfac=authpriv --with-env-editor --with-editor=/usr/bin/editor --with-timeout=15 --with-password-timeout=0 --with-passprompt=[sudo] password for %p:  --without-lecture --with-tty-tickets --disable-root-mailer --enable-admin-flag --with-sendmail=/usr/sbin/sendmail --with-timedir=/var/lib/sudo --mandir=/usr/share/man --libexecdir=/usr/lib/sudo --with-sssd --with-sssd-lib=/usr/lib/x86_64-linux-gnu --with-selinux
+Sudoers policy plugin version 1.8.9p5
+Sudoers file grammar version 43
+
+Sudoers path: /etc/sudoers
+Authentication methods: 'pam'
+Syslog facility if syslog is being used for logging: authpriv
+Syslog priority to use when user authenticates successfully: notice
+Syslog priority to use when user authenticates unsuccessfully: alert
+Send mail if the user is not in sudoers
+Use a separate timestamp for each user/tty combo
+Lecture user the first time they run sudo
+Root may run sudo
+Allow some information gathering to give useful error messages
+Require fully-qualified hostnames in the sudoers file
+Visudo will honor the EDITOR environment variable
+Set the LOGNAME and USER environment variables
+Length at which to wrap log file lines (0 for no wrap): 80
+Authentication timestamp timeout: 15.0 minutes
+Password prompt timeout: 0.0 minutes
+Number of tries to enter a password: 3
+Umask to use or 0777 to use user's: 022
+Path to mail program: /usr/sbin/sendmail
+Flags for mail program: -t
+Address to send mail to: root
+Subject line for mail messages: *** SECURITY information for %h ***
+Incorrect password message: Sorry, try again.
+Path to authentication timestamp dir: /var/lib/sudo
+Default password prompt: [sudo] password for %p: 
+Default user to run commands as: root
+Value to override user's $PATH with: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin
+Path to the editor for use by visudo: /usr/bin/editor
+When to require a password for 'list' pseudocommand: any
+When to require a password for 'verify' pseudocommand: all
+File descriptors >= 3 will be closed before executing a command
+Environment variables to check for sanity:
+	TZ
+	TERM
+	LINGUAS
+	LC_*
+	LANGUAGE
+	LANG
+	COLORTERM
+Environment variables to remove:
+	RUBYOPT
+	RUBYLIB
+	PYTHONUSERBASE
+	PYTHONINSPECT
+	PYTHONPATH
+	PYTHONHOME
+	TMPPREFIX
+	ZDOTDIR
+	READNULLCMD
+	NULLCMD
+	FPATH
+	PERL5DB
+	PERL5OPT
+	PERL5LIB
+	PERLLIB
+	PERLIO_DEBUG 
+	JAVA_TOOL_OPTIONS
+	SHELLOPTS
+	GLOBIGNORE
+	PS4
+	BASH_ENV
+	ENV
+	TERMCAP
+	TERMPATH
+	TERMINFO_DIRS
+	TERMINFO
+	_RLD*
+	LD_*
+	PATH_LOCALE
+	NLSPATH
+	HOSTALIASES
+	RES_OPTIONS
+	LOCALDOMAIN
+	CDPATH
+	IFS
+Environment variables to preserve:
+	JAVA_HOME
+	TRAVIS
+	CI
+	DEBIAN_FRONTEND
+	XAUTHORIZATION
+	XAUTHORITY
+	PS2
+	PS1
+	PATH
+	LS_COLORS
+	KRB5CCNAME
+	HOSTNAME
+	HOME
+	DISPLAY
+	COLORS
+Locale to use while parsing sudoers: C
+Directory in which to store input/output logs: /var/log/sudo-io
+File in which to store the input/output log: %{seq}
+Add an entry to the utmp/utmpx file when allocating a pty
+PAM service name to use
+PAM service name to use for login shells
+Create a new PAM session for the command to run in
+Maximum I/O log sequence number: 0
+
+Local IP address and netmask pairs:
+	10.240.0.28/255.255.255.255
+	172.17.0.1/255.255.0.0
+
+Sudoers I/O plugin version 1.8.9p5
+[34m[1mgzip version[0m
+gzip 1.6
+Copyright (C) 2007, 2010, 2011 Free Software Foundation, Inc.
+Copyright (C) 1993 Jean-loup Gailly.
+This is free software.  You may redistribute copies of it under the terms of
+the GNU General Public License <http://www.gnu.org/licenses/gpl.html>.
+There is NO WARRANTY, to the extent permitted by law.
+
+Written by Jean-loup Gailly.
+[34m[1mzip version[0m
+Copyright (c) 1990-2008 Info-ZIP - Type 'zip "-L"' for software license.
+This is Zip 3.0 (July 5th 2008), by Info-ZIP.
+Currently maintained by E. Gordon.  Please send bug reports to
+the authors using the web page at www.info-zip.org; see README for details.
+
+Latest sources and executables are at ftp://ftp.info-zip.org/pub/infozip,
+as of above date; see http://www.info-zip.org/ for other sites.
+
+Compiled with gcc 4.8.2 for Unix (Linux ELF) on Oct 21 2013.
+
+Zip special compilation options:
+	USE_EF_UT_TIME       (store Universal Time)
+	BZIP2_SUPPORT        (bzip2 library version 1.0.6, 6-Sept-2010)
+	    bzip2 code and library copyright (c) Julian R Seward
+	    (See the bzip2 license for terms of use)
+	SYMLINK_SUPPORT      (symbolic links supported)
+	LARGE_FILE_SUPPORT   (can read and write large files on file system)
+	ZIP64_SUPPORT        (use Zip64 to store large files in archives)
+	UNICODE_SUPPORT      (store and read UTF-8 Unicode paths)
+	STORE_UNIX_UIDs_GIDs (store UID/GID sizes/values using new extra field)
+	UIDGID_NOT_16BIT     (old Unix 16-bit UID/GID extra field not used)
+	[encryption, version 2.91 of 05 Jan 2007] (modified for Zip 3)
+
+Encryption notice:
+	The encryption code of this program is not copyrighted and is
+	put in the public domain.  It was originally written in Europe
+	and, to the best of our knowledge, can be freely distributed
+	in both source and object forms from any country, including
+	the USA under License Exception TSU of the U.S. Export
+	Administration Regulations (section 740.13(e)) of 6 June 2002.
+
+Zip environment options:
+             ZIP:  [none]
+          ZIPOPT:  [none]
+[34m[1mvim version[0m
+VIM - Vi IMproved 7.4 (2013 Aug 10, compiled Nov 24 2016 16:43:18)
+Included patches: 1-52
+Extra patches: 8.0.0056
+Modified by pkg-vim-maintainers@lists.alioth.debian.org
+Compiled by buildd@
+Huge version without GUI.  Features included (+) or not (-):
++acl             +farsi           +mouse_netterm   +syntax
++arabic          +file_in_path    +mouse_sgr       +tag_binary
++autocmd         +find_in_path    -mouse_sysmouse  +tag_old_static
+-balloon_eval    +float           +mouse_urxvt     -tag_any_white
+-browse          +folding         +mouse_xterm     -tcl
+++builtin_terms  -footer          +multi_byte      +terminfo
++byte_offset     +fork()          +multi_lang      +termresponse
++cindent         +gettext         -mzscheme        +textobjects
+-clientserver    -hangul_input    +netbeans_intg   +title
+-clipboard       +iconv           +path_extra      -toolbar
++cmdline_compl   +insert_expand   -perl            +user_commands
++cmdline_hist    +jumplist        +persistent_undo +vertsplit
++cmdline_info    +keymap          +postscript      +virtualedit
++comments        +langmap         +printer         +visual
++conceal         +libcall         +profile         +visualextra
++cryptv          +linebreak       +python          +viminfo
++cscope          +lispindent      -python3         +vreplace
++cursorbind      +listcmds        +quickfix        +wildignore
++cursorshape     +localmap        +reltime         +wildmenu
++dialog_con      -lua             +rightleft       +windows
++diff            +menu            -ruby            +writebackup
++digraphs        +mksession       +scrollbind      -X11
+-dnd             +modify_fname    +signs           -xfontset
+-ebcdic          +mouse           +smartindent     -xim
++emacs_tags      -mouseshape      -sniff           -xsmp
++eval            +mouse_dec       +startuptime     -xterm_clipboard
++ex_extra        +mouse_gpm       +statusline      -xterm_save
++extra_search    -mouse_jsbterm   -sun_workshop    -xpm
+   system vimrc file: "$VIM/vimrc"
+     user vimrc file: "$HOME/.vimrc"
+ 2nd user vimrc file: "~/.vim/vimrc"
+      user exrc file: "$HOME/.exrc"
+  fall-back for $VIM: "/usr/share/vim"
+Compilation: gcc -c -I. -Iproto -DHAVE_CONFIG_H     -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1      
+Linking: gcc   -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,--as-needed -o vim        -lm -ltinfo -lnsl  -lselinux  -lacl -lattr -lgpm -ldl    -L/usr/lib/python2.7/config-x86_64-linux-gnu -lpython2.7 -lpthread -ldl -lutil -lm -Xlinker -export-dynamic -Wl,-O1 -Wl,-Bsymbolic-functions      
+[34m[1miptables version[0m
+iptables v1.4.21
+[34m[1mcurl version[0m
+curl 7.35.0 (x86_64-pc-linux-gnu) libcurl/7.35.0 OpenSSL/1.0.1f zlib/1.2.8 libidn/1.28 librtmp/2.3
+[34m[1mwget version[0m
+GNU Wget 1.15 built on linux-gnu.
+[34m[1mrsync version[0m
+rsync  version 3.1.0  protocol version 31
+[34m[1mgimme version[0m
+v1.2.0
+[34m[1mnvm version[0m
+0.33.6
+[34m[1mperlbrew version[0m
+/home/travis/perl5/perlbrew/bin/perlbrew  - App::perlbrew/0.80
+[34m[1mphpenv version[0m
+rbenv 1.1.1-25-g6aa70b6
+[34m[1mrvm version[0m
+rvm 1.29.3 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
+[34m[1mdefault ruby version[0m
+ruby 2.4.1p111 (2017-03-22 revision 58053) [x86_64-linux]
+[34m[1mCouchDB version[0m
+couchdb 1.6.1
+[34m[1mElasticSearch version[0m
+5.5.0
+[34m[1mInstalled Firefox version[0m
+firefox 56.0.2
+[34m[1mMongoDB version[0m
+MongoDB 3.4.10
+[34m[1mPhantomJS version[0m
+2.1.1
+[34m[1mPre-installed PostgreSQL versions[0m
+9.2.24
+9.3.20
+9.4.15
+9.5.10
+9.6.6
+[34m[1mRabbitMQ Version[0m
+3.6.14
+[34m[1mRedis version[0m
+redis-server 4.0.6
+[34m[1mriak version[0m
+2.2.3
+[34m[1mPre-installed Go versions[0m
+1.7.4
+[34m[1mant version[0m
+Apache Ant(TM) version 1.9.3 compiled on April 8 2014
+[34m[1mmvn version[0m
+Apache Maven 3.5.2 (138edd61fd100ec658bfa2d307c43b76940a5d7d; 2017-10-18T07:58:13Z)
+Maven home: /usr/local/maven-3.5.2
+Java version: 1.8.0_151, vendor: Oracle Corporation
+Java home: /usr/lib/jvm/java-8-oracle/jre
+Default locale: en_US, platform encoding: UTF-8
+OS name: "linux", version: "4.4.0-98-generic", arch: "amd64", family: "unix"
+[34m[1mgradle version[0m
+
+------------------------------------------------------------
+Gradle 4.0.1
+------------------------------------------------------------
+
+Build time:   2017-07-07 14:02:41 UTC
+Revision:     38e5dc0f772daecca1d2681885d3d85414eb6826
+
+Groovy:       2.4.11
+Ant:          Apache Ant(TM) version 1.9.6 compiled on June 29 2015
+JVM:          1.8.0_151 (Oracle Corporation 25.151-b12)
+OS:           Linux 4.4.0-98-generic amd64
+
+[34m[1mlein version[0m
+Leiningen 2.8.1 on Java 1.8.0_151 Java HotSpot(TM) 64-Bit Server VM
+[34m[1mPre-installed Node.js versions[0m
+v4.8.6
+v6.12.0
+v6.12.1
+v8.9
+v8.9.1
+[34m[1mphpenv versions[0m
+  system
+  5.6
+* 5.6.32 (set by /home/travis/.phpenv/version)
+  7.0
+  7.0.25
+  7.1
+  7.1.11
+  hhvm
+  hhvm-stable
+[34m[1mcomposer --version[0m
+Composer version 1.5.2 2017-09-11 16:59:25
+[34m[1mPre-installed Ruby versions[0m
+ruby-2.2.7
+ruby-2.3.4
+ruby-2.4.1
+travis_fold:end:system_info[0K
+travis_time:end:090706fc:start=1581508426774361294,finish=1581508426780787968,duration=6426674,event=show_system_info[0Ktravis_time:start:060c7ec7[0Ktravis_time:end:060c7ec7:start=1581508426784101172,finish=1581508426808679862,duration=24578690,event=rm_riak_source[0Ktravis_time:start:19749b95[0Ktravis_time:end:19749b95:start=1581508426813606515,finish=1581508426819512222,duration=5905707,event=fix_rwky_redis[0Ktravis_time:start:0ab9e0b0[0Ktravis_time:end:0ab9e0b0:start=1581508426823328376,finish=1581508427226006763,duration=402678387,event=wait_for_network[0Ktravis_time:start:2e1a3ef0[0Ktravis_time:end:2e1a3ef0:start=1581508427230822207,finish=1581508428258135234,duration=1027313027,event=update_apt_keys[0Ktravis_time:start:1ecec787[0Ktravis_time:end:1ecec787:start=1581508428262757963,finish=1581508429221729061,duration=958971098,event=fix_hhvm_source[0Ktravis_time:start:1fb158ea[0Ktravis_time:end:1fb158ea:start=1581508429226778447,finish=1581508429236036338,duration=9257891,event=update_mongo_arch[0Ktravis_time:start:20b51d0a[0Ktravis_time:end:20b51d0a:start=1581508429240850373,finish=1581508429277853184,duration=37002811,event=fix_sudo_enabled_trusty[0Ktravis_time:start:046ec1d7[0Ktravis_time:end:046ec1d7:start=1581508429282320649,finish=1581508429284772920,duration=2452271,event=update_glibc[0Ktravis_time:start:0008ba10[0Ktravis_time:end:0008ba10:start=1581508429289544901,finish=1581508429298325576,duration=8780675,event=clean_up_path[0Ktravis_time:start:02532ff6[0Ktravis_time:end:02532ff6:start=1581508429302680380,finish=1581508429310180905,duration=7500525,event=fix_resolv_conf[0Ktravis_time:start:03b1e5f6[0Ktravis_time:end:03b1e5f6:start=1581508429314165867,finish=1581508429325019706,duration=10853839,event=fix_etc_hosts[0Ktravis_time:start:02b76e7d[0Ktravis_time:end:02b76e7d:start=1581508429329897964,finish=1581508429339454206,duration=9556242,event=fix_mvn_settings_xml[0Ktravis_time:start:2675c915[0Ktravis_time:end:2675c915:start=1581508429344435169,finish=1581508429355232998,duration=10797829,event=no_ipv6_localhost[0Ktravis_time:start:1accfe34[0Ktravis_time:end:1accfe34:start=1581508429359512980,finish=1581508429363516405,duration=4003425,event=fix_etc_mavenrc[0Ktravis_time:start:0326d34b[0Ktravis_time:end:0326d34b:start=1581508429368800879,finish=1581508429373633118,duration=4832239,event=fix_wwdr_certificate[0Ktravis_time:start:11818b3a[0Ktravis_time:end:11818b3a:start=1581508429377626306,finish=1581508429405617175,duration=27990869,event=put_localhost_first[0Ktravis_time:start:1183ac46[0Ktravis_time:end:1183ac46:start=1581508429411207448,finish=1581508429414434656,duration=3227208,event=home_paths[0Ktravis_time:start:0a12ddcd[0Ktravis_time:end:0a12ddcd:start=1581508429418445130,finish=1581508429433293001,duration=14847871,event=disable_initramfs[0Ktravis_time:start:1b689bde[0Ktravis_time:end:1b689bde:start=1581508429437580429,finish=1581508429649482838,duration=211902409,event=disable_ssh_roaming[0Ktravis_time:start:0cd21dae[0Ktravis_time:end:0cd21dae:start=1581508429653687089,finish=1581508429656088966,duration=2401877,event=debug_tools[0Ktravis_time:start:0a4b9236[0Ktravis_time:end:0a4b9236:start=1581508429660008366,finish=1581508429663639076,duration=3630710,event=uninstall_oclint[0Ktravis_time:start:1eefca48[0Ktravis_time:end:1eefca48:start=1581508429669512384,finish=1581508429672901149,duration=3388765,event=rvm_use[0Ktravis_time:start:0798f47a[0Ktravis_time:end:0798f47a:start=1581508429676537783,finish=1581508429683852701,duration=7314918,event=rm_etc_boto_cfg[0Ktravis_time:start:0424d39a[0Ktravis_time:end:0424d39a:start=1581508429690088344,finish=1581508429692836485,duration=2748141,event=rm_oraclejdk8_symlink[0Ktravis_time:start:126e1678[0Ktravis_time:end:126e1678:start=1581508429696979062,finish=1581508429745783195,duration=48804133,event=enable_i386[0Ktravis_time:start:00036a5b[0Ktravis_time:end:00036a5b:start=1581508429750352541,finish=1581508429755361024,duration=5008483,event=update_rubygems[0Ktravis_time:start:0154877a[0Ktravis_time:end:0154877a:start=1581508429759341061,finish=1581508430654140362,duration=894799301,event=ensure_path_components[0Ktravis_time:start:01ad8b90[0Ktravis_time:end:01ad8b90:start=1581508430658154232,finish=1581508430660884246,duration=2730014,event=redefine_curl[0Ktravis_time:start:2e0ca864[0Ktravis_time:end:2e0ca864:start=1581508430664868445,finish=1581508430714080090,duration=49211645,event=nonblock_pipe[0Ktravis_time:start:10543197[0Ktravis_time:end:10543197:start=1581508430717557525,finish=1581508436750465020,duration=6032907495,event=apt_get_update[0Ktravis_time:start:127dd09b[0Ktravis_time:end:127dd09b:start=1581508436755180432,finish=1581508436758254098,duration=3073666,event=deprecate_xcode_64[0Ktravis_time:start:03aa8130[0Ktravis_time:end:03aa8130:start=1581508436762844319,finish=1581508440535377836,duration=3772533517,event=update_heroku[0Ktravis_time:start:1d6ad935[0Ktravis_time:end:1d6ad935:start=1581508440539612563,finish=1581508440543167065,duration=3554502,event=shell_session_update[0Ktravis_time:start:12deab27[0Ktravis_fold:start:docker_mtu[0Kdocker stop/waiting
+docker start/running, process 3887
+travis_fold:end:docker_mtu[0Ktravis_time:end:12deab27:start=1581508440547152456,finish=1581508441737443543,duration=1190291087,event=set_docker_mtu[0Ktravis_time:start:1f83879f[0Ktravis_fold:start:resolvconf[0Kresolvconf stop/waiting
+resolvconf start/running
+travis_fold:end:resolvconf[0Ktravis_time:end:1f83879f:start=1581508441741808575,finish=1581508441804186721,duration=62378146,event=resolvconf[0Ktravis_time:start:017b742d[0Ktravis_time:end:017b742d:start=1581508441808507981,finish=1581508441890702377,duration=82194396,event=maven_central_mirror[0Ktravis_time:start:003b6e24[0Ktravis_time:end:003b6e24:start=1581508441895025888,finish=1581508441959203039,duration=64177151,event=maven_https[0K[33;1m3.5 is not installed; attempting download[0m
+[33;1mDownloading archive: https://storage.googleapis.com/travis-ci-language-archives/python/binaries/ubuntu/14.04/x86_64/python-3.5.tar.bz2[0m
+travis_time:start:167948bf[0K$ curl -sSf --retry 5 -o python-3.5.tar.bz2 ${archive_url}
+travis_time:end:167948bf:start=1581508442035527725,finish=1581508442407332962,duration=371805237,event=configure[0Ktravis_time:start:07d4666f[0K$ sudo tar xjf python-3.5.tar.bz2 --directory /
+travis_time:end:07d4666f:start=1581508442412492010,finish=1581508451865308562,duration=9452816552,event=configure[0Ktravis_time:start:0bcd26a6[0Ktravis_fold:start:services[0Ktravis_time:start:03f673c8[0K$ sudo service docker start
+start: Job is already running: docker
+travis_time:end:03f673c8:start=1581508451889271868,finish=1581508451902486962,duration=13215094,event=prepare[0Ktravis_fold:end:services[0Ktravis_time:end:03f673c8:start=1581508451889271868,finish=1581508454908105756,duration=3018833888,event=services[0Ktravis_time:start:12db599f[0Ktravis_time:end:12db599f:start=1581508454912742423,finish=1581508454915388251,duration=2645828,event=fix_ps4[0Ktravis_time:start:091caae3[0K
+travis_fold:start:git.checkout[0Ktravis_time:start:119ab0ad[0K$ git clone --depth=50 https://github.com/[secure]/systemtests.git [secure]/systemtests
+Cloning into '[secure]/systemtests'...
+travis_time:end:119ab0ad:start=1581508454923613021,finish=1581508461456549909,duration=6532936888,event=checkout[0K$ cd [secure]/systemtests
+travis_time:start:0031c3d6[0K$ git fetch origin +refs/pull/147/merge:
+From https://github.com/[secure]/systemtests
+ * branch            refs/pull/147/merge -> FETCH_HEAD
+travis_time:end:0031c3d6:start=1581508461461793000,finish=1581508461951613976,duration=489820976,event=checkout[0K$ git checkout -qf FETCH_HEAD
+travis_fold:end:git.checkout[0K
+travis_time:end:0031c3d6:start=1581508461461793000,finish=1581508462303081257,duration=841288257,event=checkout[0Ktravis_time:start:10be08cb[0K
+[33;1mSetting environment variables from repository settings[0m
+$ export DOCKER_PASSWORD=[secure]
+$ export DOCKER_USERNAME=[secure]
+$ export TRAVIS_ACCESS_TOKEN=[secure]
+$ export PRECICE_BOT_EMAIL=[secure]
+$ export GH_TOKEN=[secure]
+
+travis_time:end:10be08cb:start=1581508462308637016,finish=1581508462320071773,duration=11434757,event=env[0Ktravis_time:start:17843760[0K$ source ~/virtualenv/python3.5/bin/activate
+travis_time:end:17843760:start=1581508462325191248,finish=1581508462334417677,duration=9226429,event=[0K$ python --version
+Python 3.5.6
+$ pip --version
+pip 18.0 from /home/travis/virtualenv/python3.5.6/lib/python3.5/site-packages/pip (python 3.5)
+travis_fold:start:install[0Ktravis_time:start:2c032d6e[0K$ pip install Jinja2
+Collecting Jinja2
+  Downloading https://files.pythonhosted.org/packages/27/24/4f35961e5c669e96f6559760042a55b9bcfcdb82b9bdb3c8753dbe042e35/Jinja2-2.11.1-py2.py3-none-any.whl (126kB)
+Collecting MarkupSafe>=0.23 (from Jinja2)
+  Downloading https://files.pythonhosted.org/packages/6e/57/d40124076756c19ff2269678de7ae25a14ebbb3f6314eb5ce9477f191350/MarkupSafe-1.1.1-cp35-cp35m-manylinux1_x86_64.whl
+Installing collected packages: MarkupSafe, Jinja2
+Successfully installed Jinja2-2.11.1 MarkupSafe-1.1.1
+travis_time:end:2c032d6e:start=1581508462647274338,finish=1581508463454866023,duration=807591685,event=install[0Ktravis_fold:end:install[0Ktravis_time:start:0432ac9e[0K$ python system_testing.py -s of-of_np
+networks:
+  [secure]comm: {}
+services:
+  openfoam-adapter-fluid:
+    command: '/bin/bash -c "source /opt/openfoam5/etc/bashrc && cd /home/[secure]/openfoam-adapter/tutorials/CHT/flow-over-plate/buoyantPimpleFoam-laplacianFoam_nearest-projection
+      && sed -i ''s|<m2n:sockets from=\"Fluid\" to=\"Solid\"/>|<m2n:sockets from=\"Fluid\"
+      to=\"Solid\" exchange-directory=\"/home/[secure]/Data/Exchange/\" network=\"eth0\"/>|g''
+      [secure]-config.xml && ./runFluid && cp -r Fluid/ /home/[secure]/Data/Output/"
+
+      '
+    container_name: openfoam-adapter-fluid
+    image: [secure]/openfoam-adapter-ubuntu1604.home-develop:latest
+    networks:
+      [secure]comm: null
+    volumes:
+    - exchange:/home/[secure]/Data/Exchange:rw
+    - output:/home/[secure]/Data/Output:rw
+  openfoam-adapter-solid:
+    command: '/bin/bash -c "source /opt/openfoam5/etc/bashrc &&  cd /home/[secure]/openfoam-adapter/tutorials/CHT/flow-over-plate/buoyantPimpleFoam-laplacianFoam_nearest-projection
+      && sed -i ''s|<m2n:sockets from=\"Fluid\" to=\"Solid\"/>|<m2n:sockets from=\"Fluid\"
+      to=\"Solid\" exchange-directory=\"/home/[secure]/Data/Exchange/\" network=\"eth0\"/>|g''
+      [secure]-config.xml && ./runSolid && cp -r Solid/ /home/[secure]/Data/Output/"
+
+      '
+    container_name: openfoam-adapter-solid
+    image: [secure]/openfoam-adapter-ubuntu1604.home-develop:latest
+    networks:
+      [secure]comm: null
+    volumes:
+    - exchange:/home/[secure]/Data/Exchange:rw
+    - output:/home/[secure]/Data/Output:rw
+  tutorial-data:
+    container_name: tutorial-data
+    image: alpine
+    volumes:
+    - output:/Output:rw
+version: '3.0'
+volumes:
+  exchange: {}
+  output: {}
+
+Creating network "testcomposeofofnp_default" with the default driver
+Creating network "testcomposeofofnp_[secure]comm" with the default driver
+Creating volume "testcomposeofofnp_output" with default driver
+Creating volume "testcomposeofofnp_exchange" with default driver
+Pulling tutorial-data (alpine:latest)...
+latest: Pulling from library/alpine
+Digest: sha256:ab00606a42621fb68f2ed6ad3c88be54397f981a7b70a79db3d1172b11c4367d
+Status: Downloaded newer image for alpine:latest
+Pulling openfoam-adapter-fluid ([secure]/openfoam-adapter-ubuntu1604.home-develop:latest)...
+latest: Pulling from [secure]/openfoam-adapter-ubuntu1604.home-develop
+Digest: sha256:4ccdae595654a5919207d9c67c94894f157d9f375565da7db7e7aab3595bab8d
+Status: Downloaded newer image for [secure]/openfoam-adapter-ubuntu1604.home-develop:latest
+Creating openfoam-adapter-fluid ... 
+Creating openfoam-adapter-solid ... 
+Creating tutorial-data ... 
+Creating openfoam-adapter-fluid
+Creating tutorial-data
+Creating openfoam-adapter-solid
+[1A[2KCreating openfoam-adapter-fluid ... [32mdone[0m[1B[1A[2KCreating tutorial-data ... [32mdone[0m[1B[1A[2KCreating openfoam-adapter-solid ... [32mdone[0m[1BRunning the simulation...Be patient
+All adapters finished!
+Text difference in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput/Fluid/0.2/p and /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output/Fluid/0.2/p
+  > |  \    /   O peration     | Version:  4.1                   |	|  \    /   O peration     | Version:  5.x                  
+awk: cmd. line:6: (FILENAME=- FNR=1674) fatal: division by zero attempted
+Text difference in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput/Fluid/0.2/phi and /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output/Fluid/0.2/phi
+  > |  \    /   O peration     | Version:  4.1                   |	|  \    /   O peration     | Version:  5.x                  
+Text difference in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput/Fluid/0.2/p_rgh and /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output/Fluid/0.2/p_rgh
+  > |  \    /   O peration     | Version:  4.1                   |	|  \    /   O peration     | Version:  5.x                  
+Numerical difference in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput/Fluid/0.2/T and /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output/Fluid/0.2/T
+  > Average: 0.0952381 ; Maximum: 1 [0m
+Text difference in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput/Fluid/0.2/T and /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output/Fluid/0.2/T
+  > |  \    /   O peration     | Version:  4.1                   |	|  \    /   O peration     | Version:  5.x                  
+awk: cmd. line:6: (FILENAME=- FNR=1) fatal: division by zero attempted
+Text difference in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput/Fluid/0.2/U and /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output/Fluid/0.2/U
+  > |  \    /   O peration     | Version:  4.1                   |	|  \    /   O peration     | Version:  5.x                  
+Text difference in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput/Fluid/0.2/uniform/time and /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output/Fluid/0.2/uniform/time
+  > |  \    /   O peration     | Version:  4.1                   |	|  \    /   O peration     | Version:  5.x                  
+Text difference in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput/Fluid/0.4/p and /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output/Fluid/0.4/p
+  > |  \    /   O peration     | Version:  4.1                   |	|  \    /   O peration     | Version:  5.x                  
+awk: cmd. line:6: (FILENAME=- FNR=1772) fatal: division by zero attempted
+Text difference in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput/Fluid/0.4/phi and /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output/Fluid/0.4/phi
+  > |  \    /   O peration     | Version:  4.1                   |	|  \    /   O peration     | Version:  5.x                  
+Text difference in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput/Fluid/0.4/p_rgh and /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output/Fluid/0.4/p_rgh
+  > |  \    /   O peration     | Version:  4.1                   |	|  \    /   O peration     | Version:  5.x                  
+Numerical difference in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput/Fluid/0.4/T and /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output/Fluid/0.4/T
+  > Average: 0.0606061 ; Maximum: 1 [0m
+Text difference in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput/Fluid/0.4/T and /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output/Fluid/0.4/T
+  > |  \    /   O peration     | Version:  4.1                   |	|  \    /   O peration     | Version:  5.x                  
+awk: cmd. line:6: (FILENAME=- FNR=1) fatal: division by zero attempted
+Text difference in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput/Fluid/0.4/U and /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output/Fluid/0.4/U
+  > |  \    /   O peration     | Version:  4.1                   |	|  \    /   O peration     | Version:  5.x                  
+Text difference in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput/Fluid/0.4/uniform/time and /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output/Fluid/0.4/uniform/time
+  > |  \    /   O peration     | Version:  4.1                   |	|  \    /   O peration     | Version:  5.x                  
+Text difference in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput/Fluid/0.6/p and /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output/Fluid/0.6/p
+  > |  \    /   O peration     | Version:  4.1                   |	|  \    /   O peration     | Version:  5.x                  
+awk: cmd. line:6: (FILENAME=- FNR=1781) fatal: division by zero attempted
+Text difference in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput/Fluid/0.6/phi and /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output/Fluid/0.6/phi
+  > |  \    /   O peration     | Version:  4.1                   |	|  \    /   O peration     | Version:  5.x                  
+Text difference in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput/Fluid/0.6/p_rgh and /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output/Fluid/0.6/p_rgh
+  > |  \    /   O peration     | Version:  4.1                   |	|  \    /   O peration     | Version:  5.x                  
+Numerical difference in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput/Fluid/0.6/T and /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output/Fluid/0.6/T
+  > Average: 0.0444444 ; Maximum: 1 [0m
+Text difference in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput/Fluid/0.6/T and /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output/Fluid/0.6/T
+  > |  \    /   O peration     | Version:  4.1                   |	|  \    /   O peration     | Version:  5.x                  
+awk: cmd. line:6: (FILENAME=- FNR=1) fatal: division by zero attempted
+Text difference in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput/Fluid/0.6/U and /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output/Fluid/0.6/U
+  > |  \    /   O peration     | Version:  4.1                   |	|  \    /   O peration     | Version:  5.x                  
+Text difference in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput/Fluid/0.6/uniform/time and /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output/Fluid/0.6/uniform/time
+  > |  \    /   O peration     | Version:  4.1                   |	|  \    /   O peration     | Version:  5.x                  
+Text difference in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput/Fluid/0.8/p and /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output/Fluid/0.8/p
+  > |  \    /   O peration     | Version:  4.1                   |	|  \    /   O peration     | Version:  5.x                  
+awk: cmd. line:6: (FILENAME=- FNR=3305) fatal: division by zero attempted
+Text difference in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput/Fluid/0.8/phi and /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output/Fluid/0.8/phi
+  > |  \    /   O peration     | Version:  4.1                   |	|  \    /   O peration     | Version:  5.x                  
+Text difference in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput/Fluid/0.8/p_rgh and /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output/Fluid/0.8/p_rgh
+  > |  \    /   O peration     | Version:  4.1                   |	|  \    /   O peration     | Version:  5.x                  
+Numerical difference in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput/Fluid/0.8/T and /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output/Fluid/0.8/T
+  > Average: 0.0392157 ; Maximum: 1 [0m
+Text difference in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput/Fluid/0.8/T and /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output/Fluid/0.8/T
+  > |  \    /   O peration     | Version:  4.1                   |	|  \    /   O peration     | Version:  5.x                  
+awk: cmd. line:6: (FILENAME=- FNR=1) fatal: division by zero attempted
+Text difference in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput/Fluid/0.8/U and /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output/Fluid/0.8/U
+  > |  \    /   O peration     | Version:  4.1                   |	|  \    /   O peration     | Version:  5.x                  
+Text difference in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput/Fluid/0.8/uniform/time and /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output/Fluid/0.8/uniform/time
+  > |  \    /   O peration     | Version:  4.1                   |	|  \    /   O peration     | Version:  5.x                  
+Text difference in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput/Fluid/1/p and /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output/Fluid/1/p
+  > |  \    /   O peration     | Version:  4.1                   |	|  \    /   O peration     | Version:  5.x                  
+awk: cmd. line:6: (FILENAME=- FNR=1778) fatal: division by zero attempted
+Text difference in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput/Fluid/1/phi and /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output/Fluid/1/phi
+  > |  \    /   O peration     | Version:  4.1                   |	|  \    /   O peration     | Version:  5.x                  
+Text difference in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput/Fluid/1/p_rgh and /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output/Fluid/1/p_rgh
+  > |  \    /   O peration     | Version:  4.1                   |	|  \    /   O peration     | Version:  5.x                  
+Numerical difference in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput/Fluid/1/T and /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output/Fluid/1/T
+  > Average: 0.0444444 ; Maximum: 1 [0m
+Text difference in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput/Fluid/1/T and /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output/Fluid/1/T
+  > |  \    /   O peration     | Version:  4.1                   |	|  \    /   O peration     | Version:  5.x                  
+awk: cmd. line:6: (FILENAME=- FNR=1) fatal: division by zero attempted
+Text difference in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput/Fluid/1/U and /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output/Fluid/1/U
+  > |  \    /   O peration     | Version:  4.1                   |	|  \    /   O peration     | Version:  5.x                  
+Text difference in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput/Fluid/1/uniform/time and /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output/Fluid/1/uniform/time
+  > |  \    /   O peration     | Version:  4.1                   |	|  \    /   O peration     | Version:  5.x                  
+Text difference in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput/Fluid/constant/polyMesh/boundary and /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output/Fluid/constant/polyMesh/boundary
+  > |  \    /   O peration     | Version:  4.1                   |	|  \    /   O peration     | Version:  5.x                  
+Text difference in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput/Fluid/constant/polyMesh/faces and /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output/Fluid/constant/polyMesh/faces
+  > |  \    /   O peration     | Version:  4.1                   |	|  \    /   O peration     | Version:  5.x                  
+Text difference in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput/Fluid/constant/polyMesh/neighbour and /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output/Fluid/constant/polyMesh/neighbour
+  > |  \    /   O peration     | Version:  4.1                   |	|  \    /   O peration     | Version:  5.x                  
+Text difference in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput/Fluid/constant/polyMesh/owner and /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output/Fluid/constant/polyMesh/owner
+  > |  \    /   O peration     | Version:  4.1                   |	|  \    /   O peration     | Version:  5.x                  
+Text difference in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput/Fluid/constant/polyMesh/points and /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output/Fluid/constant/polyMesh/points
+  > |  \    /   O peration     | Version:  4.1                   |	|  \    /   O peration     | Version:  5.x                  
+awk: cmd. line:6: (FILENAME=- FNR=1) fatal: division by zero attempted
+Numerical difference in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput/Solid/0.2/gradTx and /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output/Solid/0.2/gradTx
+  > Average: 0.00152905 ; Maximum: 1 [0m
+Text difference in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput/Solid/0.2/gradTx and /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output/Solid/0.2/gradTx
+  > |  \    /   O peration     | Version:  4.1                   |	|  \    /   O peration     | Version:  5.x                  
+Numerical difference in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput/Solid/0.2/gradTy and /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output/Solid/0.2/gradTy
+  > Average: 0.047619 ; Maximum: 1 [0m
+Text difference in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput/Solid/0.2/gradTy and /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output/Solid/0.2/gradTy
+  > |  \    /   O peration     | Version:  4.1                   |	|  \    /   O peration     | Version:  5.x                  
+Numerical difference in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput/Solid/0.2/gradTz and /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output/Solid/0.2/gradTz
+  > Average: 0.047619 ; Maximum: 1 [0m
+Text difference in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput/Solid/0.2/gradTz and /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output/Solid/0.2/gradTz
+  > |  \    /   O peration     | Version:  4.1                   |	|  \    /   O peration     | Version:  5.x                  
+Numerical difference in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput/Solid/0.2/T and /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output/Solid/0.2/T
+  > Average: 0.666667 ; Maximum: 1 [0m
+Text difference in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput/Solid/0.2/T and /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output/Solid/0.2/T
+  > |  \    /   O peration     | Version:  4.1                   |	|  \    /   O peration     | Version:  5.x                  
+Numerical difference in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput/Solid/0.2/uniform/time and /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output/Solid/0.2/uniform/time
+  > Average: 0.666667 ; Maximum: 1 [0m
+Text difference in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput/Solid/0.2/uniform/time and /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output/Solid/0.2/uniform/time
+  > |  \    /   O peration     | Version:  4.1                   |	|  \    /   O peration     | Version:  5.x                  
+Numerical difference in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput/Solid/0.4/gradTx and /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output/Solid/0.4/gradTx
+  > Average: 0.00143062 ; Maximum: 1 [0m
+Text difference in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput/Solid/0.4/gradTx and /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output/Solid/0.4/gradTx
+  > |  \    /   O peration     | Version:  4.1                   |	|  \    /   O peration     | Version:  5.x                  
+Numerical difference in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput/Solid/0.4/gradTy and /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output/Solid/0.4/gradTy
+  > Average: 0.037037 ; Maximum: 1 [0m
+Text difference in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput/Solid/0.4/gradTy and /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output/Solid/0.4/gradTy
+  > |  \    /   O peration     | Version:  4.1                   |	|  \    /   O peration     | Version:  5.x                  
+Numerical difference in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput/Solid/0.4/gradTz and /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output/Solid/0.4/gradTz
+  > Average: 0.037037 ; Maximum: 1 [0m
+Text difference in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput/Solid/0.4/gradTz and /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output/Solid/0.4/gradTz
+  > |  \    /   O peration     | Version:  4.1                   |	|  \    /   O peration     | Version:  5.x                  
+Numerical difference in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput/Solid/0.4/T and /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output/Solid/0.4/T
+  > Average: 0.037037 ; Maximum: 1 [0m
+Text difference in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput/Solid/0.4/T and /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output/Solid/0.4/T
+  > |  \    /   O peration     | Version:  4.1                   |	|  \    /   O peration     | Version:  5.x                  
+Numerical difference in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput/Solid/0.4/uniform/time and /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output/Solid/0.4/uniform/time
+  > Average: 0.037037 ; Maximum: 1 [0m
+Text difference in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput/Solid/0.4/uniform/time and /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output/Solid/0.4/uniform/time
+  > |  \    /   O peration     | Version:  4.1                   |	|  \    /   O peration     | Version:  5.x                  
+Numerical difference in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput/Solid/0.6/gradTx and /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output/Solid/0.6/gradTx
+  > Average: 0.00163399 ; Maximum: 1 [0m
+Text difference in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput/Solid/0.6/gradTx and /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output/Solid/0.6/gradTx
+  > |  \    /   O peration     | Version:  4.1                   |	|  \    /   O peration     | Version:  5.x                  
+Numerical difference in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput/Solid/0.6/gradTy and /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output/Solid/0.6/gradTy
+  > Average: 0.020202 ; Maximum: 1 [0m
+Text difference in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput/Solid/0.6/gradTy and /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output/Solid/0.6/gradTy
+  > |  \    /   O peration     | Version:  4.1                   |	|  \    /   O peration     | Version:  5.x                  
+Numerical difference in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput/Solid/0.6/gradTz and /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output/Solid/0.6/gradTz
+  > Average: 0.020202 ; Maximum: 1 [0m
+Text difference in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput/Solid/0.6/gradTz and /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output/Solid/0.6/gradTz
+  > |  \    /   O peration     | Version:  4.1                   |	|  \    /   O peration     | Version:  5.x                  
+Numerical difference in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput/Solid/0.6/T and /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output/Solid/0.6/T
+  > Average: 0.666667 ; Maximum: 1 [0m
+Text difference in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput/Solid/0.6/T and /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output/Solid/0.6/T
+  > |  \    /   O peration     | Version:  4.1                   |	|  \    /   O peration     | Version:  5.x                  
+Numerical difference in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput/Solid/0.6/uniform/time and /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output/Solid/0.6/uniform/time
+  > Average: 0.666667 ; Maximum: 1 [0m
+Text difference in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput/Solid/0.6/uniform/time and /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output/Solid/0.6/uniform/time
+  > |  \    /   O peration     | Version:  4.1                   |	|  \    /   O peration     | Version:  5.x                  
+Numerical difference in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput/Solid/0.8/gradTx and /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output/Solid/0.8/gradTx
+  > Average: 0.00147167 ; Maximum: 1 [0m
+Text difference in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput/Solid/0.8/gradTx and /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output/Solid/0.8/gradTx
+  > |  \    /   O peration     | Version:  4.1                   |	|  \    /   O peration     | Version:  5.x                  
+Numerical difference in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput/Solid/0.8/gradTy and /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output/Solid/0.8/gradTy
+  > Average: 0.0333333 ; Maximum: 1 [0m
+Text difference in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput/Solid/0.8/gradTy and /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output/Solid/0.8/gradTy
+  > |  \    /   O peration     | Version:  4.1                   |	|  \    /   O peration     | Version:  5.x                  
+Numerical difference in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput/Solid/0.8/gradTz and /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output/Solid/0.8/gradTz
+  > Average: 0.0333333 ; Maximum: 1 [0m
+Text difference in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput/Solid/0.8/gradTz and /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output/Solid/0.8/gradTz
+  > |  \    /   O peration     | Version:  4.1                   |	|  \    /   O peration     | Version:  5.x                  
+Numerical difference in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput/Solid/0.8/T and /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output/Solid/0.8/T
+  > Average: 0.0333333 ; Maximum: 1 [0m
+Text difference in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput/Solid/0.8/T and /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output/Solid/0.8/T
+  > |  \    /   O peration     | Version:  4.1                   |	|  \    /   O peration     | Version:  5.x                  
+Numerical difference in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput/Solid/0.8/uniform/time and /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output/Solid/0.8/uniform/time
+  > Average: 0.0333333 ; Maximum: 1 [0m
+Text difference in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput/Solid/0.8/uniform/time and /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output/Solid/0.8/uniform/time
+  > |  \    /   O peration     | Version:  4.1                   |	|  \    /   O peration     | Version:  5.x                  
+Numerical difference in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput/Solid/1/gradTx and /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output/Solid/1/gradTx
+  > Average: 0.00149813 ; Maximum: 1 [0m
+Text difference in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput/Solid/1/gradTx and /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output/Solid/1/gradTx
+  > |  \    /   O peration     | Version:  4.1                   |	|  \    /   O peration     | Version:  5.x                  
+Numerical difference in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput/Solid/1/gradTy and /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output/Solid/1/gradTy
+  > Average: 0.0333333 ; Maximum: 1 [0m
+Text difference in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput/Solid/1/gradTy and /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output/Solid/1/gradTy
+  > |  \    /   O peration     | Version:  4.1                   |	|  \    /   O peration     | Version:  5.x                  
+Numerical difference in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput/Solid/1/gradTz and /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output/Solid/1/gradTz
+  > Average: 0.0333333 ; Maximum: 1 [0m
+Text difference in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput/Solid/1/gradTz and /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output/Solid/1/gradTz
+  > |  \    /   O peration     | Version:  4.1                   |	|  \    /   O peration     | Version:  5.x                  
+Numerical difference in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput/Solid/1/T and /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output/Solid/1/T
+  > Average: 0.0333333 ; Maximum: 1 [0m
+Text difference in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput/Solid/1/T and /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output/Solid/1/T
+  > |  \    /   O peration     | Version:  4.1                   |	|  \    /   O peration     | Version:  5.x                  
+Numerical difference in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput/Solid/1/uniform/time and /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output/Solid/1/uniform/time
+  > Average: 0.0333333 ; Maximum: 1 [0m
+Text difference in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput/Solid/1/uniform/time and /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output/Solid/1/uniform/time
+  > |  \    /   O peration     | Version:  4.1                   |	|  \    /   O peration     | Version:  5.x                  
+Numerical difference in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput/Solid/constant/polyMesh/boundary and /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output/Solid/constant/polyMesh/boundary
+  > Average: 0.0333333 ; Maximum: 1 [0m
+Text difference in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput/Solid/constant/polyMesh/boundary and /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output/Solid/constant/polyMesh/boundary
+  > |  \    /   O peration     | Version:  4.1                   |	|  \    /   O peration     | Version:  5.x                  
+Numerical difference in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput/Solid/constant/polyMesh/faces and /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output/Solid/constant/polyMesh/faces
+  > Average: 0.0333333 ; Maximum: 1 [0m
+Text difference in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput/Solid/constant/polyMesh/faces and /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output/Solid/constant/polyMesh/faces
+  > |  \    /   O peration     | Version:  4.1                   |	|  \    /   O peration     | Version:  5.x                  
+Numerical difference in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput/Solid/constant/polyMesh/neighbour and /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output/Solid/constant/polyMesh/neighbour
+  > Average: 0.0333333 ; Maximum: 1 [0m
+Text difference in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput/Solid/constant/polyMesh/neighbour and /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output/Solid/constant/polyMesh/neighbour
+  > |  \    /   O peration     | Version:  4.1                   |	|  \    /   O peration     | Version:  5.x                  
+Numerical difference in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput/Solid/constant/polyMesh/owner and /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output/Solid/constant/polyMesh/owner
+  > Average: 0.0333333 ; Maximum: 1 [0m
+Text difference in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput/Solid/constant/polyMesh/owner and /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output/Solid/constant/polyMesh/owner
+  > |  \    /   O peration     | Version:  4.1                   |	|  \    /   O peration     | Version:  5.x                  
+Numerical difference in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput/Solid/constant/polyMesh/points and /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output/Solid/constant/polyMesh/points
+  > Average: 0.0333333 ; Maximum: 1 [0m
+Text difference in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput/Solid/constant/polyMesh/points and /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output/Solid/constant/polyMesh/points
+  > |  \    /   O peration     | Version:  4.1                   |	|  \    /   O peration     | Version:  5.x                  
+Numerical difference in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput/Solid/constant/transportProperties and /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output/Solid/constant/transportProperties
+  > Average: 0.0333333 ; Maximum: 1 [0m
+Text difference in /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput/Solid/constant/transportProperties and /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output/Solid/constant/transportProperties
+  > k                k   [ 1  1 -3 -1 0 0 0 ] 100;		      <
+awk: cmd. line:6: (FILENAME=- FNR=1) fatal: division by zero attempted
+EXECUTING: export PRECICE_BASE=-ubuntu1604.home-develop; docker-compose config && bash ../../silent_compose.sh 
+EXECUTING: docker cp tutorial-data:/Output .
+EXECUTING: mkdir Logs && docker-compose logs > Logs/container.log
+EXECUTING: bash ../../compare_results.sh /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/referenceOutput /home/travis/build/[secure]/systemtests/tests/TestCompose_of-of_np/Output
+TESTS FAILED WITH: Output files do not match reference
+Files differing               : ['p_rgh', 'p', 'U', 'phi', 'T', 'time', 'p_rgh', 'p', 'U', 'phi', 'T', 'time', 'points', 'owner', 'boundary', 'neighbour', 'faces', 'p_rgh', 'p', 'U', 'phi', 'T', 'time', 'p_rgh', 'p', 'U', 'phi', 'T', 'time', 'p_rgh', 'p', 'U', 'phi', 'T', 'time', '[secure]Dict', 'gradTz', 'gradTx', 'gradTy', 'T', 'time', 'gradTz', 'gradTx', 'gradTy', 'T', 'time', 'transportProperties', 'points', 'owner', 'boundary', 'neighbour', 'faces', 'gradTz', 'gradTx', 'gradTy', 'T', 'time', 'gradTz', 'gradTx', 'gradTy', 'T', 'time', 'gradTz', 'gradTx', 'gradTy', 'T', 'time', '[secure]Dict']
+Files only in reference (left): []
+Files only in output(right)   : []
+travis_time:end:0432ac9e:start=1581508463460752476,finish=1581508577739396003,duration=114278643527,event=script[0K[31;1mThe command "python system_testing.py -s of-of_np" exited with 1.[0m
+travis_time:start:0e0943f0[0K$ python push.py -t of-of_np -o
+Cloning into '[secure]_st_output'...
