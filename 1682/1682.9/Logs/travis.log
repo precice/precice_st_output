@@ -1,0 +1,601 @@
+travis_fold:start:worker_info[0K[33;1mWorker information[0m
+hostname: 37ab13c1-4649-4197-a904-a90e187874f3@1.worker-org-7d9f8bbbf5-cw4lk.gce-production-3
+version: v6.2.8 https://github.com/travis-ci/worker/tree/6d3048d96b26562be21fa1a8b8144f4c4cecd083
+instance: travis-job-b5bd74aa-7221-4e76-b794-150f96ff51f9 travis-ci-garnet-trusty-1512502259-986baf0 (via amqp)
+startup: 6.142707153s
+travis_fold:end:worker_info[0Ktravis_time:start:089ac27e[0Ktravis_time:end:089ac27e:start=1581507999873170259,finish=1581508000027658946,duration=154488687,event=no_world_writable_dirs[0Ktravis_time:start:0039c6fa[0Ktravis_time:end:0039c6fa:start=1581508000030108170,finish=1581508000036234251,duration=6126081,event=setup_filter[0Ktravis_time:start:0c1cb260[0Ktravis_time:end:0c1cb260:start=1581508000039627827,finish=1581508000047780043,duration=8152216,event=agent[0Ktravis_time:start:2242471a[0Ktravis_time:end:2242471a:start=1581508000050433376,finish=1581508000052323298,duration=1889922,event=check_unsupported[0Ktravis_time:start:031305a8[0Ktravis_fold:start:system_info[0K[33;1mBuild system information[0m
+Build language: python
+Build group: stable
+Build dist: trusty
+Build id: 649390027
+Job id: 649390036
+Runtime kernel version: 4.4.0-101-generic
+travis-build version: 08047b878
+[34m[1mBuild image provisioning date and time[0m
+Tue Dec  5 19:58:13 UTC 2017
+[34m[1mOperating System Details[0m
+Distributor ID:	Ubuntu
+Description:	Ubuntu 14.04.5 LTS
+Release:	14.04
+Codename:	trusty
+[34m[1mCookbooks Version[0m
+7c2c6a6 https://github.com/travis-ci/travis-cookbooks/tree/7c2c6a6
+[34m[1mgit version[0m
+git version 2.15.1
+[34m[1mbash version[0m
+GNU bash, version 4.3.11(1)-release (x86_64-pc-linux-gnu)
+[34m[1mgcc version[0m
+gcc (Ubuntu 4.8.4-2ubuntu1~14.04.3) 4.8.4
+Copyright (C) 2013 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+[34m[1mdocker version[0m
+Client:
+ Version:      17.09.0-ce
+ API version:  1.32
+ Go version:   go1.8.3
+ Git commit:   afdb6d4
+ Built:        Tue Sep 26 22:42:38 2017
+ OS/Arch:      linux/amd64
+
+Server:
+ Version:      17.09.0-ce
+ API version:  1.32 (minimum version 1.12)
+ Go version:   go1.8.3
+ Git commit:   afdb6d4
+ Built:        Tue Sep 26 22:41:20 2017
+ OS/Arch:      linux/amd64
+ Experimental: false
+[34m[1mclang version[0m
+clang version 5.0.0 (tags/RELEASE_500/final)
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /usr/local/clang-5.0.0/bin
+[34m[1mjq version[0m
+jq-1.5
+[34m[1mbats version[0m
+Bats 0.4.0
+[34m[1mshellcheck version[0m
+0.4.6
+[34m[1mshfmt version[0m
+v2.0.0
+[34m[1mccache version[0m
+ccache version 3.1.9
+
+Copyright (C) 2002-2007 Andrew Tridgell
+Copyright (C) 2009-2011 Joel Rosdahl
+
+This program is free software; you can redistribute it and/or modify it under
+the terms of the GNU General Public License as published by the Free Software
+Foundation; either version 3 of the License, or (at your option) any later
+version.
+[34m[1mcmake version[0m
+cmake version 3.9.2
+
+CMake suite maintained and supported by Kitware (kitware.com/cmake).
+[34m[1mheroku version[0m
+heroku-cli/6.14.39-addc925 (linux-x64) node-v9.2.0
+[34m[1mimagemagick version[0m
+Version: ImageMagick 6.7.7-10 2017-07-31 Q16 http://www.imagemagick.org
+[34m[1mmd5deep version[0m
+4.2
+[34m[1mmercurial version[0m
+Mercurial Distributed SCM (version 4.2.2)
+(see https://mercurial-scm.org for more information)
+
+Copyright (C) 2005-2017 Matt Mackall and others
+This is free software; see the source for copying conditions. There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+[34m[1mmysql version[0m
+mysql  Ver 14.14 Distrib 5.6.33, for debian-linux-gnu (x86_64) using  EditLine wrapper
+[34m[1mopenssl version[0m
+OpenSSL 1.0.1f 6 Jan 2014
+[34m[1mpacker version[0m
+Packer v1.0.2
+
+Your version of Packer is out of date! The latest version
+is 1.1.2. You can update by downloading from www.packer.io
+[34m[1mpostgresql client version[0m
+psql (PostgreSQL) 9.6.6
+[34m[1mragel version[0m
+Ragel State Machine Compiler version 6.8 Feb 2013
+Copyright (c) 2001-2009 by Adrian Thurston
+[34m[1msubversion version[0m
+svn, version 1.8.8 (r1568071)
+   compiled Aug 10 2017, 17:20:39 on x86_64-pc-linux-gnu
+
+Copyright (C) 2013 The Apache Software Foundation.
+This software consists of contributions made by many people;
+see the NOTICE file for more information.
+Subversion is open source software, see http://subversion.apache.org/
+
+The following repository access (RA) modules are available:
+
+* ra_svn : Module for accessing a repository using the svn network protocol.
+  - with Cyrus SASL authentication
+  - handles 'svn' scheme
+* ra_local : Module for accessing a repository on local disk.
+  - handles 'file' scheme
+* ra_serf : Module for accessing a repository via WebDAV protocol using serf.
+  - using serf 1.3.3
+  - handles 'http' scheme
+  - handles 'https' scheme
+
+[34m[1msudo version[0m
+Sudo version 1.8.9p5
+Configure options: --prefix=/usr -v --with-all-insults --with-pam --with-fqdn --with-logging=syslog --with-logfac=authpriv --with-env-editor --with-editor=/usr/bin/editor --with-timeout=15 --with-password-timeout=0 --with-passprompt=[sudo] password for %p:  --without-lecture --with-tty-tickets --disable-root-mailer --enable-admin-flag --with-sendmail=/usr/sbin/sendmail --with-timedir=/var/lib/sudo --mandir=/usr/share/man --libexecdir=/usr/lib/sudo --with-sssd --with-sssd-lib=/usr/lib/x86_64-linux-gnu --with-selinux
+Sudoers policy plugin version 1.8.9p5
+Sudoers file grammar version 43
+
+Sudoers path: /etc/sudoers
+Authentication methods: 'pam'
+Syslog facility if syslog is being used for logging: authpriv
+Syslog priority to use when user authenticates successfully: notice
+Syslog priority to use when user authenticates unsuccessfully: alert
+Send mail if the user is not in sudoers
+Use a separate timestamp for each user/tty combo
+Lecture user the first time they run sudo
+Root may run sudo
+Allow some information gathering to give useful error messages
+Require fully-qualified hostnames in the sudoers file
+Visudo will honor the EDITOR environment variable
+Set the LOGNAME and USER environment variables
+Length at which to wrap log file lines (0 for no wrap): 80
+Authentication timestamp timeout: 15.0 minutes
+Password prompt timeout: 0.0 minutes
+Number of tries to enter a password: 3
+Umask to use or 0777 to use user's: 022
+Path to mail program: /usr/sbin/sendmail
+Flags for mail program: -t
+Address to send mail to: root
+Subject line for mail messages: *** SECURITY information for %h ***
+Incorrect password message: Sorry, try again.
+Path to authentication timestamp dir: /var/lib/sudo
+Default password prompt: [sudo] password for %p: 
+Default user to run commands as: root
+Value to override user's $PATH with: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin
+Path to the editor for use by visudo: /usr/bin/editor
+When to require a password for 'list' pseudocommand: any
+When to require a password for 'verify' pseudocommand: all
+File descriptors >= 3 will be closed before executing a command
+Environment variables to check for sanity:
+	TZ
+	TERM
+	LINGUAS
+	LC_*
+	LANGUAGE
+	LANG
+	COLORTERM
+Environment variables to remove:
+	RUBYOPT
+	RUBYLIB
+	PYTHONUSERBASE
+	PYTHONINSPECT
+	PYTHONPATH
+	PYTHONHOME
+	TMPPREFIX
+	ZDOTDIR
+	READNULLCMD
+	NULLCMD
+	FPATH
+	PERL5DB
+	PERL5OPT
+	PERL5LIB
+	PERLLIB
+	PERLIO_DEBUG 
+	JAVA_TOOL_OPTIONS
+	SHELLOPTS
+	GLOBIGNORE
+	PS4
+	BASH_ENV
+	ENV
+	TERMCAP
+	TERMPATH
+	TERMINFO_DIRS
+	TERMINFO
+	_RLD*
+	LD_*
+	PATH_LOCALE
+	NLSPATH
+	HOSTALIASES
+	RES_OPTIONS
+	LOCALDOMAIN
+	CDPATH
+	IFS
+Environment variables to preserve:
+	JAVA_HOME
+	TRAVIS
+	CI
+	DEBIAN_FRONTEND
+	XAUTHORIZATION
+	XAUTHORITY
+	PS2
+	PS1
+	PATH
+	LS_COLORS
+	KRB5CCNAME
+	HOSTNAME
+	HOME
+	DISPLAY
+	COLORS
+Locale to use while parsing sudoers: C
+Directory in which to store input/output logs: /var/log/sudo-io
+File in which to store the input/output log: %{seq}
+Add an entry to the utmp/utmpx file when allocating a pty
+PAM service name to use
+PAM service name to use for login shells
+Create a new PAM session for the command to run in
+Maximum I/O log sequence number: 0
+
+Local IP address and netmask pairs:
+	10.240.0.28/255.255.255.255
+	172.17.0.1/255.255.0.0
+
+Sudoers I/O plugin version 1.8.9p5
+[34m[1mgzip version[0m
+gzip 1.6
+Copyright (C) 2007, 2010, 2011 Free Software Foundation, Inc.
+Copyright (C) 1993 Jean-loup Gailly.
+This is free software.  You may redistribute copies of it under the terms of
+the GNU General Public License <http://www.gnu.org/licenses/gpl.html>.
+There is NO WARRANTY, to the extent permitted by law.
+
+Written by Jean-loup Gailly.
+[34m[1mzip version[0m
+Copyright (c) 1990-2008 Info-ZIP - Type 'zip "-L"' for software license.
+This is Zip 3.0 (July 5th 2008), by Info-ZIP.
+Currently maintained by E. Gordon.  Please send bug reports to
+the authors using the web page at www.info-zip.org; see README for details.
+
+Latest sources and executables are at ftp://ftp.info-zip.org/pub/infozip,
+as of above date; see http://www.info-zip.org/ for other sites.
+
+Compiled with gcc 4.8.2 for Unix (Linux ELF) on Oct 21 2013.
+
+Zip special compilation options:
+	USE_EF_UT_TIME       (store Universal Time)
+	BZIP2_SUPPORT        (bzip2 library version 1.0.6, 6-Sept-2010)
+	    bzip2 code and library copyright (c) Julian R Seward
+	    (See the bzip2 license for terms of use)
+	SYMLINK_SUPPORT      (symbolic links supported)
+	LARGE_FILE_SUPPORT   (can read and write large files on file system)
+	ZIP64_SUPPORT        (use Zip64 to store large files in archives)
+	UNICODE_SUPPORT      (store and read UTF-8 Unicode paths)
+	STORE_UNIX_UIDs_GIDs (store UID/GID sizes/values using new extra field)
+	UIDGID_NOT_16BIT     (old Unix 16-bit UID/GID extra field not used)
+	[encryption, version 2.91 of 05 Jan 2007] (modified for Zip 3)
+
+Encryption notice:
+	The encryption code of this program is not copyrighted and is
+	put in the public domain.  It was originally written in Europe
+	and, to the best of our knowledge, can be freely distributed
+	in both source and object forms from any country, including
+	the USA under License Exception TSU of the U.S. Export
+	Administration Regulations (section 740.13(e)) of 6 June 2002.
+
+Zip environment options:
+             ZIP:  [none]
+          ZIPOPT:  [none]
+[34m[1mvim version[0m
+VIM - Vi IMproved 7.4 (2013 Aug 10, compiled Nov 24 2016 16:43:18)
+Included patches: 1-52
+Extra patches: 8.0.0056
+Modified by pkg-vim-maintainers@lists.alioth.debian.org
+Compiled by buildd@
+Huge version without GUI.  Features included (+) or not (-):
++acl             +farsi           +mouse_netterm   +syntax
++arabic          +file_in_path    +mouse_sgr       +tag_binary
++autocmd         +find_in_path    -mouse_sysmouse  +tag_old_static
+-balloon_eval    +float           +mouse_urxvt     -tag_any_white
+-browse          +folding         +mouse_xterm     -tcl
+++builtin_terms  -footer          +multi_byte      +terminfo
++byte_offset     +fork()          +multi_lang      +termresponse
++cindent         +gettext         -mzscheme        +textobjects
+-clientserver    -hangul_input    +netbeans_intg   +title
+-clipboard       +iconv           +path_extra      -toolbar
++cmdline_compl   +insert_expand   -perl            +user_commands
++cmdline_hist    +jumplist        +persistent_undo +vertsplit
++cmdline_info    +keymap          +postscript      +virtualedit
++comments        +langmap         +printer         +visual
++conceal         +libcall         +profile         +visualextra
++cryptv          +linebreak       +python          +viminfo
++cscope          +lispindent      -python3         +vreplace
++cursorbind      +listcmds        +quickfix        +wildignore
++cursorshape     +localmap        +reltime         +wildmenu
++dialog_con      -lua             +rightleft       +windows
++diff            +menu            -ruby            +writebackup
++digraphs        +mksession       +scrollbind      -X11
+-dnd             +modify_fname    +signs           -xfontset
+-ebcdic          +mouse           +smartindent     -xim
++emacs_tags      -mouseshape      -sniff           -xsmp
++eval            +mouse_dec       +startuptime     -xterm_clipboard
++ex_extra        +mouse_gpm       +statusline      -xterm_save
++extra_search    -mouse_jsbterm   -sun_workshop    -xpm
+   system vimrc file: "$VIM/vimrc"
+     user vimrc file: "$HOME/.vimrc"
+ 2nd user vimrc file: "~/.vim/vimrc"
+      user exrc file: "$HOME/.exrc"
+  fall-back for $VIM: "/usr/share/vim"
+Compilation: gcc -c -I. -Iproto -DHAVE_CONFIG_H     -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1      
+Linking: gcc   -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,--as-needed -o vim        -lm -ltinfo -lnsl  -lselinux  -lacl -lattr -lgpm -ldl    -L/usr/lib/python2.7/config-x86_64-linux-gnu -lpython2.7 -lpthread -ldl -lutil -lm -Xlinker -export-dynamic -Wl,-O1 -Wl,-Bsymbolic-functions      
+[34m[1miptables version[0m
+iptables v1.4.21
+[34m[1mcurl version[0m
+curl 7.35.0 (x86_64-pc-linux-gnu) libcurl/7.35.0 OpenSSL/1.0.1f zlib/1.2.8 libidn/1.28 librtmp/2.3
+[34m[1mwget version[0m
+GNU Wget 1.15 built on linux-gnu.
+[34m[1mrsync version[0m
+rsync  version 3.1.0  protocol version 31
+[34m[1mgimme version[0m
+v1.2.0
+[34m[1mnvm version[0m
+0.33.6
+[34m[1mperlbrew version[0m
+/home/travis/perl5/perlbrew/bin/perlbrew  - App::perlbrew/0.80
+[34m[1mphpenv version[0m
+rbenv 1.1.1-25-g6aa70b6
+[34m[1mrvm version[0m
+rvm 1.29.3 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
+[34m[1mdefault ruby version[0m
+ruby 2.4.1p111 (2017-03-22 revision 58053) [x86_64-linux]
+[34m[1mCouchDB version[0m
+couchdb 1.6.1
+[34m[1mElasticSearch version[0m
+5.5.0
+[34m[1mInstalled Firefox version[0m
+firefox 56.0.2
+[34m[1mMongoDB version[0m
+MongoDB 3.4.10
+[34m[1mPhantomJS version[0m
+2.1.1
+[34m[1mPre-installed PostgreSQL versions[0m
+9.2.24
+9.3.20
+9.4.15
+9.5.10
+9.6.6
+[34m[1mRabbitMQ Version[0m
+3.6.14
+[34m[1mRedis version[0m
+redis-server 4.0.6
+[34m[1mriak version[0m
+2.2.3
+[34m[1mPre-installed Go versions[0m
+1.7.4
+[34m[1mant version[0m
+Apache Ant(TM) version 1.9.3 compiled on April 8 2014
+[34m[1mmvn version[0m
+Apache Maven 3.5.2 (138edd61fd100ec658bfa2d307c43b76940a5d7d; 2017-10-18T07:58:13Z)
+Maven home: /usr/local/maven-3.5.2
+Java version: 1.8.0_151, vendor: Oracle Corporation
+Java home: /usr/lib/jvm/java-8-oracle/jre
+Default locale: en_US, platform encoding: UTF-8
+OS name: "linux", version: "4.4.0-98-generic", arch: "amd64", family: "unix"
+[34m[1mgradle version[0m
+
+------------------------------------------------------------
+Gradle 4.0.1
+------------------------------------------------------------
+
+Build time:   2017-07-07 14:02:41 UTC
+Revision:     38e5dc0f772daecca1d2681885d3d85414eb6826
+
+Groovy:       2.4.11
+Ant:          Apache Ant(TM) version 1.9.6 compiled on June 29 2015
+JVM:          1.8.0_151 (Oracle Corporation 25.151-b12)
+OS:           Linux 4.4.0-98-generic amd64
+
+[34m[1mlein version[0m
+Leiningen 2.8.1 on Java 1.8.0_151 Java HotSpot(TM) 64-Bit Server VM
+[34m[1mPre-installed Node.js versions[0m
+v4.8.6
+v6.12.0
+v6.12.1
+v8.9
+v8.9.1
+[34m[1mphpenv versions[0m
+  system
+  5.6
+* 5.6.32 (set by /home/travis/.phpenv/version)
+  7.0
+  7.0.25
+  7.1
+  7.1.11
+  hhvm
+  hhvm-stable
+[34m[1mcomposer --version[0m
+Composer version 1.5.2 2017-09-11 16:59:25
+[34m[1mPre-installed Ruby versions[0m
+ruby-2.2.7
+ruby-2.3.4
+ruby-2.4.1
+travis_fold:end:system_info[0K
+travis_time:end:031305a8:start=1581508000055158863,finish=1581508000060622772,duration=5463909,event=show_system_info[0Ktravis_time:start:058c015f[0Ktravis_time:end:058c015f:start=1581508000063065458,finish=1581508000085012756,duration=21947298,event=rm_riak_source[0Ktravis_time:start:01c7945c[0Ktravis_time:end:01c7945c:start=1581508000087598878,finish=1581508000092416839,duration=4817961,event=fix_rwky_redis[0Ktravis_time:start:061e2958[0Ktravis_time:end:061e2958:start=1581508000096418006,finish=1581508000550295805,duration=453877799,event=wait_for_network[0Ktravis_time:start:0d4a088d[0Ktravis_time:end:0d4a088d:start=1581508000554280199,finish=1581508002155880220,duration=1601600021,event=update_apt_keys[0Ktravis_time:start:096eec68[0Ktravis_time:end:096eec68:start=1581508002159457673,finish=1581508003179937585,duration=1020479912,event=fix_hhvm_source[0Ktravis_time:start:27704e1a[0Ktravis_time:end:27704e1a:start=1581508003184588905,finish=1581508003193657875,duration=9068970,event=update_mongo_arch[0Ktravis_time:start:17dc2720[0Ktravis_time:end:17dc2720:start=1581508003198188188,finish=1581508003237015316,duration=38827128,event=fix_sudo_enabled_trusty[0Ktravis_time:start:10ff6a96[0Ktravis_time:end:10ff6a96:start=1581508003241131112,finish=1581508003244068243,duration=2937131,event=update_glibc[0Ktravis_time:start:00c27964[0Ktravis_time:end:00c27964:start=1581508003248124577,finish=1581508003257141589,duration=9017012,event=clean_up_path[0Ktravis_time:start:1090c8a6[0Ktravis_time:end:1090c8a6:start=1581508003261932462,finish=1581508003271507180,duration=9574718,event=fix_resolv_conf[0Ktravis_time:start:0052627b[0Ktravis_time:end:0052627b:start=1581508003275440201,finish=1581508003284247416,duration=8807215,event=fix_etc_hosts[0Ktravis_time:start:0308b0d0[0Ktravis_time:end:0308b0d0:start=1581508003290168673,finish=1581508003298882820,duration=8714147,event=fix_mvn_settings_xml[0Ktravis_time:start:0b458a5c[0Ktravis_time:end:0b458a5c:start=1581508003303471063,finish=1581508003313608378,duration=10137315,event=no_ipv6_localhost[0Ktravis_time:start:01fdb6e8[0Ktravis_time:end:01fdb6e8:start=1581508003317023512,finish=1581508003319348018,duration=2324506,event=fix_etc_mavenrc[0Ktravis_time:start:044292da[0Ktravis_time:end:044292da:start=1581508003323524048,finish=1581508003326833724,duration=3309676,event=fix_wwdr_certificate[0Ktravis_time:start:08fa3060[0Ktravis_time:end:08fa3060:start=1581508003330975953,finish=1581508003353608506,duration=22632553,event=put_localhost_first[0Ktravis_time:start:0395990c[0Ktravis_time:end:0395990c:start=1581508003357354361,finish=1581508003360539942,duration=3185581,event=home_paths[0Ktravis_time:start:1663443c[0Ktravis_time:end:1663443c:start=1581508003364091396,finish=1581508003375470253,duration=11378857,event=disable_initramfs[0Ktravis_time:start:058c5e9e[0Ktravis_time:end:058c5e9e:start=1581508003379461700,finish=1581508003662813093,duration=283351393,event=disable_ssh_roaming[0Ktravis_time:start:0570ef46[0Ktravis_time:end:0570ef46:start=1581508003667385187,finish=1581508003670713194,duration=3328007,event=debug_tools[0Ktravis_time:start:11ef9baa[0Ktravis_time:end:11ef9baa:start=1581508003674631947,finish=1581508003678699352,duration=4067405,event=uninstall_oclint[0Ktravis_time:start:109ffb76[0Ktravis_time:end:109ffb76:start=1581508003682816830,finish=1581508003686769823,duration=3952993,event=rvm_use[0Ktravis_time:start:05deff11[0Ktravis_time:end:05deff11:start=1581508003695647478,finish=1581508003703595134,duration=7947656,event=rm_etc_boto_cfg[0Ktravis_time:start:018ecbb5[0Ktravis_time:end:018ecbb5:start=1581508003708446149,finish=1581508003710862745,duration=2416596,event=rm_oraclejdk8_symlink[0Ktravis_time:start:0f975e0d[0Ktravis_time:end:0f975e0d:start=1581508003716624344,finish=1581508003767351955,duration=50727611,event=enable_i386[0Ktravis_time:start:03213976[0Ktravis_time:end:03213976:start=1581508003772270865,finish=1581508003776552617,duration=4281752,event=update_rubygems[0Ktravis_time:start:0fa8f178[0Ktravis_time:end:0fa8f178:start=1581508003781399599,finish=1581508004718986631,duration=937587032,event=ensure_path_components[0Ktravis_time:start:0031db5c[0Ktravis_time:end:0031db5c:start=1581508004723593977,finish=1581508004726246310,duration=2652333,event=redefine_curl[0Ktravis_time:start:04292c3a[0Ktravis_time:end:04292c3a:start=1581508004731549068,finish=1581508004781513229,duration=49964161,event=nonblock_pipe[0Ktravis_time:start:03842eb3[0Ktravis_time:end:03842eb3:start=1581508004785987000,finish=1581508010819350762,duration=6033363762,event=apt_get_update[0Ktravis_time:start:054d7304[0Ktravis_time:end:054d7304:start=1581508010823169453,finish=1581508010825686693,duration=2517240,event=deprecate_xcode_64[0Ktravis_time:start:171db74c[0Ktravis_time:end:171db74c:start=1581508010829493148,finish=1581508015184191939,duration=4354698791,event=update_heroku[0Ktravis_time:start:00ade208[0Ktravis_time:end:00ade208:start=1581508015188838150,finish=1581508015191476023,duration=2637873,event=shell_session_update[0Ktravis_time:start:00b1f3c0[0Ktravis_fold:start:docker_mtu[0Kdocker stop/waiting
+docker start/running, process 3888
+travis_fold:end:docker_mtu[0Ktravis_time:end:00b1f3c0:start=1581508015196313860,finish=1581508016383358025,duration=1187044165,event=set_docker_mtu[0Ktravis_time:start:1ab899db[0Ktravis_fold:start:resolvconf[0Kresolvconf stop/waiting
+resolvconf start/running
+travis_fold:end:resolvconf[0Ktravis_time:end:1ab899db:start=1581508016387856857,finish=1581508016443986346,duration=56129489,event=resolvconf[0Ktravis_time:start:024a4540[0Ktravis_time:end:024a4540:start=1581508016448618902,finish=1581508016535688124,duration=87069222,event=maven_central_mirror[0Ktravis_time:start:00525c40[0Ktravis_time:end:00525c40:start=1581508016539842749,finish=1581508016606088960,duration=66246211,event=maven_https[0K[33;1m3.5 is not installed; attempting download[0m
+[33;1mDownloading archive: https://storage.googleapis.com/travis-ci-language-archives/python/binaries/ubuntu/14.04/x86_64/python-3.5.tar.bz2[0m
+travis_time:start:0d5384ce[0K$ curl -sSf --retry 5 -o python-3.5.tar.bz2 ${archive_url}
+travis_time:end:0d5384ce:start=1581508016684257871,finish=1581508017149674605,duration=465416734,event=configure[0Ktravis_time:start:24f08691[0K$ sudo tar xjf python-3.5.tar.bz2 --directory /
+travis_time:end:24f08691:start=1581508017155287767,finish=1581508026511598861,duration=9356311094,event=configure[0Ktravis_time:start:005aa320[0Ktravis_fold:start:services[0Ktravis_time:start:0e2f65d0[0K$ sudo service docker start
+start: Job is already running: docker
+travis_time:end:0e2f65d0:start=1581508026536786235,finish=1581508026551739561,duration=14953326,event=prepare[0Ktravis_fold:end:services[0Ktravis_time:end:0e2f65d0:start=1581508026536786235,finish=1581508029556351837,duration=3019565602,event=services[0Ktravis_time:start:04f7764b[0Ktravis_time:end:04f7764b:start=1581508029560518017,finish=1581508029563753137,duration=3235120,event=fix_ps4[0Ktravis_time:start:15bf0f30[0K
+travis_fold:start:git.checkout[0Ktravis_time:start:0c4a306f[0K$ git clone --depth=50 https://github.com/[secure]/systemtests.git [secure]/systemtests
+Cloning into '[secure]/systemtests'...
+travis_time:end:0c4a306f:start=1581508029572034228,finish=1581508036164831528,duration=6592797300,event=checkout[0K$ cd [secure]/systemtests
+travis_time:start:291f7740[0K$ git fetch origin +refs/pull/147/merge:
+From https://github.com/[secure]/systemtests
+ * branch            refs/pull/147/merge -> FETCH_HEAD
+travis_time:end:291f7740:start=1581508036169407694,finish=1581508036663224569,duration=493816875,event=checkout[0K$ git checkout -qf FETCH_HEAD
+travis_fold:end:git.checkout[0K
+travis_time:end:291f7740:start=1581508036169407694,finish=1581508036800998544,duration=631590850,event=checkout[0Ktravis_time:start:002ea106[0K
+[33;1mSetting environment variables from repository settings[0m
+$ export DOCKER_PASSWORD=[secure]
+$ export DOCKER_USERNAME=[secure]
+$ export TRAVIS_ACCESS_TOKEN=[secure]
+$ export PRECICE_BOT_EMAIL=[secure]
+$ export GH_TOKEN=[secure]
+
+travis_time:end:002ea106:start=1581508036806717607,finish=1581508036818351347,duration=11633740,event=env[0Ktravis_time:start:0127c548[0K$ source ~/virtualenv/python3.5/bin/activate
+travis_time:end:0127c548:start=1581508036823716589,finish=1581508036835564019,duration=11847430,event=[0K$ python --version
+Python 3.5.6
+$ pip --version
+pip 18.0 from /home/travis/virtualenv/python3.5.6/lib/python3.5/site-packages/pip (python 3.5)
+travis_fold:start:install[0Ktravis_time:start:13b16c2a[0K$ pip install Jinja2
+Collecting Jinja2
+  Downloading https://files.pythonhosted.org/packages/27/24/4f35961e5c669e96f6559760042a55b9bcfcdb82b9bdb3c8753dbe042e35/Jinja2-2.11.1-py2.py3-none-any.whl (126kB)
+Collecting MarkupSafe>=0.23 (from Jinja2)
+  Downloading https://files.pythonhosted.org/packages/6e/57/d40124076756c19ff2269678de7ae25a14ebbb3f6314eb5ce9477f191350/MarkupSafe-1.1.1-cp35-cp35m-manylinux1_x86_64.whl
+Installing collected packages: MarkupSafe, Jinja2
+Successfully installed Jinja2-2.11.1 MarkupSafe-1.1.1
+travis_time:end:13b16c2a:start=1581508037133989466,finish=1581508037964526784,duration=830537318,event=install[0Ktravis_fold:end:install[0Ktravis_time:start:16118389[0K$ python system_testing.py -s su2-ccx
+networks:
+  [secure]comm: {}
+services:
+  calculix-adapter:
+    command: '/bin/bash -c "ln -sf /home/[secure]/Data/Input Solid; ln -sf /home/[secure]/calculix-adapter/configs/*
+      . && ccx_preCICE -i Solid/flap -[secure]-participant Calculix && cp   Solid/*.dat  Solid/*.cvg
+      Solid/*.sta *.log *.out /home/[secure]/Data/Output/"
+
+      '
+    container_name: calculix-adapter
+    depends_on:
+    - tutorial-data
+    image: [secure]/calculix-adapter-ubuntu1604.home-develop:latest
+    networks:
+      [secure]comm: null
+    volumes:
+    - exchange:/home/[secure]/Data/Exchange:rw
+    - output:/home/[secure]/Data/Output:rw
+    - input_solid:/home/[secure]/Data/Input:rw
+    - configs:/home/[secure]/calculix-adapter/configs:rw
+  su2-adapter:
+    command: "/bin/bash -c \"ln -sf /home/[secure]/Data/Input Fluid &&\n  ln -sf /home/[secure]/su2-adapter/configs/*\
+      \ . &&\n  SU2_CFD Fluid/euler_config_coupled.cfg &&\n  cp flow*.vtk *.csv *.dat\
+      \ *SU2*.log /home/[secure]/Data/Output/\"\n"
+    container_name: su2-adapter
+    depends_on:
+    - tutorial-data
+    image: [secure]/su2-adapter-ubuntu1604.home-develop:latest
+    networks:
+      [secure]comm: null
+    volumes:
+    - exchange:/home/[secure]/Data/Exchange:rw
+    - output:/home/[secure]/Data/Output:rw
+    - input_fluid:/home/[secure]/Data/Input:rw
+    - configs:/home/[secure]/su2-adapter/configs:rw
+  tutorial-data:
+    build:
+      context: /home/travis/build/[secure]/systemtests/tests/TestCompose_su2-ccx
+      dockerfile: Dockerfile.tutorial_data
+    container_name: tutorial-data
+    volumes:
+    - input_solid:/tutorials/FSI/flap_perp/SU2-CalculiX/Solid:rw
+    - input_fluid:/tutorials/FSI/flap_perp/SU2-CalculiX/Fluid:rw
+    - configs:/configs:rw
+    - output:/Output:rw
+version: '3.0'
+volumes:
+  configs: {}
+  exchange: {}
+  input_fluid: {}
+  input_solid: {}
+  output: {}
+
+Creating network "testcomposesu2ccx_default" with the default driver
+Creating network "testcomposesu2ccx_[secure]comm" with the default driver
+Creating volume "testcomposesu2ccx_output" with default driver
+Creating volume "testcomposesu2ccx_configs" with default driver
+Creating volume "testcomposesu2ccx_input_solid" with default driver
+Creating volume "testcomposesu2ccx_input_fluid" with default driver
+Creating volume "testcomposesu2ccx_exchange" with default driver
+Building tutorial-data
+Step 1/10 : FROM alpine
+latest: Pulling from library/alpine
+Digest: sha256:ab00606a42621fb68f2ed6ad3c88be54397f981a7b70a79db3d1172b11c4367d
+Status: Downloaded newer image for alpine:latest
+ ---> e7d92cdc71fe
+Step 2/10 : ENV tutorial_path tutorials/FSI/flap_perp/SU2-CalculiX
+ ---> Running in 5facd88cc56b
+ ---> 7a44030b24fd
+Removing intermediate container 5facd88cc56b
+Step 3/10 : RUN apk add git bash
+ ---> Running in 439711a2d75a
+fetch http://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/APKINDEX.tar.gz
+fetch http://dl-cdn.alpinelinux.org/alpine/v3.11/community/x86_64/APKINDEX.tar.gz
+(1/11) Installing ncurses-terminfo-base (6.1_p20191130-r0)
+(2/11) Installing ncurses-terminfo (6.1_p20191130-r0)
+(3/11) Installing ncurses-libs (6.1_p20191130-r0)
+(4/11) Installing readline (8.0.1-r0)
+(5/11) Installing bash (5.0.11-r1)
+Executing bash-5.0.11-r1.post-install
+(6/11) Installing ca-certificates (20191127-r1)
+(7/11) Installing nghttp2-libs (1.40.0-r0)
+(8/11) Installing libcurl (7.67.0-r0)
+(9/11) Installing expat (2.2.9-r1)
+(10/11) Installing pcre2 (10.34-r1)
+(11/11) Installing git (2.24.1-r0)
+Executing busybox-1.31.1-r9.trigger
+Executing ca-certificates-20191127-r1.trigger
+OK: 31 MiB in 25 packages
+ ---> 0201d123b9b3
+Removing intermediate container 439711a2d75a
+Step 4/10 : ARG branch=develop
+ ---> Running in 10f6b9672028
+ ---> d580e0d8bfff
+Removing intermediate container 10f6b9672028
+Step 5/10 : RUN git clone --branch $branch https://github.com/[secure]/tutorials
+ ---> Running in c6122fe45eec
+[91mCloning into 'tutorials'...
+[0m ---> e80995f16fc8
+Removing intermediate container c6122fe45eec
+Step 6/10 : RUN mkdir configs && sed -e 's|exchange-directory="../"|exchange-directory="/home/[secure]/Data/Exchange/" network="eth0"|g'    $tutorial_path/[secure]-config.xml  > configs/[secure]-config.xml
+ ---> Running in e485350812a0
+ ---> 60f774d8c5a1
+Removing intermediate container e485350812a0
+Step 7/10 : RUN rm $tutorial_path/[secure]-config.xml
+ ---> Running in f36d6ed97ba0
+ ---> e7d7edf76501
+Removing intermediate container f36d6ed97ba0
+Step 8/10 : RUN cp $tutorial_path/config.yml configs/
+ ---> Running in 7b002547f3de
+ ---> a9cca58fb17c
+Removing intermediate container 7b002547f3de
+Step 9/10 : RUN addgroup -g 1000 [secure] && adduser -u 1000 -G [secure] -D [secure] && chown -R [secure]:[secure] tutorials configs
+ ---> Running in 2ecab4811950
+ ---> 62b8c580a843
+Removing intermediate container 2ecab4811950
+Step 10/10 : USER [secure]
+ ---> Running in fb1053d11594
+ ---> 74b384f56db0
+Removing intermediate container fb1053d11594
+Successfully built 74b384f56db0
+Successfully tagged testcomposesu2ccx_tutorial-data:latest
+Image for service tutorial-data was built because it did not already exist. To rebuild this image you must use `docker-compose build` or `docker-compose up --build`.
+Pulling calculix-adapter ([secure]/calculix-adapter-ubuntu1604.home-develop:latest)...
+latest: Pulling from [secure]/calculix-adapter-ubuntu1604.home-develop
+Digest: sha256:915b0b402a5526564fe92fc95ca48d67cb5c277708b7a847e84a338133570e50
+Status: Downloaded newer image for [secure]/calculix-adapter-ubuntu1604.home-develop:latest
+Pulling su2-adapter ([secure]/su2-adapter-ubuntu1604.home-develop:latest)...
+latest: Pulling from [secure]/su2-adapter-ubuntu1604.home-develop
+Digest: sha256:19d700a3ae78654d309bcf96ee7fe69c95710a49dc8825b93080467dddd72307
+Status: Downloaded newer image for [secure]/su2-adapter-ubuntu1604.home-develop:latest
+Creating tutorial-data ... 
+Creating tutorial-data
+[1A[2KCreating tutorial-data ... [32mdone[0m[1BCreating su2-adapter ... 
+Creating calculix-adapter ... 
+Creating su2-adapter
+Creating calculix-adapter
+[1A[2KCreating su2-adapter ... [32mdone[0m[1B[1A[2KCreating calculix-adapter ... [32mdone[0m[1BRunning the simulation...Be patient
+Running the simulation...Be patient
+Running the simulation...Be patient
+All adapters finished!
+EXECUTING: export PRECICE_BASE=-ubuntu1604.home-develop; docker-compose config && bash ../../silent_compose.sh 
+EXECUTING: docker cp tutorial-data:/Output .
+EXECUTING: mkdir Logs && docker-compose logs > Logs/container.log
+TEST SUCCEEDED - No difference to referenceOutput found.
+travis_time:end:16118389:start=1581508037969741893,finish=1581508380985834396,duration=343016092503,event=script[0K[32;1mThe command "python system_testing.py -s su2-ccx" exited with 0.[0m
+travis_time:start:04852fed[0K$ python push.py -t su2-ccx
+Cloning into '[secure]_st_output'...
