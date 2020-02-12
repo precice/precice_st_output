@@ -1,0 +1,1612 @@
+travis_fold:start:worker_info[0K[33;1mWorker information[0m
+hostname: 96961a17-a496-4b0c-bec0-ebf371a479ad@1.worker-org-767b688855-jjsxb.gce-production-3
+version: v6.2.8 https://github.com/travis-ci/worker/tree/6d3048d96b26562be21fa1a8b8144f4c4cecd083
+instance: travis-job-bff97d5b-9a31-4267-85bf-75848c893f97 travis-ci-garnet-trusty-1512502259-986baf0 (via amqp)
+startup: 6.141791748s
+travis_fold:end:worker_info[0Ktravis_time:start:109f4d06[0Ktravis_time:end:109f4d06:start=1581515653870258782,finish=1581515654062479182,duration=192220400,event=no_world_writable_dirs[0Ktravis_time:start:12aea424[0Ktravis_time:end:12aea424:start=1581515654065701779,finish=1581515654068780525,duration=3078746,event=setup_filter[0Ktravis_time:start:0437aa10[0Ktravis_time:end:0437aa10:start=1581515654074772643,finish=1581515654083944467,duration=9171824,event=agent[0Ktravis_time:start:02636f70[0Ktravis_time:end:02636f70:start=1581515654086990268,finish=1581515654089018579,duration=2028311,event=check_unsupported[0Ktravis_time:start:0495ae09[0Ktravis_fold:start:system_info[0K[33;1mBuild system information[0m
+Build language: python
+Build group: stable
+Build dist: trusty
+Build id: 649442341
+Job id: 649442345
+Runtime kernel version: 4.4.0-101-generic
+travis-build version: 08047b878
+[34m[1mBuild image provisioning date and time[0m
+Tue Dec  5 19:58:13 UTC 2017
+[34m[1mOperating System Details[0m
+Distributor ID:	Ubuntu
+Description:	Ubuntu 14.04.5 LTS
+Release:	14.04
+Codename:	trusty
+[34m[1mCookbooks Version[0m
+7c2c6a6 https://github.com/travis-ci/travis-cookbooks/tree/7c2c6a6
+[34m[1mgit version[0m
+git version 2.15.1
+[34m[1mbash version[0m
+GNU bash, version 4.3.11(1)-release (x86_64-pc-linux-gnu)
+[34m[1mgcc version[0m
+gcc (Ubuntu 4.8.4-2ubuntu1~14.04.3) 4.8.4
+Copyright (C) 2013 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+[34m[1mdocker version[0m
+Client:
+ Version:      17.09.0-ce
+ API version:  1.32
+ Go version:   go1.8.3
+ Git commit:   afdb6d4
+ Built:        Tue Sep 26 22:42:38 2017
+ OS/Arch:      linux/amd64
+
+Server:
+ Version:      17.09.0-ce
+ API version:  1.32 (minimum version 1.12)
+ Go version:   go1.8.3
+ Git commit:   afdb6d4
+ Built:        Tue Sep 26 22:41:20 2017
+ OS/Arch:      linux/amd64
+ Experimental: false
+[34m[1mclang version[0m
+clang version 5.0.0 (tags/RELEASE_500/final)
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /usr/local/clang-5.0.0/bin
+[34m[1mjq version[0m
+jq-1.5
+[34m[1mbats version[0m
+Bats 0.4.0
+[34m[1mshellcheck version[0m
+0.4.6
+[34m[1mshfmt version[0m
+v2.0.0
+[34m[1mccache version[0m
+ccache version 3.1.9
+
+Copyright (C) 2002-2007 Andrew Tridgell
+Copyright (C) 2009-2011 Joel Rosdahl
+
+This program is free software; you can redistribute it and/or modify it under
+the terms of the GNU General Public License as published by the Free Software
+Foundation; either version 3 of the License, or (at your option) any later
+version.
+[34m[1mcmake version[0m
+cmake version 3.9.2
+
+CMake suite maintained and supported by Kitware (kitware.com/cmake).
+[34m[1mheroku version[0m
+heroku-cli/6.14.39-addc925 (linux-x64) node-v9.2.0
+[34m[1mimagemagick version[0m
+Version: ImageMagick 6.7.7-10 2017-07-31 Q16 http://www.imagemagick.org
+[34m[1mmd5deep version[0m
+4.2
+[34m[1mmercurial version[0m
+Mercurial Distributed SCM (version 4.2.2)
+(see https://mercurial-scm.org for more information)
+
+Copyright (C) 2005-2017 Matt Mackall and others
+This is free software; see the source for copying conditions. There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+[34m[1mmysql version[0m
+mysql  Ver 14.14 Distrib 5.6.33, for debian-linux-gnu (x86_64) using  EditLine wrapper
+[34m[1mopenssl version[0m
+OpenSSL 1.0.1f 6 Jan 2014
+[34m[1mpacker version[0m
+Packer v1.0.2
+
+Your version of Packer is out of date! The latest version
+is 1.1.2. You can update by downloading from www.packer.io
+[34m[1mpostgresql client version[0m
+psql (PostgreSQL) 9.6.6
+[34m[1mragel version[0m
+Ragel State Machine Compiler version 6.8 Feb 2013
+Copyright (c) 2001-2009 by Adrian Thurston
+[34m[1msubversion version[0m
+svn, version 1.8.8 (r1568071)
+   compiled Aug 10 2017, 17:20:39 on x86_64-pc-linux-gnu
+
+Copyright (C) 2013 The Apache Software Foundation.
+This software consists of contributions made by many people;
+see the NOTICE file for more information.
+Subversion is open source software, see http://subversion.apache.org/
+
+The following repository access (RA) modules are available:
+
+* ra_svn : Module for accessing a repository using the svn network protocol.
+  - with Cyrus SASL authentication
+  - handles 'svn' scheme
+* ra_local : Module for accessing a repository on local disk.
+  - handles 'file' scheme
+* ra_serf : Module for accessing a repository via WebDAV protocol using serf.
+  - using serf 1.3.3
+  - handles 'http' scheme
+  - handles 'https' scheme
+
+[34m[1msudo version[0m
+Sudo version 1.8.9p5
+Configure options: --prefix=/usr -v --with-all-insults --with-pam --with-fqdn --with-logging=syslog --with-logfac=authpriv --with-env-editor --with-editor=/usr/bin/editor --with-timeout=15 --with-password-timeout=0 --with-passprompt=[sudo] password for %p:  --without-lecture --with-tty-tickets --disable-root-mailer --enable-admin-flag --with-sendmail=/usr/sbin/sendmail --with-timedir=/var/lib/sudo --mandir=/usr/share/man --libexecdir=/usr/lib/sudo --with-sssd --with-sssd-lib=/usr/lib/x86_64-linux-gnu --with-selinux
+Sudoers policy plugin version 1.8.9p5
+Sudoers file grammar version 43
+
+Sudoers path: /etc/sudoers
+Authentication methods: 'pam'
+Syslog facility if syslog is being used for logging: authpriv
+Syslog priority to use when user authenticates successfully: notice
+Syslog priority to use when user authenticates unsuccessfully: alert
+Send mail if the user is not in sudoers
+Use a separate timestamp for each user/tty combo
+Lecture user the first time they run sudo
+Root may run sudo
+Allow some information gathering to give useful error messages
+Require fully-qualified hostnames in the sudoers file
+Visudo will honor the EDITOR environment variable
+Set the LOGNAME and USER environment variables
+Length at which to wrap log file lines (0 for no wrap): 80
+Authentication timestamp timeout: 15.0 minutes
+Password prompt timeout: 0.0 minutes
+Number of tries to enter a password: 3
+Umask to use or 0777 to use user's: 022
+Path to mail program: /usr/sbin/sendmail
+Flags for mail program: -t
+Address to send mail to: root
+Subject line for mail messages: *** SECURITY information for %h ***
+Incorrect password message: Sorry, try again.
+Path to authentication timestamp dir: /var/lib/sudo
+Default password prompt: [sudo] password for %p: 
+Default user to run commands as: root
+Value to override user's $PATH with: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin
+Path to the editor for use by visudo: /usr/bin/editor
+When to require a password for 'list' pseudocommand: any
+When to require a password for 'verify' pseudocommand: all
+File descriptors >= 3 will be closed before executing a command
+Environment variables to check for sanity:
+	TZ
+	TERM
+	LINGUAS
+	LC_*
+	LANGUAGE
+	LANG
+	COLORTERM
+Environment variables to remove:
+	RUBYOPT
+	RUBYLIB
+	PYTHONUSERBASE
+	PYTHONINSPECT
+	PYTHONPATH
+	PYTHONHOME
+	TMPPREFIX
+	ZDOTDIR
+	READNULLCMD
+	NULLCMD
+	FPATH
+	PERL5DB
+	PERL5OPT
+	PERL5LIB
+	PERLLIB
+	PERLIO_DEBUG 
+	JAVA_TOOL_OPTIONS
+	SHELLOPTS
+	GLOBIGNORE
+	PS4
+	BASH_ENV
+	ENV
+	TERMCAP
+	TERMPATH
+	TERMINFO_DIRS
+	TERMINFO
+	_RLD*
+	LD_*
+	PATH_LOCALE
+	NLSPATH
+	HOSTALIASES
+	RES_OPTIONS
+	LOCALDOMAIN
+	CDPATH
+	IFS
+Environment variables to preserve:
+	JAVA_HOME
+	TRAVIS
+	CI
+	DEBIAN_FRONTEND
+	XAUTHORIZATION
+	XAUTHORITY
+	PS2
+	PS1
+	PATH
+	LS_COLORS
+	KRB5CCNAME
+	HOSTNAME
+	HOME
+	DISPLAY
+	COLORS
+Locale to use while parsing sudoers: C
+Directory in which to store input/output logs: /var/log/sudo-io
+File in which to store the input/output log: %{seq}
+Add an entry to the utmp/utmpx file when allocating a pty
+PAM service name to use
+PAM service name to use for login shells
+Create a new PAM session for the command to run in
+Maximum I/O log sequence number: 0
+
+Local IP address and netmask pairs:
+	10.240.0.28/255.255.255.255
+	172.17.0.1/255.255.0.0
+
+Sudoers I/O plugin version 1.8.9p5
+[34m[1mgzip version[0m
+gzip 1.6
+Copyright (C) 2007, 2010, 2011 Free Software Foundation, Inc.
+Copyright (C) 1993 Jean-loup Gailly.
+This is free software.  You may redistribute copies of it under the terms of
+the GNU General Public License <http://www.gnu.org/licenses/gpl.html>.
+There is NO WARRANTY, to the extent permitted by law.
+
+Written by Jean-loup Gailly.
+[34m[1mzip version[0m
+Copyright (c) 1990-2008 Info-ZIP - Type 'zip "-L"' for software license.
+This is Zip 3.0 (July 5th 2008), by Info-ZIP.
+Currently maintained by E. Gordon.  Please send bug reports to
+the authors using the web page at www.info-zip.org; see README for details.
+
+Latest sources and executables are at ftp://ftp.info-zip.org/pub/infozip,
+as of above date; see http://www.info-zip.org/ for other sites.
+
+Compiled with gcc 4.8.2 for Unix (Linux ELF) on Oct 21 2013.
+
+Zip special compilation options:
+	USE_EF_UT_TIME       (store Universal Time)
+	BZIP2_SUPPORT        (bzip2 library version 1.0.6, 6-Sept-2010)
+	    bzip2 code and library copyright (c) Julian R Seward
+	    (See the bzip2 license for terms of use)
+	SYMLINK_SUPPORT      (symbolic links supported)
+	LARGE_FILE_SUPPORT   (can read and write large files on file system)
+	ZIP64_SUPPORT        (use Zip64 to store large files in archives)
+	UNICODE_SUPPORT      (store and read UTF-8 Unicode paths)
+	STORE_UNIX_UIDs_GIDs (store UID/GID sizes/values using new extra field)
+	UIDGID_NOT_16BIT     (old Unix 16-bit UID/GID extra field not used)
+	[encryption, version 2.91 of 05 Jan 2007] (modified for Zip 3)
+
+Encryption notice:
+	The encryption code of this program is not copyrighted and is
+	put in the public domain.  It was originally written in Europe
+	and, to the best of our knowledge, can be freely distributed
+	in both source and object forms from any country, including
+	the USA under License Exception TSU of the U.S. Export
+	Administration Regulations (section 740.13(e)) of 6 June 2002.
+
+Zip environment options:
+             ZIP:  [none]
+          ZIPOPT:  [none]
+[34m[1mvim version[0m
+VIM - Vi IMproved 7.4 (2013 Aug 10, compiled Nov 24 2016 16:43:18)
+Included patches: 1-52
+Extra patches: 8.0.0056
+Modified by pkg-vim-maintainers@lists.alioth.debian.org
+Compiled by buildd@
+Huge version without GUI.  Features included (+) or not (-):
++acl             +farsi           +mouse_netterm   +syntax
++arabic          +file_in_path    +mouse_sgr       +tag_binary
++autocmd         +find_in_path    -mouse_sysmouse  +tag_old_static
+-balloon_eval    +float           +mouse_urxvt     -tag_any_white
+-browse          +folding         +mouse_xterm     -tcl
+++builtin_terms  -footer          +multi_byte      +terminfo
++byte_offset     +fork()          +multi_lang      +termresponse
++cindent         +gettext         -mzscheme        +textobjects
+-clientserver    -hangul_input    +netbeans_intg   +title
+-clipboard       +iconv           +path_extra      -toolbar
++cmdline_compl   +insert_expand   -perl            +user_commands
++cmdline_hist    +jumplist        +persistent_undo +vertsplit
++cmdline_info    +keymap          +postscript      +virtualedit
++comments        +langmap         +printer         +visual
++conceal         +libcall         +profile         +visualextra
++cryptv          +linebreak       +python          +viminfo
++cscope          +lispindent      -python3         +vreplace
++cursorbind      +listcmds        +quickfix        +wildignore
++cursorshape     +localmap        +reltime         +wildmenu
++dialog_con      -lua             +rightleft       +windows
++diff            +menu            -ruby            +writebackup
++digraphs        +mksession       +scrollbind      -X11
+-dnd             +modify_fname    +signs           -xfontset
+-ebcdic          +mouse           +smartindent     -xim
++emacs_tags      -mouseshape      -sniff           -xsmp
++eval            +mouse_dec       +startuptime     -xterm_clipboard
++ex_extra        +mouse_gpm       +statusline      -xterm_save
++extra_search    -mouse_jsbterm   -sun_workshop    -xpm
+   system vimrc file: "$VIM/vimrc"
+     user vimrc file: "$HOME/.vimrc"
+ 2nd user vimrc file: "~/.vim/vimrc"
+      user exrc file: "$HOME/.exrc"
+  fall-back for $VIM: "/usr/share/vim"
+Compilation: gcc -c -I. -Iproto -DHAVE_CONFIG_H     -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1      
+Linking: gcc   -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,--as-needed -o vim        -lm -ltinfo -lnsl  -lselinux  -lacl -lattr -lgpm -ldl    -L/usr/lib/python2.7/config-x86_64-linux-gnu -lpython2.7 -lpthread -ldl -lutil -lm -Xlinker -export-dynamic -Wl,-O1 -Wl,-Bsymbolic-functions      
+[34m[1miptables version[0m
+iptables v1.4.21
+[34m[1mcurl version[0m
+curl 7.35.0 (x86_64-pc-linux-gnu) libcurl/7.35.0 OpenSSL/1.0.1f zlib/1.2.8 libidn/1.28 librtmp/2.3
+[34m[1mwget version[0m
+GNU Wget 1.15 built on linux-gnu.
+[34m[1mrsync version[0m
+rsync  version 3.1.0  protocol version 31
+[34m[1mgimme version[0m
+v1.2.0
+[34m[1mnvm version[0m
+0.33.6
+[34m[1mperlbrew version[0m
+/home/travis/perl5/perlbrew/bin/perlbrew  - App::perlbrew/0.80
+[34m[1mphpenv version[0m
+rbenv 1.1.1-25-g6aa70b6
+[34m[1mrvm version[0m
+rvm 1.29.3 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
+[34m[1mdefault ruby version[0m
+ruby 2.4.1p111 (2017-03-22 revision 58053) [x86_64-linux]
+[34m[1mCouchDB version[0m
+couchdb 1.6.1
+[34m[1mElasticSearch version[0m
+5.5.0
+[34m[1mInstalled Firefox version[0m
+firefox 56.0.2
+[34m[1mMongoDB version[0m
+MongoDB 3.4.10
+[34m[1mPhantomJS version[0m
+2.1.1
+[34m[1mPre-installed PostgreSQL versions[0m
+9.2.24
+9.3.20
+9.4.15
+9.5.10
+9.6.6
+[34m[1mRabbitMQ Version[0m
+3.6.14
+[34m[1mRedis version[0m
+redis-server 4.0.6
+[34m[1mriak version[0m
+2.2.3
+[34m[1mPre-installed Go versions[0m
+1.7.4
+[34m[1mant version[0m
+Apache Ant(TM) version 1.9.3 compiled on April 8 2014
+[34m[1mmvn version[0m
+Apache Maven 3.5.2 (138edd61fd100ec658bfa2d307c43b76940a5d7d; 2017-10-18T07:58:13Z)
+Maven home: /usr/local/maven-3.5.2
+Java version: 1.8.0_151, vendor: Oracle Corporation
+Java home: /usr/lib/jvm/java-8-oracle/jre
+Default locale: en_US, platform encoding: UTF-8
+OS name: "linux", version: "4.4.0-98-generic", arch: "amd64", family: "unix"
+[34m[1mgradle version[0m
+
+------------------------------------------------------------
+Gradle 4.0.1
+------------------------------------------------------------
+
+Build time:   2017-07-07 14:02:41 UTC
+Revision:     38e5dc0f772daecca1d2681885d3d85414eb6826
+
+Groovy:       2.4.11
+Ant:          Apache Ant(TM) version 1.9.6 compiled on June 29 2015
+JVM:          1.8.0_151 (Oracle Corporation 25.151-b12)
+OS:           Linux 4.4.0-98-generic amd64
+
+[34m[1mlein version[0m
+Leiningen 2.8.1 on Java 1.8.0_151 Java HotSpot(TM) 64-Bit Server VM
+[34m[1mPre-installed Node.js versions[0m
+v4.8.6
+v6.12.0
+v6.12.1
+v8.9
+v8.9.1
+[34m[1mphpenv versions[0m
+  system
+  5.6
+* 5.6.32 (set by /home/travis/.phpenv/version)
+  7.0
+  7.0.25
+  7.1
+  7.1.11
+  hhvm
+  hhvm-stable
+[34m[1mcomposer --version[0m
+Composer version 1.5.2 2017-09-11 16:59:25
+[34m[1mPre-installed Ruby versions[0m
+ruby-2.2.7
+ruby-2.3.4
+ruby-2.4.1
+travis_fold:end:system_info[0K
+travis_time:end:0495ae09:start=1581515654092369770,finish=1581515654099104529,duration=6734759,event=show_system_info[0Ktravis_time:start:2b4b7a69[0Ktravis_time:end:2b4b7a69:start=1581515654102375070,finish=1581515654131676962,duration=29301892,event=rm_riak_source[0Ktravis_time:start:0a3373be[0Ktravis_time:end:0a3373be:start=1581515654136353106,finish=1581515654164698360,duration=28345254,event=fix_rwky_redis[0Ktravis_time:start:385ae11a[0Ktravis_time:end:385ae11a:start=1581515654175450476,finish=1581515654492547728,duration=317097252,event=wait_for_network[0Ktravis_time:start:170f6ef2[0Ktravis_time:end:170f6ef2:start=1581515654497300151,finish=1581515658079561929,duration=3582261778,event=update_apt_keys[0Ktravis_time:start:16ca93ac[0Ktravis_time:end:16ca93ac:start=1581515658084162837,finish=1581515659050755667,duration=966592830,event=fix_hhvm_source[0Ktravis_time:start:0ad4ccf6[0Ktravis_time:end:0ad4ccf6:start=1581515659056704770,finish=1581515659067473483,duration=10768713,event=update_mongo_arch[0Ktravis_time:start:125c96e8[0Ktravis_time:end:125c96e8:start=1581515659076139003,finish=1581515659117528447,duration=41389444,event=fix_sudo_enabled_trusty[0Ktravis_time:start:14bbca58[0Ktravis_time:end:14bbca58:start=1581515659123538291,finish=1581515659126387384,duration=2849093,event=update_glibc[0Ktravis_time:start:17b3abb0[0Ktravis_time:end:17b3abb0:start=1581515659131525305,finish=1581515659142661241,duration=11135936,event=clean_up_path[0Ktravis_time:start:0f44f8e0[0Ktravis_time:end:0f44f8e0:start=1581515659147211790,finish=1581515659156586405,duration=9374615,event=fix_resolv_conf[0Ktravis_time:start:06956cd0[0Ktravis_time:end:06956cd0:start=1581515659161830259,finish=1581515659173540135,duration=11709876,event=fix_etc_hosts[0Ktravis_time:start:0b78fa0c[0Ktravis_time:end:0b78fa0c:start=1581515659180069285,finish=1581515659190306376,duration=10237091,event=fix_mvn_settings_xml[0Ktravis_time:start:16367740[0Ktravis_time:end:16367740:start=1581515659195394781,finish=1581515659206888375,duration=11493594,event=no_ipv6_localhost[0Ktravis_time:start:09c299cc[0Ktravis_time:end:09c299cc:start=1581515659212258917,finish=1581515659215274956,duration=3016039,event=fix_etc_mavenrc[0Ktravis_time:start:026a5f67[0Ktravis_time:end:026a5f67:start=1581515659223965246,finish=1581515659228437934,duration=4472688,event=fix_wwdr_certificate[0Ktravis_time:start:0358e42c[0Ktravis_time:end:0358e42c:start=1581515659233345461,finish=1581515659259171860,duration=25826399,event=put_localhost_first[0Ktravis_time:start:1ca5e960[0Ktravis_time:end:1ca5e960:start=1581515659264162872,finish=1581515659269336735,duration=5173863,event=home_paths[0Ktravis_time:start:00538810[0Ktravis_time:end:00538810:start=1581515659273931190,finish=1581515659290838062,duration=16906872,event=disable_initramfs[0Ktravis_time:start:06814374[0Ktravis_time:end:06814374:start=1581515659294886101,finish=1581515659605370676,duration=310484575,event=disable_ssh_roaming[0Ktravis_time:start:28234088[0Ktravis_time:end:28234088:start=1581515659610044725,finish=1581515659612903073,duration=2858348,event=debug_tools[0Ktravis_time:start:2e44fd26[0Ktravis_time:end:2e44fd26:start=1581515659617603583,finish=1581515659623137138,duration=5533555,event=uninstall_oclint[0Ktravis_time:start:1534121d[0Ktravis_time:end:1534121d:start=1581515659627845064,finish=1581515659632871122,duration=5026058,event=rvm_use[0Ktravis_time:start:0334dda5[0Ktravis_time:end:0334dda5:start=1581515659638156490,finish=1581515659651376346,duration=13219856,event=rm_etc_boto_cfg[0Ktravis_time:start:0e145137[0Ktravis_time:end:0e145137:start=1581515659656250591,finish=1581515659659617763,duration=3367172,event=rm_oraclejdk8_symlink[0Ktravis_time:start:15825174[0Ktravis_time:end:15825174:start=1581515659663930850,finish=1581515659723772843,duration=59841993,event=enable_i386[0Ktravis_time:start:09f4f30e[0Ktravis_time:end:09f4f30e:start=1581515659728479848,finish=1581515659733749909,duration=5270061,event=update_rubygems[0Ktravis_time:start:172b5ead[0Ktravis_time:end:172b5ead:start=1581515659737993741,finish=1581515660719758980,duration=981765239,event=ensure_path_components[0Ktravis_time:start:28b43acd[0Ktravis_time:end:28b43acd:start=1581515660724786977,finish=1581515660727462353,duration=2675376,event=redefine_curl[0Ktravis_time:start:10b92ef6[0Ktravis_time:end:10b92ef6:start=1581515660731649179,finish=1581515660789423525,duration=57774346,event=nonblock_pipe[0Ktravis_time:start:1850ed72[0Ktravis_time:end:1850ed72:start=1581515660794642278,finish=1581515666829044813,duration=6034402535,event=apt_get_update[0Ktravis_time:start:002797de[0Ktravis_time:end:002797de:start=1581515666832966090,finish=1581515666835521380,duration=2555290,event=deprecate_xcode_64[0Ktravis_time:start:037b0c9c[0Ktravis_time:end:037b0c9c:start=1581515666840345542,finish=1581515671472679761,duration=4632334219,event=update_heroku[0Ktravis_time:start:172fc480[0Ktravis_time:end:172fc480:start=1581515671476509819,finish=1581515671479214697,duration=2704878,event=shell_session_update[0Ktravis_time:start:0694aca0[0Ktravis_fold:start:docker_mtu[0Kdocker stop/waiting
+docker start/running, process 3880
+travis_fold:end:docker_mtu[0Ktravis_time:end:0694aca0:start=1581515671483552466,finish=1581515672672420299,duration=1188867833,event=set_docker_mtu[0Ktravis_time:start:1441b270[0Ktravis_fold:start:resolvconf[0Kresolvconf stop/waiting
+resolvconf start/running
+travis_fold:end:resolvconf[0Ktravis_time:end:1441b270:start=1581515672676117967,finish=1581515672744116985,duration=67999018,event=resolvconf[0Ktravis_time:start:1c1f07b8[0Ktravis_time:end:1c1f07b8:start=1581515672749343488,finish=1581515672845377387,duration=96033899,event=maven_central_mirror[0Ktravis_time:start:0ac3fc0d[0Ktravis_time:end:0ac3fc0d:start=1581515672849753510,finish=1581515672920896143,duration=71142633,event=maven_https[0K[33;1m3.5 is not installed; attempting download[0m
+[33;1mDownloading archive: https://storage.googleapis.com/travis-ci-language-archives/python/binaries/ubuntu/14.04/x86_64/python-3.5.tar.bz2[0m
+travis_time:start:0336dd44[0K$ curl -sSf --retry 5 -o python-3.5.tar.bz2 ${archive_url}
+travis_time:end:0336dd44:start=1581515673001882116,finish=1581515674557477236,duration=1555595120,event=configure[0Ktravis_time:start:023ebf18[0K$ sudo tar xjf python-3.5.tar.bz2 --directory /
+travis_time:end:023ebf18:start=1581515674562668800,finish=1581515686914988554,duration=12352319754,event=configure[0Ktravis_time:start:12443198[0Ktravis_fold:start:services[0Ktravis_time:start:01874541[0K$ sudo service docker start
+start: Job is already running: docker
+travis_time:end:01874541:start=1581515686941426165,finish=1581515686955861957,duration=14435792,event=prepare[0Ktravis_fold:end:services[0Ktravis_time:end:01874541:start=1581515686941426165,finish=1581515689962406839,duration=3020980674,event=services[0Ktravis_time:start:1c80f987[0Ktravis_time:end:1c80f987:start=1581515689966591598,finish=1581515689969688634,duration=3097036,event=fix_ps4[0Ktravis_time:start:0a59e1ee[0K
+travis_fold:start:git.checkout[0Ktravis_time:start:0002f3b8[0K$ git clone --depth=50 https://github.com/[secure]/systemtests.git [secure]/systemtests
+Cloning into '[secure]/systemtests'...
+travis_time:end:0002f3b8:start=1581515689978433606,finish=1581515696506471991,duration=6528038385,event=checkout[0K$ cd [secure]/systemtests
+travis_time:start:2f88a608[0K$ git fetch origin +refs/pull/147/merge:
+From https://github.com/[secure]/systemtests
+ * branch            refs/pull/147/merge -> FETCH_HEAD
+travis_time:end:2f88a608:start=1581515696511579353,finish=1581515700403078941,duration=3891499588,event=checkout[0K$ git checkout -qf FETCH_HEAD
+travis_fold:end:git.checkout[0K
+travis_time:end:2f88a608:start=1581515696511579353,finish=1581515701084841830,duration=4573262477,event=checkout[0Ktravis_time:start:0793ef07[0K
+[33;1mSetting environment variables from repository settings[0m
+$ export DOCKER_PASSWORD=[secure]
+$ export DOCKER_USERNAME=[secure]
+$ export TRAVIS_ACCESS_TOKEN=[secure]
+$ export PRECICE_BOT_EMAIL=[secure]
+$ export GH_TOKEN=[secure]
+
+travis_time:end:0793ef07:start=1581515701089585164,finish=1581515701101122004,duration=11536840,event=env[0Ktravis_time:start:024dab8c[0K$ source ~/virtualenv/python3.5/bin/activate
+travis_time:end:024dab8c:start=1581515701109350412,finish=1581515701115871312,duration=6520900,event=[0K$ python --version
+Python 3.5.6
+$ pip --version
+pip 18.0 from /home/travis/virtualenv/python3.5.6/lib/python3.5/site-packages/pip (python 3.5)
+travis_fold:start:install[0Ktravis_time:start:0c0c9354[0K$ pip install Jinja2
+Collecting Jinja2
+  Downloading https://files.pythonhosted.org/packages/27/24/4f35961e5c669e96f6559760042a55b9bcfcdb82b9bdb3c8753dbe042e35/Jinja2-2.11.1-py2.py3-none-any.whl (126kB)
+Collecting MarkupSafe>=0.23 (from Jinja2)
+  Downloading https://files.pythonhosted.org/packages/6e/57/d40124076756c19ff2269678de7ae25a14ebbb3f6314eb5ce9477f191350/MarkupSafe-1.1.1-cp35-cp35m-manylinux1_x86_64.whl
+Installing collected packages: MarkupSafe, Jinja2
+Successfully installed Jinja2-2.11.1 MarkupSafe-1.1.1
+travis_time:end:0c0c9354:start=1581515701448768771,finish=1581515702314533741,duration=865764970,event=install[0Ktravis_fold:end:install[0Ktravis_time:start:008f856b[0K$ python system_testing.py -s fe-fe --base Ubuntu1804.home -v
+networks:
+  [secure]comm: {}
+services:
+  fenics-adapter-dirichlet:
+    command: '/bin/bash -c "cd /home/[secure]  && python3 /home/[secure]/Data/Input/heat.py
+      -d -i simple && cp *.log /home/[secure]/Data/Output"
+
+      '
+    container_name: fenics-adapter-dirichlet
+    depends_on:
+    - tutorial-data
+    image: [secure]/fenics-adapter-ubuntu1804.home-develop:latest
+    networks:
+      [secure]comm: null
+    volumes:
+    - exchange:/home/[secure]/Data/Exchange:rw
+    - output:/home/[secure]/Data/Output:rw
+    - input:/home/[secure]/Data/Input:rw
+  fenics-adapter-neumann:
+    command: '/bin/bash -c "cd /home/[secure]  && python3 /home/[secure]/Data/Input/heat.py
+      -n -i simple && cp *.log /home/[secure]/Data/Output"
+
+      '
+    container_name: fenics-adapter-neumann
+    depends_on:
+    - tutorial-data
+    image: [secure]/fenics-adapter-ubuntu1804.home-develop:latest
+    networks:
+      [secure]comm: null
+    volumes:
+    - exchange:/home/[secure]/Data/Exchange:rw
+    - output:/home/[secure]/Data/Output:rw
+    - input:/home/[secure]/Data/Input:rw
+  tutorial-data:
+    build:
+      context: /home/travis/build/[secure]/systemtests/tests/TestCompose_fe-fe.Ubuntu1804.home
+      dockerfile: Dockerfile.tutorial_data
+      network: host
+    container_name: tutorial-data
+    volumes:
+    - output:/Output:rw
+    - input:/tutorials/HT/partitioned-heat/fenics-fenics:rw
+version: '3.4'
+volumes:
+  exchange: {}
+  input: {}
+  output: {}
+
+Creating network "testcomposefefeubuntu1804home_default" with the default driver
+Creating network "testcomposefefeubuntu1804home_[secure]comm" with the default driver
+Creating volume "testcomposefefeubuntu1804home_output" with default driver
+Creating volume "testcomposefefeubuntu1804home_input" with default driver
+Creating volume "testcomposefefeubuntu1804home_exchange" with default driver
+Building tutorial-data
+Step 1/8 : FROM alpine
+latest: Pulling from library/alpine
+Digest: sha256:ab00606a42621fb68f2ed6ad3c88be54397f981a7b70a79db3d1172b11c4367d
+Status: Downloaded newer image for alpine:latest
+ ---> e7d92cdc71fe
+Step 2/8 : ENV tutorial_path tutorials/HT/partitioned-heat/fenics-fenics
+ ---> Running in c62f22f9ad09
+ ---> 5e05c2e1470f
+Removing intermediate container c62f22f9ad09
+Step 3/8 : RUN apk add git
+ ---> Running in 130f83ed7885
+fetch http://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/APKINDEX.tar.gz
+fetch http://dl-cdn.alpinelinux.org/alpine/v3.11/community/x86_64/APKINDEX.tar.gz
+(1/6) Installing ca-certificates (20191127-r1)
+(2/6) Installing nghttp2-libs (1.40.0-r0)
+(3/6) Installing libcurl (7.67.0-r0)
+(4/6) Installing expat (2.2.9-r1)
+(5/6) Installing pcre2 (10.34-r1)
+(6/6) Installing git (2.24.1-r0)
+Executing busybox-1.31.1-r9.trigger
+Executing ca-certificates-20191127-r1.trigger
+OK: 22 MiB in 20 packages
+ ---> a5e7fd594690
+Removing intermediate container 130f83ed7885
+Step 4/8 : ARG branch=develop
+ ---> Running in 195ccfcb1edf
+ ---> 191bf6a448fb
+Removing intermediate container 195ccfcb1edf
+Step 5/8 : RUN git clone --branch $branch https://github.com/[secure]/tutorials
+ ---> Running in 0d09d2aab729
+[91mCloning into 'tutorials'...
+[0m ---> 6004ea0a2397
+Removing intermediate container 0d09d2aab729
+Step 6/8 : RUN mkdir configs && sed -i 's|<m2n:sockets from="HeatDirichlet" to="HeatNeumann"/>|<m2n:sockets from="HeatDirichlet" to="HeatNeumann" exchange-directory="/home/[secure]/Data/Exchange/" network="eth0"/>|g' $tutorial_path/[secure]-config.xml
+ ---> Running in 7aa724dc8e4e
+ ---> 05f1285d9814
+Removing intermediate container 7aa724dc8e4e
+Step 7/8 : RUN addgroup -g 1000 [secure] && adduser -u 1000 -G [secure] -D [secure] && chown -R [secure]:[secure] tutorials configs
+ ---> Running in 8676cb2c1475
+ ---> 08be4a262afa
+Removing intermediate container 8676cb2c1475
+Step 8/8 : USER [secure]
+ ---> Running in 8a9131f907da
+ ---> f313e3ebda6f
+Removing intermediate container 8a9131f907da
+
+Successfully built f313e3ebda6f
+Successfully tagged testcomposefefeubuntu1804home_tutorial-data:latest
+Image for service tutorial-data was built because it did not already exist. To rebuild this image you must use `docker-compose build` or `docker-compose up --build`.
+Pulling fenics-adapter-dirichlet ([secure]/fenics-adapter-ubuntu1804.home-develop:latest)...
+latest: Pulling from [secure]/fenics-adapter-ubuntu1804.home-develop
+Digest: sha256:2be3a8c779fab8215c9745bc5a80e4996681d3d7bc922b77f34ae36ecb867a80
+Status: Downloaded newer image for [secure]/fenics-adapter-ubuntu1804.home-develop:latest
+Creating tutorial-data ... 
+Creating tutorial-data
+[1A[2KCreating tutorial-data ... [32mdone[0m[1BCreating fenics-adapter-dirichlet ... 
+Creating fenics-adapter-neumann ... 
+Creating fenics-adapter-neumann
+Creating fenics-adapter-dirichlet
+[1A[2KCreating fenics-adapter-dirichlet ... [32mdone[0m[1B[1A[2KCreating fenics-adapter-neumann ... [32mdone[0m[1BAttaching to tutorial-data, fenics-adapter-dirichlet, fenics-adapter-neumann
+[36mtutorial-data exited with code 0
+[0m[33mfenics-adapter-dirichlet    |[0m Default domain partitioning for simple interface is used: Left part of domain is a Dirichlet-type problem; right part is a Neumann-type problem
+[33mfenics-adapter-dirichlet    |[0m Calling FFC just-in-time (JIT) compiler, this may take some time.
+[32mfenics-adapter-neumann      |[0m Default domain partitioning for simple interface is used: Left part of domain is a Dirichlet-type problem; right part is a Neumann-type problem
+[32mfenics-adapter-neumann      |[0m Calling FFC just-in-time (JIT) compiler, this may take some time.
+[33mfenics-adapter-dirichlet    |[0m Calling FFC just-in-time (JIT) compiler, this may take some time.
+[32mfenics-adapter-neumann      |[0m Calling FFC just-in-time (JIT) compiler, this may take some time.
+[33mfenics-adapter-dirichlet    |[0m Calling FFC just-in-time (JIT) compiler, this may take some time.
+[32mfenics-adapter-neumann      |[0m Calling FFC just-in-time (JIT) compiler, this may take some time.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m This is preCICE version 2.0.0
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m Revision info: v2.0.0-2-g56832a9f
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m Configuring preCICE with configuration: "/home/[secure]/Data/Input/[secure]-config.xml"
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m This is preCICE version 2.0.0
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m Revision info: v2.0.0-2-g56832a9f
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m Configuring preCICE with configuration: "/home/[secure]/Data/Input/[secure]-config.xml"
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m Setting up master communication to coupling partner/s
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m Setting up master communication to coupling partner/s
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m Masters are connected
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m Setting up preliminary slaves communication to coupling partner/s
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m Masters are connected
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m Prepare partition for mesh DirichletNodes
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m Receive global mesh NeumannNodes
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m Setting up preliminary slaves communication to coupling partner/s
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m Prepare partition for mesh NeumannNodes
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m Gather mesh NeumannNodes
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m Send global mesh NeumannNodes
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m Setting up slaves communication to coupling partner/s
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m Setting up slaves communication to coupling partner/s
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m Slaves are connected
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m Slaves are connected
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 1 of 100 | dt# 1 | t 0 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | write-initial-data | write-iteration-checkpoint | 
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 1 of 100 | dt# 1 | t 0 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | write-iteration-checkpoint | 
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m Compute write mapping from mesh "DirichletNodes" to mesh "NeumannNodes".
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m Mapping distance min:0 max:0 avg: 0 var: 0 cnt: 21
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m Compute read mapping from mesh "NeumannNodes" to mesh "DirichletNodes".
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m Mapping distance min:0 max:0 avg: 0 var: 0 cnt: 11
+[33mfenics-adapter-dirichlet    |[0m output u^0 and u_ref^0
+[33mfenics-adapter-dirichlet    |[0m Calling FFC just-in-time (JIT) compiler, this may take some time.
+[33mfenics-adapter-dirichlet    |[0m Calling FFC just-in-time (JIT) compiler, this may take some time.
+[33mfenics-adapter-dirichlet    |[0m Calling FFC just-in-time (JIT) compiler, this may take some time.
+[33mfenics-adapter-dirichlet    |[0m Calling FFC just-in-time (JIT) compiler, this may take some time.
+[33mfenics-adapter-dirichlet    |[0m Calling FFC just-in-time (JIT) compiler, this may take some time.
+[33mfenics-adapter-dirichlet    |[0m Calling FFC just-in-time (JIT) compiler, this may take some time.
+[33mfenics-adapter-dirichlet    |[0m Calling FFC just-in-time (JIT) compiler, this may take some time.
+[33mfenics-adapter-dirichlet    |[0m Calling FFC just-in-time (JIT) compiler, this may take some time.
+[33mfenics-adapter-dirichlet    |[0m Calling FFC just-in-time (JIT) compiler, this may take some time.
+[33mfenics-adapter-dirichlet    |[0m Calling FFC just-in-time (JIT) compiler, this may take some time.
+[33mfenics-adapter-dirichlet    |[0m Calling FFC just-in-time (JIT) compiler, this may take some time.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Calling FFC just-in-time (JIT) compiler, this may take some time.
+[33mfenics-adapter-dirichlet    |[0m Calling FFC just-in-time (JIT) compiler, this may take some time.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m output u^0 and u_ref^0
+[32mfenics-adapter-neumann      |[0m Calling FFC just-in-time (JIT) compiler, this may take some time.
+[32mfenics-adapter-neumann      |[0m Calling FFC just-in-time (JIT) compiler, this may take some time.
+[32mfenics-adapter-neumann      |[0m Calling FFC just-in-time (JIT) compiler, this may take some time.
+[32mfenics-adapter-neumann      |[0m Calling FFC just-in-time (JIT) compiler, this may take some time.
+[32mfenics-adapter-neumann      |[0m Calling FFC just-in-time (JIT) compiler, this may take some time.
+[32mfenics-adapter-neumann      |[0m Calling FFC just-in-time (JIT) compiler, this may take some time.
+[32mfenics-adapter-neumann      |[0m Calling FFC just-in-time (JIT) compiler, this may take some time.
+[32mfenics-adapter-neumann      |[0m Calling FFC just-in-time (JIT) compiler, this may take some time.
+[32mfenics-adapter-neumann      |[0m Calling FFC just-in-time (JIT) compiler, this may take some time.
+[32mfenics-adapter-neumann      |[0m Calling FFC just-in-time (JIT) compiler, this may take some time.
+[32mfenics-adapter-neumann      |[0m Calling FFC just-in-time (JIT) compiler, this may take some time.
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 19.4989, relative limit = 0.000194989, conv = false
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 2 of 100 | dt# 1 | t 0 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 1.14293, relative limit = 0.000211534, conv = false
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 2 of 100 | dt# 1 | t 0 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.0965732, relative limit = 0.000195096, conv = false
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 1.12079, relative limit = 0.000211435, conv = false
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 3 of 100 | dt# 1 | t 0 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 3 of 100 | dt# 1 | t 0 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 5.99856, relative limit = 0.000211615, conv = false
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.0403333, relative limit = 0.000206421, conv = false
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 4 of 100 | dt# 1 | t 0 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 4 of 100 | dt# 1 | t 0 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.371028, relative limit = 0.000211476, conv = false
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.00996303, relative limit = 0.000206402, conv = false
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 5 of 100 | dt# 1 | t 0 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 5 of 100 | dt# 1 | t 0 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.166189, relative limit = 0.000211547, conv = false
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.00600447, relative limit = 0.000206405, conv = false
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 6 of 100 | dt# 1 | t 0 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 6 of 100 | dt# 1 | t 0 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.0655231, relative limit = 0.000211497, conv = false
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.000952491, relative limit = 0.000206414, conv = false
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 7 of 100 | dt# 1 | t 0 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 7 of 100 | dt# 1 | t 0 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.0167534, relative limit = 0.00021149, conv = false
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.000606978, relative limit = 0.000206417, conv = false
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 8 of 100 | dt# 1 | t 0 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 8 of 100 | dt# 1 | t 0 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.0061076, relative limit = 0.000211496, conv = false
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.000151586, relative limit = 0.000206414, conv = true
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 9 of 100 | dt# 1 | t 0 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 9 of 100 | dt# 1 | t 0 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.000940167, relative limit = 0.000211495, conv = false
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 1.16715e-05, relative limit = 0.000206415, conv = true
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 10 of 100 | dt# 1 | t 0 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 10 of 100 | dt# 1 | t 0 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.000145127, relative limit = 0.000211495, conv = true
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 3.14678e-06, relative limit = 0.000206415, conv = true
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m Time window completed
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 1 of 100 | dt# 2 | t 0.1 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete yes | write-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m All converged
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m Time window completed
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 1 of 100 | dt# 2 | t 0.1 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete yes | write-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 5.97787, relative limit = 0.000194989, conv = false
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 1.14293, relative limit = 0.000217373, conv = false
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 2 of 100 | dt# 2 | t 0.1 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 2 of 100 | dt# 2 | t 0.1 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 3 of 100 | dt# 2 | t 0.1 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 6.99426, relative limit = 0.000214833, conv = false
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.324419, relative limit = 0.00021164, conv = false
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 3 of 100 | dt# 2 | t 0.1 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 3.59458, relative limit = 0.000211834, conv = false
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 4 of 100 | dt# 2 | t 0.1 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.0620633, relative limit = 0.000212222, conv = false
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 4 of 100 | dt# 2 | t 0.1 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 5 of 100 | dt# 2 | t 0.1 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.891927, relative limit = 0.000211523, conv = false
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.024028, relative limit = 0.000212216, conv = false
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 5 of 100 | dt# 2 | t 0.1 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 6 of 100 | dt# 2 | t 0.1 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.354995, relative limit = 0.000211514, conv = false
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.00525263, relative limit = 0.000212236, conv = false
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 6 of 100 | dt# 2 | t 0.1 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.060446, relative limit = 0.000211486, conv = false
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.00301121, relative limit = 0.000212252, conv = false
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 7 of 100 | dt# 2 | t 0.1 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 7 of 100 | dt# 2 | t 0.1 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.019471, relative limit = 0.000211493, conv = false
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.000366019, relative limit = 0.000212245, conv = false
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 8 of 100 | dt# 2 | t 0.1 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 8 of 100 | dt# 2 | t 0.1 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.00437111, relative limit = 0.000211495, conv = false
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 9 of 100 | dt# 2 | t 0.1 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 8.33331e-05, relative limit = 0.000212244, conv = true
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 9 of 100 | dt# 2 | t 0.1 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.00107632, relative limit = 0.000211495, conv = false
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 3.48608e-05, relative limit = 0.000212244, conv = true
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 10 of 100 | dt# 2 | t 0.1 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 10 of 100 | dt# 2 | t 0.1 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.000350748, relative limit = 0.000211495, conv = false
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 11 of 100 | dt# 2 | t 0.1 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 3.56514e-06, relative limit = 0.000212245, conv = true
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 11 of 100 | dt# 2 | t 0.1 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m Time window completed
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 7.31248e-05, relative limit = 0.000211495, conv = true
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 1.68831e-06, relative limit = 0.000212245, conv = true
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m All converged
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 1 of 100 | dt# 3 | t 0.2 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete yes | write-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m Time window completed
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 1 of 100 | dt# 3 | t 0.2 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete yes | write-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 2 of 100 | dt# 3 | t 0.2 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 5.97788, relative limit = 0.000194989, conv = false
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 1.14293, relative limit = 0.000223218, conv = false
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 2 of 100 | dt# 3 | t 0.2 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 7.59464, relative limit = 0.000218676, conv = false
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.600586, relative limit = 0.00021625, conv = false
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 3 of 100 | dt# 3 | t 0.2 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 3 of 100 | dt# 3 | t 0.2 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 5.65634, relative limit = 0.000212952, conv = false
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.207454, relative limit = 0.000217932, conv = false
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 4 of 100 | dt# 3 | t 0.2 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 4 of 100 | dt# 3 | t 0.2 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 2.1407, relative limit = 0.000211696, conv = false
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.0574472, relative limit = 0.000218044, conv = false
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 5 of 100 | dt# 3 | t 0.2 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 5 of 100 | dt# 3 | t 0.2 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.527081, relative limit = 0.000211512, conv = false
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.00607727, relative limit = 0.000218074, conv = false
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 6 of 100 | dt# 3 | t 0.2 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 6 of 100 | dt# 3 | t 0.2 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.071339, relative limit = 0.000211499, conv = false
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.00304245, relative limit = 0.000218078, conv = false
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 7 of 100 | dt# 3 | t 0.2 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 7 of 100 | dt# 3 | t 0.2 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 8 of 100 | dt# 3 | t 0.2 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.0362751, relative limit = 0.000211488, conv = false
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.00127884, relative limit = 0.000218085, conv = false
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 8 of 100 | dt# 3 | t 0.2 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.00796983, relative limit = 0.000211496, conv = false
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.00035131, relative limit = 0.00021808, conv = false
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 9 of 100 | dt# 3 | t 0.2 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 9 of 100 | dt# 3 | t 0.2 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.00281663, relative limit = 0.000211495, conv = false
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 6.55146e-05, relative limit = 0.000218081, conv = true
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 10 of 100 | dt# 3 | t 0.2 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 10 of 100 | dt# 3 | t 0.2 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 11 of 100 | dt# 3 | t 0.2 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.000571555, relative limit = 0.000211495, conv = false
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 6.94918e-06, relative limit = 0.000218081, conv = true
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 11 of 100 | dt# 3 | t 0.2 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m Time window completed
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.000115874, relative limit = 0.000211495, conv = true
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 5.08055e-06, relative limit = 0.000218081, conv = true
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m All converged
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m Time window completed
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 1 of 100 | dt# 4 | t 0.3 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete yes | write-iteration-checkpoint | 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 1 of 100 | dt# 4 | t 0.3 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete yes | write-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 2 of 100 | dt# 4 | t 0.3 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 5.97789, relative limit = 0.000194989, conv = false
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 1.14294, relative limit = 0.000229068, conv = false
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 2 of 100 | dt# 4 | t 0.3 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 9.03961, relative limit = 0.000221437, conv = false
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.541439, relative limit = 0.000222339, conv = false
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 3 of 100 | dt# 4 | t 0.3 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 3 of 100 | dt# 4 | t 0.3 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 6.74305, relative limit = 0.000212556, conv = false
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.204576, relative limit = 0.000223634, conv = false
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 4 of 100 | dt# 4 | t 0.3 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 4 of 100 | dt# 4 | t 0.3 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 1.93288, relative limit = 0.00021161, conv = false
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 5 of 100 | dt# 4 | t 0.3 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.0410034, relative limit = 0.000223913, conv = false
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 5 of 100 | dt# 4 | t 0.3 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.417634, relative limit = 0.000211528, conv = false
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.0121462, relative limit = 0.00022391, conv = false
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 6 of 100 | dt# 4 | t 0.3 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 6 of 100 | dt# 4 | t 0.3 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 7 of 100 | dt# 4 | t 0.3 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.128945, relative limit = 0.00021147, conv = false
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.00745833, relative limit = 0.000223933, conv = false
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 7 of 100 | dt# 4 | t 0.3 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.0595481, relative limit = 0.000211491, conv = false
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.000942749, relative limit = 0.000223926, conv = false
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 8 of 100 | dt# 4 | t 0.3 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 8 of 100 | dt# 4 | t 0.3 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.00733509, relative limit = 0.000211498, conv = false
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.000441015, relative limit = 0.000223922, conv = false
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 9 of 100 | dt# 4 | t 0.3 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 9 of 100 | dt# 4 | t 0.3 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.0022086, relative limit = 0.000211495, conv = false
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 8.19823e-05, relative limit = 0.000223924, conv = true
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 10 of 100 | dt# 4 | t 0.3 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 10 of 100 | dt# 4 | t 0.3 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.000775817, relative limit = 0.000211495, conv = false
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 3.13806e-05, relative limit = 0.000223924, conv = true
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 11 of 100 | dt# 4 | t 0.3 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 11 of 100 | dt# 4 | t 0.3 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 12 of 100 | dt# 4 | t 0.3 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.000357244, relative limit = 0.000211495, conv = false
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 1.80511e-05, relative limit = 0.000223924, conv = true
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 12 of 100 | dt# 4 | t 0.3 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m Time window completed
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.00012479, relative limit = 0.000211495, conv = true
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 4.67626e-06, relative limit = 0.000223924, conv = true
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m All converged
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m Time window completed
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 1 of 100 | dt# 5 | t 0.4 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete yes | write-iteration-checkpoint | 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 1 of 100 | dt# 5 | t 0.4 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete yes | write-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 5.97788, relative limit = 0.000194989, conv = false
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 1.14293, relative limit = 0.000234924, conv = false
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 2 of 100 | dt# 5 | t 0.4 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 2 of 100 | dt# 5 | t 0.4 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 9.61893, relative limit = 0.000226183, conv = false
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.961677, relative limit = 0.00022608, conv = false
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 3 of 100 | dt# 5 | t 0.4 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 3 of 100 | dt# 5 | t 0.4 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 6.27869, relative limit = 0.000212393, conv = false
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.175412, relative limit = 0.00022956, conv = false
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 4 of 100 | dt# 5 | t 0.4 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 4 of 100 | dt# 5 | t 0.4 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 1.64396, relative limit = 0.00021153, conv = false
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.019218, relative limit = 0.000229769, conv = false
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 5 of 100 | dt# 5 | t 0.4 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 5 of 100 | dt# 5 | t 0.4 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.223657, relative limit = 0.000211505, conv = false
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.00780676, relative limit = 0.000229763, conv = false
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 6 of 100 | dt# 5 | t 0.4 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 6 of 100 | dt# 5 | t 0.4 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.0755862, relative limit = 0.00021151, conv = false
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.00215327, relative limit = 0.000229767, conv = false
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 7 of 100 | dt# 5 | t 0.4 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 7 of 100 | dt# 5 | t 0.4 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.0223588, relative limit = 0.000211483, conv = false
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.00134095, relative limit = 0.000229777, conv = false
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 8 of 100 | dt# 5 | t 0.4 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 8 of 100 | dt# 5 | t 0.4 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.01087, relative limit = 0.000211495, conv = false
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.000275402, relative limit = 0.000229773, conv = false
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 9 of 100 | dt# 5 | t 0.4 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 9 of 100 | dt# 5 | t 0.4 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.00233837, relative limit = 0.000211495, conv = false
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 2.88559e-05, relative limit = 0.000229773, conv = true
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 10 of 100 | dt# 5 | t 0.4 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 10 of 100 | dt# 5 | t 0.4 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.000399093, relative limit = 0.000211495, conv = false
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 8.54383e-06, relative limit = 0.000229773, conv = true
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 11 of 100 | dt# 5 | t 0.4 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 11 of 100 | dt# 5 | t 0.4 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 9.2755e-05, relative limit = 0.000211495, conv = true
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 5.66314e-06, relative limit = 0.000229773, conv = true
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m All converged
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m Time window completed
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m Time window completed
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 1 of 100 | dt# 6 | t 0.5 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete yes | write-iteration-checkpoint | 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 1 of 100 | dt# 6 | t 0.5 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete yes | write-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 5.97788, relative limit = 0.000194989, conv = false
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 1.14293, relative limit = 0.000240785, conv = false
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 2 of 100 | dt# 6 | t 0.5 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 2 of 100 | dt# 6 | t 0.5 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 9.29518, relative limit = 0.000225679, conv = false
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.855654, relative limit = 0.000232497, conv = false
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 3 of 100 | dt# 6 | t 0.5 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 3 of 100 | dt# 6 | t 0.5 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 5.86844, relative limit = 0.000211783, conv = false
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.103491, relative limit = 0.00023564, conv = false
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 4 of 100 | dt# 6 | t 0.5 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 4 of 100 | dt# 6 | t 0.5 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 1.26579, relative limit = 0.000211626, conv = false
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.0586039, relative limit = 0.000235579, conv = false
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 5 of 100 | dt# 6 | t 0.5 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 5 of 100 | dt# 6 | t 0.5 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.60828, relative limit = 0.0002115, conv = false
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.0132041, relative limit = 0.000235612, conv = false
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 6 of 100 | dt# 6 | t 0.5 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 6 of 100 | dt# 6 | t 0.5 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.174697, relative limit = 0.000211488, conv = false
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.00892198, relative limit = 0.000235641, conv = false
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 7 of 100 | dt# 6 | t 0.5 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 7 of 100 | dt# 6 | t 0.5 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.0557669, relative limit = 0.000211492, conv = false
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.000862563, relative limit = 0.000235627, conv = false
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 8 of 100 | dt# 6 | t 0.5 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 8 of 100 | dt# 6 | t 0.5 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.00890277, relative limit = 0.000211497, conv = false
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.000218491, relative limit = 0.000235626, conv = true
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 9 of 100 | dt# 6 | t 0.5 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 9 of 100 | dt# 6 | t 0.5 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.00215605, relative limit = 0.000211494, conv = false
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 9.21527e-05, relative limit = 0.000235627, conv = true
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 10 of 100 | dt# 6 | t 0.5 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 10 of 100 | dt# 6 | t 0.5 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.000946891, relative limit = 0.000211495, conv = false
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 4.59905e-05, relative limit = 0.000235627, conv = true
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 11 of 100 | dt# 6 | t 0.5 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 11 of 100 | dt# 6 | t 0.5 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.000469757, relative limit = 0.000211495, conv = false
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 3.97276e-06, relative limit = 0.000235627, conv = true
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 12 of 100 | dt# 6 | t 0.5 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 12 of 100 | dt# 6 | t 0.5 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 4.35681e-05, relative limit = 0.000211495, conv = true
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 3.16874e-06, relative limit = 0.000235627, conv = true
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m All converged
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m Time window completed
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m Time window completed
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 1 of 100 | dt# 7 | t 0.6 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete yes | write-iteration-checkpoint | 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 1 of 100 | dt# 7 | t 0.6 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete yes | write-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 5.97788, relative limit = 0.000194989, conv = false
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 1.14294, relative limit = 0.000246651, conv = false
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 2 of 100 | dt# 7 | t 0.6 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 2 of 100 | dt# 7 | t 0.6 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 8.17532, relative limit = 0.000222548, conv = false
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.717295, relative limit = 0.000238835, conv = false
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 3 of 100 | dt# 7 | t 0.6 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 3 of 100 | dt# 7 | t 0.6 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 6.88045, relative limit = 0.000213463, conv = false
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 4 of 100 | dt# 7 | t 0.6 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.202265, relative limit = 0.000241412, conv = false
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 4 of 100 | dt# 7 | t 0.6 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 5 of 100 | dt# 7 | t 0.6 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 2.02793, relative limit = 0.000211528, conv = false
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.0286756, relative limit = 0.000241471, conv = false
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 5 of 100 | dt# 7 | t 0.6 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.359486, relative limit = 0.00021149, conv = false
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.0149988, relative limit = 0.000241477, conv = false
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 6 of 100 | dt# 7 | t 0.6 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 6 of 100 | dt# 7 | t 0.6 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.144452, relative limit = 0.000211505, conv = false
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.00662361, relative limit = 0.000241492, conv = false
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 7 of 100 | dt# 7 | t 0.6 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 7 of 100 | dt# 7 | t 0.6 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.0480993, relative limit = 0.000211492, conv = false
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.000902055, relative limit = 0.000241487, conv = false
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 8 of 100 | dt# 7 | t 0.6 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 8 of 100 | dt# 7 | t 0.6 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.013968, relative limit = 0.000211496, conv = false
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.000461143, relative limit = 0.000241485, conv = false
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 9 of 100 | dt# 7 | t 0.6 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 9 of 100 | dt# 7 | t 0.6 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 10 of 100 | dt# 7 | t 0.6 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.00391613, relative limit = 0.000211495, conv = false
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 2.04137e-05, relative limit = 0.000241486, conv = true
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 10 of 100 | dt# 7 | t 0.6 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 11 of 100 | dt# 7 | t 0.6 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.000301203, relative limit = 0.000211495, conv = false
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 1.59629e-05, relative limit = 0.000241486, conv = true
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 11 of 100 | dt# 7 | t 0.6 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.000127563, relative limit = 0.000211495, conv = true
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 3.79863e-07, relative limit = 0.000241486, conv = true
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m All converged
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m Time window completed
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 1 of 100 | dt# 8 | t 0.7 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete yes | write-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m Time window completed
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 1 of 100 | dt# 8 | t 0.7 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete yes | write-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 5.97788, relative limit = 0.000194989, conv = false
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 1.14293, relative limit = 0.00025252, conv = false
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 2 of 100 | dt# 8 | t 0.7 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 2 of 100 | dt# 8 | t 0.7 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 8.01201, relative limit = 0.000219366, conv = false
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.512503, relative limit = 0.000246088, conv = false
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 3 of 100 | dt# 8 | t 0.7 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 3 of 100 | dt# 8 | t 0.7 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 4.72403, relative limit = 0.000211921, conv = false
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.0941073, relative limit = 0.000247261, conv = false
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 4 of 100 | dt# 8 | t 0.7 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 4 of 100 | dt# 8 | t 0.7 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 1.4719, relative limit = 0.000211486, conv = false
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.0309793, relative limit = 0.000247333, conv = false
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 5 of 100 | dt# 8 | t 0.7 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 5 of 100 | dt# 8 | t 0.7 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.436357, relative limit = 0.000211551, conv = false
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.0139829, relative limit = 0.000247347, conv = false
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 6 of 100 | dt# 8 | t 0.7 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 6 of 100 | dt# 8 | t 0.7 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.121753, relative limit = 0.000211477, conv = false
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.00482054, relative limit = 0.000247359, conv = false
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 7 of 100 | dt# 8 | t 0.7 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 7 of 100 | dt# 8 | t 0.7 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.0514399, relative limit = 0.000211494, conv = false
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.000661055, relative limit = 0.000247349, conv = false
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 8 of 100 | dt# 8 | t 0.7 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 8 of 100 | dt# 8 | t 0.7 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 9 of 100 | dt# 8 | t 0.7 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.00779022, relative limit = 0.000211496, conv = false
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.000233085, relative limit = 0.00024735, conv = true
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 9 of 100 | dt# 8 | t 0.7 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.00185075, relative limit = 0.000211495, conv = false
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 3.12444e-05, relative limit = 0.00024735, conv = true
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 10 of 100 | dt# 8 | t 0.7 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 10 of 100 | dt# 8 | t 0.7 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.000569195, relative limit = 0.000211495, conv = false
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 1.60931e-05, relative limit = 0.00024735, conv = true
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 11 of 100 | dt# 8 | t 0.7 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 11 of 100 | dt# 8 | t 0.7 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.000192034, relative limit = 0.000211495, conv = true
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 5.09783e-06, relative limit = 0.00024735, conv = true
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m All converged
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m Time window completed
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m Time window completed
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 1 of 100 | dt# 9 | t 0.8 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete yes | write-iteration-checkpoint | 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 1 of 100 | dt# 9 | t 0.8 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete yes | write-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 5.97786, relative limit = 0.000194989, conv = false
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 1.14293, relative limit = 0.000258394, conv = false
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 2 of 100 | dt# 9 | t 0.8 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 2 of 100 | dt# 9 | t 0.8 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 9.47651, relative limit = 0.000226084, conv = false
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 1.08373, relative limit = 0.000248551, conv = false
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 3 of 100 | dt# 9 | t 0.8 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 3 of 100 | dt# 9 | t 0.8 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 4.40059, relative limit = 0.000211874, conv = false
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.060055, relative limit = 0.000253232, conv = false
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 4 of 100 | dt# 9 | t 0.8 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 4 of 100 | dt# 9 | t 0.8 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.663051, relative limit = 0.000211421, conv = false
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.0175797, relative limit = 0.000253198, conv = false
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 5 of 100 | dt# 9 | t 0.8 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 5 of 100 | dt# 9 | t 0.8 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.266154, relative limit = 0.000211552, conv = false
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.0080234, relative limit = 0.000253211, conv = false
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 6 of 100 | dt# 9 | t 0.8 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 6 of 100 | dt# 9 | t 0.8 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.0739107, relative limit = 0.000211509, conv = false
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.00220262, relative limit = 0.000253217, conv = false
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 7 of 100 | dt# 9 | t 0.8 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 7 of 100 | dt# 9 | t 0.8 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.0300428, relative limit = 0.000211485, conv = false
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.00127546, relative limit = 0.000253222, conv = false
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 8 of 100 | dt# 9 | t 0.8 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 8 of 100 | dt# 9 | t 0.8 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.00764632, relative limit = 0.000211495, conv = false
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.00041825, relative limit = 0.000253217, conv = false
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 9 of 100 | dt# 9 | t 0.8 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 9 of 100 | dt# 9 | t 0.8 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.0030719, relative limit = 0.000211495, conv = false
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 6.83348e-05, relative limit = 0.000253218, conv = true
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 10 of 100 | dt# 9 | t 0.8 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 10 of 100 | dt# 9 | t 0.8 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 11 of 100 | dt# 9 | t 0.8 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.000499576, relative limit = 0.000211495, conv = false
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 6.69514e-06, relative limit = 0.000253218, conv = true
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 11 of 100 | dt# 9 | t 0.8 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m Time window completed
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 1 of 100 | dt# 10 | t 0.9 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete yes | write-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.00011383, relative limit = 0.000211495, conv = true
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 5.64737e-06, relative limit = 0.000253218, conv = true
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m All converged
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m Time window completed
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 1 of 100 | dt# 10 | t 0.9 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete yes | write-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 5.97787, relative limit = 0.000194989, conv = false
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 1.14293, relative limit = 0.000264272, conv = false
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 2 of 100 | dt# 10 | t 0.9 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 2 of 100 | dt# 10 | t 0.9 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 9.70488, relative limit = 0.000223602, conv = false
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.433548, relative limit = 0.000258179, conv = false
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 3 of 100 | dt# 10 | t 0.9 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 3 of 100 | dt# 10 | t 0.9 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 7.67946, relative limit = 0.000211851, conv = false
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.173985, relative limit = 0.000258874, conv = false
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 4 of 100 | dt# 10 | t 0.9 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 4 of 100 | dt# 10 | t 0.9 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 2.28682, relative limit = 0.000211664, conv = false
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.0573156, relative limit = 0.000259049, conv = false
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 5 of 100 | dt# 10 | t 0.9 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 5 of 100 | dt# 10 | t 0.9 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.501762, relative limit = 0.000211536, conv = false
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.00642383, relative limit = 0.000259082, conv = false
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 6 of 100 | dt# 10 | t 0.9 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 6 of 100 | dt# 10 | t 0.9 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.0698805, relative limit = 0.000211509, conv = false
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.00235822, relative limit = 0.00025909, conv = false
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 7 of 100 | dt# 10 | t 0.9 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 7 of 100 | dt# 10 | t 0.9 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.0403322, relative limit = 0.000211481, conv = false
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.00143341, relative limit = 0.000259095, conv = false
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 8 of 100 | dt# 10 | t 0.9 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 8 of 100 | dt# 10 | t 0.9 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.0130193, relative limit = 0.000211497, conv = false
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.000440658, relative limit = 0.000259089, conv = false
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 9 of 100 | dt# 10 | t 0.9 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 9 of 100 | dt# 10 | t 0.9 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.002888, relative limit = 0.000211495, conv = false
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 4.25514e-05, relative limit = 0.000259091, conv = true
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 10 of 100 | dt# 10 | t 0.9 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 10 of 100 | dt# 10 | t 0.9 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.000481944, relative limit = 0.000211495, conv = false
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 1.51086e-05, relative limit = 0.000259091, conv = true
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 11 of 100 | dt# 10 | t 0.9 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 11 of 100 | dt# 10 | t 0.9 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.00029728, relative limit = 0.000211495, conv = false
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 8.82702e-06, relative limit = 0.000259091, conv = true
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 12 of 100 | dt# 10 | t 0.9 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 12 of 100 | dt# 10 | t 0.9 of 1 | dt 0.1 | max dt 0.1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 0.000101185, relative limit = 0.000211495, conv = true
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m relative convergence measure: two-norm diff = 1.71473e-06, relative limit = 0.000259091, conv = true
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m All converged
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m Time window completed
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m Time window completed
+[32mfenics-adapter-neumann      |[0m ---[[secure]] [0m it 1 of 100 | dt# 11 | t 1 of 1 | dt 0.1 | max dt 0.1 | ongoing no | dt complete yes | 
+[33mfenics-adapter-dirichlet    |[0m ---[[secure]] [0m it 1 of 100 | dt# 11 | t 1 of 1 | dt 0.1 | max dt 0.1 | ongoing no | dt complete yes | 
+[32mfenics-adapter-neumann      |[0m Run finished at Wed Feb 12 13:56:27 2020
+[32mfenics-adapter-neumann      |[0m Global runtime       = 22917ms / 22.917s
+[33mfenics-adapter-dirichlet    |[0m Run finished at Wed Feb 12 13:56:27 2020
+[33mfenics-adapter-dirichlet    |[0m Global runtime       = 22917ms / 22.917s
+[33mfenics-adapter-dirichlet    |[0m Number of processors = 1
+[33mfenics-adapter-dirichlet    |[0m # Rank: 0
+[33mfenics-adapter-dirichlet    |[0m 
+[33mfenics-adapter-dirichlet    |[0m                                                                                  Event |      Count |  Total[ms] |    Max[ms] |    Min[ms] |    Avg[ms] | Time Ratio |
+[33mfenics-adapter-dirichlet    |[0m ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[33mfenics-adapter-dirichlet    |[0m                                                                                _GLOBAL |          1 |      22917 |      22917 |      22917 |      22917 |          1 |
+[33mfenics-adapter-dirichlet    |[0m                                                                                advance |        112 |      11540 |       8148 |         20 |        103 |      0.504 |
+[33mfenics-adapter-dirichlet    |[0m                                                                advance/m2n.receiveData |        112 |         21 |          5 |          0 |          0 |   0.000916 |
+[33mfenics-adapter-dirichlet    |[0m                                                                   advance/m2n.sendData |        112 |         26 |          7 |          0 |          0 |    0.00113 |
+[33mfenics-adapter-dirichlet    |[0m                                advance/map.np.mapData.FromDirichletNodesToNeumannNodes |        112 |          0 |          0 |          0 |          0 |          0 |
+[33mfenics-adapter-dirichlet    |[0m                                advance/map.np.mapData.FromNeumannNodesToDirichletNodes |        112 |          0 |          0 |          0 |          0 |          0 |
+[33mfenics-adapter-dirichlet    |[0m                                                                              configure |          1 |          0 |          0 |          0 |          0 |          0 |
+[33mfenics-adapter-dirichlet    |[0m                                                                               finalize |          1 |         38 |         38 |         38 |         38 |    0.00166 |
+[33mfenics-adapter-dirichlet    |[0m                                                                             initialize |          1 |        102 |        102 |        102 |        102 |    0.00445 |
+[33mfenics-adapter-dirichlet    |[0m                                            initialize/m2n.broadcastVertexDistributions |          1 |          0 |          0 |          0 |          0 |          0 |
+[33mfenics-adapter-dirichlet    |[0m                                                   initialize/m2n.buildCommunicationMap |          1 |          0 |          0 |          0 |          0 |          0 |
+[33mfenics-adapter-dirichlet    |[0m                                                    initialize/m2n.createCommunications |          1 |          2 |          2 |          2 |          2 |   8.73e-05 |
+[33mfenics-adapter-dirichlet    |[0m                                              initialize/m2n.exchangeVertexDistribution |          1 |         39 |         39 |         39 |         39 |     0.0017 |
+[33mfenics-adapter-dirichlet    |[0m                                                 initialize/m2n.requestMasterConnection |          1 |         20 |         20 |         20 |         20 |   0.000873 |
+[33mfenics-adapter-dirichlet    |[0m                                                 initialize/m2n.requestSlavesConnection |          1 |         42 |         42 |         42 |         42 |    0.00183 |
+[33mfenics-adapter-dirichlet    |[0m                                        initialize/partition.prepareMesh.DirichletNodes |          1 |          0 |          0 |          0 |          0 |          0 |
+[33mfenics-adapter-dirichlet    |[0m                                    initialize/partition.receiveGlobalMesh.NeumannNodes |          1 |         37 |         37 |         37 |         37 |    0.00161 |
+[33mfenics-adapter-dirichlet    |[0m                                                                         initializeData |          1 |          1 |          1 |          1 |          1 |   4.36e-05 |
+[33mfenics-adapter-dirichlet    |[0m                                                         initializeData/m2n.receiveData |          1 |          0 |          0 |          0 |          0 |          0 |
+[33mfenics-adapter-dirichlet    |[0m                  initializeData/map.np.computeMapping.FromDirichletNodesToNeumannNodes |          1 |          0 |          0 |          0 |          0 |          0 |
+[33mfenics-adapter-dirichlet    |[0m  initializeData/map.np.computeMapping.FromDirichletNodesToNeumannNodes.getIndexOnEdges |          1 |          0 |          0 |          0 |          0 |          0 |
+[33mfenics-adapter-dirichlet    |[0m                  initializeData/map.np.computeMapping.FromNeumannNodesToDirichletNodes |          1 |          0 |          0 |          0 |          0 |          0 |
+[33mfenics-adapter-dirichlet    |[0m  initializeData/map.np.computeMapping.FromNeumannNodesToDirichletNodes.getIndexOnEdges |          1 |          0 |          0 |          0 |          0 |          0 |
+[33mfenics-adapter-dirichlet    |[0m                         initializeData/map.np.mapData.FromDirichletNodesToNeumannNodes |          1 |          0 |          0 |          0 |          0 |          0 |
+[33mfenics-adapter-dirichlet    |[0m                         initializeData/map.np.mapData.FromNeumannNodesToDirichletNodes |          1 |          0 |          0 |          0 |          0 |          0 |
+[33mfenics-adapter-dirichlet    |[0m                                                                         solver.advance |        112 |       2350 |         41 |         13 |         20 |      0.103 |
+[33mfenics-adapter-dirichlet    |[0m                                                                      solver.initialize |          1 |       8883 |       8883 |       8883 |       8883 |      0.388 |
+[33mfenics-adapter-dirichlet    |[0m 
+[33mfenics-adapter-dirichlet    |[0m 
+[33mfenics-adapter-dirichlet    |[0m                                                                                   Name |        Max |  MaxOnRank |        Min |  MinOnRank |    Min/Max |
+[33mfenics-adapter-dirichlet    |[0m ---------------------------------------------------------------------------------------------------------------------------------------------------------
+[33mfenics-adapter-dirichlet    |[0m                                                                                _GLOBAL |      22917 |          0 |      22917 |          0 |          1 |
+[33mfenics-adapter-dirichlet    |[0m                                                                                advance |       8148 |          0 |         20 |          0 | 0.00245459 |
+[33mfenics-adapter-dirichlet    |[0m                                                                advance/m2n.receiveData |          5 |          0 |          0 |          0 |          0 |
+[33mfenics-adapter-dirichlet    |[0m                                                                   advance/m2n.sendData |          7 |          0 |          0 |          0 |          0 |
+[33mfenics-adapter-dirichlet    |[0m                                advance/map.np.mapData.FromDirichletNodesToNeumannNodes |          0 |          0 |          0 |          0 |          0 |
+[33mfenics-adapter-dirichlet    |[0m                                advance/map.np.mapData.FromNeumannNodesToDirichletNodes |          0 |          0 |          0 |          0 |          0 |
+[33mfenics-adapter-dirichlet    |[0m                                                                              configure |          0 |          0 |          0 |          0 |          0 |
+[33mfenics-adapter-dirichlet    |[0m                                                                               finalize |         38 |          0 |         38 |          0 |          1 |
+[33mfenics-adapter-dirichlet    |[0m                                                                             initialize |        102 |          0 |        102 |          0 |          1 |
+[33mfenics-adapter-dirichlet    |[0m                                            initialize/m2n.broadcastVertexDistributions |          0 |          0 |          0 |          0 |          0 |
+[33mfenics-adapter-dirichlet    |[0m                                                   initialize/m2n.buildCommunicationMap |          0 |          0 |          0 |          0 |          0 |
+[33mfenics-adapter-dirichlet    |[0m                                                    initialize/m2n.createCommunications |          2 |          0 |          2 |          0 |          1 |
+[33mfenics-adapter-dirichlet    |[0m                                              initialize/m2n.exchangeVertexDistribution |         39 |          0 |         39 |          0 |          1 |
+[33mfenics-adapter-dirichlet    |[0m                                                 initialize/m2n.requestMasterConnection |         20 |          0 |         20 |          0 |          1 |
+[33mfenics-adapter-dirichlet    |[0m                                                 initialize/m2n.requestSlavesConnection |         42 |          0 |         42 |          0 |          1 |
+[33mfenics-adapter-dirichlet    |[0m                                        initialize/partition.prepareMesh.DirichletNodes |          0 |          0 |          0 |          0 |          0 |
+[33mfenics-adapter-dirichlet    |[0m                                    initialize/partition.receiveGlobalMesh.NeumannNodes |         37 |          0 |         37 |          0 |          1 |
+[33mfenics-adapter-dirichlet    |[0m                                                                         initializeData |          1 |          0 |          1 |          0 |          1 |
+[33mfenics-adapter-dirichlet    |[0m                                                         initializeData/m2n.receiveData |          0 |          0 |          0 |          0 |          0 |
+[33mfenics-adapter-dirichlet    |[0m                  initializeData/map.np.computeMapping.FromDirichletNodesToNeumannNodes |          0 |          0 |          0 |          0 |          0 |
+[33mfenics-adapter-dirichlet    |[0m  initializeData/map.np.computeMapping.FromDirichletNodesToNeumannNodes.getIndexOnEdges |          0 |          0 |          0 |          0 |          0 |
+[33mfenics-adapter-dirichlet    |[0m                  initializeData/map.np.computeMapping.FromNeumannNodesToDirichletNodes |          0 |          0 |          0 |          0 |          0 |
+[33mfenics-adapter-dirichlet    |[0m  initializeData/map.np.computeMapping.FromNeumannNodesToDirichletNodes.getIndexOnEdges |          0 |          0 |          0 |          0 |          0 |
+[33mfenics-adapter-dirichlet    |[0m                         initializeData/map.np.mapData.FromDirichletNodesToNeumannNodes |          0 |          0 |          0 |          0 |          0 |
+[32mfenics-adapter-neumann      |[0m Number of processors = 1
+[32mfenics-adapter-neumann      |[0m # Rank: 0
+[32mfenics-adapter-neumann      |[0m 
+[32mfenics-adapter-neumann      |[0m                                             Event |      Count |  Total[ms] |    Max[ms] |    Min[ms] |    Avg[ms] | Time Ratio |
+[32mfenics-adapter-neumann      |[0m ---------------------------------------------------------------------------------------------------------------------------------
+[32mfenics-adapter-neumann      |[0m                                           _GLOBAL |          1 |      22917 |      22917 |      22917 |      22917 |          1 |
+[32mfenics-adapter-neumann      |[0m                                           advance |        112 |       2487 |         42 |          0 |         22 |      0.109 |
+[32mfenics-adapter-neumann      |[0m              advance/cpl.computeQuasiNewtonUpdate |        102 |          5 |          0 |          0 |          0 |   0.000218 |
+[32mfenics-adapter-neumann      |[0m                           advance/m2n.receiveData |        111 |       2267 |         40 |          6 |         20 |     0.0989 |
+[32mfenics-adapter-neumann      |[0m                              advance/m2n.sendData |        112 |         69 |         10 |          0 |          0 |    0.00301 |
+[32mfenics-adapter-neumann      |[0m                                         configure |          1 |          0 |          0 |          0 |          0 |          0 |
+[32mfenics-adapter-neumann      |[0m                                          finalize |          1 |         37 |         37 |         37 |         37 |    0.00161 |
+[32mfenics-adapter-neumann      |[0m                                        initialize |          1 |         84 |         84 |         84 |         84 |    0.00367 |
+[32mfenics-adapter-neumann      |[0m             initialize/m2n.acceptMasterConnection |          1 |          2 |          2 |          2 |          2 |   8.73e-05 |
+[32mfenics-adapter-neumann      |[0m             initialize/m2n.acceptSlavesConnection |          1 |         79 |         79 |         79 |         79 |    0.00345 |
+[32mfenics-adapter-neumann      |[0m       initialize/m2n.broadcastVertexDistributions |          1 |          0 |          0 |          0 |          0 |          0 |
+[32mfenics-adapter-neumann      |[0m              initialize/m2n.buildCommunicationMap |          1 |          0 |          0 |          0 |          0 |          0 |
+[32mfenics-adapter-neumann      |[0m               initialize/m2n.createCommunications |          1 |          2 |          2 |          2 |          2 |   8.73e-05 |
+[32mfenics-adapter-neumann      |[0m         initialize/m2n.exchangeVertexDistribution |          1 |         77 |         77 |         77 |         77 |    0.00336 |
+[32mfenics-adapter-neumann      |[0m      initialize/partition.gatherMesh.NeumannNodes |          1 |          0 |          0 |          0 |          0 |          0 |
+[32mfenics-adapter-neumann      |[0m     initialize/partition.prepareMesh.NeumannNodes |          1 |          0 |          0 |          0 |          0 |          0 |
+[32mfenics-adapter-neumann      |[0m  initialize/partition.sendGlobalMesh.NeumannNodes |          1 |          0 |          0 |          0 |          0 |          0 |
+[32mfenics-adapter-neumann      |[0m                                    initializeData |          1 |       8862 |       8862 |       8862 |       8862 |      0.387 |
+[32mfenics-adapter-neumann      |[0m                    initializeData/m2n.receiveData |          1 |       8862 |       8862 |       8862 |       8862 |      0.387 |
+[32mfenics-adapter-neumann      |[0m                       initializeData/m2n.sendData |          1 |          0 |          0 |          0 |          0 |          0 |
+[32mfenics-adapter-neumann      |[0m                                    solver.advance |        112 |       3256 |         48 |         19 |         29 |      0.142 |
+[32mfenics-adapter-neumann      |[0m                                 solver.initialize |          1 |       8187 |       8187 |       8187 |       8187 |      0.357 |
+[32mfenics-adapter-neumann      |[0m 
+[32mfenics-adapter-neumann      |[0m 
+[33mfenics-adapter-dirichlet    |[0m                         initializeData/map.np.mapData.FromNeumannNodesToDirichletNodes |    n = 1, t = 0.10: L2 error on domain = 2.22e-08
+[33mfenics-adapter-dirichlet    |[0m output u^1 and u_ref^1
+[33mfenics-adapter-dirichlet    |[0m n = 2, t = 0.20: L2 error on domain = 1.36e-08
+[33mfenics-adapter-dirichlet    |[0m output u^2 and u_ref^2
+[33mfenics-adapter-dirichlet    |[0m n = 3, t = 0.30: L2 error on domain = 2.9e-08
+[33mfenics-adapter-dirichlet    |[0m output u^3 and u_ref^3
+[33mfenics-adapter-dirichlet    |[0m n = 4, t = 0.40: L2 error on domain = 2.67e-08
+[33mfenics-adapter-dirichlet    |[0m output u^4 and u_ref^4
+[33mfenics-adapter-dirichlet    |[0m n = 5, t = 0.50: L2 error on domain = 4.02e-08
+[33mfenics-adapter-dirichlet    |[0m output u^5 and u_ref^5
+[33mfenics-adapter-dirichlet    |[0m n = 6, t = 0.60: L2 error on domain = 1.82e-08
+[33mfenics-adapter-dirichlet    |[0m output u^6 and u_ref^6
+[33mfenics-adapter-dirichlet    |[0m n = 7, t = 0.70: L2 error on domain = 1.89e-09
+[33mfenics-adapter-dirichlet    |[0m output u^7 and u_ref^7
+[33mfenics-adapter-dirichlet    |[0m n = 8, t = 0.80: L2 error on domain = 2.98e-08
+[33mfenics-adapter-dirichlet    |[0m output u^8 and u_ref^8
+[33mfenics-adapter-dirichlet    |[0m n = 9, t = 0.90: L2 error on domain = 3.13e-08
+[33mfenics-adapter-dirichlet    |[0m output u^9 and u_ref^9
+[33mfenics-adapter-dirichlet    |[0m n = 10, t = 1.00: L2 error on domain = 9.01e-09
+[33mfenics-adapter-dirichlet    |[0m output u^10 and u_ref^10
+[32mfenics-adapter-neumann      |[0m n = 1, t = 0.10: L2 error on domain = 1.85e-08
+[32mfenics-adapter-neumann      |[0m output u^1 and u_ref^1
+[32mfenics-adapter-neumann      |[0m n = 2, t = 0.20: L2 error on domain = 1.06e-08
+[32mfenics-adapter-neumann      |[0m output u^2 and u_ref^2
+[32mfenics-adapter-neumann      |[0m n = 3, t = 0.30: L2 error on domain = 2.29e-08
+[32mfenics-adapter-neumann      |[0m output u^3 and u_ref^3
+[32mfenics-adapter-neumann      |[0m n = 4, t = 0.40: L2 error on domain = 2.16e-08
+[32mfenics-adapter-neumann      |[0m output u^4 and u_ref^4
+[32mfenics-adapter-neumann      |[0m n = 5, t = 0.50: L2 error on domain = 3.26e-08
+[32mfenics-adapter-neumann      |[0m output u^5 and u_ref^5
+[32mfenics-adapter-neumann      |[0m n = 6, t = 0.60: L2 error on domain = 1.6e-08
+[32mfenics-adapter-neumann      |[0m output u^6 and u_ref^6
+[32mfenics-adapter-neumann      |[0m n = 7, t = 0.70: L2 error on domain = 1.19e-09
+[32mfenics-adapter-neumann      |[0m output u^7 and u_ref^7
+[32mfenics-adapter-neumann      |[0m n = 8, t = 0.80: L2 error on domain = 2.6e-08
+[32mfenics-adapter-neumann      |[0m output u^8 and u_ref^8
+[32mfenics-adapter-neumann      |[0m n = 9, t = 0.90: L2 error on domain = 2.66e-08
+[32mfenics-adapter-neumann      |[0m output u^9 and u_ref^9
+[32mfenics-adapter-neumann      |[0m n = 10, t = 1.00: L2 error on domain = 7.35e-09
+[32mfenics-adapter-neumann      |[0m output u^10 and u_ref^10
+[33mfenics-adapter-dirichlet    |[0m       0 |          0 |          0 |          0 |          0 |
+[33mfenics-adapter-dirichlet    |[0m                                                                         solver.advance |         41 |          0 |         13 |          0 |   0.317073 |
+[33mfenics-adapter-dirichlet    |[0m                                                                      solver.initialize |       8883 |          0 |       8883 |          0 |          1 |
+[32mfenics-adapter-neumann      |[0m                                              Name |        Max |  MaxOnRank |        Min |  MinOnRank |    Min/Max |
+[32mfenics-adapter-neumann      |[0m --------------------------------------------------------------------------------------------------------------------
+[32mfenics-adapter-neumann      |[0m                                           _GLOBAL |      22917 |          0 |      22917 |          0 |          1 |
+[32mfenics-adapter-neumann      |[0m                                           advance |         42 |          0 |          0 |          0 |          0 |
+[32mfenics-adapter-neumann      |[0m              advance/cpl.computeQuasiNewtonUpdate |          0 |          0 |          0 |          0 |          0 |
+[32mfenics-adapter-neumann      |[0m                           advance/m2n.receiveData |         40 |          0 |          6 |          0 |       0.15 |
+[32mfenics-adapter-neumann      |[0m                              advance/m2n.sendData |         10 |          0 |          0 |          0 |          0 |
+[32mfenics-adapter-neumann      |[0m                                         configure |          0 |          0 |          0 |          0 |          0 |
+[32mfenics-adapter-neumann      |[0m                                          finalize |         37 |          0 |         37 |          0 |          1 |
+[32mfenics-adapter-neumann      |[0m                                        initialize |         84 |          0 |         84 |          0 |          1 |
+[32mfenics-adapter-neumann      |[0m             initialize/m2n.acceptMasterConnection |          2 |          0 |          2 |          0 |          1 |
+[32mfenics-adapter-neumann      |[0m             initialize/m2n.acceptSlavesConnection |         79 |          0 |         79 |          0 |          1 |
+[32mfenics-adapter-neumann      |[0m       initialize/m2n.broadcastVertexDistributions |          0 |          0 |          0 |          0 |          0 |
+[32mfenics-adapter-neumann      |[0m              initialize/m2n.buildCommunicationMap |          0 |          0 |          0 |          0 |          0 |
+[32mfenics-adapter-neumann      |[0m               initialize/m2n.createCommunications |          2 |          0 |          2 |          0 |          1 |
+[32mfenics-adapter-neumann      |[0m         initialize/m2n.exchangeVertexDistribution |         77 |          0 |         77 |          0 |          1 |
+[32mfenics-adapter-neumann      |[0m      initialize/partition.gatherMesh.NeumannNodes |          0 |          0 |          0 |          0 |          0 |
+[32mfenics-adapter-neumann      |[0m     initialize/partition.prepareMesh.NeumannNodes |          0 |          0 |          0 |          0 |          0 |
+[32mfenics-adapter-neumann      |[0m  initialize/partition.sendGlobalMesh.NeumannNodes |          0 |          0 |          0 |          0 |          0 |
+[32mfenics-adapter-neumann      |[0m                                    initializeData |       8862 |          0 |       8862 |          0 |          1 |
+[32mfenics-adapter-neumann      |[0m                    initializeData/m2n.receiveData |       8862 |          0 |       8862 |          0 |          1 |
+[32mfenics-adapter-neumann      |[0m                       initializeData/m2n.sendData |          0 |          0 |          0 |          0 |          0 |
+[32mfenics-adapter-neumann      |[0m                                    solver.advance |         48 |          0 |         19 |          0 |   0.395833 |
+[32mfenics-adapter-neumann      |[0m                                 solver.initialize |       8187 |          0 |       8187 |          0 |          1 |
+[33mfenics-adapter-dirichlet exited with code 0
+[0m[32mfenics-adapter-neumann exited with code 0
+[0mEXECUTING: export PRECICE_BASE=-ubuntu1804.home-develop; docker-compose config && bash ../../silent_compose.sh debug
+EXECUTING: docker cp tutorial-data:/Output .
+EXECUTING: mkdir Logs && docker-compose logs > Logs/container.log
+TEST SUCCEEDED - No difference to referenceOutput found.
+travis_time:end:008f856b:start=1581515702319960293,finish=1581515789672091419,duration=87352131126,event=script[0K[32;1mThe command "python system_testing.py -s fe-fe --base Ubuntu1804.home -v" exited with 0.[0m
+travis_time:start:00398a76[0K$ python push.py -t fe-fe --base Ubuntu1804.home
+Cloning into '[secure]_st_output'...
