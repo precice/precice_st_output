@@ -1,0 +1,55 @@
+Run finished at Wed Oct 21 22:04:32 2020
+Global runtime       = 76501ms / 76.501s
+Number of processors = 1
+# Rank: 0
+
+                                               Event |      Count |  Total[ms] |    Max[ms] |    Min[ms] |    Avg[ms] | Time Ratio |
+------------------------------------------------------------------------------------------------------------------------------------
+                                             _GLOBAL |          1 |      76501 |      76501 |      76501 |      76501 |          1 |
+                                             advance |        846 |      75006 |        119 |         18 |         88 |       0.98 |
+                advance/cpl.computeQuasiNewtonUpdate |        746 |      42629 |         90 |          0 |         57 |      0.557 |
+                             advance/m2n.receiveData |        845 |      22712 |         39 |         18 |         26 |      0.297 |
+                                advance/m2n.sendData |        846 |       6979 |         13 |          0 |          8 |     0.0912 |
+                                           configure |          1 |          0 |          0 |          0 |          0 |          0 |
+                                            finalize |          1 |          2 |          2 |          2 |          2 |   2.61e-05 |
+                                          initialize |          1 |        779 |        779 |        779 |        779 |     0.0102 |
+               initialize/m2n.acceptMasterConnection |          1 |        727 |        727 |        727 |        727 |     0.0095 |
+               initialize/m2n.acceptSlavesConnection |          1 |         46 |         46 |         46 |         46 |   0.000601 |
+         initialize/m2n.broadcastVertexDistributions |          1 |          0 |          0 |          0 |          0 |          0 |
+                initialize/m2n.buildCommunicationMap |          1 |          0 |          0 |          0 |          0 |          0 |
+                 initialize/m2n.createCommunications |          1 |         32 |         32 |         32 |         32 |   0.000418 |
+           initialize/m2n.exchangeVertexDistribution |          1 |         13 |         13 |         13 |         13 |    0.00017 |
+     initialize/partition.gatherMesh.Structure_Nodes |          1 |          0 |          0 |          0 |          0 |          0 |
+    initialize/partition.prepareMesh.Structure_Nodes |          1 |          0 |          0 |          0 |          0 |          0 |
+ initialize/partition.sendGlobalMesh.Structure_Nodes |          1 |          1 |          1 |          1 |          1 |   1.31e-05 |
+                                      initializeData |          1 |         93 |         93 |         93 |         93 |    0.00122 |
+                      initializeData/m2n.receiveData |          1 |         92 |         92 |         92 |         92 |     0.0012 |
+                         initializeData/m2n.sendData |          1 |          0 |          0 |          0 |          0 |          0 |
+                                      solver.advance |        846 |        567 |          1 |          0 |          0 |    0.00741 |
+                                   solver.initialize |          1 |          3 |          3 |          3 |          3 |   3.92e-05 |
+
+
+                                                Name |        Max |  MaxOnRank |        Min |  MinOnRank |    Min/Max |
+-----------------------------------------------------------------------------------------------------------------------
+                                             _GLOBAL |      76501 |          0 |      76501 |          0 |          1 |
+                                             advance |        119 |          0 |         18 |          0 |   0.151261 |
+                advance/cpl.computeQuasiNewtonUpdate |         90 |          0 |          0 |          0 |          0 |
+                             advance/m2n.receiveData |         39 |          0 |         18 |          0 |   0.461538 |
+                                advance/m2n.sendData |         13 |          0 |          0 |          0 |          0 |
+                                           configure |          0 |          0 |          0 |          0 |          0 |
+                                            finalize |          2 |          0 |          2 |          0 |          1 |
+                                          initialize |        779 |          0 |        779 |          0 |          1 |
+               initialize/m2n.acceptMasterConnection |        727 |          0 |        727 |          0 |          1 |
+               initialize/m2n.acceptSlavesConnection |         46 |          0 |         46 |          0 |          1 |
+         initialize/m2n.broadcastVertexDistributions |          0 |          0 |          0 |          0 |          0 |
+                initialize/m2n.buildCommunicationMap |          0 |          0 |          0 |          0 |          0 |
+                 initialize/m2n.createCommunications |         32 |          0 |         32 |          0 |          1 |
+           initialize/m2n.exchangeVertexDistribution |         13 |          0 |         13 |          0 |          1 |
+     initialize/partition.gatherMesh.Structure_Nodes |          0 |          0 |          0 |          0 |          0 |
+    initialize/partition.prepareMesh.Structure_Nodes |          0 |          0 |          0 |          0 |          0 |
+ initialize/partition.sendGlobalMesh.Structure_Nodes |          1 |          0 |          1 |          0 |          1 |
+                                      initializeData |         93 |          0 |         93 |          0 |          1 |
+                      initializeData/m2n.receiveData |         92 |          0 |         92 |          0 |          1 |
+                         initializeData/m2n.sendData |          0 |          0 |          0 |          0 |          0 |
+                                      solver.advance |          1 |          0 |          0 |          0 |          0 |
+                                   solver.initialize |          3 |          0 |          3 |          0 |          1 |
