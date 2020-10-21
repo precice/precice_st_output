@@ -515,3 +515,95 @@ EXECUTING: docker build --network=host --file adapters/Dockerfile.openfoam-adapt
 travis_time:end:091c0038:start=1603301622079502159,finish=1603301877715921934,duration=255636419775,event=script[0K[32;1mThe command "python build_adapter.py --dockerfile adapters/Dockerfile.openfoam-adapter --operating-system ubuntu1804 --precice-installation home --docker-username $DOCKER_USERNAME" exited with 0.[0m
 travis_time:start:153faec0[0K$ python push.py --adapter adapters/Dockerfile.openfoam-adapter
 Cloning into 'precice_st_output'...
+5511343dd4960feb80aba98f9046389e0bbc926615311b41740f59213fed4376
+CONTAINER ID        IMAGE                                              COMMAND             CREATED                  STATUS              PORTS               NAMES
+5511343dd496        precice/openfoam-adapter-ubuntu1804.home-develop   "bash"              Less than a second ago   Created                                 adapter
+[master 6e311ed] [18.04] OpenFOAM adapter - Success
+ 5 files changed, 665 insertions(+)
+ create mode 100644 2779/2779.09/Logs/Allwmake.log
+ create mode 100644 2779/2779.09/Logs/ldd.log
+ create mode 100644 2779/2779.09/Logs/travis.log
+ create mode 100644 2779/2779.09/Logs/wmake.log
+ create mode 100644 2779/2779.09/README.md
+To https://github.com/precice/precice_st_output.git
+   b7a5658..6e311ed  master -> master
+EXECUTING: git clone -b master https://github.com/precice/precice_st_output
+EXECUTING: mkdir -p /home/travis/build/precice/systemtests/precice_st_output/2779/2779.09/Logs
+EXECUTING: docker create --name adapter -it precice/openfoam-adapter-ubuntu1804.home-develop bash 
+EXECUTING: docker container ls -a
+EXECUTING: docker cp adapter:/home/precice/Logs /home/travis/build/precice/systemtests/precice_st_output/2779/2779.09
+EXECUTING: rm ./.docker_tag
+EXECUTING: git add README.md
+EXECUTING: git add /home/travis/build/precice/systemtests/precice_st_output/2779/2779.09
+EXECUTING: git commit -m '[18.04] OpenFOAM adapter - Success'
+EXECUTING: git config user.name 'Precice Bot'
+EXECUTING: git config user.email ${PRECICE_BOT_EMAIL}
+EXECUTING: git remote set-url origin https://${GH_TOKEN}@github.com/precice/precice_st_output.git > /dev/null 2>&1
+EXECUTING: git push
+Finished pushing to precice_st_output-master!
+travis_time:end:153faec0:start=1603301877724975278,finish=1603301884237159216,duration=6512183938,event=script[0K[32;1mThe command "python push.py --adapter adapters/Dockerfile.openfoam-adapter" exited with 0.[0m
+
+travis_fold:start:dpl_0[0Ktravis_time:start:29c72288[0K$ rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install dpl
+Successfully installed dpl-1.10.15
+1 gem installed
+travis_time:end:29c72288:start=1603301885291507052,finish=1603301886525149773,duration=1233642721,event=after_success[0Ktravis_fold:end:dpl_0[0Ktravis_time:start:03d935c0[0Ktravis_fold:start:dpl.1[33mInstalling deploy dependencies[0m
+Successfully installed dpl-script-1.10.15
+1 gem installed
+
+travis_fold:end:dpl.1travis_fold:start:dpl.2[33mPreparing deploy[0m
+
+travis_fold:end:dpl.2travis_fold:start:dpl.3[33mDeploying application[0m
+WARNING! Your password will be stored unencrypted in /home/travis/.docker/config.json.
+Configure a credential helper to remove this warning. See
+https://docs.docker.com/engine/reference/commandline/login/#credentials-store
+
+Login Succeeded
+The push refers to repository [docker.io/precice/openfoam-adapter-ubuntu1804.home-develop]
+c7b960e8ce6e: Preparing
+64dc9776c94a: Preparing
+c49ef1deff40: Preparing
+5d6ef16085be: Preparing
+9375852e1df7: Preparing
+0cd30c3e5644: Preparing
+98ec26935b8d: Preparing
+6675cce8812d: Preparing
+69eaa6e52d80: Preparing
+753193f9af4a: Preparing
+80c5c13fcadc: Preparing
+0ac5411b9146: Preparing
+a953cedef0bc: Preparing
+7a694df0ad6c: Preparing
+3fd9df553184: Preparing
+805802706667: Preparing
+0cd30c3e5644: Waiting
+98ec26935b8d: Waiting
+6675cce8812d: Waiting
+69eaa6e52d80: Waiting
+753193f9af4a: Waiting
+80c5c13fcadc: Waiting
+0ac5411b9146: Waiting
+a953cedef0bc: Waiting
+7a694df0ad6c: Waiting
+3fd9df553184: Waiting
+805802706667: Waiting
+c7b960e8ce6e: Pushed
+64dc9776c94a: Pushed
+0cd30c3e5644: Mounted from precice/precice-ubuntu1804.home-develop
+c49ef1deff40: Pushed
+9375852e1df7: Pushed
+98ec26935b8d: Mounted from precice/precice-ubuntu1804.home-develop
+6675cce8812d: Mounted from precice/precice-ubuntu1804.home-develop
+69eaa6e52d80: Mounted from precice/precice-ubuntu1804.home-develop
+753193f9af4a: Mounted from precice/precice-ubuntu1804.home-develop
+7a694df0ad6c: Layer already exists
+80c5c13fcadc: Mounted from precice/precice-ubuntu1804.home-develop
+0ac5411b9146: Mounted from precice/precice-ubuntu1804.home-develop
+3fd9df553184: Layer already exists
+805802706667: Layer already exists
+a953cedef0bc: Mounted from precice/precice-ubuntu1804.home-develop
+5d6ef16085be: Pushed
+latest: digest: sha256:34f1006a45c13a81a290533fd29119ecf7c7a9858a6f236d2d2caf0435fd61e5 size: 3685
+EXECUTING: docker push precice/openfoam-adapter-ubuntu1804.home-develop:latest
+
+travis_fold:end:dpl.3travis_time:end:03d935c0:start=1603301886533170250,finish=1603301922902871080,duration=36369700830,event=after_success[0K
+Done. Your build exited with 0.
