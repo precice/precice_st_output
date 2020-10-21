@@ -1,0 +1,49 @@
+Run finished at Wed Oct 21 14:12:50 2020
+Global runtime       = 122133ms / 122.133s
+Number of processors = 1
+# Rank: 0
+
+                                             Event |      Count |  Total[ms] |    Max[ms] |    Min[ms] |    Avg[ms] | Time Ratio |
+----------------------------------------------------------------------------------------------------------------------------------
+                                           _GLOBAL |          1 |     122133 |     122133 |     122133 |     122133 |          1 |
+                                           advance |        204 |      87781 |        734 |        383 |        430 |      0.719 |
+                           advance/m2n.receiveData |        204 |        112 |          1 |          0 |          0 |   0.000917 |
+                              advance/m2n.sendData |        204 |       1566 |         15 |          0 |          7 |     0.0128 |
+                                         configure |          1 |          2 |          2 |          2 |          2 |   1.64e-05 |
+                                          finalize |          1 |         20 |         20 |         20 |         20 |   0.000164 |
+                                        initialize |          1 |         47 |         47 |         47 |         47 |   0.000385 |
+       initialize/m2n.broadcastVertexDistributions |          1 |          0 |          0 |          0 |          0 |          0 |
+              initialize/m2n.buildCommunicationMap |          1 |          0 |          0 |          0 |          0 |          0 |
+               initialize/m2n.createCommunications |          1 |         10 |         10 |         10 |         10 |   8.19e-05 |
+         initialize/m2n.exchangeVertexDistribution |          1 |          9 |          9 |          9 |          9 |   7.37e-05 |
+            initialize/m2n.requestMasterConnection |          1 |         10 |         10 |         10 |         10 |   8.19e-05 |
+            initialize/m2n.requestSlavesConnection |          1 |         22 |         22 |         22 |         22 |    0.00018 |
+     initialize/partition.gatherMesh.OpenFOAM-Mesh |          1 |          2 |          2 |          2 |          2 |   1.64e-05 |
+    initialize/partition.prepareMesh.OpenFOAM-Mesh |          1 |          0 |          0 |          0 |          0 |          0 |
+ initialize/partition.sendGlobalMesh.OpenFOAM-Mesh |          1 |          6 |          6 |          6 |          6 |   4.91e-05 |
+                                    initializeData |          1 |          4 |          4 |          4 |          4 |   3.28e-05 |
+                                    solver.advance |        204 |      34030 |        306 |        106 |        166 |      0.279 |
+                                 solver.initialize |          1 |        221 |        221 |        221 |        221 |    0.00181 |
+
+
+                                              Name |        Max |  MaxOnRank |        Min |  MinOnRank |    Min/Max |
+---------------------------------------------------------------------------------------------------------------------
+                                           _GLOBAL |     122133 |          0 |     122133 |          0 |          1 |
+                                           advance |        734 |          0 |        383 |          0 |   0.521798 |
+                           advance/m2n.receiveData |          1 |          0 |          0 |          0 |          0 |
+                              advance/m2n.sendData |         15 |          0 |          0 |          0 |          0 |
+                                         configure |          2 |          0 |          2 |          0 |          1 |
+                                          finalize |         20 |          0 |         20 |          0 |          1 |
+                                        initialize |         47 |          0 |         47 |          0 |          1 |
+       initialize/m2n.broadcastVertexDistributions |          0 |          0 |          0 |          0 |          0 |
+              initialize/m2n.buildCommunicationMap |          0 |          0 |          0 |          0 |          0 |
+               initialize/m2n.createCommunications |         10 |          0 |         10 |          0 |          1 |
+         initialize/m2n.exchangeVertexDistribution |          9 |          0 |          9 |          0 |          1 |
+            initialize/m2n.requestMasterConnection |         10 |          0 |         10 |          0 |          1 |
+            initialize/m2n.requestSlavesConnection |         22 |          0 |         22 |          0 |          1 |
+     initialize/partition.gatherMesh.OpenFOAM-Mesh |          2 |          0 |          2 |          0 |          1 |
+    initialize/partition.prepareMesh.OpenFOAM-Mesh |          0 |          0 |          0 |          0 |          0 |
+ initialize/partition.sendGlobalMesh.OpenFOAM-Mesh |          6 |          0 |          6 |          0 |          1 |
+                                    initializeData |          4 |          0 |          4 |          0 |          1 |
+                                    solver.advance |        306 |          0 |        106 |          0 |   0.346405 |
+                                 solver.initialize |        221 |          0 |        221 |          0 |          1 |
