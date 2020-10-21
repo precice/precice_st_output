@@ -778,4 +778,113 @@ make[2]: Nothing to be done for 'install-exec-am'.
 make[2]: Nothing to be done for 'install-data-am'.
 make[2]: Leaving directory '/home/precice/su2-source'
 make[1]: Leaving directory '/home/precice/su2-source'
+Removing intermediate container 24196c5674ce
+ ---> 4f2c447b7378
+Step 17/17 : WORKDIR /home/precice/su2-bin/bin/
+ ---> Running in b8c1993187be
+Removing intermediate container b8c1993187be
+ ---> 5de7d06e8eed
+Successfully built 5de7d06e8eed
+Successfully tagged precice/su2-adapter-ubuntu1804.home-develop:latest
+Building su2-adapter image with the following features: {'os': 'ubuntu1804', 'installation': 'home'}
+EXECUTING: docker build --network=host --file adapters/Dockerfile.su2-adapter --tag precice/su2-adapter-ubuntu1804.home-develop --build-arg branch=develop --build-arg adapter_branch=develop --build-arg from=precice/precice-ubuntu1804.home-develop .
+travis_time:end:0264e7db:start=1603297796309220635,finish=1603298430801743043,duration=634492522408,event=script[0K[32;1mThe command "python build_adapter.py --dockerfile adapters/Dockerfile.su2-adapter --operating-system ubuntu1804 --precice-installation home --docker-username $DOCKER_USERNAME" exited with 0.[0m
+travis_time:start:1fa1c96c[0K$ python push.py --adapter adapters/Dockerfile.su2-adapter
 Cloning into 'precice_st_output'...
+ed904a679c7b5ab3cef41194be70c994c08827a7b92f952f68e1d96fdf69fdba
+CONTAINER ID        IMAGE                                         COMMAND             CREATED                  STATUS              PORTS               NAMES
+ed904a679c7b        precice/su2-adapter-ubuntu1804.home-develop   "bash"              Less than a second ago   Created                                 adapter
+[master 3f32965] [18.04] SU2 adapter - Success
+ 2 files changed, 804 insertions(+)
+ create mode 100644 2779/2779.05/Logs/travis.log
+ create mode 100644 2779/2779.05/README.md
+To https://github.com/precice/precice_st_output.git
+ ! [remote rejected] master -> master (cannot lock ref 'refs/heads/master': is at 93eae8b87522fd27619b232c55c07ab5c4045e1a but expected 1bf1d667c64ef061e28bede95d88d380f77f65aa)
+error: failed to push some refs to 'https://github.com/precice/precice_st_output.git'
+From https://github.com/precice/precice_st_output
+   1bf1d66..93eae8b  master     -> origin/master
+Rebasing (1/1)[KSuccessfully rebased and updated refs/heads/master.
+To https://github.com/precice/precice_st_output.git
+   93eae8b..3eb0011  master -> master
+EXECUTING: git clone -b master https://github.com/precice/precice_st_output
+EXECUTING: mkdir -p /home/travis/build/precice/systemtests/precice_st_output/2779/2779.05/Logs
+EXECUTING: docker create --name adapter -it precice/su2-adapter-ubuntu1804.home-develop bash 
+EXECUTING: docker container ls -a
+EXECUTING: docker cp adapter:/home/precice/Logs /home/travis/build/precice/systemtests/precice_st_output/2779/2779.05
+EXECUTING: rm ./.docker_tag
+EXECUTING: git add README.md
+EXECUTING: git add /home/travis/build/precice/systemtests/precice_st_output/2779/2779.05
+EXECUTING: git commit -m '[18.04] SU2 adapter - Success'
+EXECUTING: git config user.name 'Precice Bot'
+EXECUTING: git config user.email ${PRECICE_BOT_EMAIL}
+EXECUTING: git remote set-url origin https://${GH_TOKEN}@github.com/precice/precice_st_output.git > /dev/null 2>&1
+EXECUTING: git push
+EXECUTING: git pull --rebase
+EXECUTING: git push
+Finished pushing to precice_st_output-master!
+travis_time:end:1fa1c96c:start=1603298430808556736,finish=1603298440698464591,duration=9889907855,event=script[0K[32;1mThe command "python push.py --adapter adapters/Dockerfile.su2-adapter" exited with 0.[0m
+
+travis_fold:start:dpl_0[0Ktravis_time:start:3d21da80[0K$ rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install dpl
+Successfully installed dpl-1.10.15
+1 gem installed
+travis_time:end:3d21da80:start=1603298441850745698,finish=1603298443119293113,duration=1268547415,event=after_success[0Ktravis_fold:end:dpl_0[0Ktravis_time:start:054e7710[0Ktravis_fold:start:dpl.1[33mInstalling deploy dependencies[0m
+Successfully installed dpl-script-1.10.15
+1 gem installed
+
+travis_fold:end:dpl.1travis_fold:start:dpl.2[33mPreparing deploy[0m
+
+travis_fold:end:dpl.2travis_fold:start:dpl.3[33mDeploying application[0m
+WARNING! Your password will be stored unencrypted in /home/travis/.docker/config.json.
+Configure a credential helper to remove this warning. See
+https://docs.docker.com/engine/reference/commandline/login/#credentials-store
+
+Login Succeeded
+The push refers to repository [docker.io/precice/su2-adapter-ubuntu1804.home-develop]
+6bc64ba2067c: Preparing
+818786bc0ed4: Preparing
+5c866e433767: Preparing
+9ec528e1a189: Preparing
+e7d51d2ff698: Preparing
+0cd30c3e5644: Preparing
+98ec26935b8d: Preparing
+6675cce8812d: Preparing
+69eaa6e52d80: Preparing
+753193f9af4a: Preparing
+80c5c13fcadc: Preparing
+0ac5411b9146: Preparing
+a953cedef0bc: Preparing
+7a694df0ad6c: Preparing
+3fd9df553184: Preparing
+805802706667: Preparing
+0cd30c3e5644: Waiting
+98ec26935b8d: Waiting
+6675cce8812d: Waiting
+69eaa6e52d80: Waiting
+753193f9af4a: Waiting
+80c5c13fcadc: Waiting
+0ac5411b9146: Waiting
+a953cedef0bc: Waiting
+7a694df0ad6c: Waiting
+3fd9df553184: Waiting
+805802706667: Waiting
+818786bc0ed4: Pushed
+9ec528e1a189: Pushed
+98ec26935b8d: Mounted from precice/precice-ubuntu1804.home-develop
+0cd30c3e5644: Mounted from precice/precice-ubuntu1804.home-develop
+6675cce8812d: Mounted from precice/precice-ubuntu1804.home-develop
+69eaa6e52d80: Mounted from precice/precice-ubuntu1804.home-develop
+753193f9af4a: Mounted from precice/precice-ubuntu1804.home-develop
+80c5c13fcadc: Mounted from precice/precice-ubuntu1804.home-develop
+e7d51d2ff698: Pushed
+7a694df0ad6c: Layer already exists
+0ac5411b9146: Mounted from precice/precice-ubuntu1804.home-develop
+3fd9df553184: Layer already exists
+a953cedef0bc: Mounted from precice/precice-ubuntu1804.home-develop
+805802706667: Layer already exists
+6bc64ba2067c: Pushed
+5c866e433767: Pushed
+latest: digest: sha256:9f010d4094580c2304557635b0926d09b403dd2d99278c936eb5f8310b2f3572 size: 3687
+EXECUTING: docker push precice/su2-adapter-ubuntu1804.home-develop:latest
+
+travis_fold:end:dpl.3travis_time:end:054e7710:start=1603298443127755086,finish=1603298493192387988,duration=50064632902,event=after_success[0K
+Done. Your build exited with 0.
