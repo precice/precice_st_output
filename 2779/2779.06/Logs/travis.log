@@ -433,3 +433,92 @@ EXECUTING: docker build --network=host --file adapters/Dockerfile.dealii-adapter
 travis_time:end:1bdecad1:start=1603297790646463302,finish=1603298429733928154,duration=639087464852,event=script[0K[32;1mThe command "python build_adapter.py --dockerfile adapters/Dockerfile.dealii-adapter_3D --operating-system ubuntu1804 --precice-installation home --docker-username $DOCKER_USERNAME" exited with 0.[0m
 travis_time:start:2e1bac9d[0K$ python push.py --adapter adapters/Dockerfile.dealii-adapter_3D
 Cloning into 'precice_st_output'...
+1cb89ed24660f411c232ef8fe26266d36b7d14fe85e43ca510f97f6a0ef42872
+CONTAINER ID        IMAGE                                               COMMAND             CREATED             STATUS              PORTS               NAMES
+1cb89ed24660        precice/dealii-adapter_3d-ubuntu1804.home-develop   "bash"              1 second ago        Created                                 adapter
+[master 93eae8b] [18.04] deal.ii adapter [3D] - Success
+ 2 files changed, 458 insertions(+)
+ create mode 100644 2779/2779.06/Logs/travis.log
+ create mode 100644 2779/2779.06/README.md
+To https://github.com/precice/precice_st_output.git
+   1bf1d66..93eae8b  master -> master
+EXECUTING: git clone -b master https://github.com/precice/precice_st_output
+EXECUTING: mkdir -p /home/travis/build/precice/systemtests/precice_st_output/2779/2779.06/Logs
+EXECUTING: docker create --name adapter -it precice/dealii-adapter_3d-ubuntu1804.home-develop bash 
+EXECUTING: docker container ls -a
+EXECUTING: docker cp adapter:/home/precice/Logs /home/travis/build/precice/systemtests/precice_st_output/2779/2779.06
+EXECUTING: rm ./.docker_tag
+EXECUTING: git add README.md
+EXECUTING: git add /home/travis/build/precice/systemtests/precice_st_output/2779/2779.06
+EXECUTING: git commit -m '[18.04] deal.ii adapter [3D] - Success'
+EXECUTING: git config user.name 'Precice Bot'
+EXECUTING: git config user.email ${PRECICE_BOT_EMAIL}
+EXECUTING: git remote set-url origin https://${GH_TOKEN}@github.com/precice/precice_st_output.git > /dev/null 2>&1
+EXECUTING: git push
+Finished pushing to precice_st_output-master!
+travis_time:end:2e1bac9d:start=1603298429740975912,finish=1603298436834874990,duration=7093899078,event=script[0K[32;1mThe command "python push.py --adapter adapters/Dockerfile.dealii-adapter_3D" exited with 0.[0m
+
+travis_fold:start:dpl_0[0Ktravis_time:start:03b7af9c[0K$ rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install dpl
+Successfully installed dpl-1.10.15
+1 gem installed
+travis_time:end:03b7af9c:start=1603298437981987612,finish=1603298439303338884,duration=1321351272,event=after_success[0Ktravis_fold:end:dpl_0[0Ktravis_time:start:0b655a39[0Ktravis_fold:start:dpl.1[33mInstalling deploy dependencies[0m
+Successfully installed dpl-script-1.10.15
+1 gem installed
+
+travis_fold:end:dpl.1travis_fold:start:dpl.2[33mPreparing deploy[0m
+
+travis_fold:end:dpl.2travis_fold:start:dpl.3[33mDeploying application[0m
+WARNING! Your password will be stored unencrypted in /home/travis/.docker/config.json.
+Configure a credential helper to remove this warning. See
+https://docs.docker.com/engine/reference/commandline/login/#credentials-store
+
+Login Succeeded
+The push refers to repository [docker.io/precice/dealii-adapter_3d-ubuntu1804.home-develop]
+316dc000e197: Preparing
+8f7e4e06db23: Preparing
+9fd9544fb668: Preparing
+e621e7e19f3a: Preparing
+405be3f8e82c: Preparing
+0cd30c3e5644: Preparing
+98ec26935b8d: Preparing
+6675cce8812d: Preparing
+69eaa6e52d80: Preparing
+753193f9af4a: Preparing
+80c5c13fcadc: Preparing
+0ac5411b9146: Preparing
+a953cedef0bc: Preparing
+7a694df0ad6c: Preparing
+3fd9df553184: Preparing
+805802706667: Preparing
+69eaa6e52d80: Waiting
+753193f9af4a: Waiting
+80c5c13fcadc: Waiting
+0ac5411b9146: Waiting
+a953cedef0bc: Waiting
+7a694df0ad6c: Waiting
+3fd9df553184: Waiting
+805802706667: Waiting
+0cd30c3e5644: Waiting
+98ec26935b8d: Waiting
+6675cce8812d: Waiting
+9fd9544fb668: Pushed
+316dc000e197: Pushed
+8f7e4e06db23: Pushed
+0cd30c3e5644: Mounted from precice/precice-ubuntu1804.home-develop
+98ec26935b8d: Mounted from precice/precice-ubuntu1804.home-develop
+6675cce8812d: Mounted from precice/precice-ubuntu1804.home-develop
+69eaa6e52d80: Mounted from precice/precice-ubuntu1804.home-develop
+753193f9af4a: Mounted from precice/precice-ubuntu1804.home-develop
+80c5c13fcadc: Mounted from precice/precice-ubuntu1804.home-develop
+7a694df0ad6c: Layer already exists
+0ac5411b9146: Mounted from precice/precice-ubuntu1804.home-develop
+a953cedef0bc: Mounted from precice/precice-ubuntu1804.home-develop
+3fd9df553184: Layer already exists
+805802706667: Layer already exists
+405be3f8e82c: Pushed
+e621e7e19f3a: Pushed
+latest: digest: sha256:b40fe88c3b538a107c82bfb36a91f0cecec44f81568acc8ecc25fc91ef129e61 size: 3685
+EXECUTING: docker push precice/dealii-adapter_3d-ubuntu1804.home-develop:latest
+
+travis_fold:end:dpl.3travis_time:end:0b655a39:start=1603298439313156997,finish=1603298567633294085,duration=128320137088,event=after_success[0K
+Done. Your build exited with 0.
