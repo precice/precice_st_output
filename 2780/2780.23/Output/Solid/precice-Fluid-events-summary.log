@@ -1,0 +1,61 @@
+Run finished at Wed Oct 21 21:49:51 2020
+Global runtime       = 47787ms / 47.787s
+Number of processors = 1
+# Rank: 0
+
+                                                           Event |      Count |  Total[ms] |    Max[ms] |    Min[ms] |    Avg[ms] | Time Ratio |
+------------------------------------------------------------------------------------------------------------------------------------------------
+                                                         _GLOBAL |          1 |      47787 |      47787 |      47787 |      47787 |          1 |
+                                                         advance |        301 |      12090 |         85 |         20 |         40 |      0.253 |
+                                         advance/m2n.receiveData |        301 |        118 |          4 |          0 |          0 |    0.00247 |
+                                            advance/m2n.sendData |        301 |       1849 |         14 |          0 |          6 |     0.0387 |
+ advance/map.rbf.computeMapping.FromSolid_meshToFluid-Mesh-Nodes |          1 |         37 |         37 |         37 |         37 |   0.000774 |
+        advance/map.rbf.mapData.FromSolid_meshToFluid-Mesh-Nodes |        301 |       1159 |         11 |          2 |          3 |     0.0243 |
+                                                       configure |          1 |          6 |          6 |          6 |          6 |   0.000126 |
+                                                        finalize |          1 |          4 |          4 |          4 |          4 |   8.37e-05 |
+                                                      initialize |          1 |        131 |        131 |        131 |        131 |    0.00274 |
+                     initialize/m2n.broadcastVertexDistributions |          3 |          0 |          0 |          0 |          0 |          0 |
+                            initialize/m2n.buildCommunicationMap |          3 |          2 |          2 |          0 |          0 |   4.19e-05 |
+                             initialize/m2n.createCommunications |          3 |         20 |         16 |          1 |          6 |   0.000419 |
+                       initialize/m2n.exchangeVertexDistribution |          3 |         27 |         19 |          3 |          9 |   0.000565 |
+                          initialize/m2n.requestMasterConnection |          1 |          4 |          4 |          4 |          4 |   8.37e-05 |
+                          initialize/m2n.requestSlavesConnection |          1 |         57 |         57 |         57 |         57 |    0.00119 |
+              initialize/partition.gatherMesh.Fluid-Mesh-Centers |          1 |          0 |          0 |          0 |          0 |          0 |
+                initialize/partition.gatherMesh.Fluid-Mesh-Nodes |          1 |          0 |          0 |          0 |          0 |          0 |
+             initialize/partition.prepareMesh.Fluid-Mesh-Centers |          1 |          0 |          0 |          0 |          0 |          0 |
+               initialize/partition.prepareMesh.Fluid-Mesh-Nodes |          1 |          0 |          0 |          0 |          0 |          0 |
+               initialize/partition.receiveGlobalMesh.Solid_mesh |          1 |         48 |         48 |         48 |         48 |      0.001 |
+          initialize/partition.sendGlobalMesh.Fluid-Mesh-Centers |          1 |          0 |          0 |          0 |          0 |          0 |
+            initialize/partition.sendGlobalMesh.Fluid-Mesh-Nodes |          1 |          0 |          0 |          0 |          0 |          0 |
+                                                  initializeData |          1 |          1 |          1 |          1 |          1 |   2.09e-05 |
+                                                  solver.advance |        301 |      35366 |        197 |         51 |        117 |       0.74 |
+                                               solver.initialize |          1 |        152 |        152 |        152 |        152 |    0.00318 |
+
+
+                                                            Name |        Max |  MaxOnRank |        Min |  MinOnRank |    Min/Max |
+-----------------------------------------------------------------------------------------------------------------------------------
+                                                         _GLOBAL |      47787 |          0 |      47787 |          0 |          1 |
+                                                         advance |         85 |          0 |         20 |          0 |   0.235294 |
+                                         advance/m2n.receiveData |          4 |          0 |          0 |          0 |          0 |
+                                            advance/m2n.sendData |         14 |          0 |          0 |          0 |          0 |
+ advance/map.rbf.computeMapping.FromSolid_meshToFluid-Mesh-Nodes |         37 |          0 |         37 |          0 |          1 |
+        advance/map.rbf.mapData.FromSolid_meshToFluid-Mesh-Nodes |         11 |          0 |          2 |          0 |   0.181818 |
+                                                       configure |          6 |          0 |          6 |          0 |          1 |
+                                                        finalize |          4 |          0 |          4 |          0 |          1 |
+                                                      initialize |        131 |          0 |        131 |          0 |          1 |
+                     initialize/m2n.broadcastVertexDistributions |          0 |          0 |          0 |          0 |          0 |
+                            initialize/m2n.buildCommunicationMap |          2 |          0 |          0 |          0 |          0 |
+                             initialize/m2n.createCommunications |         16 |          0 |          1 |          0 |     0.0625 |
+                       initialize/m2n.exchangeVertexDistribution |         19 |          0 |          3 |          0 |   0.157895 |
+                          initialize/m2n.requestMasterConnection |          4 |          0 |          4 |          0 |          1 |
+                          initialize/m2n.requestSlavesConnection |         57 |          0 |         57 |          0 |          1 |
+              initialize/partition.gatherMesh.Fluid-Mesh-Centers |          0 |          0 |          0 |          0 |          0 |
+                initialize/partition.gatherMesh.Fluid-Mesh-Nodes |          0 |          0 |          0 |          0 |          0 |
+             initialize/partition.prepareMesh.Fluid-Mesh-Centers |          0 |          0 |          0 |          0 |          0 |
+               initialize/partition.prepareMesh.Fluid-Mesh-Nodes |          0 |          0 |          0 |          0 |          0 |
+               initialize/partition.receiveGlobalMesh.Solid_mesh |         48 |          0 |         48 |          0 |          1 |
+          initialize/partition.sendGlobalMesh.Fluid-Mesh-Centers |          0 |          0 |          0 |          0 |          0 |
+            initialize/partition.sendGlobalMesh.Fluid-Mesh-Nodes |          0 |          0 |          0 |          0 |          0 |
+                                                  initializeData |          1 |          0 |          1 |          0 |          1 |
+                                                  solver.advance |        197 |          0 |         51 |          0 |   0.258883 |
+                                               solver.initialize |        152 |          0 |        152 |          0 |          1 |
