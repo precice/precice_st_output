@@ -23135,3 +23135,92 @@ EXECUTING: docker build --network=host --file adapters/Dockerfile.calculix-adapt
 travis_time:end:217414f2:start=1603301995561051209,finish=1603302262796321636,duration=267235270427,event=script[0K[32;1mThe command "python build_adapter.py --dockerfile adapters/Dockerfile.calculix-adapter --operating-system ubuntu1804 --precice-installation home --petsc yes --docker-username $DOCKER_USERNAME" exited with 0.[0m
 travis_time:start:05dfa1af[0K$ python push.py --adapter adapters/Dockerfile.calculix-adapter
 Cloning into 'precice_st_output'...
+b2b5b6680ac34428a6b1368ff106a4fcb37b36041ff6c4551c0c6c4c214e6cb9
+CONTAINER ID        IMAGE                                                    COMMAND             CREATED                  STATUS              PORTS               NAMES
+b2b5b6680ac3        precice/calculix-adapter-ubuntu1804.home.petsc-develop   "bash"              Less than a second ago   Created                                 adapter
+[master e909e9f] [18.04] CalculiX adapter [PETSc] - Success
+ 2 files changed, 23160 insertions(+)
+ create mode 100644 2779/2779.12/Logs/travis.log
+ create mode 100644 2779/2779.12/README.md
+To https://github.com/precice/precice_st_output.git
+   23fdc7f..e909e9f  master -> master
+EXECUTING: git clone -b master https://github.com/precice/precice_st_output
+EXECUTING: mkdir -p /home/travis/build/precice/systemtests/precice_st_output/2779/2779.12/Logs
+EXECUTING: docker create --name adapter -it precice/calculix-adapter-ubuntu1804.home.petsc-develop bash 
+EXECUTING: docker container ls -a
+EXECUTING: docker cp adapter:/home/precice/Logs /home/travis/build/precice/systemtests/precice_st_output/2779/2779.12
+EXECUTING: rm ./.docker_tag
+EXECUTING: git add README.md
+EXECUTING: git add /home/travis/build/precice/systemtests/precice_st_output/2779/2779.12
+EXECUTING: git commit -m '[18.04] CalculiX adapter [PETSc] - Success'
+EXECUTING: git config user.name 'Precice Bot'
+EXECUTING: git config user.email ${PRECICE_BOT_EMAIL}
+EXECUTING: git remote set-url origin https://${GH_TOKEN}@github.com/precice/precice_st_output.git > /dev/null 2>&1
+EXECUTING: git push
+Finished pushing to precice_st_output-master!
+travis_time:end:05dfa1af:start=1603302262805133598,finish=1603302269954174484,duration=7149040886,event=script[0K[32;1mThe command "python push.py --adapter adapters/Dockerfile.calculix-adapter" exited with 0.[0m
+
+travis_fold:start:dpl_0[0Ktravis_time:start:0071a71a[0K$ rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install dpl
+Successfully installed dpl-1.10.15
+1 gem installed
+travis_time:end:0071a71a:start=1603302271160437360,finish=1603302272512553791,duration=1352116431,event=after_success[0Ktravis_fold:end:dpl_0[0Ktravis_time:start:034e5fe1[0Ktravis_fold:start:dpl.1[33mInstalling deploy dependencies[0m
+Successfully installed dpl-script-1.10.15
+1 gem installed
+
+travis_fold:end:dpl.1travis_fold:start:dpl.2[33mPreparing deploy[0m
+
+travis_fold:end:dpl.2travis_fold:start:dpl.3[33mDeploying application[0m
+WARNING! Your password will be stored unencrypted in /home/travis/.docker/config.json.
+Configure a credential helper to remove this warning. See
+https://docs.docker.com/engine/reference/commandline/login/#credentials-store
+
+Login Succeeded
+The push refers to repository [docker.io/precice/calculix-adapter-ubuntu1804.home.petsc-develop]
+d385f00b9405: Preparing
+06f933b8ad78: Preparing
+cbcd7a8fed5e: Preparing
+b1285ec4c832: Preparing
+7e780e664877: Preparing
+cfc0ca597732: Preparing
+c4fb8f5eb5a7: Preparing
+61f42f9ca536: Preparing
+15bec23ca0c7: Preparing
+917772bf4b8e: Preparing
+e1a045dd9ca5: Preparing
+1971e1cab340: Preparing
+86502e030224: Preparing
+7a694df0ad6c: Preparing
+3fd9df553184: Preparing
+805802706667: Preparing
+cfc0ca597732: Waiting
+c4fb8f5eb5a7: Waiting
+61f42f9ca536: Waiting
+15bec23ca0c7: Waiting
+917772bf4b8e: Waiting
+e1a045dd9ca5: Waiting
+1971e1cab340: Waiting
+86502e030224: Waiting
+7a694df0ad6c: Waiting
+3fd9df553184: Waiting
+805802706667: Waiting
+d385f00b9405: Pushed
+cbcd7a8fed5e: Pushed
+cfc0ca597732: Mounted from precice/precice-ubuntu1804.home.petsc-develop
+b1285ec4c832: Pushed
+7e780e664877: Pushed
+c4fb8f5eb5a7: Mounted from precice/precice-ubuntu1804.home.petsc-develop
+61f42f9ca536: Mounted from precice/precice-ubuntu1804.home.petsc-develop
+15bec23ca0c7: Mounted from precice/precice-ubuntu1804.home.petsc-develop
+917772bf4b8e: Mounted from precice/precice-ubuntu1804.home.petsc-develop
+e1a045dd9ca5: Mounted from precice/precice-ubuntu1804.home.petsc-develop
+1971e1cab340: Mounted from precice/precice-ubuntu1804.home.petsc-develop
+3fd9df553184: Layer already exists
+7a694df0ad6c: Layer already exists
+805802706667: Layer already exists
+06f933b8ad78: Pushed
+86502e030224: Mounted from precice/precice-ubuntu1804.home.petsc-develop
+latest: digest: sha256:6e89ae8394b5581e3f92dd3d1ff20ca34b21a648e1a2a16f6af98f0dcaf74d62 size: 3682
+EXECUTING: docker push precice/calculix-adapter-ubuntu1804.home.petsc-develop:latest
+
+travis_fold:end:dpl.3travis_time:end:034e5fe1:start=1603302272522689219,finish=1603302283206318048,duration=10683628829,event=after_success[0K
+Done. Your build exited with 0.
