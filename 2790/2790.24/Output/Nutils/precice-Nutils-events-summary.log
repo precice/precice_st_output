@@ -1,0 +1,63 @@
+Run finished at Thu Oct 22 09:08:00 2020
+Global runtime       = 125266ms / 125.266s
+Number of processors = 1
+# Rank: 0
+
+                                                                                 Event |      Count |  Total[ms] |    Max[ms] |    Min[ms] |    Avg[ms] | Time Ratio |
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                                               _GLOBAL |          1 |     125266 |     125266 |     125266 |     125266 |          1 |
+                                                                               advance |        204 |      37747 |        276 |         43 |        185 |      0.301 |
+                                                               advance/m2n.receiveData |        203 |      33356 |        256 |        136 |        164 |      0.266 |
+                                                                  advance/m2n.sendData |        204 |       2563 |         32 |          0 |         12 |     0.0205 |
+                       advance/map.nn.computeMapping.FromNutils-Mesh-CCToOpenFOAM-Mesh |          1 |         15 |         15 |         15 |         15 |    0.00012 |
+    advance/map.nn.computeMapping.FromNutils-Mesh-CCToOpenFOAM-Mesh.getIndexOnVertices |          1 |          1 |          1 |          1 |          1 |   7.98e-06 |
+                              advance/map.nn.mapData.FromNutils-Mesh-CCToOpenFOAM-Mesh |        204 |         18 |          0 |          0 |          0 |   0.000144 |
+                              advance/map.nn.mapData.FromOpenFOAM-MeshToNutils-Mesh-GP |        203 |         16 |          2 |          0 |          0 |   0.000128 |
+                                                                             configure |          1 |          0 |          0 |          0 |          0 |          0 |
+                                                                              finalize |          1 |          6 |          6 |          6 |          6 |   4.79e-05 |
+                                                                            initialize |          1 |        283 |        283 |        283 |        283 |    0.00226 |
+                                                 initialize/m2n.acceptMasterConnection |          1 |          5 |          5 |          5 |          5 |   3.99e-05 |
+                                                 initialize/m2n.acceptSlavesConnection |          1 |         19 |         19 |         19 |         19 |   0.000152 |
+                                           initialize/m2n.broadcastVertexDistributions |          1 |          0 |          0 |          0 |          0 |          0 |
+                                                  initialize/m2n.buildCommunicationMap |          1 |          0 |          0 |          0 |          0 |          0 |
+                                                   initialize/m2n.createCommunications |          1 |          2 |          2 |          2 |          2 |    1.6e-05 |
+                                             initialize/m2n.exchangeVertexDistribution |          1 |         15 |         15 |         15 |         15 |    0.00012 |
+                                                            initialize/m2n.receiveData |          1 |        237 |        237 |        237 |        237 |    0.00189 |
+                    initialize/map.nn.computeMapping.FromOpenFOAM-MeshToNutils-Mesh-GP |          1 |          4 |          4 |          4 |          4 |   3.19e-05 |
+ initialize/map.nn.computeMapping.FromOpenFOAM-MeshToNutils-Mesh-GP.getIndexOnVertices |          1 |          0 |          0 |          0 |          0 |          0 |
+                           initialize/map.nn.mapData.FromOpenFOAM-MeshToNutils-Mesh-GP |          1 |          0 |          0 |          0 |          0 |          0 |
+                                       initialize/partition.prepareMesh.Nutils-Mesh-CC |          1 |          0 |          0 |          0 |          0 |          0 |
+                                       initialize/partition.prepareMesh.Nutils-Mesh-GP |          1 |          0 |          0 |          0 |          0 |          0 |
+                                  initialize/partition.receiveGlobalMesh.OpenFOAM-Mesh |          1 |          6 |          6 |          6 |          6 |   4.79e-05 |
+                                                                        solver.advance |        204 |      86389 |        675 |         84 |        423 |       0.69 |
+                                                                     solver.initialize |          1 |        819 |        819 |        819 |        819 |    0.00654 |
+
+
+                                                                                  Name |        Max |  MaxOnRank |        Min |  MinOnRank |    Min/Max |
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                                               _GLOBAL |     125266 |          0 |     125266 |          0 |          1 |
+                                                                               advance |        276 |          0 |         43 |          0 |   0.155797 |
+                                                               advance/m2n.receiveData |        256 |          0 |        136 |          0 |    0.53125 |
+                                                                  advance/m2n.sendData |         32 |          0 |          0 |          0 |          0 |
+                       advance/map.nn.computeMapping.FromNutils-Mesh-CCToOpenFOAM-Mesh |         15 |          0 |         15 |          0 |          1 |
+    advance/map.nn.computeMapping.FromNutils-Mesh-CCToOpenFOAM-Mesh.getIndexOnVertices |          1 |          0 |          1 |          0 |          1 |
+                              advance/map.nn.mapData.FromNutils-Mesh-CCToOpenFOAM-Mesh |          0 |          0 |          0 |          0 |          0 |
+                              advance/map.nn.mapData.FromOpenFOAM-MeshToNutils-Mesh-GP |          2 |          0 |          0 |          0 |          0 |
+                                                                             configure |          0 |          0 |          0 |          0 |          0 |
+                                                                              finalize |          6 |          0 |          6 |          0 |          1 |
+                                                                            initialize |        283 |          0 |        283 |          0 |          1 |
+                                                 initialize/m2n.acceptMasterConnection |          5 |          0 |          5 |          0 |          1 |
+                                                 initialize/m2n.acceptSlavesConnection |         19 |          0 |         19 |          0 |          1 |
+                                           initialize/m2n.broadcastVertexDistributions |          0 |          0 |          0 |          0 |          0 |
+                                                  initialize/m2n.buildCommunicationMap |          0 |          0 |          0 |          0 |          0 |
+                                                   initialize/m2n.createCommunications |          2 |          0 |          2 |          0 |          1 |
+                                             initialize/m2n.exchangeVertexDistribution |         15 |          0 |         15 |          0 |          1 |
+                                                            initialize/m2n.receiveData |        237 |          0 |        237 |          0 |          1 |
+                    initialize/map.nn.computeMapping.FromOpenFOAM-MeshToNutils-Mesh-GP |          4 |          0 |          4 |          0 |          1 |
+ initialize/map.nn.computeMapping.FromOpenFOAM-MeshToNutils-Mesh-GP.getIndexOnVertices |          0 |          0 |          0 |          0 |          0 |
+                           initialize/map.nn.mapData.FromOpenFOAM-MeshToNutils-Mesh-GP |          0 |          0 |          0 |          0 |          0 |
+                                       initialize/partition.prepareMesh.Nutils-Mesh-CC |          0 |          0 |          0 |          0 |          0 |
+                                       initialize/partition.prepareMesh.Nutils-Mesh-GP |          0 |          0 |          0 |          0 |          0 |
+                                  initialize/partition.receiveGlobalMesh.OpenFOAM-Mesh |          6 |          0 |          6 |          0 |          1 |
+                                                                        solver.advance |        675 |          0 |         84 |          0 |   0.124444 |
+                                                                     solver.initialize |        819 |          0 |        819 |          0 |          1 |
