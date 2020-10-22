@@ -1,0 +1,83 @@
+Run finished at Thu Oct 22 09:03:24 2020
+Global runtime       = 52658ms / 52.658s
+Number of processors = 1
+# Rank: 0
+
+                                                              Event |      Count |  Total[ms] |    Max[ms] |    Min[ms] |    Avg[ms] | Time Ratio |
+---------------------------------------------------------------------------------------------------------------------------------------------------
+                                                            _GLOBAL |          1 |      52658 |      52658 |      52658 |      52658 |          1 |
+                                                            advance |        301 |      15743 |        329 |         19 |         52 |      0.299 |
+                                            advance/m2n.receiveData |        301 |        145 |          6 |          0 |          0 |    0.00275 |
+                                               advance/m2n.sendData |        301 |       2570 |         21 |          0 |          8 |     0.0488 |
+                advance/map.pet.AO.FromSolid_meshToFluid-Mesh-Nodes |          1 |          0 |          0 |          0 |          0 |          0 |
+    advance/map.pet.computeMapping.FromSolid_meshToFluid-Mesh-Nodes |          1 |         52 |         52 |         52 |         52 |   0.000988 |
+  advance/map.pet.computeRescaling.FromSolid_meshToFluid-Mesh-Nodes |          1 |          2 |          2 |          2 |          2 |    3.8e-05 |
+    advance/map.pet.createMatrices.FromSolid_meshToFluid-Mesh-Nodes |          1 |          0 |          0 |          0 |          0 |          0 |
+             advance/map.pet.fillA.FromSolid_meshToFluid-Mesh-Nodes |          1 |          0 |          0 |          0 |          0 |          0 |
+             advance/map.pet.fillC.FromSolid_meshToFluid-Mesh-Nodes |          1 |          0 |          0 |          0 |          0 |          0 |
+           advance/map.pet.mapData.FromSolid_meshToFluid-Mesh-Nodes |        301 |       2916 |         23 |          3 |          9 |     0.0554 |
+          advance/map.pet.postFill.FromSolid_meshToFluid-Mesh-Nodes |          1 |          0 |          0 |          0 |          0 |          0 |
+ advance/map.pet.preComputeMapping.FromSolid_meshToFluid-Mesh-Nodes |          1 |          0 |          0 |          0 |          0 |          0 |
+         advance/map.pet.preallocA.FromSolid_meshToFluid-Mesh-Nodes |          1 |         19 |         19 |         19 |         19 |   0.000361 |
+         advance/map.pet.preallocC.FromSolid_meshToFluid-Mesh-Nodes |          1 |         26 |         26 |         26 |         26 |   0.000494 |
+   advance/map.pet.solveConsistent.FromSolid_meshToFluid-Mesh-Nodes |        602 |       2298 |         18 |          0 |          3 |     0.0436 |
+        advance/map.pet.solverInit.FromSolid_meshToFluid-Mesh-Nodes |          1 |          0 |          0 |          0 |          0 |          0 |
+                                                          configure |          1 |          9 |          9 |          9 |          9 |   0.000171 |
+                                                           finalize |          1 |         15 |         15 |         15 |         15 |   0.000285 |
+                                                         initialize |          1 |        138 |        138 |        138 |        138 |    0.00262 |
+                        initialize/m2n.broadcastVertexDistributions |          3 |          0 |          0 |          0 |          0 |          0 |
+                               initialize/m2n.buildCommunicationMap |          3 |          0 |          0 |          0 |          0 |          0 |
+                                initialize/m2n.createCommunications |          3 |          7 |          2 |          2 |          2 |   0.000133 |
+                          initialize/m2n.exchangeVertexDistribution |          3 |         11 |          3 |          3 |          3 |   0.000209 |
+                             initialize/m2n.requestMasterConnection |          1 |         47 |         47 |         47 |         47 |   0.000893 |
+                             initialize/m2n.requestSlavesConnection |          1 |         20 |         20 |         20 |         20 |    0.00038 |
+                 initialize/partition.gatherMesh.Fluid-Mesh-Centers |          1 |          1 |          1 |          1 |          1 |    1.9e-05 |
+                   initialize/partition.gatherMesh.Fluid-Mesh-Nodes |          1 |          0 |          0 |          0 |          0 |          0 |
+                initialize/partition.prepareMesh.Fluid-Mesh-Centers |          1 |          0 |          0 |          0 |          0 |          0 |
+                  initialize/partition.prepareMesh.Fluid-Mesh-Nodes |          1 |          0 |          0 |          0 |          0 |          0 |
+                  initialize/partition.receiveGlobalMesh.Solid_mesh |          1 |         54 |         54 |         54 |         54 |    0.00103 |
+             initialize/partition.sendGlobalMesh.Fluid-Mesh-Centers |          1 |          1 |          1 |          1 |          1 |    1.9e-05 |
+               initialize/partition.sendGlobalMesh.Fluid-Mesh-Nodes |          1 |          0 |          0 |          0 |          0 |          0 |
+                                                     initializeData |          1 |          4 |          4 |          4 |          4 |    7.6e-05 |
+                                                     solver.advance |        301 |      36544 |        291 |         73 |        121 |      0.694 |
+                                                  solver.initialize |          1 |        166 |        166 |        166 |        166 |    0.00315 |
+
+
+                                                               Name |        Max |  MaxOnRank |        Min |  MinOnRank |    Min/Max |
+--------------------------------------------------------------------------------------------------------------------------------------
+                                                            _GLOBAL |      52658 |          0 |      52658 |          0 |          1 |
+                                                            advance |        329 |          0 |         19 |          0 |  0.0577508 |
+                                            advance/m2n.receiveData |          6 |          0 |          0 |          0 |          0 |
+                                               advance/m2n.sendData |         21 |          0 |          0 |          0 |          0 |
+                advance/map.pet.AO.FromSolid_meshToFluid-Mesh-Nodes |          0 |          0 |          0 |          0 |          0 |
+    advance/map.pet.computeMapping.FromSolid_meshToFluid-Mesh-Nodes |         52 |          0 |         52 |          0 |          1 |
+  advance/map.pet.computeRescaling.FromSolid_meshToFluid-Mesh-Nodes |          2 |          0 |          2 |          0 |          1 |
+    advance/map.pet.createMatrices.FromSolid_meshToFluid-Mesh-Nodes |          0 |          0 |          0 |          0 |          0 |
+             advance/map.pet.fillA.FromSolid_meshToFluid-Mesh-Nodes |          0 |          0 |          0 |          0 |          0 |
+             advance/map.pet.fillC.FromSolid_meshToFluid-Mesh-Nodes |          0 |          0 |          0 |          0 |          0 |
+           advance/map.pet.mapData.FromSolid_meshToFluid-Mesh-Nodes |         23 |          0 |          3 |          0 |   0.130435 |
+          advance/map.pet.postFill.FromSolid_meshToFluid-Mesh-Nodes |          0 |          0 |          0 |          0 |          0 |
+ advance/map.pet.preComputeMapping.FromSolid_meshToFluid-Mesh-Nodes |          0 |          0 |          0 |          0 |          0 |
+         advance/map.pet.preallocA.FromSolid_meshToFluid-Mesh-Nodes |         19 |          0 |         19 |          0 |          1 |
+         advance/map.pet.preallocC.FromSolid_meshToFluid-Mesh-Nodes |         26 |          0 |         26 |          0 |          1 |
+   advance/map.pet.solveConsistent.FromSolid_meshToFluid-Mesh-Nodes |         18 |          0 |          0 |          0 |          0 |
+        advance/map.pet.solverInit.FromSolid_meshToFluid-Mesh-Nodes |          0 |          0 |          0 |          0 |          0 |
+                                                          configure |          9 |          0 |          9 |          0 |          1 |
+                                                           finalize |         15 |          0 |         15 |          0 |          1 |
+                                                         initialize |        138 |          0 |        138 |          0 |          1 |
+                        initialize/m2n.broadcastVertexDistributions |          0 |          0 |          0 |          0 |          0 |
+                               initialize/m2n.buildCommunicationMap |          0 |          0 |          0 |          0 |          0 |
+                                initialize/m2n.createCommunications |          2 |          0 |          2 |          0 |          1 |
+                          initialize/m2n.exchangeVertexDistribution |          3 |          0 |          3 |          0 |          1 |
+                             initialize/m2n.requestMasterConnection |         47 |          0 |         47 |          0 |          1 |
+                             initialize/m2n.requestSlavesConnection |         20 |          0 |         20 |          0 |          1 |
+                 initialize/partition.gatherMesh.Fluid-Mesh-Centers |          1 |          0 |          1 |          0 |          1 |
+                   initialize/partition.gatherMesh.Fluid-Mesh-Nodes |          0 |          0 |          0 |          0 |          0 |
+                initialize/partition.prepareMesh.Fluid-Mesh-Centers |          0 |          0 |          0 |          0 |          0 |
+                  initialize/partition.prepareMesh.Fluid-Mesh-Nodes |          0 |          0 |          0 |          0 |          0 |
+                  initialize/partition.receiveGlobalMesh.Solid_mesh |         54 |          0 |         54 |          0 |          1 |
+             initialize/partition.sendGlobalMesh.Fluid-Mesh-Centers |          1 |          0 |          1 |          0 |          1 |
+               initialize/partition.sendGlobalMesh.Fluid-Mesh-Nodes |          0 |          0 |          0 |          0 |          0 |
+                                                     initializeData |          4 |          0 |          4 |          0 |          1 |
+                                                     solver.advance |        291 |          0 |         73 |          0 |   0.250859 |
+                                                  solver.initialize |        166 |          0 |        166 |          0 |          1 |
