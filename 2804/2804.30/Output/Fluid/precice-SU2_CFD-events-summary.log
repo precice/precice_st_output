@@ -1,0 +1,57 @@
+Run finished at Sat Oct 24 04:13:12 2020
+Global runtime       = 146317ms / 146.317s
+Number of processors = 1
+# Rank: 0
+
+                                                                         Event |      Count |  Total[ms] |    Max[ms] |    Min[ms] |    Avg[ms] | Time Ratio |
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                                       _GLOBAL |          1 |     146317 |     146317 |     146317 |     146317 |          1 |
+                                                                       advance |        195 |       9967 |        127 |          8 |         51 |     0.0681 |
+                                                       advance/m2n.receiveData |        195 |         61 |         10 |          0 |          0 |   0.000417 |
+                                                          advance/m2n.sendData |        195 |        966 |         15 |          0 |          4 |     0.0066 |
+                    advance/map.nn.computeMapping.FromCalculix_MeshToSU2_Mesh0 |          1 |          2 |          2 |          2 |          2 |   1.37e-05 |
+ advance/map.nn.computeMapping.FromCalculix_MeshToSU2_Mesh0.getIndexOnVertices |          1 |          0 |          0 |          0 |          0 |          0 |
+                    advance/map.nn.computeMapping.FromSU2_Mesh0ToCalculix_Mesh |          1 |         13 |         13 |         13 |         13 |   8.88e-05 |
+ advance/map.nn.computeMapping.FromSU2_Mesh0ToCalculix_Mesh.getIndexOnVertices |          1 |          4 |          4 |          4 |          4 |   2.73e-05 |
+                           advance/map.nn.mapData.FromCalculix_MeshToSU2_Mesh0 |        195 |         15 |          0 |          0 |          0 |   0.000103 |
+                           advance/map.nn.mapData.FromSU2_Mesh0ToCalculix_Mesh |        195 |         15 |          1 |          0 |          0 |   0.000103 |
+                                                                     configure |          1 |          0 |          0 |          0 |          0 |          0 |
+                                                                      finalize |          1 |          4 |          4 |          4 |          4 |   2.73e-05 |
+                                                                    initialize |          1 |       1208 |       1208 |       1208 |       1208 |    0.00826 |
+                                   initialize/m2n.broadcastVertexDistributions |          1 |          0 |          0 |          0 |          0 |          0 |
+                                          initialize/m2n.buildCommunicationMap |          1 |          0 |          0 |          0 |          0 |          0 |
+                                           initialize/m2n.createCommunications |          1 |          4 |          4 |          4 |          4 |   2.73e-05 |
+                                     initialize/m2n.exchangeVertexDistribution |          1 |         10 |         10 |         10 |         10 |   6.83e-05 |
+                                        initialize/m2n.requestMasterConnection |          1 |       1170 |       1170 |       1170 |       1170 |      0.008 |
+                                        initialize/m2n.requestSlavesConnection |          1 |         15 |         15 |         15 |         15 |   0.000103 |
+                                    initialize/partition.prepareMesh.SU2_Mesh0 |          1 |          0 |          0 |          0 |          0 |          0 |
+                          initialize/partition.receiveGlobalMesh.Calculix_Mesh |          1 |         18 |         18 |         18 |         18 |   0.000123 |
+                                                                solver.advance |        195 |     134836 |       1641 |         25 |        691 |      0.922 |
+                                                             solver.initialize |          1 |        262 |        262 |        262 |        262 |    0.00179 |
+
+
+                                                                          Name |        Max |  MaxOnRank |        Min |  MinOnRank |    Min/Max |
+-------------------------------------------------------------------------------------------------------------------------------------------------
+                                                                       _GLOBAL |     146317 |          0 |     146317 |          0 |          1 |
+                                                                       advance |        127 |          0 |          8 |          0 |  0.0629921 |
+                                                       advance/m2n.receiveData |         10 |          0 |          0 |          0 |          0 |
+                                                          advance/m2n.sendData |         15 |          0 |          0 |          0 |          0 |
+                    advance/map.nn.computeMapping.FromCalculix_MeshToSU2_Mesh0 |          2 |          0 |          2 |          0 |          1 |
+ advance/map.nn.computeMapping.FromCalculix_MeshToSU2_Mesh0.getIndexOnVertices |          0 |          0 |          0 |          0 |          0 |
+                    advance/map.nn.computeMapping.FromSU2_Mesh0ToCalculix_Mesh |         13 |          0 |         13 |          0 |          1 |
+ advance/map.nn.computeMapping.FromSU2_Mesh0ToCalculix_Mesh.getIndexOnVertices |          4 |          0 |          4 |          0 |          1 |
+                           advance/map.nn.mapData.FromCalculix_MeshToSU2_Mesh0 |          0 |          0 |          0 |          0 |          0 |
+                           advance/map.nn.mapData.FromSU2_Mesh0ToCalculix_Mesh |          1 |          0 |          0 |          0 |          0 |
+                                                                     configure |          0 |          0 |          0 |          0 |          0 |
+                                                                      finalize |          4 |          0 |          4 |          0 |          1 |
+                                                                    initialize |       1208 |          0 |       1208 |          0 |          1 |
+                                   initialize/m2n.broadcastVertexDistributions |          0 |          0 |          0 |          0 |          0 |
+                                          initialize/m2n.buildCommunicationMap |          0 |          0 |          0 |          0 |          0 |
+                                           initialize/m2n.createCommunications |          4 |          0 |          4 |          0 |          1 |
+                                     initialize/m2n.exchangeVertexDistribution |         10 |          0 |         10 |          0 |          1 |
+                                        initialize/m2n.requestMasterConnection |       1170 |          0 |       1170 |          0 |          1 |
+                                        initialize/m2n.requestSlavesConnection |         15 |          0 |         15 |          0 |          1 |
+                                    initialize/partition.prepareMesh.SU2_Mesh0 |          0 |          0 |          0 |          0 |          0 |
+                          initialize/partition.receiveGlobalMesh.Calculix_Mesh |         18 |          0 |         18 |          0 |          1 |
+                                                                solver.advance |       1641 |          0 |         25 |          0 |  0.0152346 |
+                                                             solver.initialize |        262 |          0 |        262 |          0 |          1 |
