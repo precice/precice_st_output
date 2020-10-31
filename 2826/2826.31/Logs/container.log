@@ -1,0 +1,47 @@
+Attaching to fenics-adapter-neumann, fenics-adapter-dirichlet, tutorial-data
+[33mfenics-adapter-dirichlet    |[0m --------------------------------------------------------------------------
+[33mfenics-adapter-dirichlet    |[0m [[31790,1],0]: A high-performance Open MPI point-to-point messaging module
+[33mfenics-adapter-dirichlet    |[0m was unable to find any relevant network interfaces:
+[33mfenics-adapter-dirichlet    |[0m 
+[33mfenics-adapter-dirichlet    |[0m Module: OpenFabrics (openib)
+[33mfenics-adapter-dirichlet    |[0m   Host: a9e6cb074092
+[33mfenics-adapter-dirichlet    |[0m 
+[33mfenics-adapter-dirichlet    |[0m Another transport will be used instead, although this may result in
+[33mfenics-adapter-dirichlet    |[0m lower performance.
+[33mfenics-adapter-dirichlet    |[0m 
+[33mfenics-adapter-dirichlet    |[0m NOTE: You can disable this warning by setting the MCA parameter
+[33mfenics-adapter-dirichlet    |[0m btl_base_warn_component_unused to 0.
+[33mfenics-adapter-dirichlet    |[0m --------------------------------------------------------------------------
+[33mfenics-adapter-dirichlet    |[0m Traceback (most recent call last):
+[33mfenics-adapter-dirichlet    |[0m   File "/home/precice/Data/Input/heat.py", line 28, in <module>
+[33mfenics-adapter-dirichlet    |[0m     from fenics import Function, FunctionSpace, Expression, Constant, DirichletBC, TrialFunction, TestFunction, \
+[33mfenics-adapter-dirichlet    |[0m   File "/usr/lib/python3/dist-packages/fenics/__init__.py", line 7, in <module>
+[33mfenics-adapter-dirichlet    |[0m     from dolfin import *
+[33mfenics-adapter-dirichlet    |[0m   File "/usr/lib/petsc/lib/python3/dist-packages/dolfin/__init__.py", line 144, in <module>
+[33mfenics-adapter-dirichlet    |[0m     from .fem.assembling import (assemble, assemble_system, assemble_multimesh, assemble_mixed,
+[33mfenics-adapter-dirichlet    |[0m   File "/usr/lib/petsc/lib/python3/dist-packages/dolfin/fem/assembling.py", line 38, in <module>
+[33mfenics-adapter-dirichlet    |[0m     from ufl.form import sub_forms_by_domain
+[33mfenics-adapter-dirichlet    |[0m ImportError: cannot import name 'sub_forms_by_domain'
+[36mfenics-adapter-neumann      |[0m --------------------------------------------------------------------------
+[36mfenics-adapter-neumann      |[0m [[32670,1],0]: A high-performance Open MPI point-to-point messaging module
+[36mfenics-adapter-neumann      |[0m was unable to find any relevant network interfaces:
+[36mfenics-adapter-neumann      |[0m 
+[36mfenics-adapter-neumann      |[0m Module: OpenFabrics (openib)
+[36mfenics-adapter-neumann      |[0m   Host: 5ad85009dbd9
+[36mfenics-adapter-neumann      |[0m 
+[36mfenics-adapter-neumann      |[0m Another transport will be used instead, although this may result in
+[36mfenics-adapter-neumann      |[0m lower performance.
+[36mfenics-adapter-neumann      |[0m 
+[36mfenics-adapter-neumann      |[0m NOTE: You can disable this warning by setting the MCA parameter
+[36mfenics-adapter-neumann      |[0m btl_base_warn_component_unused to 0.
+[36mfenics-adapter-neumann      |[0m --------------------------------------------------------------------------
+[36mfenics-adapter-neumann      |[0m Traceback (most recent call last):
+[36mfenics-adapter-neumann      |[0m   File "/home/precice/Data/Input/heat.py", line 28, in <module>
+[36mfenics-adapter-neumann      |[0m     from fenics import Function, FunctionSpace, Expression, Constant, DirichletBC, TrialFunction, TestFunction, \
+[36mfenics-adapter-neumann      |[0m   File "/usr/lib/python3/dist-packages/fenics/__init__.py", line 7, in <module>
+[36mfenics-adapter-neumann      |[0m     from dolfin import *
+[36mfenics-adapter-neumann      |[0m   File "/usr/lib/petsc/lib/python3/dist-packages/dolfin/__init__.py", line 144, in <module>
+[36mfenics-adapter-neumann      |[0m     from .fem.assembling import (assemble, assemble_system, assemble_multimesh, assemble_mixed,
+[36mfenics-adapter-neumann      |[0m   File "/usr/lib/petsc/lib/python3/dist-packages/dolfin/fem/assembling.py", line 38, in <module>
+[36mfenics-adapter-neumann      |[0m     from ufl.form import sub_forms_by_domain
+[36mfenics-adapter-neumann      |[0m ImportError: cannot import name 'sub_forms_by_domain'
