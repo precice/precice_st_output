@@ -1,0 +1,547 @@
+travis_fold:start:worker_info[0K[33;1mWorker information[0m
+hostname: 101030c4-6c68-4778-9629-3e457a2be43d@1.worker-org-77db9856dc-9ztz7.gce-production-3
+version: v6.2.17 https://github.com/travis-ci/worker/tree/bc420764f334fe0d096a417c80426f672f1b7d18
+instance: travis-job-c9d80f01-ecf3-4480-bb98-ff152ee0b14b travis-ci-ubuntu-1804-1593521679-ca42795e (via amqp)
+startup: 6.023049253s
+travis_fold:end:worker_info[0Ktravis_time:start:01f1c1c0[0Ktravis_time:end:01f1c1c0:start=1604165236127419194,finish=1604165236336706251,duration=209287057,event=no_world_writable_dirs[0Ktravis_time:start:00d354e2[0Ktravis_time:end:00d354e2:start=1604165236339998738,finish=1604165236345458145,duration=5459407,event=setup_filter[0Ktravis_time:start:23985ea0[0Ktravis_time:end:23985ea0:start=1604165236349698675,finish=1604165236360168458,duration=10469783,event=agent[0Ktravis_time:start:073fd30d[0Ktravis_time:end:073fd30d:start=1604165236362893793,finish=1604165236365227105,duration=2333312,event=check_unsupported[0Ktravis_time:start:164973ae[0Ktravis_fold:start:system_info[0K[33;1mBuild system information[0m
+Build language: python
+Build group: stable
+Build dist: bionic
+Build id: 740428321
+Job id: 740428410
+Runtime kernel version: 5.3.0-1029-gcp
+travis-build version: 26260d9c
+[34m[1mBuild image provisioning date and time[0m
+Tue Jun 30 13:35:43 UTC 2020
+[34m[1mOperating System Details[0m
+Distributor ID:	Ubuntu
+Description:	Ubuntu 18.04.4 LTS
+Release:	18.04
+Codename:	bionic
+[34m[1mSystemd Version[0m
+systemd 237
+[34m[1mCookbooks Version[0m
+3f92a99 https://github.com/travis-ci/travis-cookbooks/tree/3f92a99
+[34m[1mgit version[0m
+git version 2.27.0
+[34m[1mbash version[0m
+GNU bash, version 4.4.20(1)-release (x86_64-pc-linux-gnu)
+[34m[1mgcc version[0m
+gcc (Ubuntu 7.5.0-3ubuntu1~18.04) 7.5.0
+[34m[1mdocker version[0m
+Client:
+ Version:           18.06.0-ce
+ API version:       1.38
+ Go version:        go1.10.3
+ Git commit:        0ffa825
+ Built:             Wed Jul 18 19:09:54 2018
+ OS/Arch:           linux/amd64
+ Experimental:      false
+
+Server:
+ Engine:
+  Version:          18.06.0-ce
+  API version:      1.38 (minimum version 1.12)
+  Go version:       go1.10.3
+  Git commit:       0ffa825
+  Built:            Wed Jul 18 19:07:56 2018
+  OS/Arch:          linux/amd64
+  Experimental:     false
+[34m[1mclang version[0m
+clang version 7.0.0 (tags/RELEASE_700/final)
+[34m[1mjq version[0m
+jq-1.5
+[34m[1mbats version[0m
+Bats 0.4.0
+[34m[1mshellcheck version[0m
+0.7.0
+[34m[1mshfmt version[0m
+v2.6.3
+[34m[1mccache version[0m
+3.4.1
+[34m[1mcmake version[0m
+cmake version 3.12.4
+[34m[1mheroku version[0m
+heroku/7.42.1 linux-x64 node-v12.16.2
+[34m[1mimagemagick version[0m
+Version: ImageMagick 6.9.7-4 Q16 x86_64 20170114 http://www.imagemagick.org
+[34m[1mmd5deep version[0m
+4.4
+[34m[1mmercurial version[0m
+version 4.8
+[34m[1mmysql version[0m
+mysql  Ver 14.14 Distrib 5.7.30, for Linux (x86_64) using  EditLine wrapper
+[34m[1mopenssl version[0m
+OpenSSL 1.1.1  11 Sep 2018
+[34m[1mpacker version[0m
+1.3.3
+[34m[1mpostgresql client version[0m
+psql (PostgreSQL) 11.8 (Ubuntu 11.8-1.pgdg18.04+1)
+[34m[1mragel version[0m
+Ragel State Machine Compiler version 6.10 March 2017
+[34m[1msudo version[0m
+1.8.21p2
+[34m[1mgzip version[0m
+gzip 1.6
+[34m[1mzip version[0m
+Zip 3.0
+[34m[1mvim version[0m
+VIM - Vi IMproved 8.0 (2016 Sep 12, compiled Mar 18 2020 18:29:15)
+[34m[1miptables version[0m
+iptables v1.6.1
+[34m[1mcurl version[0m
+curl 7.58.0 (x86_64-pc-linux-gnu) libcurl/7.58.0 OpenSSL/1.1.1 zlib/1.2.11 libidn2/2.0.4 libpsl/0.19.1 (+libidn2/2.0.4) nghttp2/1.30.0 librtmp/2.3
+[34m[1mwget version[0m
+GNU Wget 1.19.4 built on linux-gnu.
+[34m[1mrsync version[0m
+rsync  version 3.1.2  protocol version 31
+[34m[1mgimme version[0m
+v1.5.4
+[34m[1mnvm version[0m
+0.35.3
+[34m[1mperlbrew version[0m
+/home/travis/perl5/perlbrew/bin/perlbrew  - App::perlbrew/0.87
+[34m[1mphpenv version[0m
+rbenv 1.1.2-30-gc879cb0
+[34m[1mrvm version[0m
+rvm 1.29.10 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
+[34m[1mdefault ruby version[0m
+ruby 2.6.5p114 (2019-10-01 revision 67812) [x86_64-linux]
+[34m[1mElasticSearch version[0m
+5.5.0
+[34m[1mInstalled Firefox version[0m
+firefox 63.0.1
+[34m[1mMongoDB version[0m
+MongoDB 4.0.19
+[34m[1mPhantomJS version[0m
+2.1.1
+[34m[1mPre-installed PostgreSQL versions[0m
+9.3.25
+9.4.26
+9.5.22
+9.6.18
+[34m[1mRedis version[0m
+redis-server 6.0.5
+[34m[1mPre-installed Go versions[0m
+1.11.1
+[34m[1mant version[0m
+Apache Ant(TM) version 1.10.5 compiled on March 28 2019
+[34m[1mmvn version[0m
+Apache Maven 3.6.3 (cecedd343002696d0abb50b32b541b8a6ba2883f)
+[34m[1mgradle version[0m
+Gradle 5.1.1!
+[34m[1mlein version[0m
+Leiningen 2.9.3 on Java 11.0.2 OpenJDK 64-Bit Server VM
+[34m[1mPre-installed Node.js versions[0m
+v10.16.0
+v10.21.0
+v11.15.0
+v12.13.1
+v12.18.1
+v13.3.0
+v4.9.1
+v6.17.1
+v8.16.2
+v8.17.0
+v8.9
+[34m[1mphpenv versions[0m
+  system
+  7.1
+  7.1.33
+  7.2
+* 7.2.27 (set by /home/travis/.phpenv/version)
+  7.3
+  7.3.14
+  7.4
+  7.4.2
+  hhvm
+  hhvm-stable
+[34m[1mcomposer --version[0m
+Composer version 1.9.2 2020-01-14 16:30:31
+[34m[1mPre-installed Ruby versions[0m
+ruby-2.4.9
+ruby-2.5.3
+ruby-2.5.7
+ruby-2.6.5
+ruby-2.7.0
+travis_fold:end:system_info[0K
+travis_time:end:164973ae:start=1604165236367837166,finish=1604165236372650090,duration=4812924,event=show_system_info[0Ktravis_time:start:1e8fac20[0Ktravis_time:end:1e8fac20:start=1604165236377323596,finish=1604165236391074740,duration=13751144,event=rm_riak_source[0Ktravis_time:start:1b67a854[0Ktravis_time:end:1b67a854:start=1604165236394101783,finish=1604165236407279788,duration=13178005,event=fix_rwky_redis[0Ktravis_time:start:0668cab4[0Ktravis_time:end:0668cab4:start=1604165236409786884,finish=1604165236983542136,duration=573755252,event=wait_for_network[0Ktravis_time:start:20647420[0Ktravis_time:end:20647420:start=1604165236988434930,finish=1604165237223002944,duration=234568014,event=update_apt_keys[0Ktravis_time:start:016600f3[0Ktravis_time:end:016600f3:start=1604165237228665591,finish=1604165237280168818,duration=51503227,event=fix_hhvm_source[0Ktravis_time:start:03fd4398[0Ktravis_time:end:03fd4398:start=1604165237284165424,finish=1604165237287218210,duration=3052786,event=update_mongo_arch[0Ktravis_time:start:0dbeef14[0Ktravis_time:end:0dbeef14:start=1604165237290443542,finish=1604165237329214505,duration=38770963,event=fix_sudo_enabled_trusty[0Ktravis_time:start:0f0d6d58[0Ktravis_time:end:0f0d6d58:start=1604165237332768025,finish=1604165237335049071,duration=2281046,event=update_glibc[0Ktravis_time:start:00571220[0Ktravis_time:end:00571220:start=1604165237340964818,finish=1604165237348673610,duration=7708792,event=clean_up_path[0Ktravis_time:start:0acc1a60[0Ktravis_time:end:0acc1a60:start=1604165237353618370,finish=1604165237362703779,duration=9085409,event=fix_resolv_conf[0Ktravis_time:start:04fc089c[0Ktravis_time:end:04fc089c:start=1604165237367401106,finish=1604165237391908069,duration=24506963,event=fix_etc_hosts[0Ktravis_time:start:16739f30[0Ktravis_time:end:16739f30:start=1604165237396410812,finish=1604165237403563642,duration=7152830,event=fix_mvn_settings_xml[0Ktravis_time:start:19ecc0d2[0Ktravis_time:end:19ecc0d2:start=1604165237406831593,finish=1604165237416282048,duration=9450455,event=no_ipv6_localhost[0Ktravis_time:start:0bfa41b8[0Ktravis_time:end:0bfa41b8:start=1604165237420553882,finish=1604165237422553074,duration=1999192,event=fix_etc_mavenrc[0Ktravis_time:start:18715abc[0Ktravis_time:end:18715abc:start=1604165237426931005,finish=1604165237430108676,duration=3177671,event=fix_wwdr_certificate[0Ktravis_time:start:2032fe38[0Ktravis_time:end:2032fe38:start=1604165237433611676,finish=1604165237487147792,duration=53536116,event=put_localhost_first[0Ktravis_time:start:199d9040[0Ktravis_time:end:199d9040:start=1604165237492383613,finish=1604165237498969456,duration=6585843,event=home_paths[0Ktravis_time:start:16431fac[0Ktravis_time:end:16431fac:start=1604165237504103812,finish=1604165237516811881,duration=12708069,event=disable_initramfs[0Ktravis_time:start:2460654e[0Ktravis_time:end:2460654e:start=1604165237523731760,finish=1604165237646958646,duration=123226886,event=disable_ssh_roaming[0Ktravis_time:start:1ffc1af9[0Ktravis_time:end:1ffc1af9:start=1604165237652233462,finish=1604165237655053574,duration=2820112,event=debug_tools[0Ktravis_time:start:028ed748[0Ktravis_time:end:028ed748:start=1604165237659098646,finish=1604165237661968980,duration=2870334,event=uninstall_oclint[0Ktravis_time:start:0bf28ebe[0Ktravis_time:end:0bf28ebe:start=1604165237666000546,finish=1604165237669438051,duration=3437505,event=rvm_use[0Ktravis_time:start:28e0eac0[0Ktravis_time:end:28e0eac0:start=1604165237673610758,finish=1604165237680968566,duration=7357808,event=rm_etc_boto_cfg[0Ktravis_time:start:00f60d18[0Ktravis_time:end:00f60d18:start=1604165237685069047,finish=1604165237687064344,duration=1995297,event=rm_oraclejdk8_symlink[0Ktravis_time:start:03fdf329[0Ktravis_time:end:03fdf329:start=1604165237691051937,finish=1604165237779392445,duration=88340508,event=enable_i386[0Ktravis_time:start:00db64d8[0Ktravis_time:end:00db64d8:start=1604165237784242317,finish=1604165237789382961,duration=5140644,event=update_rubygems[0Ktravis_time:start:02eb838a[0Ktravis_time:end:02eb838a:start=1604165237793976150,finish=1604165238560292535,duration=766316385,event=ensure_path_components[0Ktravis_time:start:0c770ba4[0Ktravis_time:end:0c770ba4:start=1604165238564753752,finish=1604165238566966230,duration=2212478,event=redefine_curl[0Ktravis_time:start:02329388[0Ktravis_time:end:02329388:start=1604165238571624594,finish=1604165238663320226,duration=91695632,event=nonblock_pipe[0Ktravis_time:start:0053324c[0Ktravis_time:end:0053324c:start=1604165238668212172,finish=1604165244702504389,duration=6034292217,event=apt_get_update[0Ktravis_time:start:00c582a3[0Ktravis_time:end:00c582a3:start=1604165244706650208,finish=1604165244709173079,duration=2522871,event=deprecate_xcode_64[0Ktravis_time:start:0a48ae20[0Ktravis_time:end:0a48ae20:start=1604165244713427648,finish=1604165247440207503,duration=2726779855,event=update_heroku[0Ktravis_time:start:01745238[0Ktravis_time:end:01745238:start=1604165247446811664,finish=1604165247449480786,duration=2669122,event=shell_session_update[0Ktravis_time:start:21447570[0Ktravis_fold:start:docker_mtu[0Ktravis_fold:end:docker_mtu[0Ktravis_time:end:21447570:start=1604165247454035493,finish=1604165249745536857,duration=2291501364,event=set_docker_mtu[0Ktravis_time:start:0f1d3600[0Ktravis_fold:start:resolvconf[0Ktravis_fold:end:resolvconf[0Ktravis_time:end:0f1d3600:start=1604165249752731060,finish=1604165249831469291,duration=78738231,event=resolvconf[0Ktravis_time:start:04a6b130[0Ktravis_time:end:04a6b130:start=1604165249835615229,finish=1604165249974595245,duration=138980016,event=maven_central_mirror[0Ktravis_time:start:005a99c0[0Ktravis_time:end:005a99c0:start=1604165249978977188,finish=1604165250076022825,duration=97045637,event=maven_https[0Ktravis_time:start:0a154058[0Ktravis_fold:start:services[0Ktravis_time:start:1f3b1d55[0K$ sudo systemctl start docker
+travis_time:end:1f3b1d55:start=1604165250090267742,finish=1604165250103487365,duration=13219623,event=prepare[0Ktravis_fold:end:services[0Ktravis_time:end:1f3b1d55:start=1604165250090267742,finish=1604165253110358974,duration=3020091232,event=services[0Ktravis_time:start:01e5b91e[0Ktravis_time:end:01e5b91e:start=1604165253114738299,finish=1604165253117230491,duration=2492192,event=fix_ps4[0Ktravis_time:start:0771f7b3[0K
+travis_fold:start:git.checkout[0Ktravis_time:start:079f4a60[0K$ git clone --depth=50 --branch=develop https://github.com/precice/systemtests.git precice/systemtests
+Cloning into 'precice/systemtests'...
+travis_time:end:079f4a60:start=1604165253124922368,finish=1604165264002473724,duration=10877551356,event=checkout[0K$ cd precice/systemtests
+$ git checkout -qf ae3b122970c60d1030bd9b7edb42a1e9dfb1172a
+travis_fold:end:git.checkout[0K
+travis_time:end:079f4a60:start=1604165253124922368,finish=1604165265837915114,duration=12712992746,event=checkout[0Ktravis_time:start:01d09e24[0K
+[33;1mSetting environment variables from repository settings[0m
+$ export DOCKER_PASSWORD=[secure]
+$ export PRECICE_BOT_EMAIL=[secure]
+$ export GH_TOKEN=[secure]
+$ export TRAVIS_ACCESS_TOKEN=[secure]
+$ export DOCKER_USERNAME=precice
+
+travis_time:end:01d09e24:start=1604165265842716267,finish=1604165265852497622,duration=9781355,event=env[0Ktravis_time:start:25d23e79[0K$ source ~/virtualenv/python3.8/bin/activate
+travis_time:end:25d23e79:start=1604165265856772435,finish=1604165265862024674,duration=5252239,event=[0K$ python --version
+Python 3.8.1
+$ pip --version
+pip 20.1.1 from /home/travis/virtualenv/python3.8.1/lib/python3.8/site-packages/pip (python 3.8)
+travis_fold:start:install[0Ktravis_time:start:02336b20[0K$ pip install Jinja2
+Collecting Jinja2
+  Downloading Jinja2-2.11.2-py2.py3-none-any.whl (125 kB)
+Collecting MarkupSafe>=0.23
+  Downloading MarkupSafe-1.1.1-cp38-cp38-manylinux1_x86_64.whl (32 kB)
+Installing collected packages: MarkupSafe, Jinja2
+Successfully installed Jinja2-2.11.2 MarkupSafe-1.1.1
+travis_time:end:02336b20:start=1604165266269002316,finish=1604165267355914706,duration=1086912390,event=install[0Ktravis_fold:end:install[0Ktravis_time:start:01d27f98[0K$ python system_testing.py -s 1dtube_py -v
+Total reclaimed space: 0B
+networks:
+  precicecomm: {}
+services:
+  1dtube-py:
+    build:
+      args:
+        from: precice/precice-ubuntu1804.home-develop
+      context: /home/travis/build/precice/systemtests/tests/TestCompose_1dtube_py
+      dockerfile: Dockerfile.1dtubepy
+    command: '/bin/bash -c "./Allrun; cp -r precice-output *.log /home/precice/Data/Output/"
+
+      '
+    container_name: 1dtube-py
+    networks:
+      precicecomm: null
+    volumes:
+    - output:/home/precice/Data/Output:rw
+  tutorial-data:
+    build:
+      args:
+        branch: develop
+      context: /home/travis/build/precice/systemtests/tests/TestCompose_1dtube_py
+      dockerfile: Dockerfile.tutorial_data
+    container_name: tutorial-data
+    volumes:
+    - output:/Output:rw
+version: '3.0'
+volumes:
+  output: {}
+
+Creating network "testcompose_1dtube_py_precicecomm" with the default driver
+Creating network "testcompose_1dtube_py_default" with the default driver
+Creating volume "testcompose_1dtube_py_output" with default driver
+Building 1dtube-py
+Step 1/15 : ARG from=precice/precice-ubuntu1804.home-develop
+Step 2/15 : FROM $from
+latest: Pulling from precice/precice-ubuntu1804.home-develop
+Digest: sha256:07c3b316ee669a34e4ba8c003297681c98909325401978842a577ba963725a53
+Status: Downloaded newer image for precice/precice-ubuntu1804.home-develop:latest
+ ---> 7b9e3ae69414
+Step 3/15 : USER root
+ ---> Running in 71a981215e8c
+Removing intermediate container 71a981215e8c
+ ---> 6934cbad56fa
+Step 4/15 : RUN apt-get -qq update && apt-get -qq install     python3 python3-dev     libsm6 libgl1 &&     rm -rf /var/lib/apt/lists/*
+ ---> Running in 4df5568e742c
+[91mdebconf: delaying package configuration, since apt-utils is not installed
+[0mSelecting previously unselected package x11-common.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 39149 files and directories currently installed.)
+Preparing to unpack .../00-x11-common_1%3a7.7+19ubuntu7.1_all.deb ...
+dpkg-query: no packages found matching nux-tools
+Unpacking x11-common (1:7.7+19ubuntu7.1) ...
+Selecting previously unselected package libice6:amd64.
+Preparing to unpack .../01-libice6_2%3a1.0.9-2_amd64.deb ...
+Unpacking libice6:amd64 (2:1.0.9-2) ...
+Selecting previously unselected package libsm6:amd64.
+Preparing to unpack .../02-libsm6_2%3a1.2.2-1_amd64.deb ...
+Unpacking libsm6:amd64 (2:1.2.2-1) ...
+Selecting previously unselected package libxxf86vm1:amd64.
+Preparing to unpack .../03-libxxf86vm1_1%3a1.1.4-1_amd64.deb ...
+Unpacking libxxf86vm1:amd64 (1:1.1.4-1) ...
+Selecting previously unselected package libdrm-common.
+Preparing to unpack .../04-libdrm-common_2.4.101-2~18.04.1_all.deb ...
+Unpacking libdrm-common (2.4.101-2~18.04.1) ...
+Selecting previously unselected package libdrm2:amd64.
+Preparing to unpack .../05-libdrm2_2.4.101-2~18.04.1_amd64.deb ...
+Unpacking libdrm2:amd64 (2.4.101-2~18.04.1) ...
+Selecting previously unselected package libdrm-amdgpu1:amd64.
+Preparing to unpack .../06-libdrm-amdgpu1_2.4.101-2~18.04.1_amd64.deb ...
+Unpacking libdrm-amdgpu1:amd64 (2.4.101-2~18.04.1) ...
+Selecting previously unselected package libdrm-intel1:amd64.
+Preparing to unpack .../07-libdrm-intel1_2.4.101-2~18.04.1_amd64.deb ...
+Unpacking libdrm-intel1:amd64 (2.4.101-2~18.04.1) ...
+Selecting previously unselected package libdrm-nouveau2:amd64.
+Preparing to unpack .../08-libdrm-nouveau2_2.4.101-2~18.04.1_amd64.deb ...
+Unpacking libdrm-nouveau2:amd64 (2.4.101-2~18.04.1) ...
+Selecting previously unselected package libdrm-radeon1:amd64.
+Preparing to unpack .../09-libdrm-radeon1_2.4.101-2~18.04.1_amd64.deb ...
+Unpacking libdrm-radeon1:amd64 (2.4.101-2~18.04.1) ...
+Selecting previously unselected package libglapi-mesa:amd64.
+Preparing to unpack .../10-libglapi-mesa_20.0.8-0ubuntu1~18.04.1_amd64.deb ...
+Unpacking libglapi-mesa:amd64 (20.0.8-0ubuntu1~18.04.1) ...
+Selecting previously unselected package libllvm10:amd64.
+Preparing to unpack .../11-libllvm10_1%3a10.0.0-4ubuntu1~18.04.2_amd64.deb ...
+Unpacking libllvm10:amd64 (1:10.0.0-4ubuntu1~18.04.2) ...
+Selecting previously unselected package libsensors4:amd64.
+Preparing to unpack .../12-libsensors4_1%3a3.4.0-4_amd64.deb ...
+Unpacking libsensors4:amd64 (1:3.4.0-4) ...
+Selecting previously unselected package libgl1-mesa-dri:amd64.
+Preparing to unpack .../13-libgl1-mesa-dri_20.0.8-0ubuntu1~18.04.1_amd64.deb ...
+Unpacking libgl1-mesa-dri:amd64 (20.0.8-0ubuntu1~18.04.1) ...
+Selecting previously unselected package libx11-xcb1:amd64.
+Preparing to unpack .../14-libx11-xcb1_2%3a1.6.4-3ubuntu0.3_amd64.deb ...
+Unpacking libx11-xcb1:amd64 (2:1.6.4-3ubuntu0.3) ...
+Selecting previously unselected package libxcb-dri2-0:amd64.
+Preparing to unpack .../15-libxcb-dri2-0_1.13-2~ubuntu18.04_amd64.deb ...
+Unpacking libxcb-dri2-0:amd64 (1.13-2~ubuntu18.04) ...
+Selecting previously unselected package libxcb-dri3-0:amd64.
+Preparing to unpack .../16-libxcb-dri3-0_1.13-2~ubuntu18.04_amd64.deb ...
+Unpacking libxcb-dri3-0:amd64 (1.13-2~ubuntu18.04) ...
+Selecting previously unselected package libxcb-glx0:amd64.
+Preparing to unpack .../17-libxcb-glx0_1.13-2~ubuntu18.04_amd64.deb ...
+Unpacking libxcb-glx0:amd64 (1.13-2~ubuntu18.04) ...
+Selecting previously unselected package libxcb-present0:amd64.
+Preparing to unpack .../18-libxcb-present0_1.13-2~ubuntu18.04_amd64.deb ...
+Unpacking libxcb-present0:amd64 (1.13-2~ubuntu18.04) ...
+Selecting previously unselected package libxcb-sync1:amd64.
+Preparing to unpack .../19-libxcb-sync1_1.13-2~ubuntu18.04_amd64.deb ...
+Unpacking libxcb-sync1:amd64 (1.13-2~ubuntu18.04) ...
+Selecting previously unselected package libxdamage1:amd64.
+Preparing to unpack .../20-libxdamage1_1%3a1.1.4-3_amd64.deb ...
+Unpacking libxdamage1:amd64 (1:1.1.4-3) ...
+Selecting previously unselected package libxfixes3:amd64.
+Preparing to unpack .../21-libxfixes3_1%3a5.0.3-1_amd64.deb ...
+Unpacking libxfixes3:amd64 (1:5.0.3-1) ...
+Selecting previously unselected package libxshmfence1:amd64.
+Preparing to unpack .../22-libxshmfence1_1.3-1_amd64.deb ...
+Unpacking libxshmfence1:amd64 (1.3-1) ...
+Selecting previously unselected package libglx-mesa0:amd64.
+Preparing to unpack .../23-libglx-mesa0_20.0.8-0ubuntu1~18.04.1_amd64.deb ...
+Unpacking libglx-mesa0:amd64 (20.0.8-0ubuntu1~18.04.1) ...
+Selecting previously unselected package libglvnd0:amd64.
+Preparing to unpack .../24-libglvnd0_1.0.0-2ubuntu2.3_amd64.deb ...
+Unpacking libglvnd0:amd64 (1.0.0-2ubuntu2.3) ...
+Selecting previously unselected package libglx0:amd64.
+Preparing to unpack .../25-libglx0_1.0.0-2ubuntu2.3_amd64.deb ...
+Unpacking libglx0:amd64 (1.0.0-2ubuntu2.3) ...
+Selecting previously unselected package libgl1:amd64.
+Preparing to unpack .../26-libgl1_1.0.0-2ubuntu2.3_amd64.deb ...
+Unpacking libgl1:amd64 (1.0.0-2ubuntu2.3) ...
+Setting up libxcb-present0:amd64 (1.13-2~ubuntu18.04) ...
+Setting up libglvnd0:amd64 (1.0.0-2ubuntu2.3) ...
+Setting up libxcb-dri2-0:amd64 (1.13-2~ubuntu18.04) ...
+Setting up libxcb-dri3-0:amd64 (1.13-2~ubuntu18.04) ...
+Setting up libxcb-glx0:amd64 (1.13-2~ubuntu18.04) ...
+Setting up libllvm10:amd64 (1:10.0.0-4ubuntu1~18.04.2) ...
+Setting up libxdamage1:amd64 (1:1.1.4-3) ...
+Setting up libxfixes3:amd64 (1:5.0.3-1) ...
+Setting up libxshmfence1:amd64 (1.3-1) ...
+Setting up libglapi-mesa:amd64 (20.0.8-0ubuntu1~18.04.1) ...
+Setting up libdrm-common (2.4.101-2~18.04.1) ...
+Setting up libxcb-sync1:amd64 (1.13-2~ubuntu18.04) ...
+Setting up libx11-xcb1:amd64 (2:1.6.4-3ubuntu0.3) ...
+Setting up libsensors4:amd64 (1:3.4.0-4) ...
+Setting up libxxf86vm1:amd64 (1:1.1.4-1) ...
+Setting up x11-common (1:7.7+19ubuntu7.1) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (TERM is not set, so the dialog frontend is not usable.)
+debconf: falling back to frontend: Readline
+update-rc.d: warning: start and stop actions are no longer supported; falling back to defaults
+invoke-rc.d: could not determine current runlevel
+invoke-rc.d: policy-rc.d denied execution of start.
+Setting up libdrm2:amd64 (2.4.101-2~18.04.1) ...
+Setting up libdrm-intel1:amd64 (2.4.101-2~18.04.1) ...
+Setting up libice6:amd64 (2:1.0.9-2) ...
+Setting up libdrm-radeon1:amd64 (2.4.101-2~18.04.1) ...
+Setting up libdrm-nouveau2:amd64 (2.4.101-2~18.04.1) ...
+Setting up libsm6:amd64 (2:1.2.2-1) ...
+Setting up libdrm-amdgpu1:amd64 (2.4.101-2~18.04.1) ...
+Setting up libgl1-mesa-dri:amd64 (20.0.8-0ubuntu1~18.04.1) ...
+Setting up libglx-mesa0:amd64 (20.0.8-0ubuntu1~18.04.1) ...
+Setting up libglx0:amd64 (1.0.0-2ubuntu2.3) ...
+Setting up libgl1:amd64 (1.0.0-2ubuntu2.3) ...
+Processing triggers for libc-bin (2.27-3ubuntu1.2) ...
+Removing intermediate container 4df5568e742c
+ ---> 05ebad1dafe0
+Step 5/15 : RUN wget -q https://bootstrap.pypa.io/get-pip.py -O get-pip.py &&     python3 get-pip.py
+ ---> Running in 4cd93324a7a7
+Collecting pip
+  Downloading pip-20.2.4-py2.py3-none-any.whl (1.5 MB)
+Collecting setuptools
+  Downloading setuptools-50.3.2-py3-none-any.whl (785 kB)
+Collecting wheel
+  Downloading wheel-0.35.1-py2.py3-none-any.whl (33 kB)
+Installing collected packages: pip, setuptools, wheel
+Successfully installed pip-20.2.4 setuptools-50.3.2 wheel-0.35.1
+Removing intermediate container 4cd93324a7a7
+ ---> 3ed1fcb79a7b
+Step 6/15 : USER precice
+ ---> Running in 1f60cfe4e5e3
+Removing intermediate container 1f60cfe4e5e3
+ ---> cb0a55d9985b
+Step 7/15 : RUN pip3 install --user cython mpi4py numpy==1.19.2 enum34 matplotlib vtk
+ ---> Running in 60ec5e29535d
+Collecting cython
+  Downloading Cython-0.29.21-cp36-cp36m-manylinux1_x86_64.whl (2.0 MB)
+Collecting mpi4py
+  Downloading mpi4py-3.0.3.tar.gz (1.4 MB)
+Collecting numpy==1.19.2
+  Downloading numpy-1.19.2-cp36-cp36m-manylinux2010_x86_64.whl (14.5 MB)
+Collecting enum34
+  Downloading enum34-1.1.10-py3-none-any.whl (11 kB)
+Collecting matplotlib
+  Downloading matplotlib-3.3.2-cp36-cp36m-manylinux1_x86_64.whl (11.6 MB)
+Collecting vtk
+  Downloading vtk-9.0.1-cp36-cp36m-manylinux2010_x86_64.whl (103.4 MB)
+Collecting python-dateutil>=2.1
+  Downloading python_dateutil-2.8.1-py2.py3-none-any.whl (227 kB)
+Collecting cycler>=0.10
+  Downloading cycler-0.10.0-py2.py3-none-any.whl (6.5 kB)
+Collecting pyparsing!=2.0.4,!=2.1.2,!=2.1.6,>=2.0.3
+  Downloading pyparsing-2.4.7-py2.py3-none-any.whl (67 kB)
+Collecting pillow>=6.2.0
+  Downloading Pillow-8.0.1-cp36-cp36m-manylinux1_x86_64.whl (2.2 MB)
+Collecting certifi>=2020.06.20
+  Downloading certifi-2020.6.20-py2.py3-none-any.whl (156 kB)
+Collecting kiwisolver>=1.0.1
+  Downloading kiwisolver-1.2.0-cp36-cp36m-manylinux1_x86_64.whl (88 kB)
+Collecting six>=1.5
+  Downloading six-1.15.0-py2.py3-none-any.whl (10 kB)
+Building wheels for collected packages: mpi4py
+  Building wheel for mpi4py (setup.py): started
+  Building wheel for mpi4py (setup.py): finished with status 'done'
+  Created wheel for mpi4py: filename=mpi4py-3.0.3-cp36-cp36m-linux_x86_64.whl size=2074481 sha256=d125266695fe92e740a5c6127e7e0190b06ad55feddf41956647ec1d90dbea12
+  Stored in directory: /home/precice/.cache/pip/wheels/d6/73/83/ad9dd3ebae512829ab3f21657f76403dc4aa6649e1118c9369
+Successfully built mpi4py
+Installing collected packages: cython, mpi4py, numpy, enum34, six, python-dateutil, cycler, pyparsing, pillow, certifi, kiwisolver, matplotlib, vtk
+[91m  WARNING: The scripts cygdb, cython and cythonize are installed in '/home/precice/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+[0m[91m  WARNING: The scripts f2py, f2py3 and f2py3.6 are installed in '/home/precice/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+[0mSuccessfully installed certifi-2020.6.20 cycler-0.10.0 cython-0.29.21 enum34-1.1.10 kiwisolver-1.2.0 matplotlib-3.3.2 mpi4py-3.0.3 numpy-1.19.2 pillow-8.0.1 pyparsing-2.4.7 python-dateutil-2.8.1 six-1.15.0 vtk-9.0.1
+Removing intermediate container 60ec5e29535d
+ ---> d47b68efa19a
+Step 8/15 : ARG branch=develop
+ ---> Running in c6681a0df873
+Removing intermediate container c6681a0df873
+ ---> cade8a900846
+Step 9/15 : ARG CACHEBUST
+ ---> Running in ecd680633a2d
+Removing intermediate container ecd680633a2d
+ ---> 4696d6d3c269
+Step 10/15 : RUN pip3 install --user https://github.com/precice/python-bindings/archive/$branch.zip
+ ---> Running in cde07fe792cf
+Collecting https://github.com/precice/python-bindings/archive/develop.zip
+  Downloading https://github.com/precice/python-bindings/archive/develop.zip
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+    Preparing wheel metadata: started
+    Preparing wheel metadata: finished with status 'done'
+Requirement already satisfied: mpi4py in /home/precice/.local/lib/python3.6/site-packages (from pyprecice==2.1.1.1) (3.0.3)
+Requirement already satisfied: numpy in /home/precice/.local/lib/python3.6/site-packages (from pyprecice==2.1.1.1) (1.19.2)
+Building wheels for collected packages: pyprecice
+  Building wheel for pyprecice (PEP 517): started
+  Building wheel for pyprecice (PEP 517): finished with status 'done'
+  Created wheel for pyprecice: filename=pyprecice-2.1.1.1-cp36-cp36m-linux_x86_64.whl size=735290 sha256=443f4371aee25b06fe722e27991e303df7136c4c235065bbf32078c322de9fa6
+  Stored in directory: /tmp/pip-ephem-wheel-cache-39c0zdx2/wheels/8d/4d/18/308222d4aaadc3616c73ac4d4563793feb863232b1b31836e3
+Successfully built pyprecice
+Installing collected packages: pyprecice
+Successfully installed pyprecice-2.1.1.1
+Removing intermediate container cde07fe792cf
+ ---> bdac12853daf
+Step 11/15 : RUN mkdir -p /home/precice/Data/Output
+ ---> Running in 3cf82f008975
+Removing intermediate container 3cf82f008975
+ ---> 311bd4c08462
+Step 12/15 : WORKDIR /home/precice/
+ ---> Running in ad3a3a592184
+Removing intermediate container ad3a3a592184
+ ---> 30cbc1df8c5c
+Step 13/15 : RUN git clone https://github.com/precice/elastictube1d.git
+ ---> Running in df40408f4b30
+[91mCloning into 'elastictube1d'...
+[0mRemoving intermediate container df40408f4b30
+ ---> 6da62b1db849
+Step 14/15 : WORKDIR /home/precice/elastictube1d/python
+ ---> Running in 328f261e95e6
+Removing intermediate container 328f261e95e6
+ ---> 9e05ef308485
+Step 15/15 : RUN sed -i 's|\(\s\+\)\(</participant>\)|\1   <export:vtk directory="precice-output" />\n\1\2|g'             precice-config.xml
+ ---> Running in 9c0167913243
+Removing intermediate container 9c0167913243
+ ---> fbe9e7e9b0ff
+Successfully built fbe9e7e9b0ff
+Successfully tagged testcompose_1dtube_py_1dtube-py:latest
+Image for service 1dtube-py was built because it did not already exist. To rebuild this image you must use `docker-compose build` or `docker-compose up --build`.
+Building tutorial-data
+Step 1/7 : from alpine
+latest: Pulling from library/alpine
+Digest: sha256:c0e9560cda118f9ec63ddefb4a173a2b2a0347082d7dff7dc14272e7841a5b5a
+Status: Downloaded newer image for alpine:latest
+ ---> d6e46aa2470d
+Step 2/7 : RUN apk add git
+ ---> Running in 0cc27ed72dba
+fetch http://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/APKINDEX.tar.gz
+fetch http://dl-cdn.alpinelinux.org/alpine/v3.12/community/x86_64/APKINDEX.tar.gz
+(1/6) Installing ca-certificates (20191127-r4)
+(2/6) Installing nghttp2-libs (1.41.0-r0)
+(3/6) Installing libcurl (7.69.1-r1)
+(4/6) Installing expat (2.2.9-r1)
+(5/6) Installing pcre2 (10.35-r0)
+(6/6) Installing git (2.26.2-r0)
+Executing busybox-1.31.1-r19.trigger
+Executing ca-certificates-20191127-r4.trigger
+OK: 22 MiB in 20 packages
+Removing intermediate container 0cc27ed72dba
+ ---> 3e4d5b9f752e
+Step 3/7 : ARG branch=develop
+ ---> Running in e5b7a1f2fc94
+Removing intermediate container e5b7a1f2fc94
+ ---> 8748ab5aee9b
+Step 4/7 : WORKDIR /
+ ---> Running in c2a4cf2272fd
+Removing intermediate container c2a4cf2272fd
+ ---> 1555c46d8d5c
+Step 5/7 : RUN mkdir /Output
+ ---> Running in 6e452b86b323
+Removing intermediate container 6e452b86b323
+ ---> 058a2575e6a5
+Step 6/7 : RUN addgroup -g 1000 precice && adduser -u 1000 -G precice -D precice && chown -R precice:precice /Output
+ ---> Running in 48f31187e018
+Removing intermediate container 48f31187e018
+ ---> 78c0ff6e7fe7
+Step 7/7 : USER precice
+ ---> Running in 466ed8838d92
+Removing intermediate container 466ed8838d92
+ ---> 43d7812ab8ae
+Successfully built 43d7812ab8ae
+Successfully tagged testcompose_1dtube_py_tutorial-data:latest
+Image for service tutorial-data was built because it did not already exist. To rebuild this image you must use `docker-compose build` or `docker-compose up --build`.
+Creating tutorial-data ... 
+Creating 1dtube-py     ... 
+[2A[2KCreating tutorial-data ... [32mdone[0m[2B[1A[2KCreating 1dtube-py     ... [32mdone[0m[1BAttaching to tutorial-data, 1dtube-py
+[33m1dtube-py        |[0m Starting Fluid participant...
+[33m1dtube-py        |[0m Starting Structure participant...
+[33m1dtube-py        |[0m 
+[33m1dtube-py        |[0m Waiting for participants to finish...
+[33m1dtube-py        |[0m (you may run 'tail -f Fluid.log' in another terminal to check the progress)
+[36mtutorial-data exited with code 0
+[0m[33m1dtube-py        |[0m Fluid participant finished. Waiting for Structure participant...
+[33m1dtube-py        |[0m Structure participant finished.
+[33m1dtube-py        |[0m 
+[33m1dtube-py        |[0m Simulation completed successfully! Output files of the simulation were written to 'VTK/fluid.*.vtk'.
+[33m1dtube-py exited with code 0
+[0m------------- Comparing files -------------
+Comparing values in 'Fluid.log'...
+Comparing values in 'Structure.log'...
+----------- Comparison finished -----------
+EXECUTING: docker container prune -f; export PRECICE_BASE=-ubuntu1804.home-develop; mkdir Logs; docker-compose config && bash ../../silent_compose.sh debug
+EXECUTING: docker cp tutorial-data:/Output .
+EXECUTING: docker-compose logs > Logs/container.log
+EXECUTING: rm -f Output/precice-STRUCTURE-events-summary.log
+EXECUTING: rm -f Output/precice-FLUID-events-summary.log
+EXECUTING: bash ../../compare_results.sh /home/travis/build/precice/systemtests/tests/TestCompose_1dtube_py/referenceOutput /home/travis/build/precice/systemtests/tests/TestCompose_1dtube_py/Output
+SYSTEST SUCCEEDED - Differences to referenceOutput within tolerance.
+travis_time:end:01d27f98:start=1604165267361445689,finish=1604165553723719793,duration=286362274104,event=script[0K[32;1mThe command "python system_testing.py -s 1dtube_py -v" exited with 0.[0m
+travis_time:start:015353fc[0K$ python push.py
+Cloning into 'precice_st_output'...
+Updating files:  26% (7755/29082)Updating files:  27% (7853/29082)Updating files:  28% (8143/29082)Updating files:  29% (8434/29082)Updating files:  30% (8725/29082)Updating files:  31% (9016/29082)Updating files:  32% (9307/29082)Updating files:  33% (9598/29082)Updating files:  34% (9888/29082)Updating files:  35% (10179/29082)Updating files:  36% (10470/29082)Updating files:  37% (10761/29082)Updating files:  38% (11052/29082)Updating files:  39% (11342/29082)Updating files:  40% (11633/29082)Updating files:  41% (11924/29082)Updating files:  42% (12215/29082)Updating files:  43% (12506/29082)Updating files:  44% (12797/29082)Updating files:  50% (14541/29082)Updating files:  51% (14832/29082)Updating files:  52% (15123/29082)Updating files:  53% (15414/29082)Updating files:  54% (15705/29082)Updating files:  55% (15996/29082)Updating files:  56% (16286/29082)Updating files:  57% (16577/29082)Updating files:  58% (16868/29082)Updating files:  59% (17159/29082)Updating files:  60% (17450/29082)Updating files:  61% (17741/29082)Updating files:  62% (18031/29082)Updating files:  63% (18322/29082)Updating files:  64% (18613/29082)Updating files:  65% (18904/29082)Updating files:  66% (19195/29082)Updating files:  66% (19371/29082)Updating files:  67% (19485/29082)Updating files:  68% (19776/29082)Updating files:  82% (23923/29082)Updating files:  83% (24139/29082)Updating files:  84% (24429/29082)Updating files:  85% (24720/29082)Updating files:  86% (25011/29082)Updating files:  87% (25302/29082)Updating files:  88% (25593/29082)Updating files:  89% (25883/29082)Updating files:  90% (26174/29082)Updating files:  91% (26465/29082)Updating files:  92% (26756/29082)Updating files:  93% (27047/29082)
