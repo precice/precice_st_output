@@ -1,0 +1,23 @@
+# Ubuntu 16.04 home PETSc
+
+Job type: precice
+
+
+
+**Job failed!**
+
+
+
+This build was triggered by a push to `master`.
+
+
+
+[Link to job page]({[job_link]})
+
+
+This job folder contains
+- A `Logs` directory containing log files from TravisCI and the participant containers
+
+
+---
+
