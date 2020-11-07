@@ -1,0 +1,65 @@
+Run finished at Sat Nov  7 02:15:50 2020
+Global runtime       = 12952ms / 12.952s
+Number of processors = 1
+# Rank: 0
+
+                                                                                    Event |      Count |  Total[ms] |    Max[ms] |    Min[ms] |    Avg[ms] | Time Ratio |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                                                  _GLOBAL |          1 |      12952 |      12952 |      12952 |      12952 |          1 |
+                                                                                  advance |        305 |      12769 |         51 |          3 |         41 |      0.986 |
+                                                     advance/cpl.computeQuasiNewtonUpdate |        205 |       1112 |         21 |          0 |          5 |     0.0859 |
+                                                                  advance/m2n.receiveData |        304 |      10832 |         42 |          3 |         35 |      0.836 |
+                                                                     advance/m2n.sendData |        305 |         79 |          8 |          0 |          0 |     0.0061 |
+                                  advance/map.nn.mapData.FromFluid_NodesToStructure_Nodes |        304 |         10 |          0 |          0 |          0 |   0.000772 |
+                                                                                configure |          1 |          0 |          0 |          0 |          0 |          0 |
+                                                                                 finalize |          1 |         37 |         37 |         37 |         37 |    0.00286 |
+                                                                               initialize |          1 |         22 |         22 |         22 |         22 |     0.0017 |
+                                                    initialize/m2n.acceptMasterConnection |          1 |          3 |          3 |          3 |          3 |   0.000232 |
+                                                    initialize/m2n.acceptSlavesConnection |          1 |         13 |         13 |         13 |         13 |      0.001 |
+                                              initialize/m2n.broadcastVertexDistributions |          2 |          0 |          0 |          0 |          0 |          0 |
+                                                     initialize/m2n.buildCommunicationMap |          2 |          0 |          0 |          0 |          0 |          0 |
+                                                      initialize/m2n.createCommunications |          2 |          5 |          2 |          2 |          2 |   0.000386 |
+                                                initialize/m2n.exchangeVertexDistribution |          2 |          7 |          3 |          3 |          3 |    0.00054 |
+                                          initialize/partition.gatherMesh.Structure_Nodes |          1 |          0 |          0 |          0 |          0 |          0 |
+                                         initialize/partition.prepareMesh.Structure_Nodes |          1 |          0 |          0 |          0 |          0 |          0 |
+                                       initialize/partition.receiveGlobalMesh.Fluid_Nodes |          1 |          1 |          1 |          1 |          1 |   7.72e-05 |
+                                      initialize/partition.sendGlobalMesh.Structure_Nodes |          1 |          0 |          0 |          0 |          0 |          0 |
+                                                                           initializeData |          1 |         16 |         16 |         16 |         16 |    0.00124 |
+                                                           initializeData/m2n.receiveData |          1 |         10 |         10 |         10 |         10 |   0.000772 |
+                                                              initializeData/m2n.sendData |          1 |          0 |          0 |          0 |          0 |          0 |
+                    initializeData/map.nn.computeMapping.FromFluid_NodesToStructure_Nodes |          1 |          3 |          3 |          3 |          3 |   0.000232 |
+ initializeData/map.nn.computeMapping.FromFluid_NodesToStructure_Nodes.getIndexOnVertices |          1 |          0 |          0 |          0 |          0 |          0 |
+                           initializeData/map.nn.mapData.FromFluid_NodesToStructure_Nodes |          1 |          0 |          0 |          0 |          0 |          0 |
+                                                                           solver.advance |        305 |         95 |          0 |          0 |          0 |    0.00733 |
+                                                                        solver.initialize |          1 |          3 |          3 |          3 |          3 |   0.000232 |
+
+
+                                                                                     Name |        Max |  MaxOnRank |        Min |  MinOnRank |    Min/Max |
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                                                  _GLOBAL |      12952 |          0 |      12952 |          0 |          1 |
+                                                                                  advance |         51 |          0 |          3 |          0 |  0.0588235 |
+                                                     advance/cpl.computeQuasiNewtonUpdate |         21 |          0 |          0 |          0 |          0 |
+                                                                  advance/m2n.receiveData |         42 |          0 |          3 |          0 |  0.0714286 |
+                                                                     advance/m2n.sendData |          8 |          0 |          0 |          0 |          0 |
+                                  advance/map.nn.mapData.FromFluid_NodesToStructure_Nodes |          0 |          0 |          0 |          0 |          0 |
+                                                                                configure |          0 |          0 |          0 |          0 |          0 |
+                                                                                 finalize |         37 |          0 |         37 |          0 |          1 |
+                                                                               initialize |         22 |          0 |         22 |          0 |          1 |
+                                                    initialize/m2n.acceptMasterConnection |          3 |          0 |          3 |          0 |          1 |
+                                                    initialize/m2n.acceptSlavesConnection |         13 |          0 |         13 |          0 |          1 |
+                                              initialize/m2n.broadcastVertexDistributions |          0 |          0 |          0 |          0 |          0 |
+                                                     initialize/m2n.buildCommunicationMap |          0 |          0 |          0 |          0 |          0 |
+                                                      initialize/m2n.createCommunications |          2 |          0 |          2 |          0 |          1 |
+                                                initialize/m2n.exchangeVertexDistribution |          3 |          0 |          3 |          0 |          1 |
+                                          initialize/partition.gatherMesh.Structure_Nodes |          0 |          0 |          0 |          0 |          0 |
+                                         initialize/partition.prepareMesh.Structure_Nodes |          0 |          0 |          0 |          0 |          0 |
+                                       initialize/partition.receiveGlobalMesh.Fluid_Nodes |          1 |          0 |          1 |          0 |          1 |
+                                      initialize/partition.sendGlobalMesh.Structure_Nodes |          0 |          0 |          0 |          0 |          0 |
+                                                                           initializeData |         16 |          0 |         16 |          0 |          1 |
+                                                           initializeData/m2n.receiveData |         10 |          0 |         10 |          0 |          1 |
+                                                              initializeData/m2n.sendData |          0 |          0 |          0 |          0 |          0 |
+                    initializeData/map.nn.computeMapping.FromFluid_NodesToStructure_Nodes |          3 |          0 |          3 |          0 |          1 |
+ initializeData/map.nn.computeMapping.FromFluid_NodesToStructure_Nodes.getIndexOnVertices |          0 |          0 |          0 |          0 |          0 |
+                           initializeData/map.nn.mapData.FromFluid_NodesToStructure_Nodes |          0 |          0 |          0 |          0 |          0 |
+                                                                           solver.advance |          0 |          0 |          0 |          0 |          0 |
+                                                                        solver.initialize |          3 |          0 |          3 |          0 |          1 |
