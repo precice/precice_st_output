@@ -1,0 +1,101 @@
+Run finished at Sat Nov  7 02:21:52 2020
+Global runtime       = 23660ms / 23.66s
+Number of processors = 1
+# Rank: 0
+
+                                                                Event |      Count |  Total[ms] |    Max[ms] |    Min[ms] |    Avg[ms] | Time Ratio |
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+                                                              _GLOBAL |          1 |      23660 |      23660 |      23660 |      23660 |          1 |
+                                                              advance |        100 |       9001 |        207 |         55 |         90 |       0.38 |
+                                              advance/m2n.receiveData |        100 |       2542 |         66 |         12 |         25 |      0.107 |
+                                                 advance/m2n.sendData |        100 |        478 |         13 |          0 |          4 |     0.0202 |
+                       advance/map.pet.AO.FromSolidToFluid-Mesh-Nodes |          1 |          0 |          0 |          0 |          0 |          0 |
+           advance/map.pet.computeMapping.FromSolidToFluid-Mesh-Nodes |          1 |         79 |         79 |         79 |         79 |    0.00334 |
+         advance/map.pet.computeRescaling.FromSolidToFluid-Mesh-Nodes |          1 |          7 |          7 |          7 |          7 |   0.000296 |
+           advance/map.pet.createMatrices.FromSolidToFluid-Mesh-Nodes |          1 |          0 |          0 |          0 |          0 |          0 |
+                    advance/map.pet.fillA.FromSolidToFluid-Mesh-Nodes |          1 |          1 |          1 |          1 |          1 |   4.23e-05 |
+                    advance/map.pet.fillC.FromSolidToFluid-Mesh-Nodes |          1 |          1 |          1 |          1 |          1 |   4.23e-05 |
+                  advance/map.pet.mapData.FromFluid-Mesh-FacesToSolid |        100 |       1715 |         41 |         11 |         17 |     0.0725 |
+                  advance/map.pet.mapData.FromSolidToFluid-Mesh-Nodes |        100 |       3221 |         95 |         19 |         32 |      0.136 |
+                 advance/map.pet.postFill.FromSolidToFluid-Mesh-Nodes |          1 |          0 |          0 |          0 |          0 |          0 |
+        advance/map.pet.preComputeMapping.FromSolidToFluid-Mesh-Nodes |          1 |          0 |          0 |          0 |          0 |          0 |
+                advance/map.pet.preallocA.FromSolidToFluid-Mesh-Nodes |          1 |         22 |         22 |         22 |         22 |    0.00093 |
+                advance/map.pet.preallocC.FromSolidToFluid-Mesh-Nodes |          1 |         43 |         43 |         43 |         43 |    0.00182 |
+          advance/map.pet.solveConsistent.FromSolidToFluid-Mesh-Nodes |        300 |       2757 |         49 |          0 |          9 |      0.117 |
+               advance/map.pet.solverInit.FromSolidToFluid-Mesh-Nodes |          1 |          0 |          0 |          0 |          0 |          0 |
+                                                            configure |          1 |          1 |          1 |          1 |          1 |   4.23e-05 |
+                                                             finalize |          1 |         20 |         20 |         20 |         20 |   0.000845 |
+                                                           initialize |          1 |        812 |        812 |        812 |        812 |     0.0343 |
+                          initialize/m2n.broadcastVertexDistributions |          1 |          0 |          0 |          0 |          0 |          0 |
+                                 initialize/m2n.buildCommunicationMap |          1 |          0 |          0 |          0 |          0 |          0 |
+                                  initialize/m2n.createCommunications |          1 |          3 |          3 |          3 |          3 |   0.000127 |
+                            initialize/m2n.exchangeVertexDistribution |          1 |         14 |         14 |         14 |         14 |   0.000592 |
+                               initialize/m2n.requestMasterConnection |          1 |        785 |        785 |        785 |        785 |     0.0332 |
+                               initialize/m2n.requestSlavesConnection |          1 |         18 |         18 |         18 |         18 |   0.000761 |
+                    initialize/partition.prepareMesh.Fluid-Mesh-Faces |          1 |          0 |          0 |          0 |          0 |          0 |
+                    initialize/partition.prepareMesh.Fluid-Mesh-Nodes |          1 |          0 |          0 |          0 |          0 |          0 |
+                         initialize/partition.receiveGlobalMesh.Solid |          1 |          2 |          2 |          2 |          2 |   8.45e-05 |
+                                                       initializeData |          1 |         76 |         76 |         76 |         76 |    0.00321 |
+                initializeData/map.pet.AO.FromFluid-Mesh-FacesToSolid |          1 |          0 |          0 |          0 |          0 |          0 |
+    initializeData/map.pet.computeMapping.FromFluid-Mesh-FacesToSolid |          1 |         56 |         56 |         56 |         56 |    0.00237 |
+  initializeData/map.pet.computeRescaling.FromFluid-Mesh-FacesToSolid |          1 |          6 |          6 |          6 |          6 |   0.000254 |
+    initializeData/map.pet.createMatrices.FromFluid-Mesh-FacesToSolid |          1 |          1 |          1 |          1 |          1 |   4.23e-05 |
+             initializeData/map.pet.fillA.FromFluid-Mesh-FacesToSolid |          1 |          0 |          0 |          0 |          0 |          0 |
+             initializeData/map.pet.fillC.FromFluid-Mesh-FacesToSolid |          1 |          1 |          1 |          1 |          1 |   4.23e-05 |
+           initializeData/map.pet.mapData.FromFluid-Mesh-FacesToSolid |          1 |          5 |          5 |          5 |          5 |   0.000211 |
+          initializeData/map.pet.postFill.FromFluid-Mesh-FacesToSolid |          1 |          0 |          0 |          0 |          0 |          0 |
+ initializeData/map.pet.preComputeMapping.FromFluid-Mesh-FacesToSolid |          1 |          2 |          2 |          2 |          2 |   8.45e-05 |
+         initializeData/map.pet.preallocA.FromFluid-Mesh-FacesToSolid |          1 |         12 |         12 |         12 |         12 |   0.000507 |
+         initializeData/map.pet.preallocC.FromFluid-Mesh-FacesToSolid |          1 |         25 |         25 |         25 |         25 |    0.00106 |
+        initializeData/map.pet.solverInit.FromFluid-Mesh-FacesToSolid |          1 |          3 |          3 |          3 |          3 |   0.000127 |
+                                                       solver.advance |        100 |      13592 |        358 |          0 |        135 |      0.574 |
+                                                    solver.initialize |          1 |        135 |        135 |        135 |        135 |    0.00571 |
+
+
+                                                                 Name |        Max |  MaxOnRank |        Min |  MinOnRank |    Min/Max |
+----------------------------------------------------------------------------------------------------------------------------------------
+                                                              _GLOBAL |      23660 |          0 |      23660 |          0 |          1 |
+                                                              advance |        207 |          0 |         55 |          0 |     0.2657 |
+                                              advance/m2n.receiveData |         66 |          0 |         12 |          0 |   0.181818 |
+                                                 advance/m2n.sendData |         13 |          0 |          0 |          0 |          0 |
+                       advance/map.pet.AO.FromSolidToFluid-Mesh-Nodes |          0 |          0 |          0 |          0 |          0 |
+           advance/map.pet.computeMapping.FromSolidToFluid-Mesh-Nodes |         79 |          0 |         79 |          0 |          1 |
+         advance/map.pet.computeRescaling.FromSolidToFluid-Mesh-Nodes |          7 |          0 |          7 |          0 |          1 |
+           advance/map.pet.createMatrices.FromSolidToFluid-Mesh-Nodes |          0 |          0 |          0 |          0 |          0 |
+                    advance/map.pet.fillA.FromSolidToFluid-Mesh-Nodes |          1 |          0 |          1 |          0 |          1 |
+                    advance/map.pet.fillC.FromSolidToFluid-Mesh-Nodes |          1 |          0 |          1 |          0 |          1 |
+                  advance/map.pet.mapData.FromFluid-Mesh-FacesToSolid |         41 |          0 |         11 |          0 |   0.268293 |
+                  advance/map.pet.mapData.FromSolidToFluid-Mesh-Nodes |         95 |          0 |         19 |          0 |        0.2 |
+                 advance/map.pet.postFill.FromSolidToFluid-Mesh-Nodes |          0 |          0 |          0 |          0 |          0 |
+        advance/map.pet.preComputeMapping.FromSolidToFluid-Mesh-Nodes |          0 |          0 |          0 |          0 |          0 |
+                advance/map.pet.preallocA.FromSolidToFluid-Mesh-Nodes |         22 |          0 |         22 |          0 |          1 |
+                advance/map.pet.preallocC.FromSolidToFluid-Mesh-Nodes |         43 |          0 |         43 |          0 |          1 |
+          advance/map.pet.solveConsistent.FromSolidToFluid-Mesh-Nodes |         49 |          0 |          0 |          0 |          0 |
+               advance/map.pet.solverInit.FromSolidToFluid-Mesh-Nodes |          0 |          0 |          0 |          0 |          0 |
+                                                            configure |          1 |          0 |          1 |          0 |          1 |
+                                                             finalize |         20 |          0 |         20 |          0 |          1 |
+                                                           initialize |        812 |          0 |        812 |          0 |          1 |
+                          initialize/m2n.broadcastVertexDistributions |          0 |          0 |          0 |          0 |          0 |
+                                 initialize/m2n.buildCommunicationMap |          0 |          0 |          0 |          0 |          0 |
+                                  initialize/m2n.createCommunications |          3 |          0 |          3 |          0 |          1 |
+                            initialize/m2n.exchangeVertexDistribution |         14 |          0 |         14 |          0 |          1 |
+                               initialize/m2n.requestMasterConnection |        785 |          0 |        785 |          0 |          1 |
+                               initialize/m2n.requestSlavesConnection |         18 |          0 |         18 |          0 |          1 |
+                    initialize/partition.prepareMesh.Fluid-Mesh-Faces |          0 |          0 |          0 |          0 |          0 |
+                    initialize/partition.prepareMesh.Fluid-Mesh-Nodes |          0 |          0 |          0 |          0 |          0 |
+                         initialize/partition.receiveGlobalMesh.Solid |          2 |          0 |          2 |          0 |          1 |
+                                                       initializeData |         76 |          0 |         76 |          0 |          1 |
+                initializeData/map.pet.AO.FromFluid-Mesh-FacesToSolid |          0 |          0 |          0 |          0 |          0 |
+    initializeData/map.pet.computeMapping.FromFluid-Mesh-FacesToSolid |         56 |          0 |         56 |          0 |          1 |
+  initializeData/map.pet.computeRescaling.FromFluid-Mesh-FacesToSolid |          6 |          0 |          6 |          0 |          1 |
+    initializeData/map.pet.createMatrices.FromFluid-Mesh-FacesToSolid |          1 |          0 |          1 |          0 |          1 |
+             initializeData/map.pet.fillA.FromFluid-Mesh-FacesToSolid |          0 |          0 |          0 |          0 |          0 |
+             initializeData/map.pet.fillC.FromFluid-Mesh-FacesToSolid |          1 |          0 |          1 |          0 |          1 |
+           initializeData/map.pet.mapData.FromFluid-Mesh-FacesToSolid |          5 |          0 |          5 |          0 |          1 |
+          initializeData/map.pet.postFill.FromFluid-Mesh-FacesToSolid |          0 |          0 |          0 |          0 |          0 |
+ initializeData/map.pet.preComputeMapping.FromFluid-Mesh-FacesToSolid |          2 |          0 |          2 |          0 |          1 |
+         initializeData/map.pet.preallocA.FromFluid-Mesh-FacesToSolid |         12 |          0 |         12 |          0 |          1 |
+         initializeData/map.pet.preallocC.FromFluid-Mesh-FacesToSolid |         25 |          0 |         25 |          0 |          1 |
+        initializeData/map.pet.solverInit.FromFluid-Mesh-FacesToSolid |          3 |          0 |          3 |          0 |          1 |
+                                                       solver.advance |        358 |          0 |          0 |          0 |          0 |
+                                                    solver.initialize |        135 |          0 |        135 |          0 |          1 |
