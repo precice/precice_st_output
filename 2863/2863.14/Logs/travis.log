@@ -1,0 +1,827 @@
+travis_fold:start:worker_info[0K[33;1mWorker information[0m
+hostname: a5ee241d-f154-40d8-8c70-23254c1254b8@1.worker-org-677d44d4f7-bghcv.gce-production-3
+version: v6.2.20-1-g3a987d6 https://github.com/travis-ci/worker/tree/3a987d61ed169c9539ad435d1a9b5f2d8c6ce4a6
+instance: travis-job-496d85cf-cf29-4448-81a2-ca03e69c83e6 travis-ci-garnet-trusty-1512502259-986baf0 (via amqp)
+startup: 5.955836744s
+travis_fold:end:worker_info[0Ktravis_time:start:10e46df7[0Ktravis_time:end:10e46df7:start=1605101868236996633,finish=1605101868404109556,duration=167112923,event=no_world_writable_dirs[0Ktravis_time:start:10d93748[0Ktravis_time:end:10d93748:start=1605101868407075356,finish=1605101868411019660,duration=3944304,event=setup_filter[0Ktravis_time:start:0a91e168[0Ktravis_time:end:0a91e168:start=1605101868414958205,finish=1605101868423515409,duration=8557204,event=agent[0Ktravis_time:start:14304f0b[0Ktravis_time:end:14304f0b:start=1605101868426833023,finish=1605101868429048665,duration=2215642,event=check_unsupported[0Ktravis_time:start:1f1c568b[0Ktravis_fold:start:system_info[0K[33;1mBuild system information[0m
+Build language: python
+Build group: stable
+Build dist: trusty
+Build id: 742918362
+Job id: 742918377
+Runtime kernel version: 4.4.0-101-generic
+travis-build version: 07c42db3
+[34m[1mBuild image provisioning date and time[0m
+Tue Dec  5 19:58:13 UTC 2017
+[34m[1mOperating System Details[0m
+Distributor ID:	Ubuntu
+Description:	Ubuntu 14.04.5 LTS
+Release:	14.04
+Codename:	trusty
+[34m[1mCookbooks Version[0m
+7c2c6a6 https://github.com/travis-ci/travis-cookbooks/tree/7c2c6a6
+[34m[1mgit version[0m
+git version 2.15.1
+[34m[1mbash version[0m
+GNU bash, version 4.3.11(1)-release (x86_64-pc-linux-gnu)
+[34m[1mgcc version[0m
+gcc (Ubuntu 4.8.4-2ubuntu1~14.04.3) 4.8.4
+Copyright (C) 2013 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+[34m[1mdocker version[0m
+Client:
+ Version:      17.09.0-ce
+ API version:  1.32
+ Go version:   go1.8.3
+ Git commit:   afdb6d4
+ Built:        Tue Sep 26 22:42:38 2017
+ OS/Arch:      linux/amd64
+
+Server:
+ Version:      17.09.0-ce
+ API version:  1.32 (minimum version 1.12)
+ Go version:   go1.8.3
+ Git commit:   afdb6d4
+ Built:        Tue Sep 26 22:41:20 2017
+ OS/Arch:      linux/amd64
+ Experimental: false
+[34m[1mclang version[0m
+clang version 5.0.0 (tags/RELEASE_500/final)
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /usr/local/clang-5.0.0/bin
+[34m[1mjq version[0m
+jq-1.5
+[34m[1mbats version[0m
+Bats 0.4.0
+[34m[1mshellcheck version[0m
+0.4.6
+[34m[1mshfmt version[0m
+v2.0.0
+[34m[1mccache version[0m
+ccache version 3.1.9
+
+Copyright (C) 2002-2007 Andrew Tridgell
+Copyright (C) 2009-2011 Joel Rosdahl
+
+This program is free software; you can redistribute it and/or modify it under
+the terms of the GNU General Public License as published by the Free Software
+Foundation; either version 3 of the License, or (at your option) any later
+version.
+[34m[1mcmake version[0m
+cmake version 3.9.2
+
+CMake suite maintained and supported by Kitware (kitware.com/cmake).
+[34m[1mheroku version[0m
+heroku-cli/6.14.39-addc925 (linux-x64) node-v9.2.0
+[34m[1mimagemagick version[0m
+Version: ImageMagick 6.7.7-10 2017-07-31 Q16 http://www.imagemagick.org
+[34m[1mmd5deep version[0m
+4.2
+[34m[1mmercurial version[0m
+Mercurial Distributed SCM (version 4.2.2)
+(see https://mercurial-scm.org for more information)
+
+Copyright (C) 2005-2017 Matt Mackall and others
+This is free software; see the source for copying conditions. There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+[34m[1mmysql version[0m
+mysql  Ver 14.14 Distrib 5.6.33, for debian-linux-gnu (x86_64) using  EditLine wrapper
+[34m[1mopenssl version[0m
+OpenSSL 1.0.1f 6 Jan 2014
+[34m[1mpacker version[0m
+Packer v1.0.2
+
+Your version of Packer is out of date! The latest version
+is 1.1.2. You can update by downloading from www.packer.io
+[34m[1mpostgresql client version[0m
+psql (PostgreSQL) 9.6.6
+[34m[1mragel version[0m
+Ragel State Machine Compiler version 6.8 Feb 2013
+Copyright (c) 2001-2009 by Adrian Thurston
+[34m[1msubversion version[0m
+svn, version 1.8.8 (r1568071)
+   compiled Aug 10 2017, 17:20:39 on x86_64-pc-linux-gnu
+
+Copyright (C) 2013 The Apache Software Foundation.
+This software consists of contributions made by many people;
+see the NOTICE file for more information.
+Subversion is open source software, see http://subversion.apache.org/
+
+The following repository access (RA) modules are available:
+
+* ra_svn : Module for accessing a repository using the svn network protocol.
+  - with Cyrus SASL authentication
+  - handles 'svn' scheme
+* ra_local : Module for accessing a repository on local disk.
+  - handles 'file' scheme
+* ra_serf : Module for accessing a repository via WebDAV protocol using serf.
+  - using serf 1.3.3
+  - handles 'http' scheme
+  - handles 'https' scheme
+
+[34m[1msudo version[0m
+Sudo version 1.8.9p5
+Configure options: --prefix=/usr -v --with-all-insults --with-pam --with-fqdn --with-logging=syslog --with-logfac=authpriv --with-env-editor --with-editor=/usr/bin/editor --with-timeout=15 --with-password-timeout=0 --with-passprompt=[sudo] password for %p:  --without-lecture --with-tty-tickets --disable-root-mailer --enable-admin-flag --with-sendmail=/usr/sbin/sendmail --with-timedir=/var/lib/sudo --mandir=/usr/share/man --libexecdir=/usr/lib/sudo --with-sssd --with-sssd-lib=/usr/lib/x86_64-linux-gnu --with-selinux
+Sudoers policy plugin version 1.8.9p5
+Sudoers file grammar version 43
+
+Sudoers path: /etc/sudoers
+Authentication methods: 'pam'
+Syslog facility if syslog is being used for logging: authpriv
+Syslog priority to use when user authenticates successfully: notice
+Syslog priority to use when user authenticates unsuccessfully: alert
+Send mail if the user is not in sudoers
+Use a separate timestamp for each user/tty combo
+Lecture user the first time they run sudo
+Root may run sudo
+Allow some information gathering to give useful error messages
+Require fully-qualified hostnames in the sudoers file
+Visudo will honor the EDITOR environment variable
+Set the LOGNAME and USER environment variables
+Length at which to wrap log file lines (0 for no wrap): 80
+Authentication timestamp timeout: 15.0 minutes
+Password prompt timeout: 0.0 minutes
+Number of tries to enter a password: 3
+Umask to use or 0777 to use user's: 022
+Path to mail program: /usr/sbin/sendmail
+Flags for mail program: -t
+Address to send mail to: root
+Subject line for mail messages: *** SECURITY information for %h ***
+Incorrect password message: Sorry, try again.
+Path to authentication timestamp dir: /var/lib/sudo
+Default password prompt: [sudo] password for %p: 
+Default user to run commands as: root
+Value to override user's $PATH with: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin
+Path to the editor for use by visudo: /usr/bin/editor
+When to require a password for 'list' pseudocommand: any
+When to require a password for 'verify' pseudocommand: all
+File descriptors >= 3 will be closed before executing a command
+Environment variables to check for sanity:
+	TZ
+	TERM
+	LINGUAS
+	LC_*
+	LANGUAGE
+	LANG
+	COLORTERM
+Environment variables to remove:
+	RUBYOPT
+	RUBYLIB
+	PYTHONUSERBASE
+	PYTHONINSPECT
+	PYTHONPATH
+	PYTHONHOME
+	TMPPREFIX
+	ZDOTDIR
+	READNULLCMD
+	NULLCMD
+	FPATH
+	PERL5DB
+	PERL5OPT
+	PERL5LIB
+	PERLLIB
+	PERLIO_DEBUG 
+	JAVA_TOOL_OPTIONS
+	SHELLOPTS
+	GLOBIGNORE
+	PS4
+	BASH_ENV
+	ENV
+	TERMCAP
+	TERMPATH
+	TERMINFO_DIRS
+	TERMINFO
+	_RLD*
+	LD_*
+	PATH_LOCALE
+	NLSPATH
+	HOSTALIASES
+	RES_OPTIONS
+	LOCALDOMAIN
+	CDPATH
+	IFS
+Environment variables to preserve:
+	JAVA_HOME
+	TRAVIS
+	CI
+	DEBIAN_FRONTEND
+	XAUTHORIZATION
+	XAUTHORITY
+	PS2
+	PS1
+	PATH
+	LS_COLORS
+	KRB5CCNAME
+	HOSTNAME
+	HOME
+	DISPLAY
+	COLORS
+Locale to use while parsing sudoers: C
+Directory in which to store input/output logs: /var/log/sudo-io
+File in which to store the input/output log: %{seq}
+Add an entry to the utmp/utmpx file when allocating a pty
+PAM service name to use
+PAM service name to use for login shells
+Create a new PAM session for the command to run in
+Maximum I/O log sequence number: 0
+
+Local IP address and netmask pairs:
+	10.240.0.28/255.255.255.255
+	172.17.0.1/255.255.0.0
+
+Sudoers I/O plugin version 1.8.9p5
+[34m[1mgzip version[0m
+gzip 1.6
+Copyright (C) 2007, 2010, 2011 Free Software Foundation, Inc.
+Copyright (C) 1993 Jean-loup Gailly.
+This is free software.  You may redistribute copies of it under the terms of
+the GNU General Public License <http://www.gnu.org/licenses/gpl.html>.
+There is NO WARRANTY, to the extent permitted by law.
+
+Written by Jean-loup Gailly.
+[34m[1mzip version[0m
+Copyright (c) 1990-2008 Info-ZIP - Type 'zip "-L"' for software license.
+This is Zip 3.0 (July 5th 2008), by Info-ZIP.
+Currently maintained by E. Gordon.  Please send bug reports to
+the authors using the web page at www.info-zip.org; see README for details.
+
+Latest sources and executables are at ftp://ftp.info-zip.org/pub/infozip,
+as of above date; see http://www.info-zip.org/ for other sites.
+
+Compiled with gcc 4.8.2 for Unix (Linux ELF) on Oct 21 2013.
+
+Zip special compilation options:
+	USE_EF_UT_TIME       (store Universal Time)
+	BZIP2_SUPPORT        (bzip2 library version 1.0.6, 6-Sept-2010)
+	    bzip2 code and library copyright (c) Julian R Seward
+	    (See the bzip2 license for terms of use)
+	SYMLINK_SUPPORT      (symbolic links supported)
+	LARGE_FILE_SUPPORT   (can read and write large files on file system)
+	ZIP64_SUPPORT        (use Zip64 to store large files in archives)
+	UNICODE_SUPPORT      (store and read UTF-8 Unicode paths)
+	STORE_UNIX_UIDs_GIDs (store UID/GID sizes/values using new extra field)
+	UIDGID_NOT_16BIT     (old Unix 16-bit UID/GID extra field not used)
+	[encryption, version 2.91 of 05 Jan 2007] (modified for Zip 3)
+
+Encryption notice:
+	The encryption code of this program is not copyrighted and is
+	put in the public domain.  It was originally written in Europe
+	and, to the best of our knowledge, can be freely distributed
+	in both source and object forms from any country, including
+	the USA under License Exception TSU of the U.S. Export
+	Administration Regulations (section 740.13(e)) of 6 June 2002.
+
+Zip environment options:
+             ZIP:  [none]
+          ZIPOPT:  [none]
+[34m[1mvim version[0m
+VIM - Vi IMproved 7.4 (2013 Aug 10, compiled Nov 24 2016 16:43:18)
+Included patches: 1-52
+Extra patches: 8.0.0056
+Modified by pkg-vim-maintainers@lists.alioth.debian.org
+Compiled by buildd@
+Huge version without GUI.  Features included (+) or not (-):
++acl             +farsi           +mouse_netterm   +syntax
++arabic          +file_in_path    +mouse_sgr       +tag_binary
++autocmd         +find_in_path    -mouse_sysmouse  +tag_old_static
+-balloon_eval    +float           +mouse_urxvt     -tag_any_white
+-browse          +folding         +mouse_xterm     -tcl
+++builtin_terms  -footer          +multi_byte      +terminfo
++byte_offset     +fork()          +multi_lang      +termresponse
++cindent         +gettext         -mzscheme        +textobjects
+-clientserver    -hangul_input    +netbeans_intg   +title
+-clipboard       +iconv           +path_extra      -toolbar
++cmdline_compl   +insert_expand   -perl            +user_commands
++cmdline_hist    +jumplist        +persistent_undo +vertsplit
++cmdline_info    +keymap          +postscript      +virtualedit
++comments        +langmap         +printer         +visual
++conceal         +libcall         +profile         +visualextra
++cryptv          +linebreak       +python          +viminfo
++cscope          +lispindent      -python3         +vreplace
++cursorbind      +listcmds        +quickfix        +wildignore
++cursorshape     +localmap        +reltime         +wildmenu
++dialog_con      -lua             +rightleft       +windows
++diff            +menu            -ruby            +writebackup
++digraphs        +mksession       +scrollbind      -X11
+-dnd             +modify_fname    +signs           -xfontset
+-ebcdic          +mouse           +smartindent     -xim
++emacs_tags      -mouseshape      -sniff           -xsmp
++eval            +mouse_dec       +startuptime     -xterm_clipboard
++ex_extra        +mouse_gpm       +statusline      -xterm_save
++extra_search    -mouse_jsbterm   -sun_workshop    -xpm
+   system vimrc file: "$VIM/vimrc"
+     user vimrc file: "$HOME/.vimrc"
+ 2nd user vimrc file: "~/.vim/vimrc"
+      user exrc file: "$HOME/.exrc"
+  fall-back for $VIM: "/usr/share/vim"
+Compilation: gcc -c -I. -Iproto -DHAVE_CONFIG_H     -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1      
+Linking: gcc   -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,--as-needed -o vim        -lm -ltinfo -lnsl  -lselinux  -lacl -lattr -lgpm -ldl    -L/usr/lib/python2.7/config-x86_64-linux-gnu -lpython2.7 -lpthread -ldl -lutil -lm -Xlinker -export-dynamic -Wl,-O1 -Wl,-Bsymbolic-functions      
+[34m[1miptables version[0m
+iptables v1.4.21
+[34m[1mcurl version[0m
+curl 7.35.0 (x86_64-pc-linux-gnu) libcurl/7.35.0 OpenSSL/1.0.1f zlib/1.2.8 libidn/1.28 librtmp/2.3
+[34m[1mwget version[0m
+GNU Wget 1.15 built on linux-gnu.
+[34m[1mrsync version[0m
+rsync  version 3.1.0  protocol version 31
+[34m[1mgimme version[0m
+v1.2.0
+[34m[1mnvm version[0m
+0.33.6
+[34m[1mperlbrew version[0m
+/home/travis/perl5/perlbrew/bin/perlbrew  - App::perlbrew/0.80
+[34m[1mphpenv version[0m
+rbenv 1.1.1-25-g6aa70b6
+[34m[1mrvm version[0m
+rvm 1.29.3 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
+[34m[1mdefault ruby version[0m
+ruby 2.4.1p111 (2017-03-22 revision 58053) [x86_64-linux]
+[34m[1mCouchDB version[0m
+couchdb 1.6.1
+[34m[1mElasticSearch version[0m
+5.5.0
+[34m[1mInstalled Firefox version[0m
+firefox 56.0.2
+[34m[1mMongoDB version[0m
+MongoDB 3.4.10
+[34m[1mPhantomJS version[0m
+2.1.1
+[34m[1mPre-installed PostgreSQL versions[0m
+9.2.24
+9.3.20
+9.4.15
+9.5.10
+9.6.6
+[34m[1mRabbitMQ Version[0m
+3.6.14
+[34m[1mRedis version[0m
+redis-server 4.0.6
+[34m[1mriak version[0m
+2.2.3
+[34m[1mPre-installed Go versions[0m
+1.7.4
+[34m[1mant version[0m
+Apache Ant(TM) version 1.9.3 compiled on April 8 2014
+[34m[1mmvn version[0m
+Apache Maven 3.5.2 (138edd61fd100ec658bfa2d307c43b76940a5d7d; 2017-10-18T07:58:13Z)
+Maven home: /usr/local/maven-3.5.2
+Java version: 1.8.0_151, vendor: Oracle Corporation
+Java home: /usr/lib/jvm/java-8-oracle/jre
+Default locale: en_US, platform encoding: UTF-8
+OS name: "linux", version: "4.4.0-98-generic", arch: "amd64", family: "unix"
+[34m[1mgradle version[0m
+
+------------------------------------------------------------
+Gradle 4.0.1
+------------------------------------------------------------
+
+Build time:   2017-07-07 14:02:41 UTC
+Revision:     38e5dc0f772daecca1d2681885d3d85414eb6826
+
+Groovy:       2.4.11
+Ant:          Apache Ant(TM) version 1.9.6 compiled on June 29 2015
+JVM:          1.8.0_151 (Oracle Corporation 25.151-b12)
+OS:           Linux 4.4.0-98-generic amd64
+
+[34m[1mlein version[0m
+Leiningen 2.8.1 on Java 1.8.0_151 Java HotSpot(TM) 64-Bit Server VM
+[34m[1mPre-installed Node.js versions[0m
+v4.8.6
+v6.12.0
+v6.12.1
+v8.9
+v8.9.1
+[34m[1mphpenv versions[0m
+  system
+  5.6
+* 5.6.32 (set by /home/travis/.phpenv/version)
+  7.0
+  7.0.25
+  7.1
+  7.1.11
+  hhvm
+  hhvm-stable
+[34m[1mcomposer --version[0m
+Composer version 1.5.2 2017-09-11 16:59:25
+[34m[1mPre-installed Ruby versions[0m
+ruby-2.2.7
+ruby-2.3.4
+ruby-2.4.1
+travis_fold:end:system_info[0K
+travis_time:end:1f1c568b:start=1605101868431605117,finish=1605101868440198178,duration=8593061,event=show_system_info[0Ktravis_time:start:01d9dc76[0Ktravis_time:end:01d9dc76:start=1605101868443131143,finish=1605101868466927998,duration=23796855,event=rm_riak_source[0Ktravis_time:start:0f5ede0e[0Ktravis_time:end:0f5ede0e:start=1605101868473790138,finish=1605101868483297724,duration=9507586,event=fix_rwky_redis[0Ktravis_time:start:16081588[0Ktravis_time:end:16081588:start=1605101868495955787,finish=1605101868825926528,duration=329970741,event=wait_for_network[0Ktravis_time:start:00d96258[0Ktravis_time:end:00d96258:start=1605101868830807398,finish=1605101869875877875,duration=1045070477,event=update_apt_keys[0Ktravis_time:start:1f7cfa50[0Ktravis_time:end:1f7cfa50:start=1605101869879472155,finish=1605101871059653173,duration=1180181018,event=fix_hhvm_source[0Ktravis_time:start:03ad5491[0Ktravis_time:end:03ad5491:start=1605101871063819308,finish=1605101871072504208,duration=8684900,event=update_mongo_arch[0Ktravis_time:start:0e56c21e[0Ktravis_time:end:0e56c21e:start=1605101871076201352,finish=1605101871113735596,duration=37534244,event=fix_sudo_enabled_trusty[0Ktravis_time:start:08aa12bf[0Ktravis_time:end:08aa12bf:start=1605101871117735023,finish=1605101871120090478,duration=2355455,event=update_glibc[0Ktravis_time:start:18b9454a[0Ktravis_time:end:18b9454a:start=1605101871123692373,finish=1605101871131578281,duration=7885908,event=clean_up_path[0Ktravis_time:start:2af0a166[0Ktravis_time:end:2af0a166:start=1605101871134890029,finish=1605101871144590234,duration=9700205,event=fix_resolv_conf[0Ktravis_time:start:0285dd73[0Ktravis_time:end:0285dd73:start=1605101871148711889,finish=1605101871159169446,duration=10457557,event=fix_etc_hosts[0Ktravis_time:start:14c9f4e7[0Ktravis_time:end:14c9f4e7:start=1605101871163210218,finish=1605101871170702466,duration=7492248,event=fix_mvn_settings_xml[0Ktravis_time:start:1b8c71d0[0Ktravis_time:end:1b8c71d0:start=1605101871174532868,finish=1605101871183777214,duration=9244346,event=no_ipv6_localhost[0Ktravis_time:start:2ce1f8f5[0Ktravis_time:end:2ce1f8f5:start=1605101871187759099,finish=1605101871190109424,duration=2350325,event=fix_etc_mavenrc[0Ktravis_time:start:08ec1a68[0Ktravis_time:end:08ec1a68:start=1605101871194337066,finish=1605101871197521869,duration=3184803,event=fix_wwdr_certificate[0Ktravis_time:start:0a27902a[0Ktravis_time:end:0a27902a:start=1605101871204366985,finish=1605101871227022243,duration=22655258,event=put_localhost_first[0Ktravis_time:start:209db276[0Ktravis_time:end:209db276:start=1605101871231150765,finish=1605101871234432535,duration=3281770,event=home_paths[0Ktravis_time:start:2718ee9e[0Ktravis_time:end:2718ee9e:start=1605101871239172118,finish=1605101871252471418,duration=13299300,event=disable_initramfs[0Ktravis_time:start:0000fc24[0Ktravis_time:end:0000fc24:start=1605101871257222765,finish=1605101871510211057,duration=252988292,event=disable_ssh_roaming[0Ktravis_time:start:0d733f9a[0Ktravis_time:end:0d733f9a:start=1605101871514504365,finish=1605101871516891981,duration=2387616,event=debug_tools[0Ktravis_time:start:074bd600[0Ktravis_time:end:074bd600:start=1605101871522536191,finish=1605101871525577486,duration=3041295,event=uninstall_oclint[0Ktravis_time:start:04f02ed6[0Ktravis_time:end:04f02ed6:start=1605101871528696540,finish=1605101871532020815,duration=3324275,event=rvm_use[0Ktravis_time:start:0b29fabe[0Ktravis_time:end:0b29fabe:start=1605101871535293787,finish=1605101871548801033,duration=13507246,event=rm_etc_boto_cfg[0Ktravis_time:start:080d19c0[0Ktravis_time:end:080d19c0:start=1605101871552475823,finish=1605101871554838403,duration=2362580,event=rm_oraclejdk8_symlink[0Ktravis_time:start:1ea86cfc[0Ktravis_time:end:1ea86cfc:start=1605101871558040751,finish=1605101871606703899,duration=48663148,event=enable_i386[0Ktravis_time:start:005f01c8[0Ktravis_time:end:005f01c8:start=1605101871610664226,finish=1605101871614285311,duration=3621085,event=update_rubygems[0Ktravis_time:start:01720518[0Ktravis_time:end:01720518:start=1605101871618018576,finish=1605101872560903885,duration=942885309,event=ensure_path_components[0Ktravis_time:start:1e8e67e8[0Ktravis_time:end:1e8e67e8:start=1605101872565458431,finish=1605101872568000838,duration=2542407,event=redefine_curl[0Ktravis_time:start:16866be8[0Ktravis_time:end:16866be8:start=1605101872572360662,finish=1605101872618942976,duration=46582314,event=nonblock_pipe[0Ktravis_time:start:2fb77db1[0Ktravis_time:end:2fb77db1:start=1605101872622640238,finish=1605101878653674180,duration=6031033942,event=apt_get_update[0Ktravis_time:start:0d845bf4[0Ktravis_time:end:0d845bf4:start=1605101878657819409,finish=1605101878660292837,duration=2473428,event=deprecate_xcode_64[0Ktravis_time:start:05fdf2d0[0Ktravis_time:end:05fdf2d0:start=1605101878664202022,finish=1605101882693498805,duration=4029296783,event=update_heroku[0Ktravis_time:start:12c4a150[0Ktravis_time:end:12c4a150:start=1605101882697511916,finish=1605101882700504425,duration=2992509,event=shell_session_update[0Ktravis_time:start:0025a1d0[0Ktravis_fold:start:docker_mtu_and_registry_mirrors[0Kdocker stop/waiting
+docker start/running, process 3887
+travis_fold:end:docker_mtu_and_registry_mirrors[0Ktravis_time:end:0025a1d0:start=1605101882704661712,finish=1605101883957461916,duration=1252800204,event=set_docker_mtu_and_registry_mirrors[0Ktravis_time:start:084e03d8[0Ktravis_fold:start:resolvconf[0Kresolvconf stop/waiting
+resolvconf start/running
+travis_fold:end:resolvconf[0Ktravis_time:end:084e03d8:start=1605101883960496611,finish=1605101884018560511,duration=58063900,event=resolvconf[0Ktravis_time:start:06c485a7[0Ktravis_time:end:06c485a7:start=1605101884022956629,finish=1605101884142939069,duration=119982440,event=maven_central_mirror[0Ktravis_time:start:201fc546[0Ktravis_time:end:201fc546:start=1605101884146737492,finish=1605101884211835760,duration=65098268,event=maven_https[0Ktravis_time:start:28d551d7[0Ktravis_fold:start:services[0Ktravis_time:start:177c673c[0K$ sudo service docker start
+start: Job is already running: docker
+travis_time:end:177c673c:start=1605101884221206900,finish=1605101884234484880,duration=13277980,event=prepare[0Ktravis_fold:end:services[0Ktravis_time:end:177c673c:start=1605101884221206900,finish=1605101887239551311,duration=3018344411,event=services[0Ktravis_time:start:09bf21c8[0Ktravis_time:end:09bf21c8:start=1605101887243140375,finish=1605101887245778151,duration=2637776,event=fix_ps4[0Ktravis_time:start:08a7d36d[0K
+travis_fold:start:git.checkout[0Ktravis_time:start:0718e81e[0K$ git clone --depth=50 --branch=master https://github.com/precice/systemtests.git precice/systemtests
+Cloning into 'precice/systemtests'...
+travis_time:end:0718e81e:start=1605101887256161167,finish=1605101894270543432,duration=7014382265,event=checkout[0K$ cd precice/systemtests
+$ git checkout -qf ec9636f89e457cda9a9b9cc42be0838c3f8621ed
+travis_fold:end:git.checkout[0K
+travis_time:end:0718e81e:start=1605101887256161167,finish=1605101894556065871,duration=7299904704,event=checkout[0Ktravis_time:start:0d09eed2[0K
+[33;1mSetting environment variables from repository settings[0m
+$ export DOCKER_PASSWORD=[secure]
+$ export PRECICE_BOT_EMAIL=[secure]
+$ export GH_TOKEN=[secure]
+$ export TRAVIS_ACCESS_TOKEN=[secure]
+$ export DOCKER_USERNAME=precice
+
+travis_time:end:0d09eed2:start=1605101894560904950,finish=1605101894570600364,duration=9695414,event=env[0Ktravis_time:start:14c26f34[0K$ source ~/virtualenv/python3.6/bin/activate
+travis_time:end:14c26f34:start=1605101894575513371,finish=1605101894586458470,duration=10945099,event=[0K$ python --version
+Python 3.6.3
+$ pip --version
+pip 9.0.1 from /home/travis/virtualenv/python3.6.3/lib/python3.6/site-packages (python 3.6)
+travis_fold:start:install[0Ktravis_time:start:083f8c86[0K$ pip install Jinja2
+Collecting Jinja2
+  Downloading https://files.pythonhosted.org/packages/30/9e/f663a2aa66a09d838042ae1a2c5659828bb9b41ea3a6efa20a20fd92b121/Jinja2-2.11.2-py2.py3-none-any.whl (125kB)
+Collecting MarkupSafe>=0.23 (from Jinja2)
+  Downloading https://files.pythonhosted.org/packages/b2/5f/23e0023be6bb885d00ffbefad2942bc51a620328ee910f64abe5a8d18dd1/MarkupSafe-1.1.1-cp36-cp36m-manylinux1_x86_64.whl
+Installing collected packages: MarkupSafe, Jinja2
+Successfully installed Jinja2-2.11.2 MarkupSafe-1.1.1
+travis_time:end:083f8c86:start=1605101895343598409,finish=1605101896340355319,duration=996756910,event=install[0Ktravis_fold:end:install[0Ktravis_time:start:017c2a72[0K$ python build_adapter.py --dockerfile adapters/Dockerfile.openfoam-adapter --operating-system ubuntu1604 --precice-installation home --docker-username $DOCKER_USERNAME
+Sending build context to Docker daemon  4.096kB
+Step 1/19 : ARG branch=develop
+ ---> 
+Step 2/19 : ARG from=precice/precice-ubuntu1804.home-${branch}
+ ---> 
+Step 3/19 : ARG base_solver=precice/openfoam
+ ---> 
+Step 4/19 : FROM ${base_solver} as openfoam
+latest: Pulling from precice/openfoam
+7ddbc47eeb70: Pulling fs layer
+c1bbdc448b72: Pulling fs layer
+8c3b70e39044: Pulling fs layer
+45d437916d57: Pulling fs layer
+1d6f1518855e: Pulling fs layer
+446c3935c1b3: Pulling fs layer
+c01529791431: Pulling fs layer
+45d437916d57: Waiting
+1d6f1518855e: Waiting
+446c3935c1b3: Waiting
+c01529791431: Waiting
+8c3b70e39044: Verifying Checksum
+8c3b70e39044: Download complete
+c1bbdc448b72: Verifying Checksum
+c1bbdc448b72: Download complete
+45d437916d57: Verifying Checksum
+45d437916d57: Download complete
+7ddbc47eeb70: Verifying Checksum
+7ddbc47eeb70: Download complete
+446c3935c1b3: Verifying Checksum
+446c3935c1b3: Download complete
+7ddbc47eeb70: Pull complete
+c1bbdc448b72: Pull complete
+8c3b70e39044: Pull complete
+45d437916d57: Pull complete
+1d6f1518855e: Verifying Checksum
+1d6f1518855e: Download complete
+c01529791431: Verifying Checksum
+c01529791431: Download complete
+1d6f1518855e: Pull complete
+446c3935c1b3: Pull complete
+c01529791431: Pull complete
+Digest: sha256:cf66163c21b9a3e36b0cd5a143ce8965193485d4fff96aaa9c132d190db80e77
+Status: Downloaded newer image for precice/openfoam:latest
+ ---> 72189ef69046
+Step 5/19 : FROM $from
+latest: Pulling from precice/precice-ubuntu1604.home-develop
+2c11b7cecaa5: Pulling fs layer
+04637fa56252: Pulling fs layer
+d6e6af23a0f3: Pulling fs layer
+b4a424de92ad: Pulling fs layer
+a35f3c515c44: Pulling fs layer
+f5fed27cff95: Pulling fs layer
+087f5dc74337: Pulling fs layer
+ef657cffcef5: Pulling fs layer
+d3e8a4bd8c6d: Pulling fs layer
+7ac0dea6cdf6: Pulling fs layer
+573b1be21742: Pulling fs layer
+d9fa2f809fe9: Pulling fs layer
+a6d1f2bc5274: Pulling fs layer
+8dd28b843d1d: Pulling fs layer
+8619aff7c888: Pulling fs layer
+065869f10633: Pulling fs layer
+95d950186428: Pulling fs layer
+65456488dbd7: Pulling fs layer
+4d86a57bce66: Pulling fs layer
+573b1be21742: Waiting
+d9fa2f809fe9: Waiting
+a6d1f2bc5274: Waiting
+8dd28b843d1d: Waiting
+8619aff7c888: Waiting
+065869f10633: Waiting
+95d950186428: Waiting
+65456488dbd7: Waiting
+4d86a57bce66: Waiting
+b4a424de92ad: Waiting
+a35f3c515c44: Waiting
+f5fed27cff95: Waiting
+087f5dc74337: Waiting
+ef657cffcef5: Waiting
+d3e8a4bd8c6d: Waiting
+7ac0dea6cdf6: Waiting
+04637fa56252: Verifying Checksum
+04637fa56252: Download complete
+d6e6af23a0f3: Verifying Checksum
+d6e6af23a0f3: Download complete
+b4a424de92ad: Download complete
+f5fed27cff95: Verifying Checksum
+f5fed27cff95: Download complete
+2c11b7cecaa5: Verifying Checksum
+2c11b7cecaa5: Download complete
+ef657cffcef5: Verifying Checksum
+ef657cffcef5: Download complete
+087f5dc74337: Verifying Checksum
+087f5dc74337: Download complete
+d3e8a4bd8c6d: Verifying Checksum
+d3e8a4bd8c6d: Download complete
+573b1be21742: Verifying Checksum
+573b1be21742: Download complete
+7ac0dea6cdf6: Verifying Checksum
+7ac0dea6cdf6: Download complete
+a35f3c515c44: Verifying Checksum
+a35f3c515c44: Download complete
+8dd28b843d1d: Verifying Checksum
+8dd28b843d1d: Download complete
+8619aff7c888: Verifying Checksum
+8619aff7c888: Download complete
+065869f10633: Verifying Checksum
+065869f10633: Download complete
+d9fa2f809fe9: Verifying Checksum
+d9fa2f809fe9: Download complete
+95d950186428: Download complete
+65456488dbd7: Verifying Checksum
+65456488dbd7: Download complete
+4d86a57bce66: Verifying Checksum
+4d86a57bce66: Download complete
+a6d1f2bc5274: Verifying Checksum
+a6d1f2bc5274: Download complete
+2c11b7cecaa5: Pull complete
+04637fa56252: Pull complete
+d6e6af23a0f3: Pull complete
+b4a424de92ad: Pull complete
+a35f3c515c44: Pull complete
+f5fed27cff95: Pull complete
+087f5dc74337: Pull complete
+ef657cffcef5: Pull complete
+d3e8a4bd8c6d: Pull complete
+7ac0dea6cdf6: Pull complete
+573b1be21742: Pull complete
+d9fa2f809fe9: Pull complete
+a6d1f2bc5274: Pull complete
+8dd28b843d1d: Pull complete
+8619aff7c888: Pull complete
+065869f10633: Pull complete
+95d950186428: Pull complete
+65456488dbd7: Pull complete
+4d86a57bce66: Pull complete
+Digest: sha256:42651c3f0e367e199ae122de6bb18361b1ae92b545899611b0c290c53bd589dc
+Status: Downloaded newer image for precice/precice-ubuntu1604.home-develop:latest
+ ---> 4af7fc984440
+Step 6/19 : USER root
+ ---> Running in 8cd8a22ee31c
+ ---> ec6866a4f8a6
+Removing intermediate container 8cd8a22ee31c
+Step 7/19 : ENV USER root
+ ---> Running in 3c2fadb79a60
+ ---> cdc33211fb72
+Removing intermediate container 3c2fadb79a60
+Step 8/19 : RUN apt-get -qq update && apt-get -qq install     software-properties-common     wget apt-transport-https &&     rm -rf /var/lib/apt/lists/*
+ ---> Running in 4fdbc36d91dd
+[91mdebconf: delaying package configuration, since apt-utils is not installed
+[0mSelecting previously unselected package cron.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 21871 files and directories currently installed.)
+Preparing to unpack .../cron_3.0pl1-128ubuntu2_amd64.deb ...
+Unpacking cron (3.0pl1-128ubuntu2) ...
+Selecting previously unselected package libpython3.5-minimal:amd64.
+Preparing to unpack .../libpython3.5-minimal_3.5.2-2ubuntu0~16.04.12_amd64.deb ...
+Unpacking libpython3.5-minimal:amd64 (3.5.2-2ubuntu0~16.04.12) ...
+Selecting previously unselected package python3.5-minimal.
+Preparing to unpack .../python3.5-minimal_3.5.2-2ubuntu0~16.04.12_amd64.deb ...
+Unpacking python3.5-minimal (3.5.2-2ubuntu0~16.04.12) ...
+Selecting previously unselected package python3-minimal.
+Preparing to unpack .../python3-minimal_3.5.1-3_amd64.deb ...
+Unpacking python3-minimal (3.5.1-3) ...
+Selecting previously unselected package libmpdec2:amd64.
+Preparing to unpack .../libmpdec2_2.4.2-1_amd64.deb ...
+Unpacking libmpdec2:amd64 (2.4.2-1) ...
+Selecting previously unselected package libpython3.5-stdlib:amd64.
+Preparing to unpack .../libpython3.5-stdlib_3.5.2-2ubuntu0~16.04.12_amd64.deb ...
+Unpacking libpython3.5-stdlib:amd64 (3.5.2-2ubuntu0~16.04.12) ...
+Selecting previously unselected package python3.5.
+Preparing to unpack .../python3.5_3.5.2-2ubuntu0~16.04.12_amd64.deb ...
+Unpacking python3.5 (3.5.2-2ubuntu0~16.04.12) ...
+Selecting previously unselected package libpython3-stdlib:amd64.
+Preparing to unpack .../libpython3-stdlib_3.5.1-3_amd64.deb ...
+Unpacking libpython3-stdlib:amd64 (3.5.1-3) ...
+Selecting previously unselected package dh-python.
+Preparing to unpack .../dh-python_2.20151103ubuntu1.2_all.deb ...
+Unpacking dh-python (2.20151103ubuntu1.2) ...
+Processing triggers for systemd (229-4ubuntu21.29) ...
+Processing triggers for libc-bin (2.23-0ubuntu11.2) ...
+Processing triggers for mime-support (3.59ubuntu1) ...
+Setting up libpython3.5-minimal:amd64 (3.5.2-2ubuntu0~16.04.12) ...
+Setting up python3.5-minimal (3.5.2-2ubuntu0~16.04.12) ...
+mount: permission denied
+update-binfmts: warning: Couldn't mount the binfmt_misc filesystem on /proc/sys/fs/binfmt_misc.
+Setting up python3-minimal (3.5.1-3) ...
+Selecting previously unselected package python3.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 22822 files and directories currently installed.)
+Preparing to unpack .../python3_3.5.1-3_amd64.deb ...
+Unpacking python3 (3.5.1-3) ...
+Selecting previously unselected package distro-info-data.
+Preparing to unpack .../distro-info-data_0.28ubuntu0.16_all.deb ...
+Unpacking distro-info-data (0.28ubuntu0.16) ...
+Selecting previously unselected package libapt-inst2.0:amd64.
+Preparing to unpack .../libapt-inst2.0_1.2.32ubuntu0.1_amd64.deb ...
+Unpacking libapt-inst2.0:amd64 (1.2.32ubuntu0.1) ...
+Selecting previously unselected package lsb-release.
+Preparing to unpack .../lsb-release_9.20160110ubuntu0.2_all.deb ...
+Unpacking lsb-release (9.20160110ubuntu0.2) ...
+Selecting previously unselected package ucf.
+Preparing to unpack .../archives/ucf_3.0036_all.deb ...
+Moving old data out of the way
+Unpacking ucf (3.0036) ...
+Selecting previously unselected package apt-transport-https.
+Preparing to unpack .../apt-transport-https_1.2.32ubuntu0.1_amd64.deb ...
+Unpacking apt-transport-https (1.2.32ubuntu0.1) ...
+Selecting previously unselected package libcap-ng0:amd64.
+Preparing to unpack .../libcap-ng0_0.7.7-1_amd64.deb ...
+Unpacking libcap-ng0:amd64 (0.7.7-1) ...
+Selecting previously unselected package libdbus-1-3:amd64.
+Preparing to unpack .../libdbus-1-3_1.10.6-1ubuntu3.6_amd64.deb ...
+Unpacking libdbus-1-3:amd64 (1.10.6-1ubuntu3.6) ...
+Selecting previously unselected package dbus.
+Preparing to unpack .../dbus_1.10.6-1ubuntu3.6_amd64.deb ...
+Unpacking dbus (1.10.6-1ubuntu3.6) ...
+Selecting previously unselected package libgirepository-1.0-1:amd64.
+Preparing to unpack .../libgirepository-1.0-1_1.46.0-3ubuntu1_amd64.deb ...
+Unpacking libgirepository-1.0-1:amd64 (1.46.0-3ubuntu1) ...
+Selecting previously unselected package gir1.2-glib-2.0:amd64.
+Preparing to unpack .../gir1.2-glib-2.0_1.46.0-3ubuntu1_amd64.deb ...
+Unpacking gir1.2-glib-2.0:amd64 (1.46.0-3ubuntu1) ...
+Selecting previously unselected package iso-codes.
+Preparing to unpack .../iso-codes_3.65-1_all.deb ...
+Unpacking iso-codes (3.65-1) ...
+Selecting previously unselected package libdbus-glib-1-2:amd64.
+Preparing to unpack .../libdbus-glib-1-2_0.106-1_amd64.deb ...
+Unpacking libdbus-glib-1-2:amd64 (0.106-1) ...
+Selecting previously unselected package powermgmt-base.
+Preparing to unpack .../powermgmt-base_1.31+nmu1_all.deb ...
+Unpacking powermgmt-base (1.31+nmu1) ...
+Selecting previously unselected package python-apt-common.
+Preparing to unpack .../python-apt-common_1.1.0~beta1ubuntu0.16.04.9_all.deb ...
+Unpacking python-apt-common (1.1.0~beta1ubuntu0.16.04.9) ...
+Selecting previously unselected package python3-apt.
+Preparing to unpack .../python3-apt_1.1.0~beta1ubuntu0.16.04.9_amd64.deb ...
+Unpacking python3-apt (1.1.0~beta1ubuntu0.16.04.9) ...
+Selecting previously unselected package python3-dbus.
+Preparing to unpack .../python3-dbus_1.2.0-3_amd64.deb ...
+Unpacking python3-dbus (1.2.0-3) ...
+Selecting previously unselected package python3-gi.
+Preparing to unpack .../python3-gi_3.20.0-0ubuntu1_amd64.deb ...
+Unpacking python3-gi (3.20.0-0ubuntu1) ...
+Selecting previously unselected package python3-pycurl.
+Preparing to unpack .../python3-pycurl_7.43.0-1ubuntu1_amd64.deb ...
+Unpacking python3-pycurl (7.43.0-1ubuntu1) ...
+Selecting previously unselected package python3-software-properties.
+Preparing to unpack .../python3-software-properties_0.96.20.10_all.deb ...
+Unpacking python3-software-properties (0.96.20.10) ...
+Selecting previously unselected package software-properties-common.
+Preparing to unpack .../software-properties-common_0.96.20.10_all.deb ...
+Unpacking software-properties-common (0.96.20.10) ...
+Selecting previously unselected package unattended-upgrades.
+Preparing to unpack .../unattended-upgrades_1.1ubuntu1.18.04.7~16.04.6_all.deb ...
+Unpacking unattended-upgrades (1.1ubuntu1.18.04.7~16.04.6) ...
+Processing triggers for libc-bin (2.23-0ubuntu11.2) ...
+Processing triggers for systemd (229-4ubuntu21.29) ...
+Setting up cron (3.0pl1-128ubuntu2) ...
+Adding group `crontab' (GID 108) ...
+Done.
+update-rc.d: warning: start and stop actions are no longer supported; falling back to defaults
+update-rc.d: warning: stop runlevel arguments (1) do not match cron Default-Stop values (none)
+invoke-rc.d: could not determine current runlevel
+invoke-rc.d: policy-rc.d denied execution of start.
+Setting up libmpdec2:amd64 (2.4.2-1) ...
+Setting up libpython3.5-stdlib:amd64 (3.5.2-2ubuntu0~16.04.12) ...
+Setting up python3.5 (3.5.2-2ubuntu0~16.04.12) ...
+Setting up libpython3-stdlib:amd64 (3.5.1-3) ...
+Setting up distro-info-data (0.28ubuntu0.16) ...
+Setting up libapt-inst2.0:amd64 (1.2.32ubuntu0.1) ...
+Setting up ucf (3.0036) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (TERM is not set, so the dialog frontend is not usable.)
+debconf: falling back to frontend: Readline
+Setting up apt-transport-https (1.2.32ubuntu0.1) ...
+Setting up libcap-ng0:amd64 (0.7.7-1) ...
+Setting up libdbus-1-3:amd64 (1.10.6-1ubuntu3.6) ...
+Setting up dbus (1.10.6-1ubuntu3.6) ...
+Setting up libgirepository-1.0-1:amd64 (1.46.0-3ubuntu1) ...
+Setting up gir1.2-glib-2.0:amd64 (1.46.0-3ubuntu1) ...
+Setting up iso-codes (3.65-1) ...
+Setting up libdbus-glib-1-2:amd64 (0.106-1) ...
+Setting up powermgmt-base (1.31+nmu1) ...
+Setting up python-apt-common (1.1.0~beta1ubuntu0.16.04.9) ...
+Setting up python3 (3.5.1-3) ...
+running python rtupdate hooks for python3.5...
+running python post-rtupdate hooks for python3.5...
+Setting up lsb-release (9.20160110ubuntu0.2) ...
+Setting up python3-apt (1.1.0~beta1ubuntu0.16.04.9) ...
+Setting up python3-dbus (1.2.0-3) ...
+Setting up python3-gi (3.20.0-0ubuntu1) ...
+Setting up python3-pycurl (7.43.0-1ubuntu1) ...
+Setting up python3-software-properties (0.96.20.10) ...
+Setting up software-properties-common (0.96.20.10) ...
+Setting up unattended-upgrades (1.1ubuntu1.18.04.7~16.04.6) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (TERM is not set, so the dialog frontend is not usable.)
+debconf: falling back to frontend: Readline
+
+Creating config file /etc/apt/apt.conf.d/20auto-upgrades with new version
+
+Creating config file /etc/apt/apt.conf.d/50unattended-upgrades with new version
+Setting up dh-python (2.20151103ubuntu1.2) ...
+Processing triggers for systemd (229-4ubuntu21.29) ...
+Processing triggers for libc-bin (2.23-0ubuntu11.2) ...
+Processing triggers for dbus (1.10.6-1ubuntu3.6) ...
+ ---> faf62b32796a
+Removing intermediate container 4fdbc36d91dd
+Step 9/19 : ARG CACHEBUST
+ ---> Running in 801cff50a6b1
+ ---> a30dcbda54e4
+Removing intermediate container 801cff50a6b1
+Step 10/19 : COPY --from=openfoam /opt/openfoam5 /opt/openfoam5/
+ ---> e901c5c68a2c
+Step 11/19 : USER precice
+ ---> Running in da87bd2291e1
+ ---> 40eb00cb0f37
+Removing intermediate container da87bd2291e1
+Step 12/19 : SHELL /bin/bash -c
+ ---> Running in 4f6ea6a7602d
+ ---> e77a6a1a133c
+Removing intermediate container 4f6ea6a7602d
+Step 13/19 : WORKDIR /home/precice
+ ---> d8b8f3de74b2
+Removing intermediate container b97ef8f9fb52
+Step 14/19 : RUN mkdir -p Logs Data/Input Data/Output Data/Exchange
+ ---> Running in 48ff7647d3c2
+ ---> 7aff1a1ed686
+Removing intermediate container 48ff7647d3c2
+Step 15/19 : ARG adapter_branch=develop
+ ---> Running in 4467c3005f16
+ ---> 582b300d3607
+Removing intermediate container 4467c3005f16
+Step 16/19 : RUN git clone  --branch $adapter_branch https://github.com/precice/openfoam-adapter.git
+ ---> Running in 0b1bec81d1e2
+[91mCloning into 'openfoam-adapter'...
+[0m ---> ae1700c55248
+Removing intermediate container 0b1bec81d1e2
+Step 17/19 : WORKDIR /home/precice/openfoam-adapter
+ ---> be2708da4655
+Removing intermediate container efa197722a2c
+Step 18/19 : RUN . /opt/openfoam5/etc/bashrc && ./Allwmake && cp wmake.log Allwmake.log ldd.log $HOME/Logs
+ ---> Running in b941b36463f1
+Building the OpenFOAM adapter for preCICE...
+
+Current OpenFOAM environment:
+  WM_PROJECT = OpenFOAM
+  WM_PROJECT_VERSION = 5.0
+
+The adapter will be built into:
+  ADAPTER_TARGET_DIR    = /home/precice/OpenFOAM/root-5.0/platforms/linux64GccDPInt32Opt/lib
+
+The following building options will be used:
+  ADAPTER_PREP_FLAGS    = -DADAPTER_DEBUG_MODE
+  ADAPTER_WMAKE_OPTIONS = 
+
+Dependencies (preCICE) will be located using the following environment variables:
+  ADAPTER_PRECICE_ROOT  = /home/precice/precice
+      preCICE dependencies: not specified (ok if preCICE is built as a shared library)
+  ADAPTER_PKG_CONFIG_CFLAGS       = -I/home/precice/precice-install/include
+  ADAPTER_PKG_CONFIG_LIBS         = -L/home/precice/precice-install/lib -lprecice
+  ADAPTER_GLOBAL_CPLUS_INC_PATHS  = -I/usr/include/eigen3 
+  ADAPTER_GLOBAL_LD_LIBRARY_PATHS = -L/opt/ThirdParty-5.0/platforms/linux64Gcc/gperftools-svn/lib -L/opt/openfoam5/platforms/linux64GccDPInt32Opt/lib/openmpi-system -L/opt/ThirdParty-5.0/platforms/linux64GccDPInt32/lib/openmpi-system -L/usr/lib/openmpi/lib -L/home/precice/OpenFOAM/root-5.0/platforms/linux64GccDPInt32Opt/lib -L/opt/site/5.0/platforms/linux64GccDPInt32Opt/lib -L/opt/openfoam5/platforms/linux64GccDPInt32Opt/lib -L/opt/ThirdParty-5.0/platforms/linux64GccDPInt32/lib -L/opt/openfoam5/platforms/linux64GccDPInt32Opt/lib/dummy -L/home/precice/precice-install/lib -L/petsc/petsc-3.12.5/arch-linux2-c-debug/lib 
+  ADAPTER_GLOBAL_LIBRARY_PATHS    = -L/home/precice/precice-install/lib 
+
+Building with WMake (see the wmake.log log file)...
+
+=== OK: Building completed successfully! ===
+Next step: Run an example from the tutorials/ directory.
+ ---> 2540fd687dc7
+Removing intermediate container b941b36463f1
+Step 19/19 : ENV LD_LIBRARY_PATH "/usr/lib:${LD_LIBRARY_PATH}"
+ ---> Running in cb7a90c60627
+ ---> 076b9fe2cf4c
+Removing intermediate container cb7a90c60627
+Successfully built 076b9fe2cf4c
+Successfully tagged precice/openfoam-adapter-ubuntu1604.home-develop:latest
+Building openfoam-adapter image with the following features: {'os': 'ubuntu1604', 'installation': 'home'}
+EXECUTING: docker build --network=host --file adapters/Dockerfile.openfoam-adapter --tag precice/openfoam-adapter-ubuntu1604.home-develop --build-arg branch=develop --build-arg adapter_branch=develop --build-arg from=precice/precice-ubuntu1604.home-develop .
+travis_time:end:017c2a72:start=1605101896346233747,finish=1605102154634282246,duration=258288048499,event=script[0K[32;1mThe command "python build_adapter.py --dockerfile adapters/Dockerfile.openfoam-adapter --operating-system ubuntu1604 --precice-installation home --docker-username $DOCKER_USERNAME" exited with 0.[0m
+travis_time:start:0d25a12c[0K$ python push.py --adapter adapters/Dockerfile.openfoam-adapter
+Cloning into 'precice_st_output'...
