@@ -1,0 +1,945 @@
+travis_fold:start:worker_info[0K[33;1mWorker information[0m
+hostname: 063ccdc0-d2ba-4bc4-be26-643d6cf13ea0@1.worker-org-84d9455bb7-pwksk.gce-production-3
+version: v6.2.20-1-g3a987d6 https://github.com/travis-ci/worker/tree/3a987d61ed169c9539ad435d1a9b5f2d8c6ce4a6
+instance: travis-job-2acd0a74-0c75-49ce-a4e9-6230ff76e545 travis-ci-ubuntu-1804-1593521679-ca42795e (via amqp)
+startup: 6.210825485s
+travis_fold:end:worker_info[0Ktravis_time:start:01043c36[0Ktravis_time:end:01043c36:start=1605220154590352641,finish=1605220154772164840,duration=181812199,event=no_world_writable_dirs[0Ktravis_time:start:2c03e6bc[0Ktravis_time:end:2c03e6bc:start=1605220154775237220,finish=1605220154778443863,duration=3206643,event=setup_filter[0Ktravis_time:start:1ea03314[0Ktravis_time:end:1ea03314:start=1605220154782272437,finish=1605220154793553189,duration=11280752,event=agent[0Ktravis_time:start:155027e0[0Ktravis_time:end:155027e0:start=1605220154795895770,finish=1605220154797633912,duration=1738142,event=check_unsupported[0Ktravis_time:start:08643af7[0Ktravis_fold:start:system_info[0K[33;1mBuild system information[0m
+Build language: python
+Build group: stable
+Build dist: bionic
+Build id: 743196728
+Job id: 743196768
+Runtime kernel version: 5.3.0-1029-gcp
+travis-build version: 07c42db3
+[34m[1mBuild image provisioning date and time[0m
+Tue Jun 30 13:35:43 UTC 2020
+[34m[1mOperating System Details[0m
+Distributor ID:	Ubuntu
+Description:	Ubuntu 18.04.4 LTS
+Release:	18.04
+Codename:	bionic
+[34m[1mSystemd Version[0m
+systemd 237
+[34m[1mCookbooks Version[0m
+3f92a99 https://github.com/travis-ci/travis-cookbooks/tree/3f92a99
+[34m[1mgit version[0m
+git version 2.27.0
+[34m[1mbash version[0m
+GNU bash, version 4.4.20(1)-release (x86_64-pc-linux-gnu)
+[34m[1mgcc version[0m
+gcc (Ubuntu 7.5.0-3ubuntu1~18.04) 7.5.0
+[34m[1mdocker version[0m
+Client:
+ Version:           18.06.0-ce
+ API version:       1.38
+ Go version:        go1.10.3
+ Git commit:        0ffa825
+ Built:             Wed Jul 18 19:09:54 2018
+ OS/Arch:           linux/amd64
+ Experimental:      false
+
+Server:
+ Engine:
+  Version:          18.06.0-ce
+  API version:      1.38 (minimum version 1.12)
+  Go version:       go1.10.3
+  Git commit:       0ffa825
+  Built:            Wed Jul 18 19:07:56 2018
+  OS/Arch:          linux/amd64
+  Experimental:     false
+[34m[1mclang version[0m
+clang version 7.0.0 (tags/RELEASE_700/final)
+[34m[1mjq version[0m
+jq-1.5
+[34m[1mbats version[0m
+Bats 0.4.0
+[34m[1mshellcheck version[0m
+0.7.0
+[34m[1mshfmt version[0m
+v2.6.3
+[34m[1mccache version[0m
+3.4.1
+[34m[1mcmake version[0m
+cmake version 3.12.4
+[34m[1mheroku version[0m
+heroku/7.42.1 linux-x64 node-v12.16.2
+[34m[1mimagemagick version[0m
+Version: ImageMagick 6.9.7-4 Q16 x86_64 20170114 http://www.imagemagick.org
+[34m[1mmd5deep version[0m
+4.4
+[34m[1mmercurial version[0m
+version 4.8
+[34m[1mmysql version[0m
+mysql  Ver 14.14 Distrib 5.7.30, for Linux (x86_64) using  EditLine wrapper
+[34m[1mopenssl version[0m
+OpenSSL 1.1.1  11 Sep 2018
+[34m[1mpacker version[0m
+1.3.3
+[34m[1mpostgresql client version[0m
+psql (PostgreSQL) 11.8 (Ubuntu 11.8-1.pgdg18.04+1)
+[34m[1mragel version[0m
+Ragel State Machine Compiler version 6.10 March 2017
+[34m[1msudo version[0m
+1.8.21p2
+[34m[1mgzip version[0m
+gzip 1.6
+[34m[1mzip version[0m
+Zip 3.0
+[34m[1mvim version[0m
+VIM - Vi IMproved 8.0 (2016 Sep 12, compiled Mar 18 2020 18:29:15)
+[34m[1miptables version[0m
+iptables v1.6.1
+[34m[1mcurl version[0m
+curl 7.58.0 (x86_64-pc-linux-gnu) libcurl/7.58.0 OpenSSL/1.1.1 zlib/1.2.11 libidn2/2.0.4 libpsl/0.19.1 (+libidn2/2.0.4) nghttp2/1.30.0 librtmp/2.3
+[34m[1mwget version[0m
+GNU Wget 1.19.4 built on linux-gnu.
+[34m[1mrsync version[0m
+rsync  version 3.1.2  protocol version 31
+[34m[1mgimme version[0m
+v1.5.4
+[34m[1mnvm version[0m
+0.35.3
+[34m[1mperlbrew version[0m
+/home/travis/perl5/perlbrew/bin/perlbrew  - App::perlbrew/0.87
+[34m[1mphpenv version[0m
+rbenv 1.1.2-30-gc879cb0
+[34m[1mrvm version[0m
+rvm 1.29.10 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
+[34m[1mdefault ruby version[0m
+ruby 2.6.5p114 (2019-10-01 revision 67812) [x86_64-linux]
+[34m[1mElasticSearch version[0m
+5.5.0
+[34m[1mInstalled Firefox version[0m
+firefox 63.0.1
+[34m[1mMongoDB version[0m
+MongoDB 4.0.19
+[34m[1mPhantomJS version[0m
+2.1.1
+[34m[1mPre-installed PostgreSQL versions[0m
+9.3.25
+9.4.26
+9.5.22
+9.6.18
+[34m[1mRedis version[0m
+redis-server 6.0.5
+[34m[1mPre-installed Go versions[0m
+1.11.1
+[34m[1mant version[0m
+Apache Ant(TM) version 1.10.5 compiled on March 28 2019
+[34m[1mmvn version[0m
+Apache Maven 3.6.3 (cecedd343002696d0abb50b32b541b8a6ba2883f)
+[34m[1mgradle version[0m
+Gradle 5.1.1!
+[34m[1mlein version[0m
+Leiningen 2.9.3 on Java 11.0.2 OpenJDK 64-Bit Server VM
+[34m[1mPre-installed Node.js versions[0m
+v10.16.0
+v10.21.0
+v11.15.0
+v12.13.1
+v12.18.1
+v13.3.0
+v4.9.1
+v6.17.1
+v8.16.2
+v8.17.0
+v8.9
+[34m[1mphpenv versions[0m
+  system
+  7.1
+  7.1.33
+  7.2
+* 7.2.27 (set by /home/travis/.phpenv/version)
+  7.3
+  7.3.14
+  7.4
+  7.4.2
+  hhvm
+  hhvm-stable
+[34m[1mcomposer --version[0m
+Composer version 1.9.2 2020-01-14 16:30:31
+[34m[1mPre-installed Ruby versions[0m
+ruby-2.4.9
+ruby-2.5.3
+ruby-2.5.7
+ruby-2.6.5
+ruby-2.7.0
+travis_fold:end:system_info[0K
+travis_time:end:08643af7:start=1605220154800224764,finish=1605220154806376555,duration=6151791,event=show_system_info[0Ktravis_time:start:22de42da[0Ktravis_time:end:22de42da:start=1605220154808828738,finish=1605220154823240689,duration=14411951,event=rm_riak_source[0Ktravis_time:start:08003b50[0Ktravis_time:end:08003b50:start=1605220154826798983,finish=1605220154831503787,duration=4704804,event=fix_rwky_redis[0Ktravis_time:start:0cb33805[0Ktravis_time:end:0cb33805:start=1605220154839173800,finish=1605220155371839097,duration=532665297,event=wait_for_network[0Ktravis_time:start:132f6ac6[0Ktravis_time:end:132f6ac6:start=1605220155376618859,finish=1605220155616449108,duration=239830249,event=update_apt_keys[0Ktravis_time:start:0cb7c4e0[0Ktravis_time:end:0cb7c4e0:start=1605220155621174166,finish=1605220155675276705,duration=54102539,event=fix_hhvm_source[0Ktravis_time:start:0819e161[0Ktravis_time:end:0819e161:start=1605220155679588288,finish=1605220155683019560,duration=3431272,event=update_mongo_arch[0Ktravis_time:start:0010f88a[0Ktravis_time:end:0010f88a:start=1605220155686775918,finish=1605220155728921054,duration=42145136,event=fix_sudo_enabled_trusty[0Ktravis_time:start:1f3e4cd4[0Ktravis_time:end:1f3e4cd4:start=1605220155733656757,finish=1605220155736321049,duration=2664292,event=update_glibc[0Ktravis_time:start:3189ec10[0Ktravis_time:end:3189ec10:start=1605220155740029986,finish=1605220155747972765,duration=7942779,event=clean_up_path[0Ktravis_time:start:01b6f372[0Ktravis_time:end:01b6f372:start=1605220155751786697,finish=1605220155760269883,duration=8483186,event=fix_resolv_conf[0Ktravis_time:start:0abec469[0Ktravis_time:end:0abec469:start=1605220155764235910,finish=1605220155789356607,duration=25120697,event=fix_etc_hosts[0Ktravis_time:start:06077208[0Ktravis_time:end:06077208:start=1605220155795581491,finish=1605220155803551375,duration=7969884,event=fix_mvn_settings_xml[0Ktravis_time:start:0aadb7e0[0Ktravis_time:end:0aadb7e0:start=1605220155807983020,finish=1605220155817147653,duration=9164633,event=no_ipv6_localhost[0Ktravis_time:start:02bc5573[0Ktravis_time:end:02bc5573:start=1605220155821127306,finish=1605220155823136249,duration=2008943,event=fix_etc_mavenrc[0Ktravis_time:start:00cabfdb[0Ktravis_time:end:00cabfdb:start=1605220155826808935,finish=1605220155829461088,duration=2652153,event=fix_wwdr_certificate[0Ktravis_time:start:080a7854[0Ktravis_time:end:080a7854:start=1605220155833271433,finish=1605220155879132976,duration=45861543,event=put_localhost_first[0Ktravis_time:start:0e673357[0Ktravis_time:end:0e673357:start=1605220155883231776,finish=1605220155886754468,duration=3522692,event=home_paths[0Ktravis_time:start:0513791e[0Ktravis_time:end:0513791e:start=1605220155890345643,finish=1605220155902698842,duration=12353199,event=disable_initramfs[0Ktravis_time:start:02972ede[0Ktravis_time:end:02972ede:start=1605220155906937074,finish=1605220156059224276,duration=152287202,event=disable_ssh_roaming[0Ktravis_time:start:1a20c6e0[0Ktravis_time:end:1a20c6e0:start=1605220156062782616,finish=1605220156065499979,duration=2717363,event=debug_tools[0Ktravis_time:start:0b6f503c[0Ktravis_time:end:0b6f503c:start=1605220156069137762,finish=1605220156072638131,duration=3500369,event=uninstall_oclint[0Ktravis_time:start:002105b9[0Ktravis_time:end:002105b9:start=1605220156076231122,finish=1605220156078982267,duration=2751145,event=rvm_use[0Ktravis_time:start:1057019c[0Ktravis_time:end:1057019c:start=1605220156082736452,finish=1605220156090831876,duration=8095424,event=rm_etc_boto_cfg[0Ktravis_time:start:07fbf4bc[0Ktravis_time:end:07fbf4bc:start=1605220156094170646,finish=1605220156096591118,duration=2420472,event=rm_oraclejdk8_symlink[0Ktravis_time:start:086b0b90[0Ktravis_time:end:086b0b90:start=1605220156100174016,finish=1605220156193279318,duration=93105302,event=enable_i386[0Ktravis_time:start:1de882f8[0Ktravis_time:end:1de882f8:start=1605220156197989479,finish=1605220156201845989,duration=3856510,event=update_rubygems[0Ktravis_time:start:01525606[0Ktravis_time:end:01525606:start=1605220156205296127,finish=1605220156997020424,duration=791724297,event=ensure_path_components[0Ktravis_time:start:11827b78[0Ktravis_time:end:11827b78:start=1605220157001002891,finish=1605220157003814485,duration=2811594,event=redefine_curl[0Ktravis_time:start:046e6e70[0Ktravis_time:end:046e6e70:start=1605220157008611613,finish=1605220157122401367,duration=113789754,event=nonblock_pipe[0Ktravis_time:start:21adea28[0Ktravis_time:end:21adea28:start=1605220157126260627,finish=1605220163161140480,duration=6034879853,event=apt_get_update[0Ktravis_time:start:06e3244e[0Ktravis_time:end:06e3244e:start=1605220163165410561,finish=1605220163168079642,duration=2669081,event=deprecate_xcode_64[0Ktravis_time:start:1b1b9a26[0Ktravis_time:end:1b1b9a26:start=1605220163172034307,finish=1605220165962750401,duration=2790716094,event=update_heroku[0Ktravis_time:start:27d575c9[0Ktravis_time:end:27d575c9:start=1605220165967573993,finish=1605220165969914850,duration=2340857,event=shell_session_update[0Ktravis_time:start:22c4a066[0Ktravis_fold:start:docker_mtu_and_registry_mirrors[0Ktravis_fold:end:docker_mtu_and_registry_mirrors[0Ktravis_time:end:22c4a066:start=1605220165974720363,finish=1605220168373661235,duration=2398940872,event=set_docker_mtu_and_registry_mirrors[0Ktravis_time:start:0988da58[0Ktravis_fold:start:resolvconf[0Ktravis_fold:end:resolvconf[0Ktravis_time:end:0988da58:start=1605220168379099253,finish=1605220168453055836,duration=73956583,event=resolvconf[0Ktravis_time:start:0e20fd7f[0Ktravis_time:end:0e20fd7f:start=1605220168457440970,finish=1605220168615289553,duration=157848583,event=maven_central_mirror[0Ktravis_time:start:02fa9afb[0Ktravis_time:end:02fa9afb:start=1605220168620090960,finish=1605220168713409063,duration=93318103,event=maven_https[0Ktravis_time:start:02f86323[0Ktravis_fold:start:services[0Ktravis_time:start:2e771455[0K$ sudo systemctl start docker
+travis_time:end:2e771455:start=1605220168726403232,finish=1605220168738996458,duration=12593226,event=prepare[0Ktravis_fold:end:services[0Ktravis_time:end:2e771455:start=1605220168726403232,finish=1605220171746010960,duration=3019607728,event=services[0Ktravis_time:start:0a825488[0Ktravis_time:end:0a825488:start=1605220171751071607,finish=1605220171753408439,duration=2336832,event=fix_ps4[0Ktravis_time:start:1cf8640e[0K
+travis_fold:start:git.checkout[0Ktravis_time:start:0f73e958[0K$ git clone --depth=50 --branch=develop https://github.com/precice/systemtests.git precice/systemtests
+Cloning into 'precice/systemtests'...
+travis_time:end:0f73e958:start=1605220171760571709,finish=1605220179673458409,duration=7912886700,event=checkout[0K$ cd precice/systemtests
+$ git checkout -qf 565cab15fcce0197298d64c5da6b406207d721b0
+travis_fold:end:git.checkout[0K
+travis_time:end:0f73e958:start=1605220171760571709,finish=1605220181041652939,duration=9281081230,event=checkout[0Ktravis_time:start:0e0a6cb2[0K
+[33;1mSetting environment variables from repository settings[0m
+$ export DOCKER_PASSWORD=[secure]
+$ export PRECICE_BOT_EMAIL=[secure]
+$ export GH_TOKEN=[secure]
+$ export TRAVIS_ACCESS_TOKEN=[secure]
+$ export DOCKER_USERNAME=precice
+
+travis_time:end:0e0a6cb2:start=1605220181046766158,finish=1605220181056091535,duration=9325377,event=env[0Ktravis_time:start:04e8cbf6[0K$ source ~/virtualenv/python3.8/bin/activate
+travis_time:end:04e8cbf6:start=1605220181060487937,finish=1605220181067138820,duration=6650883,event=[0K$ python --version
+Python 3.8.1
+$ pip --version
+pip 20.1.1 from /home/travis/virtualenv/python3.8.1/lib/python3.8/site-packages/pip (python 3.8)
+travis_fold:start:install[0Ktravis_time:start:1a9d1c4a[0K$ pip install Jinja2
+Collecting Jinja2
+  Downloading Jinja2-2.11.2-py2.py3-none-any.whl (125 kB)
+Collecting MarkupSafe>=0.23
+  Downloading MarkupSafe-1.1.1-cp38-cp38-manylinux1_x86_64.whl (32 kB)
+Installing collected packages: MarkupSafe, Jinja2
+Successfully installed Jinja2-2.11.2 MarkupSafe-1.1.1
+travis_time:end:1a9d1c4a:start=1605220181576398666,finish=1605220182671649467,duration=1095250801,event=install[0Ktravis_fold:end:install[0Ktravis_time:start:017f6ee3[0K$ python system_testing.py -s bindings -v
+Sending build context to Docker daemon  5.632kB
+Step 1/34 : ARG from=precice/precice-ubuntu1804.home-develop
+Step 2/34 : FROM $from
+latest: Pulling from precice/precice-ubuntu1804.package-develop
+171857c49d0f: Pulling fs layer
+419640447d26: Pulling fs layer
+61e52f862619: Pulling fs layer
+130b600fe724: Pulling fs layer
+4d02c8b73a27: Pulling fs layer
+248c64f8910e: Pulling fs layer
+51a9538ed096: Pulling fs layer
+087b40613f6d: Pulling fs layer
+c63f0542070a: Pulling fs layer
+7835c10425cf: Pulling fs layer
+130b600fe724: Waiting
+4d02c8b73a27: Waiting
+248c64f8910e: Waiting
+51a9538ed096: Waiting
+087b40613f6d: Waiting
+c63f0542070a: Waiting
+7835c10425cf: Waiting
+419640447d26: Download complete
+61e52f862619: Verifying Checksum
+61e52f862619: Download complete
+4d02c8b73a27: Verifying Checksum
+4d02c8b73a27: Download complete
+171857c49d0f: Verifying Checksum
+171857c49d0f: Download complete
+248c64f8910e: Verifying Checksum
+248c64f8910e: Download complete
+51a9538ed096: Verifying Checksum
+51a9538ed096: Download complete
+c63f0542070a: Verifying Checksum
+c63f0542070a: Download complete
+087b40613f6d: Verifying Checksum
+087b40613f6d: Download complete
+7835c10425cf: Verifying Checksum
+7835c10425cf: Download complete
+171857c49d0f: Pull complete
+419640447d26: Pull complete
+61e52f862619: Pull complete
+130b600fe724: Verifying Checksum
+130b600fe724: Download complete
+130b600fe724: Pull complete
+4d02c8b73a27: Pull complete
+248c64f8910e: Pull complete
+51a9538ed096: Pull complete
+087b40613f6d: Pull complete
+c63f0542070a: Pull complete
+7835c10425cf: Pull complete
+Digest: sha256:819f3dcb0bb7b77a33f9493e2a64b205199f53b9976b07c134383f0a19de2747
+Status: Downloaded newer image for precice/precice-ubuntu1804.package-develop:latest
+ ---> f4e2c2dd983d
+Step 3/34 : USER root
+ ---> Running in 3ffa59daa372
+Removing intermediate container 3ffa59daa372
+ ---> 95ff85fc911b
+Step 4/34 : ENV USER=root
+ ---> Running in 8f3c666fdaac
+Removing intermediate container 8f3c666fdaac
+ ---> 939e432df169
+Step 5/34 : ENV FORTRAN=gfortran
+ ---> Running in 115b40aa941c
+Removing intermediate container 115b40aa941c
+ ---> 26916b991c6c
+Step 6/34 : RUN apt-get -qq update && apt-get -qq install     python3-pip &&     rm -rf /var/lib/apt/lists/*
+ ---> Running in 8af3d7b9574d
+Removing intermediate container 8af3d7b9574d
+ ---> 05bf62747fc6
+Step 7/34 : USER precice
+ ---> Running in f10f2b3bab4a
+Removing intermediate container f10f2b3bab4a
+ ---> d47a2ffabb8a
+Step 8/34 : RUN pip3 install --user --upgrade pip  # Use latest pip version. See https://github.com/precice/python-bindings#installing-the-package
+ ---> Running in 97c121ad7520
+[91mWARNING: pip is being invoked by an old script wrapper. This will fail in a future version of pip.
+Please see https://github.com/pypa/pip/issues/5599 for advice on fixing the underlying issue.
+To avoid this problem you can invoke Python with '-m pip' instead of running pip directly.
+[0mRequirement already up-to-date: pip in ./.local/lib/python3.6/site-packages (20.2.4)
+Removing intermediate container 97c121ad7520
+ ---> 64fd580e654e
+Step 9/34 : ARG branch=develop
+ ---> Running in d02985bb9028
+Removing intermediate container d02985bb9028
+ ---> 38a931c8eb68
+Step 10/34 : WORKDIR /home/precice
+ ---> Running in db63a4b7ac25
+Removing intermediate container db63a4b7ac25
+ ---> cdd139c912c9
+Step 11/34 : RUN git clone --branch $branch https://github.com/precice/python-bindings.git
+ ---> Running in bf1de49a9820
+[91mCloning into 'python-bindings'...
+[0mRemoving intermediate container bf1de49a9820
+ ---> 2ec6db7f585e
+Step 12/34 : WORKDIR /home/precice/python-bindings
+ ---> Running in 01fea75d6b86
+Removing intermediate container 01fea75d6b86
+ ---> 06c2de5b5015
+Step 13/34 : RUN pip3 install --user .
+ ---> Running in 735edbe4ed64
+[91mWARNING: pip is being invoked by an old script wrapper. This will fail in a future version of pip.
+Please see https://github.com/pypa/pip/issues/5599 for advice on fixing the underlying issue.
+To avoid this problem you can invoke Python with '-m pip' instead of running pip directly.
+[0mProcessing /home/precice/python-bindings
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+    Preparing wheel metadata: started
+    Preparing wheel metadata: finished with status 'done'
+Requirement already satisfied: numpy in /usr/lib/python3/dist-packages (from pyprecice==2.1.1.1) (1.13.3)
+Collecting mpi4py
+  Downloading mpi4py-3.0.3.tar.gz (1.4 MB)
+Building wheels for collected packages: pyprecice, mpi4py
+  Building wheel for pyprecice (PEP 517): started
+  Building wheel for pyprecice (PEP 517): finished with status 'done'
+  Created wheel for pyprecice: filename=pyprecice-2.1.1.1-cp36-cp36m-linux_x86_64.whl size=735298 sha256=d9227ac4f62217a7fe9588ebb51d156cada7f18764263a69e35d24778ce6a72a
+  Stored in directory: /home/precice/.cache/pip/wheels/85/7b/7f/f35133fddbce54c9da4ecf1713a6c5151eb30b0a3d88de72df
+  Building wheel for mpi4py (setup.py): started
+  Building wheel for mpi4py (setup.py): finished with status 'done'
+  Created wheel for mpi4py: filename=mpi4py-3.0.3-cp36-cp36m-linux_x86_64.whl size=2076051 sha256=22bd5f8b2e4f642d5ba1e0274b2f08e8db1b3da1b21db7a1faca6fc4c12faf24
+  Stored in directory: /home/precice/.cache/pip/wheels/d6/73/83/ad9dd3ebae512829ab3f21657f76403dc4aa6649e1118c9369
+Successfully built pyprecice mpi4py
+Installing collected packages: mpi4py, pyprecice
+Successfully installed mpi4py-3.0.3 pyprecice-2.1.1.1
+Removing intermediate container 735edbe4ed64
+ ---> 0038e67a3f30
+Step 14/34 : WORKDIR /home/precice/python-bindings/solverdummy
+ ---> Running in 768e7ae9f430
+Removing intermediate container 768e7ae9f430
+ ---> 001d8cedaf92
+Step 15/34 : RUN python3 solverdummy.py precice-config.xml SolverOne MeshOne & python3 solverdummy.py precice-config.xml SolverTwo MeshTwo
+ ---> Running in 88897179cbb2
+--------------------------------------------------------------------------
+[[19190,1],0]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: travis-job-2acd0a74-0c75-49ce-a4e9-6230ff76e545
+
+Another transport will be used instead, although this may result in
+lower performance.
+
+NOTE: You can disable this warning by setting the MCA parameter
+btl_base_warn_component_unused to 0.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+[[19191,1],0]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: travis-job-2acd0a74-0c75-49ce-a4e9-6230ff76e545
+
+Another transport will be used instead, although this may result in
+lower performance.
+
+NOTE: You can disable this warning by setting the MCA parameter
+btl_base_warn_component_unused to 0.
+--------------------------------------------------------------------------
+preCICE:[0m This is preCICE version 2.1.1
+preCICE:[0m Revision info: v2.1.1-77-g641e5057
+preCICE:[0m Configuring preCICE with configuration "precice-config.xml"
+preCICE:[0m I am participant "SolverTwo"
+preCICE:[0m This is preCICE version 2.1.1
+preCICE:[0m Revision info: v2.1.1-77-g641e5057
+preCICE:[0m Configuring preCICE with configuration "precice-config.xml"
+preCICE:[0m I am participant "SolverOne"
+preCICE:[0m Setting up master communication to coupling partner/s
+preCICE:[0m Setting up master communication to coupling partner/s
+preCICE:[0m Masters are connected
+preCICE:[0m Setting up preliminary slaves communication to coupling partner/s
+preCICE:[0m Prepare partition for mesh MeshOne
+preCICE:[0m Gather mesh MeshOne
+preCICE:[0m Send global mesh MeshOne
+preCICE:[0m Setting up slaves communication to coupling partner/s
+preCICE:[0m Masters are connected
+preCICE:[0m Setting up preliminary slaves communication to coupling partner/s
+preCICE:[0m Receive global mesh MeshOne
+preCICE:[0m Prepare partition for mesh MeshTwo
+preCICE:[0m Setting up slaves communication to coupling partner/s
+preCICE:[0m Slaves are connected
+preCICE:[0m Slaves are connected
+preCICE:[0m it 1 of 2 | dt# 1 of 2 | t 0 | dt 1 | max dt 1 | ongoing yes | dt complete no | write-iteration-checkpoint | 
+preCICE:[0m Compute read mapping from mesh "MeshOne" to mesh "MeshTwo".
+preCICE:[0m Mapping distance min:0 max:0 avg: 0 var: 0 cnt: 3
+preCICE:[0m it 1 of 2 | dt# 1 of 2 | t 0 | dt 1 | max dt 1 | ongoing yes | dt complete no | write-iteration-checkpoint | 
+preCICE:[0m Compute write mapping from mesh "MeshTwo" to mesh "MeshOne".
+preCICE:[0m Mapping distance min:0 max:0 avg: 0 var: 0 cnt: 3
+preCICE:[0m min iteration convergence measure: #it = 1 of 5, conv = false
+preCICE:[0m it 2 of 2 | dt# 1 of 2 | t 0 | dt 1 | max dt 1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+preCICE:[0m it 2 of 2 | dt# 1 of 2 | t 0 | dt 1 | max dt 1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+preCICE:[0m min iteration convergence measure: #it = 2 of 5, conv = false
+preCICE:[0m Time window completed
+preCICE:[0m it 1 of 2 | dt# 2 of 2 | t 1 | dt 1 | max dt 1 | ongoing yes | dt complete yes | write-iteration-checkpoint | 
+preCICE:[0m Time window completed
+preCICE:[0m it 1 of 2 | dt# 2 of 2 | t 1 | dt 1 | max dt 1 | ongoing yes | dt complete yes | write-iteration-checkpoint | 
+preCICE:[0m min iteration convergence measure: #it = 1 of 5, conv = false
+preCICE:[0m it 2 of 2 | dt# 2 of 2 | t 1 | dt 1 | max dt 1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+preCICE:[0m it 2 of 2 | dt# 2 of 2 | t 1 | dt 1 | max dt 1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+preCICE:[0m min iteration convergence measure: #it = 2 of 5, conv = false
+preCICE:[0m Time window completed
+preCICE:[0m it 1 of 2 | dt# 3 of 2 | t 2 | dt 1 | max dt 1 | ongoing no | dt complete yes | 
+preCICE:[0m Time window completed
+preCICE:[0m it 1 of 2 | dt# 3 of 2 | t 2 | dt 1 | max dt 1 | ongoing no | dt complete yes | 
+DUMMY: Writing iteration checkpoint
+DUMMY: Advancing in time
+DUMMY: Reading iteration checkpoint
+DUMMY: Advancing in time
+DUMMY: Writing iteration checkpoint
+DUMMY: Advancing in time
+DUMMY: Reading iteration checkpoint
+DUMMY: Advancing in time
+DUMMY: Closing python solver dummy...
+DUMMY: Writing iteration checkpoint
+DUMMY: Advancing in time
+DUMMY: Reading iteration checkpoint
+DUMMY: Advancing in time
+DUMMY: Writing iteration checkpoint
+DUMMY: Advancing in time
+DUMMY: Reading iteration checkpoint
+DUMMY: Advancing in time
+DUMMY: Closing python solver dummy...
+Removing intermediate container 88897179cbb2
+ ---> 0c7f668f1b6d
+Step 16/34 : WORKDIR $PRECICE_ROOT/examples/solverdummies/c
+ ---> Running in b32d97a632f1
+Removing intermediate container b32d97a632f1
+ ---> df6897ce9442
+Step 17/34 : RUN cmake . && make
+ ---> Running in ae15e414b659
+-- The C compiler identification is GNU 7.5.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Looking for pthread_create
+-- Looking for pthread_create - not found
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE  
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/precice/precice/examples/solverdummies/c
+Scanning dependencies of target solverdummy
+[ 50%] Building C object CMakeFiles/solverdummy.dir/solverdummy.c.o
+[100%] Linking C executable solverdummy
+[100%] Built target solverdummy
+Removing intermediate container ae15e414b659
+ ---> ed8df3a50240
+Step 18/34 : RUN ./solverdummy ../precice-config.xml SolverOne MeshOne & ./solverdummy ../precice-config.xml SolverTwo MeshTwo
+ ---> Running in 4994504eaffe
+--------------------------------------------------------------------------
+[[19191,1],0]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: travis-job-2acd0a74-0c75-49ce-a4e9-6230ff76e545
+
+Another transport will be used instead, although this may result in
+lower performance.
+
+NOTE: You can disable this warning by setting the MCA parameter
+btl_base_warn_component_unused to 0.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+[[19190,1],0]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: travis-job-2acd0a74-0c75-49ce-a4e9-6230ff76e545
+
+Another transport will be used instead, although this may result in
+lower performance.
+
+NOTE: You can disable this warning by setting the MCA parameter
+btl_base_warn_component_unused to 0.
+--------------------------------------------------------------------------
+DUMMY: Running solver dummy with preCICE config file "../precice-config.xml", participant name "SolverTwo", and mesh name "MeshTwo".
+preCICE:[0m This is preCICE version 2.1.1
+preCICE:[0m Revision info: v2.1.1-77-g641e5057
+preCICE:[0m Configuring preCICE with configuration "../precice-config.xml"
+preCICE:[0m I am participant "SolverTwo"
+preCICE:[0m Setting up master communication to coupling partner/s
+DUMMY: Running solver dummy with preCICE config file "../precice-config.xml", participant name "SolverOne", and mesh name "MeshOne".
+preCICE:[0m This is preCICE version 2.1.1
+preCICE:[0m Revision info: v2.1.1-77-g641e5057
+preCICE:[0m Configuring preCICE with configuration "../precice-config.xml"
+preCICE:[0m I am participant "SolverOne"
+preCICE:[0m Setting up master communication to coupling partner/s
+preCICE:[0m Masters are connected
+preCICE:[0m Setting up preliminary slaves communication to coupling partner/s
+preCICE:[0m Prepare partition for mesh MeshOne
+preCICE:[0m Masters are connected
+preCICE:[0m Gather mesh MeshOne
+preCICE:[0m Send global mesh MeshOne
+preCICE:[0m Setting up preliminary slaves communication to coupling partner/s
+preCICE:[0m Setting up slaves communication to coupling partner/s
+preCICE:[0m Receive global mesh MeshOne
+preCICE:[0m Prepare partition for mesh MeshTwo
+preCICE:[0m Setting up slaves communication to coupling partner/s
+preCICE:[0m Slaves are connected
+preCICE:[0m Slaves are connected
+preCICE:[0m it 1 of 2 | dt# 1 of 2 | t 0 | dt 1 | max dt 1 | ongoing yes | dt complete no | write-iteration-checkpoint | 
+preCICE:[0m Compute read mapping from mesh "MeshOne" to mesh "MeshTwo".
+preCICE:[0m Mapping distance min:0 max:0 avg: 0 var: 0 cnt: 3
+preCICE:[0m it 1 of 2 | dt# 1 of 2 | t 0 | dt 1 | max dt 1 | ongoing yes | dt complete no | write-iteration-checkpoint | 
+DUMMY: Writing iteration checkpoint 
+preCICE:[0m Compute write mapping from mesh "MeshTwo" to mesh "MeshOne".
+preCICE:[0m Mapping distance min:0 max:0 avg: 0 var: 0 cnt: 3
+preCICE:[0m min iteration convergence measure: #it = 1 of 5, conv = false
+DUMMY: Writing iteration checkpoint 
+preCICE:[0m it 2 of 2 | dt# 1 of 2 | t 0 | dt 1 | max dt 1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+preCICE:[0m it 2 of 2 | dt# 1 of 2 | t 0 | dt 1 | max dt 1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+DUMMY: Reading iteration checkpoint 
+preCICE:[0m min iteration convergence measure: #it = 2 of 5, conv = false
+DUMMY: Reading iteration checkpoint 
+preCICE:[0m Time window completed
+preCICE:[0m it 1 of 2 | dt# 2 of 2 | t 1 | dt 1 | max dt 1 | ongoing yes | dt complete yes | write-iteration-checkpoint | 
+preCICE:[0m Time window completed
+preCICE:[0m it 1 of 2 | dt# 2 of 2 | t 1 | dt 1 | max dt 1 | ongoing yes | dt complete yes | write-iteration-checkpoint | 
+DUMMY: Advancing in time 
+DUMMY: Writing iteration checkpoint 
+preCICE:[0m min iteration convergence measure: #it = 1 of 5, conv = false
+DUMMY: Advancing in time 
+DUMMY: Writing iteration checkpoint 
+preCICE:[0m it 2 of 2 | dt# 2 of 2 | t 1 | dt 1 | max dt 1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+preCICE:[0m it 2 of 2 | dt# 2 of 2 | t 1 | dt 1 | max dt 1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+DUMMY: Reading iteration checkpoint 
+preCICE:[0m min iteration convergence measure: #it = 2 of 5, conv = false
+DUMMY: Reading iteration checkpoint 
+preCICE:[0m Time window completed
+preCICE:[0m it 1 of 2 | dt# 3 of 2 | t 2 | dt 1 | max dt 1 | ongoing no | dt complete yes | 
+preCICE:[0m Time window completed
+preCICE:[0m it 1 of 2 | dt# 3 of 2 | t 2 | dt 1 | max dt 1 | ongoing no | dt complete yes | 
+DUMMY: Advancing in time 
+DUMMY: Closing C solver dummy... 
+DUMMY: Advancing in time 
+DUMMY: Closing C solver dummy... 
+Removing intermediate container 4994504eaffe
+ ---> 7dfa250947ad
+Step 19/34 : WORKDIR $PRECICE_ROOT/examples/solverdummies/cpp
+ ---> Running in e00813d5261b
+Removing intermediate container e00813d5261b
+ ---> 24d3895c23bf
+Step 20/34 : RUN cmake . && make
+ ---> Running in 2421cb265473
+-- The CXX compiler identification is GNU 7.5.0
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Looking for C++ include pthread.h
+-- Looking for C++ include pthread.h - found
+-- Looking for pthread_create
+-- Looking for pthread_create - not found
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE  
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/precice/precice/examples/solverdummies/cpp
+Scanning dependencies of target solverdummy
+[ 50%] Building CXX object CMakeFiles/solverdummy.dir/solverdummy.cpp.o
+[100%] Linking CXX executable solverdummy
+[100%] Built target solverdummy
+Removing intermediate container 2421cb265473
+ ---> 500b3eb55338
+Step 21/34 : RUN ./solverdummy ../precice-config.xml SolverOne MeshOne & ./solverdummy ../precice-config.xml SolverTwo MeshTwo
+ ---> Running in 5b3c82da2bdb
+--------------------------------------------------------------------------
+[[19190,1],0]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: travis-job-2acd0a74-0c75-49ce-a4e9-6230ff76e545
+
+Another transport will be used instead, although this may result in
+lower performance.
+
+NOTE: You can disable this warning by setting the MCA parameter
+btl_base_warn_component_unused to 0.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+[[19191,1],0]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: travis-job-2acd0a74-0c75-49ce-a4e9-6230ff76e545
+
+Another transport will be used instead, although this may result in
+lower performance.
+
+NOTE: You can disable this warning by setting the MCA parameter
+btl_base_warn_component_unused to 0.
+--------------------------------------------------------------------------
+DUMMY: Running solver dummy with preCICE config file "../precice-config.xml", participant name "SolverOne", and mesh name "MeshOne".
+preCICE:[0m This is preCICE version 2.1.1
+preCICE:[0m Revision info: v2.1.1-77-g641e5057
+preCICE:[0m Configuring preCICE with configuration "../precice-config.xml"
+preCICE:[0m I am participant "SolverOne"
+preCICE:[0m Setting up master communication to coupling partner/s
+DUMMY: Running solver dummy with preCICE config file "../precice-config.xml", participant name "SolverTwo", and mesh name "MeshTwo".
+preCICE:[0m This is preCICE version 2.1.1
+preCICE:[0m Revision info: v2.1.1-77-g641e5057
+preCICE:[0m Configuring preCICE with configuration "../precice-config.xml"
+preCICE:[0m I am participant "SolverTwo"
+preCICE:[0m Setting up master communication to coupling partner/s
+preCICE:[0m Masters are connected
+preCICE:[0m Masters are connected
+preCICE:[0m Setting up preliminary slaves communication to coupling partner/s
+preCICE:[0m Receive global mesh MeshOne
+preCICE:[0m Setting up preliminary slaves communication to coupling partner/s
+preCICE:[0m Prepare partition for mesh MeshOne
+preCICE:[0m Gather mesh MeshOne
+preCICE:[0m Send global mesh MeshOne
+preCICE:[0m Setting up slaves communication to coupling partner/s
+preCICE:[0m Prepare partition for mesh MeshTwo
+preCICE:[0m Setting up slaves communication to coupling partner/s
+preCICE:[0m Slaves are connected
+preCICE:[0m Slaves are connected
+preCICE:[0m it 1 of 2 | dt# 1 of 2 | t 0 | dt 1 | max dt 1 | ongoing yes | dt complete no | write-iteration-checkpoint | 
+preCICE:[0m Compute read mapping from mesh "MeshOne" to mesh "MeshTwo".
+preCICE:[0m Mapping distance min:0 max:0 avg: 0 var: 0 cnt: 3
+preCICE:[0m it 1 of 2 | dt# 1 of 2 | t 0 | dt 1 | max dt 1 | ongoing yes | dt complete no | write-iteration-checkpoint | 
+DUMMY: Writing iteration checkpoint
+preCICE:[0m Compute write mapping from mesh "MeshTwo" to mesh "MeshOne".
+preCICE:[0m Mapping distance min:0 max:0 avg: 0 var: 0 cnt: 3
+preCICE:[0m min iteration convergence measure: #it = 1 of 5, conv = false
+DUMMY: Writing iteration checkpoint
+preCICE:[0m it 2 of 2 | dt# 1 of 2 | t 0 | dt 1 | max dt 1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+preCICE:[0m it 2 of 2 | dt# 1 of 2 | t 0 | dt 1 | max dt 1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+DUMMY: Reading iteration checkpoint
+preCICE:[0m min iteration convergence measure: #it = 2 of 5, conv = false
+DUMMY: Reading iteration checkpoint
+preCICE:[0m Time window completed
+preCICE:[0m it 1 of 2 | dt# 2 of 2 | t 1 | dt 1 | max dt 1 | ongoing yes | dt complete yes | write-iteration-checkpoint | 
+preCICE:[0m Time window completed
+preCICE:[0m it 1 of 2 | dt# 2 of 2 | t 1 | dt 1 | max dt 1 | ongoing yes | dt complete yes | write-iteration-checkpoint | 
+DUMMY: Advancing in time
+DUMMY: Writing iteration checkpoint
+preCICE:[0m min iteration convergence measure: #it = 1 of 5, conv = false
+DUMMY: Advancing in time
+DUMMY: Writing iteration checkpoint
+preCICE:[0m it 2 of 2 | dt# 2 of 2 | t 1 | dt 1 | max dt 1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+preCICE:[0m it 2 of 2 | dt# 2 of 2 | t 1 | dt 1 | max dt 1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+DUMMY: Reading iteration checkpoint
+preCICE:[0m min iteration convergence measure: #it = 2 of 5, conv = false
+DUMMY: Reading iteration checkpoint
+preCICE:[0m Time window completed
+preCICE:[0m it 1 of 2 | dt# 3 of 2 | t 2 | dt 1 | max dt 1 | ongoing no | dt complete yes | 
+preCICE:[0m Time window completed
+preCICE:[0m it 1 of 2 | dt# 3 of 2 | t 2 | dt 1 | max dt 1 | ongoing no | dt complete yes | 
+DUMMY: Advancing in time
+DUMMY: Closing C++ solver dummy...
+DUMMY: Advancing in time
+DUMMY: Closing C++ solver dummy...
+Removing intermediate container 5b3c82da2bdb
+ ---> 8d4feecd565a
+Step 22/34 : WORKDIR $PRECICE_ROOT/examples/solverdummies/fortran
+ ---> Running in c231c1926f58
+Removing intermediate container c231c1926f58
+ ---> f8a4b7252437
+Step 23/34 : RUN cmake . && make
+ ---> Running in 1e3682ba5fea
+-- The C compiler identification is GNU 7.5.0
+-- The Fortran compiler identification is GNU 7.5.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working Fortran compiler: /usr/bin/gfortran
+-- Check for working Fortran compiler: /usr/bin/gfortran  -- works
+-- Detecting Fortran compiler ABI info
+-- Detecting Fortran compiler ABI info - done
+-- Checking whether /usr/bin/gfortran supports Fortran 90
+-- Checking whether /usr/bin/gfortran supports Fortran 90 -- yes
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Looking for pthread_create
+-- Looking for pthread_create - not found
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE  
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/precice/precice/examples/solverdummies/fortran
+Scanning dependencies of target solverdummy
+[ 50%] Building Fortran object CMakeFiles/solverdummy.dir/solverdummy.f90.o
+[100%] Linking Fortran executable solverdummy
+[100%] Built target solverdummy
+Removing intermediate container 1e3682ba5fea
+ ---> 5874e5a83569
+Step 24/34 : RUN ./solverdummy ../precice-config.xml SolverOne MeshOne & ./solverdummy ../precice-config.xml SolverTwo MeshTwo
+ ---> Running in 610a03adc17f
+ DUMMY: Starting Fortran solver dummy...
+ DUMMY: Starting Fortran solver dummy...
+--------------------------------------------------------------------------
+[[19191,1],0]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: travis-job-2acd0a74-0c75-49ce-a4e9-6230ff76e545
+
+Another transport will be used instead, although this may result in
+lower performance.
+
+NOTE: You can disable this warning by setting the MCA parameter
+btl_base_warn_component_unused to 0.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+[[19190,1],0]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: travis-job-2acd0a74-0c75-49ce-a4e9-6230ff76e545
+
+Another transport will be used instead, although this may result in
+lower performance.
+
+NOTE: You can disable this warning by setting the MCA parameter
+btl_base_warn_component_unused to 0.
+--------------------------------------------------------------------------
+preCICE:[0m This is preCICE version 2.1.1
+preCICE:[0m Revision info: v2.1.1-77-g641e5057
+preCICE:[0m Configuring preCICE with configuration "../precice-config.xml"
+preCICE:[0m I am participant "SolverOne"
+preCICE:[0m Setting up master communication to coupling partner/s
+preCICE:[0m This is preCICE version 2.1.1
+preCICE:[0m Revision info: v2.1.1-77-g641e5057
+preCICE:[0m Configuring preCICE with configuration "../precice-config.xml"
+preCICE:[0m I am participant "SolverTwo"
+preCICE:[0m Setting up master communication to coupling partner/s
+preCICE:[0m Masters are connected
+preCICE:[0m Masters are connected
+preCICE:[0m Setting up preliminary slaves communication to coupling partner/s
+preCICE:[0m Receive global mesh MeshOne
+preCICE:[0m Setting up preliminary slaves communication to coupling partner/s
+preCICE:[0m Prepare partition for mesh MeshOne
+preCICE:[0m Gather mesh MeshOne
+preCICE:[0m Send global mesh MeshOne
+preCICE:[0m Prepare partition for mesh MeshTwo
+preCICE:[0m Setting up slaves communication to coupling partner/s
+preCICE:[0m Setting up slaves communication to coupling partner/s
+preCICE:[0m Slaves are connected
+preCICE:[0m Slaves are connected
+preCICE:[0m it 1 of 2 | dt# 1 of 2 | t 0 | dt 1 | max dt 1 | ongoing yes | dt complete no | write-iteration-checkpoint | 
+preCICE:[0m initializeData is skipped since no data has to be initialized.
+ DUMMY: Writing iteration checkpoint
+ readData:    0.0000000000000000        0.0000000000000000        0.0000000000000000        1.0000000000000000        1.0000000000000000        1.0000000000000000        2.0000000000000000        2.0000000000000000        2.0000000000000000     
+preCICE:[0m Compute read mapping from mesh "MeshOne" to mesh "MeshTwo".
+preCICE:[0m Mapping distance min:0 max:0 avg: 0 var: 0 cnt: 3
+preCICE:[0m it 1 of 2 | dt# 1 of 2 | t 0 | dt 1 | max dt 1 | ongoing yes | dt complete no | write-iteration-checkpoint | 
+preCICE:[0m Compute write mapping from mesh "MeshTwo" to mesh "MeshOne".
+preCICE:[0m Mapping distance min:0 max:0 avg: 0 var: 0 cnt: 3
+preCICE:[0m initializeData is skipped since no data has to be initialized.
+ DUMMY: Writing iteration checkpoint
+ readData:    1.0000000000000000        1.0000000000000000        1.0000000000000000        2.0000000000000000        2.0000000000000000        2.0000000000000000        3.0000000000000000        3.0000000000000000        3.0000000000000000     
+preCICE:[0m min iteration convergence measure: #it = 1 of 5, conv = false
+preCICE:[0m it 2 of 2 | dt# 1 of 2 | t 0 | dt 1 | max dt 1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+ DUMMY: Reading iteration checkpoint
+ readData:    2.0000000000000000        2.0000000000000000        2.0000000000000000        3.0000000000000000        3.0000000000000000        3.0000000000000000        4.0000000000000000        4.0000000000000000        4.0000000000000000     
+preCICE:[0m it 2 of 2 | dt# 1 of 2 | t 0 | dt 1 | max dt 1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+ DUMMY: Reading iteration checkpoint
+ readData:    3.0000000000000000        3.0000000000000000        3.0000000000000000        4.0000000000000000        4.0000000000000000        4.0000000000000000        5.0000000000000000        5.0000000000000000        5.0000000000000000     
+preCICE:[0m min iteration convergence measure: #it = 2 of 5, conv = false
+preCICE:[0m Time window completed
+preCICE:[0m it 1 of 2 | dt# 2 of 2 | t 1 | dt 1 | max dt 1 | ongoing yes | dt complete yes | write-iteration-checkpoint | 
+ DUMMY: Advancing in time
+ DUMMY: Writing iteration checkpoint
+ readData:    4.0000000000000000        4.0000000000000000        4.0000000000000000        5.0000000000000000        5.0000000000000000        5.0000000000000000        6.0000000000000000        6.0000000000000000        6.0000000000000000     
+preCICE:[0m Time window completed
+preCICE:[0m it 1 of 2 | dt# 2 of 2 | t 1 | dt 1 | max dt 1 | ongoing yes | dt complete yes | write-iteration-checkpoint | 
+ DUMMY: Advancing in time
+ DUMMY: Writing iteration checkpoint
+ readData:    5.0000000000000000        5.0000000000000000        5.0000000000000000        6.0000000000000000        6.0000000000000000        6.0000000000000000        7.0000000000000000        7.0000000000000000        7.0000000000000000     
+preCICE:[0m min iteration convergence measure: #it = 1 of 5, conv = false
+preCICE:[0m it 2 of 2 | dt# 2 of 2 | t 1 | dt 1 | max dt 1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+ DUMMY: Reading iteration checkpoint
+ readData:    6.0000000000000000        6.0000000000000000        6.0000000000000000        7.0000000000000000        7.0000000000000000        7.0000000000000000        8.0000000000000000        8.0000000000000000        8.0000000000000000     
+preCICE:[0m it 2 of 2 | dt# 2 of 2 | t 1 | dt 1 | max dt 1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+ DUMMY: Reading iteration checkpoint
+ readData:    7.0000000000000000        7.0000000000000000        7.0000000000000000        8.0000000000000000        8.0000000000000000        8.0000000000000000        9.0000000000000000        9.0000000000000000        9.0000000000000000     
+preCICE:[0m min iteration convergence measure: #it = 2 of 5, conv = false
+preCICE:[0m Time window completed
+preCICE:[0m it 1 of 2 | dt# 3 of 2 | t 2 | dt 1 | max dt 1 | ongoing no | dt complete yes | 
+ DUMMY: Advancing in time
+preCICE:[0m Time window completed
+preCICE:[0m it 1 of 2 | dt# 3 of 2 | t 2 | dt 1 | max dt 1 | ongoing no | dt complete yes | 
+ DUMMY: Advancing in time
+ DUMMY: Closing Fortran solver dummy...
+ DUMMY: Closing Fortran solver dummy...
+Removing intermediate container 610a03adc17f
+ ---> 22d8bb6cba74
+Step 25/34 : WORKDIR /home/precice
+ ---> Running in 0d185ea70698
+Removing intermediate container 0d185ea70698
+ ---> 327a2570498a
+Step 26/34 : RUN git clone https://github.com/precice/fortran-module.git
+ ---> Running in 65af246afe29
+[91mCloning into 'fortran-module'...
+[0mRemoving intermediate container 65af246afe29
+ ---> 3af44e4d436c
+Step 27/34 : WORKDIR /home/precice/fortran-module
+ ---> Running in d6887465d003
+Removing intermediate container d6887465d003
+ ---> 90bcbb5189cd
+Step 28/34 : RUN make
+ ---> Running in 1182f1254b00
+gfortran -c precice.f03
+Removing intermediate container 1182f1254b00
+ ---> 455feb589afb
+Step 29/34 : WORKDIR /home/precice/fortran-module/examples/solverdummy
+ ---> Running in 9b4963a9c0b2
+Removing intermediate container 9b4963a9c0b2
+ ---> febfeeffe6a3
+Step 30/34 : RUN make
+ ---> Running in 58486919377f
+gfortran solverdummy.f03 -o solverdummy -I../.. -lprecice
+Removing intermediate container 58486919377f
+ ---> 402bf7c143a5
+Step 31/34 : RUN ./solverdummy precice-config.xml SolverOne MeshOne & ./solverdummy precice-config.xml SolverTwo MeshTwo
+ ---> Running in 0134cb69c8bf
+ DUMMY: Starting Fortran solver dummy...
+ DUMMY: Starting Fortran solver dummy...
+--------------------------------------------------------------------------
+[[19190,1],0]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: travis-job-2acd0a74-0c75-49ce-a4e9-6230ff76e545
+
+Another transport will be used instead, although this may result in
+lower performance.
+
+NOTE: You can disable this warning by setting the MCA parameter
+btl_base_warn_component_unused to 0.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+[[19191,1],0]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: travis-job-2acd0a74-0c75-49ce-a4e9-6230ff76e545
+
+Another transport will be used instead, although this may result in
+lower performance.
+
+NOTE: You can disable this warning by setting the MCA parameter
+btl_base_warn_component_unused to 0.
+--------------------------------------------------------------------------
+preCICE:[0m This is preCICE version 2.1.1
+preCICE:[0m Revision info: v2.1.1-77-g641e5057
+preCICE:[0m Configuring preCICE with configuration "precice-config.xml"
+preCICE:[0m I am participant "SolverTwo"
+preCICE:[0m This is preCICE version 2.1.1
+preCICE:[0m Revision info: v2.1.1-77-g641e5057
+preCICE:[0m Configuring preCICE with configuration "precice-config.xml"
+preCICE:[0m I am participant "SolverOne"
+preCICE:[0m Setting up master communication to coupling partner/s
+preCICE:[0m Setting up master communication to coupling partner/s
+preCICE:[0m Masters are connected
+preCICE:[0m Masters are connected
+preCICE:[0m Setting up preliminary slaves communication to coupling partner/s
+preCICE:[0m Prepare partition for mesh MeshOne
+preCICE:[0m Gather mesh MeshOne
+preCICE:[0m Send global mesh MeshOne
+preCICE:[0m Setting up slaves communication to coupling partner/s
+preCICE:[0m Setting up preliminary slaves communication to coupling partner/s
+preCICE:[0m Receive global mesh MeshOne
+preCICE:[0m Prepare partition for mesh MeshTwo
+preCICE:[0m Setting up slaves communication to coupling partner/s
+preCICE:[0m Slaves are connected
+preCICE:[0m Slaves are connected
+preCICE:[0m it 1 of 2 | dt# 1 of 2 | t 0 | dt 1 | max dt 1 | ongoing yes | dt complete no | write-iteration-checkpoint | 
+preCICE:[0m initializeData is skipped since no data has to be initialized.
+ DUMMY: Writing iteration checkpoint
+preCICE:[0m Compute read mapping from mesh "MeshOne" to mesh "MeshTwo".
+preCICE:[0m Mapping distance min:0 max:0 avg: 0 var: 0 cnt: 3
+preCICE:[0m it 1 of 2 | dt# 1 of 2 | t 0 | dt 1 | max dt 1 | ongoing yes | dt complete no | write-iteration-checkpoint | 
+preCICE:[0m Compute write mapping from mesh "MeshTwo" to mesh "MeshOne".
+preCICE:[0m Mapping distance min:0 max:0 avg: 0 var: 0 cnt: 3
+preCICE:[0m initializeData is skipped since no data has to be initialized.
+ DUMMY: Writing iteration checkpoint
+preCICE:[0m min iteration convergence measure: #it = 1 of 5, conv = false
+preCICE:[0m it 2 of 2 | dt# 1 of 2 | t 0 | dt 1 | max dt 1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+ DUMMY: Reading iteration checkpoint
+preCICE:[0m it 2 of 2 | dt# 1 of 2 | t 0 | dt 1 | max dt 1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+ DUMMY: Reading iteration checkpoint
+preCICE:[0m min iteration convergence measure: #it = 2 of 5, conv = false
+preCICE:[0m Time window completed
+preCICE:[0m it 1 of 2 | dt# 2 of 2 | t 1 | dt 1 | max dt 1 | ongoing yes | dt complete yes | write-iteration-checkpoint | 
+ DUMMY: Advancing in time
+ DUMMY: Writing iteration checkpoint
+preCICE:[0m Time window completed
+preCICE:[0m it 1 of 2 | dt# 2 of 2 | t 1 | dt 1 | max dt 1 | ongoing yes | dt complete yes | write-iteration-checkpoint | 
+ DUMMY: Advancing in time
+ DUMMY: Writing iteration checkpoint
+preCICE:[0m min iteration convergence measure: #it = 1 of 5, conv = false
+preCICE:[0m it 2 of 2 | dt# 2 of 2 | t 1 | dt 1 | max dt 1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+ DUMMY: Reading iteration checkpoint
+preCICE:[0m it 2 of 2 | dt# 2 of 2 | t 1 | dt 1 | max dt 1 | ongoing yes | dt complete no | read-iteration-checkpoint | 
+ DUMMY: Reading iteration checkpoint
+preCICE:[0m min iteration convergence measure: #it = 2 of 5, conv = false
+preCICE:[0m Time window completed
+preCICE:[0m it 1 of 2 | dt# 3 of 2 | t 2 | dt 1 | max dt 1 | ongoing no | dt complete yes | 
+ DUMMY: Advancing in time
+preCICE:[0m Time window completed
+preCICE:[0m it 1 of 2 | dt# 3 of 2 | t 2 | dt 1 | max dt 1 | ongoing no | dt complete yes | 
+ DUMMY: Advancing in time
+ DUMMY: Closing Fortran solver dummy...
+ DUMMY: Closing Fortran solver dummy...
+Removing intermediate container 0134cb69c8bf
+ ---> 81dd8e804fd7
+Step 32/34 : USER root
+ ---> Running in 04033871cc72
+Removing intermediate container 04033871cc72
+ ---> 6152b29d2f6a
+Step 33/34 : RUN mkdir /Output
+ ---> Running in db0fe7a74a59
+Removing intermediate container db0fe7a74a59
+ ---> be87e5abd8ab
+Step 34/34 : USER precice
+ ---> Running in ba9a5c36adab
+Removing intermediate container ba9a5c36adab
+ ---> 607e262b2714
+Successfully built 607e262b2714
+Successfully tagged st_bindings-ubuntu1804.package-develop:latest
+b0c964c3213390c7d897e89b8880a2c47244dea64d60e5417a48b97c41e20606
+EXECUTING: docker build --network=host --file Dockerfile --tag st_bindings-ubuntu1804.package-develop --build-arg from=precice/precice-ubuntu1804.package-develop:latest .
+EXECUTING: docker run -it -d --name st_bindings-ubuntu1804.package-develop st_bindings-ubuntu1804.package-develop
+EXECUTING: docker cp st_bindings-ubuntu1804.package-develop:Output . 
+SYSTEST SUCCEEDED - Result files and reference are identical.
+travis_time:end:017f6ee3:start=1605220182676668076,finish=1605220299318057914,duration=116641389838,event=script[0K[32;1mThe command "python system_testing.py -s bindings -v" exited with 0.[0m
+travis_time:start:0afa09be[0K$ python push.py
+Cloning into 'precice_st_output'...
+Updating files:  23% (8041/34553)Updating files:  24% (8293/34553)Updating files:  25% (8639/34553)Updating files:  26% (8984/34553)Updating files:  27% (9330/34553)Updating files:  28% (9675/34553)Updating files:  29% (10021/34553)Updating files:  30% (10366/34553)Updating files:  31% (10712/34553)Updating files:  32% (11057/34553)Updating files:  33% (11403/34553)Updating files:  34% (11749/34553)Updating files:  35% (12094/34553)Updating files:  36% (12440/34553)Updating files:  37% (12785/34553)Updating files:  38% (13131/34553)Updating files:  39% (13476/34553)Updating files:  40% (13822/34553)Updating files:  41% (14167/34553)Updating files:  41% (14288/34553)Updating files:  42% (14513/34553)Updating files:  43% (14858/34553)Updating files:  44% (15204/34553)Updating files:  45% (15549/34553)Updating files:  46% (15895/34553)Updating files:  47% (16240/34553)Updating files:  48% (16586/34553)Updating files:  49% (16931/34553)Updating files:  50% (17277/34553)Updating files:  51% (17623/34553)Updating files:  52% (17968/34553)Updating files:  53% (18314/34553)Updating files:  54% (18659/34553)Updating files:  55% (19005/34553)Updating files:  56% (19350/34553)Updating files:  56% (19377/34553)Updating files:  57% (19696/34553)Updating files:  58% (20041/34553)Updating files:  59% (20387/34553)Updating files:  60% (20732/34553)Updating files:  61% (21078/34553)Updating files:  62% (21423/34553)Updating files:  63% (21769/34553)Updating files:  64% (22114/34553)Updating files:  65% (22460/34553)Updating files:  66% (22805/34553)Updating files:  67% (23151/34553)Updating files:  68% (23497/34553)Updating files:  69% (23842/34553)Updating files:  69% (23918/34553)Updating files:  70% (24188/34553)Updating files:  71% (24533/34553)Updating files:  72% (24879/34553)Updating files:  73% (25224/34553)Updating files:  74% (25570/34553)Updating files:  75% (25915/34553)Updating files:  76% (26261/34553)Updating files:  77% (26606/34553)Updating files:  78% (26952/34553)Updating files:  79% (27297/34553)Updating files:  80% (27643/34553)Updating files:  81% (27988/34553)Updating files:  82% (28334/34553)Updating files:  83% (28679/34553)Updating files:  83% (28810/34553)Updating files:  84% (29025/34553)Updating files:  85% (29371/34553)Updating files:  85% (29470/34553)Updating files:  86% (29716/34553)Updating files:  86% (29991/34553)Updating files:  87% (30062/34553)Updating files:  88% (30407/34553)Updating files:  89% (30753/34553)Updating files:  90% (31098/34553)Updating files:  91% (31444/34553)Updating files:  92% (31789/34553)Updating files:  93% (32135/34553)Updating files:  94% (32480/34553)Updating files:  95% (32826/34553)Updating files:  96% (33171/34553)Updating files:  97% (33517/34553)Updating files:  98% (33862/34553)Updating files:  99% (34208/34553)
