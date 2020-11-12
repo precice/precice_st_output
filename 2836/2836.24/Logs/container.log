@@ -1,0 +1,93 @@
+Attaching to openfoam-adapter-outer, nutils-adapter, tutorial-data
+[36mopenfoam-adapter-outer    |[0m /bin/bash: /usr/lib/openfoam/openfoam2006/etc/bashrc: No such file or directory
+[33mnutils-adapter            |[0m --------------------------------------------------------------------------
+[33mnutils-adapter            |[0m [[18973,1],0]: A high-performance Open MPI point-to-point messaging module
+[33mnutils-adapter            |[0m was unable to find any relevant network interfaces:
+[33mnutils-adapter            |[0m 
+[33mnutils-adapter            |[0m Module: OpenFabrics (openib)
+[33mnutils-adapter            |[0m   Host: f712ddbce66c
+[33mnutils-adapter            |[0m 
+[33mnutils-adapter            |[0m Another transport will be used instead, although this may result in
+[33mnutils-adapter            |[0m lower performance.
+[33mnutils-adapter            |[0m 
+[33mnutils-adapter            |[0m NOTE: You can disable this warning by setting the MCA parameter
+[33mnutils-adapter            |[0m btl_base_warn_component_unused to 0.
+[33mnutils-adapter            |[0m --------------------------------------------------------------------------
+[33mnutils-adapter            |[0m ASSERTION FAILED
+[33mnutils-adapter            |[0m   Location:          bool precice::xml::XMLTag::getBooleanAttributeValue(const string&) const
+[33mnutils-adapter            |[0m   File:              /home/precice/precice/src/xml/XMLTag.cpp:133
+[33mnutils-adapter            |[0m   Rank:              0
+[33mnutils-adapter            |[0m   Failed expression: iter != _booleanAttributes.end()
+[33mnutils-adapter            |[0m [f712ddbce66c:00007] *** Process received signal ***
+[33mnutils-adapter            |[0m [f712ddbce66c:00007] Signal: Aborted (6)
+[33mnutils-adapter            |[0m [f712ddbce66c:00007] Signal code:  (-6)
+[33mnutils-adapter            |[0m  0# getStacktrace[abi:cxx11]() in /home/precice/precice-install/lib/libprecice.so.2
+[33mnutils-adapter            |[0m  1# precice::xml::XMLTag::getBooleanAttributeValue(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const in /home/precice/precice-install/lib/libprecice.so.2
+[33mnutils-adapter            |[0m  2# precice::acceleration::AccelerationConfiguration::xmlTagCallback(precice::xml::ConfigurationContext const&, precice::xml::XMLTag&) in /home/precice/precice-install/lib/libprecice.so.2
+[33mnutils-adapter            |[0m  3# precice::xml::ConfigParser::connectTags(precice::xml::ConfigurationContext const&, std::vector<std::shared_ptr<precice::xml::XMLTag>, std::allocator<std::shared_ptr<precice::xml::XMLTag> > >&, std::vector<std::shared_ptr<precice::xml::ConfigParser::CTag>, std::allocator<std::shared_ptr<precice::xml::ConfigParser::CTag> > >&) in /home/precice/precice-install/lib/libprecice.so.2
+[33mnutils-adapter            |[0m  4# precice::xml::ConfigParser::connectTags(precice::xml::ConfigurationContext const&, std::vector<std::shared_ptr<precice::xml::XMLTag>, std::allocator<std::shared_ptr<precice::xml::XMLTag> > >&, std::vector<std::shared_ptr<precice::xml::ConfigParser::CTag>, std::allocator<std::shared_ptr<precice::xml::ConfigParser::CTag> > >&) in /home/precice/precice-install/lib/libprecice.so.2
+[33mnutils-adapter            |[0m  5# precice::xml::ConfigParser::connectTags(precice::xml::ConfigurationContext const&, std::vector<std::shared_ptr<precice::xml::XMLTag>, std::allocator<std::shared_ptr<precice::xml::XMLTag> > >&, std::vector<std::shared_ptr<precice::xml::ConfigParser::CTag>, std::allocator<std::shared_ptr<precice::xml::ConfigParser::CTag> > >&) in /home/precice/precice-install/lib/libprecice.so.2
+[33mnutils-adapter            |[0m  6# precice::xml::ConfigParser::connectTags(precice::xml::ConfigurationContext const&, std::vector<std::shared_ptr<precice::xml::XMLTag>, std::allocator<std::shared_ptr<precice::xml::XMLTag> > >&, std::vector<std::shared_ptr<precice::xml::ConfigParser::CTag>, std::allocator<std::shared_ptr<precice::xml::ConfigParser::CTag> > >&) in /home/precice/precice-install/lib/libprecice.so.2
+[33mnutils-adapter            |[0m  7# precice::xml::ConfigParser::connectTags(precice::xml::ConfigurationContext const&, std::vector<std::shared_ptr<precice::xml::XMLTag>, std::allocator<std::shared_ptr<precice::xml::XMLTag> > >&, std::vector<std::shared_ptr<precice::xml::ConfigParser::CTag>, std::allocator<std::shared_ptr<precice::xml::ConfigParser::CTag> > >&) in /home/precice/precice-install/lib/libprecice.so.2
+[33mnutils-adapter            |[0m  8# precice::xml::ConfigParser::ConfigParser(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, precice::xml::ConfigurationContext const&, std::shared_ptr<precice::xml::XMLTag>) in /home/precice/precice-install/lib/libprecice.so.2
+[33mnutils-adapter            |[0m  9# precice::xml::configure(precice::xml::XMLTag&, precice::xml::ConfigurationContext const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) in /home/precice/precice-install/lib/libprecice.so.2
+[33mnutils-adapter            |[0m 10# precice::impl::SolverInterfaceImpl::configure(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) in /home/precice/precice-install/lib/libprecice.so.2
+[33mnutils-adapter            |[0m 11# precice::impl::SolverInterfaceImpl::SolverInterfaceImpl(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int, int, void*) in /home/precice/precice-install/lib/libprecice.so.2
+[33mnutils-adapter            |[0m 12# precice::impl::SolverInterfaceImpl::SolverInterfaceImpl(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int, int) in /home/precice/precice-install/lib/libprecice.so.2
+[33mnutils-adapter            |[0m 13# precice::SolverInterface::SolverInterface(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int, int) in /home/precice/precice-install/lib/libprecice.so.2
+[33mnutils-adapter            |[0m 14# 0x00007F6EA86BB803 in /home/precice/.local/lib/python3.6/site-packages/precice.cpython-36m-x86_64-linux-gnu.so
+[33mnutils-adapter            |[0m 15# 0x0000000000551555 in python3
+[33mnutils-adapter            |[0m 16# _PyObject_FastCallKeywords in python3
+[33mnutils-adapter            |[0m 17# 0x000000000050A433 in python3
+[33mnutils-adapter            |[0m 18# _PyEval_EvalFrameDefault in python3
+[33mnutils-adapter            |[0m 19# 0x0000000000507BE4 in python3
+[33mnutils-adapter            |[0m 20# 0x0000000000588D41 in python3
+[33mnutils-adapter            |[0m 21# PyObject_Call in python3
+[33mnutils-adapter            |[0m 22# _PyEval_EvalFrameDefault in python3
+[33mnutils-adapter            |[0m 23# 0x0000000000507BE4 in python3
+[33mnutils-adapter            |[0m 24# 0x0000000000509900 in python3
+[33mnutils-adapter            |[0m 25# 0x000000000050A2FD in python3
+[33mnutils-adapter            |[0m 26# _PyEval_EvalFrameDefault in python3
+[33mnutils-adapter            |[0m 27# 0x0000000000507BE4 in python3
+[33mnutils-adapter            |[0m 28# PyEval_EvalCode in python3
+[33mnutils-adapter            |[0m 29# 0x0000000000634E72 in python3
+[33mnutils-adapter            |[0m 30# PyRun_FileExFlags in python3
+[33mnutils-adapter            |[0m 31# PyRun_SimpleFileExFlags in python3
+[33mnutils-adapter            |[0m 32# Py_Main in python3
+[33mnutils-adapter            |[0m 33# main in python3
+[33mnutils-adapter            |[0m 34# __libc_start_main in /lib/x86_64-linux-gnu/libc.so.6
+[33mnutils-adapter            |[0m 35# _start in python3
+[33mnutils-adapter            |[0m 
+[33mnutils-adapter            |[0m python3: /home/precice/precice/src/xml/XMLTag.cpp:133: bool precice::xml::XMLTag::getBooleanAttributeValue(const string&) const: Assertion `false' failed.
+[33mnutils-adapter            |[0m [f712ddbce66c:00007] [ 0] /lib/x86_64-linux-gnu/libc.so.6(+0x3f040)[0x7f6eb39e8040]
+[33mnutils-adapter            |[0m [f712ddbce66c:00007] [ 1] /lib/x86_64-linux-gnu/libc.so.6(gsignal+0xc7)[0x7f6eb39e7fb7]
+[33mnutils-adapter            |[0m [f712ddbce66c:00007] [ 2] /lib/x86_64-linux-gnu/libc.so.6(abort+0x141)[0x7f6eb39e9921]
+[33mnutils-adapter            |[0m [f712ddbce66c:00007] [ 3] /lib/x86_64-linux-gnu/libc.so.6(+0x3048a)[0x7f6eb39d948a]
+[33mnutils-adapter            |[0m [f712ddbce66c:00007] [ 4] /lib/x86_64-linux-gnu/libc.so.6(+0x30502)[0x7f6eb39d9502]
+[33mnutils-adapter            |[0m [f712ddbce66c:00007] [ 5] /home/precice/precice-install/lib/libprecice.so.2(_ZNK7precice3xml6XMLTag24getBooleanAttributeValueERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE+0x1d7)[0x7f6ea8186349]
+[33mnutils-adapter            |[0m [f712ddbce66c:00007] [ 6] /home/precice/precice-install/lib/libprecice.so.2(_ZN7precice12acceleration25AccelerationConfiguration14xmlTagCallbackERKNS_3xml20ConfigurationContextERNS2_6XMLTagE+0x95b)[0x7f6ea7dd87f3]
+[33mnutils-adapter            |[0m [f712ddbce66c:00007] [ 7] /home/precice/precice-install/lib/libprecice.so.2(_ZN7precice3xml12ConfigParser11connectTagsERKNS0_20ConfigurationContextERSt6vectorISt10shared_ptrINS0_6XMLTagEESaIS8_EERS5_IS6_INS1_4CTagEESaISD_EE+0x4ad)[0x7f6ea814b399]
+[33mnutils-adapter            |[0m [f712ddbce66c:00007] [ 8] /home/precice/precice-install/lib/libprecice.so.2(_ZN7precice3xml12ConfigParser11connectTagsERKNS0_20ConfigurationContextERSt6vectorISt10shared_ptrINS0_6XMLTagEESaIS8_EERS5_IS6_INS1_4CTagEESaISD_EE+0x505)[0x7f6ea814b3f1]
+[33mnutils-adapter            |[0m [f712ddbce66c:00007] [ 9] /home/precice/precice-install/lib/libprecice.so.2(_ZN7precice3xml12ConfigParser11connectTagsERKNS0_20ConfigurationContextERSt6vectorISt10shared_ptrINS0_6XMLTagEESaIS8_EERS5_IS6_INS1_4CTagEESaISD_EE+0x505)[0x7f6ea814b3f1]
+[33mnutils-adapter            |[0m [f712ddbce66c:00007] [10] /home/precice/precice-install/lib/libprecice.so.2(_ZN7precice3xml12ConfigParser11connectTagsERKNS0_20ConfigurationContextERSt6vectorISt10shared_ptrINS0_6XMLTagEESaIS8_EERS5_IS6_INS1_4CTagEESaISD_EE+0x505)[0x7f6ea814b3f1]
+[33mnutils-adapter            |[0m [f712ddbce66c:00007] [11] /home/precice/precice-install/lib/libprecice.so.2(_ZN7precice3xml12ConfigParser11connectTagsERKNS0_20ConfigurationContextERSt6vectorISt10shared_ptrINS0_6XMLTagEESaIS8_EERS5_IS6_INS1_4CTagEESaISD_EE+0x505)[0x7f6ea814b3f1]
+[33mnutils-adapter            |[0m [f712ddbce66c:00007] [12] /home/precice/precice-install/lib/libprecice.so.2(_ZN7precice3xml12ConfigParserC1ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKNS0_20ConfigurationContextESt10shared_ptrINS0_6XMLTagEE+0x193)[0x7f6ea814a1dd]
+[33mnutils-adapter            |[0m [f712ddbce66c:00007] [13] /home/precice/precice-install/lib/libprecice.so.2(_ZN7precice3xml9configureERNS0_6XMLTagERKNS0_20ConfigurationContextERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE+0x298)[0x7f6ea81885d9]
+[33mnutils-adapter            |[0m [f712ddbce66c:00007] [14] /home/precice/precice-install/lib/libprecice.so.2(_ZN7precice4impl19SolverInterfaceImpl9configureERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE+0xeb)[0x7f6ea80b7f0d]
+[33mnutils-adapter            |[0m [f712ddbce66c:00007] [15] /home/precice/precice-install/lib/libprecice.so.2(_ZN7precice4impl19SolverInterfaceImplC2ENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKS7_iiPv+0x4ad)[0x7f6ea80b74cd]
+[33mnutils-adapter            |[0m [f712ddbce66c:00007] [16] /home/precice/precice-install/lib/libprecice.so.2(_ZN7precice4impl19SolverInterfaceImplC2ENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKS7_ii+0x6c)[0x7f6ea80b7858]
+[33mnutils-adapter            |[0m [f712ddbce66c:00007] [17] /home/precice/precice-install/lib/libprecice.so.2(_ZN7precice15SolverInterfaceC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES8_ii+0x74)[0x7f6ea809779a]
+[33mnutils-adapter            |[0m [f712ddbce66c:00007] [18] /home/precice/.local/lib/python3.6/site-packages/precice.cpython-36m-x86_64-linux-gnu.so(+0xe803)[0x7f6ea86bb803]
+[33mnutils-adapter            |[0m [f712ddbce66c:00007] [19] python3[0x551555]
+[33mnutils-adapter            |[0m [f712ddbce66c:00007] [20] python3(_PyObject_FastCallKeywords+0x19c)[0x5a9dac]
+[33mnutils-adapter            |[0m [f712ddbce66c:00007] [21] python3[0x50a433]
+[33mnutils-adapter            |[0m [f712ddbce66c:00007] [22] python3(_PyEval_EvalFrameDefault+0x444)[0x50beb4]
+[33mnutils-adapter            |[0m [f712ddbce66c:00007] [23] python3[0x507be4]
+[33mnutils-adapter            |[0m [f712ddbce66c:00007] [24] python3[0x588d41]
+[33mnutils-adapter            |[0m [f712ddbce66c:00007] [25] python3(PyObject_Call+0x3e)[0x59fd0e]
+[33mnutils-adapter            |[0m [f712ddbce66c:00007] [26] python3(_PyEval_EvalFrameDefault+0x17e6)[0x50d256]
+[33mnutils-adapter            |[0m [f712ddbce66c:00007] [27] python3[0x507be4]
+[33mnutils-adapter            |[0m [f712ddbce66c:00007] [28] python3[0x509900]
+[33mnutils-adapter            |[0m [f712ddbce66c:00007] [29] python3[0x50a2fd]
+[33mnutils-adapter            |[0m [f712ddbce66c:00007] *** End of error message ***
+[33mnutils-adapter            |[0m /bin/bash: line 1:     7 Aborted                 (core dumped) python3 cht.py
