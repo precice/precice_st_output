@@ -1,0 +1,794 @@
+travis_fold:start:worker_info[0K[33;1mWorker information[0m
+hostname: 1cfb1e5e-1966-4c98-8aa2-4d7228342828@1.worker-org-cfdfb76bd-9cd48.gce-production-4
+version: v6.2.20-1-g3a987d6 https://github.com/travis-ci/worker/tree/3a987d61ed169c9539ad435d1a9b5f2d8c6ce4a6
+instance: travis-job-dc68b6fa-c36c-414c-adf5-52fd5baf9204 travis-ci-ubuntu-1804-1593521679-ca42795e (via amqp)
+startup: 5.955949575s
+travis_fold:end:worker_info[0Ktravis_time:start:178defd4[0Ktravis_time:end:178defd4:start=1607421914875311011,finish=1607421915055125931,duration=179814920,event=no_world_writable_dirs[0Ktravis_time:start:21734f3a[0Ktravis_time:end:21734f3a:start=1607421915058057828,finish=1607421915061448304,duration=3390476,event=setup_filter[0Ktravis_time:start:0586fee3[0Ktravis_time:end:0586fee3:start=1607421915069927408,finish=1607421915078296709,duration=8369301,event=agent[0Ktravis_time:start:07c4e628[0Ktravis_time:end:07c4e628:start=1607421915080759534,finish=1607421915082462028,duration=1702494,event=check_unsupported[0Ktravis_time:start:00c9bc58[0Ktravis_fold:start:system_info[0K[33;1mBuild system information[0m
+Build language: python
+Build group: stable
+Build dist: bionic
+Build id: 748293187
+Job id: 748293200
+Runtime kernel version: 5.3.0-1029-gcp
+travis-build version: cd707aa7
+[34m[1mBuild image provisioning date and time[0m
+Tue Jun 30 13:35:43 UTC 2020
+[34m[1mOperating System Details[0m
+Distributor ID:	Ubuntu
+Description:	Ubuntu 18.04.4 LTS
+Release:	18.04
+Codename:	bionic
+[34m[1mSystemd Version[0m
+systemd 237
+[34m[1mCookbooks Version[0m
+3f92a99 https://github.com/travis-ci/travis-cookbooks/tree/3f92a99
+[34m[1mgit version[0m
+git version 2.27.0
+[34m[1mbash version[0m
+GNU bash, version 4.4.20(1)-release (x86_64-pc-linux-gnu)
+[34m[1mgcc version[0m
+gcc (Ubuntu 7.5.0-3ubuntu1~18.04) 7.5.0
+[34m[1mdocker version[0m
+Client:
+ Version:           18.06.0-ce
+ API version:       1.38
+ Go version:        go1.10.3
+ Git commit:        0ffa825
+ Built:             Wed Jul 18 19:09:54 2018
+ OS/Arch:           linux/amd64
+ Experimental:      false
+
+Server:
+ Engine:
+  Version:          18.06.0-ce
+  API version:      1.38 (minimum version 1.12)
+  Go version:       go1.10.3
+  Git commit:       0ffa825
+  Built:            Wed Jul 18 19:07:56 2018
+  OS/Arch:          linux/amd64
+  Experimental:     false
+[34m[1mclang version[0m
+clang version 7.0.0 (tags/RELEASE_700/final)
+[34m[1mjq version[0m
+jq-1.5
+[34m[1mbats version[0m
+Bats 0.4.0
+[34m[1mshellcheck version[0m
+0.7.0
+[34m[1mshfmt version[0m
+v2.6.3
+[34m[1mccache version[0m
+3.4.1
+[34m[1mcmake version[0m
+cmake version 3.12.4
+[34m[1mheroku version[0m
+heroku/7.42.1 linux-x64 node-v12.16.2
+[34m[1mimagemagick version[0m
+Version: ImageMagick 6.9.7-4 Q16 x86_64 20170114 http://www.imagemagick.org
+[34m[1mmd5deep version[0m
+4.4
+[34m[1mmercurial version[0m
+version 4.8
+[34m[1mmysql version[0m
+mysql  Ver 14.14 Distrib 5.7.30, for Linux (x86_64) using  EditLine wrapper
+[34m[1mopenssl version[0m
+OpenSSL 1.1.1  11 Sep 2018
+[34m[1mpacker version[0m
+1.3.3
+[34m[1mpostgresql client version[0m
+psql (PostgreSQL) 11.8 (Ubuntu 11.8-1.pgdg18.04+1)
+[34m[1mragel version[0m
+Ragel State Machine Compiler version 6.10 March 2017
+[34m[1msudo version[0m
+1.8.21p2
+[34m[1mgzip version[0m
+gzip 1.6
+[34m[1mzip version[0m
+Zip 3.0
+[34m[1mvim version[0m
+VIM - Vi IMproved 8.0 (2016 Sep 12, compiled Mar 18 2020 18:29:15)
+[34m[1miptables version[0m
+iptables v1.6.1
+[34m[1mcurl version[0m
+curl 7.58.0 (x86_64-pc-linux-gnu) libcurl/7.58.0 OpenSSL/1.1.1 zlib/1.2.11 libidn2/2.0.4 libpsl/0.19.1 (+libidn2/2.0.4) nghttp2/1.30.0 librtmp/2.3
+[34m[1mwget version[0m
+GNU Wget 1.19.4 built on linux-gnu.
+[34m[1mrsync version[0m
+rsync  version 3.1.2  protocol version 31
+[34m[1mgimme version[0m
+v1.5.4
+[34m[1mnvm version[0m
+0.35.3
+[34m[1mperlbrew version[0m
+/home/travis/perl5/perlbrew/bin/perlbrew  - App::perlbrew/0.87
+[34m[1mphpenv version[0m
+rbenv 1.1.2-30-gc879cb0
+[34m[1mrvm version[0m
+rvm 1.29.10 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
+[34m[1mdefault ruby version[0m
+ruby 2.6.5p114 (2019-10-01 revision 67812) [x86_64-linux]
+[34m[1mElasticSearch version[0m
+5.5.0
+[34m[1mInstalled Firefox version[0m
+firefox 63.0.1
+[34m[1mMongoDB version[0m
+MongoDB 4.0.19
+[34m[1mPhantomJS version[0m
+2.1.1
+[34m[1mPre-installed PostgreSQL versions[0m
+9.3.25
+9.4.26
+9.5.22
+9.6.18
+[34m[1mRedis version[0m
+redis-server 6.0.5
+[34m[1mPre-installed Go versions[0m
+1.11.1
+[34m[1mant version[0m
+Apache Ant(TM) version 1.10.5 compiled on March 28 2019
+[34m[1mmvn version[0m
+Apache Maven 3.6.3 (cecedd343002696d0abb50b32b541b8a6ba2883f)
+[34m[1mgradle version[0m
+Gradle 5.1.1!
+[34m[1mlein version[0m
+Leiningen 2.9.3 on Java 11.0.2 OpenJDK 64-Bit Server VM
+[34m[1mPre-installed Node.js versions[0m
+v10.16.0
+v10.21.0
+v11.15.0
+v12.13.1
+v12.18.1
+v13.3.0
+v4.9.1
+v6.17.1
+v8.16.2
+v8.17.0
+v8.9
+[34m[1mphpenv versions[0m
+  system
+  7.1
+  7.1.33
+  7.2
+* 7.2.27 (set by /home/travis/.phpenv/version)
+  7.3
+  7.3.14
+  7.4
+  7.4.2
+  hhvm
+  hhvm-stable
+[34m[1mcomposer --version[0m
+Composer version 1.9.2 2020-01-14 16:30:31
+[34m[1mPre-installed Ruby versions[0m
+ruby-2.4.9
+ruby-2.5.3
+ruby-2.5.7
+ruby-2.6.5
+ruby-2.7.0
+travis_fold:end:system_info[0K
+travis_time:end:00c9bc58:start=1607421915085049473,finish=1607421915091932751,duration=6883278,event=show_system_info[0Ktravis_time:start:1fc02ea9[0Ktravis_time:end:1fc02ea9:start=1607421915094516849,finish=1607421915107171244,duration=12654395,event=rm_riak_source[0Ktravis_time:start:02529d4e[0Ktravis_time:end:02529d4e:start=1607421915110556492,finish=1607421915115032132,duration=4475640,event=fix_rwky_redis[0Ktravis_time:start:07185cc1[0Ktravis_time:end:07185cc1:start=1607421915122202511,finish=1607421915682242927,duration=560040416,event=wait_for_network[0Ktravis_time:start:05d7ae30[0Ktravis_time:end:05d7ae30:start=1607421915686623843,finish=1607421915920995332,duration=234371489,event=update_apt_keys[0Ktravis_time:start:2729157c[0Ktravis_time:end:2729157c:start=1607421915924837072,finish=1607421915976629497,duration=51792425,event=fix_hhvm_source[0Ktravis_time:start:10685ad2[0Ktravis_time:end:10685ad2:start=1607421915980582859,finish=1607421915983094761,duration=2511902,event=update_mongo_arch[0Ktravis_time:start:0e7fab52[0Ktravis_time:end:0e7fab52:start=1607421915986929224,finish=1607421916025885060,duration=38955836,event=fix_sudo_enabled_trusty[0Ktravis_time:start:00b5d980[0Ktravis_time:end:00b5d980:start=1607421916030601103,finish=1607421916033579152,duration=2978049,event=update_glibc[0Ktravis_time:start:31c7bfa2[0Ktravis_time:end:31c7bfa2:start=1607421916037641592,finish=1607421916045545163,duration=7903571,event=clean_up_path[0Ktravis_time:start:2604cfda[0Ktravis_time:end:2604cfda:start=1607421916049658657,finish=1607421916057609015,duration=7950358,event=fix_resolv_conf[0Ktravis_time:start:104d23c4[0Ktravis_time:end:104d23c4:start=1607421916060764817,finish=1607421916084509160,duration=23744343,event=fix_etc_hosts[0Ktravis_time:start:17f1e008[0Ktravis_time:end:17f1e008:start=1607421916088491769,finish=1607421916096207446,duration=7715677,event=fix_mvn_settings_xml[0Ktravis_time:start:0ef34d21[0Ktravis_time:end:0ef34d21:start=1607421916099916724,finish=1607421916109094246,duration=9177522,event=no_ipv6_localhost[0Ktravis_time:start:00ebf2ee[0Ktravis_time:end:00ebf2ee:start=1607421916113270100,finish=1607421916115534290,duration=2264190,event=fix_etc_mavenrc[0Ktravis_time:start:13e67c46[0Ktravis_time:end:13e67c46:start=1607421916119041744,finish=1607421916121660710,duration=2618966,event=fix_wwdr_certificate[0Ktravis_time:start:12557640[0Ktravis_time:end:12557640:start=1607421916125296939,finish=1607421916178872260,duration=53575321,event=put_localhost_first[0Ktravis_time:start:0fa64427[0Ktravis_time:end:0fa64427:start=1607421916183283394,finish=1607421916186304282,duration=3020888,event=home_paths[0Ktravis_time:start:0d64e512[0Ktravis_time:end:0d64e512:start=1607421916192192725,finish=1607421916206321313,duration=14128588,event=disable_initramfs[0Ktravis_time:start:2812ee9c[0Ktravis_time:end:2812ee9c:start=1607421916209687639,finish=1607421916349271980,duration=139584341,event=disable_ssh_roaming[0Ktravis_time:start:23283fa2[0Ktravis_time:end:23283fa2:start=1607421916353543224,finish=1607421916356393698,duration=2850474,event=debug_tools[0Ktravis_time:start:017e5cd8[0Ktravis_time:end:017e5cd8:start=1607421916360883749,finish=1607421916364087014,duration=3203265,event=uninstall_oclint[0Ktravis_time:start:1e9ce022[0Ktravis_time:end:1e9ce022:start=1607421916369198935,finish=1607421916371898144,duration=2699209,event=rvm_use[0Ktravis_time:start:11631d32[0Ktravis_time:end:11631d32:start=1607421916375088683,finish=1607421916383070078,duration=7981395,event=rm_etc_boto_cfg[0Ktravis_time:start:177809b5[0Ktravis_time:end:177809b5:start=1607421916387110528,finish=1607421916389625998,duration=2515470,event=rm_oraclejdk8_symlink[0Ktravis_time:start:2074a3d8[0Ktravis_time:end:2074a3d8:start=1607421916393649491,finish=1607421916484361225,duration=90711734,event=enable_i386[0Ktravis_time:start:165872ac[0Ktravis_time:end:165872ac:start=1607421916488647230,finish=1607421916492792550,duration=4145320,event=update_rubygems[0Ktravis_time:start:00cee494[0Ktravis_time:end:00cee494:start=1607421916498639217,finish=1607421917266023674,duration=767384457,event=ensure_path_components[0Ktravis_time:start:05b69780[0Ktravis_time:end:05b69780:start=1607421917270556607,finish=1607421917272701029,duration=2144422,event=redefine_curl[0Ktravis_time:start:11663ee0[0Ktravis_time:end:11663ee0:start=1607421917276619920,finish=1607421917378542842,duration=101922922,event=nonblock_pipe[0Ktravis_time:start:16046bee[0Ktravis_time:end:16046bee:start=1607421917382624220,finish=1607421923417700416,duration=6035076196,event=apt_get_update[0Ktravis_time:start:1c6c22fa[0Ktravis_time:end:1c6c22fa:start=1607421923421889152,finish=1607421923423887392,duration=1998240,event=deprecate_xcode_64[0Ktravis_time:start:0806706d[0Ktravis_time:end:0806706d:start=1607421923428448424,finish=1607421926115702616,duration=2687254192,event=update_heroku[0Ktravis_time:start:0a9f1689[0Ktravis_time:end:0a9f1689:start=1607421926120053426,finish=1607421926122118834,duration=2065408,event=shell_session_update[0Ktravis_time:start:0051900c[0Ktravis_fold:start:docker_mtu_and_registry_mirrors[0Ktravis_fold:end:docker_mtu_and_registry_mirrors[0Ktravis_time:end:0051900c:start=1607421926125384182,finish=1607421928563939320,duration=2438555138,event=set_docker_mtu_and_registry_mirrors[0Ktravis_time:start:00eb70b5[0Ktravis_fold:start:resolvconf[0Ktravis_fold:end:resolvconf[0Ktravis_time:end:00eb70b5:start=1607421928571540447,finish=1607421928679221839,duration=107681392,event=resolvconf[0Ktravis_time:start:084f5d3c[0Ktravis_time:end:084f5d3c:start=1607421928683372501,finish=1607421928821608549,duration=138236048,event=maven_central_mirror[0Ktravis_time:start:05f2310e[0Ktravis_time:end:05f2310e:start=1607421928825902947,finish=1607421928918526533,duration=92623586,event=maven_https[0Ktravis_time:start:2d6b5628[0Ktravis_fold:start:services[0Ktravis_time:start:173cc4e7[0K$ sudo systemctl start docker
+travis_time:end:173cc4e7:start=1607421928930334273,finish=1607421928941859545,duration=11525272,event=prepare[0Ktravis_fold:end:services[0Ktravis_time:end:173cc4e7:start=1607421928930334273,finish=1607421931947856528,duration=3017522255,event=services[0Ktravis_time:start:09f7f870[0Ktravis_time:end:09f7f870:start=1607421931952980371,finish=1607421931955507272,duration=2526901,event=fix_ps4[0Ktravis_time:start:0c1dc351[0K
+travis_fold:start:git.checkout[0Ktravis_time:start:06114af5[0K$ git clone --depth=50 https://github.com/precice/systemtests.git precice/systemtests
+Cloning into 'precice/systemtests'...
+travis_time:end:06114af5:start=1607421931963444809,finish=1607421940329360976,duration=8365916167,event=checkout[0K$ cd precice/systemtests
+travis_time:start:1dd6d6c4[0K$ git fetch origin +refs/pull/257/merge:
+From https://github.com/precice/systemtests
+ * branch            refs/pull/257/merge -> FETCH_HEAD
+travis_time:end:1dd6d6c4:start=1607421940335475325,finish=1607421940786125165,duration=450649840,event=checkout[0K$ git checkout -qf FETCH_HEAD
+travis_fold:end:git.checkout[0K
+travis_time:end:1dd6d6c4:start=1607421940335475325,finish=1607421941491040357,duration=1155565032,event=checkout[0Ktravis_time:start:17f1f6f0[0K
+[33;1mSetting environment variables from repository settings[0m
+$ export DOCKER_PASSWORD=[secure]
+$ export PRECICE_BOT_EMAIL=[secure]
+$ export GH_TOKEN=[secure]
+$ export TRAVIS_ACCESS_TOKEN=[secure]
+$ export DOCKER_USERNAME=precice
+
+travis_time:end:17f1f6f0:start=1607421941496405700,finish=1607421941506826602,duration=10420902,event=env[0Ktravis_time:start:18c3f42c[0K$ source ~/virtualenv/python3.8/bin/activate
+travis_time:end:18c3f42c:start=1607421941511412448,finish=1607421941517942788,duration=6530340,event=[0K$ python --version
+Python 3.8.1
+$ pip --version
+pip 20.1.1 from /home/travis/virtualenv/python3.8.1/lib/python3.8/site-packages/pip (python 3.8)
+travis_fold:start:install[0Ktravis_time:start:0c2097a4[0K$ pip install Jinja2
+Collecting Jinja2
+  Downloading Jinja2-2.11.2-py2.py3-none-any.whl (125 kB)
+Collecting MarkupSafe>=0.23
+  Downloading MarkupSafe-1.1.1-cp38-cp38-manylinux1_x86_64.whl (32 kB)
+Installing collected packages: MarkupSafe, Jinja2
+Successfully installed Jinja2-2.11.2 MarkupSafe-1.1.1
+travis_time:end:0c2097a4:start=1607421941977718340,finish=1607421943055692834,duration=1077974494,event=install[0Ktravis_fold:end:install[0Ktravis_time:start:19930a58[0K$ python build_adapter.py --dockerfile adapters/Dockerfile.fenics-adapter --operating-system ubuntu1804 --precice-installation package --docker-username $DOCKER_USERNAME
+Sending build context to Docker daemon  4.608kB
+Step 1/20 : ARG branch=develop
+Step 2/20 : ARG from=precice/precice-ubuntu1804.home-${branch}
+Step 3/20 : FROM $from
+latest: Pulling from precice/precice-ubuntu1804.package-develop
+f22ccc0b8772: Pulling fs layer
+3cf8fb62ba5f: Pulling fs layer
+e80c964ece6a: Pulling fs layer
+42f9b27dcf2d: Pulling fs layer
+1af6951f584b: Pulling fs layer
+0a89799ed1fc: Pulling fs layer
+4b0c22cbffe2: Pulling fs layer
+55a220305b19: Pulling fs layer
+a2d2a3f686a1: Pulling fs layer
+971c197034ce: Pulling fs layer
+3f15e08020e0: Pulling fs layer
+9042587868c4: Pulling fs layer
+4b0c22cbffe2: Waiting
+55a220305b19: Waiting
+a2d2a3f686a1: Waiting
+971c197034ce: Waiting
+3f15e08020e0: Waiting
+9042587868c4: Waiting
+42f9b27dcf2d: Waiting
+1af6951f584b: Waiting
+0a89799ed1fc: Waiting
+e80c964ece6a: Verifying Checksum
+e80c964ece6a: Download complete
+3cf8fb62ba5f: Download complete
+1af6951f584b: Verifying Checksum
+1af6951f584b: Download complete
+0a89799ed1fc: Verifying Checksum
+0a89799ed1fc: Download complete
+4b0c22cbffe2: Verifying Checksum
+4b0c22cbffe2: Download complete
+f22ccc0b8772: Verifying Checksum
+f22ccc0b8772: Download complete
+a2d2a3f686a1: Verifying Checksum
+a2d2a3f686a1: Download complete
+f22ccc0b8772: Pull complete
+3cf8fb62ba5f: Pull complete
+e80c964ece6a: Pull complete
+55a220305b19: Verifying Checksum
+55a220305b19: Download complete
+971c197034ce: Verifying Checksum
+971c197034ce: Download complete
+3f15e08020e0: Verifying Checksum
+3f15e08020e0: Download complete
+9042587868c4: Verifying Checksum
+9042587868c4: Download complete
+42f9b27dcf2d: Download complete
+42f9b27dcf2d: Pull complete
+1af6951f584b: Pull complete
+0a89799ed1fc: Pull complete
+4b0c22cbffe2: Pull complete
+55a220305b19: Pull complete
+a2d2a3f686a1: Pull complete
+971c197034ce: Pull complete
+3f15e08020e0: Pull complete
+9042587868c4: Pull complete
+Digest: sha256:116860bde87fc64d64a3c8156546921f5cc04562e6faf858d53c3550e57efb95
+Status: Downloaded newer image for precice/precice-ubuntu1804.package-develop:latest
+ ---> 3044984c04ae
+Step 4/20 : USER root
+ ---> Running in 5cda9740be4b
+Removing intermediate container 5cda9740be4b
+ ---> 0543f0d59fa2
+Step 5/20 : ENV USER=root
+ ---> Running in 20f00d5d8192
+Removing intermediate container 20f00d5d8192
+ ---> 675580f8d11b
+Step 6/20 : ENV DEBIAN_FRONTEND=noninteractive
+ ---> Running in c97f62c25f5e
+Removing intermediate container c97f62c25f5e
+ ---> fb0864ddf813
+Step 7/20 : RUN apt-get -qq update && apt-get -qq install     apt-utils &&     apt-get -qq install     software-properties-common     python3     python3-dev &&     rm -rf /var/lib/apt/lists/*
+ ---> Running in ac659fbd4a3f
+[91mdebconf: delaying package configuration, since apt-utils is not installed
+[0mSelecting previously unselected package libapt-inst2.0:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 39329 files and directories currently installed.)
+Preparing to unpack .../libapt-inst2.0_1.6.12ubuntu0.1_amd64.deb ...
+Unpacking libapt-inst2.0:amd64 (1.6.12ubuntu0.1) ...
+Selecting previously unselected package apt-utils.
+Preparing to unpack .../apt-utils_1.6.12ubuntu0.1_amd64.deb ...
+Unpacking apt-utils (1.6.12ubuntu0.1) ...
+Setting up libapt-inst2.0:amd64 (1.6.12ubuntu0.1) ...
+Setting up apt-utils (1.6.12ubuntu0.1) ...
+Processing triggers for libc-bin (2.27-3ubuntu1.3) ...
+Preconfiguring packages ...
+Selecting previously unselected package cron.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 39416 files and directories currently installed.)
+Preparing to unpack .../00-cron_3.0pl1-128.1ubuntu1_amd64.deb ...
+Unpacking cron (3.0pl1-128.1ubuntu1) ...
+Selecting previously unselected package libapparmor1:amd64.
+Preparing to unpack .../01-libapparmor1_2.12-4ubuntu5.1_amd64.deb ...
+Unpacking libapparmor1:amd64 (2.12-4ubuntu5.1) ...
+Selecting previously unselected package libdbus-1-3:amd64.
+Preparing to unpack .../02-libdbus-1-3_1.12.2-1ubuntu1.2_amd64.deb ...
+Unpacking libdbus-1-3:amd64 (1.12.2-1ubuntu1.2) ...
+Selecting previously unselected package dbus.
+Preparing to unpack .../03-dbus_1.12.2-1ubuntu1.2_amd64.deb ...
+Unpacking dbus (1.12.2-1ubuntu1.2) ...
+Selecting previously unselected package distro-info-data.
+Preparing to unpack .../04-distro-info-data_0.37ubuntu0.9_all.deb ...
+Unpacking distro-info-data (0.37ubuntu0.9) ...
+Selecting previously unselected package lsb-release.
+Preparing to unpack .../05-lsb-release_9.20170808ubuntu1_all.deb ...
+Unpacking lsb-release (9.20170808ubuntu1) ...
+Selecting previously unselected package python3-dbus.
+Preparing to unpack .../06-python3-dbus_1.2.6-1_amd64.deb ...
+Unpacking python3-dbus (1.2.6-1) ...
+Selecting previously unselected package python3-gi.
+Preparing to unpack .../07-python3-gi_3.26.1-2ubuntu1_amd64.deb ...
+Unpacking python3-gi (3.26.1-2ubuntu1) ...
+Selecting previously unselected package ucf.
+Preparing to unpack .../08-ucf_3.0038_all.deb ...
+Moving old data out of the way
+Unpacking ucf (3.0038) ...
+Selecting previously unselected package iso-codes.
+Preparing to unpack .../09-iso-codes_3.79-1_all.deb ...
+Unpacking iso-codes (3.79-1) ...
+Selecting previously unselected package powermgmt-base.
+Preparing to unpack .../10-powermgmt-base_1.33_all.deb ...
+Unpacking powermgmt-base (1.33) ...
+Selecting previously unselected package python-apt-common.
+Preparing to unpack .../11-python-apt-common_1.6.5ubuntu0.3_all.deb ...
+Unpacking python-apt-common (1.6.5ubuntu0.3) ...
+Selecting previously unselected package python3-apt.
+Preparing to unpack .../12-python3-apt_1.6.5ubuntu0.3_amd64.deb ...
+Unpacking python3-apt (1.6.5ubuntu0.3) ...
+Selecting previously unselected package python3-software-properties.
+Preparing to unpack .../13-python3-software-properties_0.96.24.32.14_all.deb ...
+Unpacking python3-software-properties (0.96.24.32.14) ...
+Selecting previously unselected package software-properties-common.
+Preparing to unpack .../14-software-properties-common_0.96.24.32.14_all.deb ...
+Unpacking software-properties-common (0.96.24.32.14) ...
+Selecting previously unselected package unattended-upgrades.
+Preparing to unpack .../15-unattended-upgrades_1.1ubuntu1.18.04.14_all.deb ...
+Unpacking unattended-upgrades (1.1ubuntu1.18.04.14) ...
+Setting up python-apt-common (1.6.5ubuntu0.3) ...
+Setting up powermgmt-base (1.33) ...
+Setting up python3-apt (1.6.5ubuntu0.3) ...
+Setting up iso-codes (3.79-1) ...
+Setting up distro-info-data (0.37ubuntu0.9) ...
+Setting up python3-gi (3.26.1-2ubuntu1) ...
+Setting up lsb-release (9.20170808ubuntu1) ...
+Setting up ucf (3.0038) ...
+Setting up libapparmor1:amd64 (2.12-4ubuntu5.1) ...
+Setting up python3-software-properties (0.96.24.32.14) ...
+Setting up cron (3.0pl1-128.1ubuntu1) ...
+Adding group `crontab' (GID 103) ...
+Done.
+update-rc.d: warning: start and stop actions are no longer supported; falling back to defaults
+invoke-rc.d: could not determine current runlevel
+invoke-rc.d: policy-rc.d denied execution of start.
+Setting up libdbus-1-3:amd64 (1.12.2-1ubuntu1.2) ...
+Setting up python3-dbus (1.2.6-1) ...
+Setting up unattended-upgrades (1.1ubuntu1.18.04.14) ...
+
+Creating config file /etc/apt/apt.conf.d/20auto-upgrades with new version
+
+Creating config file /etc/apt/apt.conf.d/50unattended-upgrades with new version
+Setting up dbus (1.12.2-1ubuntu1.2) ...
+Setting up software-properties-common (0.96.24.32.14) ...
+Processing triggers for libc-bin (2.27-3ubuntu1.3) ...
+Processing triggers for dbus (1.12.2-1ubuntu1.2) ...
+Removing intermediate container ac659fbd4a3f
+ ---> 971db0ce7bfd
+Step 8/20 : RUN wget -q https://bootstrap.pypa.io/get-pip.py -O get-pip.py &&     python3 get-pip.py
+ ---> Running in 00e54ea93675
+Collecting pip
+  Downloading pip-20.3.1-py2.py3-none-any.whl (1.5 MB)
+Collecting setuptools
+  Downloading setuptools-51.0.0-py3-none-any.whl (785 kB)
+Collecting wheel
+  Downloading wheel-0.36.1-py2.py3-none-any.whl (34 kB)
+Installing collected packages: pip, setuptools, wheel
+Successfully installed pip-20.3.1 setuptools-51.0.0 wheel-0.36.1
+Removing intermediate container 00e54ea93675
+ ---> 70b05793c758
+Step 9/20 : RUN add-apt-repository -y ppa:fenics-packages/fenics &&     apt-get -qq update &&     apt-get -qq install --no-install-recommends fenics &&     rm -rf /var/lib/apt/lists/*
+ ---> Running in fdb3d17f0080
+Get:1 http://security.ubuntu.com/ubuntu bionic-security InRelease [88.7 kB]
+Get:2 http://archive.ubuntu.com/ubuntu bionic InRelease [242 kB]
+Get:3 http://ppa.launchpad.net/fenics-packages/fenics/ubuntu bionic InRelease [15.4 kB]
+Get:4 http://security.ubuntu.com/ubuntu bionic-security/main amd64 Packages [1,815 kB]
+Get:5 http://security.ubuntu.com/ubuntu bionic-security/multiverse amd64 Packages [15.8 kB]
+Get:6 http://security.ubuntu.com/ubuntu bionic-security/universe amd64 Packages [1,370 kB]
+Get:7 http://security.ubuntu.com/ubuntu bionic-security/restricted amd64 Packages [236 kB]
+Get:8 http://ppa.launchpad.net/fenics-packages/fenics/ubuntu bionic/main amd64 Packages [7,029 B]
+Get:9 http://archive.ubuntu.com/ubuntu bionic-updates InRelease [88.7 kB]
+Get:10 http://archive.ubuntu.com/ubuntu bionic-backports InRelease [74.6 kB]
+Get:11 http://archive.ubuntu.com/ubuntu bionic/multiverse amd64 Packages [186 kB]
+Get:12 http://archive.ubuntu.com/ubuntu bionic/main amd64 Packages [1,344 kB]
+Get:13 http://archive.ubuntu.com/ubuntu bionic/universe amd64 Packages [11.3 MB]
+Get:14 http://archive.ubuntu.com/ubuntu bionic/restricted amd64 Packages [13.5 kB]
+Get:15 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 Packages [2,243 kB]
+Get:16 http://archive.ubuntu.com/ubuntu bionic-updates/universe amd64 Packages [2,134 kB]
+Get:17 http://archive.ubuntu.com/ubuntu bionic-updates/restricted amd64 Packages [265 kB]
+Get:18 http://archive.ubuntu.com/ubuntu bionic-updates/multiverse amd64 Packages [54.3 kB]
+Get:19 http://archive.ubuntu.com/ubuntu bionic-backports/main amd64 Packages [11.3 kB]
+Get:20 http://archive.ubuntu.com/ubuntu bionic-backports/universe amd64 Packages [11.4 kB]
+Fetched 21.6 MB in 3s (7,282 kB/s)
+Reading package lists...
+Selecting previously unselected package fonts-lato.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 40843 files and directories currently installed.)
+Preparing to unpack .../00-fonts-lato_2.0-2_all.deb ...
+Unpacking fonts-lato (2.0-2) ...
+Selecting previously unselected package libdolfin-dev-common.
+Preparing to unpack .../01-libdolfin-dev-common_2019.2.0~git20200629.946dbd3-2~ppa1~bionic4_all.deb ...
+Unpacking libdolfin-dev-common (2019.2.0~git20200629.946dbd3-2~ppa1~bionic4) ...
+Selecting previously unselected package libarpack2:amd64.
+Preparing to unpack .../02-libarpack2_3.5.0+real-2_amd64.deb ...
+Unpacking libarpack2:amd64 (3.5.0+real-2) ...
+Selecting previously unselected package libparpack2:amd64.
+Preparing to unpack .../03-libparpack2_3.5.0+real-2_amd64.deb ...
+Unpacking libparpack2:amd64 (3.5.0+real-2) ...
+Selecting previously unselected package libslepc3.7.4.
+Preparing to unpack .../04-libslepc3.7.4_3.7.4+dfsg1-2build8_amd64.deb ...
+Unpacking libslepc3.7.4 (3.7.4+dfsg1-2build8) ...
+Selecting previously unselected package libdolfin2019.2:amd64.
+Preparing to unpack .../05-libdolfin2019.2_2019.2.0~git20200629.946dbd3-2~ppa1~bionic4_amd64.deb ...
+Unpacking libdolfin2019.2:amd64 (2019.2.0~git20200629.946dbd3-2~ppa1~bionic4) ...
+Selecting previously unselected package python3-mpmath.
+Preparing to unpack .../06-python3-mpmath_1.0.0-1_all.deb ...
+Unpacking python3-mpmath (1.0.0-1) ...
+Selecting previously unselected package python3-sympy.
+Preparing to unpack .../07-python3-sympy_1.1.1-5_all.deb ...
+Unpacking python3-sympy (1.1.1-5) ...
+Selecting previously unselected package python3-pkg-resources.
+Preparing to unpack .../08-python3-pkg-resources_39.0.1-2_all.deb ...
+Unpacking python3-pkg-resources (39.0.1-2) ...
+Selecting previously unselected package python3-fiat.
+Preparing to unpack .../09-python3-fiat_2019.2.0~git20200919.42ceef3-1~ppa1~bionic2_all.deb ...
+Unpacking python3-fiat (2019.2.0~git20200919.42ceef3-1~ppa1~bionic2) ...
+Selecting previously unselected package python3-ufl.
+Preparing to unpack .../10-python3-ufl_2019.2.0~git20200928.057c5f6-1~ppa1~bionic2_all.deb ...
+Unpacking python3-ufl (2019.2.0~git20200928.057c5f6-1~ppa1~bionic2) ...
+Selecting previously unselected package python3-mpi4py.
+Preparing to unpack .../11-python3-mpi4py_2.0.0-3_amd64.deb ...
+Unpacking python3-mpi4py (2.0.0-3) ...
+Selecting previously unselected package python3-dijitso.
+Preparing to unpack .../12-python3-dijitso_2019.2.0~git20190418.c92dcb0-2~ppa1~bionic3_all.deb ...
+Unpacking python3-dijitso (2019.2.0~git20190418.c92dcb0-2~ppa1~bionic3) ...
+Selecting previously unselected package python3-ffc.
+Preparing to unpack .../13-python3-ffc_2019.2.0~git20200123.6b621eb-3~ppa1~bionic1_all.deb ...
+Unpacking python3-ffc (2019.2.0~git20200123.6b621eb-3~ppa1~bionic1) ...
+Selecting previously unselected package libarpack2-dev:amd64.
+Preparing to unpack .../14-libarpack2-dev_3.5.0+real-2_amd64.deb ...
+Unpacking libarpack2-dev:amd64 (3.5.0+real-2) ...
+Selecting previously unselected package libparpack2-dev:amd64.
+Preparing to unpack .../15-libparpack2-dev_3.5.0+real-2_amd64.deb ...
+Unpacking libparpack2-dev:amd64 (3.5.0+real-2) ...
+Selecting previously unselected package libslepc3.7.4-dev.
+Preparing to unpack .../16-libslepc3.7.4-dev_3.7.4+dfsg1-2build8_amd64.deb ...
+Unpacking libslepc3.7.4-dev (3.7.4+dfsg1-2build8) ...
+Selecting previously unselected package libslepc3.7-dev.
+Preparing to unpack .../17-libslepc3.7-dev_3.7.4+dfsg1-2build8_amd64.deb ...
+Unpacking libslepc3.7-dev (3.7.4+dfsg1-2build8) ...
+Selecting previously unselected package libdolfin-dev:amd64.
+Preparing to unpack .../18-libdolfin-dev_2019.2.0~git20200629.946dbd3-2~ppa1~bionic4_amd64.deb ...
+Unpacking libdolfin-dev:amd64 (2019.2.0~git20200629.946dbd3-2~ppa1~bionic4) ...
+Selecting previously unselected package python3-petsc4py.
+Preparing to unpack .../19-python3-petsc4py_3.7.0-3build2_amd64.deb ...
+Unpacking python3-petsc4py (3.7.0-3build2) ...
+Selecting previously unselected package python3-slepc4py.
+Preparing to unpack .../20-python3-slepc4py_3.7.0-3build1_amd64.deb ...
+Unpacking python3-slepc4py (3.7.0-3build1) ...
+Selecting previously unselected package python3-dolfin-real.
+Preparing to unpack .../21-python3-dolfin-real_2019.2.0~git20200629.946dbd3-2~ppa1~bionic4_amd64.deb ...
+Unpacking python3-dolfin-real (2019.2.0~git20200629.946dbd3-2~ppa1~bionic4) ...
+Selecting previously unselected package python3-ply.
+Preparing to unpack .../22-python3-ply_3.11-1_all.deb ...
+Unpacking python3-ply (3.11-1) ...
+Selecting previously unselected package pybind11-dev.
+Preparing to unpack .../23-pybind11-dev_2.2.3-1fenics1bionic1_all.deb ...
+Unpacking pybind11-dev (2.2.3-1fenics1bionic1) ...
+Selecting previously unselected package python3-pybind11.
+Preparing to unpack .../24-python3-pybind11_2.2.3-1fenics1bionic1_all.deb ...
+Unpacking python3-pybind11 (2.2.3-1fenics1bionic1) ...
+Selecting previously unselected package python3-six.
+Preparing to unpack .../25-python3-six_1.11.0-2_all.deb ...
+Unpacking python3-six (1.11.0-2) ...
+Selecting previously unselected package python3-pkgconfig.
+Preparing to unpack .../26-python3-pkgconfig_1.3.1-1_all.deb ...
+Unpacking python3-pkgconfig (1.3.1-1) ...
+Selecting previously unselected package python3-dolfin.
+Preparing to unpack .../27-python3-dolfin_2019.2.0~git20200629.946dbd3-2~ppa1~bionic4_amd64.deb ...
+Unpacking python3-dolfin (2019.2.0~git20200629.946dbd3-2~ppa1~bionic4) ...
+Selecting previously unselected package dolfin-bin.
+Preparing to unpack .../28-dolfin-bin_2019.2.0~git20200629.946dbd3-2~ppa1~bionic4_all.deb ...
+Unpacking dolfin-bin (2019.2.0~git20200629.946dbd3-2~ppa1~bionic4) ...
+Selecting previously unselected package libjs-jquery.
+Preparing to unpack .../29-libjs-jquery_3.2.1-1_all.deb ...
+Unpacking libjs-jquery (3.2.1-1) ...
+Selecting previously unselected package libjs-underscore.
+Preparing to unpack .../30-libjs-underscore_1.8.3~dfsg-1_all.deb ...
+Unpacking libjs-underscore (1.8.3~dfsg-1) ...
+Selecting previously unselected package libjs-sphinxdoc.
+Preparing to unpack .../31-libjs-sphinxdoc_1.6.7-1ubuntu1_all.deb ...
+Unpacking libjs-sphinxdoc (1.6.7-1ubuntu1) ...
+Selecting previously unselected package fonts-font-awesome.
+Preparing to unpack .../32-fonts-font-awesome_4.7.0~dfsg-3_all.deb ...
+Unpacking fonts-font-awesome (4.7.0~dfsg-3) ...
+Selecting previously unselected package libjs-modernizr.
+Preparing to unpack .../33-libjs-modernizr_2.6.2+ds1-1ubuntu1_all.deb ...
+Unpacking libjs-modernizr (2.6.2+ds1-1ubuntu1) ...
+Selecting previously unselected package sphinx-rtd-theme-common.
+Preparing to unpack .../34-sphinx-rtd-theme-common_0.2.4-1_all.deb ...
+Unpacking sphinx-rtd-theme-common (0.2.4-1) ...
+Selecting previously unselected package dolfin-doc.
+Preparing to unpack .../35-dolfin-doc_2019.2.0~git20200629.946dbd3-2~ppa1~bionic4_all.deb ...
+Unpacking dolfin-doc (2019.2.0~git20200629.946dbd3-2~ppa1~bionic4) ...
+Selecting previously unselected package python-ufl-doc.
+Preparing to unpack .../36-python-ufl-doc_2019.2.0~git20200928.057c5f6-1~ppa1~bionic2_all.deb ...
+Unpacking python-ufl-doc (2019.2.0~git20200928.057c5f6-1~ppa1~bionic2) ...
+Selecting previously unselected package libtet1.5:amd64.
+Preparing to unpack .../37-libtet1.5_1.5.0-4_amd64.deb ...
+Unpacking libtet1.5:amd64 (1.5.0-4) ...
+Selecting previously unselected package libmshr2019.2:amd64.
+Preparing to unpack .../38-libmshr2019.2_2019.2.0~git20200924.c27eb18+git1-1~ppa1~bionic4_amd64.deb ...
+Unpacking libmshr2019.2:amd64 (2019.2.0~git20200924.c27eb18+git1-1~ppa1~bionic4) ...
+Selecting previously unselected package proj-data.
+Preparing to unpack .../39-proj-data_4.9.3-2_all.deb ...
+Unpacking proj-data (4.9.3-2) ...
+Selecting previously unselected package libproj12:amd64.
+Preparing to unpack .../40-libproj12_4.9.3-2_amd64.deb ...
+Unpacking libproj12:amd64 (4.9.3-2) ...
+Selecting previously unselected package libproj-dev:amd64.
+Preparing to unpack .../41-libproj-dev_4.9.3-2_amd64.deb ...
+Unpacking libproj-dev:amd64 (4.9.3-2) ...
+Selecting previously unselected package libmshr-dev-common:amd64.
+Preparing to unpack .../42-libmshr-dev-common_2019.2.0~git20200924.c27eb18+git1-1~ppa1~bionic4_amd64.deb ...
+Unpacking libmshr-dev-common:amd64 (2019.2.0~git20200924.c27eb18+git1-1~ppa1~bionic4) ...
+Selecting previously unselected package libmshr-dev.
+Preparing to unpack .../43-libmshr-dev_2019.2.0~git20200924.c27eb18+git1-1~ppa1~bionic4_amd64.deb ...
+Unpacking libmshr-dev (2019.2.0~git20200924.c27eb18+git1-1~ppa1~bionic4) ...
+Selecting previously unselected package python3-mshr-real.
+Preparing to unpack .../44-python3-mshr-real_2019.2.0~git20200924.c27eb18+git1-1~ppa1~bionic4_amd64.deb ...
+Unpacking python3-mshr-real (2019.2.0~git20200924.c27eb18+git1-1~ppa1~bionic4) ...
+Selecting previously unselected package python3-mshr.
+Preparing to unpack .../45-python3-mshr_2019.2.0~git20200924.c27eb18+git1-1~ppa1~bionic4_all.deb ...
+Unpacking python3-mshr (2019.2.0~git20200924.c27eb18+git1-1~ppa1~bionic4) ...
+Selecting previously unselected package fenics:amd64.
+Preparing to unpack .../46-fenics_1%3a2019.2.0.5~ppa1~bionic1_amd64.deb ...
+Unpacking fenics:amd64 (1:2019.2.0.5~ppa1~bionic1) ...
+Setting up python3-pkgconfig (1.3.1-1) ...
+Setting up libjs-jquery (3.2.1-1) ...
+Setting up python-ufl-doc (2019.2.0~git20200928.057c5f6-1~ppa1~bionic2) ...
+Setting up libjs-underscore (1.8.3~dfsg-1) ...
+Setting up libdolfin-dev-common (2019.2.0~git20200629.946dbd3-2~ppa1~bionic4) ...
+Setting up libtet1.5:amd64 (1.5.0-4) ...
+Setting up python3-six (1.11.0-2) ...
+Setting up libjs-sphinxdoc (1.6.7-1ubuntu1) ...
+Setting up python3-pkg-resources (39.0.1-2) ...
+Setting up python3-mpmath (1.0.0-1) ...
+Setting up python3-ufl (2019.2.0~git20200928.057c5f6-1~ppa1~bionic2) ...
+Setting up fonts-font-awesome (4.7.0~dfsg-3) ...
+Setting up fonts-lato (2.0-2) ...
+Setting up pybind11-dev (2.2.3-1fenics1bionic1) ...
+Setting up python3-petsc4py (3.7.0-3build2) ...
+Setting up libarpack2:amd64 (3.5.0+real-2) ...
+Setting up python3-mpi4py (2.0.0-3) ...
+Setting up python3-ply (3.11-1) ...
+Setting up python3-sympy (1.1.1-5) ...
+Setting up libjs-modernizr (2.6.2+ds1-1ubuntu1) ...
+Setting up proj-data (4.9.3-2) ...
+Setting up python3-pybind11 (2.2.3-1fenics1bionic1) ...
+Setting up python3-fiat (2019.2.0~git20200919.42ceef3-1~ppa1~bionic2) ...
+Setting up libproj12:amd64 (4.9.3-2) ...
+Setting up libparpack2:amd64 (3.5.0+real-2) ...
+Setting up python3-dijitso (2019.2.0~git20190418.c92dcb0-2~ppa1~bionic3) ...
+Setting up libslepc3.7.4 (3.7.4+dfsg1-2build8) ...
+update-alternatives: using /usr/lib/x86_64-linux-gnu/libslepc_real.so.3.7.4 to provide /usr/lib/x86_64-linux-gnu/libslepc.so.3.7 (libslepc.so.3.7) in auto mode
+update-alternatives: using /usr/lib/x86_64-linux-gnu/libslepc_real.so.3.7.4 to provide /usr/lib/x86_64-linux-gnu/libslepc_real.so.3.7 (libslepc_real.so.3.7) in auto mode
+Setting up sphinx-rtd-theme-common (0.2.4-1) ...
+Setting up libarpack2-dev:amd64 (3.5.0+real-2) ...
+Setting up python3-slepc4py (3.7.0-3build1) ...
+Setting up python3-ffc (2019.2.0~git20200123.6b621eb-3~ppa1~bionic1) ...
+Setting up libparpack2-dev:amd64 (3.5.0+real-2) ...
+Setting up libproj-dev:amd64 (4.9.3-2) ...
+Setting up libmshr-dev-common:amd64 (2019.2.0~git20200924.c27eb18+git1-1~ppa1~bionic4) ...
+Setting up libslepc3.7.4-dev (3.7.4+dfsg1-2build8) ...
+update-alternatives: error: no alternatives for slepc
+update-alternatives: using /usr/lib/slepcdir/3.7.4/x86_64-linux-gnu-real to provide /usr/lib/slepc (slepc) in auto mode
+update-alternatives: using /usr/lib/x86_64-linux-gnu/libslepc_real.so.3.7.4 to provide /usr/lib/x86_64-linux-gnu/libslepc_real.so (libslepc_real.so) in auto mode
+update-alternatives: using /usr/lib/slepcdir/3.7.4/x86_64-linux-gnu-real to provide /usr/lib/slepcdir/3.7 (slepc3.7) in auto mode
+update-alternatives: using /usr/lib/slepcdir/3.7.4/x86_64-linux-gnu-real to provide /usr/lib/slepcdir/3.7-real (slepc3.7-real) in auto mode
+Setting up libdolfin2019.2:amd64 (2019.2.0~git20200629.946dbd3-2~ppa1~bionic4) ...
+Setting up libmshr2019.2:amd64 (2019.2.0~git20200924.c27eb18+git1-1~ppa1~bionic4) ...
+Setting up libdolfin-dev:amd64 (2019.2.0~git20200629.946dbd3-2~ppa1~bionic4) ...
+Setting up libslepc3.7-dev (3.7.4+dfsg1-2build8) ...
+Setting up libmshr-dev (2019.2.0~git20200924.c27eb18+git1-1~ppa1~bionic4) ...
+Setting up python3-dolfin-real (2019.2.0~git20200629.946dbd3-2~ppa1~bionic4) ...
+Setting up python3-dolfin (2019.2.0~git20200629.946dbd3-2~ppa1~bionic4) ...
+Setting up dolfin-doc (2019.2.0~git20200629.946dbd3-2~ppa1~bionic4) ...
+Setting up dolfin-bin (2019.2.0~git20200629.946dbd3-2~ppa1~bionic4) ...
+Setting up python3-mshr-real (2019.2.0~git20200924.c27eb18+git1-1~ppa1~bionic4) ...
+Setting up python3-mshr (2019.2.0~git20200924.c27eb18+git1-1~ppa1~bionic4) ...
+Setting up fenics:amd64 (1:2019.2.0.5~ppa1~bionic1) ...
+Processing triggers for libc-bin (2.27-3ubuntu1.3) ...
+Removing intermediate container fdb3d17f0080
+ ---> 4e842d5cfdb7
+Step 10/20 : RUN pip3 install --user cython # TODO: can we put this dependency into requirements.txt of python?
+ ---> Running in b8626c6b95d6
+Collecting cython
+  Downloading Cython-0.29.21-cp36-cp36m-manylinux1_x86_64.whl (2.0 MB)
+Installing collected packages: cython
+[91m  WARNING: The scripts cygdb, cython and cythonize are installed in '/root/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+[0mSuccessfully installed cython-0.29.21
+Removing intermediate container b8626c6b95d6
+ ---> eb9074ce96ab
+Step 11/20 : USER precice
+ ---> Running in 78a9c5314bda
+Removing intermediate container 78a9c5314bda
+ ---> 981503c9d5d9
+Step 12/20 : ARG CACHEBUST
+ ---> Running in a36e8b22b521
+Removing intermediate container a36e8b22b521
+ ---> 614454e12005
+Step 13/20 : ARG bindings_branch=develop
+ ---> Running in e656d12c6215
+Removing intermediate container e656d12c6215
+ ---> 99910ec9ac7a
+Step 14/20 : ARG adapter_branch=develop
+ ---> Running in eb11f94ef936
+Removing intermediate container eb11f94ef936
+ ---> 6543557e5b5a
+Step 15/20 : RUN pip3 install --user https://github.com/precice/python-bindings/archive/$bindings_branch.zip
+ ---> Running in 97a0a50f3770
+Collecting https://github.com/precice/python-bindings/archive/develop.zip
+  Downloading https://github.com/precice/python-bindings/archive/develop.zip
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+    Preparing wheel metadata: started
+    Preparing wheel metadata: finished with status 'done'
+Requirement already satisfied: mpi4py in /usr/lib/python3/dist-packages (from pyprecice==0+unknown) (2.0.0)
+Requirement already satisfied: numpy in /usr/lib/python3/dist-packages (from pyprecice==0+unknown) (1.13.3)
+Building wheels for collected packages: pyprecice
+  Building wheel for pyprecice (PEP 517): started
+  Building wheel for pyprecice (PEP 517): finished with status 'done'
+  Created wheel for pyprecice: filename=pyprecice-0+unknown-py2.py3-none-any.whl size=767976 sha256=4806b8e62d3371ca399835ffb897decf51d080b90fbcd042b7d68bca1ce7a0d4
+  Stored in directory: /tmp/pip-ephem-wheel-cache-kpnfiis9/wheels/8d/4d/18/308222d4aaadc3616c73ac4d4563793feb863232b1b31836e3
+Successfully built pyprecice
+Installing collected packages: pyprecice
+Successfully installed pyprecice-0+unknown
+Removing intermediate container 97a0a50f3770
+ ---> 2c6360cb898b
+Step 16/20 : RUN pip3 install --user numpy==1.14.5 https://github.com/precice/fenics-adapter/archive/$adapter_branch.zip
+ ---> Running in 52e6894fa38f
+Collecting https://github.com/precice/fenics-adapter/archive/develop.zip
+  Downloading https://github.com/precice/fenics-adapter/archive/develop.zip
+Collecting numpy==1.14.5
+  Downloading numpy-1.14.5-cp36-cp36m-manylinux1_x86_64.whl (12.2 MB)
+Collecting fenics
+  Downloading fenics-2019.1.0-py3-none-any.whl (1.5 kB)
+Collecting fenics-dijitso<2019.2,>=2019.1.0
+  Downloading fenics_dijitso-2019.1.0-py3-none-any.whl (46 kB)
+Collecting fenics-ffc<2019.2,>=2019.1.0
+  Downloading fenics_ffc-2019.1.0.post0-py3-none-any.whl (362 kB)
+Collecting fenics-fiat<2019.2,>=2019.1.0
+  Downloading fenics_fiat-2019.1.0-py3-none-any.whl (112 kB)
+Requirement already satisfied: sympy in /usr/lib/python3/dist-packages (from fenics-fiat<2019.2,>=2019.1.0->fenics->fenicsprecice==1.0.0rc2) (1.1.1)
+Collecting fenics-ufl<2019.2,>=2019.1.0
+  Downloading fenics_ufl-2019.1.0-py3-none-any.whl (282 kB)
+Collecting pyprecice>=2.0.0
+  Downloading pyprecice-2.1.1.1.tar.gz (26 kB)
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+    Preparing wheel metadata: started
+    Preparing wheel metadata: finished with status 'done'
+Requirement already satisfied: mpi4py in /usr/lib/python3/dist-packages (from pyprecice>=2.0.0->fenicsprecice==1.0.0rc2) (2.0.0)
+Collecting scipy
+  Downloading scipy-1.5.4-cp36-cp36m-manylinux1_x86_64.whl (25.9 MB)
+Building wheels for collected packages: fenicsprecice, pyprecice
+  Building wheel for fenicsprecice (setup.py): started
+  Building wheel for fenicsprecice (setup.py): finished with status 'done'
+  Created wheel for fenicsprecice: filename=fenicsprecice-1.0.0rc2-py2.py3-none-any.whl size=19592 sha256=8ed5a2e444e7695cd75597565d1b56b4386dcb29272b78742173363385ef8756
+  Stored in directory: /tmp/pip-ephem-wheel-cache-26w18n6r/wheels/a2/f2/66/35c7b7849bd0541978665ae168fd08df65d3508b653faf8640
+  Building wheel for pyprecice (PEP 517): started
+  Building wheel for pyprecice (PEP 517): finished with status 'done'
+  Created wheel for pyprecice: filename=pyprecice-2.1.1.1-cp36-cp36m-linux_x86_64.whl size=735493 sha256=391f5250bc26018dca432188cf4f2a4a4f2b13041c0ca3b4716dcc932cfb10c9
+  Stored in directory: /home/precice/.cache/pip/wheels/7b/ac/19/a23e7cfe9c51514e23ea3d791700e4469292d0b1f663d6d447
+Successfully built fenicsprecice pyprecice
+Installing collected packages: numpy, fenics-ufl, fenics-fiat, fenics-dijitso, fenics-ffc, scipy, pyprecice, fenics, fenicsprecice
+[91m  WARNING: The script dijitso is installed in '/home/precice/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+[0m[91m  WARNING: The scripts ffc and ffc-3 are installed in '/home/precice/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+[0m  Attempting uninstall: pyprecice
+    Found existing installation: pyprecice 0+unknown
+    Uninstalling pyprecice-0+unknown:
+      Successfully uninstalled pyprecice-0+unknown
+Successfully installed fenics-2019.1.0 fenics-dijitso-2019.1.0 fenics-ffc-2019.1.0.post0 fenics-fiat-2019.1.0 fenics-ufl-2019.1.0 fenicsprecice-1.0.0rc2 numpy-1.14.5 pyprecice-2.1.1.1 scipy-1.5.4
+Removing intermediate container 52e6894fa38f
+ ---> e026dbdbe521
+Step 17/20 : RUN pip3 uninstall -y fenics-ufl
+ ---> Running in 2fff6ccf116d
+Found existing installation: fenics-ufl 2019.1.0
+Uninstalling fenics-ufl-2019.1.0:
+  Successfully uninstalled fenics-ufl-2019.1.0
+Removing intermediate container 2fff6ccf116d
+ ---> 279cdea66d7b
+Step 18/20 : WORKDIR /home/precice
+ ---> Running in cda663dd282b
+Removing intermediate container cda663dd282b
+ ---> 5eb124121556
+Step 19/20 : RUN mkdir -p Logs Data/Input Data/Output Data/Exchange
+ ---> Running in 03c90d46ce0a
+Removing intermediate container 03c90d46ce0a
+ ---> 35a3b87df84a
+Step 20/20 : WORKDIR /home/precice/fenics-adapter
+ ---> Running in ed1f6248fd7f
+Removing intermediate container ed1f6248fd7f
+ ---> a978ce4cbfdb
+Successfully built a978ce4cbfdb
+Successfully tagged precice/fenics-adapter-ubuntu1804.package-develop:latest
+Building fenics-adapter image with the following features: {'os': 'ubuntu1804', 'installation': 'package'}
+EXECUTING: docker build --network=host --file adapters/Dockerfile.fenics-adapter --tag precice/fenics-adapter-ubuntu1804.package-develop --build-arg branch=develop --build-arg adapter_branch=develop --build-arg from=precice/precice-ubuntu1804.package-develop .
+travis_time:end:19930a58:start=1607421943062067542,finish=1607422184384475558,duration=241322408016,event=script[0K[32;1mThe command "python build_adapter.py --dockerfile adapters/Dockerfile.fenics-adapter --operating-system ubuntu1804 --precice-installation package --docker-username $DOCKER_USERNAME" exited with 0.[0m
+travis_time:start:2a1267d4[0K$ python push_adapter.py --dockerfile adapters/Dockerfile.fenics-adapter --operating-system ubuntu1804 --precice-installation package --docker-username $DOCKER_USERNAME
+WARNING! Your password will be stored unencrypted in /home/travis/.docker/config.json.
+Configure a credential helper to remove this warning. See
+https://docs.docker.com/engine/reference/commandline/login/#credentials-store
+
+Login Succeeded
+The push refers to repository [docker.io/precice/fenics-adapter-ubuntu1804.package-develop]
+dcdadd769b72: Preparing
+a4006c3843e4: Preparing
+ed214e7195ad: Preparing
+1c73308b27af: Preparing
+dd34ecd1481e: Preparing
+e1dd9bb792cd: Preparing
+8e240544a72d: Preparing
+e93e76e896bb: Preparing
+255add933e96: Preparing
+db414e3c4e2d: Preparing
+8f74502e8bae: Preparing
+788ab7e45a46: Preparing
+c2b8ba92e1b7: Preparing
+b40cc30b84f1: Preparing
+4e7cb6767d46: Preparing
+bb5cd0d67bd9: Preparing
+fa150b3bf2dc: Preparing
+e062ea4c2548: Preparing
+fe6d8881187d: Preparing
+23135df75b44: Preparing
+b43408d5f11b: Preparing
+e1dd9bb792cd: Waiting
+8e240544a72d: Waiting
+e93e76e896bb: Waiting
+255add933e96: Waiting
+db414e3c4e2d: Waiting
+8f74502e8bae: Waiting
+788ab7e45a46: Waiting
+c2b8ba92e1b7: Waiting
+b40cc30b84f1: Waiting
+4e7cb6767d46: Waiting
+bb5cd0d67bd9: Waiting
+fa150b3bf2dc: Waiting
+e062ea4c2548: Waiting
+fe6d8881187d: Waiting
+23135df75b44: Waiting
+b43408d5f11b: Waiting
+a4006c3843e4: Pushed
+dcdadd769b72: Pushed
+ed214e7195ad: Pushed
+dd34ecd1481e: Pushed
+e1dd9bb792cd: Pushed
+db414e3c4e2d: Mounted from precice/precice-ubuntu1804.package-develop
+8f74502e8bae: Mounted from precice/precice-ubuntu1804.package-develop
+e93e76e896bb: Pushed
+255add933e96: Pushed
+b40cc30b84f1: Mounted from precice/precice-ubuntu1804.package-develop
+788ab7e45a46: Mounted from precice/precice-ubuntu1804.package-develop
+c2b8ba92e1b7: Mounted from precice/precice-ubuntu1804.package-develop
+4e7cb6767d46: Mounted from precice/precice-ubuntu1804.package-develop
+fa150b3bf2dc: Mounted from precice/precice-ubuntu1804.package-develop
+bb5cd0d67bd9: Mounted from precice/precice-ubuntu1804.package-develop
+fe6d8881187d: Layer already exists
+23135df75b44: Layer already exists
+b43408d5f11b: Layer already exists
+e062ea4c2548: Mounted from precice/precice-ubuntu1804.package-develop
+1c73308b27af: Pushed
+8e240544a72d: Pushed
+latest: digest: sha256:71b3d15d33eb5077c3c579bb1dc5b1808668c0e09b0568cf9056b32e30513ee1 size: 4732
+EXECUTING: echo $DOCKER_PASSWORD | docker login -u $DOCKER_USERNAME --password-stdin && docker push precice/fenics-adapter-ubuntu1804.package-develop:latest
+travis_time:end:2a1267d4:start=1607422184391791534,finish=1607422207492138158,duration=23100346624,event=script[0K[32;1mThe command "python push_adapter.py --dockerfile adapters/Dockerfile.fenics-adapter --operating-system ubuntu1804 --precice-installation package --docker-username $DOCKER_USERNAME" exited with 0.[0m
+travis_time:start:0cc96ed0[0K$ python push.py
+Cloning into 'precice_st_output'...
+Updating files:  21% (7884/36633)Updating files:  22% (8060/36633)Updating files:  23% (8426/36633)Updating files:  24% (8792/36633)Updating files:  25% (9159/36633)Updating files:  26% (9525/36633)Updating files:  27% (9891/36633)Updating files:  28% (10258/36633)Updating files:  29% (10624/36633)Updating files:  30% (10990/36633)Updating files:  31% (11357/36633)Updating files:  32% (11723/36633)Updating files:  33% (12089/36633)Updating files:  34% (12456/36633)Updating files:  35% (12822/36633)Updating files:  36% (13188/36633)Updating files:  37% (13555/36633)Updating files:  38% (13921/36633)Updating files:  38% (14285/36633)Updating files:  39% (14287/36633)Updating files:  40% (14654/36633)Updating files:  41% (15020/36633)Updating files:  42% (15386/36633)Updating files:  43% (15753/36633)Updating files:  44% (16119/36633)Updating files:  45% (16485/36633)Updating files:  46% (16852/36633)Updating files:  47% (17218/36633)Updating files:  48% (17584/36633)Updating files:  49% (17951/36633)Updating files:  50% (18317/36633)Updating files:  51% (18683/36633)Updating files:  52% (19050/36633)Updating files:  52% (19377/36633)Updating files:  53% (19416/36633)Updating files:  54% (19782/36633)Updating files:  55% (20149/36633)Updating files:  56% (20515/36633)Updating files:  57% (20881/36633)Updating files:  58% (21248/36633)Updating files:  59% (21614/36633)Updating files:  60% (21980/36633)Updating files:  61% (22347/36633)Updating files:  62% (22713/36633)Updating files:  63% (23079/36633)Updating files:  64% (23446/36633)Updating files:  65% (23812/36633)Updating files:  65% (23914/36633)Updating files:  66% (24178/36633)Updating files:  67% (24545/36633)Updating files:  68% (24911/36633)Updating files:  69% (25277/36633)Updating files:  70% (25644/36633)Updating files:  71% (26010/36633)Updating files:  72% (26376/36633)Updating files:  73% (26743/36633)Updating files:  74% (27109/36633)Updating files:  75% (27475/36633)Updating files:  76% (27842/36633)Updating files:  77% (28208/36633)Updating files:  78% (28574/36633)Updating files:  78% (28668/36633)Updating files:  79% (28941/36633)Updating files:  79% (29252/36633)Updating files:  80% (29307/36633)Updating files:  81% (29673/36633)Updating files:  81% (29984/36633)Updating files:  82% (30040/36633)Updating files:  83% (30406/36633)Updating files:  84% (30772/36633)Updating files:  85% (31139/36633)Updating files:  86% (31505/36633)Updating files:  87% (31871/36633)Updating files:  88% (32238/36633)Updating files:  89% (32604/36633)Updating files:  90% (32970/36633)Updating files:  90% (33312/36633)Updating files:  91% (33337/36633)Updating files:  92% (33703/36633)Updating files:  93% (34069/36633)Updating files:  93% (34306/36633)Updating files:  94% (34436/36633)Updating files:  94% (34619/36633)Updating files:  95% (34802/36633)Updating files:  95% (34868/36633)Updating files:  95% (35062/36633)Updating files:  95% (35157/36633)Updating files:  96% (35168/36633)Updating files:  96% (35235/36633)Updating files:  96% (35283/36633)Updating files:  96% (35422/36633)Updating files:  96% (35483/36633)Updating files:  97% (35535/36633)Updating files:  97% (35555/36633)Updating files:  97% (35602/36633)Updating files:  97% (35664/36633)Updating files:  97% (35763/36633)Updating files:  97% (35846/36633)Updating files:  98% (35901/36633)Updating files:  98% (35927/36633)Updating files:  98% (35949/36633)Updating files:  98% (36059/36633)Updating files:  98% (36131/36633)Updating files:  98% (36201/36633)Updating files:  98% (36237/36633)Updating files:  99% (36267/36633)Updating files:  99% (36302/36633)Updating files:  99% (36409/36633)Updating files:  99% (36486/36633)Updating files:  99% (36571/36633)Updating files: 100% (36633/36633)Updating files: 100% (36633/36633), done.
