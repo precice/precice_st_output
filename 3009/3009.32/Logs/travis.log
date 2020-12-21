@@ -1,0 +1,848 @@
+travis_fold:start:worker_info[0K[33;1mWorker information[0m
+hostname: ff6d22e2-e88a-4978-8460-b5cffecc562b@1.worker-com-oss-64d9789897-qvvkt.gce-production-3
+version: v6.2.20-1-g3a987d6 https://github.com/travis-ci/worker/tree/3a987d61ed169c9539ad435d1a9b5f2d8c6ce4a6
+instance: travis-job-001bf8b7-967c-4377-8351-00f56e3cd831 travis-ci-ubuntu-1804-1593521679-ca42795e (via amqp)
+startup: 6.397140626s
+travis_fold:end:worker_info[0Ktravis_time:start:0e633768[0Ktravis_time:end:0e633768:start=1608567119637483384,finish=1608567119845648597,duration=208165213,event=no_world_writable_dirs[0Ktravis_time:start:288be464[0Ktravis_time:end:288be464:start=1608567119849062437,finish=1608567119856339130,duration=7276693,event=setup_filter[0Ktravis_time:start:052d6a93[0Ktravis_time:end:052d6a93:start=1608567119860423364,finish=1608567119870988945,duration=10565581,event=agent[0Ktravis_time:start:09c447f6[0Ktravis_time:end:09c447f6:start=1608567119874143573,finish=1608567119876303599,duration=2160026,event=check_unsupported[0Ktravis_time:start:02a4b486[0Ktravis_fold:start:system_info[0K[33;1mBuild system information[0m
+Build language: python
+Build group: stable
+Build dist: bionic
+Build id: 210077411
+Job id: 463562513
+Runtime kernel version: 5.3.0-1029-gcp
+travis-build version: 53b53106
+[34m[1mBuild image provisioning date and time[0m
+Tue Jun 30 13:35:43 UTC 2020
+[34m[1mOperating System Details[0m
+Distributor ID:	Ubuntu
+Description:	Ubuntu 18.04.4 LTS
+Release:	18.04
+Codename:	bionic
+[34m[1mSystemd Version[0m
+systemd 237
+[34m[1mCookbooks Version[0m
+3f92a99 https://github.com/travis-ci/travis-cookbooks/tree/3f92a99
+[34m[1mgit version[0m
+git version 2.27.0
+[34m[1mbash version[0m
+GNU bash, version 4.4.20(1)-release (x86_64-pc-linux-gnu)
+[34m[1mgcc version[0m
+gcc (Ubuntu 7.5.0-3ubuntu1~18.04) 7.5.0
+[34m[1mdocker version[0m
+Client:
+ Version:           18.06.0-ce
+ API version:       1.38
+ Go version:        go1.10.3
+ Git commit:        0ffa825
+ Built:             Wed Jul 18 19:09:54 2018
+ OS/Arch:           linux/amd64
+ Experimental:      false
+
+Server:
+ Engine:
+  Version:          18.06.0-ce
+  API version:      1.38 (minimum version 1.12)
+  Go version:       go1.10.3
+  Git commit:       0ffa825
+  Built:            Wed Jul 18 19:07:56 2018
+  OS/Arch:          linux/amd64
+  Experimental:     false
+[34m[1mclang version[0m
+clang version 7.0.0 (tags/RELEASE_700/final)
+[34m[1mjq version[0m
+jq-1.5
+[34m[1mbats version[0m
+Bats 0.4.0
+[34m[1mshellcheck version[0m
+0.7.0
+[34m[1mshfmt version[0m
+v2.6.3
+[34m[1mccache version[0m
+3.4.1
+[34m[1mcmake version[0m
+cmake version 3.12.4
+[34m[1mheroku version[0m
+heroku/7.42.1 linux-x64 node-v12.16.2
+[34m[1mimagemagick version[0m
+Version: ImageMagick 6.9.7-4 Q16 x86_64 20170114 http://www.imagemagick.org
+[34m[1mmd5deep version[0m
+4.4
+[34m[1mmercurial version[0m
+version 4.8
+[34m[1mmysql version[0m
+mysql  Ver 14.14 Distrib 5.7.30, for Linux (x86_64) using  EditLine wrapper
+[34m[1mopenssl version[0m
+OpenSSL 1.1.1  11 Sep 2018
+[34m[1mpacker version[0m
+1.3.3
+[34m[1mpostgresql client version[0m
+psql (PostgreSQL) 11.8 (Ubuntu 11.8-1.pgdg18.04+1)
+[34m[1mragel version[0m
+Ragel State Machine Compiler version 6.10 March 2017
+[34m[1msudo version[0m
+1.8.21p2
+[34m[1mgzip version[0m
+gzip 1.6
+[34m[1mzip version[0m
+Zip 3.0
+[34m[1mvim version[0m
+VIM - Vi IMproved 8.0 (2016 Sep 12, compiled Mar 18 2020 18:29:15)
+[34m[1miptables version[0m
+iptables v1.6.1
+[34m[1mcurl version[0m
+curl 7.58.0 (x86_64-pc-linux-gnu) libcurl/7.58.0 OpenSSL/1.1.1 zlib/1.2.11 libidn2/2.0.4 libpsl/0.19.1 (+libidn2/2.0.4) nghttp2/1.30.0 librtmp/2.3
+[34m[1mwget version[0m
+GNU Wget 1.19.4 built on linux-gnu.
+[34m[1mrsync version[0m
+rsync  version 3.1.2  protocol version 31
+[34m[1mgimme version[0m
+v1.5.4
+[34m[1mnvm version[0m
+0.35.3
+[34m[1mperlbrew version[0m
+/home/travis/perl5/perlbrew/bin/perlbrew  - App::perlbrew/0.87
+[34m[1mphpenv version[0m
+rbenv 1.1.2-30-gc879cb0
+[34m[1mrvm version[0m
+rvm 1.29.10 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
+[34m[1mdefault ruby version[0m
+ruby 2.6.5p114 (2019-10-01 revision 67812) [x86_64-linux]
+[34m[1mElasticSearch version[0m
+5.5.0
+[34m[1mInstalled Firefox version[0m
+firefox 63.0.1
+[34m[1mMongoDB version[0m
+MongoDB 4.0.19
+[34m[1mPhantomJS version[0m
+2.1.1
+[34m[1mPre-installed PostgreSQL versions[0m
+9.3.25
+9.4.26
+9.5.22
+9.6.18
+[34m[1mRedis version[0m
+redis-server 6.0.5
+[34m[1mPre-installed Go versions[0m
+1.11.1
+[34m[1mant version[0m
+Apache Ant(TM) version 1.10.5 compiled on March 28 2019
+[34m[1mmvn version[0m
+Apache Maven 3.6.3 (cecedd343002696d0abb50b32b541b8a6ba2883f)
+[34m[1mgradle version[0m
+Gradle 5.1.1!
+[34m[1mlein version[0m
+Leiningen 2.9.3 on Java 11.0.2 OpenJDK 64-Bit Server VM
+[34m[1mPre-installed Node.js versions[0m
+v10.16.0
+v10.21.0
+v11.15.0
+v12.13.1
+v12.18.1
+v13.3.0
+v4.9.1
+v6.17.1
+v8.16.2
+v8.17.0
+v8.9
+[34m[1mphpenv versions[0m
+  system
+  7.1
+  7.1.33
+  7.2
+* 7.2.27 (set by /home/travis/.phpenv/version)
+  7.3
+  7.3.14
+  7.4
+  7.4.2
+  hhvm
+  hhvm-stable
+[34m[1mcomposer --version[0m
+Composer version 1.9.2 2020-01-14 16:30:31
+[34m[1mPre-installed Ruby versions[0m
+ruby-2.4.9
+ruby-2.5.3
+ruby-2.5.7
+ruby-2.6.5
+ruby-2.7.0
+travis_fold:end:system_info[0K
+travis_time:end:02a4b486:start=1608567119878949547,finish=1608567119885760277,duration=6810730,event=show_system_info[0Ktravis_time:start:01dfae98[0Ktravis_time:end:01dfae98:start=1608567119888931077,finish=1608567119907998640,duration=19067563,event=rm_riak_source[0Ktravis_time:start:2e8127a4[0Ktravis_time:end:2e8127a4:start=1608567119911055701,finish=1608567119916796687,duration=5740986,event=fix_rwky_redis[0Ktravis_time:start:066f1b78[0Ktravis_time:end:066f1b78:start=1608567119920371682,finish=1608567120410111037,duration=489739355,event=wait_for_network[0Ktravis_time:start:0facb44c[0Ktravis_time:end:0facb44c:start=1608567120413933613,finish=1608567120661046092,duration=247112479,event=update_apt_keys[0Ktravis_time:start:0bccb32f[0Ktravis_time:end:0bccb32f:start=1608567120665445332,finish=1608567120720550769,duration=55105437,event=fix_hhvm_source[0Ktravis_time:start:068e266b[0Ktravis_time:end:068e266b:start=1608567120724839727,finish=1608567120727607432,duration=2767705,event=update_mongo_arch[0Ktravis_time:start:06e8fe02[0Ktravis_time:end:06e8fe02:start=1608567120731567611,finish=1608567120772980823,duration=41413212,event=fix_sudo_enabled_trusty[0Ktravis_time:start:15533d48[0Ktravis_time:end:15533d48:start=1608567120778006390,finish=1608567120780329398,duration=2323008,event=update_glibc[0Ktravis_time:start:02fdc5f4[0Ktravis_time:end:02fdc5f4:start=1608567120784492579,finish=1608567120792153764,duration=7661185,event=clean_up_path[0Ktravis_time:start:1694507d[0Ktravis_time:end:1694507d:start=1608567120796239471,finish=1608567120804947451,duration=8707980,event=fix_resolv_conf[0Ktravis_time:start:173a426c[0Ktravis_time:end:173a426c:start=1608567120809235459,finish=1608567120825103027,duration=15867568,event=fix_etc_hosts[0Ktravis_time:start:0dfbbe29[0Ktravis_time:end:0dfbbe29:start=1608567120828810717,finish=1608567120837184232,duration=8373515,event=fix_mvn_settings_xml[0Ktravis_time:start:1e34d4ba[0Ktravis_time:end:1e34d4ba:start=1608567120841800589,finish=1608567120852182088,duration=10381499,event=no_ipv6_localhost[0Ktravis_time:start:0d6dfce0[0Ktravis_time:end:0d6dfce0:start=1608567120856901183,finish=1608567120859751441,duration=2850258,event=fix_etc_mavenrc[0Ktravis_time:start:0175615e[0Ktravis_time:end:0175615e:start=1608567120863202512,finish=1608567120866499756,duration=3297244,event=fix_wwdr_certificate[0Ktravis_time:start:1000c1d0[0Ktravis_time:end:1000c1d0:start=1608567120871322956,finish=1608567120931517559,duration=60194603,event=put_localhost_first[0Ktravis_time:start:1f0422f6[0Ktravis_time:end:1f0422f6:start=1608567120937156894,finish=1608567120940900018,duration=3743124,event=home_paths[0Ktravis_time:start:2136da46[0Ktravis_time:end:2136da46:start=1608567120944888109,finish=1608567120958279921,duration=13391812,event=disable_initramfs[0Ktravis_time:start:37f1d3ca[0Ktravis_time:end:37f1d3ca:start=1608567120963981438,finish=1608567121106246574,duration=142265136,event=disable_ssh_roaming[0Ktravis_time:start:1797dd73[0Ktravis_time:end:1797dd73:start=1608567121110196330,finish=1608567121113311991,duration=3115661,event=debug_tools[0Ktravis_time:start:0aae734c[0Ktravis_time:end:0aae734c:start=1608567121117495494,finish=1608567121121730467,duration=4234973,event=uninstall_oclint[0Ktravis_time:start:220a7180[0Ktravis_time:end:220a7180:start=1608567121126188302,finish=1608567121130209533,duration=4021231,event=rvm_use[0Ktravis_time:start:029fb404[0Ktravis_time:end:029fb404:start=1608567121134640880,finish=1608567121143117339,duration=8476459,event=rm_etc_boto_cfg[0Ktravis_time:start:042bb0fb[0Ktravis_time:end:042bb0fb:start=1608567121146640687,finish=1608567121148839343,duration=2198656,event=rm_oraclejdk8_symlink[0Ktravis_time:start:068f725e[0Ktravis_time:end:068f725e:start=1608567121152884268,finish=1608567121245333011,duration=92448743,event=enable_i386[0Ktravis_time:start:2fb438b0[0Ktravis_time:end:2fb438b0:start=1608567121249518197,finish=1608567121253868021,duration=4349824,event=update_rubygems[0Ktravis_time:start:0b8aa775[0Ktravis_time:end:0b8aa775:start=1608567121257663447,finish=1608567122045555802,duration=787892355,event=ensure_path_components[0Ktravis_time:start:00016eff[0Ktravis_time:end:00016eff:start=1608567122049604231,finish=1608567122052094636,duration=2490405,event=redefine_curl[0Ktravis_time:start:0e006baa[0Ktravis_time:end:0e006baa:start=1608567122055845932,finish=1608567122159348806,duration=103502874,event=nonblock_pipe[0Ktravis_time:start:07e421b0[0Ktravis_time:end:07e421b0:start=1608567122163351831,finish=1608567128196140501,duration=6032788670,event=apt_get_update[0Ktravis_time:start:03c58f9e[0Ktravis_time:end:03c58f9e:start=1608567128200604321,finish=1608567128202807666,duration=2203345,event=deprecate_xcode_64[0Ktravis_time:start:1c6117ac[0Ktravis_time:end:1c6117ac:start=1608567128206609195,finish=1608567130993058678,duration=2786449483,event=update_heroku[0Ktravis_time:start:0f3e53f8[0Ktravis_time:end:0f3e53f8:start=1608567130997083918,finish=1608567130999288369,duration=2204451,event=shell_session_update[0Ktravis_time:start:00641300[0Ktravis_fold:start:docker_mtu_and_registry_mirrors[0Ktravis_fold:end:docker_mtu_and_registry_mirrors[0Ktravis_time:end:00641300:start=1608567131003096129,finish=1608567133392229197,duration=2389133068,event=set_docker_mtu_and_registry_mirrors[0Ktravis_time:start:0a2c1bde[0Ktravis_fold:start:resolvconf[0Ktravis_fold:end:resolvconf[0Ktravis_time:end:0a2c1bde:start=1608567133398423943,finish=1608567133471967329,duration=73543386,event=resolvconf[0Ktravis_time:start:103cd8b4[0Ktravis_time:end:103cd8b4:start=1608567133478167547,finish=1608567133649501939,duration=171334392,event=maven_central_mirror[0Ktravis_time:start:1daf3d8c[0Ktravis_time:end:1daf3d8c:start=1608567133655455406,finish=1608567133757006629,duration=101551223,event=maven_https[0Ktravis_time:start:029109de[0Ktravis_fold:start:services[0Ktravis_time:start:1198d3e0[0K$ sudo systemctl start docker
+travis_time:end:1198d3e0:start=1608567133771506289,finish=1608567133784491830,duration=12985541,event=prepare[0Ktravis_fold:end:services[0Ktravis_time:end:1198d3e0:start=1608567133771506289,finish=1608567136791570648,duration=3020064359,event=services[0Ktravis_time:start:06453fe0[0Ktravis_time:end:06453fe0:start=1608567136796548255,finish=1608567136799573204,duration=3024949,event=fix_ps4[0Ktravis_time:start:10c6fad0[0K
+travis_fold:start:git.checkout[0Ktravis_time:start:0c471003[0K$ git clone --depth=50 https://github.com/precice/systemtests.git precice/systemtests
+Cloning into 'precice/systemtests'...
+travis_time:end:0c471003:start=1608567136808330510,finish=1608567143935604747,duration=7127274237,event=checkout[0K$ cd precice/systemtests
+travis_time:start:23314f08[0K$ git fetch origin +refs/pull/268/merge:
+From https://github.com/precice/systemtests
+ * branch            refs/pull/268/merge -> FETCH_HEAD
+travis_time:end:23314f08:start=1608567143941466149,finish=1608567144254205266,duration=312739117,event=checkout[0K$ git checkout -qf FETCH_HEAD
+travis_fold:end:git.checkout[0K
+travis_time:end:23314f08:start=1608567143941466149,finish=1608567146031722997,duration=2090256848,event=checkout[0Ktravis_time:start:05eb8826[0K
+[33;1mSetting environment variables from repository settings[0m
+$ export DOCKER_PASSWORD=[secure]
+$ export PRECICE_BOT_EMAIL=[secure]
+$ export GH_TOKEN=[secure]
+$ export DOCKER_USERNAME=precice
+$ export TRAVIS_ACCESS_TOKEN=[secure]
+
+travis_time:end:05eb8826:start=1608567146037606737,finish=1608567146051996754,duration=14390017,event=env[0Ktravis_time:start:35b8f99a[0K$ source ~/virtualenv/python3.8/bin/activate
+travis_time:end:35b8f99a:start=1608567146057570540,finish=1608567146064746719,duration=7176179,event=[0K$ python --version
+Python 3.8.1
+$ pip --version
+pip 20.1.1 from /home/travis/virtualenv/python3.8.1/lib/python3.8/site-packages/pip (python 3.8)
+travis_fold:start:install[0Ktravis_time:start:01dbd3a7[0K$ pip install Jinja2
+Collecting Jinja2
+  Downloading Jinja2-2.11.2-py2.py3-none-any.whl (125 kB)
+Collecting MarkupSafe>=0.23
+  Downloading MarkupSafe-1.1.1-cp38-cp38-manylinux1_x86_64.whl (32 kB)
+Installing collected packages: MarkupSafe, Jinja2
+Successfully installed Jinja2-2.11.2 MarkupSafe-1.1.1
+travis_time:end:01dbd3a7:start=1608567146557990770,finish=1608567147729972625,duration=1171981855,event=install[0Ktravis_fold:end:install[0Ktravis_time:start:0b2bbd96[0K$ python system_testing.py -s nutils-of -v
+Total reclaimed space: 0B
+networks:
+  precicecomm: {}
+services:
+  nutils-adapter:
+    build:
+      context: /home/travis/build/precice/systemtests/tests/TestCompose_nutils-of
+      dockerfile: Dockerfile.nutils
+    command: '/bin/bash -c "ln -sf /home/precice/Data/Input/* . && python3 cht.py
+      && mkdir /home/precice/Data/Output/Nutils && cp -r precice-output *.log /home/precice/Data/Output/Nutils"
+
+      '
+    container_name: nutils-adapter
+    depends_on:
+    - tutorial-data
+    networks:
+      precicecomm: null
+    volumes:
+    - exchange:/home/precice/Data/Exchange:rw
+    - output:/home/precice/Data/Output:rw
+    - nutils_input:/home/precice/Data/Input:rw
+    - configs:/home/precice/nutils/configs:rw
+  openfoam-adapter-outer:
+    command: '/bin/bash -c "source /usr/lib/openfoam/openfoam2006/etc/bashrc && blockMesh
+      -case /home/precice/Data/Input && buoyantPimpleFoam -case /home/precice/Data/Input
+      && mkdir /home/precice/Data/Output/OpenFOAM && cp -r precice-output *.log /home/precice/Data/Output/OpenFOAM"
+
+      '
+    container_name: openfoam-adapter-outer
+    depends_on:
+    - tutorial-data
+    image: precice/openfoam-adapter-ubuntu1804.package-develop:latest
+    networks:
+      precicecomm: null
+    volumes:
+    - exchange:/home/precice/Data/Exchange:rw
+    - output:/home/precice/Data/Output:rw
+    - openfoam_input:/home/precice/Data/Input:rw
+    - configs:/home/precice/openfoam-adapter/configs:rw
+  tutorial-data:
+    build:
+      args:
+        branch: develop
+      context: /home/travis/build/precice/systemtests/tests/TestCompose_nutils-of
+      dockerfile: Dockerfile.tutorial_data
+    container_name: tutorial-data
+    volumes:
+    - exchange:/Exchange:rw
+    - openfoam_input:/tutorials/CHT/flow-over-plate/buoyantPimpleFoam-nutils/OpenFOAM:rw
+    - nutils_input:/tutorials/CHT/flow-over-plate/buoyantPimpleFoam-nutils/Nutils:rw
+    - configs:/configs:rw
+    - output:/Output:rw
+version: '3.0'
+volumes:
+  configs: {}
+  exchange: {}
+  nutils_input: {}
+  openfoam_input: {}
+  output: {}
+
+Creating network "testcompose_nutils-of_default" with the default driver
+Creating network "testcompose_nutils-of_precicecomm" with the default driver
+Creating volume "testcompose_nutils-of_exchange" with default driver
+Creating volume "testcompose_nutils-of_nutils_input" with default driver
+Creating volume "testcompose_nutils-of_openfoam_input" with default driver
+Creating volume "testcompose_nutils-of_output" with default driver
+Creating volume "testcompose_nutils-of_configs" with default driver
+Building tutorial-data
+Step 1/9 : from alpine
+latest: Pulling from library/alpine
+Digest: sha256:3c7497bf0c7af93428242d6176e8f7905f2201d8fc5861f45be7a346b5f23436
+Status: Downloaded newer image for alpine:latest
+ ---> 389fef711851
+Step 2/9 : ENV tutorial_path /tutorials/CHT/flow-over-plate/buoyantPimpleFoam-nutils
+ ---> Running in 471008047d18
+Removing intermediate container 471008047d18
+ ---> 3ed0c745c0fc
+Step 3/9 : RUN apk add git
+ ---> Running in 86e4547f54ee
+fetch http://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/APKINDEX.tar.gz
+fetch http://dl-cdn.alpinelinux.org/alpine/v3.12/community/x86_64/APKINDEX.tar.gz
+(1/6) Installing ca-certificates (20191127-r4)
+(2/6) Installing nghttp2-libs (1.41.0-r0)
+(3/6) Installing libcurl (7.69.1-r3)
+(4/6) Installing expat (2.2.9-r1)
+(5/6) Installing pcre2 (10.35-r0)
+(6/6) Installing git (2.26.2-r0)
+Executing busybox-1.31.1-r19.trigger
+Executing ca-certificates-20191127-r4.trigger
+OK: 22 MiB in 20 packages
+Removing intermediate container 86e4547f54ee
+ ---> 99afd78e407b
+Step 4/9 : ARG branch=develop
+ ---> Running in 9c48a3265537
+Removing intermediate container 9c48a3265537
+ ---> 70fac94d37ad
+Step 5/9 : RUN git clone --depth 1 --branch $branch https://github.com/precice/tutorials
+ ---> Running in 31dc7f0ec73f
+[91mCloning into 'tutorials'...
+[0mRemoving intermediate container 31dc7f0ec73f
+ ---> abfe62842af3
+Step 6/9 : WORKDIR /
+ ---> Running in 984a095b4593
+Removing intermediate container 984a095b4593
+ ---> efb7c01256b3
+Step 7/9 : RUN  mkdir configs && cp $tutorial_path/precice-config.xml configs/precice-config.xml &&      sed -i 's|exchange-directory="\.\."|exchange-directory="/home/precice/Data/Exchange/" network="eth0"|g;              s|\(\s\+\)\(</participant>\)|\1   <export:vtk directory="precice-output" />\n\1\2|g'              configs/precice-config.xml &&      sed -i 's|\.\./precice-config\.xml|configs/precice-config.xml|g' $tutorial_path/Nutils/cht.py &&      sed -i 's|\.\./precice-config\.xml|configs/precice-config.xml|g' $tutorial_path/OpenFOAM/system/preciceDict
+ ---> Running in ef6cd273a887
+Removing intermediate container ef6cd273a887
+ ---> 88b996473c21
+Step 8/9 : RUN addgroup -g 1000 precice && adduser -u 1000 -G precice -D precice && chown -R precice:precice tutorials configs
+ ---> Running in 2e0481d9fdc9
+Removing intermediate container 2e0481d9fdc9
+ ---> 8250cfb47037
+Step 9/9 : USER precice
+ ---> Running in 3e23453989d5
+Removing intermediate container 3e23453989d5
+ ---> 35b815b20a1b
+Successfully built 35b815b20a1b
+Successfully tagged testcompose_nutils-of_tutorial-data:latest
+Image for service tutorial-data was built because it did not already exist. To rebuild this image you must use `docker-compose build` or `docker-compose up --build`.
+Building nutils-adapter
+Step 1/13 : ARG from=precice/precice-ubuntu1804.home-develop
+Step 2/13 : FROM $from
+latest: Pulling from precice/precice-ubuntu1804.home-develop
+Digest: sha256:5e8c5bb5a698893bfb719013b762dad78283eb5af230bede73b00e9209faaed5
+Status: Downloaded newer image for precice/precice-ubuntu1804.home-develop:latest
+ ---> f556c359a990
+Step 3/13 : USER root
+ ---> Running in a16c49b037e1
+Removing intermediate container a16c49b037e1
+ ---> 2eea12d42e69
+Step 4/13 : ARG CACHEBUST
+ ---> Running in 105bf3bb549c
+Removing intermediate container 105bf3bb549c
+ ---> 28cd8c978b5c
+Step 5/13 : RUN wget -q https://bootstrap.pypa.io/get-pip.py -O get-pip.py &&     python3 get-pip.py &&     pip3 install Cython mpi4py numpy==1.19.2
+ ---> Running in 0b8ed0cda286
+Collecting pip
+  Downloading pip-20.3.3-py2.py3-none-any.whl (1.5 MB)
+Collecting setuptools
+  Downloading setuptools-51.1.0.post20201221-py3-none-any.whl (2.0 MB)
+Collecting wheel
+  Downloading wheel-0.36.2-py2.py3-none-any.whl (35 kB)
+Installing collected packages: pip, setuptools, wheel
+Successfully installed pip-20.3.3 setuptools-51.1.0.post20201221 wheel-0.36.2
+Collecting numpy==1.19.2
+  Downloading numpy-1.19.2-cp36-cp36m-manylinux2010_x86_64.whl (14.5 MB)
+Collecting Cython
+  Downloading Cython-0.29.21-cp36-cp36m-manylinux1_x86_64.whl (2.0 MB)
+Collecting mpi4py
+  Downloading mpi4py-3.0.3.tar.gz (1.4 MB)
+Building wheels for collected packages: mpi4py
+  Building wheel for mpi4py (setup.py): started
+  Building wheel for mpi4py (setup.py): finished with status 'done'
+  Created wheel for mpi4py: filename=mpi4py-3.0.3-cp36-cp36m-linux_x86_64.whl size=2074607 sha256=27f6b5a5ad6de917ee03cf2e980352ebb9a62bc3ea14c34ded5bde8b6c8e2e21
+  Stored in directory: /root/.cache/pip/wheels/d6/73/83/ad9dd3ebae512829ab3f21657f76403dc4aa6649e1118c9369
+Successfully built mpi4py
+Installing collected packages: numpy, mpi4py, Cython
+Successfully installed Cython-0.29.21 mpi4py-3.0.3 numpy-1.19.2
+Removing intermediate container 0b8ed0cda286
+ ---> 79d84d8779ca
+Step 6/13 : USER precice
+ ---> Running in b94d384a74af
+Removing intermediate container b94d384a74af
+ ---> cd6431c02a6d
+Step 7/13 : ARG branch=develop
+ ---> Running in a9b0cbccf5fe
+Removing intermediate container a9b0cbccf5fe
+ ---> ad92f624d328
+Step 8/13 : RUN pip3 install --user https://github.com/precice/python-bindings/archive/$branch.zip
+ ---> Running in 3965491cdc2a
+Collecting https://github.com/precice/python-bindings/archive/develop.zip
+  Downloading https://github.com/precice/python-bindings/archive/develop.zip
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+    Preparing wheel metadata: started
+    Preparing wheel metadata: finished with status 'done'
+Requirement already satisfied: numpy in /usr/local/lib/python3.6/dist-packages (from pyprecice==0+unknown) (1.19.2)
+Requirement already satisfied: mpi4py in /usr/local/lib/python3.6/dist-packages (from pyprecice==0+unknown) (3.0.3)
+Building wheels for collected packages: pyprecice
+  Building wheel for pyprecice (PEP 517): started
+  Building wheel for pyprecice (PEP 517): finished with status 'done'
+  Created wheel for pyprecice: filename=pyprecice-0+unknown-py2.py3-none-any.whl size=767978 sha256=c1985079994272dff4ff187ce86dcf94e4f044ed2218aa261c8e7698d8f277f3
+  Stored in directory: /tmp/pip-ephem-wheel-cache-z9ras5g8/wheels/8d/4d/18/308222d4aaadc3616c73ac4d4563793feb863232b1b31836e3
+Successfully built pyprecice
+Installing collected packages: pyprecice
+Successfully installed pyprecice-0+unknown
+Removing intermediate container 3965491cdc2a
+ ---> 212fab8feb09
+Step 9/13 : ARG version=v6.0
+ ---> Running in f444e3ec86b0
+Removing intermediate container f444e3ec86b0
+ ---> e53638c90396
+Step 10/13 : WORKDIR /home/precice/
+ ---> Running in 09149de8334d
+Removing intermediate container 09149de8334d
+ ---> b3a2d2890ea9
+Step 11/13 : RUN git clone --depth 1 --branch $version https://github.com/evalf/nutils.git &&     python3 -m pip install --user --editable nutils
+ ---> Running in a3b157094c6c
+[91mCloning into 'nutils'...
+[0m[91mNote: checking out '26e2cde88ec2ddc5849592437e610a34a293a1cc'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by performing another checkout.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -b with the checkout command again. Example:
+
+  git checkout -b <new-branch-name>
+
+[0mObtaining file:///home/precice/nutils
+Requirement already satisfied: numpy>=1.12 in /usr/local/lib/python3.6/dist-packages (from nutils==6.0) (1.19.2)
+Collecting treelog>=1.0b5
+  Downloading treelog-1.0-py3-none-any.whl (24 kB)
+Collecting stringly
+  Downloading stringly-1.0b2-py3-none-any.whl (10 kB)
+Collecting typing-extensions
+  Downloading typing_extensions-3.7.4.3-py3-none-any.whl (22 kB)
+Installing collected packages: typing-extensions, treelog, stringly, nutils
+  Running setup.py develop for nutils
+Successfully installed nutils stringly-1.0b2 treelog-1.0 typing-extensions-3.7.4.3
+Removing intermediate container a3b157094c6c
+ ---> f322e68b84db
+Step 12/13 : RUN mkdir -p Data/Input Data/Output Data/Exchange
+ ---> Running in cf0b0eb33175
+Removing intermediate container cf0b0eb33175
+ ---> aa7e6258c160
+Step 13/13 : WORKDIR /home/precice/nutils
+ ---> Running in 2bfb9f4fec8d
+Removing intermediate container 2bfb9f4fec8d
+ ---> 01e1fc23faa2
+Successfully built 01e1fc23faa2
+Successfully tagged testcompose_nutils-of_nutils-adapter:latest
+Image for service nutils-adapter was built because it did not already exist. To rebuild this image you must use `docker-compose build` or `docker-compose up --build`.
+Pulling openfoam-adapter-outer (precice/openfoam-adapter-ubuntu1804.package-develop:latest)...
+latest: Pulling from precice/openfoam-adapter-ubuntu1804.package-develop
+Creating tutorial-data ... 
+[1A[2KCreating tutorial-data ... [32mdone[0m[1BCreating openfoam-adapter-outer ... 
+Creating nutils-adapter         ... 
+[1A[2KCreating nutils-adapter         ... [32mdone[0m[1B[2A[2KCreating openfoam-adapter-outer ... [32mdone[0m[2BAttaching to tutorial-data, nutils-adapter, openfoam-adapter-outer
+[33mnutils-adapter            |[0m --------------------------------------------------------------------------
+[33mnutils-adapter            |[0m [[60500,1],0]: A high-performance Open MPI point-to-point messaging module
+[33mnutils-adapter            |[0m was unable to find any relevant network interfaces:
+[33mnutils-adapter            |[0m 
+[33mnutils-adapter            |[0m Module: OpenFabrics (openib)
+[33mnutils-adapter            |[0m   Host: 6274e26a0c37
+[33mnutils-adapter            |[0m 
+[33mnutils-adapter            |[0m Another transport will be used instead, although this may result in
+[33mnutils-adapter            |[0m lower performance.
+[33mnutils-adapter            |[0m 
+[33mnutils-adapter            |[0m NOTE: You can disable this warning by setting the MCA parameter
+[33mnutils-adapter            |[0m btl_base_warn_component_unused to 0.
+[33mnutils-adapter            |[0m --------------------------------------------------------------------------
+[36mtutorial-data exited with code 0
+[0m[33mnutils-adapter            |[0m ASSERTION FAILED
+[33mnutils-adapter            |[0m   Location:          bool precice::xml::XMLTag::getBooleanAttributeValue(const string&) const
+[33mnutils-adapter            |[0m   File:              /home/precice/precice/src/xml/XMLTag.cpp:133
+[33mnutils-adapter            |[0m   Rank:              0
+[33mnutils-adapter            |[0m   Failed expression: iter != _booleanAttributes.end()
+[33mnutils-adapter            |[0m  0# getStacktrace[abi:cxx11]() in /home/precice/precice-install/lib/libprecice.so.2
+[33mnutils-adapter            |[0m  1# precice::xml::XMLTag::getBooleanAttributeValue(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const in /home/precice/precice-install/lib/libprecice.so.2
+[33mnutils-adapter            |[0m  2# precice::acceleration::AccelerationConfiguration::xmlTagCallback(precice::xml::ConfigurationContext const&, precice::xml::XMLTag&) in /home/precice/precice-install/lib/libprecice.so.2
+[33mnutils-adapter            |[0m  3# precice::xml::ConfigParser::connectTags(precice::xml::ConfigurationContext const&, std::vector<std::shared_ptr<precice::xml::XMLTag>, std::allocator<std::shared_ptr<precice::xml::XMLTag> > >&, std::vector<std::shared_ptr<precice::xml::ConfigParser::CTag>, std::allocator<std::shared_ptr<precice::xml::ConfigParser::CTag> > >&) in /home/precice/precice-install/lib/libprecice.so.2
+[33mnutils-adapter            |[0m  4# precice::xml::ConfigParser::connectTags(precice::xml::ConfigurationContext const&, std::vector<std::shared_ptr<precice::xml::XMLTag>, std::allocator<std::shared_ptr<precice::xml::XMLTag> > >&, std::vector<std::shared_ptr<precice::xml::ConfigParser::CTag>, std::allocator<std::shared_ptr<precice::xml::ConfigParser::CTag> > >&) in /home/precice/precice-install/lib/libprecice.so.2
+[33mnutils-adapter            |[0m  5# precice::xml::ConfigParser::connectTags(precice::xml::ConfigurationContext const&, std::vector<std::shared_ptr<precice::xml::XMLTag>, std::allocator<std::shared_ptr<precice::xml::XMLTag> > >&, std::vector<std::shared_ptr<precice::xml::ConfigParser::CTag>, std::allocator<std::shared_ptr<precice::xml::ConfigParser::CTag> > >&) in /home/precice/precice-install/lib/libprecice.so.2
+[33mnutils-adapter            |[0m  6# precice::xml::ConfigParser::connectTags(precice::xml::ConfigurationContext const&, std::vector<std::shared_ptr<precice::xml::XMLTag>, std::allocator<std::shared_ptr<precice::xml::XMLTag> > >&, std::vector<std::shared_ptr<precice::xml::ConfigParser::CTag>, std::allocator<std::shared_ptr<precice::xml::ConfigParser::CTag> > >&) in /home/precice/precice-install/lib/libprecice.so.2
+[33mnutils-adapter            |[0m  7# precice::xml::ConfigParser::connectTags(precice::xml::ConfigurationContext const&, std::vector<std::shared_ptr<precice::xml::XMLTag>, std::allocator<std::shared_ptr<precice::xml::XMLTag> > >&, std::vector<std::shared_ptr<precice::xml::ConfigParser::CTag>, std::allocator<std::shared_ptr<precice::xml::ConfigParser::CTag> > >&) in /home/precice/precice-install/lib/libprecice.so.2
+[33mnutils-adapter            |[0m  8# precice::xml::ConfigParser::ConfigParser(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, precice::xml::ConfigurationContext const&, std::shared_ptr<precice::xml::XMLTag>) in /home/precice/precice-install/lib/libprecice.so.2
+[33mnutils-adapter            |[0m  9# precice::xml::configure(precice::xml::XMLTag&, precice::xml::ConfigurationContext const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) in /home/precice/precice-install/lib/libprecice.so.2
+[33mnutils-adapter            |[0m 10# precice::impl::SolverInterfaceImpl::configure(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) in /home/precice/precice-install/lib/libprecice.so.2
+[33mnutils-adapter            |[0m 11# precice::impl::SolverInterfaceImpl::SolverInterfaceImpl(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int, int, void*) in /home/precice/precice-install/lib/libprecice.so.2
+[33mnutils-adapter            |[0m 12# precice::impl::SolverInterfaceImpl::SolverInterfaceImpl(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int, int) in /home/precice/precice-install/lib/libprecice.so.2
+[33mnutils-adapter            |[0m 13# precice::SolverInterface::SolverInterface(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int, int) in /home/precice/precice-install/lib/libprecice.so.2
+[33mnutils-adapter            |[0m 14# 0x00007F829E4CDDE3 in /home/precice/.local/lib/python3.6/site-packages/cyprecice.cpython-36m-x86_64-linux-gnu.so
+[33mnutils-adapter            |[0m 15# 0x0000000000551555 in python3
+[33mnutils-adapter            |[0m 16# _PyObject_FastCallKeywords in python3
+[33mnutils-adapter            |[0m 17# 0x000000000050A433 in python3
+[33mnutils-adapter            |[0m 18# _PyEval_EvalFrameDefault in python3
+[33mnutils-adapter            |[0m 19# 0x0000000000507BE4 in python3
+[33mnutils-adapter            |[0m 20# 0x0000000000588D41 in python3
+[33mnutils-adapter            |[0m 21# PyObject_Call in python3
+[33mnutils-adapter            |[0m 22# _PyEval_EvalFrameDefault in python3
+[33mnutils-adapter            |[0m 23# 0x0000000000507BE4 in python3
+[33mnutils-adapter            |[0m 24# 0x0000000000509900 in python3
+[33mnutils-adapter            |[0m 25# 0x000000000050A2FD in python3
+[33mnutils-adapter            |[0m 26# _PyEval_EvalFrameDefault in python3
+[33mnutils-adapter            |[0m 27# 0x0000000000507BE4 in python3
+[33mnutils-adapter            |[0m 28# PyEval_EvalCode in python3
+[33mnutils-adapter            |[0m 29# 0x0000000000634E72 in python3
+[33mnutils-adapter            |[0m 30# PyRun_FileExFlags in python3
+[33mnutils-adapter            |[0m 31# PyRun_SimpleFileExFlags in python3
+[33mnutils-adapter            |[0m 32# Py_Main in python3
+[33mnutils-adapter            |[0m 33# main in python3
+[33mnutils-adapter            |[0m 34# __libc_start_main in /lib/x86_64-linux-gnu/libc.so.6
+[33mnutils-adapter            |[0m 35# _start in python3
+[32mopenfoam-adapter-outer    |[0m /*---------------------------------------------------------------------------*\
+[32mopenfoam-adapter-outer    |[0m | =========                 |                                                 |
+[32mopenfoam-adapter-outer    |[0m | \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+[32mopenfoam-adapter-outer    |[0m |  \\    /   O peration     | Version:  2006                                  |
+[32mopenfoam-adapter-outer    |[0m |   \\  /    A nd           | Website:  www.openfoam.com                      |
+[32mopenfoam-adapter-outer    |[0m |    \\/     M anipulation  |                                                 |
+[32mopenfoam-adapter-outer    |[0m \*---------------------------------------------------------------------------*/
+[32mopenfoam-adapter-outer    |[0m Build  : 295eef47-20201012 OPENFOAM=2006 patch=201012
+[32mopenfoam-adapter-outer    |[0m Arch   : "LSB;label=32;scalar=64"
+[32mopenfoam-adapter-outer    |[0m Exec   : blockMesh -case /home/precice/Data/Input
+[32mopenfoam-adapter-outer    |[0m Date   : Dec 21 2020
+[32mopenfoam-adapter-outer    |[0m Time   : 16:17:58
+[32mopenfoam-adapter-outer    |[0m Host   : 134512f76ee3
+[32mopenfoam-adapter-outer    |[0m PID    : 257
+[33mnutils-adapter            |[0m 
+[33mnutils-adapter            |[0m python3: /home/precice/precice/src/xml/XMLTag.cpp:133: bool precice::xml::XMLTag::getBooleanAttributeValue(const string&) const: Assertion `false' failed.
+[33mnutils-adapter            |[0m [6274e26a0c37:00007] *** Process received signal ***
+[32mopenfoam-adapter-outer    |[0m I/O    : uncollated
+[32mopenfoam-adapter-outer    |[0m Case   : /home/precice/Data/Input
+[32mopenfoam-adapter-outer    |[0m nProcs : 1
+[33mnutils-adapter            |[0m [6274e26a0c37:00007] Signal: Aborted (6)
+[33mnutils-adapter            |[0m [6274e26a0c37:00007] Signal code:  (-6)
+[32mopenfoam-adapter-outer    |[0m trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+[32mopenfoam-adapter-outer    |[0m fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+[32mopenfoam-adapter-outer    |[0m allowSystemOperations : Allowing user-supplied system call operations
+[32mopenfoam-adapter-outer    |[0m 
+[32mopenfoam-adapter-outer    |[0m // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+[32mopenfoam-adapter-outer    |[0m Create time
+[32mopenfoam-adapter-outer    |[0m 
+[33mnutils-adapter            |[0m [6274e26a0c37:00007] [ 0] /lib/x86_64-linux-gnu/libc.so.6(+0x3f040)[0x7f82a97fb040]
+[32mopenfoam-adapter-outer    |[0m Creating block mesh from "system/blockMeshDict"
+[33mnutils-adapter            |[0m [6274e26a0c37:00007] [ 1] /lib/x86_64-linux-gnu/libc.so.6(gsignal+0xc7)[0x7f82a97fafb7]
+[32mopenfoam-adapter-outer    |[0m Creating block edges
+[32mopenfoam-adapter-outer    |[0m No non-planar block faces defined
+[32mopenfoam-adapter-outer    |[0m Creating topology blocks
+[33mnutils-adapter            |[0m [6274e26a0c37:00007] [ 2] /lib/x86_64-linux-gnu/libc.so.6(abort+0x141)[0x7f82a97fc921]
+[32mopenfoam-adapter-outer    |[0m --> FOAM IOWarning :
+[32mopenfoam-adapter-outer    |[0m     Found [v1012] 'convertToMeters' entry instead of 'scale' in dictionary "/home/precice/Data/Input/system/blockMeshDict" 
+[32mopenfoam-adapter-outer    |[0m 
+[32mopenfoam-adapter-outer    |[0m     This keyword is deemed to be 114 months old.
+[32mopenfoam-adapter-outer    |[0m 
+[33mnutils-adapter            |[0m [6274e26a0c37:00007] [ 3] /lib/x86_64-linux-gnu/libc.so.6(+0x3048a)[0x7f82a97ec48a]
+[32mopenfoam-adapter-outer    |[0m Creating topology patches
+[32mopenfoam-adapter-outer    |[0m 
+[32mopenfoam-adapter-outer    |[0m Creating block mesh topology
+[33mnutils-adapter            |[0m [6274e26a0c37:00007] [ 4] /lib/x86_64-linux-gnu/libc.so.6(+0x30502)[0x7f82a97ec502]
+[32mopenfoam-adapter-outer    |[0m --> FOAM Warning : 
+[32mopenfoam-adapter-outer    |[0m     From Foam::polyMesh::polyMesh(const Foam::IOobject&, Foam::pointField&&, const cellShapeList&, const faceListList&, const wordList&, const Foam::PtrList<Foam::dictionary>&, const Foam::word&, const Foam::word&, bool)
+[32mopenfoam-adapter-outer    |[0m     in file meshes/polyMesh/polyMeshFromShapeMesh.C at line 915
+[32mopenfoam-adapter-outer    |[0m     Found 6 undefined faces in mesh; adding to default patch defaultFaces
+[33mnutils-adapter            |[0m [6274e26a0c37:00007] [ 5] /home/precice/precice-install/lib/libprecice.so.2(_ZNK7precice3xml6XMLTag24getBooleanAttributeValueERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE+0x1d7)[0x7f829df99349]
+[32mopenfoam-adapter-outer    |[0m 
+[32mopenfoam-adapter-outer    |[0m Check topology
+[32mopenfoam-adapter-outer    |[0m 
+[32mopenfoam-adapter-outer    |[0m 	Basic statistics
+[32mopenfoam-adapter-outer    |[0m 		Number of internal faces : 2
+[32mopenfoam-adapter-outer    |[0m 		Number of boundary faces : 14
+[32mopenfoam-adapter-outer    |[0m 		Number of defined boundary faces : 14
+[32mopenfoam-adapter-outer    |[0m 		Number of undefined boundary faces : 0
+[32mopenfoam-adapter-outer    |[0m 	Checking patch -> block consistency
+[32mopenfoam-adapter-outer    |[0m 
+[33mnutils-adapter            |[0m [6274e26a0c37:00007] [ 6] /home/precice/precice-install/lib/libprecice.so.2(_ZN7precice12acceleration25AccelerationConfiguration14xmlTagCallbackERKNS_3xml20ConfigurationContextERNS2_6XMLTagE+0x95b)[0x7f829dbeb7f3]
+[32mopenfoam-adapter-outer    |[0m Creating block offsets
+[33mnutils-adapter            |[0m [6274e26a0c37:00007] [ 7] /home/precice/precice-install/lib/libprecice.so.2(_ZN7precice3xml12ConfigParser11connectTagsERKNS0_20ConfigurationContextERSt6vectorISt10shared_ptrINS0_6XMLTagEESaIS8_EERS5_IS6_INS1_4CTagEESaISD_EE+0x4ad)[0x7f829df5e399]
+[32mopenfoam-adapter-outer    |[0m Creating merge list (topological search)...
+[32mopenfoam-adapter-outer    |[0m 
+[32mopenfoam-adapter-outer    |[0m Creating polyMesh from blockMesh
+[32mopenfoam-adapter-outer    |[0m Creating patches
+[32mopenfoam-adapter-outer    |[0m Creating cells
+[33mnutils-adapter            |[0m [6274e26a0c37:00007] [ 8] /home/precice/precice-install/lib/libprecice.so.2(_ZN7precice3xml12ConfigParser11connectTagsERKNS0_20ConfigurationContextERSt6vectorISt10shared_ptrINS0_6XMLTagEESaIS8_EERS5_IS6_INS1_4CTagEESaISD_EE+0x505)[0x7f829df5e3f1]
+[33mnutils-adapter            |[0m [6274e26a0c37:00007] [ 9] /home/precice/precice-install/lib/libprecice.so.2(_ZN7precice3xml12ConfigParser11connectTagsERKNS0_20ConfigurationContextERSt6vectorISt10shared_ptrINS0_6XMLTagEESaIS8_EERS5_IS6_INS1_4CTagEESaISD_EE+0x505)[0x7f829df5e3f1]
+[33mnutils-adapter            |[0m [6274e26a0c37:00007] [10] /home/precice/precice-install/lib/libprecice.so.2(_ZN7precice3xml12ConfigParser11connectTagsERKNS0_20ConfigurationContextERSt6vectorISt10shared_ptrINS0_6XMLTagEESaIS8_EERS5_IS6_INS1_4CTagEESaISD_EE+0x505)[0x7f829df5e3f1]
+[33mnutils-adapter            |[0m [6274e26a0c37:00007] [11] /home/precice/precice-install/lib/libprecice.so.2(_ZN7precice3xml12ConfigParser11connectTagsERKNS0_20ConfigurationContextERSt6vectorISt10shared_ptrINS0_6XMLTagEESaIS8_EERS5_IS6_INS1_4CTagEESaISD_EE+0x505)[0x7f829df5e3f1]
+[33mnutils-adapter            |[0m [6274e26a0c37:00007] [12] /home/precice/precice-install/lib/libprecice.so.2(_ZN7precice3xml12ConfigParserC1ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKNS0_20ConfigurationContextESt10shared_ptrINS0_6XMLTagEE+0x193)[0x7f829df5d1dd]
+[33mnutils-adapter            |[0m [6274e26a0c37:00007] [13] /home/precice/precice-install/lib/libprecice.so.2(_ZN7precice3xml9configureERNS0_6XMLTagERKNS0_20ConfigurationContextERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE+0x298)[0x7f829df9b5d9]
+[32mopenfoam-adapter-outer    |[0m Creating points with scale 1
+[32mopenfoam-adapter-outer    |[0m     Block 0 cell size :
+[32mopenfoam-adapter-outer    |[0m         i : 0.0123864 .. 0.00247728
+[32mopenfoam-adapter-outer    |[0m         j : 0.00232699 .. 0.0349049
+[32mopenfoam-adapter-outer    |[0m         k : 0.05 .. 0.05
+[32mopenfoam-adapter-outer    |[0m 
+[32mopenfoam-adapter-outer    |[0m     Block 1 cell size :
+[32mopenfoam-adapter-outer    |[0m         i : 0.0024959 .. 0.0124795
+[32mopenfoam-adapter-outer    |[0m         j : 0.00232699 .. 0.0349049
+[32mopenfoam-adapter-outer    |[0m         k : 0.05 .. 0.05
+[32mopenfoam-adapter-outer    |[0m 
+[32mopenfoam-adapter-outer    |[0m     Block 2 cell size :
+[32mopenfoam-adapter-outer    |[0m         i : 0.0392157 .. 0.0392157
+[32mopenfoam-adapter-outer    |[0m         j : 0.00232699 .. 0.0349049
+[32mopenfoam-adapter-outer    |[0m         k : 0.05 .. 0.05
+[32mopenfoam-adapter-outer    |[0m 
+[33mnutils-adapter            |[0m [6274e26a0c37:00007] [14] /home/precice/precice-install/lib/libprecice.so.2(_ZN7precice4impl19SolverInterfaceImpl9configureERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE+0xeb)[0x7f829decaf0d]
+[33mnutils-adapter            |[0m [6274e26a0c37:00007] [15] /home/precice/precice-install/lib/libprecice.so.2(_ZN7precice4impl19SolverInterfaceImplC2ENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKS7_iiPv+0x4ad)[0x7f829deca4cd]
+[33mnutils-adapter            |[0m [6274e26a0c37:00007] [16] /home/precice/precice-install/lib/libprecice.so.2(_ZN7precice4impl19SolverInterfaceImplC2ENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKS7_ii+0x6c)[0x7f829deca858]
+[33mnutils-adapter            |[0m [6274e26a0c37:00007] [17] /home/precice/precice-install/lib/libprecice.so.2(_ZN7precice15SolverInterfaceC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES8_ii+0x74)[0x7f829deaa79a]
+[33mnutils-adapter            |[0m [6274e26a0c37:00007] [18] /home/precice/.local/lib/python3.6/site-packages/cyprecice.cpython-36m-x86_64-linux-gnu.so(+0xdde3)[0x7f829e4cdde3]
+[33mnutils-adapter            |[0m [6274e26a0c37:00007] [19] python3[0x551555]
+[33mnutils-adapter            |[0m [6274e26a0c37:00007] [20] python3(_PyObject_FastCallKeywords+0x19c)[0x5a9dac]
+[33mnutils-adapter            |[0m [6274e26a0c37:00007] [21] python3[0x50a433]
+[33mnutils-adapter            |[0m [6274e26a0c37:00007] [22] python3(_PyEval_EvalFrameDefault+0x444)[0x50beb4]
+[33mnutils-adapter            |[0m [6274e26a0c37:00007] [23] python3[0x507be4]
+[33mnutils-adapter            |[0m [6274e26a0c37:00007] [24] python3[0x588d41]
+[33mnutils-adapter            |[0m [6274e26a0c37:00007] [25] python3(PyObject_Call+0x3e)[0x59fd0e]
+[33mnutils-adapter            |[0m [6274e26a0c37:00007] [26] python3(_PyEval_EvalFrameDefault+0x17e6)[0x50d256]
+[33mnutils-adapter            |[0m [6274e26a0c37:00007] [27] python3[0x507be4]
+[33mnutils-adapter            |[0m [6274e26a0c37:00007] [28] python3[0x509900]
+[33mnutils-adapter            |[0m [6274e26a0c37:00007] [29] python3[0x50a2fd]
+[33mnutils-adapter            |[0m [6274e26a0c37:00007] *** End of error message ***
+[32mopenfoam-adapter-outer    |[0m 
+[32mopenfoam-adapter-outer    |[0m There are no merge patch pairs
+[32mopenfoam-adapter-outer    |[0m 
+[32mopenfoam-adapter-outer    |[0m Writing polyMesh with 0 cellZones
+[32mopenfoam-adapter-outer    |[0m ----------------
+[32mopenfoam-adapter-outer    |[0m Mesh Information
+[32mopenfoam-adapter-outer    |[0m ----------------
+[32mopenfoam-adapter-outer    |[0m   boundingBox: (-0.5 0 0) (3 0.5 0.05)
+[32mopenfoam-adapter-outer    |[0m   nPoints: 24696
+[32mopenfoam-adapter-outer    |[0m   nCells: 12013
+[32mopenfoam-adapter-outer    |[0m   nFaces: 48386
+[32mopenfoam-adapter-outer    |[0m   nInternalFaces: 23692
+[32mopenfoam-adapter-outer    |[0m ----------------
+[32mopenfoam-adapter-outer    |[0m Patches
+[32mopenfoam-adapter-outer    |[0m ----------------
+[32mopenfoam-adapter-outer    |[0m   patch 0 (start: 23692 size: 41) name: inlet
+[32mopenfoam-adapter-outer    |[0m   patch 1 (start: 23733 size: 41) name: outlet
+[32mopenfoam-adapter-outer    |[0m   patch 2 (start: 23774 size: 293) name: top
+[32mopenfoam-adapter-outer    |[0m   patch 3 (start: 24067 size: 81) name: slip-bottom
+[32mopenfoam-adapter-outer    |[0m   patch 4 (start: 24148 size: 51) name: bottom
+[32mopenfoam-adapter-outer    |[0m   patch 5 (start: 24199 size: 161) name: interface
+[32mopenfoam-adapter-outer    |[0m   patch 6 (start: 24360 size: 24026) name: defaultFaces
+[32mopenfoam-adapter-outer    |[0m 
+[32mopenfoam-adapter-outer    |[0m End
+[32mopenfoam-adapter-outer    |[0m 
+[32mopenfoam-adapter-outer    |[0m /*---------------------------------------------------------------------------*\
+[32mopenfoam-adapter-outer    |[0m | =========                 |                                                 |
+[32mopenfoam-adapter-outer    |[0m | \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+[32mopenfoam-adapter-outer    |[0m |  \\    /   O peration     | Version:  2006                                  |
+[32mopenfoam-adapter-outer    |[0m |   \\  /    A nd           | Website:  www.openfoam.com                      |
+[32mopenfoam-adapter-outer    |[0m |    \\/     M anipulation  |                                                 |
+[32mopenfoam-adapter-outer    |[0m \*---------------------------------------------------------------------------*/
+[32mopenfoam-adapter-outer    |[0m Build  : 295eef47-20201012 OPENFOAM=2006 patch=201012
+[32mopenfoam-adapter-outer    |[0m Arch   : "LSB;label=32;scalar=64"
+[32mopenfoam-adapter-outer    |[0m Exec   : buoyantPimpleFoam -case /home/precice/Data/Input
+[32mopenfoam-adapter-outer    |[0m Date   : Dec 21 2020
+[32mopenfoam-adapter-outer    |[0m Time   : 16:17:58
+[32mopenfoam-adapter-outer    |[0m Host   : 134512f76ee3
+[32mopenfoam-adapter-outer    |[0m PID    : 258
+[32mopenfoam-adapter-outer    |[0m I/O    : uncollated
+[32mopenfoam-adapter-outer    |[0m Case   : /home/precice/Data/Input
+[32mopenfoam-adapter-outer    |[0m nProcs : 1
+[32mopenfoam-adapter-outer    |[0m trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+[32mopenfoam-adapter-outer    |[0m fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+[32mopenfoam-adapter-outer    |[0m allowSystemOperations : Allowing user-supplied system call operations
+[32mopenfoam-adapter-outer    |[0m 
+[32mopenfoam-adapter-outer    |[0m // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+[32mopenfoam-adapter-outer    |[0m Create time
+[32mopenfoam-adapter-outer    |[0m 
+[32mopenfoam-adapter-outer    |[0m Create mesh for time = 0
+[32mopenfoam-adapter-outer    |[0m 
+[33mnutils-adapter            |[0m /bin/bash: line 1:     7 Aborted                 (core dumped) python3 cht.py
+[32mopenfoam-adapter-outer    |[0m 
+[32mopenfoam-adapter-outer    |[0m PIMPLE: Operating solver in PISO mode
+[32mopenfoam-adapter-outer    |[0m 
+[32mopenfoam-adapter-outer    |[0m Reading thermophysical properties
+[32mopenfoam-adapter-outer    |[0m 
+[32mopenfoam-adapter-outer    |[0m Selecting thermodynamics package 
+[32mopenfoam-adapter-outer    |[0m {
+[32mopenfoam-adapter-outer    |[0m     type            heRhoThermo;
+[32mopenfoam-adapter-outer    |[0m     mixture         pureMixture;
+[32mopenfoam-adapter-outer    |[0m     transport       const;
+[32mopenfoam-adapter-outer    |[0m     thermo          hConst;
+[32mopenfoam-adapter-outer    |[0m     equationOfState perfectGas;
+[32mopenfoam-adapter-outer    |[0m     specie          specie;
+[32mopenfoam-adapter-outer    |[0m     energy          sensibleEnthalpy;
+[32mopenfoam-adapter-outer    |[0m }
+[32mopenfoam-adapter-outer    |[0m 
+[32mopenfoam-adapter-outer    |[0m Reading field U
+[32mopenfoam-adapter-outer    |[0m 
+[32mopenfoam-adapter-outer    |[0m Reading/calculating face flux field phi
+[32mopenfoam-adapter-outer    |[0m 
+[32mopenfoam-adapter-outer    |[0m Creating turbulence model
+[32mopenfoam-adapter-outer    |[0m 
+[32mopenfoam-adapter-outer    |[0m Selecting turbulence model type laminar
+[32mopenfoam-adapter-outer    |[0m Selecting laminar stress model Stokes
+[32mopenfoam-adapter-outer    |[0m 
+[32mopenfoam-adapter-outer    |[0m Reading g
+[32mopenfoam-adapter-outer    |[0m 
+[32mopenfoam-adapter-outer    |[0m Reading hRef
+[32mopenfoam-adapter-outer    |[0m Calculating field g.h
+[32mopenfoam-adapter-outer    |[0m 
+[32mopenfoam-adapter-outer    |[0m Reading field p_rgh
+[32mopenfoam-adapter-outer    |[0m 
+[32mopenfoam-adapter-outer    |[0m Creating field dpdt
+[32mopenfoam-adapter-outer    |[0m 
+[32mopenfoam-adapter-outer    |[0m Creating field kinetic energy K
+[32mopenfoam-adapter-outer    |[0m 
+[32mopenfoam-adapter-outer    |[0m No MRF models present
+[32mopenfoam-adapter-outer    |[0m 
+[32mopenfoam-adapter-outer    |[0m Radiation model not active: radiationProperties not found
+[32mopenfoam-adapter-outer    |[0m Selecting radiationModel none
+[32mopenfoam-adapter-outer    |[0m No finite volume options present
+[32mopenfoam-adapter-outer    |[0m Courant Number mean: 0.0837143 max: 0.403668
+[32mopenfoam-adapter-outer    |[0m 
+[32mopenfoam-adapter-outer    |[0m Starting time loop
+[32mopenfoam-adapter-outer    |[0m 
+[33mnutils-adapter exited with code 134
+[0m[32mopenfoam-adapter-outer    |[0m --------------------------------------------------------------------------
+[32mopenfoam-adapter-outer    |[0m [[20786,1],0]: A high-performance Open MPI point-to-point messaging module
+[32mopenfoam-adapter-outer    |[0m was unable to find any relevant network interfaces:
+[32mopenfoam-adapter-outer    |[0m 
+[32mopenfoam-adapter-outer    |[0m Module: OpenFabrics (openib)
+[32mopenfoam-adapter-outer    |[0m   Host: 134512f76ee3
+[32mopenfoam-adapter-outer    |[0m 
+[32mopenfoam-adapter-outer    |[0m Another transport will be used instead, although this may result in
+[32mopenfoam-adapter-outer    |[0m lower performance.
+[32mopenfoam-adapter-outer    |[0m 
+[32mopenfoam-adapter-outer    |[0m NOTE: You can disable this warning by setting the MCA parameter
+[32mopenfoam-adapter-outer    |[0m btl_base_warn_component_unused to 0.
+[32mopenfoam-adapter-outer    |[0m --------------------------------------------------------------------------
+[32mopenfoam-adapter-outer    |[0m ---[preciceAdapter] The preciceAdapter was loaded.
+[32mopenfoam-adapter-outer    |[0m ---[preciceAdapter] Reading preciceDict...
+[32mopenfoam-adapter-outer    |[0m ---[preciceAdapter] [DEBUG]   precice-config-file : configs/precice-config.xml
+[32mopenfoam-adapter-outer    |[0m ---[preciceAdapter] [DEBUG]   participant name    : OpenFOAM
+[32mopenfoam-adapter-outer    |[0m ---[preciceAdapter] [DEBUG]   modules requested   : 
+[32mopenfoam-adapter-outer    |[0m ---[preciceAdapter] [DEBUG]   - CHT
+[32mopenfoam-adapter-outer    |[0m 
+[32mopenfoam-adapter-outer    |[0m ---[preciceAdapter] [DEBUG]   interfaces : 
+[32mopenfoam-adapter-outer    |[0m ---[preciceAdapter] [DEBUG]   - mesh         : OpenFOAM-Mesh
+[32mopenfoam-adapter-outer    |[0m ---[preciceAdapter] [DEBUG]     locations    : faceCenters
+[32mopenfoam-adapter-outer    |[0m ---[preciceAdapter] [DEBUG]     connectivity : 0
+[32mopenfoam-adapter-outer    |[0m ---[preciceAdapter] [DEBUG]     patches      : 
+[32mopenfoam-adapter-outer    |[0m ---[preciceAdapter] [DEBUG]       - interface
+[32mopenfoam-adapter-outer    |[0m ---[preciceAdapter] [DEBUG]     writeData    : 
+[32mopenfoam-adapter-outer    |[0m ---[preciceAdapter] [DEBUG]       - Temperature
+[32mopenfoam-adapter-outer    |[0m ---[preciceAdapter] [DEBUG]     readData     : 
+[32mopenfoam-adapter-outer    |[0m ---[preciceAdapter] [DEBUG]       - Heat-Flux
+[32mopenfoam-adapter-outer    |[0m ---[preciceAdapter] [DEBUG] Configuring the CHT module...
+[32mopenfoam-adapter-outer    |[0m ---[preciceAdapter] [DEBUG]     user-defined solver type : 
+[32mopenfoam-adapter-outer    |[0m ---[preciceAdapter] [DEBUG]     temperature field name : T
+[32mopenfoam-adapter-outer    |[0m ---[preciceAdapter] [DEBUG]     conductivity name for basic solvers : k
+[32mopenfoam-adapter-outer    |[0m ---[preciceAdapter] [DEBUG]     density name for incompressible solvers : rho
+[32mopenfoam-adapter-outer    |[0m ---[preciceAdapter] [DEBUG]     heat capacity name for incompressible solvers : Cp
+[32mopenfoam-adapter-outer    |[0m ---[preciceAdapter] [DEBUG]     Prandtl number name for incompressible solvers : Pr
+[32mopenfoam-adapter-outer    |[0m ---[preciceAdapter] [DEBUG]     Turbulent thermal diffusivity field name for incompressible solvers : alphat
+[32mopenfoam-adapter-outer    |[0m ---[preciceAdapter] [DEBUG] Determining the solver type for the CHT module... (override by setting solverType to one of {compressible, incompressible, basic})
+[32mopenfoam-adapter-outer    |[0m ---[preciceAdapter] [DEBUG] Automatically determined solver type : compressible
+[32mopenfoam-adapter-outer    |[0m ---[preciceAdapter] [DEBUG] Checking the timestep type (fixed vs adjustable)...
+[32mopenfoam-adapter-outer    |[0m ---[preciceAdapter] [DEBUG]   Timestep type: fixed.
+[32mopenfoam-adapter-outer    |[0m ---[preciceAdapter] [DEBUG] Creating the preCICE solver interface...
+[32mopenfoam-adapter-outer    |[0m ---[preciceAdapter] [DEBUG]   Number of processes: 1
+[32mopenfoam-adapter-outer    |[0m ---[preciceAdapter] [DEBUG]   MPI rank: 0
+[32mopenfoam-adapter-outer    |[0m ASSERTION FAILED
+[32mopenfoam-adapter-outer    |[0m   Location:          bool precice::xml::XMLTag::getBooleanAttributeValue(const string&) const
+[32mopenfoam-adapter-outer    |[0m   File:              /home/precice/precice/src/xml/XMLTag.cpp:133
+[32mopenfoam-adapter-outer    |[0m   Rank:              0
+[32mopenfoam-adapter-outer    |[0m   Failed expression: iter != _booleanAttributes.end()
+[32mopenfoam-adapter-outer    |[0m  0# getStacktrace[abi:cxx11]() in /usr/lib/x86_64-linux-gnu/libprecice.so.2
+[32mopenfoam-adapter-outer    |[0m  1# precice::xml::XMLTag::getBooleanAttributeValue(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const in /usr/lib/x86_64-linux-gnu/libprecice.so.2
+[32mopenfoam-adapter-outer    |[0m  2# precice::acceleration::AccelerationConfiguration::xmlTagCallback(precice::xml::ConfigurationContext const&, precice::xml::XMLTag&) in /usr/lib/x86_64-linux-gnu/libprecice.so.2
+[32mopenfoam-adapter-outer    |[0m  3# precice::xml::ConfigParser::connectTags(precice::xml::ConfigurationContext const&, std::vector<std::shared_ptr<precice::xml::XMLTag>, std::allocator<std::shared_ptr<precice::xml::XMLTag> > >&, std::vector<std::shared_ptr<precice::xml::ConfigParser::CTag>, std::allocator<std::shared_ptr<precice::xml::ConfigParser::CTag> > >&) in /usr/lib/x86_64-linux-gnu/libprecice.so.2
+[32mopenfoam-adapter-outer    |[0m  4# precice::xml::ConfigParser::connectTags(precice::xml::ConfigurationContext const&, std::vector<std::shared_ptr<precice::xml::XMLTag>, std::allocator<std::shared_ptr<precice::xml::XMLTag> > >&, std::vector<std::shared_ptr<precice::xml::ConfigParser::CTag>, std::allocator<std::shared_ptr<precice::xml::ConfigParser::CTag> > >&) in /usr/lib/x86_64-linux-gnu/libprecice.so.2
+[32mopenfoam-adapter-outer    |[0m  5# precice::xml::ConfigParser::connectTags(precice::xml::ConfigurationContext const&, std::vector<std::shared_ptr<precice::xml::XMLTag>, std::allocator<std::shared_ptr<precice::xml::XMLTag> > >&, std::vector<std::shared_ptr<precice::xml::ConfigParser::CTag>, std::allocator<std::shared_ptr<precice::xml::ConfigParser::CTag> > >&) in /usr/lib/x86_64-linux-gnu/libprecice.so.2
+[32mopenfoam-adapter-outer    |[0m  6# precice::xml::ConfigParser::connectTags(precice::xml::ConfigurationContext const&, std::vector<std::shared_ptr<precice::xml::XMLTag>, std::allocator<std::shared_ptr<precice::xml::XMLTag> > >&, std::vector<std::shared_ptr<precice::xml::ConfigParser::CTag>, std::allocator<std::shared_ptr<precice::xml::ConfigParser::CTag> > >&) in /usr/lib/x86_64-linux-gnu/libprecice.so.2
+[32mopenfoam-adapter-outer    |[0m  7# precice::xml::ConfigParser::connectTags(precice::xml::ConfigurationContext const&, std::vector<std::shared_ptr<precice::xml::XMLTag>, std::allocator<std::shared_ptr<precice::xml::XMLTag> > >&, std::vector<std::shared_ptr<precice::xml::ConfigParser::CTag>, std::allocator<std::shared_ptr<precice::xml::ConfigParser::CTag> > >&) in /usr/lib/x86_64-linux-gnu/libprecice.so.2
+[32mopenfoam-adapter-outer    |[0m  8# precice::xml::ConfigParser::ConfigParser(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, precice::xml::ConfigurationContext const&, std::shared_ptr<precice::xml::XMLTag>) in /usr/lib/x86_64-linux-gnu/libprecice.so.2
+[32mopenfoam-adapter-outer    |[0m  9# precice::xml::configure(precice::xml::XMLTag&, precice::xml::ConfigurationContext const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) in /usr/lib/x86_64-linux-gnu/libprecice.so.2
+[32mopenfoam-adapter-outer    |[0m 10# precice::impl::SolverInterfaceImpl::configure(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) in /usr/lib/x86_64-linux-gnu/libprecice.so.2
+[32mopenfoam-adapter-outer    |[0m 11# precice::impl::SolverInterfaceImpl::SolverInterfaceImpl(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int, int, void*) in /usr/lib/x86_64-linux-gnu/libprecice.so.2
+[32mopenfoam-adapter-outer    |[0m 12# precice::impl::SolverInterfaceImpl::SolverInterfaceImpl(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int, int) in /usr/lib/x86_64-linux-gnu/libprecice.so.2
+[32mopenfoam-adapter-outer    |[0m 13# precice::SolverInterface::SolverInterface(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int, int) in /usr/lib/x86_64-linux-gnu/libprecice.so.2
+[32mopenfoam-adapter-outer    |[0m 14# preciceAdapter::Adapter::configure() in /home/precice/OpenFOAM/root-v2006/platforms/linux64GccDPInt32Opt/lib/libpreciceAdapterFunctionObject.so
+[32mopenfoam-adapter-outer    |[0m 15# Foam::functionObjects::preciceAdapterFunctionObject::read(Foam::dictionary const&) in /home/precice/OpenFOAM/root-v2006/platforms/linux64GccDPInt32Opt/lib/libpreciceAdapterFunctionObject.so
+[32mopenfoam-adapter-outer    |[0m 16# Foam::functionObjects::preciceAdapterFunctionObject::preciceAdapterFunctionObject(Foam::word const&, Foam::Time const&, Foam::dictionary const&) in /home/precice/OpenFOAM/root-v2006/platforms/linux64GccDPInt32Opt/lib/libpreciceAdapterFunctionObject.so
+[32mopenfoam-adapter-outer    |[0m 17# Foam::functionObject::adddictionaryConstructorToTable<Foam::functionObjects::preciceAdapterFunctionObject>::New(Foam::word const&, Foam::Time const&, Foam::dictionary const&) in /home/precice/OpenFOAM/root-v2006/platforms/linux64GccDPInt32Opt/lib/libpreciceAdapterFunctionObject.so
+[32mopenfoam-adapter-outer    |[0m 18# Foam::functionObject::New(Foam::word const&, Foam::Time const&, Foam::dictionary const&) in /usr/lib/openfoam/openfoam2006/platforms/linux64GccDPInt32Opt/lib/libOpenFOAM.so
+[32mopenfoam-adapter-outer    |[0m 19# Foam::functionObjectList::read() in /usr/lib/openfoam/openfoam2006/platforms/linux64GccDPInt32Opt/lib/libOpenFOAM.so
+[32mopenfoam-adapter-outer    |[0m 20# Foam::Time::run() const in /usr/lib/openfoam/openfoam2006/platforms/linux64GccDPInt32Opt/lib/libOpenFOAM.so
+[32mopenfoam-adapter-outer    |[0m 21# 0x0000562DA6DF4F19 in buoyantPimpleFoam
+[32mopenfoam-adapter-outer    |[0m 22# __libc_start_main in /lib/x86_64-linux-gnu/libc.so.6
+[32mopenfoam-adapter-outer    |[0m 23# 0x0000562DA6DFAC5A in buoyantPimpleFoam
+[32mopenfoam-adapter-outer    |[0m 
+[32mopenfoam-adapter-outer    |[0m buoyantPimpleFoam: /home/precice/precice/src/xml/XMLTag.cpp:133: bool precice::xml::XMLTag::getBooleanAttributeValue(const string&) const: Assertion `false' failed.
+[32mopenfoam-adapter-outer    |[0m [134512f76ee3:00258] *** Process received signal ***
+[32mopenfoam-adapter-outer    |[0m [134512f76ee3:00258] Signal: Aborted (6)
+[32mopenfoam-adapter-outer    |[0m [134512f76ee3:00258] Signal code:  (-6)
+[32mopenfoam-adapter-outer    |[0m [134512f76ee3:00258] [ 0] /lib/x86_64-linux-gnu/libpthread.so.0(+0x12980)[0x7f95195a9980]
+[32mopenfoam-adapter-outer    |[0m [134512f76ee3:00258] [ 1] /lib/x86_64-linux-gnu/libc.so.6(gsignal+0xc7)[0x7f95191e4fb7]
+[32mopenfoam-adapter-outer    |[0m [134512f76ee3:00258] [ 2] /lib/x86_64-linux-gnu/libc.so.6(abort+0x141)[0x7f95191e6921]
+[32mopenfoam-adapter-outer    |[0m [134512f76ee3:00258] [ 3] /lib/x86_64-linux-gnu/libc.so.6(+0x3048a)[0x7f95191d648a]
+[32mopenfoam-adapter-outer    |[0m [134512f76ee3:00258] [ 4] /lib/x86_64-linux-gnu/libc.so.6(+0x30502)[0x7f95191d6502]
+[32mopenfoam-adapter-outer    |[0m [134512f76ee3:00258] [ 5] /usr/lib/x86_64-linux-gnu/libprecice.so.2(_ZNK7precice3xml6XMLTag24getBooleanAttributeValueERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE+0x1d7)[0x7f95128d1ea5]
+[32mopenfoam-adapter-outer    |[0m [134512f76ee3:00258] [ 6] /usr/lib/x86_64-linux-gnu/libprecice.so.2(_ZN7precice12acceleration25AccelerationConfiguration14xmlTagCallbackERKNS_3xml20ConfigurationContextERNS2_6XMLTagE+0x95b)[0x7f951251e5fd]
+[32mopenfoam-adapter-outer    |[0m [134512f76ee3:00258] [ 7] /usr/lib/x86_64-linux-gnu/libprecice.so.2(_ZN7precice3xml12ConfigParser11connectTagsERKNS0_20ConfigurationContextERSt6vectorISt10shared_ptrINS0_6XMLTagEESaIS8_EERS5_IS6_INS1_4CTagEESaISD_EE+0x4ad)[0x7f9512896ec1]
+[32mopenfoam-adapter-outer    |[0m [134512f76ee3:00258] [ 8] /usr/lib/x86_64-linux-gnu/libprecice.so.2(_ZN7precice3xml12ConfigParser11connectTagsERKNS0_20ConfigurationContextERSt6vectorISt10shared_ptrINS0_6XMLTagEESaIS8_EERS5_IS6_INS1_4CTagEESaISD_EE+0x505)[0x7f9512896f19]
+[32mopenfoam-adapter-outer    |[0m [134512f76ee3:00258] [ 9] /usr/lib/x86_64-linux-gnu/libprecice.so.2(_ZN7precice3xml12ConfigParser11connectTagsERKNS0_20ConfigurationContextERSt6vectorISt10shared_ptrINS0_6XMLTagEESaIS8_EERS5_IS6_INS1_4CTagEESaISD_EE+0x505)[0x7f9512896f19]
+[32mopenfoam-adapter-outer    |[0m [134512f76ee3:00258] [10] /usr/lib/x86_64-linux-gnu/libprecice.so.2(_ZN7precice3xml12ConfigParser11connectTagsERKNS0_20ConfigurationContextERSt6vectorISt10shared_ptrINS0_6XMLTagEESaIS8_EERS5_IS6_INS1_4CTagEESaISD_EE+0x505)[0x7f9512896f19]
+[32mopenfoam-adapter-outer    |[0m [134512f76ee3:00258] [11] /usr/lib/x86_64-linux-gnu/libprecice.so.2(_ZN7precice3xml12ConfigParser11connectTagsERKNS0_20ConfigurationContextERSt6vectorISt10shared_ptrINS0_6XMLTagEESaIS8_EERS5_IS6_INS1_4CTagEESaISD_EE+0x505)[0x7f9512896f19]
+[32mopenfoam-adapter-outer    |[0m [134512f76ee3:00258] [12] /usr/lib/x86_64-linux-gnu/libprecice.so.2(_ZN7precice3xml12ConfigParserC1ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKNS0_20ConfigurationContextESt10shared_ptrINS0_6XMLTagEE+0x193)[0x7f9512895cf7]
+[32mopenfoam-adapter-outer    |[0m [134512f76ee3:00258] [13] /usr/lib/x86_64-linux-gnu/libprecice.so.2(_ZN7precice3xml9configureERNS0_6XMLTagERKNS0_20ConfigurationContextERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE+0x298)[0x7f95128d4135]
+[32mopenfoam-adapter-outer    |[0m [134512f76ee3:00258] [14] /usr/lib/x86_64-linux-gnu/libprecice.so.2(_ZN7precice4impl19SolverInterfaceImpl9configureERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE+0xeb)[0x7f951280194b]
+[32mopenfoam-adapter-outer    |[0m [134512f76ee3:00258] [15] /usr/lib/x86_64-linux-gnu/libprecice.so.2(_ZN7precice4impl19SolverInterfaceImplC2ENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKS7_iiPv+0x4ad)[0x7f9512800f0b]
+[32mopenfoam-adapter-outer    |[0m [134512f76ee3:00258] [16] /usr/lib/x86_64-linux-gnu/libprecice.so.2(_ZN7precice4impl19SolverInterfaceImplC2ENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKS7_ii+0x6c)[0x7f9512801296]
+[32mopenfoam-adapter-outer    |[0m [134512f76ee3:00258] [17] /usr/lib/x86_64-linux-gnu/libprecice.so.2(_ZN7precice15SolverInterfaceC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES8_ii+0x74)[0x7f95127ddc50]
+[32mopenfoam-adapter-outer    |[0m [134512f76ee3:00258] [18] /home/precice/OpenFOAM/root-v2006/platforms/linux64GccDPInt32Opt/lib/libpreciceAdapterFunctionObject.so(_ZN14preciceAdapter7Adapter9configureEv+0x351)[0x7f95130e3ce1]
+[32mopenfoam-adapter-outer    |[0m [134512f76ee3:00258] [19] /home/precice/OpenFOAM/root-v2006/platforms/linux64GccDPInt32Opt/lib/libpreciceAdapterFunctionObject.so(_ZN4Foam15functionObjects28preciceAdapterFunctionObject4readERKNS_10dictionaryE+0xd)[0x7f951311939d]
+[32mopenfoam-adapter-outer    |[0m [134512f76ee3:00258] [20] /home/precice/OpenFOAM/root-v2006/platforms/linux64GccDPInt32Opt/lib/libpreciceAdapterFunctionObject.so(_ZN4Foam15functionObjects28preciceAdapterFunctionObjectC2ERKNS_4wordERKNS_4TimeERKNS_10dictionaryE+0x49)[0x7f95131194e9]
+[32mopenfoam-adapter-outer    |[0m [134512f76ee3:00258] [21] /home/precice/OpenFOAM/root-v2006/platforms/linux64GccDPInt32Opt/lib/libpreciceAdapterFunctionObject.so(_ZN4Foam14functionObject31adddictionaryConstructorToTableINS_15functionObjects28preciceAdapterFunctionObjectEE3NewERKNS_4wordERKNS_4TimeERKNS_10dictionaryE+0x32)[0x7f9513119992]
+[32mopenfoam-adapter-outer    |[0m [134512f76ee3:00258] [22] /usr/lib/openfoam/openfoam2006/platforms/linux64GccDPInt32Opt/lib/libOpenFOAM.so(_ZN4Foam14functionObject3NewERKNS_4wordERKNS_4TimeERKNS_10dictionaryE+0x68e)[0x7f951a8796be]
+[32mopenfoam-adapter-outer    |[0m [134512f76ee3:00258] [23] /usr/lib/openfoam/openfoam2006/platforms/linux64GccDPInt32Opt/lib/libOpenFOAM.so(_ZN4Foam18functionObjectList4readEv+0xae1)[0x7f951a87c651]
+[32mopenfoam-adapter-outer    |[0m [134512f76ee3:00258] [24] /usr/lib/openfoam/openfoam2006/platforms/linux64GccDPInt32Opt/lib/libOpenFOAM.so(_ZNK4Foam4Time3runEv+0x2df)[0x7f951a896c1f]
+[32mopenfoam-adapter-outer    |[0m [134512f76ee3:00258] [25] buoyantPimpleFoam(+0x39f19)[0x562da6df4f19]
+[32mopenfoam-adapter-outer    |[0m [134512f76ee3:00258] [26] /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xe7)[0x7f95191c7bf7]
+[32mopenfoam-adapter-outer    |[0m [134512f76ee3:00258] [27] buoyantPimpleFoam(+0x3fc5a)[0x562da6dfac5a]
+[32mopenfoam-adapter-outer    |[0m [134512f76ee3:00258] *** End of error message ***
+[32mopenfoam-adapter-outer    |[0m /bin/bash: line 1:   258 Aborted                 (core dumped) buoyantPimpleFoam -case /home/precice/Data/Input
+[32mopenfoam-adapter-outer exited with code 134
+[0m------------- Comparing files -------------
+> Only in /home/travis/build/precice/systemtests/tests/TestCompose_nutils-of/referenceOutput: Nutils
+Only in /home/travis/build/precice/systemtests/tests/TestCompose_nutils-of/referenceOutput: OpenFOAM
+----------- Comparison finished -----------
+EXECUTING: docker container prune -f; export PRECICE_BASE=-ubuntu1804.package-develop; mkdir Logs; docker-compose config && bash ../../silent_compose.sh debug
+EXECUTING: docker cp tutorial-data:/Output .
+EXECUTING: docker-compose logs > Logs/container.log
+EXECUTING: bash ../../compare_results.sh /home/travis/build/precice/systemtests/tests/TestCompose_nutils-of/referenceOutput /home/travis/build/precice/systemtests/tests/TestCompose_nutils-of/Output
+TEST FAILED WITH: Output files do not match reference
+Files differing               : []
+Files only in reference (left): ['Nutils', 'OpenFOAM']
+Files only in output(right)   : []
+Traceback (most recent call last):
+  File "system_testing.py", line 133, in run_compose
+    comparison(path_to_ref, path_to_otp)
+  File "system_testing.py", line 210, in comparison
+    raise IncorrectOutput(*ret)
+__main__.IncorrectOutput: Output files do not match reference
+Files differing               : []
+Files only in reference (left): ['Nutils', 'OpenFOAM']
+Files only in output(right)   : []
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "system_testing.py", line 305, in <module>
+    build_run_compare(test, tag, args.branch.lower(), args.local,
+  File "system_testing.py", line 227, in build_run_compare
+    run_compose(test, branch, local_precice, tag, force_rebuild, rm_all, verbose)
+  File "system_testing.py", line 145, in run_compose
+    raise STValidateException()
+__main__.STValidateException: COMPARISON FAILED - An error occured while comparing test results with reference files!
+travis_time:end:0b2bbd96:start=1608567147734693327,finish=1608567480806106173,duration=333071412846,event=script[0K[31;1mThe command "python system_testing.py -s nutils-of -v" exited with 1.[0m
+travis_time:start:09d49e68[0K$ python push.py
+Cloning into 'precice_st_output'...
+Updating files:  16% (6624/39379)Updating files:  17% (6695/39379)Updating files:  18% (7089/39379)Updating files:  19% (7483/39379)Updating files:  20% (7876/39379)Updating files:  21% (8270/39379)Updating files:  22% (8664/39379)Updating files:  23% (9058/39379)Updating files:  24% (9451/39379)Updating files:  25% (9845/39379)Updating files:  26% (10239/39379)Updating files:  27% (10633/39379)Updating files:  28% (11027/39379)Updating files:  29% (11420/39379)Updating files:  30% (11814/39379)Updating files:  31% (12208/39379)Updating files:  32% (12602/39379)Updating files:  33% (12996/39379)Updating files:  34% (13389/39379)Updating files:  35% (13783/39379)Updating files:  35% (13860/39379)Updating files:  36% (14177/39379)Updating files:  37% (14571/39379)Updating files:  38% (14965/39379)Updating files:  39% (15358/39379)Updating files:  40% (15752/39379)Updating files:  41% (16146/39379)Updating files:  42% (16540/39379)Updating files:  43% (16933/39379)Updating files:  44% (17327/39379)Updating files:  45% (17721/39379)Updating files:  46% (18115/39379)Updating files:  47% (18509/39379)Updating files:  48% (18902/39379)Updating files:  49% (19296/39379)Updating files:  49% (19367/39379)Updating files:  50% (19690/39379)Updating files:  51% (20084/39379)Updating files:  52% (20478/39379)Updating files:  53% (20871/39379)Updating files:  54% (21265/39379)Updating files:  55% (21659/39379)Updating files:  56% (22053/39379)Updating files:  57% (22447/39379)Updating files:  58% (22840/39379)Updating files:  59% (23234/39379)Updating files:  60% (23628/39379)Updating files:  60% (23918/39379)Updating files:  61% (24022/39379)Updating files:  62% (24415/39379)Updating files:  63% (24809/39379)Updating files:  64% (25203/39379)Updating files:  65% (25597/39379)Updating files:  66% (25991/39379)Updating files:  67% (26384/39379)Updating files:  68% (26778/39379)Updating files:  69% (27172/39379)Updating files:  70% (27566/39379)Updating files:  71% (27960/39379)Updating files:  72% (28353/39379)Updating files:  72% (28514/39379)Updating files:  73% (28747/39379)Updating files:  73% (28918/39379)Updating files:  74% (29141/39379)Updating files:  74% (29353/39379)Updating files:  75% (29535/39379)Updating files:  76% (29929/39379)Updating files:  76% (29965/39379)Updating files:  76% (29977/39379)Updating files:  76% (29981/39379)Updating files:  76% (29987/39379)Updating files:  77% (30322/39379)Updating files:  77% (30505/39379)Updating files:  78% (30716/39379)Updating files:  79% (31110/39379)Updating files:  80% (31504/39379)Updating files:  81% (31897/39379)Updating files:  81% (31904/39379)Updating files:  82% (32291/39379)Updating files:  82% (32401/39379)Updating files:  83% (32685/39379)Updating files:  84% (33079/39379)Updating files:  85% (33473/39379)Updating files:  85% (33478/39379)Updating files:  86% (33866/39379)Updating files:  86% (34113/39379)Updating files:  86% (34141/39379)Updating files:  86% (34218/39379)Updating files:  87% (34260/39379)Updating files:  87% (34282/39379)Updating files:  87% (34308/39379)Updating files:  87% (34383/39379)Updating files:  87% (34485/39379)Updating files:  87% (34569/39379)Updating files:  88% (34654/39379)Updating files:  88% (34655/39379)Updating files:  88% (34731/39379)Updating files:  88% (34861/39379)Updating files:  88% (34890/39379)Updating files:  89% (35048/39379)Updating files:  89% (35075/39379)Updating files:  89% (35094/39379)Updating files:  89% (35096/39379)Updating files:  89% (35189/39379)Updating files:  89% (35273/39379)Updating files:  89% (35363/39379)Updating files:  90% (35442/39379)Updating files:  90% (35443/39379)Updating files:  90% (35541/39379)Updating files:  90% (35653/39379)Updating files:  90% (35748/39379)Updating files:  91% (35835/39379)Updating files:  91% (35927/39379)Updating files:  91% (35984/39379)Updating files:  91% (36068/39379)Updating files:  91% (36149/39379)Updating files:  92% (36229/39379)Updating files:  92% (36234/39379)Updating files:  92% (36310/39379)Updating files:  92% (36408/39379)Updating files:  92% (36484/39379)Updating files:  92% (36570/39379)Updating files:  93% (36623/39379)Updating files:  93% (36657/39379)Updating files:  93% (36732/39379)Updating files:  93% (36744/39379)Updating files:  93% (36861/39379)Updating files:  93% (36941/39379)Updating files:  94% (37017/39379)Updating files:  94% (37031/39379)Updating files:  94% (37118/39379)Updating files:  94% (37243/39379)Updating files:  94% (37320/39379)Updating files:  95% (37411/39379)Updating files:  95% (37431/39379)Updating files:  95% (37526/39379)Updating files:  95% (37609/39379)Updating files:  95% (37722/39379)Updating files:  96% (37804/39379)Updating files:  96% (37813/39379)Updating files:  96% (37853/39379)Updating files:  96% (37976/39379)Updating files:  96% (38058/39379)Updating files:  97% (38198/39379)Updating files:  98% (38592/39379)Updating files:  99% (38986/39379)Updating files:  99% (39265/39379)
