@@ -1,0 +1,543 @@
+Attaching to openfoam-adapter-outer, calculix-adapter-solid, openfoam-adapter-inner, tutorial-data
+[36mopenfoam-adapter-outer    |[0m /*---------------------------------------------------------------------------*\
+[36mopenfoam-adapter-outer    |[0m | =========                 |                                                 |
+[36mopenfoam-adapter-outer    |[0m | \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+[36mopenfoam-adapter-outer    |[0m |  \\    /   O peration     | Version:  2006                                  |
+[36mopenfoam-adapter-outer    |[0m |   \\  /    A nd           | Website:  www.openfoam.com                      |
+[36mopenfoam-adapter-outer    |[0m |    \\/     M anipulation  |                                                 |
+[36mopenfoam-adapter-outer    |[0m \*---------------------------------------------------------------------------*/
+[36mopenfoam-adapter-outer    |[0m Build  : 295eef47-20201012 OPENFOAM=2006 patch=201012
+[36mopenfoam-adapter-outer    |[0m Arch   : "LSB;label=32;scalar=64"
+[36mopenfoam-adapter-outer    |[0m Exec   : buoyantSimpleFoam -case /home/precice/Data/Input
+[36mopenfoam-adapter-outer    |[0m Date   : Jan 07 2021
+[36mopenfoam-adapter-outer    |[0m Time   : 16:41:08
+[36mopenfoam-adapter-outer    |[0m Host   : 2afe78faa356
+[36mopenfoam-adapter-outer    |[0m PID    : 258
+[36mopenfoam-adapter-outer    |[0m I/O    : uncollated
+[36mopenfoam-adapter-outer    |[0m Case   : /home/precice/Data/Input
+[36mopenfoam-adapter-outer    |[0m nProcs : 1
+[36mopenfoam-adapter-outer    |[0m trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+[36mopenfoam-adapter-outer    |[0m fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+[36mopenfoam-adapter-outer    |[0m allowSystemOperations : Allowing user-supplied system call operations
+[36mopenfoam-adapter-outer    |[0m 
+[36mopenfoam-adapter-outer    |[0m // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+[36mopenfoam-adapter-outer    |[0m Create time
+[36mopenfoam-adapter-outer    |[0m 
+[36mopenfoam-adapter-outer    |[0m Create mesh for time = 0
+[36mopenfoam-adapter-outer    |[0m 
+[36mopenfoam-adapter-outer    |[0m 
+[36mopenfoam-adapter-outer    |[0m SIMPLE: no convergence criteria found. Calculations will run for 5 steps.
+[36mopenfoam-adapter-outer    |[0m 
+[36mopenfoam-adapter-outer    |[0m Reading thermophysical properties
+[36mopenfoam-adapter-outer    |[0m 
+[36mopenfoam-adapter-outer    |[0m Selecting thermodynamics package 
+[36mopenfoam-adapter-outer    |[0m {
+[36mopenfoam-adapter-outer    |[0m     type            heRhoThermo;
+[36mopenfoam-adapter-outer    |[0m     mixture         pureMixture;
+[36mopenfoam-adapter-outer    |[0m     transport       const;
+[36mopenfoam-adapter-outer    |[0m     thermo          hConst;
+[36mopenfoam-adapter-outer    |[0m     equationOfState perfectFluid;
+[36mopenfoam-adapter-outer    |[0m     specie          specie;
+[36mopenfoam-adapter-outer    |[0m     energy          sensibleEnthalpy;
+[36mopenfoam-adapter-outer    |[0m }
+[36mopenfoam-adapter-outer    |[0m 
+[36mopenfoam-adapter-outer    |[0m Reading field U
+[36mopenfoam-adapter-outer    |[0m 
+[36mopenfoam-adapter-outer    |[0m Reading/calculating face flux field phi
+[36mopenfoam-adapter-outer    |[0m 
+[36mopenfoam-adapter-outer    |[0m Creating turbulence model
+[36mopenfoam-adapter-outer    |[0m 
+[36mopenfoam-adapter-outer    |[0m Selecting turbulence model type laminar
+[36mopenfoam-adapter-outer    |[0m Selecting laminar stress model Stokes
+[36mopenfoam-adapter-outer    |[0m 
+[36mopenfoam-adapter-outer    |[0m Reading g
+[36mopenfoam-adapter-outer    |[0m 
+[36mopenfoam-adapter-outer    |[0m Reading hRef
+[36mopenfoam-adapter-outer    |[0m Calculating field g.h
+[36mopenfoam-adapter-outer    |[0m 
+[36mopenfoam-adapter-outer    |[0m Reading field p_rgh
+[36mopenfoam-adapter-outer    |[0m 
+[36mopenfoam-adapter-outer    |[0m No MRF models present
+[36mopenfoam-adapter-outer    |[0m 
+[36mopenfoam-adapter-outer    |[0m Selecting radiationModel none
+[36mopenfoam-adapter-outer    |[0m Creating finite volume options from "system/fvOptions"
+[36mopenfoam-adapter-outer    |[0m 
+[36mopenfoam-adapter-outer    |[0m No finite volume options present
+[36mopenfoam-adapter-outer    |[0m 
+[36mopenfoam-adapter-outer    |[0m Starting time loop
+[36mopenfoam-adapter-outer    |[0m 
+[36mopenfoam-adapter-outer    |[0m --------------------------------------------------------------------------
+[36mopenfoam-adapter-outer    |[0m [[8695,1],0]: A high-performance Open MPI point-to-point messaging module
+[36mopenfoam-adapter-outer    |[0m was unable to find any relevant network interfaces:
+[36mopenfoam-adapter-outer    |[0m 
+[36mopenfoam-adapter-outer    |[0m Module: OpenFabrics (openib)
+[36mopenfoam-adapter-outer    |[0m   Host: 2afe78faa356
+[36mopenfoam-adapter-outer    |[0m 
+[36mopenfoam-adapter-outer    |[0m Another transport will be used instead, although this may result in
+[36mopenfoam-adapter-outer    |[0m lower performance.
+[36mopenfoam-adapter-outer    |[0m 
+[36mopenfoam-adapter-outer    |[0m NOTE: You can disable this warning by setting the MCA parameter
+[36mopenfoam-adapter-outer    |[0m btl_base_warn_component_unused to 0.
+[36mopenfoam-adapter-outer    |[0m --------------------------------------------------------------------------
+[36mopenfoam-adapter-outer    |[0m ---[preciceAdapter] The preciceAdapter was loaded.
+[36mopenfoam-adapter-outer    |[0m ---[preciceAdapter] Reading preciceDict...
+[36mopenfoam-adapter-outer    |[0m ---[preciceAdapter] [DEBUG]   precice-config-file : precice-config.xml
+[36mopenfoam-adapter-outer    |[0m ---[preciceAdapter] [DEBUG]   participant name    : Outer-Fluid
+[36mopenfoam-adapter-outer    |[0m ---[preciceAdapter] [DEBUG]   modules requested   : 
+[36mopenfoam-adapter-outer    |[0m ---[preciceAdapter] [DEBUG]   - CHT
+[36mopenfoam-adapter-outer    |[0m 
+[36mopenfoam-adapter-outer    |[0m ---[preciceAdapter] [DEBUG]   interfaces : 
+[36mopenfoam-adapter-outer    |[0m ---[preciceAdapter] [DEBUG]   - mesh         : Outer-Fluid-to-Solid
+[36mopenfoam-adapter-outer    |[0m ---[preciceAdapter] [DEBUG]     locations    : faceCenters
+[36mopenfoam-adapter-outer    |[0m ---[preciceAdapter] [DEBUG]     connectivity : 0
+[36mopenfoam-adapter-outer    |[0m ---[preciceAdapter] [DEBUG]     patches      : 
+[36mopenfoam-adapter-outer    |[0m ---[preciceAdapter] [DEBUG]       - interface
+[36mopenfoam-adapter-outer    |[0m ---[preciceAdapter] [DEBUG]     writeData    : 
+[36mopenfoam-adapter-outer    |[0m ---[preciceAdapter] [DEBUG]       - Sink-Temperature-Outer-Fluid
+[36mopenfoam-adapter-outer    |[0m ---[preciceAdapter] [DEBUG]       - Heat-Transfer-Coefficient-Outer-Fluid
+[36mopenfoam-adapter-outer    |[0m ---[preciceAdapter] [DEBUG]     readData     : 
+[36mopenfoam-adapter-outer    |[0m ---[preciceAdapter] [DEBUG]       - Sink-Temperature-Solid
+[36mopenfoam-adapter-outer    |[0m ---[preciceAdapter] [DEBUG]       - Heat-Transfer-Coefficient-Solid
+[36mopenfoam-adapter-outer    |[0m ---[preciceAdapter] [DEBUG] Configuring the CHT module...
+[36mopenfoam-adapter-outer    |[0m ---[preciceAdapter] [DEBUG]     user-defined solver type : 
+[36mopenfoam-adapter-outer    |[0m ---[preciceAdapter] [DEBUG]     temperature field name : T
+[36mopenfoam-adapter-outer    |[0m ---[preciceAdapter] [DEBUG]     conductivity name for basic solvers : k
+[36mopenfoam-adapter-outer    |[0m ---[preciceAdapter] [DEBUG]     density name for incompressible solvers : rho
+[36mopenfoam-adapter-outer    |[0m ---[preciceAdapter] [DEBUG]     heat capacity name for incompressible solvers : Cp
+[36mopenfoam-adapter-outer    |[0m ---[preciceAdapter] [DEBUG]     Prandtl number name for incompressible solvers : Pr
+[36mopenfoam-adapter-outer    |[0m ---[preciceAdapter] [DEBUG]     Turbulent thermal diffusivity field name for incompressible solvers : alphat
+[36mopenfoam-adapter-outer    |[0m ---[preciceAdapter] [DEBUG] Determining the solver type for the CHT module... (override by setting solverType to one of {compressible, incompressible, basic})
+[36mopenfoam-adapter-outer    |[0m ---[preciceAdapter] [DEBUG] Automatically determined solver type : compressible
+[36mopenfoam-adapter-outer    |[0m ---[preciceAdapter] [DEBUG] Checking the timestep type (fixed vs adjustable)...
+[36mopenfoam-adapter-outer    |[0m ---[preciceAdapter] [DEBUG]   Timestep type: fixed.
+[36mopenfoam-adapter-outer    |[0m ---[preciceAdapter] [DEBUG] Creating the preCICE solver interface...
+[36mopenfoam-adapter-outer    |[0m ---[preciceAdapter] [DEBUG]   Number of processes: 1
+[36mopenfoam-adapter-outer    |[0m ---[preciceAdapter] [DEBUG]   MPI rank: 0
+[36mopenfoam-adapter-outer    |[0m ---[precice] [0m This is preCICE version 2.1.1
+[36mopenfoam-adapter-outer    |[0m ---[precice] [0m Revision info: no-info [Git failed/Not a repository]
+[36mopenfoam-adapter-outer    |[0m ---[precice] [0m Configuring preCICE with configuration "precice-config.xml"
+[36mopenfoam-adapter-outer    |[0m ---[precice] [0m I am participant "Outer-Fluid"
+[36mopenfoam-adapter-outer    |[0m ---[preciceAdapter] [DEBUG]   preCICE solver interface was created.
+[36mopenfoam-adapter-outer    |[0m ---[preciceAdapter] [DEBUG] Creating interfaces...
+[36mopenfoam-adapter-outer    |[0m ---[preciceAdapter] [DEBUG] Number of face centres: 52809
+[36mopenfoam-adapter-outer    |[0m ---[preciceAdapter] [DEBUG] Interface created on mesh Outer-Fluid-to-Solid
+[36mopenfoam-adapter-outer    |[0m ---[preciceAdapter] [DEBUG] Adding coupling data writers...
+[36mopenfoam-adapter-outer    |[0m ---[preciceAdapter] [DEBUG] Added writer: Sink Temperature.
+[36mopenfoam-adapter-outer    |[0m ---[preciceAdapter] [DEBUG] Constructed KappaEff_Compressible.
+[36mopenfoam-adapter-outer    |[0m ---[preciceAdapter] [DEBUG] Added writer: Heat Transfer Coefficient for compressible solvers.
+[36mopenfoam-adapter-outer    |[0m ---[preciceAdapter] [DEBUG] Adding coupling data readers...
+[36mopenfoam-adapter-outer    |[0m ---[preciceAdapter] [DEBUG] Added reader: Sink Temperature.
+[36mopenfoam-adapter-outer    |[0m ---[preciceAdapter] [DEBUG] Constructed KappaEff_Compressible.
+[36mopenfoam-adapter-outer    |[0m ---[preciceAdapter] [DEBUG] Added reader: Heat Transfer Coefficient for compressible solvers.
+[36mopenfoam-adapter-outer    |[0m ---[preciceAdapter] [DEBUG] Initalizing the preCICE solver interface...
+[36mopenfoam-adapter-outer    |[0m ---[precice] [0m Setting up master communication to coupling partner/s
+[36mopenfoam-adapter-outer    |[0m ---[precice] [0m Masters are connected
+[36mopenfoam-adapter-outer    |[0m ---[precice] [0m Setting up preliminary slaves communication to coupling partner/s
+[36mopenfoam-adapter-outer    |[0m ---[precice] [0m Prepare partition for mesh Outer-Fluid-to-Solid
+[36mopenfoam-adapter-outer    |[0m ---[precice] [0m Gather mesh Outer-Fluid-to-Solid
+[36mopenfoam-adapter-outer    |[0m ---[precice] [0m Send global mesh Outer-Fluid-to-Solid
+[36mopenfoam-adapter-outer    |[0m ---[precice] [0m Receive global mesh Solid-to-Outer-Fluid
+[36mopenfoam-adapter-outer    |[0m ---[precice] [0m Setting up slaves communication to coupling partner/s
+[36mopenfoam-adapter-outer    |[0m ---[precice] [0m Slaves are connected
+[36mopenfoam-adapter-outer    |[0m ---[precice] [0m it 1 | dt# 1 | t 0 of 1 | dt 1 | max dt 1 | ongoing yes | dt complete no | write-initial-data | 
+[36mopenfoam-adapter-outer    |[0m ---[preciceAdapter] [DEBUG] Writing coupling data...
+[36mopenfoam-adapter-outer    |[0m ---[preciceAdapter] [DEBUG] Initializing preCICE data...
+[36mopenfoam-adapter-outer    |[0m ---[precice] [0m Compute read mapping from mesh "Solid-to-Outer-Fluid" to mesh "Outer-Fluid-to-Solid".
+[36mopenfoam-adapter-outer    |[0m ---[precice] [0m Mapping distance min:0.000112137 max:0.0359417 avg: 0.0131496 var: 3.11294e-05 cnt: 52809
+[36mopenfoam-adapter-outer    |[0m ---[preciceAdapter] preCICE was configured and initialized
+[36mopenfoam-adapter-outer    |[0m ---[preciceAdapter] [DEBUG] Reading coupling data...
+[36mopenfoam-adapter-outer    |[0m ---[preciceAdapter] [DEBUG] Adjusting the solver's timestep...
+[36mopenfoam-adapter-outer    |[0m ---[preciceAdapter] [DEBUG] The solver's timestep is the same as the coupling timestep.
+[36mopenfoam-adapter-outer    |[0m ---[preciceAdapter] Setting the solver's endTime to infinity to prevent early exits. Only preCICE will control the simulation's endTime. Any functionObject's end() method will be triggered by the adapter. You may disable this behavior in the adapter's configuration.
+[36mopenfoam-adapter-outer    |[0m Time = 1
+[36mopenfoam-adapter-outer    |[0m 
+[36mopenfoam-adapter-outer    |[0m DILUPBiCG:  Solving for Ux, Initial residual = 8e-11, Final residual = 8e-11, No Iterations 0
+[36mopenfoam-adapter-outer    |[0m DILUPBiCG:  Solving for Uy, Initial residual = 1, Final residual = 0.0007, No Iterations 1
+[36mopenfoam-adapter-outer    |[0m DILUPBiCG:  Solving for Uz, Initial residual = 2e-16, Final residual = 2e-16, No Iterations 0
+[36mopenfoam-adapter-outer    |[0m DILUPBiCG:  Solving for h, Initial residual = 1, Final residual = 7e-07, No Iterations 23
+[36mopenfoam-adapter-outer    |[0m DICPCG:  Solving for p_rgh, Initial residual = 1, Final residual = 0.009, No Iterations 369
+[36mopenfoam-adapter-outer    |[0m time step continuity errors : sum local = 0.0009, global = -4e-07, cumulative = -4e-07
+[36mopenfoam-adapter-outer    |[0m rho min/max : 1e+03 1e+03
+[36mopenfoam-adapter-outer    |[0m ExecutionTime = 3e+01 s  ClockTime = 4e+01 s
+[36mopenfoam-adapter-outer    |[0m 
+[36mopenfoam-adapter-outer    |[0m ---[preciceAdapter] [DEBUG] Writing coupling data...
+[36mopenfoam-adapter-outer    |[0m ---[preciceAdapter] [DEBUG] Advancing preCICE...
+[36mopenfoam-adapter-outer    |[0m ---[precice] [0m Time window completed
+[36mopenfoam-adapter-outer    |[0m ---[precice] [0m it 1 | dt# 2 | t 1 of 1 | dt 1 | max dt 1 | ongoing no | dt complete yes | 
+[36mopenfoam-adapter-outer    |[0m ---[preciceAdapter] [DEBUG] Reading coupling data...
+[36mopenfoam-adapter-outer    |[0m ---[preciceAdapter] [DEBUG] Adjusting the solver's timestep...
+[36mopenfoam-adapter-outer    |[0m ---[preciceAdapter] [DEBUG] The solver's timestep is the same as the coupling timestep.
+[36mopenfoam-adapter-outer    |[0m ---[preciceAdapter] The coupling completed.
+[36mopenfoam-adapter-outer    |[0m ---[preciceAdapter] [DEBUG] Finalizing the preCICE solver interface...
+[36mopenfoam-adapter-outer    |[0m ---[preciceAdapter] [DEBUG] Destroying the preCICE solver interface...
+[36mopenfoam-adapter-outer    |[0m ---[preciceAdapter] [DEBUG] Deleting the interfaces...
+[36mopenfoam-adapter-outer    |[0m ---[preciceAdapter] [DEBUG] Destroying the CHT module...
+[36mopenfoam-adapter-outer    |[0m ---[preciceAdapter] The simulation was ended by preCICE. Calling the end() methods of any functionObject explicitly.
+[36mopenfoam-adapter-outer    |[0m End
+[36mopenfoam-adapter-outer    |[0m 
+[33mcalculix-adapter-solid    |[0m 
+[33mcalculix-adapter-solid    |[0m ************************************************************
+[33mcalculix-adapter-solid    |[0m 
+[33mcalculix-adapter-solid    |[0m CalculiX Version 2.16, Copyright(C) 1998-2019 Guido Dhondt
+[33mcalculix-adapter-solid    |[0m CalculiX comes with ABSOLUTELY NO WARRANTY. This is free
+[33mcalculix-adapter-solid    |[0m software, and you are welcome to redistribute it under
+[33mcalculix-adapter-solid    |[0m certain conditions, see gpl.htm
+[33mcalculix-adapter-solid    |[0m 
+[33mcalculix-adapter-solid    |[0m ************************************************************
+[33mcalculix-adapter-solid    |[0m 
+[33mcalculix-adapter-solid    |[0m You are using an executable made on Mo 25. Nov 18:56:47 CET 2019
+[33mcalculix-adapter-solid    |[0m 
+[33mcalculix-adapter-solid    |[0m   The numbers below are estimated upper bounds
+[33mcalculix-adapter-solid    |[0m 
+[33mcalculix-adapter-solid    |[0m   number of:
+[33mcalculix-adapter-solid    |[0m 
+[33mcalculix-adapter-solid    |[0m    nodes:        21153
+[33mcalculix-adapter-solid    |[0m    elements:       106550
+[33mcalculix-adapter-solid    |[0m    one-dimensional elements:            0
+[33mcalculix-adapter-solid    |[0m    two-dimensional elements:            0
+[33mcalculix-adapter-solid    |[0m    integration points per element:            1
+[33mcalculix-adapter-solid    |[0m    degrees of freedom per node:            3
+[33mcalculix-adapter-solid    |[0m    layers per element:            1
+[33mcalculix-adapter-solid    |[0m 
+[33mcalculix-adapter-solid    |[0m    distributed facial loads:        42172
+[33mcalculix-adapter-solid    |[0m    distributed volumetric loads:            0
+[33mcalculix-adapter-solid    |[0m    concentrated loads:            0
+[33mcalculix-adapter-solid    |[0m    single point constraints:            0
+[33mcalculix-adapter-solid    |[0m    multiple point constraints:            1
+[33mcalculix-adapter-solid    |[0m    terms in all multiple point constraints:            1
+[33mcalculix-adapter-solid    |[0m    tie constraints:            0
+[33mcalculix-adapter-solid    |[0m    dependent nodes tied by cyclic constraints:            0
+[33mcalculix-adapter-solid    |[0m    dependent nodes in pre-tension constraints:            0
+[33mcalculix-adapter-solid    |[0m 
+[33mcalculix-adapter-solid    |[0m    sets:            6
+[33mcalculix-adapter-solid    |[0m    terms in all sets:       212183
+[33mcalculix-adapter-solid    |[0m 
+[33mcalculix-adapter-solid    |[0m    materials:            1
+[33mcalculix-adapter-solid    |[0m    constants per material and temperature:            0
+[33mcalculix-adapter-solid    |[0m    temperature points per material:            1
+[33mcalculix-adapter-solid    |[0m    plastic data points per material:            0
+[33mcalculix-adapter-solid    |[0m 
+[33mcalculix-adapter-solid    |[0m    orientations:            0
+[33mcalculix-adapter-solid    |[0m    amplitudes:            3
+[33mcalculix-adapter-solid    |[0m    data points in all amplitudes:            3
+[33mcalculix-adapter-solid    |[0m    print requests:            0
+[33mcalculix-adapter-solid    |[0m    transformations:            0
+[33mcalculix-adapter-solid    |[0m    property cards:            0
+[33mcalculix-adapter-solid    |[0m 
+[33mcalculix-adapter-solid    |[0m 
+[33mcalculix-adapter-solid    |[0m  STEP            1
+[33mcalculix-adapter-solid    |[0m 
+[33mcalculix-adapter-solid    |[0m  Static analysis was selected
+[33mcalculix-adapter-solid    |[0m 
+[33mcalculix-adapter-solid    |[0m  Newton-Raphson iterative procedure is active
+[33mcalculix-adapter-solid    |[0m 
+[33mcalculix-adapter-solid    |[0m  Decascading the MPC's
+[33mcalculix-adapter-solid    |[0m 
+[33mcalculix-adapter-solid    |[0m  Determining the structure of the matrix:
+[33mcalculix-adapter-solid    |[0m  number of equations
+[33mcalculix-adapter-solid    |[0m  21153
+[33mcalculix-adapter-solid    |[0m  number of nonzero lower triangular matrix elements
+[33mcalculix-adapter-solid    |[0m  106662
+[33mcalculix-adapter-solid    |[0m 
+[33mcalculix-adapter-solid    |[0m Starting CHT analysis via preCICE...
+[33mcalculix-adapter-solid    |[0m Setting up preCICE participant Solid, using config file: config.yml
+[33mcalculix-adapter-solid    |[0m --------------------------------------------------------------------------
+[33mcalculix-adapter-solid    |[0m [[38288,1],0]: A high-performance Open MPI point-to-point messaging module
+[33mcalculix-adapter-solid    |[0m was unable to find any relevant network interfaces:
+[33mcalculix-adapter-solid    |[0m 
+[33mcalculix-adapter-solid    |[0m Module: OpenFabrics (openib)
+[33mcalculix-adapter-solid    |[0m   Host: ac5da740a1ee
+[33mcalculix-adapter-solid    |[0m 
+[33mcalculix-adapter-solid    |[0m Another transport will be used instead, although this may result in
+[33mcalculix-adapter-solid    |[0m lower performance.
+[33mcalculix-adapter-solid    |[0m 
+[33mcalculix-adapter-solid    |[0m NOTE: You can disable this warning by setting the MCA parameter
+[33mcalculix-adapter-solid    |[0m btl_base_warn_component_unused to 0.
+[33mcalculix-adapter-solid    |[0m --------------------------------------------------------------------------
+[33mcalculix-adapter-solid    |[0m ---[precice] [0m This is preCICE version 2.1.1
+[33mcalculix-adapter-solid    |[0m ---[precice] [0m Revision info: no-info [Git failed/Not a repository]
+[33mcalculix-adapter-solid    |[0m ---[precice] [0m Configuring preCICE with configuration "precice-config.xml"
+[33mcalculix-adapter-solid    |[0m ---[precice] [0m I am participant "Solid"
+[33mcalculix-adapter-solid    |[0m Set ID Found 
+[33mcalculix-adapter-solid    |[0m Setting node connectivity for nearest projection mapping: 
+[33mcalculix-adapter-solid    |[0m Read data 'Sink-Temperature-Inner-Fluid' found with ID # '2'.
+[33mcalculix-adapter-solid    |[0m Read data 'Heat-Transfer-Coefficient-Inner-Fluid' found with ID # '3'.
+[33mcalculix-adapter-solid    |[0m Write data 'Sink-Temperature-Solid' found with ID # '0'.
+[33mcalculix-adapter-solid    |[0m Write data 'Heat-Transfer-Coefficient-Solid' found with ID # '1'.
+[33mcalculix-adapter-solid    |[0m Set ID Found 
+[33mcalculix-adapter-solid    |[0m Setting node connectivity for nearest projection mapping: 
+[33mcalculix-adapter-solid    |[0m Read data 'Sink-Temperature-Outer-Fluid' found with ID # '6'.
+[33mcalculix-adapter-solid    |[0m Read data 'Heat-Transfer-Coefficient-Outer-Fluid' found with ID # '7'.
+[33mcalculix-adapter-solid    |[0m Write data 'Sink-Temperature-Solid' found with ID # '4'.
+[33mcalculix-adapter-solid    |[0m Write data 'Heat-Transfer-Coefficient-Solid' found with ID # '5'.
+[33mcalculix-adapter-solid    |[0m ---[precice] [0m Setting up master communication to coupling partner/s
+[33mcalculix-adapter-solid    |[0m ---[precice] [0m Masters are connected
+[33mcalculix-adapter-solid    |[0m ---[precice] [0m Setting up preliminary slaves communication to coupling partner/s
+[33mcalculix-adapter-solid    |[0m ---[precice] [0m Receive global mesh Inner-Fluid-to-Solid
+[33mcalculix-adapter-solid    |[0m ---[precice] [0m Receive global mesh Outer-Fluid-to-Solid
+[33mcalculix-adapter-solid    |[0m ---[precice] [0m Prepare partition for mesh Solid-to-Inner-Fluid
+[33mcalculix-adapter-solid    |[0m ---[precice] [0m Gather mesh Solid-to-Inner-Fluid
+[33mcalculix-adapter-solid    |[0m ---[precice] [0m Send global mesh Solid-to-Inner-Fluid
+[33mcalculix-adapter-solid    |[0m ---[precice] [0m Prepare partition for mesh Solid-to-Outer-Fluid
+[33mcalculix-adapter-solid    |[0m ---[precice] [0m Gather mesh Solid-to-Outer-Fluid
+[33mcalculix-adapter-solid    |[0m ---[precice] [0m Send global mesh Solid-to-Outer-Fluid
+[33mcalculix-adapter-solid    |[0m ---[precice] [0m Setting up slaves communication to coupling partner/s
+[33mcalculix-adapter-solid    |[0m ---[precice] [0m Slaves are connected
+[33mcalculix-adapter-solid    |[0m ---[precice] [0m Inner-Fluid: it 1 | dt# 1 | t 0 of 1 | dt 1 | max dt 1 | ongoing yes | dt complete no | write-initial-data | 
+[33mcalculix-adapter-solid    |[0m Outer-Fluid: it 1 | dt# 1 | t 0 of 1 | dt 1 | max dt 1 | ongoing yes | dt complete no | write-initial-data | 
+[33mcalculix-adapter-solid    |[0m Initializing coupling data
+[33mcalculix-adapter-solid    |[0m Adapter writing coupling data...
+[33mcalculix-adapter-solid    |[0m Writing SINK_TEMPERATURE coupling data with ID '0'. 
+[33mcalculix-adapter-solid    |[0m Writing HEAT_TRANSFER_COEFF coupling data with ID '1'. 
+[33mcalculix-adapter-solid    |[0m Writing SINK_TEMPERATURE coupling data with ID '4'. 
+[33mcalculix-adapter-solid    |[0m Writing HEAT_TRANSFER_COEFF coupling data with ID '5'. 
+[33mcalculix-adapter-solid    |[0m ---[precice] [0m Compute read mapping from mesh "Inner-Fluid-to-Solid" to mesh "Solid-to-Inner-Fluid".
+[33mcalculix-adapter-solid    |[0m ---[precice] [0m Mapping distance min:0.000430952 max:0.0192511 avg: 0.00878207 var: 1.06099e-05 cnt: 17226
+[33mcalculix-adapter-solid    |[0m ---[precice] [0m Compute read mapping from mesh "Outer-Fluid-to-Solid" to mesh "Solid-to-Outer-Fluid".
+[33mcalculix-adapter-solid    |[0m ---[precice] [0m Mapping distance min:0.000112137 max:0.0196877 avg: 0.00852088 var: 9.49287e-06 cnt: 24176
+[33mcalculix-adapter-solid    |[0m Adapter reading coupling data...
+[33mcalculix-adapter-solid    |[0m Reading SINK_TEMPERATURE coupling data with ID '2'. 
+[33mcalculix-adapter-solid    |[0m Reading HEAT_TRANSFER_COEFF coupling data with ID '3'. 
+[33mcalculix-adapter-solid    |[0m Reading SINK_TEMPERATURE coupling data with ID '6'. 
+[33mcalculix-adapter-solid    |[0m Reading HEAT_TRANSFER_COEFF coupling data with ID '7'. 
+[33mcalculix-adapter-solid    |[0m Adjusting time step for steady-state step
+[33mcalculix-adapter-solid    |[0m Adapter reading coupling data...
+[33mcalculix-adapter-solid    |[0m Reading SINK_TEMPERATURE coupling data with ID '2'. 
+[33mcalculix-adapter-solid    |[0m Reading HEAT_TRANSFER_COEFF coupling data with ID '3'. 
+[33mcalculix-adapter-solid    |[0m Reading SINK_TEMPERATURE coupling data with ID '6'. 
+[33mcalculix-adapter-solid    |[0m Reading HEAT_TRANSFER_COEFF coupling data with ID '7'. 
+[33mcalculix-adapter-solid    |[0m  increment 1 attempt 1 
+[33mcalculix-adapter-solid    |[0m  increment size= 1.000000e+00
+[33mcalculix-adapter-solid    |[0m  sum of previous increments=0.000000e+00
+[33mcalculix-adapter-solid    |[0m  actual step time=1.000000e+00
+[33mcalculix-adapter-solid    |[0m  actual total time=1.000000e+00
+[33mcalculix-adapter-solid    |[0m 
+[33mcalculix-adapter-solid    |[0m  iteration 1
+[33mcalculix-adapter-solid    |[0m 
+[33mcalculix-adapter-solid    |[0m  Using up to 1 cpu(s) for the heat flux calculation.
+[33mcalculix-adapter-solid    |[0m 
+[33mcalculix-adapter-solid    |[0m  Using up to 1 cpu(s) for the symmetric stiffness/mass contributions.
+[33mcalculix-adapter-solid    |[0m 
+[33mcalculix-adapter-solid    |[0m  Factoring the system of equations using the symmetric spooles solver
+[33mcalculix-adapter-solid    |[0m  Using 1 cpu for spooles.
+[33mcalculix-adapter-solid    |[0m 
+[33mcalculix-adapter-solid    |[0m  Using up to 1 cpu(s) for the heat flux calculation.
+[33mcalculix-adapter-solid    |[0m 
+[33mcalculix-adapter-solid    |[0m  average flux= 5.108361
+[33mcalculix-adapter-solid    |[0m  time avg. flux= 5.108361
+[33mcalculix-adapter-solid    |[0m  largest residual flux= 226.735266 in node 13966 and dof 0
+[33mcalculix-adapter-solid    |[0m  largest increment of temp= 5.689586e+01
+[33mcalculix-adapter-solid    |[0m  largest correction to temp= 5.689586e+01 in node 985 and dof 0
+[33mcalculix-adapter-solid    |[0m 
+[33mcalculix-adapter-solid    |[0m  no convergence
+[33mcalculix-adapter-solid    |[0m 
+[33mcalculix-adapter-solid    |[0m  iteration 2
+[33mcalculix-adapter-solid    |[0m 
+[33mcalculix-adapter-solid    |[0m  Using up to 1 cpu(s) for the symmetric stiffness/mass contributions.
+[33mcalculix-adapter-solid    |[0m 
+[33mcalculix-adapter-solid    |[0m  Factoring the system of equations using the symmetric spooles solver
+[33mcalculix-adapter-solid    |[0m  Using 1 cpu for spooles.
+[33mcalculix-adapter-solid    |[0m 
+[33mcalculix-adapter-solid    |[0m  Using up to 1 cpu(s) for the heat flux calculation.
+[33mcalculix-adapter-solid    |[0m 
+[33mcalculix-adapter-solid    |[0m  average flux= 5.108361
+[33mcalculix-adapter-solid    |[0m  time avg. flux= 5.108361
+[33mcalculix-adapter-solid    |[0m  largest residual flux= 0.000000 in node 21126 and dof 0
+[33mcalculix-adapter-solid    |[0m  largest increment of temp= 5.689586e+01
+[33mcalculix-adapter-solid    |[0m  largest correction to temp= 1.616001e-13 in node 9660 and dof 0
+[33mcalculix-adapter-solid    |[0m 
+[33mcalculix-adapter-solid    |[0m  convergence
+[33mcalculix-adapter-solid    |[0m 
+[33mcalculix-adapter-solid    |[0m  the increment size exceeds the remainder of the step and is decreased to 0.000000e+00
+[33mcalculix-adapter-solid    |[0m 
+[33mcalculix-adapter-solid    |[0m Adapter writing coupling data...
+[33mcalculix-adapter-solid    |[0m Writing SINK_TEMPERATURE coupling data with ID '0'. 
+[33mcalculix-adapter-solid    |[0m Writing HEAT_TRANSFER_COEFF coupling data with ID '1'. 
+[33mcalculix-adapter-solid    |[0m Writing SINK_TEMPERATURE coupling data with ID '4'. 
+[33mcalculix-adapter-solid    |[0m Writing HEAT_TRANSFER_COEFF coupling data with ID '5'. 
+[33mcalculix-adapter-solid    |[0m Adapter calling advance()...
+[33mcalculix-adapter-solid    |[0m ---[precice] [0m Time window completed
+[33mcalculix-adapter-solid    |[0m ---[precice] [0m Time window completed
+[33mcalculix-adapter-solid    |[0m ---[precice] [0m Inner-Fluid: it 1 | dt# 2 | t 1 of 1 | dt 1 | max dt 1 | ongoing no | dt complete yes | 
+[33mcalculix-adapter-solid    |[0m Outer-Fluid: it 1 | dt# 2 | t 1 of 1 | dt 1 | max dt 1 | ongoing no | dt complete yes | 
+[33mcalculix-adapter-solid    |[0m  Using up to 1 cpu(s) for the heat flux calculation.
+[33mcalculix-adapter-solid    |[0m 
+[33mcalculix-adapter-solid    |[0m 
+[33mcalculix-adapter-solid    |[0m  Job finished
+[33mcalculix-adapter-solid    |[0m 
+[32mopenfoam-adapter-inner    |[0m /*---------------------------------------------------------------------------*\
+[32mopenfoam-adapter-inner    |[0m | =========                 |                                                 |
+[32mopenfoam-adapter-inner    |[0m | \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+[32mopenfoam-adapter-inner    |[0m |  \\    /   O peration     | Version:  2006                                  |
+[32mopenfoam-adapter-inner    |[0m |   \\  /    A nd           | Website:  www.openfoam.com                      |
+[32mopenfoam-adapter-inner    |[0m |    \\/     M anipulation  |                                                 |
+[32mopenfoam-adapter-inner    |[0m \*---------------------------------------------------------------------------*/
+[32mopenfoam-adapter-inner    |[0m Build  : 295eef47-20201012 OPENFOAM=2006 patch=201012
+[32mopenfoam-adapter-inner    |[0m Arch   : "LSB;label=32;scalar=64"
+[32mopenfoam-adapter-inner    |[0m Exec   : buoyantSimpleFoam -case /home/precice/Data/Input
+[32mopenfoam-adapter-inner    |[0m Date   : Jan 07 2021
+[32mopenfoam-adapter-inner    |[0m Time   : 16:41:08
+[32mopenfoam-adapter-inner    |[0m Host   : e75265117e8f
+[32mopenfoam-adapter-inner    |[0m PID    : 258
+[32mopenfoam-adapter-inner    |[0m I/O    : uncollated
+[32mopenfoam-adapter-inner    |[0m Case   : /home/precice/Data/Input
+[32mopenfoam-adapter-inner    |[0m nProcs : 1
+[32mopenfoam-adapter-inner    |[0m trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+[32mopenfoam-adapter-inner    |[0m fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+[32mopenfoam-adapter-inner    |[0m allowSystemOperations : Allowing user-supplied system call operations
+[32mopenfoam-adapter-inner    |[0m 
+[32mopenfoam-adapter-inner    |[0m // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+[32mopenfoam-adapter-inner    |[0m Create time
+[32mopenfoam-adapter-inner    |[0m 
+[32mopenfoam-adapter-inner    |[0m Create mesh for time = 0
+[32mopenfoam-adapter-inner    |[0m 
+[32mopenfoam-adapter-inner    |[0m 
+[32mopenfoam-adapter-inner    |[0m SIMPLE: no convergence criteria found. Calculations will run for 5 steps.
+[32mopenfoam-adapter-inner    |[0m 
+[32mopenfoam-adapter-inner    |[0m Reading thermophysical properties
+[32mopenfoam-adapter-inner    |[0m 
+[32mopenfoam-adapter-inner    |[0m Selecting thermodynamics package 
+[32mopenfoam-adapter-inner    |[0m {
+[32mopenfoam-adapter-inner    |[0m     type            heRhoThermo;
+[32mopenfoam-adapter-inner    |[0m     mixture         pureMixture;
+[32mopenfoam-adapter-inner    |[0m     transport       const;
+[32mopenfoam-adapter-inner    |[0m     thermo          hConst;
+[32mopenfoam-adapter-inner    |[0m     equationOfState perfectFluid;
+[32mopenfoam-adapter-inner    |[0m     specie          specie;
+[32mopenfoam-adapter-inner    |[0m     energy          sensibleEnthalpy;
+[32mopenfoam-adapter-inner    |[0m }
+[32mopenfoam-adapter-inner    |[0m 
+[32mopenfoam-adapter-inner    |[0m Reading field U
+[32mopenfoam-adapter-inner    |[0m 
+[32mopenfoam-adapter-inner    |[0m Reading/calculating face flux field phi
+[32mopenfoam-adapter-inner    |[0m 
+[32mopenfoam-adapter-inner    |[0m Creating turbulence model
+[32mopenfoam-adapter-inner    |[0m 
+[32mopenfoam-adapter-inner    |[0m Selecting turbulence model type laminar
+[32mopenfoam-adapter-inner    |[0m Selecting laminar stress model Stokes
+[32mopenfoam-adapter-inner    |[0m 
+[32mopenfoam-adapter-inner    |[0m Reading g
+[32mopenfoam-adapter-inner    |[0m 
+[32mopenfoam-adapter-inner    |[0m Reading hRef
+[32mopenfoam-adapter-inner    |[0m Calculating field g.h
+[32mopenfoam-adapter-inner    |[0m 
+[32mopenfoam-adapter-inner    |[0m Reading field p_rgh
+[32mopenfoam-adapter-inner    |[0m 
+[32mopenfoam-adapter-inner    |[0m No MRF models present
+[32mopenfoam-adapter-inner    |[0m 
+[32mopenfoam-adapter-inner    |[0m Selecting radiationModel none
+[32mopenfoam-adapter-inner    |[0m Creating finite volume options from "system/fvOptions"
+[32mopenfoam-adapter-inner    |[0m 
+[32mopenfoam-adapter-inner    |[0m No finite volume options present
+[32mopenfoam-adapter-inner    |[0m 
+[32mopenfoam-adapter-inner    |[0m Starting time loop
+[32mopenfoam-adapter-inner    |[0m 
+[32mopenfoam-adapter-inner    |[0m --------------------------------------------------------------------------
+[32mopenfoam-adapter-inner    |[0m [[28446,1],0]: A high-performance Open MPI point-to-point messaging module
+[32mopenfoam-adapter-inner    |[0m was unable to find any relevant network interfaces:
+[32mopenfoam-adapter-inner    |[0m 
+[32mopenfoam-adapter-inner    |[0m Module: OpenFabrics (openib)
+[32mopenfoam-adapter-inner    |[0m   Host: e75265117e8f
+[32mopenfoam-adapter-inner    |[0m 
+[32mopenfoam-adapter-inner    |[0m Another transport will be used instead, although this may result in
+[32mopenfoam-adapter-inner    |[0m lower performance.
+[32mopenfoam-adapter-inner    |[0m 
+[32mopenfoam-adapter-inner    |[0m NOTE: You can disable this warning by setting the MCA parameter
+[32mopenfoam-adapter-inner    |[0m btl_base_warn_component_unused to 0.
+[32mopenfoam-adapter-inner    |[0m --------------------------------------------------------------------------
+[32mopenfoam-adapter-inner    |[0m ---[preciceAdapter] The preciceAdapter was loaded.
+[32mopenfoam-adapter-inner    |[0m ---[preciceAdapter] Reading preciceDict...
+[32mopenfoam-adapter-inner    |[0m ---[preciceAdapter] [DEBUG]   precice-config-file : precice-config.xml
+[32mopenfoam-adapter-inner    |[0m ---[preciceAdapter] [DEBUG]   participant name    : Inner-Fluid
+[32mopenfoam-adapter-inner    |[0m ---[preciceAdapter] [DEBUG]   modules requested   : 
+[32mopenfoam-adapter-inner    |[0m ---[preciceAdapter] [DEBUG]   - CHT
+[32mopenfoam-adapter-inner    |[0m 
+[32mopenfoam-adapter-inner    |[0m ---[preciceAdapter] [DEBUG]   interfaces : 
+[32mopenfoam-adapter-inner    |[0m ---[preciceAdapter] [DEBUG]   - mesh         : Inner-Fluid-to-Solid
+[32mopenfoam-adapter-inner    |[0m ---[preciceAdapter] [DEBUG]     locations    : faceCenters
+[32mopenfoam-adapter-inner    |[0m ---[preciceAdapter] [DEBUG]     connectivity : 0
+[32mopenfoam-adapter-inner    |[0m ---[preciceAdapter] [DEBUG]     patches      : 
+[32mopenfoam-adapter-inner    |[0m ---[preciceAdapter] [DEBUG]       - interface
+[32mopenfoam-adapter-inner    |[0m ---[preciceAdapter] [DEBUG]     writeData    : 
+[32mopenfoam-adapter-inner    |[0m ---[preciceAdapter] [DEBUG]       - Sink-Temperature-Inner-Fluid
+[32mopenfoam-adapter-inner    |[0m ---[preciceAdapter] [DEBUG]       - Heat-Transfer-Coefficient-Inner-Fluid
+[32mopenfoam-adapter-inner    |[0m ---[preciceAdapter] [DEBUG]     readData     : 
+[32mopenfoam-adapter-inner    |[0m ---[preciceAdapter] [DEBUG]       - Sink-Temperature-Solid
+[32mopenfoam-adapter-inner    |[0m ---[preciceAdapter] [DEBUG]       - Heat-Transfer-Coefficient-Solid
+[32mopenfoam-adapter-inner    |[0m ---[preciceAdapter] [DEBUG] Configuring the CHT module...
+[32mopenfoam-adapter-inner    |[0m ---[preciceAdapter] [DEBUG]     user-defined solver type : 
+[32mopenfoam-adapter-inner    |[0m ---[preciceAdapter] [DEBUG]     temperature field name : T
+[32mopenfoam-adapter-inner    |[0m ---[preciceAdapter] [DEBUG]     conductivity name for basic solvers : k
+[32mopenfoam-adapter-inner    |[0m ---[preciceAdapter] [DEBUG]     density name for incompressible solvers : rho
+[32mopenfoam-adapter-inner    |[0m ---[preciceAdapter] [DEBUG]     heat capacity name for incompressible solvers : Cp
+[32mopenfoam-adapter-inner    |[0m ---[preciceAdapter] [DEBUG]     Prandtl number name for incompressible solvers : Pr
+[32mopenfoam-adapter-inner    |[0m ---[preciceAdapter] [DEBUG]     Turbulent thermal diffusivity field name for incompressible solvers : alphat
+[32mopenfoam-adapter-inner    |[0m ---[preciceAdapter] [DEBUG] Determining the solver type for the CHT module... (override by setting solverType to one of {compressible, incompressible, basic})
+[32mopenfoam-adapter-inner    |[0m ---[preciceAdapter] [DEBUG] Automatically determined solver type : compressible
+[32mopenfoam-adapter-inner    |[0m ---[preciceAdapter] [DEBUG] Checking the timestep type (fixed vs adjustable)...
+[32mopenfoam-adapter-inner    |[0m ---[preciceAdapter] [DEBUG]   Timestep type: fixed.
+[32mopenfoam-adapter-inner    |[0m ---[preciceAdapter] [DEBUG] Creating the preCICE solver interface...
+[32mopenfoam-adapter-inner    |[0m ---[preciceAdapter] [DEBUG]   Number of processes: 1
+[32mopenfoam-adapter-inner    |[0m ---[preciceAdapter] [DEBUG]   MPI rank: 0
+[32mopenfoam-adapter-inner    |[0m ---[precice] [0m This is preCICE version 2.1.1
+[32mopenfoam-adapter-inner    |[0m ---[precice] [0m Revision info: no-info [Git failed/Not a repository]
+[32mopenfoam-adapter-inner    |[0m ---[precice] [0m Configuring preCICE with configuration "precice-config.xml"
+[32mopenfoam-adapter-inner    |[0m ---[precice] [0m I am participant "Inner-Fluid"
+[32mopenfoam-adapter-inner    |[0m ---[preciceAdapter] [DEBUG]   preCICE solver interface was created.
+[32mopenfoam-adapter-inner    |[0m ---[preciceAdapter] [DEBUG] Creating interfaces...
+[32mopenfoam-adapter-inner    |[0m ---[preciceAdapter] [DEBUG] Number of face centres: 35384
+[32mopenfoam-adapter-inner    |[0m ---[preciceAdapter] [DEBUG] Interface created on mesh Inner-Fluid-to-Solid
+[32mopenfoam-adapter-inner    |[0m ---[preciceAdapter] [DEBUG] Adding coupling data writers...
+[32mopenfoam-adapter-inner    |[0m ---[preciceAdapter] [DEBUG] Added writer: Sink Temperature.
+[32mopenfoam-adapter-inner    |[0m ---[preciceAdapter] [DEBUG] Constructed KappaEff_Compressible.
+[32mopenfoam-adapter-inner    |[0m ---[preciceAdapter] [DEBUG] Added writer: Heat Transfer Coefficient for compressible solvers.
+[32mopenfoam-adapter-inner    |[0m ---[preciceAdapter] [DEBUG] Adding coupling data readers...
+[32mopenfoam-adapter-inner    |[0m ---[preciceAdapter] [DEBUG] Added reader: Sink Temperature.
+[32mopenfoam-adapter-inner    |[0m ---[preciceAdapter] [DEBUG] Constructed KappaEff_Compressible.
+[32mopenfoam-adapter-inner    |[0m ---[preciceAdapter] [DEBUG] Added reader: Heat Transfer Coefficient for compressible solvers.
+[32mopenfoam-adapter-inner    |[0m ---[preciceAdapter] [DEBUG] Initalizing the preCICE solver interface...
+[32mopenfoam-adapter-inner    |[0m ---[precice] [0m Setting up master communication to coupling partner/s
+[32mopenfoam-adapter-inner    |[0m ---[precice] [0m Masters are connected
+[32mopenfoam-adapter-inner    |[0m ---[precice] [0m Setting up preliminary slaves communication to coupling partner/s
+[32mopenfoam-adapter-inner    |[0m ---[precice] [0m Prepare partition for mesh Inner-Fluid-to-Solid
+[32mopenfoam-adapter-inner    |[0m ---[precice] [0m Gather mesh Inner-Fluid-to-Solid
+[32mopenfoam-adapter-inner    |[0m ---[precice] [0m Send global mesh Inner-Fluid-to-Solid
+[32mopenfoam-adapter-inner    |[0m ---[precice] [0m Receive global mesh Solid-to-Inner-Fluid
+[32mopenfoam-adapter-inner    |[0m ---[precice] [0m Setting up slaves communication to coupling partner/s
+[32mopenfoam-adapter-inner    |[0m ---[precice] [0m Slaves are connected
+[32mopenfoam-adapter-inner    |[0m ---[precice] [0m it 1 | dt# 1 | t 0 of 1 | dt 1 | max dt 1 | ongoing yes | dt complete no | write-initial-data | 
+[32mopenfoam-adapter-inner    |[0m ---[preciceAdapter] [DEBUG] Writing coupling data...
+[32mopenfoam-adapter-inner    |[0m ---[preciceAdapter] [DEBUG] Initializing preCICE data...
+[32mopenfoam-adapter-inner    |[0m ---[precice] [0m Compute read mapping from mesh "Solid-to-Inner-Fluid" to mesh "Inner-Fluid-to-Solid".
+[32mopenfoam-adapter-inner    |[0m ---[precice] [0m Mapping distance min:0.000430952 max:0.0351746 avg: 0.0130161 var: 2.9614e-05 cnt: 35384
+[32mopenfoam-adapter-inner    |[0m ---[preciceAdapter] preCICE was configured and initialized
+[32mopenfoam-adapter-inner    |[0m ---[preciceAdapter] [DEBUG] Reading coupling data...
+[32mopenfoam-adapter-inner    |[0m ---[preciceAdapter] [DEBUG] Adjusting the solver's timestep...
+[32mopenfoam-adapter-inner    |[0m ---[preciceAdapter] [DEBUG] The solver's timestep is the same as the coupling timestep.
+[32mopenfoam-adapter-inner    |[0m ---[preciceAdapter] Setting the solver's endTime to infinity to prevent early exits. Only preCICE will control the simulation's endTime. Any functionObject's end() method will be triggered by the adapter. You may disable this behavior in the adapter's configuration.
+[32mopenfoam-adapter-inner    |[0m Time = 1
+[32mopenfoam-adapter-inner    |[0m 
+[32mopenfoam-adapter-inner    |[0m DILUPBiCG:  Solving for Ux, Initial residual = 1, Final residual = 0.003, No Iterations 1
+[32mopenfoam-adapter-inner    |[0m DILUPBiCG:  Solving for Uy, Initial residual = 1, Final residual = 0.001, No Iterations 1
+[32mopenfoam-adapter-inner    |[0m DILUPBiCG:  Solving for Uz, Initial residual = 1, Final residual = 0.002, No Iterations 1
+[32mopenfoam-adapter-inner    |[0m DILUPBiCG:  Solving for h, Initial residual = 1, Final residual = 7e-07, No Iterations 26
+[32mopenfoam-adapter-inner    |[0m DICPCG:  Solving for p_rgh, Initial residual = 1, Final residual = 0.01, No Iterations 460
+[32mopenfoam-adapter-inner    |[0m time step continuity errors : sum local = 0.003, global = -1e-05, cumulative = -1e-05
+[32mopenfoam-adapter-inner    |[0m rho min/max : 1e+03 1e+03
+[32mopenfoam-adapter-inner    |[0m ExecutionTime = 2e+01 s  ClockTime = 3e+01 s
+[32mopenfoam-adapter-inner    |[0m 
+[32mopenfoam-adapter-inner    |[0m ---[preciceAdapter] [DEBUG] Writing coupling data...
+[32mopenfoam-adapter-inner    |[0m ---[preciceAdapter] [DEBUG] Advancing preCICE...
+[32mopenfoam-adapter-inner    |[0m ---[precice] [0m Time window completed
+[32mopenfoam-adapter-inner    |[0m ---[precice] [0m it 1 | dt# 2 | t 1 of 1 | dt 1 | max dt 1 | ongoing no | dt complete yes | 
+[32mopenfoam-adapter-inner    |[0m ---[preciceAdapter] [DEBUG] Reading coupling data...
+[32mopenfoam-adapter-inner    |[0m ---[preciceAdapter] [DEBUG] Adjusting the solver's timestep...
+[32mopenfoam-adapter-inner    |[0m ---[preciceAdapter] [DEBUG] The solver's timestep is the same as the coupling timestep.
+[32mopenfoam-adapter-inner    |[0m ---[preciceAdapter] The coupling completed.
+[32mopenfoam-adapter-inner    |[0m ---[preciceAdapter] [DEBUG] Finalizing the preCICE solver interface...
+[32mopenfoam-adapter-inner    |[0m ---[preciceAdapter] [DEBUG] Destroying the preCICE solver interface...
+[32mopenfoam-adapter-inner    |[0m ---[preciceAdapter] [DEBUG] Deleting the interfaces...
+[32mopenfoam-adapter-inner    |[0m ---[preciceAdapter] [DEBUG] Destroying the CHT module...
+[32mopenfoam-adapter-inner    |[0m ---[preciceAdapter] The simulation was ended by preCICE. Calling the end() methods of any functionObject explicitly.
+[32mopenfoam-adapter-inner    |[0m End
+[32mopenfoam-adapter-inner    |[0m 
