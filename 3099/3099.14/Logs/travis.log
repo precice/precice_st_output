@@ -1,0 +1,742 @@
+travis_fold:start:worker_info[0K[33;1mWorker information[0m
+hostname: 98ad8c57-8929-40e4-a4b1-140e636a167b@1.worker-com-oss-64d9789897-rm2km.gce-production-3
+version: v6.2.20-1-g3a987d6 https://github.com/travis-ci/worker/tree/3a987d61ed169c9539ad435d1a9b5f2d8c6ce4a6
+instance: travis-job-c1230635-58ad-4138-bb44-391037f01be3 travis-ci-ubuntu-1804-1609168422-6c7eba12 (via amqp)
+startup: 6.842378351s
+travis_fold:end:worker_info[0Ktravis_time:start:073e5eac[0Ktravis_time:end:073e5eac:start=1611136471024003130,finish=1611136471198403757,duration=174400627,event=no_world_writable_dirs[0Ktravis_time:start:00018398[0Ktravis_time:end:00018398:start=1611136471201450241,finish=1611136471204795637,duration=3345396,event=setup_filter[0Ktravis_time:start:011ddd1e[0Ktravis_time:end:011ddd1e:start=1611136471212248951,finish=1611136471224489014,duration=12240063,event=agent[0Ktravis_time:start:10dcda5c[0Ktravis_time:end:10dcda5c:start=1611136471227038755,finish=1611136471229414020,duration=2375265,event=check_unsupported[0Ktravis_time:start:19383b55[0Ktravis_fold:start:system_info[0K[33;1mBuild system information[0m
+Build language: python
+Build group: stable
+Build dist: bionic
+Build id: 213755662
+Job id: 473339286
+Runtime kernel version: 5.4.0-1032-gcp
+travis-build version: 5d5d4288
+[34m[1mBuild image provisioning date and time[0m
+Mon Dec 28 15:53:02 UTC 2020
+[34m[1mOperating System Details[0m
+Distributor ID:	Ubuntu
+Description:	Ubuntu 18.04.5 LTS
+Release:	18.04
+Codename:	bionic
+[34m[1mSystemd Version[0m
+systemd 237
+[34m[1mCookbooks Version[0m
+10a7b34 https://github.com/travis-ci/travis-cookbooks/tree/10a7b34
+[34m[1mgit version[0m
+git version 2.29.2
+[34m[1mbash version[0m
+GNU bash, version 4.4.20(1)-release (x86_64-pc-linux-gnu)
+[34m[1mgcc version[0m
+gcc (Ubuntu 7.5.0-3ubuntu1~18.04) 7.5.0
+[34m[1mdocker version[0m
+Client:
+ Version:           18.06.0-ce
+ API version:       1.38
+ Go version:        go1.10.3
+ Git commit:        0ffa825
+ Built:             Wed Jul 18 19:09:54 2018
+ OS/Arch:           linux/amd64
+ Experimental:      false
+
+Server:
+ Engine:
+  Version:          18.06.0-ce
+  API version:      1.38 (minimum version 1.12)
+  Go version:       go1.10.3
+  Git commit:       0ffa825
+  Built:            Wed Jul 18 19:07:56 2018
+  OS/Arch:          linux/amd64
+  Experimental:     false
+[34m[1mclang version[0m
+clang version 7.0.0 (tags/RELEASE_700/final)
+[34m[1mjq version[0m
+jq-1.5
+[34m[1mbats version[0m
+Bats 0.4.0
+[34m[1mshellcheck version[0m
+0.7.0
+[34m[1mshfmt version[0m
+v3.2.1
+[34m[1mccache version[0m
+3.4.1
+[34m[1mcmake version[0m
+cmake version 3.12.4
+[34m[1mheroku version[0m
+heroku/7.47.6 linux-x64 node-v12.16.2
+[34m[1mimagemagick version[0m
+Version: ImageMagick 6.9.7-4 Q16 x86_64 20170114 http://www.imagemagick.org
+[34m[1mmd5deep version[0m
+4.4
+[34m[1mmercurial version[0m
+version 4.8
+[34m[1mmysql version[0m
+mysql  Ver 14.14 Distrib 5.7.32, for Linux (x86_64) using  EditLine wrapper
+[34m[1mopenssl version[0m
+OpenSSL 1.1.1  11 Sep 2018
+[34m[1mpacker version[0m
+1.3.3
+[34m[1mpostgresql client version[0m
+psql (PostgreSQL) 11.10 (Ubuntu 11.10-1.pgdg18.04+1)
+[34m[1mragel version[0m
+Ragel State Machine Compiler version 6.10 March 2017
+[34m[1msudo version[0m
+1.8.21p2
+[34m[1mgzip version[0m
+gzip 1.6
+[34m[1mzip version[0m
+Zip 3.0
+[34m[1mvim version[0m
+VIM - Vi IMproved 8.0 (2016 Sep 12, compiled Oct 13 2020 15:49:09)
+[34m[1miptables version[0m
+iptables v1.6.1
+[34m[1mcurl version[0m
+curl 7.58.0 (x86_64-pc-linux-gnu) libcurl/7.58.0 OpenSSL/1.1.1 zlib/1.2.11 libidn2/2.0.4 libpsl/0.19.1 (+libidn2/2.0.4) nghttp2/1.30.0 librtmp/2.3
+[34m[1mwget version[0m
+GNU Wget 1.19.4 built on linux-gnu.
+[34m[1mrsync version[0m
+rsync  version 3.1.2  protocol version 31
+[34m[1mgimme version[0m
+v1.5.4
+[34m[1mnvm version[0m
+0.37.2
+[34m[1mperlbrew version[0m
+/home/travis/perl5/perlbrew/bin/perlbrew  - App::perlbrew/0.88
+[34m[1mphpenv version[0m
+rbenv 1.1.2-40-g62d7798
+[34m[1mrvm version[0m
+rvm 1.29.10 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
+[34m[1mdefault ruby version[0m
+ruby 2.6.5p114 (2019-10-01 revision 67812) [x86_64-linux]
+[34m[1mElasticSearch version[0m
+5.5.0
+[34m[1mInstalled Firefox version[0m
+firefox 63.0.1
+[34m[1mMongoDB version[0m
+MongoDB 4.0.22
+[34m[1mPhantomJS version[0m
+2.1.1
+[34m[1mPre-installed PostgreSQL versions[0m
+9.3.25
+9.4.26
+9.5.24
+9.6.20
+[34m[1mRedis version[0m
+redis-server 6.0.6
+[34m[1mPre-installed Go versions[0m
+1.11.1
+[34m[1mant version[0m
+Apache Ant(TM) version 1.10.5 compiled on March 28 2019
+[34m[1mmvn version[0m
+Apache Maven 3.6.3 (cecedd343002696d0abb50b32b541b8a6ba2883f)
+[34m[1mgradle version[0m
+Gradle 5.1.1!
+[34m[1mlein version[0m
+Leiningen 2.9.5 on Java 11.0.2 OpenJDK 64-Bit Server VM
+[34m[1mPre-installed Node.js versions[0m
+v10.16.0
+v10.23.0
+v11.15.0
+v12.13.1
+v12.20.0
+v13.3.0
+v14.15.3
+v4.9.1
+v6.17.1
+v8.16.2
+v8.17.0
+v8.9
+[34m[1mphpenv versions[0m
+  system
+  7.1
+  7.1.33
+  7.2
+* 7.2.27 (set by /home/travis/.phpenv/version)
+  7.3
+  7.3.14
+  7.4
+  7.4.2
+  hhvm
+  hhvm-stable
+[34m[1mcomposer --version[0m
+Composer version 1.9.2 2020-01-14 16:30:31
+[34m[1mPre-installed Ruby versions[0m
+ruby-2.4.9
+ruby-2.5.3
+ruby-2.5.7
+ruby-2.6.5
+ruby-2.7.0
+travis_fold:end:system_info[0K
+travis_time:end:19383b55:start=1611136471233518726,finish=1611136471243212964,duration=9694238,event=show_system_info[0Ktravis_time:start:0a62d888[0Ktravis_time:end:0a62d888:start=1611136471246138930,finish=1611136471261934216,duration=15795286,event=rm_riak_source[0Ktravis_time:start:2b64312e[0Ktravis_time:end:2b64312e:start=1611136471266266493,finish=1611136471274469629,duration=8203136,event=fix_rwky_redis[0Ktravis_time:start:04e3c560[0Ktravis_time:end:04e3c560:start=1611136471277691538,finish=1611136471592473864,duration=314782326,event=wait_for_network[0Ktravis_time:start:2b56b438[0Ktravis_time:end:2b56b438:start=1611136471595920149,finish=1611136471831699771,duration=235779622,event=update_apt_keys[0Ktravis_time:start:0b5e53a9[0Ktravis_time:end:0b5e53a9:start=1611136471835805906,finish=1611136471886223401,duration=50417495,event=fix_hhvm_source[0Ktravis_time:start:12d641c0[0Ktravis_time:end:12d641c0:start=1611136471890183332,finish=1611136471893091660,duration=2908328,event=update_mongo_arch[0Ktravis_time:start:1973994d[0Ktravis_time:end:1973994d:start=1611136471898346982,finish=1611136471936164523,duration=37817541,event=fix_sudo_enabled_trusty[0Ktravis_time:start:0619abfc[0Ktravis_time:end:0619abfc:start=1611136471941115102,finish=1611136471943416636,duration=2301534,event=update_glibc[0Ktravis_time:start:26e96689[0Ktravis_time:end:26e96689:start=1611136471948464252,finish=1611136471956247488,duration=7783236,event=clean_up_path[0Ktravis_time:start:0765a397[0Ktravis_time:end:0765a397:start=1611136471960264976,finish=1611136471968440616,duration=8175640,event=fix_resolv_conf[0Ktravis_time:start:1f95cf7b[0Ktravis_time:end:1f95cf7b:start=1611136471973171830,finish=1611136471998927090,duration=25755260,event=fix_etc_hosts[0Ktravis_time:start:2f156b03[0Ktravis_time:end:2f156b03:start=1611136472003595889,finish=1611136472011124970,duration=7529081,event=fix_mvn_settings_xml[0Ktravis_time:start:05265482[0Ktravis_time:end:05265482:start=1611136472014752668,finish=1611136472023644951,duration=8892283,event=no_ipv6_localhost[0Ktravis_time:start:151e507c[0Ktravis_time:end:151e507c:start=1611136472027030860,finish=1611136472028956855,duration=1925995,event=fix_etc_mavenrc[0Ktravis_time:start:084629af[0Ktravis_time:end:084629af:start=1611136472032250373,finish=1611136472035431042,duration=3180669,event=fix_wwdr_certificate[0Ktravis_time:start:06ab66ba[0Ktravis_time:end:06ab66ba:start=1611136472039992114,finish=1611136472096950683,duration=56958569,event=put_localhost_first[0Ktravis_time:start:0b08858f[0Ktravis_time:end:0b08858f:start=1611136472100152152,finish=1611136472103754025,duration=3601873,event=home_paths[0Ktravis_time:start:01343495[0Ktravis_time:end:01343495:start=1611136472109200924,finish=1611136472120837129,duration=11636205,event=disable_initramfs[0Ktravis_time:start:00015840[0Ktravis_time:end:00015840:start=1611136472124587784,finish=1611136472253806485,duration=129218701,event=disable_ssh_roaming[0Ktravis_time:start:0fabc13e[0Ktravis_time:end:0fabc13e:start=1611136472257781009,finish=1611136472259893709,duration=2112700,event=debug_tools[0Ktravis_time:start:004ed78f[0Ktravis_time:end:004ed78f:start=1611136472263785219,finish=1611136472266563210,duration=2777991,event=uninstall_oclint[0Ktravis_time:start:029304e7[0Ktravis_time:end:029304e7:start=1611136472270327725,finish=1611136472273403756,duration=3076031,event=rvm_use[0Ktravis_time:start:07178d7c[0Ktravis_time:end:07178d7c:start=1611136472277667018,finish=1611136472285730666,duration=8063648,event=rm_etc_boto_cfg[0Ktravis_time:start:24e6cb08[0Ktravis_time:end:24e6cb08:start=1611136472291069876,finish=1611136472293154652,duration=2084776,event=rm_oraclejdk8_symlink[0Ktravis_time:start:0067b068[0Ktravis_time:end:0067b068:start=1611136472296835188,finish=1611136472380396966,duration=83561778,event=enable_i386[0Ktravis_time:start:0db43f1d[0Ktravis_time:end:0db43f1d:start=1611136472384972462,finish=1611136472389370411,duration=4397949,event=update_rubygems[0Ktravis_time:start:00370eb0[0Ktravis_time:end:00370eb0:start=1611136472393134401,finish=1611136473319732555,duration=926598154,event=ensure_path_components[0Ktravis_time:start:08061ee2[0Ktravis_time:end:08061ee2:start=1611136473323696745,finish=1611136473326426626,duration=2729881,event=redefine_curl[0Ktravis_time:start:0b388a6c[0Ktravis_time:end:0b388a6c:start=1611136473330898585,finish=1611136473416313748,duration=85415163,event=nonblock_pipe[0Ktravis_time:start:105b753a[0Ktravis_time:end:105b753a:start=1611136473421118225,finish=1611136479454291093,duration=6033172868,event=apt_get_update[0Ktravis_time:start:0036343e[0Ktravis_time:end:0036343e:start=1611136479458826789,finish=1611136479461307226,duration=2480437,event=deprecate_xcode_64[0Ktravis_time:start:0b975e11[0Ktravis_time:end:0b975e11:start=1611136479465746889,finish=1611136482137824199,duration=2672077310,event=update_heroku[0Ktravis_time:start:04265776[0Ktravis_time:end:04265776:start=1611136482141780643,finish=1611136482143901280,duration=2120637,event=shell_session_update[0Ktravis_time:start:00b360eb[0Ktravis_fold:start:docker_mtu_and_registry_mirrors[0Ktravis_fold:end:docker_mtu_and_registry_mirrors[0Ktravis_time:end:00b360eb:start=1611136482147728047,finish=1611136484494318366,duration=2346590319,event=set_docker_mtu_and_registry_mirrors[0Ktravis_time:start:068827cb[0Ktravis_fold:start:resolvconf[0Ktravis_fold:end:resolvconf[0Ktravis_time:end:068827cb:start=1611136484499032194,finish=1611136484563550156,duration=64517962,event=resolvconf[0Ktravis_time:start:02d6fac8[0Ktravis_time:end:02d6fac8:start=1611136484569345238,finish=1611136484715878148,duration=146532910,event=maven_central_mirror[0Ktravis_time:start:056ac18d[0Ktravis_time:end:056ac18d:start=1611136484719665743,finish=1611136484811028882,duration=91363139,event=maven_https[0Ktravis_time:start:0cc96411[0Ktravis_fold:start:services[0Ktravis_time:start:3216f15a[0K$ sudo systemctl start docker
+travis_time:end:3216f15a:start=1611136484823448072,finish=1611136484835802896,duration=12354824,event=prepare[0Ktravis_fold:end:services[0Ktravis_time:end:3216f15a:start=1611136484823448072,finish=1611136487842056470,duration=3018608398,event=services[0Ktravis_time:start:06f05cb0[0Ktravis_time:end:06f05cb0:start=1611136487847200851,finish=1611136487849758838,duration=2557987,event=fix_ps4[0Ktravis_time:start:178be1f3[0K
+travis_fold:start:git.checkout[0Ktravis_time:start:28acf0f4[0K$ git clone --depth=50 https://github.com/precice/systemtests.git precice/systemtests
+Cloning into 'precice/systemtests'...
+travis_time:end:28acf0f4:start=1611136487858244426,finish=1611136494826913506,duration=6968669080,event=checkout[0K$ cd precice/systemtests
+travis_time:start:23072411[0K$ git fetch origin +refs/pull/273/merge:
+From https://github.com/precice/systemtests
+ * branch            refs/pull/273/merge -> FETCH_HEAD
+travis_time:end:23072411:start=1611136494832531454,finish=1611136495307232158,duration=474700704,event=checkout[0K$ git checkout -qf FETCH_HEAD
+travis_fold:end:git.checkout[0K
+travis_time:end:23072411:start=1611136494832531454,finish=1611136497004609671,duration=2172078217,event=checkout[0Ktravis_time:start:003459e7[0K
+[33;1mSetting environment variables from repository settings[0m
+$ export DOCKER_PASSWORD=[secure]
+$ export PRECICE_BOT_EMAIL=[secure]
+$ export GH_TOKEN=[secure]
+$ export DOCKER_USERNAME=precice
+$ export TRAVIS_ACCESS_TOKEN=[secure]
+
+travis_time:end:003459e7:start=1611136497009541177,finish=1611136497018692233,duration=9151056,event=env[0Ktravis_time:start:0b82e090[0K$ source ~/virtualenv/python3.8/bin/activate
+travis_time:end:0b82e090:start=1611136497022519838,finish=1611136497027801786,duration=5281948,event=[0K$ python --version
+Python 3.8.1
+$ pip --version
+pip 20.3.3 from /home/travis/virtualenv/python3.8.1/lib/python3.8/site-packages/pip (python 3.8)
+travis_fold:start:install[0Ktravis_time:start:15699ee0[0K$ pip install Jinja2
+Collecting Jinja2
+  Downloading Jinja2-2.11.2-py2.py3-none-any.whl (125 kB)
+Collecting MarkupSafe>=0.23
+  Downloading MarkupSafe-1.1.1-cp38-cp38-manylinux1_x86_64.whl (32 kB)
+Installing collected packages: MarkupSafe, Jinja2
+Successfully installed Jinja2-2.11.2 MarkupSafe-1.1.1
+travis_time:end:15699ee0:start=1611136497434832981,finish=1611136498569978294,duration=1135145313,event=install[0Ktravis_fold:end:install[0Ktravis_time:start:1519a9a9[0K$ python build_adapter.py --dockerfile adapters/Dockerfile.codeaster-adapter --operating-system ubuntu1804 --precice-installation package --docker-username $DOCKER_USERNAME
+WARNING! Your password will be stored unencrypted in /home/travis/.docker/config.json.
+Configure a credential helper to remove this warning. See
+https://docs.docker.com/engine/reference/commandline/login/#credentials-store
+
+Login Succeeded
+Sending build context to Docker daemon  4.096kB
+Step 1/20 : ARG branch=develop
+Step 2/20 : ARG from=precice/precice-ubuntu1804.home-${branch}
+Step 3/20 : ARG base_solver=precice/codeaster
+Step 4/20 : FROM ${base_solver}
+latest: Pulling from precice/codeaster
+5bed26d33875: Pulling fs layer
+f11b29a9c730: Pulling fs layer
+930bda195c84: Pulling fs layer
+78bf9a5ad49e: Pulling fs layer
+d21f43afdf7c: Pulling fs layer
+474f318f2061: Pulling fs layer
+05b7a5b7a980: Pulling fs layer
+e7201c1f0f41: Pulling fs layer
+538a42efaa34: Pulling fs layer
+3d37ea578cad: Pulling fs layer
+5a4ed3cab8c4: Pulling fs layer
+78bf9a5ad49e: Waiting
+d21f43afdf7c: Waiting
+474f318f2061: Waiting
+05b7a5b7a980: Waiting
+e7201c1f0f41: Waiting
+538a42efaa34: Waiting
+3d37ea578cad: Waiting
+5a4ed3cab8c4: Waiting
+f11b29a9c730: Retrying in 5 seconds
+5bed26d33875: Retrying in 5 seconds
+930bda195c84: Retrying in 5 seconds
+f11b29a9c730: Retrying in 4 seconds
+5bed26d33875: Retrying in 4 seconds
+930bda195c84: Retrying in 4 seconds
+f11b29a9c730: Retrying in 3 seconds
+5bed26d33875: Retrying in 3 seconds
+930bda195c84: Retrying in 3 seconds
+f11b29a9c730: Retrying in 2 seconds
+5bed26d33875: Retrying in 2 seconds
+930bda195c84: Retrying in 2 seconds
+f11b29a9c730: Retrying in 1 second
+5bed26d33875: Retrying in 1 second
+930bda195c84: Retrying in 1 second
+5bed26d33875: Retrying in 10 seconds
+f11b29a9c730: Retrying in 10 seconds
+930bda195c84: Retrying in 10 seconds
+5bed26d33875: Retrying in 9 seconds
+f11b29a9c730: Retrying in 9 seconds
+930bda195c84: Retrying in 9 seconds
+5bed26d33875: Retrying in 8 seconds
+f11b29a9c730: Retrying in 8 seconds
+930bda195c84: Retrying in 8 seconds
+5bed26d33875: Retrying in 7 seconds
+f11b29a9c730: Retrying in 7 seconds
+930bda195c84: Retrying in 7 seconds
+5bed26d33875: Retrying in 6 seconds
+f11b29a9c730: Retrying in 6 seconds
+930bda195c84: Retrying in 6 seconds
+5bed26d33875: Retrying in 5 seconds
+f11b29a9c730: Retrying in 5 seconds
+930bda195c84: Retrying in 5 seconds
+5bed26d33875: Retrying in 4 seconds
+930bda195c84: Retrying in 4 seconds
+f11b29a9c730: Retrying in 4 seconds
+5bed26d33875: Retrying in 3 seconds
+f11b29a9c730: Retrying in 3 seconds
+930bda195c84: Retrying in 3 seconds
+5bed26d33875: Retrying in 2 seconds
+f11b29a9c730: Retrying in 2 seconds
+930bda195c84: Retrying in 2 seconds
+5bed26d33875: Retrying in 1 second
+f11b29a9c730: Retrying in 1 second
+930bda195c84: Retrying in 1 second
+5bed26d33875: Retrying in 15 seconds
+930bda195c84: Retrying in 15 seconds
+f11b29a9c730: Retrying in 15 seconds
+5bed26d33875: Retrying in 14 seconds
+930bda195c84: Retrying in 14 seconds
+f11b29a9c730: Retrying in 14 seconds
+5bed26d33875: Retrying in 13 seconds
+930bda195c84: Retrying in 13 seconds
+f11b29a9c730: Retrying in 13 seconds
+5bed26d33875: Retrying in 12 seconds
+f11b29a9c730: Retrying in 12 seconds
+930bda195c84: Retrying in 12 seconds
+5bed26d33875: Retrying in 11 seconds
+930bda195c84: Retrying in 11 seconds
+f11b29a9c730: Retrying in 11 seconds
+5bed26d33875: Retrying in 10 seconds
+930bda195c84: Retrying in 10 seconds
+f11b29a9c730: Retrying in 10 seconds
+5bed26d33875: Retrying in 9 seconds
+930bda195c84: Retrying in 9 seconds
+f11b29a9c730: Retrying in 9 seconds
+5bed26d33875: Retrying in 8 seconds
+930bda195c84: Retrying in 8 seconds
+f11b29a9c730: Retrying in 8 seconds
+5bed26d33875: Retrying in 7 seconds
+930bda195c84: Retrying in 7 seconds
+f11b29a9c730: Retrying in 7 seconds
+5bed26d33875: Retrying in 6 seconds
+930bda195c84: Retrying in 6 seconds
+f11b29a9c730: Retrying in 6 seconds
+5bed26d33875: Retrying in 5 seconds
+930bda195c84: Retrying in 5 seconds
+f11b29a9c730: Retrying in 5 seconds
+5bed26d33875: Retrying in 4 seconds
+930bda195c84: Retrying in 4 seconds
+f11b29a9c730: Retrying in 4 seconds
+5bed26d33875: Retrying in 3 seconds
+930bda195c84: Retrying in 3 seconds
+f11b29a9c730: Retrying in 3 seconds
+5bed26d33875: Retrying in 2 seconds
+930bda195c84: Retrying in 2 seconds
+f11b29a9c730: Retrying in 2 seconds
+5bed26d33875: Retrying in 1 second
+930bda195c84: Retrying in 1 second
+f11b29a9c730: Retrying in 1 second
+930bda195c84: Retrying in 20 seconds
+5bed26d33875: Retrying in 20 seconds
+f11b29a9c730: Retrying in 20 seconds
+930bda195c84: Retrying in 19 seconds
+5bed26d33875: Retrying in 19 seconds
+f11b29a9c730: Retrying in 19 seconds
+930bda195c84: Retrying in 18 seconds
+5bed26d33875: Retrying in 18 seconds
+f11b29a9c730: Retrying in 18 seconds
+930bda195c84: Retrying in 17 seconds
+5bed26d33875: Retrying in 17 seconds
+f11b29a9c730: Retrying in 17 seconds
+930bda195c84: Retrying in 16 seconds
+5bed26d33875: Retrying in 16 seconds
+f11b29a9c730: Retrying in 16 seconds
+930bda195c84: Retrying in 15 seconds
+5bed26d33875: Retrying in 15 seconds
+f11b29a9c730: Retrying in 15 seconds
+930bda195c84: Retrying in 14 seconds
+5bed26d33875: Retrying in 14 seconds
+f11b29a9c730: Retrying in 14 seconds
+930bda195c84: Retrying in 13 seconds
+5bed26d33875: Retrying in 13 seconds
+f11b29a9c730: Retrying in 13 seconds
+930bda195c84: Retrying in 12 seconds
+5bed26d33875: Retrying in 12 seconds
+f11b29a9c730: Retrying in 12 seconds
+930bda195c84: Retrying in 11 seconds
+5bed26d33875: Retrying in 11 seconds
+f11b29a9c730: Retrying in 11 seconds
+930bda195c84: Retrying in 10 seconds
+5bed26d33875: Retrying in 10 seconds
+f11b29a9c730: Retrying in 10 seconds
+930bda195c84: Retrying in 9 seconds
+5bed26d33875: Retrying in 9 seconds
+f11b29a9c730: Retrying in 9 seconds
+930bda195c84: Retrying in 8 seconds
+5bed26d33875: Retrying in 8 seconds
+f11b29a9c730: Retrying in 8 seconds
+930bda195c84: Retrying in 7 seconds
+5bed26d33875: Retrying in 7 seconds
+f11b29a9c730: Retrying in 7 seconds
+930bda195c84: Retrying in 6 seconds
+5bed26d33875: Retrying in 6 seconds
+f11b29a9c730: Retrying in 6 seconds
+930bda195c84: Retrying in 5 seconds
+5bed26d33875: Retrying in 5 seconds
+f11b29a9c730: Retrying in 5 seconds
+930bda195c84: Retrying in 4 seconds
+5bed26d33875: Retrying in 4 seconds
+f11b29a9c730: Retrying in 4 seconds
+930bda195c84: Retrying in 3 seconds
+5bed26d33875: Retrying in 3 seconds
+f11b29a9c730: Retrying in 3 seconds
+930bda195c84: Retrying in 2 seconds
+5bed26d33875: Retrying in 2 seconds
+f11b29a9c730: Retrying in 2 seconds
+930bda195c84: Retrying in 1 second
+5bed26d33875: Retrying in 1 second
+f11b29a9c730: Retrying in 1 second
+5a4ed3cab8c4: Verifying Checksum
+5a4ed3cab8c4: Download complete
+3d37ea578cad: Verifying Checksum
+3d37ea578cad: Download complete
+latest: Pulling from precice/codeaster
+5bed26d33875: Pulling fs layer
+f11b29a9c730: Pulling fs layer
+930bda195c84: Pulling fs layer
+78bf9a5ad49e: Pulling fs layer
+78bf9a5ad49e: Waiting
+d21f43afdf7c: Pulling fs layer
+474f318f2061: Pulling fs layer
+05b7a5b7a980: Pulling fs layer
+e7201c1f0f41: Pulling fs layer
+538a42efaa34: Pulling fs layer
+3d37ea578cad: Pulling fs layer
+5a4ed3cab8c4: Pulling fs layer
+474f318f2061: Waiting
+05b7a5b7a980: Waiting
+e7201c1f0f41: Waiting
+538a42efaa34: Waiting
+3d37ea578cad: Waiting
+5a4ed3cab8c4: Waiting
+930bda195c84: Download complete
+f11b29a9c730: Download complete
+78bf9a5ad49e: Verifying Checksum
+78bf9a5ad49e: Download complete
+5bed26d33875: Verifying Checksum
+5bed26d33875: Download complete
+05b7a5b7a980: Verifying Checksum
+05b7a5b7a980: Download complete
+474f318f2061: Verifying Checksum
+474f318f2061: Download complete
+5bed26d33875: Pull complete
+f11b29a9c730: Pull complete
+930bda195c84: Pull complete
+78bf9a5ad49e: Pull complete
+e7201c1f0f41: Verifying Checksum
+e7201c1f0f41: Download complete
+538a42efaa34: Verifying Checksum
+538a42efaa34: Download complete
+d21f43afdf7c: Verifying Checksum
+d21f43afdf7c: Download complete
+5a4ed3cab8c4: Verifying Checksum
+5a4ed3cab8c4: Download complete
+3d37ea578cad: Verifying Checksum
+3d37ea578cad: Download complete
+d21f43afdf7c: Pull complete
+474f318f2061: Pull complete
+05b7a5b7a980: Pull complete
+e7201c1f0f41: Pull complete
+538a42efaa34: Pull complete
+3d37ea578cad: Pull complete
+5a4ed3cab8c4: Pull complete
+Digest: sha256:86fc9d974d0276df77f877b354d9a208b83fae4967c0949ac8ba3c1b61f6e737
+Status: Downloaded newer image for precice/codeaster:latest
+ ---> e5d5222aaf7a
+Step 5/20 : FROM $from
+latest: Pulling from precice/precice-ubuntu1804.package-develop
+f22ccc0b8772: Pulling fs layer
+3cf8fb62ba5f: Pulling fs layer
+e80c964ece6a: Pulling fs layer
+61744a7d5248: Pulling fs layer
+7bbcd23d430a: Pulling fs layer
+b836ba50d848: Pulling fs layer
+639db08a5e8b: Pulling fs layer
+f56ee6ad6673: Pulling fs layer
+0341ec4b8e5a: Pulling fs layer
+2a3ad184620a: Pulling fs layer
+b100c42f40f3: Pulling fs layer
+e5cab1de4c79: Pulling fs layer
+61744a7d5248: Waiting
+7bbcd23d430a: Waiting
+b836ba50d848: Waiting
+639db08a5e8b: Waiting
+f56ee6ad6673: Waiting
+0341ec4b8e5a: Waiting
+2a3ad184620a: Waiting
+b100c42f40f3: Waiting
+e5cab1de4c79: Waiting
+3cf8fb62ba5f: Verifying Checksum
+3cf8fb62ba5f: Download complete
+e80c964ece6a: Verifying Checksum
+e80c964ece6a: Download complete
+f22ccc0b8772: Verifying Checksum
+f22ccc0b8772: Download complete
+7bbcd23d430a: Verifying Checksum
+7bbcd23d430a: Download complete
+b836ba50d848: Verifying Checksum
+b836ba50d848: Download complete
+639db08a5e8b: Verifying Checksum
+639db08a5e8b: Download complete
+f56ee6ad6673: Verifying Checksum
+f56ee6ad6673: Download complete
+f22ccc0b8772: Pull complete
+2a3ad184620a: Verifying Checksum
+2a3ad184620a: Download complete
+0341ec4b8e5a: Verifying Checksum
+0341ec4b8e5a: Download complete
+b100c42f40f3: Download complete
+e5cab1de4c79: Verifying Checksum
+e5cab1de4c79: Download complete
+61744a7d5248: Verifying Checksum
+61744a7d5248: Download complete
+3cf8fb62ba5f: Pull complete
+e80c964ece6a: Pull complete
+61744a7d5248: Pull complete
+7bbcd23d430a: Pull complete
+b836ba50d848: Pull complete
+639db08a5e8b: Pull complete
+f56ee6ad6673: Pull complete
+0341ec4b8e5a: Pull complete
+2a3ad184620a: Pull complete
+b100c42f40f3: Pull complete
+e5cab1de4c79: Pull complete
+Digest: sha256:c63e1a4aa8e3118c644d11b6839b0e0e77a44d4077f1e61e86dbef2d87f995bc
+Status: Downloaded newer image for precice/precice-ubuntu1804.package-develop:latest
+ ---> 20fe1cec1e87
+Step 6/20 : USER root
+ ---> Running in f0095a91c9f1
+Removing intermediate container f0095a91c9f1
+ ---> 7793398749c6
+Step 7/20 : ENV USER=root
+ ---> Running in ad0bb1a0b0ab
+Removing intermediate container ad0bb1a0b0ab
+ ---> 573eff6620ea
+Step 8/20 : RUN apt-get -qq update && apt-get -qq install     git     locales     python3-pip     python3-numpy &&     rm -rf /var/lib/apt/lists/*
+ ---> Running in 847f5fbce066
+[91mdebconf: delaying package configuration, since apt-utils is not installed
+[0mSelecting previously unselected package libapparmor1:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 39331 files and directories currently installed.)
+Preparing to unpack .../00-libapparmor1_2.12-4ubuntu5.1_amd64.deb ...
+Unpacking libapparmor1:amd64 (2.12-4ubuntu5.1) ...
+Selecting previously unselected package libdbus-1-3:amd64.
+Preparing to unpack .../01-libdbus-1-3_1.12.2-1ubuntu1.2_amd64.deb ...
+Unpacking libdbus-1-3:amd64 (1.12.2-1ubuntu1.2) ...
+Selecting previously unselected package dbus.
+Preparing to unpack .../02-dbus_1.12.2-1ubuntu1.2_amd64.deb ...
+Unpacking dbus (1.12.2-1ubuntu1.2) ...
+Selecting previously unselected package python3-dbus.
+Preparing to unpack .../03-python3-dbus_1.2.6-1_amd64.deb ...
+Unpacking python3-dbus (1.2.6-1) ...
+Selecting previously unselected package python3-gi.
+Preparing to unpack .../04-python3-gi_3.26.1-2ubuntu1_amd64.deb ...
+Unpacking python3-gi (3.26.1-2ubuntu1) ...
+Selecting previously unselected package python-pip-whl.
+Preparing to unpack .../05-python-pip-whl_9.0.1-2.3~ubuntu1.18.04.4_all.deb ...
+Unpacking python-pip-whl (9.0.1-2.3~ubuntu1.18.04.4) ...
+Selecting previously unselected package python3-asn1crypto.
+Preparing to unpack .../06-python3-asn1crypto_0.24.0-1_all.deb ...
+Unpacking python3-asn1crypto (0.24.0-1) ...
+Selecting previously unselected package python3-cffi-backend.
+Preparing to unpack .../07-python3-cffi-backend_1.11.5-1_amd64.deb ...
+Unpacking python3-cffi-backend (1.11.5-1) ...
+Selecting previously unselected package python3-crypto.
+Preparing to unpack .../08-python3-crypto_2.6.1-8ubuntu2_amd64.deb ...
+Unpacking python3-crypto (2.6.1-8ubuntu2) ...
+Selecting previously unselected package python3-idna.
+Preparing to unpack .../09-python3-idna_2.6-1_all.deb ...
+Unpacking python3-idna (2.6-1) ...
+Selecting previously unselected package python3-six.
+Preparing to unpack .../10-python3-six_1.11.0-2_all.deb ...
+Unpacking python3-six (1.11.0-2) ...
+Selecting previously unselected package python3-cryptography.
+Preparing to unpack .../11-python3-cryptography_2.1.4-1ubuntu1.4_amd64.deb ...
+Unpacking python3-cryptography (2.1.4-1ubuntu1.4) ...
+Selecting previously unselected package python3-secretstorage.
+Preparing to unpack .../12-python3-secretstorage_2.3.1-2_all.deb ...
+Unpacking python3-secretstorage (2.3.1-2) ...
+Selecting previously unselected package python3-keyring.
+Preparing to unpack .../13-python3-keyring_10.6.0-1_all.deb ...
+Unpacking python3-keyring (10.6.0-1) ...
+Selecting previously unselected package python3-keyrings.alt.
+Preparing to unpack .../14-python3-keyrings.alt_3.0-1_all.deb ...
+Unpacking python3-keyrings.alt (3.0-1) ...
+Selecting previously unselected package python3-pip.
+Preparing to unpack .../15-python3-pip_9.0.1-2.3~ubuntu1.18.04.4_all.deb ...
+Unpacking python3-pip (9.0.1-2.3~ubuntu1.18.04.4) ...
+Selecting previously unselected package python3-pkg-resources.
+Preparing to unpack .../16-python3-pkg-resources_39.0.1-2_all.deb ...
+Unpacking python3-pkg-resources (39.0.1-2) ...
+Selecting previously unselected package python3-setuptools.
+Preparing to unpack .../17-python3-setuptools_39.0.1-2_all.deb ...
+Unpacking python3-setuptools (39.0.1-2) ...
+Selecting previously unselected package python3-wheel.
+Preparing to unpack .../18-python3-wheel_0.30.0-0.2_all.deb ...
+Unpacking python3-wheel (0.30.0-0.2) ...
+Selecting previously unselected package python3-xdg.
+Preparing to unpack .../19-python3-xdg_0.25-4ubuntu1.1_all.deb ...
+Unpacking python3-xdg (0.25-4ubuntu1.1) ...
+Setting up python-pip-whl (9.0.1-2.3~ubuntu1.18.04.4) ...
+Setting up python3-cffi-backend (1.11.5-1) ...
+Setting up python3-crypto (2.6.1-8ubuntu2) ...
+Setting up python3-idna (2.6-1) ...
+Setting up python3-xdg (0.25-4ubuntu1.1) ...
+Setting up python3-six (1.11.0-2) ...
+Setting up python3-wheel (0.30.0-0.2) ...
+Setting up python3-pkg-resources (39.0.1-2) ...
+Setting up python3-gi (3.26.1-2ubuntu1) ...
+Setting up python3-asn1crypto (0.24.0-1) ...
+Setting up libapparmor1:amd64 (2.12-4ubuntu5.1) ...
+Setting up python3-pip (9.0.1-2.3~ubuntu1.18.04.4) ...
+Setting up python3-setuptools (39.0.1-2) ...
+Setting up libdbus-1-3:amd64 (1.12.2-1ubuntu1.2) ...
+Setting up python3-cryptography (2.1.4-1ubuntu1.4) ...
+Setting up python3-dbus (1.2.6-1) ...
+Setting up python3-keyrings.alt (3.0-1) ...
+Setting up dbus (1.12.2-1ubuntu1.2) ...
+Setting up python3-secretstorage (2.3.1-2) ...
+Setting up python3-keyring (10.6.0-1) ...
+Processing triggers for libc-bin (2.27-3ubuntu1.3) ...
+Removing intermediate container 847f5fbce066
+ ---> 6d3d5cdffab6
+Step 9/20 : RUN locale-gen en_US.UTF-8
+ ---> Running in fcd5b3ab18a0
+Generating locales (this might take a while)...
+  en_US.UTF-8... done
+Generation complete.
+Removing intermediate container fcd5b3ab18a0
+ ---> 7d7e744e27fd
+Step 10/20 : ENV LANG en_US.UTF-8
+ ---> Running in ec3601c7f5b9
+Removing intermediate container ec3601c7f5b9
+ ---> 6ea740edae02
+Step 11/20 : ENV LANGUAGE en_US:en
+ ---> Running in e63601d739cc
+Removing intermediate container e63601d739cc
+ ---> 798d00c2b4d9
+Step 12/20 : ENV LC_ALL en_US.UTF-8
+ ---> Running in ded9c115b3df
+Removing intermediate container ded9c115b3df
+ ---> f942deeb3cb0
+Step 13/20 : USER precice
+ ---> Running in 9d0ffa07b923
+Removing intermediate container 9d0ffa07b923
+ ---> 04dfbc80054f
+Step 14/20 : WORKDIR /home/precice
+ ---> Running in 0fc8018da987
+Removing intermediate container 0fc8018da987
+ ---> 745bb97ffe74
+Step 15/20 : COPY --from=precice/codeaster /home/precice/Code_Aster /home/precice/Code_Aster
+ ---> 2f06f1799ab4
+Step 16/20 : ARG adapter_branch=develop
+ ---> Running in dcd89d52d2c9
+Removing intermediate container dcd89d52d2c9
+ ---> 4f9dc25064a5
+Step 17/20 : RUN git clone --depth 1 --branch $adapter_branch https://github.com/precice/code_aster-adapter.git
+ ---> Running in ec7697918af7
+[91mCloning into 'code_aster-adapter'...
+[0mRemoving intermediate container ec7697918af7
+ ---> fa7589408df6
+Step 18/20 : RUN     sed -i "s|.rmed|.resu|g" code_aster-adapter/cht/adapter.comm &&     sed -i "s|TYPE='BINARY'|TYPE='ASCII'|g" code_aster-adapter/cht/adapter.comm &&     sed -i "s|FORMAT='MED'|FORMAT='RESULTAT'|g" code_aster-adapter/cht/adapter.comm &&     sed -i "s|RESU=_F(RESULTAT=TEMP)|RESU=(_F(RESULTAT=TEMP, NOM_CHAM='TEMP', FORM_TABL='EXCEL', TOUT_PARA='OUI', FORMAT_R='E14.5'))|g" code_aster-adapter/cht/adapter.comm
+ ---> Running in 953e51b0b68e
+Removing intermediate container 953e51b0b68e
+ ---> 3c5ad1ca6196
+Step 19/20 : RUN     mkdir Data Logs && cd Data && mkdir Exchange Input Output
+ ---> Running in 7bb3e5591f3b
+Removing intermediate container 7bb3e5591f3b
+ ---> af3bf9eee958
+Step 20/20 : RUN     pip3 install --upgrade pip && pip3 install --user pyprecice
+ ---> Running in b1236cbe03a1
+Collecting pip
+  Downloading https://files.pythonhosted.org/packages/54/eb/4a3642e971f404d69d4f6fa3885559d67562801b99d7592487f1ecc4e017/pip-20.3.3-py2.py3-none-any.whl (1.5MB)
+Installing collected packages: pip
+Successfully installed pip-20.3.3
+[91mWARNING: pip is being invoked by an old script wrapper. This will fail in a future version of pip.
+Please see https://github.com/pypa/pip/issues/5599 for advice on fixing the underlying issue.
+To avoid this problem you can invoke Python with '-m pip' instead of running pip directly.
+[0mCollecting pyprecice
+  Downloading pyprecice-2.1.1.2.tar.gz (26 kB)
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+    Preparing wheel metadata: started
+    Preparing wheel metadata: finished with status 'done'
+Requirement already satisfied: numpy in /usr/lib/python3/dist-packages (from pyprecice) (1.13.3)
+Collecting mpi4py
+  Downloading mpi4py-3.0.3.tar.gz (1.4 MB)
+Building wheels for collected packages: pyprecice, mpi4py
+  Building wheel for pyprecice (PEP 517): started
+  Building wheel for pyprecice (PEP 517): finished with status 'done'
+  Created wheel for pyprecice: filename=pyprecice-2.1.1.2-cp36-cp36m-linux_x86_64.whl size=751650 sha256=f2a4847ac6de24ab5f7499d551b930c0b165a64f6ca8d43b282c75f31f37a6ce
+  Stored in directory: /home/precice/.cache/pip/wheels/82/a4/93/c0caf9773c341ec24c278b78c40ed7704de1b1de40cbbe61f2
+  Building wheel for mpi4py (setup.py): started
+  Building wheel for mpi4py (setup.py): finished with status 'done'
+  Created wheel for mpi4py: filename=mpi4py-3.0.3-cp36-cp36m-linux_x86_64.whl size=2076234 sha256=3ebd643cb7df3abcc5aee2dcbc9c758cc5856b2687711477d4dea84b9c151693
+  Stored in directory: /home/precice/.cache/pip/wheels/d6/73/83/ad9dd3ebae512829ab3f21657f76403dc4aa6649e1118c9369
+Successfully built pyprecice mpi4py
+Installing collected packages: mpi4py, pyprecice
+Successfully installed mpi4py-3.0.3 pyprecice-2.1.1.2
+Removing intermediate container b1236cbe03a1
+ ---> 458f11f806ac
+Successfully built 458f11f806ac
+Successfully tagged precice/codeaster-adapter-ubuntu1804.package-develop:latest
+Building codeaster-adapter image with the following features: {'os': 'ubuntu1804', 'installation': 'package'}
+EXECUTING: echo $DOCKER_PASSWORD | docker login -u $DOCKER_USERNAME --password-stdin && docker build --network=host --file adapters/Dockerfile.codeaster-adapter --tag precice/codeaster-adapter-ubuntu1804.package-develop:latest --build-arg branch=develop --build-arg adapter_branch=develop --build-arg from=precice/precice-ubuntu1804.package-develop .
+travis_time:end:1519a9a9:start=1611136498575406187,finish=1611136879612155884,duration=381036749697,event=script[0K[32;1mThe command "python build_adapter.py --dockerfile adapters/Dockerfile.codeaster-adapter --operating-system ubuntu1804 --precice-installation package --docker-username $DOCKER_USERNAME" exited with 0.[0m
+travis_time:start:1422dadc[0K$ python push_adapter.py --dockerfile adapters/Dockerfile.codeaster-adapter --operating-system ubuntu1804 --precice-installation package --docker-username $DOCKER_USERNAME
+WARNING! Your password will be stored unencrypted in /home/travis/.docker/config.json.
+Configure a credential helper to remove this warning. See
+https://docs.docker.com/engine/reference/commandline/login/#credentials-store
+
+Login Succeeded
+The push refers to repository [docker.io/precice/codeaster-adapter-ubuntu1804.package-develop]
+109de5d30217: Preparing
+ed130f87af68: Preparing
+3dc599193c53: Preparing
+5833fedadfad: Preparing
+c2011c830429: Preparing
+acc7a7bdb083: Preparing
+5cec4a901077: Preparing
+ab046c1e36bf: Preparing
+13d42a85a0f3: Preparing
+63d69835d534: Preparing
+9cfb3e7d2978: Preparing
+2596842ea53e: Preparing
+927597a8aa2f: Preparing
+3d775d92ab7e: Preparing
+a7534d73ab55: Preparing
+0caa3a740c3e: Preparing
+fe6d8881187d: Preparing
+23135df75b44: Preparing
+b43408d5f11b: Preparing
+acc7a7bdb083: Waiting
+5cec4a901077: Waiting
+ab046c1e36bf: Waiting
+13d42a85a0f3: Waiting
+63d69835d534: Waiting
+9cfb3e7d2978: Waiting
+2596842ea53e: Waiting
+927597a8aa2f: Waiting
+3d775d92ab7e: Waiting
+a7534d73ab55: Waiting
+fe6d8881187d: Waiting
+23135df75b44: Waiting
+b43408d5f11b: Waiting
+0caa3a740c3e: Waiting
+ed130f87af68: Pushed
+5833fedadfad: Pushed
+3dc599193c53: Pushed
+ab046c1e36bf: Mounted from precice/precice-ubuntu1804.package-develop
+acc7a7bdb083: Pushed
+13d42a85a0f3: Mounted from precice/precice-ubuntu1804.package-develop
+109de5d30217: Pushed
+63d69835d534: Mounted from precice/precice-ubuntu1804.package-develop
+9cfb3e7d2978: Mounted from precice/precice-ubuntu1804.package-develop
+927597a8aa2f: Mounted from precice/precice-ubuntu1804.package-develop
+3d775d92ab7e: Mounted from precice/precice-ubuntu1804.package-develop
+2596842ea53e: Mounted from precice/precice-ubuntu1804.package-develop
+fe6d8881187d: Layer already exists
+0caa3a740c3e: Mounted from precice/precice-ubuntu1804.package-develop
+23135df75b44: Layer already exists
+b43408d5f11b: Layer already exists
+a7534d73ab55: Mounted from precice/precice-ubuntu1804.package-develop
+5cec4a901077: Pushed
+c2011c830429: Pushed
+latest: digest: sha256:0a52a499f77b9197af857a87e2d8ef306dc299ea615d4b705fa913235784243b size: 4312
+EXECUTING: echo $DOCKER_PASSWORD | docker login -u $DOCKER_USERNAME --password-stdin && docker push precice/codeaster-adapter-ubuntu1804.package-develop:latest
+travis_time:end:1422dadc:start=1611136879618514661,finish=1611136927649311990,duration=48030797329,event=script[0K[32;1mThe command "python push_adapter.py --dockerfile adapters/Dockerfile.codeaster-adapter --operating-system ubuntu1804 --precice-installation package --docker-username $DOCKER_USERNAME" exited with 0.[0m
+travis_time:start:09387756[0K$ python push.py
+Cloning into 'precice_st_output'...
+Updating files:  16% (7119/41984)Updating files:  17% (7138/41984)Updating files:  18% (7558/41984)Updating files:  19% (7977/41984)Updating files:  20% (8397/41984)Updating files:  21% (8817/41984)Updating files:  22% (9237/41984)Updating files:  23% (9657/41984)Updating files:  24% (10077/41984)Updating files:  25% (10496/41984)Updating files:  26% (10916/41984)Updating files:  27% (11336/41984)Updating files:  28% (11756/41984)Updating files:  29% (12176/41984)Updating files:  30% (12596/41984)Updating files:  31% (13016/41984)Updating files:  32% (13435/41984)Updating files:  33% (13855/41984)Updating files:  33% (13857/41984)Updating files:  34% (14275/41984)Updating files:  35% (14695/41984)Updating files:  36% (15115/41984)Updating files:  37% (15535/41984)Updating files:  38% (15954/41984)Updating files:  39% (16374/41984)Updating files:  40% (16794/41984)Updating files:  41% (17214/41984)Updating files:  42% (17634/41984)Updating files:  43% (18054/41984)Updating files:  44% (18473/41984)Updating files:  45% (18893/41984)Updating files:  45% (19270/41984)Updating files:  46% (19313/41984)Updating files:  47% (19733/41984)Updating files:  48% (20153/41984)Updating files:  49% (20573/41984)Updating files:  50% (20992/41984)Updating files:  51% (21412/41984)Updating files:  52% (21832/41984)Updating files:  53% (22252/41984)Updating files:  54% (22672/41984)Updating files:  55% (23092/41984)Updating files:  56% (23512/41984)Updating files:  56% (23909/41984)Updating files:  57% (23931/41984)Updating files:  58% (24351/41984)Updating files:  59% (24771/41984)Updating files:  60% (25191/41984)Updating files:  61% (25611/41984)Updating files:  62% (26031/41984)Updating files:  63% (26450/41984)Updating files:  64% (26870/41984)Updating files:  65% (27290/41984)Updating files:  66% (27710/41984)Updating files:  67% (28130/41984)Updating files:  68% (28550/41984)Updating files:  68% (28619/41984)Updating files:  69% (28969/41984)Updating files:  69% (29257/41984)Updating files:  70% (29389/41984)Updating files:  71% (29809/41984)Updating files:  71% (29984/41984)Updating files:  72% (30229/41984)Updating files:  73% (30649/41984)Updating files:  74% (31069/41984)Updating files:  75% (31488/41984)Updating files:  76% (31908/41984)Updating files:  77% (32328/41984)Updating files:  78% (32748/41984)Updating files:  79% (33168/41984)Updating files:  79% (33181/41984)Updating files:  80% (33588/41984)Updating files:  81% (34008/41984)Updating files:  81% (34224/41984)Updating files:  81% (34377/41984)Updating files:  81% (34398/41984)Updating files:  82% (34427/41984)Updating files:  82% (34653/41984)Updating files:  82% (34730/41984)Updating files:  83% (34847/41984)Updating files:  83% (34850/41984)Updating files:  83% (34897/41984)Updating files:  83% (35058/41984)Updating files:  83% (35096/41984)Updating files:  83% (35178/41984)Updating files:  83% (35255/41984)Updating files:  84% (35267/41984)Updating files:  84% (35327/41984)Updating files:  84% (35343/41984)Updating files:  84% (35367/41984)Updating files:  84% (35465/41984)Updating files:  84% (35556/41984)Updating files:  84% (35666/41984)Updating files:  85% (35687/41984)Updating files:  85% (35760/41984)Updating files:  85% (35836/41984)Updating files:  85% (35927/41984)Updating files:  85% (36019/41984)Updating files:  85% (36075/41984)Updating files:  86% (36107/41984)Updating files:  86% (36162/41984)Updating files:  86% (36236/41984)Updating files:  86% (36324/41984)Updating files:  86% (36411/41984)Updating files:  86% (36486/41984)Updating files:  86% (36503/41984)Updating files:  87% (36527/41984)Updating files:  87% (36637/41984)Updating files:  87% (36679/41984)Updating files:  87% (36777/41984)Updating files:  87% (36852/41984)Updating files:  87% (36906/41984)Updating files:  87% (36917/41984)Updating files:  88% (36946/41984)Updating files:  88% (37013/41984)Updating files:  88% (37101/41984)Updating files:  88% (37225/41984)Updating files:  88% (37307/41984)Updating files:  88% (37317/41984)Updating files:  89% (37366/41984)Updating files:  89% (37429/41984)Updating files:  89% (37532/41984)Updating files:  89% (37637/41984)Updating files:  89% (37734/41984)Updating files:  89% (37747/41984)Updating files:  90% (37786/41984)Updating files:  90% (37832/41984)Updating files:  90% (37949/41984)Updating files:  90% (38058/41984)Updating files:  91% (38206/41984)Updating files:  92% (38626/41984)Updating files:  93% (39046/41984)Updating files:  93% (39248/41984)Updating files:  93% (39263/41984)Updating files:  94% (39465/41984)Updating files:  94% (39501/41984)Updating files:  94% (39592/41984)Updating files:  94% (39679/41984)Updating files:  94% (39764/41984)Updating files:  94% (39855/41984)Updating files:  95% (39885/41984)Updating files:  95% (39936/41984)Updating files:  95% (39981/41984)Updating files:  95% (40067/41984)Updating files:  95% (40154/41984)Updating files:  95% (40259/41984)Updating files:  96% (40305/41984)Updating files:  96% (40350/41984)Updating files:  96% (40428/41984)Updating files:  96% (40517/41984)Updating files:  96% (40602/41984)Updating files:  96% (40619/41984)Updating files:  96% (40691/41984)Updating files:  97% (40725/41984)Updating files:  97% (40835/41984)Updating files:  97% (40964/41984)Updating files:  97% (41111/41984)Updating files:  97% (41115/41984)Updating files:  98% (41145/41984)Updating files:  98% (41198/41984)Updating files:  98% (41309/41984)Updating files:  98% (41451/41984)Updating files:  98% (41546/41984)Updating files:  99% (41565/41984)Updating files:  99% (41568/41984)Updating files:  99% (41726/41984)Updating files:  99% (41812/41984)Updating files:  99% (41887/41984)Updating files:  99% (41941/41984)Updating files: 100% (41984/41984)Updating files: 100% (41984/41984), done.
