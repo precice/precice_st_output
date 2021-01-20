@@ -1,0 +1,883 @@
+travis_fold:start:worker_info[0K[33;1mWorker information[0m
+hostname: 0241e7a8-5694-4996-9917-ca128c578731@1.worker-com-oss-6bfdccb59f-6h2kn.gce-production-3
+version: v6.2.20-1-g3a987d6 https://github.com/travis-ci/worker/tree/3a987d61ed169c9539ad435d1a9b5f2d8c6ce4a6
+instance: travis-job-186efec0-3a93-4026-a2f3-71dbd5fe557b travis-ci-ubuntu-1804-1609168422-6c7eba12 (via amqp)
+startup: 6.260138436s
+travis_fold:end:worker_info[0Ktravis_time:start:2c0854be[0Ktravis_time:end:2c0854be:start=1611138771392145903,finish=1611138771597692733,duration=205546830,event=no_world_writable_dirs[0Ktravis_time:start:016d78cd[0Ktravis_time:end:016d78cd:start=1611138771601321180,finish=1611138771605322952,duration=4001772,event=setup_filter[0Ktravis_time:start:0a36643f[0Ktravis_time:end:0a36643f:start=1611138771611831008,finish=1611138771620842204,duration=9011196,event=agent[0Ktravis_time:start:11fe786c[0Ktravis_time:end:11fe786c:start=1611138771623752636,finish=1611138771626318715,duration=2566079,event=check_unsupported[0Ktravis_time:start:0fbd8226[0Ktravis_fold:start:system_info[0K[33;1mBuild system information[0m
+Build language: python
+Build group: stable
+Build dist: bionic
+Build id: 213755662
+Job id: 473339301
+Runtime kernel version: 5.4.0-1032-gcp
+travis-build version: 5d5d4288
+[34m[1mBuild image provisioning date and time[0m
+Mon Dec 28 15:53:02 UTC 2020
+[34m[1mOperating System Details[0m
+Distributor ID:	Ubuntu
+Description:	Ubuntu 18.04.5 LTS
+Release:	18.04
+Codename:	bionic
+[34m[1mSystemd Version[0m
+systemd 237
+[34m[1mCookbooks Version[0m
+10a7b34 https://github.com/travis-ci/travis-cookbooks/tree/10a7b34
+[34m[1mgit version[0m
+git version 2.29.2
+[34m[1mbash version[0m
+GNU bash, version 4.4.20(1)-release (x86_64-pc-linux-gnu)
+[34m[1mgcc version[0m
+gcc (Ubuntu 7.5.0-3ubuntu1~18.04) 7.5.0
+[34m[1mdocker version[0m
+Client:
+ Version:           18.06.0-ce
+ API version:       1.38
+ Go version:        go1.10.3
+ Git commit:        0ffa825
+ Built:             Wed Jul 18 19:09:54 2018
+ OS/Arch:           linux/amd64
+ Experimental:      false
+
+Server:
+ Engine:
+  Version:          18.06.0-ce
+  API version:      1.38 (minimum version 1.12)
+  Go version:       go1.10.3
+  Git commit:       0ffa825
+  Built:            Wed Jul 18 19:07:56 2018
+  OS/Arch:          linux/amd64
+  Experimental:     false
+[34m[1mclang version[0m
+clang version 7.0.0 (tags/RELEASE_700/final)
+[34m[1mjq version[0m
+jq-1.5
+[34m[1mbats version[0m
+Bats 0.4.0
+[34m[1mshellcheck version[0m
+0.7.0
+[34m[1mshfmt version[0m
+v3.2.1
+[34m[1mccache version[0m
+3.4.1
+[34m[1mcmake version[0m
+cmake version 3.12.4
+[34m[1mheroku version[0m
+heroku/7.47.6 linux-x64 node-v12.16.2
+[34m[1mimagemagick version[0m
+Version: ImageMagick 6.9.7-4 Q16 x86_64 20170114 http://www.imagemagick.org
+[34m[1mmd5deep version[0m
+4.4
+[34m[1mmercurial version[0m
+version 4.8
+[34m[1mmysql version[0m
+mysql  Ver 14.14 Distrib 5.7.32, for Linux (x86_64) using  EditLine wrapper
+[34m[1mopenssl version[0m
+OpenSSL 1.1.1  11 Sep 2018
+[34m[1mpacker version[0m
+1.3.3
+[34m[1mpostgresql client version[0m
+psql (PostgreSQL) 11.10 (Ubuntu 11.10-1.pgdg18.04+1)
+[34m[1mragel version[0m
+Ragel State Machine Compiler version 6.10 March 2017
+[34m[1msudo version[0m
+1.8.21p2
+[34m[1mgzip version[0m
+gzip 1.6
+[34m[1mzip version[0m
+Zip 3.0
+[34m[1mvim version[0m
+VIM - Vi IMproved 8.0 (2016 Sep 12, compiled Oct 13 2020 15:49:09)
+[34m[1miptables version[0m
+iptables v1.6.1
+[34m[1mcurl version[0m
+curl 7.58.0 (x86_64-pc-linux-gnu) libcurl/7.58.0 OpenSSL/1.1.1 zlib/1.2.11 libidn2/2.0.4 libpsl/0.19.1 (+libidn2/2.0.4) nghttp2/1.30.0 librtmp/2.3
+[34m[1mwget version[0m
+GNU Wget 1.19.4 built on linux-gnu.
+[34m[1mrsync version[0m
+rsync  version 3.1.2  protocol version 31
+[34m[1mgimme version[0m
+v1.5.4
+[34m[1mnvm version[0m
+0.37.2
+[34m[1mperlbrew version[0m
+/home/travis/perl5/perlbrew/bin/perlbrew  - App::perlbrew/0.88
+[34m[1mphpenv version[0m
+rbenv 1.1.2-40-g62d7798
+[34m[1mrvm version[0m
+rvm 1.29.10 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
+[34m[1mdefault ruby version[0m
+ruby 2.6.5p114 (2019-10-01 revision 67812) [x86_64-linux]
+[34m[1mElasticSearch version[0m
+5.5.0
+[34m[1mInstalled Firefox version[0m
+firefox 63.0.1
+[34m[1mMongoDB version[0m
+MongoDB 4.0.22
+[34m[1mPhantomJS version[0m
+2.1.1
+[34m[1mPre-installed PostgreSQL versions[0m
+9.3.25
+9.4.26
+9.5.24
+9.6.20
+[34m[1mRedis version[0m
+redis-server 6.0.6
+[34m[1mPre-installed Go versions[0m
+1.11.1
+[34m[1mant version[0m
+Apache Ant(TM) version 1.10.5 compiled on March 28 2019
+[34m[1mmvn version[0m
+Apache Maven 3.6.3 (cecedd343002696d0abb50b32b541b8a6ba2883f)
+[34m[1mgradle version[0m
+Gradle 5.1.1!
+[34m[1mlein version[0m
+Leiningen 2.9.5 on Java 11.0.2 OpenJDK 64-Bit Server VM
+[34m[1mPre-installed Node.js versions[0m
+v10.16.0
+v10.23.0
+v11.15.0
+v12.13.1
+v12.20.0
+v13.3.0
+v14.15.3
+v4.9.1
+v6.17.1
+v8.16.2
+v8.17.0
+v8.9
+[34m[1mphpenv versions[0m
+  system
+  7.1
+  7.1.33
+  7.2
+* 7.2.27 (set by /home/travis/.phpenv/version)
+  7.3
+  7.3.14
+  7.4
+  7.4.2
+  hhvm
+  hhvm-stable
+[34m[1mcomposer --version[0m
+Composer version 1.9.2 2020-01-14 16:30:31
+[34m[1mPre-installed Ruby versions[0m
+ruby-2.4.9
+ruby-2.5.3
+ruby-2.5.7
+ruby-2.6.5
+ruby-2.7.0
+travis_fold:end:system_info[0K
+travis_time:end:0fbd8226:start=1611138771629070674,finish=1611138771640879729,duration=11809055,event=show_system_info[0Ktravis_time:start:043d92d7[0Ktravis_time:end:043d92d7:start=1611138771645654880,finish=1611138771670343868,duration=24688988,event=rm_riak_source[0Ktravis_time:start:2795912a[0Ktravis_time:end:2795912a:start=1611138771674095682,finish=1611138771687719779,duration=13624097,event=fix_rwky_redis[0Ktravis_time:start:0802502e[0Ktravis_time:end:0802502e:start=1611138771691455057,finish=1611138772245216984,duration=553761927,event=wait_for_network[0Ktravis_time:start:20ae50ea[0Ktravis_time:end:20ae50ea:start=1611138772250086132,finish=1611138772499547656,duration=249461524,event=update_apt_keys[0Ktravis_time:start:0b0dd806[0Ktravis_time:end:0b0dd806:start=1611138772504610393,finish=1611138772558448635,duration=53838242,event=fix_hhvm_source[0Ktravis_time:start:04141f63[0Ktravis_time:end:04141f63:start=1611138772562800864,finish=1611138772565552084,duration=2751220,event=update_mongo_arch[0Ktravis_time:start:1704509a[0Ktravis_time:end:1704509a:start=1611138772569239979,finish=1611138772610196268,duration=40956289,event=fix_sudo_enabled_trusty[0Ktravis_time:start:0fa622ac[0Ktravis_time:end:0fa622ac:start=1611138772614210524,finish=1611138772616571801,duration=2361277,event=update_glibc[0Ktravis_time:start:0480b1b0[0Ktravis_time:end:0480b1b0:start=1611138772620504957,finish=1611138772628398843,duration=7893886,event=clean_up_path[0Ktravis_time:start:06fe8440[0Ktravis_time:end:06fe8440:start=1611138772631952187,finish=1611138772640968623,duration=9016436,event=fix_resolv_conf[0Ktravis_time:start:09822f1e[0Ktravis_time:end:09822f1e:start=1611138772645801444,finish=1611138772671717953,duration=25916509,event=fix_etc_hosts[0Ktravis_time:start:0118fbb8[0Ktravis_time:end:0118fbb8:start=1611138772676073993,finish=1611138772685104372,duration=9030379,event=fix_mvn_settings_xml[0Ktravis_time:start:136f014e[0Ktravis_time:end:136f014e:start=1611138772690244801,finish=1611138772700498622,duration=10253821,event=no_ipv6_localhost[0Ktravis_time:start:1a6170e0[0Ktravis_time:end:1a6170e0:start=1611138772704239338,finish=1611138772706761836,duration=2522498,event=fix_etc_mavenrc[0Ktravis_time:start:00c301fd[0Ktravis_time:end:00c301fd:start=1611138772710980698,finish=1611138772714109392,duration=3128694,event=fix_wwdr_certificate[0Ktravis_time:start:00067ee4[0Ktravis_time:end:00067ee4:start=1611138772718154831,finish=1611138772776072307,duration=57917476,event=put_localhost_first[0Ktravis_time:start:0c4cb7a8[0Ktravis_time:end:0c4cb7a8:start=1611138772779898298,finish=1611138772783407427,duration=3509129,event=home_paths[0Ktravis_time:start:0443005e[0Ktravis_time:end:0443005e:start=1611138772787041322,finish=1611138772800782410,duration=13741088,event=disable_initramfs[0Ktravis_time:start:1010ff12[0Ktravis_time:end:1010ff12:start=1611138772804446505,finish=1611138772949022531,duration=144576026,event=disable_ssh_roaming[0Ktravis_time:start:05a61158[0Ktravis_time:end:05a61158:start=1611138772952461404,finish=1611138772955082327,duration=2620923,event=debug_tools[0Ktravis_time:start:05442cf0[0Ktravis_time:end:05442cf0:start=1611138772958647905,finish=1611138772962309498,duration=3661593,event=uninstall_oclint[0Ktravis_time:start:190db05b[0Ktravis_time:end:190db05b:start=1611138772965889537,finish=1611138772969490257,duration=3600720,event=rvm_use[0Ktravis_time:start:14d5c636[0Ktravis_time:end:14d5c636:start=1611138772973108289,finish=1611138772983009322,duration=9901033,event=rm_etc_boto_cfg[0Ktravis_time:start:04cd740e[0Ktravis_time:end:04cd740e:start=1611138772986953369,finish=1611138772989792604,duration=2839235,event=rm_oraclejdk8_symlink[0Ktravis_time:start:13f68fc0[0Ktravis_time:end:13f68fc0:start=1611138772993525566,finish=1611138773090765025,duration=97239459,event=enable_i386[0Ktravis_time:start:05bcced8[0Ktravis_time:end:05bcced8:start=1611138773095310427,finish=1611138773099941080,duration=4630653,event=update_rubygems[0Ktravis_time:start:07613fa8[0Ktravis_time:end:07613fa8:start=1611138773106529161,finish=1611138774112314389,duration=1005785228,event=ensure_path_components[0Ktravis_time:start:1b8ad14b[0Ktravis_time:end:1b8ad14b:start=1611138774117712238,finish=1611138774120426951,duration=2714713,event=redefine_curl[0Ktravis_time:start:0d5e9f9a[0Ktravis_time:end:0d5e9f9a:start=1611138774124094422,finish=1611138774220307148,duration=96212726,event=nonblock_pipe[0Ktravis_time:start:1de1a65a[0Ktravis_time:end:1de1a65a:start=1611138774224357471,finish=1611138780261259195,duration=6036901724,event=apt_get_update[0Ktravis_time:start:0eead868[0Ktravis_time:end:0eead868:start=1611138780265650130,finish=1611138780268122341,duration=2472211,event=deprecate_xcode_64[0Ktravis_time:start:002947c6[0Ktravis_time:end:002947c6:start=1611138780272174200,finish=1611138783078393159,duration=2806218959,event=update_heroku[0Ktravis_time:start:220255c0[0Ktravis_time:end:220255c0:start=1611138783082464119,finish=1611138783084803027,duration=2338908,event=shell_session_update[0Ktravis_time:start:0c630ce8[0Ktravis_fold:start:docker_mtu_and_registry_mirrors[0Ktravis_fold:end:docker_mtu_and_registry_mirrors[0Ktravis_time:end:0c630ce8:start=1611138783089398396,finish=1611138785493704382,duration=2404305986,event=set_docker_mtu_and_registry_mirrors[0Ktravis_time:start:27b24e23[0Ktravis_fold:start:resolvconf[0Ktravis_fold:end:resolvconf[0Ktravis_time:end:27b24e23:start=1611138785499070645,finish=1611138785566058451,duration=66987806,event=resolvconf[0Ktravis_time:start:0db7068f[0Ktravis_time:end:0db7068f:start=1611138785572243466,finish=1611138785739642191,duration=167398725,event=maven_central_mirror[0Ktravis_time:start:05ea2009[0Ktravis_time:end:05ea2009:start=1611138785745174813,finish=1611138785845512729,duration=100337916,event=maven_https[0Ktravis_time:start:1635e0dc[0Ktravis_fold:start:services[0Ktravis_time:start:387744b1[0K$ sudo systemctl start docker
+travis_time:end:387744b1:start=1611138785857854235,finish=1611138785871392413,duration=13538178,event=prepare[0Ktravis_fold:end:services[0Ktravis_time:end:387744b1:start=1611138785857854235,finish=1611138788878917966,duration=3021063731,event=services[0Ktravis_time:start:261c2b54[0Ktravis_time:end:261c2b54:start=1611138788883748767,finish=1611138788887604198,duration=3855431,event=fix_ps4[0Ktravis_time:start:03ca75ad[0K
+travis_fold:start:git.checkout[0Ktravis_time:start:276c51e0[0K$ git clone --depth=50 https://github.com/precice/systemtests.git precice/systemtests
+Cloning into 'precice/systemtests'...
+travis_time:end:276c51e0:start=1611138788897436159,finish=1611138796257261955,duration=7359825796,event=checkout[0K$ cd precice/systemtests
+travis_time:start:13d12f54[0K$ git fetch origin +refs/pull/273/merge:
+From https://github.com/precice/systemtests
+ * branch            refs/pull/273/merge -> FETCH_HEAD
+travis_time:end:13d12f54:start=1611138796263064206,finish=1611138796927110143,duration=664045937,event=checkout[0K$ git checkout -qf FETCH_HEAD
+travis_fold:end:git.checkout[0K
+travis_time:end:13d12f54:start=1611138796263064206,finish=1611138797528364486,duration=1265300280,event=checkout[0Ktravis_time:start:1a433d74[0K
+[33;1mSetting environment variables from repository settings[0m
+$ export DOCKER_PASSWORD=[secure]
+$ export PRECICE_BOT_EMAIL=[secure]
+$ export GH_TOKEN=[secure]
+$ export DOCKER_USERNAME=precice
+$ export TRAVIS_ACCESS_TOKEN=[secure]
+
+travis_time:end:1a433d74:start=1611138797534112754,finish=1611138797545548413,duration=11435659,event=env[0Ktravis_time:start:0335a694[0K$ source ~/virtualenv/python3.8/bin/activate
+travis_time:end:0335a694:start=1611138797550507688,finish=1611138797557536827,duration=7029139,event=[0K$ python --version
+Python 3.8.1
+$ pip --version
+pip 20.3.3 from /home/travis/virtualenv/python3.8.1/lib/python3.8/site-packages/pip (python 3.8)
+travis_fold:start:install[0Ktravis_time:start:088e2602[0K$ pip install Jinja2
+Collecting Jinja2
+  Downloading Jinja2-2.11.2-py2.py3-none-any.whl (125 kB)
+Collecting MarkupSafe>=0.23
+  Downloading MarkupSafe-1.1.1-cp38-cp38-manylinux1_x86_64.whl (32 kB)
+Installing collected packages: MarkupSafe, Jinja2
+Successfully installed Jinja2-2.11.2 MarkupSafe-1.1.1
+travis_time:end:088e2602:start=1611138798012730293,finish=1611138799184552979,duration=1171822686,event=install[0Ktravis_fold:end:install[0Ktravis_time:start:071dcbc4[0K$ python system_testing.py -s of-ccx_fsi --base Ubuntu1804.home.PETSc -v
+Total reclaimed space: 0B
+networks:
+  precicecomm: {}
+services:
+  calculix-adapter-solid:
+    command: '/bin/bash -c "ln -s /home/precice/Data/Input/ Solid && ln -sf configs/*
+      . && ccx_preCICE -i Solid/flap -precice-participant Calculix && mkdir /home/precice/Data/Output/Solid
+      && cp -r precice-output *.log /home/precice/Data/Output/Solid"
+
+      '
+    container_name: calculix-adapter-solid
+    depends_on:
+    - tutorial-data
+    image: precice/calculix-adapter-ubuntu1804.home.petsc-develop:latest
+    networks:
+      precicecomm: null
+    volumes:
+    - exchange:/home/precice/Data/Exchange:rw
+    - output:/home/precice/Data/Output:rw
+    - solid_input:/home/precice/Data/Input:rw
+    - configs:/home/precice/calculix-adapter/configs:rw
+  openfoam-adapter-fluid:
+    command: '/bin/bash -c " source /usr/lib/openfoam/openfoam2006/etc/bashrc && ln
+      -sf configs/* . && cp -r /home/precice/Data/Input/0.orig /home/precice/Data/Input/0
+      && blockMesh -case /home/precice/Data/Input && pimpleFoam -case /home/precice/Data/Input
+      && mkdir /home/precice/Data/Output/Fluid && cp -r precice-output *.log /home/precice/Data/Output/Fluid"
+
+      '
+    container_name: openfoam-adapter-fluid
+    depends_on:
+    - tutorial-data
+    image: precice/openfoam-adapter-ubuntu1804.home.petsc-develop:latest
+    networks:
+      precicecomm: null
+    volumes:
+    - exchange:/home/precice/Data/Exchange:rw
+    - fluid_input:/home/precice/Data/Input:rw
+    - configs:/home/precice/openfoam-adapter/configs:rw
+    - output:/home/precice/Data/Output:rw
+  tutorial-data:
+    build:
+      context: /home/travis/build/precice/systemtests/tests/TestCompose_of-ccx_fsi.PETSc
+      dockerfile: Dockerfile.tutorial_data
+    container_name: tutorial-data
+    volumes:
+    - fluid_input:/tutorials/FSI/flap_perp/OpenFOAM-CalculiX/Fluid:rw
+    - solid_input:/tutorials/FSI/flap_perp/OpenFOAM-CalculiX/Solid:rw
+    - configs:/configs:rw
+    - output:/Output:rw
+version: '3.0'
+volumes:
+  configs: {}
+  exchange: {}
+  fluid_input: {}
+  output: {}
+  solid_input: {}
+
+Creating network "testcompose_of-ccx_fsipetsc_default" with the default driver
+Creating network "testcompose_of-ccx_fsipetsc_precicecomm" with the default driver
+Creating volume "testcompose_of-ccx_fsipetsc_exchange" with default driver
+Creating volume "testcompose_of-ccx_fsipetsc_fluid_input" with default driver
+Creating volume "testcompose_of-ccx_fsipetsc_solid_input" with default driver
+Creating volume "testcompose_of-ccx_fsipetsc_output" with default driver
+Creating volume "testcompose_of-ccx_fsipetsc_configs" with default driver
+Building tutorial-data
+Step 1/11 : from alpine
+latest: Pulling from library/alpine
+Digest: sha256:d9a7354e3845ea8466bb00b22224d9116b183e594527fb5b6c3d30bc01a20378
+Status: Downloaded newer image for alpine:latest
+ ---> 7731472c3f2a
+Step 2/11 : ENV tutorial_path /tutorials/FSI/flap_perp/OpenFOAM-CalculiX
+ ---> Running in 16f5f36ca784
+Removing intermediate container 16f5f36ca784
+ ---> c32d8fd9d4a4
+Step 3/11 : RUN apk add git bash
+ ---> Running in 63875fdb03b5
+fetch https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/APKINDEX.tar.gz
+fetch https://dl-cdn.alpinelinux.org/alpine/v3.13/community/x86_64/APKINDEX.tar.gz
+(1/11) Installing ncurses-terminfo-base (6.2_p20210109-r0)
+(2/11) Installing ncurses-libs (6.2_p20210109-r0)
+(3/11) Installing readline (8.1.0-r0)
+(4/11) Installing bash (5.1.0-r0)
+Executing bash-5.1.0-r0.post-install
+(5/11) Installing ca-certificates (20191127-r5)
+(6/11) Installing brotli-libs (1.0.9-r3)
+(7/11) Installing nghttp2-libs (1.42.0-r1)
+(8/11) Installing libcurl (7.74.0-r0)
+(9/11) Installing expat (2.2.10-r1)
+(10/11) Installing pcre2 (10.36-r0)
+(11/11) Installing git (2.30.0-r0)
+Executing busybox-1.32.1-r0.trigger
+Executing ca-certificates-20191127-r5.trigger
+OK: 21 MiB in 25 packages
+Removing intermediate container 63875fdb03b5
+ ---> d5fcfca08067
+Step 4/11 : ARG branch=develop
+ ---> Running in 7cd031735dfb
+Removing intermediate container 7cd031735dfb
+ ---> 5fc4d6fd2dfa
+Step 5/11 : RUN git clone --depth 1 --branch $branch https://github.com/precice/tutorials
+ ---> Running in 07ce21ce401b
+[91mCloning into 'tutorials'...
+[0mRemoving intermediate container 07ce21ce401b
+ ---> 93cb1ccf60d5
+Step 6/11 : WORKDIR /
+ ---> Running in 799b521f0251
+Removing intermediate container 799b521f0251
+ ---> 42c02a18e43c
+Step 7/11 : COPY interface_beam.nam fix1_beam.nam  all.msh $tutorial_path/Solid/
+ ---> 4196c86a0800
+Step 8/11 : RUN mkdir configs &&      sed -e 's|<m2n:sockets from=\"Fluid\" to=\"Calculix\"|<m2n:sockets from=\"Fluid\" to=\"Calculix\" exchange-directory=\"/home/precice/Data/Exchange/\" network=\"eth0\"/>|g;             s|max-time value="5"|max-time value="1"|g;             s|\(\s\+\)\(</participant>\)|\1   <export:vtk directory="precice-output" />\n\1\2|g'             $tutorial_path/precice-config.xml > configs/precice-config.xml && cp $tutorial_path/config.yml configs/
+ ---> Running in 6901179e02af
+Removing intermediate container 6901179e02af
+ ---> d5b5fa31ff37
+Step 9/11 : RUN rm $tutorial_path/precice-config.xml
+ ---> Running in 0704a11e505a
+Removing intermediate container 0704a11e505a
+ ---> c1f565ea3928
+Step 10/11 : RUN addgroup -g 1000 precice && adduser -u 1000 -G precice -D precice && chown -R precice:precice tutorials configs
+ ---> Running in 72d7e26e68e1
+Removing intermediate container 72d7e26e68e1
+ ---> d55df35f19dd
+Step 11/11 : USER precice
+ ---> Running in 3ec4f3d79e86
+Removing intermediate container 3ec4f3d79e86
+ ---> d98677fe04ed
+Successfully built d98677fe04ed
+Successfully tagged testcompose_of-ccx_fsipetsc_tutorial-data:latest
+Image for service tutorial-data was built because it did not already exist. To rebuild this image you must use `docker-compose build` or `docker-compose up --build`.
+Pulling calculix-adapter-solid (precice/calculix-adapter-ubuntu1804.home.petsc-develop:latest)...
+latest: Pulling from precice/calculix-adapter-ubuntu1804.home.petsc-develop
+Pulling openfoam-adapter-fluid (precice/openfoam-adapter-ubuntu1804.home.petsc-develop:latest)...
+latest: Pulling from precice/openfoam-adapter-ubuntu1804.home.petsc-develop
+Creating tutorial-data ... 
+[1A[2KCreating tutorial-data ... [32mdone[0m[1BCreating openfoam-adapter-fluid ... 
+Creating calculix-adapter-solid ... 
+[2A[2KCreating openfoam-adapter-fluid ... [32mdone[0m[2B[1A[2KCreating calculix-adapter-solid ... [32mdone[0m[1BAttaching to tutorial-data, openfoam-adapter-fluid, calculix-adapter-solid
+[36mtutorial-data exited with code 0
+[0m[32mcalculix-adapter-solid    |[0m 
+[32mcalculix-adapter-solid    |[0m ************************************************************
+[32mcalculix-adapter-solid    |[0m 
+[32mcalculix-adapter-solid    |[0m CalculiX Version 2.16, Copyright(C) 1998-2019 Guido Dhondt
+[32mcalculix-adapter-solid    |[0m CalculiX comes with ABSOLUTELY NO WARRANTY. This is free
+[32mcalculix-adapter-solid    |[0m software, and you are welcome to redistribute it under
+[32mcalculix-adapter-solid    |[0m certain conditions, see gpl.htm
+[32mcalculix-adapter-solid    |[0m 
+[32mcalculix-adapter-solid    |[0m ************************************************************
+[32mcalculix-adapter-solid    |[0m 
+[32mcalculix-adapter-solid    |[0m You are using an executable made on Mo 25. Nov 18:56:47 CET 2019
+[32mcalculix-adapter-solid    |[0m 
+[32mcalculix-adapter-solid    |[0m   The numbers below are estimated upper bounds
+[32mcalculix-adapter-solid    |[0m 
+[32mcalculix-adapter-solid    |[0m   number of:
+[32mcalculix-adapter-solid    |[0m 
+[32mcalculix-adapter-solid    |[0m    nodes:          126
+[32mcalculix-adapter-solid    |[0m    elements:           40
+[32mcalculix-adapter-solid    |[0m    one-dimensional elements:            0
+[32mcalculix-adapter-solid    |[0m    two-dimensional elements:            0
+[32mcalculix-adapter-solid    |[0m    integration points per element:           27
+[32mcalculix-adapter-solid    |[0m    degrees of freedom per node:            3
+[32mcalculix-adapter-solid    |[0m    layers per element:            1
+[32mcalculix-adapter-solid    |[0m 
+[32mcalculix-adapter-solid    |[0m    distributed facial loads:            0
+[32mcalculix-adapter-solid    |[0m    distributed volumetric loads:            0
+[32mcalculix-adapter-solid    |[0m    concentrated loads:          258
+[32mcalculix-adapter-solid    |[0m    single point constraints:          396
+[32mcalculix-adapter-solid    |[0m    multiple point constraints:            1
+[32mcalculix-adapter-solid    |[0m    terms in all multiple point constraints:            1
+[32mcalculix-adapter-solid    |[0m    tie constraints:            0
+[32mcalculix-adapter-solid    |[0m    dependent nodes tied by cyclic constraints:            0
+[32mcalculix-adapter-solid    |[0m    dependent nodes in pre-tension constraints:            0
+[32mcalculix-adapter-solid    |[0m 
+[32mcalculix-adapter-solid    |[0m    sets:            4
+[32mcalculix-adapter-solid    |[0m    terms in all sets:          384
+[32mcalculix-adapter-solid    |[0m 
+[32mcalculix-adapter-solid    |[0m    materials:            1
+[32mcalculix-adapter-solid    |[0m    constants per material and temperature:            2
+[32mcalculix-adapter-solid    |[0m    temperature points per material:            1
+[32mcalculix-adapter-solid    |[0m    plastic data points per material:            0
+[32mcalculix-adapter-solid    |[0m 
+[32mcalculix-adapter-solid    |[0m    orientations:            0
+[32mcalculix-adapter-solid    |[0m    amplitudes:            3
+[32mcalculix-adapter-solid    |[0m    data points in all amplitudes:            3
+[32mcalculix-adapter-solid    |[0m    print requests:            0
+[32mcalculix-adapter-solid    |[0m    transformations:            0
+[32mcalculix-adapter-solid    |[0m    property cards:            0
+[32mcalculix-adapter-solid    |[0m 
+[32mcalculix-adapter-solid    |[0m  *INFO reading *STEP: nonlinear geometric
+[32mcalculix-adapter-solid    |[0m        effects are turned on
+[32mcalculix-adapter-solid    |[0m 
+[32mcalculix-adapter-solid    |[0m 
+[32mcalculix-adapter-solid    |[0m  STEP            1
+[32mcalculix-adapter-solid    |[0m 
+[32mcalculix-adapter-solid    |[0m  Dynamic analysis was selected
+[32mcalculix-adapter-solid    |[0m 
+[32mcalculix-adapter-solid    |[0m  Newton-Raphson iterative procedure is active
+[32mcalculix-adapter-solid    |[0m 
+[32mcalculix-adapter-solid    |[0m  Nonlinear geometric effects are taken into account
+[32mcalculix-adapter-solid    |[0m 
+[32mcalculix-adapter-solid    |[0m  Decascading the MPC's
+[32mcalculix-adapter-solid    |[0m 
+[32mcalculix-adapter-solid    |[0m  Determining the structure of the matrix:
+[32mcalculix-adapter-solid    |[0m  number of equations
+[32mcalculix-adapter-solid    |[0m  240
+[32mcalculix-adapter-solid    |[0m  number of nonzero lower triangular matrix elements
+[32mcalculix-adapter-solid    |[0m  3128
+[32mcalculix-adapter-solid    |[0m 
+[32mcalculix-adapter-solid    |[0m Starting FSI analysis via preCICE using the geometrically non-linear CalculiX solver...
+[32mcalculix-adapter-solid    |[0m  Using up to 1 cpu(s) for the stress calculation.
+[32mcalculix-adapter-solid    |[0m 
+[32mcalculix-adapter-solid    |[0m  Using up to 1 cpu(s) for the energy calculation.
+[32mcalculix-adapter-solid    |[0m 
+[32mcalculix-adapter-solid    |[0m  Using up to 1 cpu(s) for the symmetric stiffness/mass contributions.
+[32mcalculix-adapter-solid    |[0m 
+[32mcalculix-adapter-solid    |[0m  Factoring the system of equations using the symmetric spooles solver
+[32mcalculix-adapter-solid    |[0m  Using 1 cpu for spooles.
+[32mcalculix-adapter-solid    |[0m 
+[32mcalculix-adapter-solid    |[0m  Using up to 1 cpu(s) for the stress calculation.
+[32mcalculix-adapter-solid    |[0m 
+[32mcalculix-adapter-solid    |[0m  Using up to 1 cpu(s) for the energy calculation.
+[32mcalculix-adapter-solid    |[0m 
+[32mcalculix-adapter-solid    |[0m Setting up preCICE participant Calculix, using config file: config.yml
+[32mcalculix-adapter-solid    |[0m --------------------------------------------------------------------------
+[32mcalculix-adapter-solid    |[0m [[24459,1],0]: A high-performance Open MPI point-to-point messaging module
+[32mcalculix-adapter-solid    |[0m was unable to find any relevant network interfaces:
+[32mcalculix-adapter-solid    |[0m 
+[32mcalculix-adapter-solid    |[0m Module: OpenFabrics (openib)
+[32mcalculix-adapter-solid    |[0m   Host: e8f2466e6eef
+[32mcalculix-adapter-solid    |[0m 
+[32mcalculix-adapter-solid    |[0m Another transport will be used instead, although this may result in
+[32mcalculix-adapter-solid    |[0m lower performance.
+[32mcalculix-adapter-solid    |[0m 
+[32mcalculix-adapter-solid    |[0m NOTE: You can disable this warning by setting the MCA parameter
+[32mcalculix-adapter-solid    |[0m btl_base_warn_component_unused to 0.
+[32mcalculix-adapter-solid    |[0m --------------------------------------------------------------------------
+[33mopenfoam-adapter-fluid    |[0m /*---------------------------------------------------------------------------*\
+[33mopenfoam-adapter-fluid    |[0m | =========                 |                                                 |
+[33mopenfoam-adapter-fluid    |[0m | \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+[33mopenfoam-adapter-fluid    |[0m |  \\    /   O peration     | Version:  2006                                  |
+[33mopenfoam-adapter-fluid    |[0m |   \\  /    A nd           | Website:  www.openfoam.com                      |
+[33mopenfoam-adapter-fluid    |[0m |    \\/     M anipulation  |                                                 |
+[33mopenfoam-adapter-fluid    |[0m \*---------------------------------------------------------------------------*/
+[33mopenfoam-adapter-fluid    |[0m Build  : 295eef47-20201012 OPENFOAM=2006 patch=201012
+[33mopenfoam-adapter-fluid    |[0m Arch   : "LSB;label=32;scalar=64"
+[33mopenfoam-adapter-fluid    |[0m Exec   : blockMesh -case /home/precice/Data/Input
+[33mopenfoam-adapter-fluid    |[0m Date   : Jan 20 2021
+[33mopenfoam-adapter-fluid    |[0m Time   : 10:35:32
+[33mopenfoam-adapter-fluid    |[0m Host   : 910da6e7c803
+[33mopenfoam-adapter-fluid    |[0m PID    : 279
+[33mopenfoam-adapter-fluid    |[0m I/O    : uncollated
+[33mopenfoam-adapter-fluid    |[0m Case   : /home/precice/Data/Input
+[33mopenfoam-adapter-fluid    |[0m nProcs : 1
+[33mopenfoam-adapter-fluid    |[0m trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+[33mopenfoam-adapter-fluid    |[0m fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+[33mopenfoam-adapter-fluid    |[0m allowSystemOperations : Allowing user-supplied system call operations
+[33mopenfoam-adapter-fluid    |[0m 
+[33mopenfoam-adapter-fluid    |[0m // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+[33mopenfoam-adapter-fluid    |[0m Create time
+[33mopenfoam-adapter-fluid    |[0m 
+[33mopenfoam-adapter-fluid    |[0m Creating block mesh from "system/blockMeshDict"
+[33mopenfoam-adapter-fluid    |[0m Creating block edges
+[33mopenfoam-adapter-fluid    |[0m No non-planar block faces defined
+[33mopenfoam-adapter-fluid    |[0m Creating topology blocks
+[33mopenfoam-adapter-fluid    |[0m Creating topology patches
+[33mopenfoam-adapter-fluid    |[0m 
+[33mopenfoam-adapter-fluid    |[0m Creating block mesh topology
+[33mopenfoam-adapter-fluid    |[0m 
+[33mopenfoam-adapter-fluid    |[0m Check topology
+[33mopenfoam-adapter-fluid    |[0m 
+[33mopenfoam-adapter-fluid    |[0m 	Basic statistics
+[33mopenfoam-adapter-fluid    |[0m 		Number of internal faces : 4
+[33mopenfoam-adapter-fluid    |[0m 		Number of boundary faces : 22
+[33mopenfoam-adapter-fluid    |[0m 		Number of defined boundary faces : 22
+[33mopenfoam-adapter-fluid    |[0m 		Number of undefined boundary faces : 0
+[33mopenfoam-adapter-fluid    |[0m 	Checking patch -> block consistency
+[33mopenfoam-adapter-fluid    |[0m 
+[33mopenfoam-adapter-fluid    |[0m Creating block offsets
+[33mopenfoam-adapter-fluid    |[0m Creating merge list (topological search)...
+[33mopenfoam-adapter-fluid    |[0m 
+[33mopenfoam-adapter-fluid    |[0m Creating polyMesh from blockMesh
+[33mopenfoam-adapter-fluid    |[0m Creating patches
+[33mopenfoam-adapter-fluid    |[0m Creating cells
+[33mopenfoam-adapter-fluid    |[0m Creating points with scale 1
+[33mopenfoam-adapter-fluid    |[0m     Block 0 cell size :
+[33mopenfoam-adapter-fluid    |[0m         i : 0.136132 .. 0.0680662
+[33mopenfoam-adapter-fluid    |[0m         j : 0.0666667 .. 0.0666667
+[33mopenfoam-adapter-fluid    |[0m         k : 0.3 .. 0.3
+[33mopenfoam-adapter-fluid    |[0m 
+[33mopenfoam-adapter-fluid    |[0m     Block 1 cell size :
+[33mopenfoam-adapter-fluid    |[0m         i : 0.0680662 .. 0.136132
+[33mopenfoam-adapter-fluid    |[0m         j : 0.0666667 .. 0.0666667
+[33mopenfoam-adapter-fluid    |[0m         k : 0.3 .. 0.3
+[33mopenfoam-adapter-fluid    |[0m 
+[33mopenfoam-adapter-fluid    |[0m     Block 2 cell size :
+[33mopenfoam-adapter-fluid    |[0m         i : 0.136132 .. 0.0680662
+[33mopenfoam-adapter-fluid    |[0m         j : 0.0692199 .. 0.13844
+[33mopenfoam-adapter-fluid    |[0m         k : 0.3 .. 0.3
+[33mopenfoam-adapter-fluid    |[0m 
+[33mopenfoam-adapter-fluid    |[0m     Block 3 cell size :
+[33mopenfoam-adapter-fluid    |[0m         i : 0.0333333 .. 0.0333333
+[33mopenfoam-adapter-fluid    |[0m         j : 0.0692199 .. 0.13844
+[33mopenfoam-adapter-fluid    |[0m         k : 0.3 .. 0.3
+[33mopenfoam-adapter-fluid    |[0m 
+[33mopenfoam-adapter-fluid    |[0m     Block 4 cell size :
+[33mopenfoam-adapter-fluid    |[0m         i : 0.0680662 .. 0.136132
+[33mopenfoam-adapter-fluid    |[0m         j : 0.0692199 .. 0.13844
+[33mopenfoam-adapter-fluid    |[0m         k : 0.3 .. 0.3
+[33mopenfoam-adapter-fluid    |[0m 
+[32mcalculix-adapter-solid    |[0m ---[precice] [0m This is preCICE version 2.1.1
+[32mcalculix-adapter-solid    |[0m ---[precice] [0m Revision info: no-info [Git failed/Not a repository]
+[32mcalculix-adapter-solid    |[0m ---[precice] [0m Configuration: Release (Debug and Trace log unavailable)
+[32mcalculix-adapter-solid    |[0m ---[precice] [0m Configuring preCICE with configuration "./precice-config.xml"
+[32mcalculix-adapter-solid    |[0m ---[precice] [0m I am participant "Calculix"
+[32mcalculix-adapter-solid    |[0m Set ID Found 
+[32mcalculix-adapter-solid    |[0m Read data 'Forces0' found with ID # '2'.
+[32mcalculix-adapter-solid    |[0m Write data 'Displacements0' found with ID # '3'.
+[32mcalculix-adapter-solid    |[0m ---[precice] [0m Setting up master communication to coupling partner/s
+[33mopenfoam-adapter-fluid    |[0m 
+[33mopenfoam-adapter-fluid    |[0m There are no merge patch pairs
+[33mopenfoam-adapter-fluid    |[0m 
+[33mopenfoam-adapter-fluid    |[0m Writing polyMesh with 0 cellZones
+[33mopenfoam-adapter-fluid    |[0m ----------------
+[33mopenfoam-adapter-fluid    |[0m Mesh Information
+[33mopenfoam-adapter-fluid    |[0m ----------------
+[33mopenfoam-adapter-fluid    |[0m   boundingBox: (-3 0 0) (3 0.3 4)
+[33mopenfoam-adapter-fluid    |[0m   nPoints: 5828
+[33mopenfoam-adapter-fluid    |[0m   nCells: 2790
+[33mopenfoam-adapter-fluid    |[0m   nFaces: 11283
+[33mopenfoam-adapter-fluid    |[0m   nInternalFaces: 5457
+[33mopenfoam-adapter-fluid    |[0m ----------------
+[33mopenfoam-adapter-fluid    |[0m Patches
+[33mopenfoam-adapter-fluid    |[0m ----------------
+[33mopenfoam-adapter-fluid    |[0m   patch 0 (start: 5457 size: 45) name: inlet
+[33mopenfoam-adapter-fluid    |[0m   patch 1 (start: 5502 size: 45) name: outlet
+[33mopenfoam-adapter-fluid    |[0m   patch 2 (start: 5547 size: 33) name: flap
+[33mopenfoam-adapter-fluid    |[0m   patch 3 (start: 5580 size: 63) name: upperWall
+[33mopenfoam-adapter-fluid    |[0m   patch 4 (start: 5643 size: 60) name: lowerWall
+[33mopenfoam-adapter-fluid    |[0m   patch 5 (start: 5703 size: 5580) name: frontAndBack
+[33mopenfoam-adapter-fluid    |[0m 
+[33mopenfoam-adapter-fluid    |[0m End
+[33mopenfoam-adapter-fluid    |[0m 
+[33mopenfoam-adapter-fluid    |[0m /*---------------------------------------------------------------------------*\
+[33mopenfoam-adapter-fluid    |[0m | =========                 |                                                 |
+[33mopenfoam-adapter-fluid    |[0m | \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+[33mopenfoam-adapter-fluid    |[0m |  \\    /   O peration     | Version:  2006                                  |
+[33mopenfoam-adapter-fluid    |[0m |   \\  /    A nd           | Website:  www.openfoam.com                      |
+[33mopenfoam-adapter-fluid    |[0m |    \\/     M anipulation  |                                                 |
+[33mopenfoam-adapter-fluid    |[0m \*---------------------------------------------------------------------------*/
+[33mopenfoam-adapter-fluid    |[0m Build  : 295eef47-20201012 OPENFOAM=2006 patch=201012
+[33mopenfoam-adapter-fluid    |[0m Arch   : "LSB;label=32;scalar=64"
+[33mopenfoam-adapter-fluid    |[0m Exec   : pimpleFoam -case /home/precice/Data/Input
+[33mopenfoam-adapter-fluid    |[0m Date   : Jan 20 2021
+[33mopenfoam-adapter-fluid    |[0m Time   : 10:35:32
+[33mopenfoam-adapter-fluid    |[0m Host   : 910da6e7c803
+[33mopenfoam-adapter-fluid    |[0m PID    : 280
+[33mopenfoam-adapter-fluid    |[0m I/O    : uncollated
+[33mopenfoam-adapter-fluid    |[0m Case   : /home/precice/Data/Input
+[33mopenfoam-adapter-fluid    |[0m nProcs : 1
+[33mopenfoam-adapter-fluid    |[0m trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+[33mopenfoam-adapter-fluid    |[0m fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+[33mopenfoam-adapter-fluid    |[0m allowSystemOperations : Allowing user-supplied system call operations
+[33mopenfoam-adapter-fluid    |[0m 
+[33mopenfoam-adapter-fluid    |[0m // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+[33mopenfoam-adapter-fluid    |[0m Create time
+[33mopenfoam-adapter-fluid    |[0m 
+[33mopenfoam-adapter-fluid    |[0m Create mesh for time = 0
+[33mopenfoam-adapter-fluid    |[0m 
+[33mopenfoam-adapter-fluid    |[0m Selecting dynamicFvMesh dynamicMotionSolverFvMesh
+[33mopenfoam-adapter-fluid    |[0m Selecting motion solver: displacementLaplacian
+[33mopenfoam-adapter-fluid    |[0m Applying solid body motion to entire mesh
+[33mopenfoam-adapter-fluid    |[0m Selecting motion diffusion: quadratic
+[33mopenfoam-adapter-fluid    |[0m Selecting motion diffusion: inverseDistance
+[33mopenfoam-adapter-fluid    |[0m Selecting patchDistMethod meshWave
+[33mopenfoam-adapter-fluid    |[0m 
+[33mopenfoam-adapter-fluid    |[0m PIMPLE: Operating solver in PISO mode
+[33mopenfoam-adapter-fluid    |[0m 
+[33mopenfoam-adapter-fluid    |[0m Reading field p
+[33mopenfoam-adapter-fluid    |[0m 
+[33mopenfoam-adapter-fluid    |[0m Reading field U
+[33mopenfoam-adapter-fluid    |[0m 
+[33mopenfoam-adapter-fluid    |[0m Reading/calculating face flux field phi
+[33mopenfoam-adapter-fluid    |[0m 
+[33mopenfoam-adapter-fluid    |[0m Selecting incompressible transport model Newtonian
+[33mopenfoam-adapter-fluid    |[0m Selecting turbulence model type laminar
+[33mopenfoam-adapter-fluid    |[0m Selecting laminar stress model Stokes
+[33mopenfoam-adapter-fluid    |[0m No MRF models present
+[33mopenfoam-adapter-fluid    |[0m 
+[33mopenfoam-adapter-fluid    |[0m No finite volume options present
+[33mopenfoam-adapter-fluid    |[0m Constructing face velocity Uf
+[33mopenfoam-adapter-fluid    |[0m 
+[33mopenfoam-adapter-fluid    |[0m Courant Number mean: 0 max: 0
+[33mopenfoam-adapter-fluid    |[0m 
+[33mopenfoam-adapter-fluid    |[0m Starting time loop
+[33mopenfoam-adapter-fluid    |[0m 
+[33mopenfoam-adapter-fluid    |[0m --------------------------------------------------------------------------
+[33mopenfoam-adapter-fluid    |[0m [[31493,1],0]: A high-performance Open MPI point-to-point messaging module
+[33mopenfoam-adapter-fluid    |[0m was unable to find any relevant network interfaces:
+[33mopenfoam-adapter-fluid    |[0m 
+[33mopenfoam-adapter-fluid    |[0m Module: OpenFabrics (openib)
+[33mopenfoam-adapter-fluid    |[0m   Host: 910da6e7c803
+[33mopenfoam-adapter-fluid    |[0m 
+[33mopenfoam-adapter-fluid    |[0m Another transport will be used instead, although this may result in
+[33mopenfoam-adapter-fluid    |[0m lower performance.
+[33mopenfoam-adapter-fluid    |[0m 
+[33mopenfoam-adapter-fluid    |[0m NOTE: You can disable this warning by setting the MCA parameter
+[33mopenfoam-adapter-fluid    |[0m btl_base_warn_component_unused to 0.
+[33mopenfoam-adapter-fluid    |[0m --------------------------------------------------------------------------
+[33mopenfoam-adapter-fluid    |[0m ---[preciceAdapter] The preciceAdapter was loaded.
+[33mopenfoam-adapter-fluid    |[0m ---[preciceAdapter] Reading preciceDict...
+[33mopenfoam-adapter-fluid    |[0m ---[preciceAdapter] [DEBUG]   precice-config-file : precice-config.xml
+[33mopenfoam-adapter-fluid    |[0m ---[preciceAdapter] [DEBUG]   participant name    : Fluid
+[33mopenfoam-adapter-fluid    |[0m ---[preciceAdapter] [DEBUG]   modules requested   : 
+[33mopenfoam-adapter-fluid    |[0m ---[preciceAdapter] [DEBUG]   - FSI
+[33mopenfoam-adapter-fluid    |[0m 
+[33mopenfoam-adapter-fluid    |[0m ---[preciceAdapter] [DEBUG]   interfaces : 
+[33mopenfoam-adapter-fluid    |[0m ---[preciceAdapter] [DEBUG]   - mesh         : Fluid-Mesh-Faces
+[33mopenfoam-adapter-fluid    |[0m ---[preciceAdapter] [DEBUG]     locations    : faceCenters
+[33mopenfoam-adapter-fluid    |[0m ---[preciceAdapter] [DEBUG]     connectivity : 0
+[33mopenfoam-adapter-fluid    |[0m ---[preciceAdapter] [DEBUG]     patches      : 
+[33mopenfoam-adapter-fluid    |[0m ---[preciceAdapter] [DEBUG]       - flap
+[33mopenfoam-adapter-fluid    |[0m ---[preciceAdapter] [DEBUG]     writeData    : 
+[33mopenfoam-adapter-fluid    |[0m ---[preciceAdapter] [DEBUG]       - Forces0
+[33mopenfoam-adapter-fluid    |[0m ---[preciceAdapter] [DEBUG]     readData     : 
+[33mopenfoam-adapter-fluid    |[0m ---[preciceAdapter] [DEBUG]   - mesh         : Fluid-Mesh-Nodes
+[33mopenfoam-adapter-fluid    |[0m ---[preciceAdapter] [DEBUG]     locations    : faceNodes
+[33mopenfoam-adapter-fluid    |[0m ---[preciceAdapter] [DEBUG]     connectivity : 0
+[33mopenfoam-adapter-fluid    |[0m ---[preciceAdapter] [DEBUG]     patches      : 
+[33mopenfoam-adapter-fluid    |[0m ---[preciceAdapter] [DEBUG]       - flap
+[33mopenfoam-adapter-fluid    |[0m ---[preciceAdapter] [DEBUG]     writeData    : 
+[33mopenfoam-adapter-fluid    |[0m ---[preciceAdapter] [DEBUG]     readData     : 
+[33mopenfoam-adapter-fluid    |[0m ---[preciceAdapter] [DEBUG]       - Displacements0
+[33mopenfoam-adapter-fluid    |[0m ---[preciceAdapter] [DEBUG] Configuring the FSI module...
+[33mopenfoam-adapter-fluid    |[0m ---[preciceAdapter] [DEBUG]     user-defined solver type : 
+[33mopenfoam-adapter-fluid    |[0m ---[preciceAdapter] [DEBUG]     pointDisplacement field name : pointDisplacement
+[33mopenfoam-adapter-fluid    |[0m ---[preciceAdapter] [DEBUG]     cellDisplacement field name : cellDisplacement
+[33mopenfoam-adapter-fluid    |[0m ---[preciceAdapter] [DEBUG] Determining the solver type for the FSI module... (override by setting solverType to one of {compressible, incompressible})
+[33mopenfoam-adapter-fluid    |[0m ---[preciceAdapter] [DEBUG] Automatically determined solver type : incompressible
+[33mopenfoam-adapter-fluid    |[0m ---[preciceAdapter] [DEBUG] Checking the timestep type (fixed vs adjustable)...
+[33mopenfoam-adapter-fluid    |[0m ---[preciceAdapter] [DEBUG]   Timestep type: fixed.
+[33mopenfoam-adapter-fluid    |[0m ---[preciceAdapter] [DEBUG] Creating the preCICE solver interface...
+[33mopenfoam-adapter-fluid    |[0m ---[preciceAdapter] [DEBUG]   Number of processes: 1
+[33mopenfoam-adapter-fluid    |[0m ---[preciceAdapter] [DEBUG]   MPI rank: 0
+[33mopenfoam-adapter-fluid    |[0m ---[precice] [0m This is preCICE version 2.1.1
+[33mopenfoam-adapter-fluid    |[0m ---[precice] [0m Revision info: no-info [Git failed/Not a repository]
+[33mopenfoam-adapter-fluid    |[0m ---[precice] [0m Configuration: Release (Debug and Trace log unavailable)
+[33mopenfoam-adapter-fluid    |[0m ---[precice] [0m Configuring preCICE with configuration "precice-config.xml"
+[33mopenfoam-adapter-fluid    |[0m ---[precice] [0m I am participant "Fluid"
+[33mopenfoam-adapter-fluid    |[0m ---[preciceAdapter] [DEBUG]   preCICE solver interface was created.
+[33mopenfoam-adapter-fluid    |[0m ---[preciceAdapter] [DEBUG] Creating interfaces...
+[33mopenfoam-adapter-fluid    |[0m ---[preciceAdapter] [DEBUG] Number of face centres: 33
+[33mopenfoam-adapter-fluid    |[0m ---[preciceAdapter] [DEBUG] Interface created on mesh Fluid-Mesh-Faces
+[33mopenfoam-adapter-fluid    |[0m ---[preciceAdapter] [DEBUG] Adding coupling data writers...
+[33mopenfoam-adapter-fluid    |[0m ---[preciceAdapter] [DEBUG] Added writer: Force.
+[33mopenfoam-adapter-fluid    |[0m ---[preciceAdapter] [DEBUG] Adding coupling data readers...
+[33mopenfoam-adapter-fluid    |[0m ---[preciceAdapter] [DEBUG] Number of face nodes: 68
+[33mopenfoam-adapter-fluid    |[0m ---[preciceAdapter] [DEBUG] Interface created on mesh Fluid-Mesh-Nodes
+[33mopenfoam-adapter-fluid    |[0m ---[preciceAdapter] [DEBUG] Adding coupling data writers...
+[33mopenfoam-adapter-fluid    |[0m ---[preciceAdapter] [DEBUG] Adding coupling data readers...
+[33mopenfoam-adapter-fluid    |[0m ---[preciceAdapter] [DEBUG] Added reader: Displacement.
+[33mopenfoam-adapter-fluid    |[0m ---[preciceAdapter] [DEBUG] Initalizing the preCICE solver interface...
+[33mopenfoam-adapter-fluid    |[0m ---[precice] [0m Setting up master communication to coupling partner/s
+[32mcalculix-adapter-solid    |[0m ---[precice] [0m Masters are connected
+[32mcalculix-adapter-solid    |[0m ---[precice] [0m Setting up preliminary slaves communication to coupling partner/s
+[32mcalculix-adapter-solid    |[0m ---[precice] [0m Prepare partition for mesh Solid
+[32mcalculix-adapter-solid    |[0m ---[precice] [0m Gather mesh Solid
+[32mcalculix-adapter-solid    |[0m ---[precice] [0m Send global mesh Solid
+[32mcalculix-adapter-solid    |[0m ---[precice] [0m Setting up slaves communication to coupling partner/s
+[33mopenfoam-adapter-fluid    |[0m ---[precice] [0m Masters are connected
+[33mopenfoam-adapter-fluid    |[0m ---[precice] [0m Setting up preliminary slaves communication to coupling partner/s
+[33mopenfoam-adapter-fluid    |[0m ---[precice] [0m Prepare partition for mesh Fluid-Mesh-Faces
+[33mopenfoam-adapter-fluid    |[0m ---[precice] [0m Prepare partition for mesh Fluid-Mesh-Nodes
+[33mopenfoam-adapter-fluid    |[0m ---[precice] [0m Receive global mesh Solid
+[33mopenfoam-adapter-fluid    |[0m ---[precice] [0m Setting up slaves communication to coupling partner/s
+[33mopenfoam-adapter-fluid    |[0m ---[precice] [0m Slaves are connected
+[33mopenfoam-adapter-fluid    |[0m ---[precice] [0m iteration: 1, time-window: 1, time: 0 of 1, time-window-size: 0.01, max-timestep-length: 0.01, ongoing: yes, time-window-complete: no, 
+[33mopenfoam-adapter-fluid    |[0m ---[preciceAdapter] [DEBUG] Initializing preCICE data...
+[33mopenfoam-adapter-fluid    |[0m ---[precice] [0m Compute write mapping from mesh "Fluid-Mesh-Faces" to mesh "Solid".
+[32mcalculix-adapter-solid    |[0m ---[precice] [0m Slaves are connected
+[33mopenfoam-adapter-fluid    |[0m ---[precice] [0m Using tree-based preallocation for matrix C
+[33mopenfoam-adapter-fluid    |[0m ---[precice] [0m Using tree-based preallocation for matrix A
+[33mopenfoam-adapter-fluid    |[0m ---[precice] [0m Mapping Forces0 conservative from Fluid-Mesh-Faces (ID 0) to Solid (ID 2) for dimension 0) with polynomial set to separate
+[33mopenfoam-adapter-fluid    |[0m ---[precice] [0m Mapping Forces0 conservative from Fluid-Mesh-Faces (ID 0) to Solid (ID 2) for dimension 1) with polynomial set to separate
+[33mopenfoam-adapter-fluid    |[0m ---[precice] [0m Mapping Forces0 conservative from Fluid-Mesh-Faces (ID 0) to Solid (ID 2) for dimension 2) with polynomial set to separate
+[33mopenfoam-adapter-fluid    |[0m ---[precice] [0m initializeData is skipped since no data has to be initialized.
+[33mopenfoam-adapter-fluid    |[0m ---[preciceAdapter] preCICE was configured and initialized
+[33mopenfoam-adapter-fluid    |[0m ---[preciceAdapter] [DEBUG] Reading coupling data...
+[33mopenfoam-adapter-fluid    |[0m ---[preciceAdapter] [DEBUG] Adjusting the solver's timestep...
+[33mopenfoam-adapter-fluid    |[0m ---[preciceAdapter] [DEBUG] The solver's timestep is the same as the coupling timestep.
+[33mopenfoam-adapter-fluid    |[0m ---[preciceAdapter] Setting the solver's endTime to infinity to prevent early exits. Only preCICE will control the simulation's endTime. Any functionObject's end() method will be triggered by the adapter. You may disable this behavior in the adapter's configuration.
+[33mopenfoam-adapter-fluid    |[0m Courant Number mean: 0 max: 0
+[33mopenfoam-adapter-fluid    |[0m Time = 0.01
+[33mopenfoam-adapter-fluid    |[0m 
+[33mopenfoam-adapter-fluid    |[0m PIMPLE: iteration 1
+[33mopenfoam-adapter-fluid    |[0m smoothSolver:  Solving for cellDisplacementx, Initial residual = 0, Final residual = 0, No Iterations 2
+[33mopenfoam-adapter-fluid    |[0m smoothSolver:  Solving for cellDisplacementz, Initial residual = 0, Final residual = 0, No Iterations 2
+[33mopenfoam-adapter-fluid    |[0m DICPCG:  Solving for pcorr, Initial residual = 1, Final residual = 0.000727924, No Iterations 68
+[33mopenfoam-adapter-fluid    |[0m DICPCG:  Solving for pcorr, Initial residual = 4.4971e-05, Final residual = 9.23793e-09, No Iterations 39
+[33mopenfoam-adapter-fluid    |[0m time step continuity errors : sum local = 1.2513e-09, global = -1.1523e-10, cumulative = -1.1523e-10
+[33mopenfoam-adapter-fluid    |[0m smoothSolver:  Solving for Ux, Initial residual = 1, Final residual = 3.1995e-07, No Iterations 7
+[33mopenfoam-adapter-fluid    |[0m smoothSolver:  Solving for Uz, Initial residual = 1, Final residual = 1.23994e-07, No Iterations 8
+[33mopenfoam-adapter-fluid    |[0m DICPCG:  Solving for p, Initial residual = 1, Final residual = 0.000938192, No Iterations 68
+[33mopenfoam-adapter-fluid    |[0m DICPCG:  Solving for p, Initial residual = 5.74401e-05, Final residual = 5.65438e-08, No Iterations 30
+[33mopenfoam-adapter-fluid    |[0m time step continuity errors : sum local = 7.72947e-09, global = -3.94014e-10, cumulative = -5.09244e-10
+[33mopenfoam-adapter-fluid    |[0m DICPCG:  Solving for p, Initial residual = 0.0356447, Final residual = 3.53461e-05, No Iterations 60
+[33mopenfoam-adapter-fluid    |[0m DICPCG:  Solving for p, Initial residual = 3.37846e-05, Final residual = 2.5015e-08, No Iterations 61
+[33mopenfoam-adapter-fluid    |[0m time step continuity errors : sum local = 3.70834e-09, global = 1.1249e-10, cumulative = -3.96753e-10
+[33mopenfoam-adapter-fluid    |[0m DICPCG:  Solving for p, Initial residual = 0.0238885, Final residual = 1.92215e-05, No Iterations 62
+[33mopenfoam-adapter-fluid    |[0m DICPCG:  Solving for p, Initial residual = 1.85709e-05, Final residual = 1.59106e-08, No Iterations 62
+[33mopenfoam-adapter-fluid    |[0m time step continuity errors : sum local = 2.4969e-09, global = -3.73381e-11, cumulative = -4.34092e-10
+[33mopenfoam-adapter-fluid    |[0m DICPCG:  Solving for p, Initial residual = 0.0176941, Final residual = 1.7318e-05, No Iterations 60
+[33mopenfoam-adapter-fluid    |[0m DICPCG:  Solving for p, Initial residual = 1.68816e-05, Final residual = 7.68363e-09, No Iterations 62
+[33mopenfoam-adapter-fluid    |[0m time step continuity errors : sum local = 1.25725e-09, global = 6.35692e-11, cumulative = -3.70522e-10
+[33mopenfoam-adapter-fluid    |[0m ExecutionTime = 0.31 s  ClockTime = 1 s
+[33mopenfoam-adapter-fluid    |[0m 
+[33mopenfoam-adapter-fluid    |[0m ---[preciceAdapter] [DEBUG] Writing coupling data...
+[33mopenfoam-adapter-fluid    |[0m ---[preciceAdapter] [DEBUG] Advancing preCICE...
+[33mopenfoam-adapter-fluid    |[0m ---[precice] [0m Mapping Forces0 conservative from Fluid-Mesh-Faces (ID 0) to Solid (ID 2) for dimension 0) with polynomial set to separate
+[33mopenfoam-adapter-fluid    |[0m ---[precice] [0m Mapping Forces0 conservative from Fluid-Mesh-Faces (ID 0) to Solid (ID 2) for dimension 1) with polynomial set to separate
+[33mopenfoam-adapter-fluid    |[0m ---[precice] [0m Mapping Forces0 conservative from Fluid-Mesh-Faces (ID 0) to Solid (ID 2) for dimension 2) with polynomial set to separate
+[32mcalculix-adapter-solid    |[0m ---[precice] [0m iteration: 1, time-window: 1, time: 0 of 1, time-window-size: 0.01, max-timestep-length: 0.01, ongoing: yes, time-window-complete: no, 
+[32mcalculix-adapter-solid    |[0m Initializing coupling data
+[32mcalculix-adapter-solid    |[0m Adapter writing coupling data...
+[32mcalculix-adapter-solid    |[0m ---[precice] [0m initializeData is skipped since no data has to be initialized.
+[32mcalculix-adapter-solid    |[0m Adapter reading coupling data...
+[32mcalculix-adapter-solid    |[0m Reading FORCES coupling data with ID '2'. 
+[32mcalculix-adapter-solid    |[0m Adjusting time step for transient step
+[32mcalculix-adapter-solid    |[0m precice_dt dtheta = 0.001000, dtheta = 0.001000, solver_dt = 0.010000
+[32mcalculix-adapter-solid    |[0m Adapter reading coupling data...
+[32mcalculix-adapter-solid    |[0m Reading FORCES coupling data with ID '2'. 
+[32mcalculix-adapter-solid    |[0m  increment 1 attempt 1 
+[32mcalculix-adapter-solid    |[0m  increment size= 1.000000e-02
+[32mcalculix-adapter-solid    |[0m  sum of previous increments=0.000000e+00
+[32mcalculix-adapter-solid    |[0m  actual step time=1.000000e-02
+[32mcalculix-adapter-solid    |[0m  actual total time=1.000000e-02
+[32mcalculix-adapter-solid    |[0m 
+[32mcalculix-adapter-solid    |[0m  iteration 1
+[32mcalculix-adapter-solid    |[0m 
+[32mcalculix-adapter-solid    |[0m  Using up to 1 cpu(s) for the stress calculation.
+[32mcalculix-adapter-solid    |[0m 
+[32mcalculix-adapter-solid    |[0m  Using up to 1 cpu(s) for the energy calculation.
+[32mcalculix-adapter-solid    |[0m 
+[32mcalculix-adapter-solid    |[0m  Using up to 1 cpu(s) for the symmetric stiffness/mass contributions.
+[32mcalculix-adapter-solid    |[0m 
+[32mcalculix-adapter-solid    |[0m  Factoring the system of equations using the symmetric spooles solver
+[32mcalculix-adapter-solid    |[0m  Using 1 cpu for spooles.
+[32mcalculix-adapter-solid    |[0m 
+[32mcalculix-adapter-solid    |[0m  Using up to 1 cpu(s) for the stress calculation.
+[32mcalculix-adapter-solid    |[0m 
+[32mcalculix-adapter-solid    |[0m  Using up to 1 cpu(s) for the energy calculation.
+[32mcalculix-adapter-solid    |[0m 
+[32mcalculix-adapter-solid    |[0m  average force= 0.881979
+[32mcalculix-adapter-solid    |[0m  time avg. forc= 0.881979
+[32mcalculix-adapter-solid    |[0m  largest residual force= 0.029513 in node 88 and dof 1
+[32mcalculix-adapter-solid    |[0m  largest increment of disp= 2.532072e-04
+[32mcalculix-adapter-solid    |[0m  largest correction to disp= 2.532072e-04 in node 98 and dof 1
+[32mcalculix-adapter-solid    |[0m 
+[32mcalculix-adapter-solid    |[0m  no convergence
+[32mcalculix-adapter-solid    |[0m 
+[32mcalculix-adapter-solid    |[0m  iteration 2
+[32mcalculix-adapter-solid    |[0m 
+[32mcalculix-adapter-solid    |[0m  Using up to 1 cpu(s) for the symmetric stiffness/mass contributions.
+[32mcalculix-adapter-solid    |[0m 
+[32mcalculix-adapter-solid    |[0m  Factoring the system of equations using the symmetric spooles solver
+[32mcalculix-adapter-solid    |[0m  Using 1 cpu for spooles.
+[32mcalculix-adapter-solid    |[0m 
+[32mcalculix-adapter-solid    |[0m  Using up to 1 cpu(s) for the stress calculation.
+[32mcalculix-adapter-solid    |[0m 
+[32mcalculix-adapter-solid    |[0m  Using up to 1 cpu(s) for the energy calculation.
+[32mcalculix-adapter-solid    |[0m 
+[32mcalculix-adapter-solid    |[0m  average force= 0.883003
+[32mcalculix-adapter-solid    |[0m  time avg. forc= 0.883003
+[32mcalculix-adapter-solid    |[0m  largest residual force= 0.000000 in node 86 and dof 1
+[32mcalculix-adapter-solid    |[0m  largest increment of disp= 2.532072e-04
+[32mcalculix-adapter-solid    |[0m  largest correction to disp= 3.571416e-07 in node 88 and dof 1
+[32mcalculix-adapter-solid    |[0m 
+[32mcalculix-adapter-solid    |[0m  convergence
+[32mcalculix-adapter-solid    |[0m 
+[32mcalculix-adapter-solid    |[0m Adapter writing coupling data...
+[32mcalculix-adapter-solid    |[0m Writing DISPLACEMENTS coupling data with ID '3'. 
+[32mcalculix-adapter-solid    |[0m Adapter calling advance()...
+[33mopenfoam-adapter-fluid    |[0m ---[precice] [0m Time window completed
+[33mopenfoam-adapter-fluid    |[0m ---[precice] [0m Compute read mapping from mesh "Solid" to mesh "Fluid-Mesh-Nodes".
+[33mopenfoam-adapter-fluid    |[0m ---[precice] [0m Using tree-based preallocation for matrix C
+[33mopenfoam-adapter-fluid    |[0m ---[precice] [0m Using tree-based preallocation for matrix A
+[33mopenfoam-adapter-fluid    |[0m ---[precice] [0m Mapping Displacements0 consistent from Solid (ID 2) to Fluid-Mesh-Nodes (ID 1) for dimension 0) with polynomial set to separate
+[33mopenfoam-adapter-fluid    |[0m KSP Object: QR Solver 1 MPI processes
+[33mopenfoam-adapter-fluid    |[0m   type: lsqr
+[33mopenfoam-adapter-fluid    |[0m     standard error not computed
+[33mopenfoam-adapter-fluid    |[0m     using inexact matrix norm
+[33mopenfoam-adapter-fluid    |[0m   maximum iterations=10000, initial guess is zero
+[33mopenfoam-adapter-fluid    |[0m   tolerances:  relative=1e-05, absolute=1e-50, divergence=10000.
+[33mopenfoam-adapter-fluid    |[0m   left preconditioning
+[33mopenfoam-adapter-fluid    |[0m   using UNPRECONDITIONED norm type for convergence test
+[33mopenfoam-adapter-fluid    |[0m PC Object: 1 MPI processes
+[33mopenfoam-adapter-fluid    |[0m   type: none
+[33mopenfoam-adapter-fluid    |[0m   linear system matrix = precond matrix:
+[33mopenfoam-adapter-fluid    |[0m   Mat Object: Q 1 MPI processes
+[33mopenfoam-adapter-fluid    |[0m     type: seqdense
+[33mopenfoam-adapter-fluid    |[0m     rows=86, cols=4
+[33mopenfoam-adapter-fluid    |[0m     total: nonzeros=344, allocated nonzeros=344
+[33mopenfoam-adapter-fluid    |[0m     total number of mallocs used during MatSetValues calls=0
+[33mopenfoam-adapter-fluid    |[0m ---[precice] [31mERROR: [0m The polynomial QR system of the RBF mapping from mesh Solid to mesh Fluid-Mesh-Nodes has not converged. This means most probably that the mapping problem is not well-posed. Please check if your coupling meshes are correct. Maybe you need to fix axis-aligned mapping setups by marking perpendicular axes as dead?
+[32mcalculix-adapter-solid    |[0m ---[precice] [0m Time window completed
+[32mcalculix-adapter-solid    |[0m ---[precice] [0m iteration: 1, time-window: 2, time: 0.01 of 1, time-window-size: 0.01, max-timestep-length: 0.01, ongoing: yes, time-window-complete: yes, 
+[32mcalculix-adapter-solid    |[0m  initial energy (at start of step) = 0.000000e+00
+[32mcalculix-adapter-solid    |[0m 
+[32mcalculix-adapter-solid    |[0m  since start of the step: 
+[32mcalculix-adapter-solid    |[0m  external work = 5.463611e-02
+[32mcalculix-adapter-solid    |[0m  work performed by the damping forces = 0.000000e+00
+[32mcalculix-adapter-solid    |[0m  netto work = 5.463611e-02
+[32mcalculix-adapter-solid    |[0m 
+[32mcalculix-adapter-solid    |[0m  actual energy: 
+[32mcalculix-adapter-solid    |[0m  internal energy = 8.472973e-03
+[32mcalculix-adapter-solid    |[0m  kinetic energy = 4.813633e-02
+[32mcalculix-adapter-solid    |[0m  elastic contact energy = 0.000000e+00
+[32mcalculix-adapter-solid    |[0m  energy lost due to friction = 0.000000e+00
+[32mcalculix-adapter-solid    |[0m  total energy  = 5.660930e-02
+[32mcalculix-adapter-solid    |[0m 
+[32mcalculix-adapter-solid    |[0m  energy increase = 5.660930e-02
+[32mcalculix-adapter-solid    |[0m 
+[32mcalculix-adapter-solid    |[0m  energy balance (absolute) = 1.973185e-03 
+[32mcalculix-adapter-solid    |[0m  energy balance (relative) = 3.611504 % 
+[32mcalculix-adapter-solid    |[0m 
+[32mcalculix-adapter-solid    |[0m  Using up to 1 cpu(s) for the stress calculation.
+[32mcalculix-adapter-solid    |[0m 
+[32mcalculix-adapter-solid    |[0m Adjusting time step for transient step
+[32mcalculix-adapter-solid    |[0m precice_dt dtheta = 0.001000, dtheta = 0.001000, solver_dt = 0.010000
+[32mcalculix-adapter-solid    |[0m Adapter reading coupling data...
+[32mcalculix-adapter-solid    |[0m Reading FORCES coupling data with ID '2'. 
+[32mcalculix-adapter-solid    |[0m  increment 2 attempt 1 
+[32mcalculix-adapter-solid    |[0m  increment size= 1.000000e-02
+[32mcalculix-adapter-solid    |[0m  sum of previous increments=1.000000e-02
+[32mcalculix-adapter-solid    |[0m  actual step time=2.000000e-02
+[32mcalculix-adapter-solid    |[0m  actual total time=2.000000e-02
+[32mcalculix-adapter-solid    |[0m 
+[32mcalculix-adapter-solid    |[0m  iteration 1
+[32mcalculix-adapter-solid    |[0m 
+[32mcalculix-adapter-solid    |[0m  Using up to 1 cpu(s) for the stress calculation.
+[32mcalculix-adapter-solid    |[0m 
+[32mcalculix-adapter-solid    |[0m  Using up to 1 cpu(s) for the energy calculation.
+[32mcalculix-adapter-solid    |[0m 
+[32mcalculix-adapter-solid    |[0m  Using up to 1 cpu(s) for the symmetric stiffness/mass contributions.
+[32mcalculix-adapter-solid    |[0m 
+[32mcalculix-adapter-solid    |[0m  Factoring the system of equations using the symmetric spooles solver
+[32mcalculix-adapter-solid    |[0m  Using 1 cpu for spooles.
+[32mcalculix-adapter-solid    |[0m 
+[32mcalculix-adapter-solid exited with code 255
+[0m[33mopenfoam-adapter-fluid exited with code 255
+[0m------------- Comparing files -------------
+> Only in /home/travis/build/precice/systemtests/tests/TestCompose_of-ccx_fsi.PETSc/referenceOutput: Fluid
+Only in /home/travis/build/precice/systemtests/tests/TestCompose_of-ccx_fsi.PETSc/referenceOutput: Solid
+----------- Comparison finished -----------
+EXECUTING: docker container prune -f; export PRECICE_BASE=-ubuntu1804.home.petsc-develop; mkdir Logs; docker-compose config && bash ../../silent_compose.sh debug
+EXECUTING: docker cp tutorial-data:/Output .
+EXECUTING: docker-compose logs > Logs/container.log
+EXECUTING: bash ../../compare_results.sh /home/travis/build/precice/systemtests/tests/TestCompose_of-ccx_fsi.PETSc/referenceOutput /home/travis/build/precice/systemtests/tests/TestCompose_of-ccx_fsi.PETSc/Output
+TEST FAILED WITH: Output files do not match reference
+Files differing               : []
+Files only in reference (left): ['Fluid', 'Solid']
+Files only in output(right)   : []
+Traceback (most recent call last):
+  File "system_testing.py", line 133, in run_compose
+    comparison(path_to_ref, path_to_otp)
+  File "system_testing.py", line 210, in comparison
+    raise IncorrectOutput(*ret)
+__main__.IncorrectOutput: Output files do not match reference
+Files differing               : []
+Files only in reference (left): ['Fluid', 'Solid']
+Files only in output(right)   : []
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "system_testing.py", line 305, in <module>
+    build_run_compare(test, tag, args.branch.lower(), args.local,
+  File "system_testing.py", line 227, in build_run_compare
+    run_compose(test, branch, local_precice, tag, force_rebuild, rm_all, verbose)
+  File "system_testing.py", line 145, in run_compose
+    raise STValidateException()
+__main__.STValidateException: COMPARISON FAILED - An error occured while comparing test results with reference files!
+travis_time:end:071dcbc4:start=1611138799191295330,finish=1611138934836767653,duration=135645472323,event=script[0K[31;1mThe command "python system_testing.py -s of-ccx_fsi --base Ubuntu1804.home.PETSc -v" exited with 1.[0m
+travis_time:start:06f29942[0K$ python push.py
+Cloning into 'precice_st_output'...
+Updating files:  13% (5882/42026)Updating files:  14% (5884/42026)Updating files:  15% (6304/42026)Updating files:  16% (6725/42026)Updating files:  17% (7145/42026)Updating files:  18% (7565/42026)Updating files:  19% (7985/42026)Updating files:  20% (8406/42026)Updating files:  21% (8826/42026)Updating files:  22% (9246/42026)Updating files:  23% (9666/42026)Updating files:  24% (10087/42026)Updating files:  25% (10507/42026)Updating files:  26% (10927/42026)Updating files:  27% (11348/42026)Updating files:  28% (11768/42026)Updating files:  29% (12188/42026)Updating files:  29% (12318/42026)Updating files:  30% (12608/42026)Updating files:  31% (13029/42026)Updating files:  32% (13449/42026)Updating files:  33% (13869/42026)Updating files:  34% (14289/42026)Updating files:  35% (14710/42026)Updating files:  36% (15130/42026)Updating files:  37% (15550/42026)Updating files:  38% (15970/42026)Updating files:  39% (16391/42026)Updating files:  40% (16811/42026)Updating files:  41% (17231/42026)Updating files:  42% (17651/42026)Updating files:  42% (18007/42026)Updating files:  43% (18072/42026)Updating files:  44% (18492/42026)Updating files:  45% (18912/42026)Updating files:  46% (19332/42026)Updating files:  47% (19753/42026)Updating files:  48% (20173/42026)Updating files:  49% (20593/42026)Updating files:  50% (21013/42026)Updating files:  51% (21434/42026)Updating files:  52% (21854/42026)Updating files:  53% (22274/42026)Updating files:  54% (22695/42026)Updating files:  54% (23089/42026)Updating files:  55% (23115/42026)Updating files:  56% (23535/42026)Updating files:  57% (23955/42026)Updating files:  58% (24376/42026)Updating files:  59% (24796/42026)Updating files:  60% (25216/42026)Updating files:  61% (25636/42026)Updating files:  62% (26057/42026)Updating files:  63% (26477/42026)Updating files:  64% (26897/42026)Updating files:  65% (27317/42026)Updating files:  66% (27738/42026)Updating files:  67% (28158/42026)Updating files:  67% (28429/42026)Updating files:  68% (28578/42026)Updating files:  69% (28998/42026)Updating files:  69% (29001/42026)Updating files:  70% (29419/42026)Updating files:  70% (29501/42026)Updating files:  71% (29839/42026)Updating files:  71% (29976/42026)Updating files:  71% (29985/42026)Updating files:  71% (30209/42026)Updating files:  72% (30259/42026)Updating files:  73% (30679/42026)Updating files:  74% (31100/42026)Updating files:  75% (31520/42026)Updating files:  75% (31713/42026)Updating files:  76% (31940/42026)Updating files:  77% (32361/42026)Updating files:  77% (32561/42026)Updating files:  78% (32781/42026)Updating files:  79% (33201/42026)Updating files:  79% (33449/42026)Updating files:  80% (33621/42026)Updating files:  81% (34042/42026)Updating files:  81% (34100/42026)Updating files:  81% (34135/42026)Updating files:  81% (34201/42026)Updating files:  81% (34264/42026)Updating files:  81% (34302/42026)Updating files:  81% (34371/42026)Updating files:  81% (34427/42026)Updating files:  82% (34462/42026)Updating files:  82% (34552/42026)Updating files:  82% (34626/42026)Updating files:  82% (34716/42026)Updating files:  82% (34774/42026)Updating files:  82% (34881/42026)Updating files:  83% (34882/42026)Updating files:  83% (35010/42026)Updating files:  83% (35082/42026)Updating files:  83% (35158/42026)Updating files:  83% (35195/42026)Updating files:  83% (35271/42026)Updating files:  84% (35302/42026)Updating files:  84% (35342/42026)Updating files:  84% (35435/42026)Updating files:  84% (35531/42026)Updating files:  84% (35604/42026)Updating files:  84% (35690/42026)Updating files:  85% (35723/42026)Updating files:  85% (35784/42026)Updating files:  85% (35871/42026)Updating files:  85% (35963/42026)Updating files:  85% (36060/42026)Updating files:  86% (36143/42026)Updating files:  86% (36146/42026)Updating files:  86% (36222/42026)Updating files:  86% (36309/42026)Updating files:  86% (36394/42026)Updating files:  86% (36478/42026)Updating files:  86% (36480/42026)Updating files:  87% (36563/42026)Updating files:  87% (36564/42026)Updating files:  87% (36650/42026)Updating files:  87% (36741/42026)Updating files:  87% (36827/42026)Updating files:  87% (36920/42026)Updating files:  88% (36983/42026)Updating files:  88% (37079/42026)Updating files:  88% (37207/42026)Updating files:  88% (37292/42026)Updating files:  88% (37329/42026)Updating files:  88% (37331/42026)Updating files:  89% (37404/42026)Updating files:  89% (37535/42026)Updating files:  89% (37635/42026)Updating files:  89% (37722/42026)Updating files:  89% (37777/42026)Updating files:  90% (37824/42026)Updating files:  90% (37949/42026)Updating files:  90% (38026/42026)Updating files:  90% (38163/42026)Updating files:  91% (38244/42026)Updating files:  92% (38664/42026)Updating files:  93% (39085/42026)Updating files:  93% (39261/42026)Updating files:  93% (39333/42026)Updating files:  94% (39505/42026)Updating files:  94% (39524/42026)Updating files:  94% (39621/42026)Updating files:  94% (39705/42026)Updating files:  94% (39787/42026)Updating files:  94% (39890/42026)Updating files:  95% (39925/42026)Updating files:  95% (39974/42026)Updating files:  95% (40050/42026)Updating files:  95% (40134/42026)Updating files:  95% (40233/42026)Updating files:  95% (40298/42026)Updating files:  95% (40319/42026)Updating files:  96% (40345/42026)Updating files:  96% (40491/42026)Updating files:  96% (40580/42026)Updating files:  96% (40664/42026)Updating files:  96% (40692/42026)Updating files:  96% (40753/42026)Updating files:  97% (40766/42026)Updating files:  97% (40943/42026)Updating files:  97% (41079/42026)Updating files:  97% (41163/42026)Updating files:  98% (41186/42026)Updating files:  98% (41227/42026)Updating files:  98% (41268/42026)Updating files:  98% (41394/42026)Updating files:  98% (41542/42026)Updating files:  99% (41606/42026)Updating files:  99% (41615/42026)Updating files:  99% (41662/42026)Updating files:  99% (41696/42026)Updating files:  99% (41830/42026)Updating files:  99% (41911/42026)
