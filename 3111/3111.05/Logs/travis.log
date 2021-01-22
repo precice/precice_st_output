@@ -1,0 +1,862 @@
+travis_fold:start:worker_info[0K[33;1mWorker information[0m
+hostname: 9c09195e-d521-4555-af6e-1d36e2dc361f@1.worker-com-oss-6bfdccb59f-mbfmv.gce-production-3
+version: v6.2.20-1-g3a987d6 https://github.com/travis-ci/worker/tree/3a987d61ed169c9539ad435d1a9b5f2d8c6ce4a6
+instance: travis-job-e45fed2f-0985-4f4f-8f2e-8fc052e6f120 travis-ci-ubuntu-1804-1609168422-6c7eba12 (via amqp)
+startup: 6.08592845s
+travis_fold:end:worker_info[0Ktravis_time:start:020291e5[0Ktravis_time:end:020291e5:start=1611332032930418843,finish=1611332033127388721,duration=196969878,event=no_world_writable_dirs[0Ktravis_time:start:024d8a68[0Ktravis_time:end:024d8a68:start=1611332033130601565,finish=1611332033134272771,duration=3671206,event=setup_filter[0Ktravis_time:start:18495762[0Ktravis_time:end:18495762:start=1611332033138699793,finish=1611332033149522100,duration=10822307,event=agent[0Ktravis_time:start:18ccbbfe[0Ktravis_time:end:18ccbbfe:start=1611332033152130078,finish=1611332033153842102,duration=1712024,event=check_unsupported[0Ktravis_time:start:0358f245[0Ktravis_fold:start:system_info[0K[33;1mBuild system information[0m
+Build language: python
+Build group: stable
+Build dist: bionic
+Build id: 214134293
+Job id: 474329934
+Runtime kernel version: 5.4.0-1032-gcp
+travis-build version: 5d5d4288
+[34m[1mBuild image provisioning date and time[0m
+Mon Dec 28 15:53:02 UTC 2020
+[34m[1mOperating System Details[0m
+Distributor ID:	Ubuntu
+Description:	Ubuntu 18.04.5 LTS
+Release:	18.04
+Codename:	bionic
+[34m[1mSystemd Version[0m
+systemd 237
+[34m[1mCookbooks Version[0m
+10a7b34 https://github.com/travis-ci/travis-cookbooks/tree/10a7b34
+[34m[1mgit version[0m
+git version 2.29.2
+[34m[1mbash version[0m
+GNU bash, version 4.4.20(1)-release (x86_64-pc-linux-gnu)
+[34m[1mgcc version[0m
+gcc (Ubuntu 7.5.0-3ubuntu1~18.04) 7.5.0
+[34m[1mdocker version[0m
+Client:
+ Version:           18.06.0-ce
+ API version:       1.38
+ Go version:        go1.10.3
+ Git commit:        0ffa825
+ Built:             Wed Jul 18 19:09:54 2018
+ OS/Arch:           linux/amd64
+ Experimental:      false
+
+Server:
+ Engine:
+  Version:          18.06.0-ce
+  API version:      1.38 (minimum version 1.12)
+  Go version:       go1.10.3
+  Git commit:       0ffa825
+  Built:            Wed Jul 18 19:07:56 2018
+  OS/Arch:          linux/amd64
+  Experimental:     false
+[34m[1mclang version[0m
+clang version 7.0.0 (tags/RELEASE_700/final)
+[34m[1mjq version[0m
+jq-1.5
+[34m[1mbats version[0m
+Bats 0.4.0
+[34m[1mshellcheck version[0m
+0.7.0
+[34m[1mshfmt version[0m
+v3.2.1
+[34m[1mccache version[0m
+3.4.1
+[34m[1mcmake version[0m
+cmake version 3.12.4
+[34m[1mheroku version[0m
+heroku/7.47.6 linux-x64 node-v12.16.2
+[34m[1mimagemagick version[0m
+Version: ImageMagick 6.9.7-4 Q16 x86_64 20170114 http://www.imagemagick.org
+[34m[1mmd5deep version[0m
+4.4
+[34m[1mmercurial version[0m
+version 4.8
+[34m[1mmysql version[0m
+mysql  Ver 14.14 Distrib 5.7.32, for Linux (x86_64) using  EditLine wrapper
+[34m[1mopenssl version[0m
+OpenSSL 1.1.1  11 Sep 2018
+[34m[1mpacker version[0m
+1.3.3
+[34m[1mpostgresql client version[0m
+psql (PostgreSQL) 11.10 (Ubuntu 11.10-1.pgdg18.04+1)
+[34m[1mragel version[0m
+Ragel State Machine Compiler version 6.10 March 2017
+[34m[1msudo version[0m
+1.8.21p2
+[34m[1mgzip version[0m
+gzip 1.6
+[34m[1mzip version[0m
+Zip 3.0
+[34m[1mvim version[0m
+VIM - Vi IMproved 8.0 (2016 Sep 12, compiled Oct 13 2020 15:49:09)
+[34m[1miptables version[0m
+iptables v1.6.1
+[34m[1mcurl version[0m
+curl 7.58.0 (x86_64-pc-linux-gnu) libcurl/7.58.0 OpenSSL/1.1.1 zlib/1.2.11 libidn2/2.0.4 libpsl/0.19.1 (+libidn2/2.0.4) nghttp2/1.30.0 librtmp/2.3
+[34m[1mwget version[0m
+GNU Wget 1.19.4 built on linux-gnu.
+[34m[1mrsync version[0m
+rsync  version 3.1.2  protocol version 31
+[34m[1mgimme version[0m
+v1.5.4
+[34m[1mnvm version[0m
+0.37.2
+[34m[1mperlbrew version[0m
+/home/travis/perl5/perlbrew/bin/perlbrew  - App::perlbrew/0.88
+[34m[1mphpenv version[0m
+rbenv 1.1.2-40-g62d7798
+[34m[1mrvm version[0m
+rvm 1.29.10 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
+[34m[1mdefault ruby version[0m
+ruby 2.6.5p114 (2019-10-01 revision 67812) [x86_64-linux]
+[34m[1mElasticSearch version[0m
+5.5.0
+[34m[1mInstalled Firefox version[0m
+firefox 63.0.1
+[34m[1mMongoDB version[0m
+MongoDB 4.0.22
+[34m[1mPhantomJS version[0m
+2.1.1
+[34m[1mPre-installed PostgreSQL versions[0m
+9.3.25
+9.4.26
+9.5.24
+9.6.20
+[34m[1mRedis version[0m
+redis-server 6.0.6
+[34m[1mPre-installed Go versions[0m
+1.11.1
+[34m[1mant version[0m
+Apache Ant(TM) version 1.10.5 compiled on March 28 2019
+[34m[1mmvn version[0m
+Apache Maven 3.6.3 (cecedd343002696d0abb50b32b541b8a6ba2883f)
+[34m[1mgradle version[0m
+Gradle 5.1.1!
+[34m[1mlein version[0m
+Leiningen 2.9.5 on Java 11.0.2 OpenJDK 64-Bit Server VM
+[34m[1mPre-installed Node.js versions[0m
+v10.16.0
+v10.23.0
+v11.15.0
+v12.13.1
+v12.20.0
+v13.3.0
+v14.15.3
+v4.9.1
+v6.17.1
+v8.16.2
+v8.17.0
+v8.9
+[34m[1mphpenv versions[0m
+  system
+  7.1
+  7.1.33
+  7.2
+* 7.2.27 (set by /home/travis/.phpenv/version)
+  7.3
+  7.3.14
+  7.4
+  7.4.2
+  hhvm
+  hhvm-stable
+[34m[1mcomposer --version[0m
+Composer version 1.9.2 2020-01-14 16:30:31
+[34m[1mPre-installed Ruby versions[0m
+ruby-2.4.9
+ruby-2.5.3
+ruby-2.5.7
+ruby-2.6.5
+ruby-2.7.0
+travis_fold:end:system_info[0K
+travis_time:end:0358f245:start=1611332033156560385,finish=1611332033168249241,duration=11688856,event=show_system_info[0Ktravis_time:start:2c13166d[0Ktravis_time:end:2c13166d:start=1611332033171466430,finish=1611332033191893827,duration=20427397,event=rm_riak_source[0Ktravis_time:start:1b12c01c[0Ktravis_time:end:1b12c01c:start=1611332033195048633,finish=1611332033201436195,duration=6387562,event=fix_rwky_redis[0Ktravis_time:start:0d4592c0[0Ktravis_time:end:0d4592c0:start=1611332033204702964,finish=1611332033766020766,duration=561317802,event=wait_for_network[0Ktravis_time:start:00880962[0Ktravis_time:end:00880962:start=1611332033769878372,finish=1611332034016803631,duration=246925259,event=update_apt_keys[0Ktravis_time:start:041d11c8[0Ktravis_time:end:041d11c8:start=1611332034020470551,finish=1611332034073112330,duration=52641779,event=fix_hhvm_source[0Ktravis_time:start:10b1dd5d[0Ktravis_time:end:10b1dd5d:start=1611332034077426933,finish=1611332034080667475,duration=3240542,event=update_mongo_arch[0Ktravis_time:start:07399d7d[0Ktravis_time:end:07399d7d:start=1611332034084159860,finish=1611332034125876867,duration=41717007,event=fix_sudo_enabled_trusty[0Ktravis_time:start:11d1212f[0Ktravis_time:end:11d1212f:start=1611332034131364339,finish=1611332034133848505,duration=2484166,event=update_glibc[0Ktravis_time:start:036cd79a[0Ktravis_time:end:036cd79a:start=1611332034138411505,finish=1611332034146167165,duration=7755660,event=clean_up_path[0Ktravis_time:start:0199b58a[0Ktravis_time:end:0199b58a:start=1611332034151030083,finish=1611332034159535738,duration=8505655,event=fix_resolv_conf[0Ktravis_time:start:239b8588[0Ktravis_time:end:239b8588:start=1611332034164306643,finish=1611332034179406954,duration=15100311,event=fix_etc_hosts[0Ktravis_time:start:17196ad6[0Ktravis_time:end:17196ad6:start=1611332034184757207,finish=1611332034192920932,duration=8163725,event=fix_mvn_settings_xml[0Ktravis_time:start:01ad78c0[0Ktravis_time:end:01ad78c0:start=1611332034196707978,finish=1611332034206211987,duration=9504009,event=no_ipv6_localhost[0Ktravis_time:start:028ee2e1[0Ktravis_time:end:028ee2e1:start=1611332034209878244,finish=1611332034211974841,duration=2096597,event=fix_etc_mavenrc[0Ktravis_time:start:35edf26e[0Ktravis_time:end:35edf26e:start=1611332034215553341,finish=1611332034218917009,duration=3363668,event=fix_wwdr_certificate[0Ktravis_time:start:14cad288[0Ktravis_time:end:14cad288:start=1611332034223584653,finish=1611332034269750553,duration=46165900,event=put_localhost_first[0Ktravis_time:start:0c29cd41[0Ktravis_time:end:0c29cd41:start=1611332034274294390,finish=1611332034277355621,duration=3061231,event=home_paths[0Ktravis_time:start:05f4f408[0Ktravis_time:end:05f4f408:start=1611332034281154469,finish=1611332034294537474,duration=13383005,event=disable_initramfs[0Ktravis_time:start:000ef514[0Ktravis_time:end:000ef514:start=1611332034298643615,finish=1611332034440140343,duration=141496728,event=disable_ssh_roaming[0Ktravis_time:start:038262ee[0Ktravis_time:end:038262ee:start=1611332034444293821,finish=1611332034447133898,duration=2840077,event=debug_tools[0Ktravis_time:start:0cf92c0f[0Ktravis_time:end:0cf92c0f:start=1611332034451226056,finish=1611332034454106801,duration=2880745,event=uninstall_oclint[0Ktravis_time:start:1956156c[0Ktravis_time:end:1956156c:start=1611332034458495895,finish=1611332034461268776,duration=2772881,event=rvm_use[0Ktravis_time:start:0cb429ac[0Ktravis_time:end:0cb429ac:start=1611332034465599948,finish=1611332034473957070,duration=8357122,event=rm_etc_boto_cfg[0Ktravis_time:start:0f921a80[0Ktravis_time:end:0f921a80:start=1611332034478632869,finish=1611332034480797010,duration=2164141,event=rm_oraclejdk8_symlink[0Ktravis_time:start:00890684[0Ktravis_time:end:00890684:start=1611332034484968460,finish=1611332034575111643,duration=90143183,event=enable_i386[0Ktravis_time:start:0f553476[0Ktravis_time:end:0f553476:start=1611332034579756301,finish=1611332034583592608,duration=3836307,event=update_rubygems[0Ktravis_time:start:08752f4d[0Ktravis_time:end:08752f4d:start=1611332034587216382,finish=1611332035557948111,duration=970731729,event=ensure_path_components[0Ktravis_time:start:05bf9d1c[0Ktravis_time:end:05bf9d1c:start=1611332035563754768,finish=1611332035566162694,duration=2407926,event=redefine_curl[0Ktravis_time:start:02360900[0Ktravis_time:end:02360900:start=1611332035570148513,finish=1611332035664577778,duration=94429265,event=nonblock_pipe[0Ktravis_time:start:25dcdc10[0Ktravis_time:end:25dcdc10:start=1611332035669522002,finish=1611332041704822570,duration=6035300568,event=apt_get_update[0Ktravis_time:start:16fa6639[0Ktravis_time:end:16fa6639:start=1611332041709037074,finish=1611332041711271091,duration=2234017,event=deprecate_xcode_64[0Ktravis_time:start:2adb4b7b[0Ktravis_time:end:2adb4b7b:start=1611332041715869473,finish=1611332044591959126,duration=2876089653,event=update_heroku[0Ktravis_time:start:0155546c[0Ktravis_time:end:0155546c:start=1611332044595944220,finish=1611332044598225484,duration=2281264,event=shell_session_update[0Ktravis_time:start:085b7a0e[0Ktravis_fold:start:docker_mtu_and_registry_mirrors[0Ktravis_fold:end:docker_mtu_and_registry_mirrors[0Ktravis_time:end:085b7a0e:start=1611332044602268007,finish=1611332047035155708,duration=2432887701,event=set_docker_mtu_and_registry_mirrors[0Ktravis_time:start:23a0ee48[0Ktravis_fold:start:resolvconf[0Ktravis_fold:end:resolvconf[0Ktravis_time:end:23a0ee48:start=1611332047039017603,finish=1611332047113612299,duration=74594696,event=resolvconf[0Ktravis_time:start:003ca610[0Ktravis_time:end:003ca610:start=1611332047118277962,finish=1611332047280135137,duration=161857175,event=maven_central_mirror[0Ktravis_time:start:08dab826[0Ktravis_time:end:08dab826:start=1611332047285319295,finish=1611332047382145453,duration=96826158,event=maven_https[0Ktravis_time:start:0140f743[0Ktravis_fold:start:services[0Ktravis_time:start:0b617e5d[0K$ sudo systemctl start docker
+travis_time:end:0b617e5d:start=1611332047393936185,finish=1611332047409464452,duration=15528267,event=prepare[0Ktravis_fold:end:services[0Ktravis_time:end:0b617e5d:start=1611332047393936185,finish=1611332050417604010,duration=3023667825,event=services[0Ktravis_time:start:02c3c1bc[0Ktravis_time:end:02c3c1bc:start=1611332050422703683,finish=1611332050425632359,duration=2928676,event=fix_ps4[0Ktravis_time:start:00259df2[0K
+travis_fold:start:git.checkout[0Ktravis_time:start:167a287e[0K$ git clone --depth=50 --branch=develop https://github.com/precice/systemtests.git precice/systemtests
+Cloning into 'precice/systemtests'...
+Updating files:  85% (4086/4769)Updating files:  86% (4102/4769)Updating files:  87% (4150/4769)Updating files:  88% (4197/4769)Updating files:  89% (4245/4769)Updating files:  90% (4293/4769)Updating files:  91% (4340/4769)Updating files:  92% (4388/4769)Updating files:  93% (4436/4769)Updating files:  94% (4483/4769)Updating files:  95% (4531/4769)Updating files:  96% (4579/4769)Updating files:  97% (4626/4769)Updating files:  98% (4674/4769)Updating files:  99% (4722/4769)Updating files: 100% (4769/4769)Updating files: 100% (4769/4769), done.
+travis_time:end:167a287e:start=1611332050435578834,finish=1611332062020902074,duration=11585323240,event=checkout[0K$ cd precice/systemtests
+$ git checkout -qf dae082c35c897a15f206f775c8ebe1399f51b525
+travis_fold:end:git.checkout[0K
+travis_time:end:167a287e:start=1611332050435578834,finish=1611332062052021179,duration=11616442345,event=checkout[0Ktravis_time:start:2d5759b4[0K
+[33;1mSetting environment variables from repository settings[0m
+$ export DOCKER_PASSWORD=[secure]
+$ export PRECICE_BOT_EMAIL=[secure]
+$ export GH_TOKEN=[secure]
+$ export DOCKER_USERNAME=precice
+$ export TRAVIS_ACCESS_TOKEN=[secure]
+
+travis_time:end:2d5759b4:start=1611332062057016963,finish=1611332062069672706,duration=12655743,event=env[0Ktravis_time:start:0c8919d8[0K$ source ~/virtualenv/python3.8/bin/activate
+travis_time:end:0c8919d8:start=1611332062075507546,finish=1611332062082192638,duration=6685092,event=[0K$ python --version
+Python 3.8.1
+$ pip --version
+pip 20.3.3 from /home/travis/virtualenv/python3.8.1/lib/python3.8/site-packages/pip (python 3.8)
+travis_fold:start:install[0Ktravis_time:start:0bfdc4c0[0K$ pip install Jinja2
+Collecting Jinja2
+  Downloading Jinja2-2.11.2-py2.py3-none-any.whl (125 kB)
+Collecting MarkupSafe>=0.23
+  Downloading MarkupSafe-1.1.1-cp38-cp38-manylinux1_x86_64.whl (32 kB)
+Installing collected packages: MarkupSafe, Jinja2
+Successfully installed Jinja2-2.11.2 MarkupSafe-1.1.1
+travis_time:end:0bfdc4c0:start=1611332062527966607,finish=1611332063659455340,duration=1131488733,event=install[0Ktravis_fold:end:install[0Ktravis_time:start:07ca9cee[0K$ python build_adapter.py --dockerfile adapters/Dockerfile.su2-adapter --operating-system ubuntu1804 --precice-installation package --docker-username $DOCKER_USERNAME
+WARNING! Your password will be stored unencrypted in /home/travis/.docker/config.json.
+Configure a credential helper to remove this warning. See
+https://docs.docker.com/engine/reference/commandline/login/#credentials-store
+
+Login Succeeded
+Sending build context to Docker daemon  4.096kB
+Step 1/17 : ARG branch=develop
+Step 2/17 : ARG from=precice/precice-ubuntu1604.home-${branch}
+Step 3/17 : FROM $from
+latest: Pulling from precice/precice-ubuntu1804.package-develop
+d519e2592276: Pulling fs layer
+d22d2dfcfa9c: Pulling fs layer
+b3afe92c540b: Pulling fs layer
+d29315b34a5e: Pulling fs layer
+1d44684152f3: Pulling fs layer
+f19a017eb313: Pulling fs layer
+264ce3d84cd1: Pulling fs layer
+275dfd30ba1d: Pulling fs layer
+26f4d8811424: Pulling fs layer
+d622be97ad00: Pulling fs layer
+ac533dc89d25: Pulling fs layer
+44773a9176b4: Pulling fs layer
+d29315b34a5e: Waiting
+1d44684152f3: Waiting
+26f4d8811424: Waiting
+d622be97ad00: Waiting
+ac533dc89d25: Waiting
+44773a9176b4: Waiting
+264ce3d84cd1: Waiting
+275dfd30ba1d: Waiting
+f19a017eb313: Waiting
+b3afe92c540b: Verifying Checksum
+b3afe92c540b: Download complete
+d22d2dfcfa9c: Verifying Checksum
+d22d2dfcfa9c: Download complete
+d519e2592276: Verifying Checksum
+d519e2592276: Download complete
+1d44684152f3: Verifying Checksum
+1d44684152f3: Download complete
+f19a017eb313: Verifying Checksum
+f19a017eb313: Download complete
+264ce3d84cd1: Verifying Checksum
+264ce3d84cd1: Download complete
+d519e2592276: Pull complete
+d22d2dfcfa9c: Pull complete
+b3afe92c540b: Pull complete
+275dfd30ba1d: Verifying Checksum
+275dfd30ba1d: Download complete
+d622be97ad00: Verifying Checksum
+d622be97ad00: Download complete
+ac533dc89d25: Verifying Checksum
+ac533dc89d25: Download complete
+44773a9176b4: Verifying Checksum
+44773a9176b4: Download complete
+26f4d8811424: Verifying Checksum
+26f4d8811424: Download complete
+d29315b34a5e: Verifying Checksum
+d29315b34a5e: Download complete
+d29315b34a5e: Pull complete
+1d44684152f3: Pull complete
+f19a017eb313: Pull complete
+264ce3d84cd1: Pull complete
+275dfd30ba1d: Pull complete
+26f4d8811424: Pull complete
+d622be97ad00: Pull complete
+ac533dc89d25: Pull complete
+44773a9176b4: Pull complete
+Digest: sha256:f686538a59895ffeb519cc7faaaadfe01245e67afe19cdf5cdf78ac486d43d35
+Status: Downloaded newer image for precice/precice-ubuntu1804.package-develop:latest
+ ---> 82998675948f
+Step 4/17 : USER root
+ ---> Running in 72fc5534ad72
+Removing intermediate container 72fc5534ad72
+ ---> 84058186b57b
+Step 5/17 : ENV CXX="g++"
+ ---> Running in 9c73cf6df732
+Removing intermediate container 9c73cf6df732
+ ---> ff3f8ae1fe3c
+Step 6/17 : RUN apt-get -qq update && apt-get -qq install     dh-autoreconf     automake     autoconf     autotools-dev     ccache     time
+ ---> Running in a8e777f16811
+[91mdebconf: delaying package configuration, since apt-utils is not installed
+[0mSelecting previously unselected package bsdmainutils.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 39332 files and directories currently installed.)
+Preparing to unpack .../00-bsdmainutils_11.1.2ubuntu1_amd64.deb ...
+Unpacking bsdmainutils (11.1.2ubuntu1) ...
+Selecting previously unselected package groff-base.
+Preparing to unpack .../01-groff-base_1.22.3-10_amd64.deb ...
+Unpacking groff-base (1.22.3-10) ...
+Selecting previously unselected package man-db.
+Preparing to unpack .../02-man-db_2.8.3-2ubuntu0.1_amd64.deb ...
+Unpacking man-db (2.8.3-2ubuntu0.1) ...
+Selecting previously unselected package gettext-base.
+Preparing to unpack .../03-gettext-base_0.19.8.1-6ubuntu0.3_amd64.deb ...
+Unpacking gettext-base (0.19.8.1-6ubuntu0.3) ...
+Selecting previously unselected package time.
+Preparing to unpack .../04-time_1.7-25.1build1_amd64.deb ...
+Unpacking time (1.7-25.1build1) ...
+Selecting previously unselected package libsigsegv2:amd64.
+Preparing to unpack .../05-libsigsegv2_2.12-1_amd64.deb ...
+Unpacking libsigsegv2:amd64 (2.12-1) ...
+Selecting previously unselected package m4.
+Preparing to unpack .../06-m4_1.4.18-1_amd64.deb ...
+Unpacking m4 (1.4.18-1) ...
+Selecting previously unselected package autoconf.
+Preparing to unpack .../07-autoconf_2.69-11_all.deb ...
+Unpacking autoconf (2.69-11) ...
+Selecting previously unselected package automake.
+Preparing to unpack .../08-automake_1%3a1.15.1-3ubuntu2_all.deb ...
+Unpacking automake (1:1.15.1-3ubuntu2) ...
+Selecting previously unselected package autopoint.
+Preparing to unpack .../09-autopoint_0.19.8.1-6ubuntu0.3_all.deb ...
+Unpacking autopoint (0.19.8.1-6ubuntu0.3) ...
+Selecting previously unselected package ccache.
+Preparing to unpack .../10-ccache_3.4.1-1_amd64.deb ...
+Unpacking ccache (3.4.1-1) ...
+Selecting previously unselected package dh-autoreconf.
+Preparing to unpack .../11-dh-autoreconf_17_all.deb ...
+Unpacking dh-autoreconf (17) ...
+Selecting previously unselected package libarchive-zip-perl.
+Preparing to unpack .../12-libarchive-zip-perl_1.60-1ubuntu0.1_all.deb ...
+Unpacking libarchive-zip-perl (1.60-1ubuntu0.1) ...
+Selecting previously unselected package libfile-stripnondeterminism-perl.
+Preparing to unpack .../13-libfile-stripnondeterminism-perl_0.040-1.1~build1_all.deb ...
+Unpacking libfile-stripnondeterminism-perl (0.040-1.1~build1) ...
+Selecting previously unselected package libtimedate-perl.
+Preparing to unpack .../14-libtimedate-perl_2.3000-2_all.deb ...
+Unpacking libtimedate-perl (2.3000-2) ...
+Selecting previously unselected package dh-strip-nondeterminism.
+Preparing to unpack .../15-dh-strip-nondeterminism_0.040-1.1~build1_all.deb ...
+Unpacking dh-strip-nondeterminism (0.040-1.1~build1) ...
+Selecting previously unselected package libcroco3:amd64.
+Preparing to unpack .../16-libcroco3_0.6.12-2_amd64.deb ...
+Unpacking libcroco3:amd64 (0.6.12-2) ...
+Selecting previously unselected package gettext.
+Preparing to unpack .../17-gettext_0.19.8.1-6ubuntu0.3_amd64.deb ...
+Unpacking gettext (0.19.8.1-6ubuntu0.3) ...
+Selecting previously unselected package intltool-debian.
+Preparing to unpack .../18-intltool-debian_0.35.0+20060710.4_all.deb ...
+Unpacking intltool-debian (0.35.0+20060710.4) ...
+Selecting previously unselected package po-debconf.
+Preparing to unpack .../19-po-debconf_1.0.20_all.deb ...
+Unpacking po-debconf (1.0.20) ...
+Selecting previously unselected package debhelper.
+Preparing to unpack .../20-debhelper_11.1.6ubuntu2_all.deb ...
+Unpacking debhelper (11.1.6ubuntu2) ...
+Selecting previously unselected package libarchive-cpio-perl.
+Preparing to unpack .../21-libarchive-cpio-perl_0.10-1_all.deb ...
+Unpacking libarchive-cpio-perl (0.10-1) ...
+Selecting previously unselected package libsys-hostname-long-perl.
+Preparing to unpack .../22-libsys-hostname-long-perl_1.5-1_all.deb ...
+Unpacking libsys-hostname-long-perl (1.5-1) ...
+Selecting previously unselected package libmail-sendmail-perl.
+Preparing to unpack .../23-libmail-sendmail-perl_0.80-1_all.deb ...
+Unpacking libmail-sendmail-perl (0.80-1) ...
+Setting up ccache (3.4.1-1) ...
+Updating symlinks in /usr/lib/ccache ...
+Setting up libarchive-zip-perl (1.60-1ubuntu0.1) ...
+Setting up time (1.7-25.1build1) ...
+Setting up libtimedate-perl (2.3000-2) ...
+Setting up libsigsegv2:amd64 (2.12-1) ...
+Setting up groff-base (1.22.3-10) ...
+Setting up libarchive-cpio-perl (0.10-1) ...
+Setting up gettext-base (0.19.8.1-6ubuntu0.3) ...
+Setting up m4 (1.4.18-1) ...
+Setting up libcroco3:amd64 (0.6.12-2) ...
+Setting up libsys-hostname-long-perl (1.5-1) ...
+Setting up libmail-sendmail-perl (0.80-1) ...
+Setting up bsdmainutils (11.1.2ubuntu1) ...
+update-alternatives: using /usr/bin/bsd-write to provide /usr/bin/write (write) in auto mode
+update-alternatives: warning: skip creation of /usr/share/man/man1/write.1.gz because associated file /usr/share/man/man1/bsd-write.1.gz (of link group write) doesn't exist
+update-alternatives: using /usr/bin/bsd-from to provide /usr/bin/from (from) in auto mode
+update-alternatives: warning: skip creation of /usr/share/man/man1/from.1.gz because associated file /usr/share/man/man1/bsd-from.1.gz (of link group from) doesn't exist
+Setting up autopoint (0.19.8.1-6ubuntu0.3) ...
+Setting up libfile-stripnondeterminism-perl (0.040-1.1~build1) ...
+Setting up gettext (0.19.8.1-6ubuntu0.3) ...
+Setting up autoconf (2.69-11) ...
+Setting up intltool-debian (0.35.0+20060710.4) ...
+Setting up automake (1:1.15.1-3ubuntu2) ...
+update-alternatives: using /usr/bin/automake-1.15 to provide /usr/bin/automake (automake) in auto mode
+update-alternatives: warning: skip creation of /usr/share/man/man1/automake.1.gz because associated file /usr/share/man/man1/automake-1.15.1.gz (of link group automake) doesn't exist
+update-alternatives: warning: skip creation of /usr/share/man/man1/aclocal.1.gz because associated file /usr/share/man/man1/aclocal-1.15.1.gz (of link group automake) doesn't exist
+Setting up man-db (2.8.3-2ubuntu0.1) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (TERM is not set, so the dialog frontend is not usable.)
+debconf: falling back to frontend: Readline
+Building database of manual pages ...
+Setting up po-debconf (1.0.20) ...
+Setting up dh-autoreconf (17) ...
+Setting up debhelper (11.1.6ubuntu2) ...
+Setting up dh-strip-nondeterminism (0.040-1.1~build1) ...
+Processing triggers for libc-bin (2.27-3ubuntu1.4) ...
+Processing triggers for mime-support (3.60ubuntu1) ...
+Removing intermediate container a8e777f16811
+ ---> 372e8a1ba21d
+Step 7/17 : ARG CACHEBUST
+ ---> Running in a49633a62691
+Removing intermediate container a49633a62691
+ ---> 4fed79391577
+Step 8/17 : USER precice
+ ---> Running in 2319a0564116
+Removing intermediate container 2319a0564116
+ ---> efa24a63d25b
+Step 9/17 : WORKDIR /home/precice
+ ---> Running in e9fb72299103
+Removing intermediate container e9fb72299103
+ ---> a86b9dccbfb1
+Step 10/17 : RUN mkdir -p Logs Data/Input Data/Output Data/Exchange
+ ---> Running in c4b52017170d
+Removing intermediate container c4b52017170d
+ ---> d06dc5b14189
+Step 11/17 : RUN git clone --depth 1 --branch v6.0.0 https://github.com/su2code/SU2.git su2-source
+ ---> Running in 479659bb8cf4
+[91mCloning into 'su2-source'...
+[0m[91mNote: checking out '88c4ead3074e7582b36af34cfda0a8a17d17e3aa'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by performing another checkout.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -b with the checkout command again. Example:
+
+  git checkout -b <new-branch-name>
+
+[0mRemoving intermediate container 479659bb8cf4
+ ---> 3329b9b4b419
+Step 12/17 : ENV SU2_HOME="/home/precice/su2-source"     SU2_BIN="/home/precice/su2-bin"     SU2_RUN="/home/precice/su2-bin/bin"     PATH="/home/precice/su2-bin/bin:${PATH}"     PYTHONPATH="/home/precice/su2-bin/bin:${PYTHONPATH}"
+ ---> Running in 352f900c29f2
+Removing intermediate container 352f900c29f2
+ ---> c7237eb8ef77
+Step 13/17 : ARG adapter_branch=develop
+ ---> Running in 52634a50c9eb
+Removing intermediate container 52634a50c9eb
+ ---> 743b05489a28
+Step 14/17 : RUN cd /home/precice &&     git clone --depth 1 --branch $adapter_branch https://github.com/precice/su2-adapter.git && cd su2-adapter &&      ./su2AdapterInstall
+ ---> Running in da8c79f5525e
+[91mCloning into 'su2-adapter'...
+[0m
+Checking whether the necessary environment variables are set...
+[91m./su2AdapterInstall: line 15: /home/precice/su2-source: Is a directory
+[0mNecessary environment variables are set.
+
+Checking whether adapter and SU2 version are compatible... yes.
+
+Checking whether the necessary tools are available... yes.
+
+Replacing original SU2 files with preCICE-adapter conforming files... done.
+
+Adding preCICE adapter files... done.
+
+Adding additional files... done.
+
+Replacing original configure and build related files... done.
+
+Autoreconfiguring due to the changed configure and build related files... done.
+
+
+Please navigate to the SU2 home directory /home/precice/su2-source to configure and build SU2 as described in its installation description.
+Please enable MPI when configuring SU2.
+
+A sample SU2 configure procedure might look like: ./configure --prefix=$SU2_HOME --enable-mpi
+A sample SU2 make procedure might look like: make -j 4
+
+Adapter installation completed. Make sure to follow the instructions above to build the adapted SU2.
+
+Removing intermediate container da8c79f5525e
+ ---> 40224311c9dd
+Step 15/17 : WORKDIR /home/precice/su2-source
+ ---> Running in 6a04e4eddb00
+Removing intermediate container 6a04e4eddb00
+ ---> c14eab9e183b
+Step 16/17 : RUN ./configure --disable-metis --disable-parmetis --disable-cgns --disable-DOT     --disable-MSH --disable-DEF --disable-SOL --disable-GEO     --prefix=${SU2_BIN} CXXFLAGS="-std=c++11" &&     make -j $(nproc) install && find . -type f -name "*.o" -exec rm {} \;
+ ---> Running in 1481f0a67e73
+checking build system type... x86_64-unknown-linux-gnu
+checking host system type... x86_64-unknown-linux-gnu
+checking target system type... x86_64-unknown-linux-gnu
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+[91m/home/precice/su2-source/missing: Unknown '--is-lightweight' option
+Try '/home/precice/su2-source/missing --help' for more information
+[0mchecking for a thread-safe mkdir -p... [91mconfigure: WARNING: 'missing' script is too old or missing
+[0m/bin/mkdir -p
+checking for gawk... no
+checking for mawk... mawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking whether make supports nested variables... (cached) yes
+checking for style of include used by make... GNU
+>>> MPI support disabled by default <<<
+checking whether the C++ compiler works... yes
+checking for C++ compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking dependency style of g++... gcc3
+checking for gcc... gcc
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking whether gcc understands -c and -o together... yes
+checking dependency style of gcc... gcc3
+checking for ranlib... ranlib
+checking whether we are using the GNU C++ compiler... (cached) yes
+checking whether g++ accepts -g... (cached) yes
+checking dependency style of g++... (cached) gcc3
+checking whether g++ supports C++11 features by default... yes
+checking for python... /usr/bin/python
+checking for python version... 2.7
+checking for python platform... linux2
+checking for python script directory... ${prefix}/lib/python2.7/site-packages
+checking for python extension module directory... ${exec_prefix}/lib/python2.7/site-packages
+checking for python2.7-config... /usr/bin/python2.7-config
+checking python include flags... -I/usr/include/python2.7 -I/usr/include/x86_64-linux-gnu/python2.7
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for preCICE... yes
+checking how to run the C preprocessor... gcc -E
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking size of short int... 2
+checking size of int... 4
+checking size of unsigned int... 4
+checking size of long int... 8
+checking size of float... 4
+checking size of double... 8
+checking size of void *... 8
+checking X11/Intrinsic.h usability... no
+checking X11/Intrinsic.h presence... no
+checking for X11/Intrinsic.h... no
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating externals/tecio/Makefile
+config.status: creating externals/metis/Makefile
+config.status: creating externals/parmetis/Makefile
+config.status: creating externals/cgns/Makefile
+config.status: creating Makefile
+config.status: creating externals/Makefile
+config.status: creating Common/lib/Makefile
+config.status: creating SU2_CFD/obj/Makefile
+config.status: creating SU2_DOT/obj/Makefile
+config.status: creating SU2_MSH/obj/Makefile
+config.status: creating SU2_DEF/obj/Makefile
+config.status: creating SU2_SOL/obj/Makefile
+config.status: creating SU2_GEO/obj/Makefile
+config.status: creating SU2_PY/Makefile
+config.status: creating SU2_PY/pySU2/Makefile
+config.status: executing depfiles commands
+
+
+-------------------------------------------------------------------------
+|    ___ _   _ ___                                                      |
+|   / __| | | |_  )   Release 6.0.0 'Falcon'                            |
+|   \__ \ |_| |/ /                                                      |
+|   |___/\___//___|   Suite                                             |
+|                                                                       |
+-------------------------------------------------------------------------
+| The current SU2 release has been coordinated by the                   |
+| SU2 International Developers Society <www.su2devsociety.org>          |
+| with selected contributions from the open-source community.           |
+-------------------------------------------------------------------------
+| The main research teams contributing to the current release are:      |
+| - Prof. Juan J. Alonso's group at Stanford University.                |
+| - Prof. Piero Colonna's group at Delft University of Technology.      |
+| - Prof. Nicolas R. Gauger's group at Kaiserslautern U. of Technology. |
+| - Prof. Alberto Guardone's group at Polytechnic University of Milan.  |
+| - Prof. Rafael Palacios' group at Imperial College London.            |
+| - Prof. Vincent Terrapon's group at the University of Liege.          |
+| - Prof. Edwin van der Weide's group at the University of Twente.      |
+| - Lab. of New Concepts in Aeronautics at Tech. Inst. of Aeronautics.  |
+-------------------------------------------------------------------------
+| Copyright 2012-2018, Francisco D. Palacios, Thomas D. Economon,       |
+|                      Tim Albring, and the SU2 contributors.           |
+|                                                                       |
+| SU2 is free software; you can redistribute it and/or                  |
+| modify it under the terms of the GNU Lesser General Public            |
+| License as published by the Free Software Foundation; either          |
+| version 2.1 of the License, or (at your option) any later version.    |
+|                                                                       |
+| SU2 is distributed in the hope that it will be useful,                |
+| but WITHOUT ANY WARRANTY; without even the implied warranty of        |
+| MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU      |
+| Lesser General Public License for more details.                       |
+|                                                                       |
+| You should have received a copy of the GNU Lesser General Public      |
+| License along with SU2. If not, see <http://www.gnu.org/licenses/>.   |
+-------------------------------------------------------------------------
+
+Build Configuration Summary:
+
+    Source code location: /home/precice/su2-source
+    Install location: 	  /home/precice/su2-bin
+    Version:              6.0.0
+    C++ Compiler:         g++
+    C Compiler:           gcc
+    Preprocessor flags:   
+    Compiler flags:       -std=c++11
+    Linker flags:         
+    MPI support:          no
+    Metis support:        no
+    Parmetis support:     no
+    TecIO support:        no
+    CGNS support:         no
+    HDF5 support:         no
+    SZIP support:         no
+    ZLIB support:         no
+    Mutation++ support:   no
+    Jsoncpp support: 	  no
+    LAPACK support:       no
+    Datatype support:
+        double              yes
+        complex             no
+        codi_reverse        no
+        codi_forward        no
+
+    External includes:    
+    External libs:        
+
+    Build SU2_CFD:        yes
+    Build SU2_DOT:        no
+    Build SU2_MSH:        no
+    Build SU2_DEF:        no
+    Build SU2_SOL:        no
+    Build SU2_GEO:        no
+    Build Py Wrapper:     no
+
+Please be sure to add the $SU2_HOME and $SU2_RUN environment variables,
+and update your $PATH (and $PYTHONPATH if applicable) with $SU2_RUN.
+
+Based on the input to this configuration, add these lines to your .bashrc file:
+
+export SU2_RUN="/home/precice/su2-bin/bin"
+export SU2_HOME="/home/precice/su2-source"
+export PATH=$PATH:$SU2_RUN
+export PYTHONPATH=$PYTHONPATH:$SU2_RUN
+
+
+Making install in externals
+make[1]: Entering directory '/home/precice/su2-source/externals'
+make[2]: Entering directory '/home/precice/su2-source/externals'
+make[3]: Entering directory '/home/precice/su2-source/externals'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/precice/su2-source/externals'
+make[2]: Leaving directory '/home/precice/su2-source/externals'
+make[1]: Leaving directory '/home/precice/su2-source/externals'
+Making install in Common/lib
+make[1]: Entering directory '/home/precice/su2-source/Common/lib'
+  CXX      ../src/libSU2_a-config_structure.o
+  CXX      ../src/libSU2_a-dual_grid_structure.o
+  CXX      ../src/libSU2_a-geometry_structure.o
+  CXX      ../src/libSU2_a-grid_adaptation_structure.o
+  CXX      ../src/libSU2_a-grid_movement_structure.o
+  CXX      ../src/libSU2_a-linear_solvers_structure.o
+  CXX      ../src/libSU2_a-primal_grid_structure.o
+  CXX      ../src/libSU2_a-vector_structure.o
+  CXX      ../src/libSU2_a-matrix_structure.o
+  CXX      ../src/libSU2_a-mpi_structure.o
+  CXX      ../src/libSU2_a-linear_solvers_structure_b.o
+  CXX      ../src/libSU2_a-ad_structure.o
+  CXX      ../src/libSU2_a-gauss_structure.o
+  CXX      ../src/libSU2_a-element_structure.o
+  CXX      ../src/libSU2_a-element_linear.o
+  CXX      ../src/libSU2_a-interpolation_structure.o
+  CXX      ../src/libSU2_a-adt_structure.o
+  AR       libSU2.a
+[91mar: `u' modifier ignored since `D' is the default (see `U')
+[0mmake[2]: Entering directory '/home/precice/su2-source/Common/lib'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/home/precice/su2-source/Common/lib'
+make[1]: Leaving directory '/home/precice/su2-source/Common/lib'
+Making install in SU2_PY
+make[1]: Entering directory '/home/precice/su2-source/SU2_PY'
+make[2]: Entering directory '/home/precice/su2-source/SU2_PY'
+ /bin/mkdir -p '/home/precice/su2-bin/bin'
+ /bin/mkdir -p '/home/precice/su2-bin/bin'
+ /usr/bin/install -c continuous_adjoint.py finite_differences.py mesh_deformation.py parallel_computation.py parallel_computation_fsi.py package_tests.py patient_designspace.py shape_optimization.py merge_solution.py set_ffd_design_var.py compute_polar.py compute_multipoint.py discrete_adjoint.py direct_differentiation.py fsi_computation.py SU2_CFD.py '/home/precice/su2-bin/bin'
+ /bin/mkdir -p '/home/precice/su2-bin/bin/SU2/eval'
+ /usr/bin/install -c -m 644  SU2/eval/design.py SU2/eval/functions.py SU2/eval/gradients.py SU2/eval/__init__.py '/home/precice/su2-bin/bin/SU2/eval'
+ /bin/mkdir -p '/home/precice/su2-bin/bin/SU2/run'
+ /usr/bin/install -c -m 644  SU2/run/adaptation.py SU2/run/adjoint.py SU2/run/deform.py SU2/run/direct.py SU2/run/interface.py SU2/run/merge.py SU2/run/geometry.py SU2/run/projection.py SU2/run/__init__.py '/home/precice/su2-bin/bin/SU2/run'
+ /bin/mkdir -p '/home/precice/su2-bin/bin/SU2/io'
+ /usr/bin/install -c -m 644  SU2/io/config.py SU2/io/config_options.py SU2/io/data.py SU2/io/filelock.py SU2/io/redirect.py SU2/io/state.py SU2/io/tools.py SU2/io/__init__.py '/home/precice/su2-bin/bin/SU2/io'
+ /bin/mkdir -p '/home/precice/su2-bin/bin/FSI'
+ /usr/bin/install -c -m 644  FSI/__init__.py FSI/FSIInterface.py FSI/PitchPlungeAirfoilStructuralTester.py '/home/precice/su2-bin/bin/FSI'
+ /bin/mkdir -p '/home/precice/su2-bin/bin/SU2'
+ /usr/bin/install -c -m 644  SU2/__init__.py '/home/precice/su2-bin/bin/SU2'
+ /bin/mkdir -p '/home/precice/su2-bin/bin/SU2/opt'
+ /usr/bin/install -c -m 644  SU2/opt/project.py SU2/opt/scipy_tools.py SU2/opt/server.py SU2/opt/__init__.py '/home/precice/su2-bin/bin/SU2/opt'
+ /bin/mkdir -p '/home/precice/su2-bin/bin/FSI/util'
+ /usr/bin/install -c -m 644  FSI/util/__init__.py FSI/util/switch.py '/home/precice/su2-bin/bin/FSI/util'
+ /bin/mkdir -p '/home/precice/su2-bin/bin/SU2/mesh'
+ /usr/bin/install -c -m 644  SU2/mesh/adapt.py SU2/mesh/tools.py SU2/mesh/__init__.py '/home/precice/su2-bin/bin/SU2/mesh'
+ /bin/mkdir -p '/home/precice/su2-bin/bin/FSI/io'
+ /usr/bin/install -c -m 644  FSI/io/__init__.py FSI/io/FSI_config.py '/home/precice/su2-bin/bin/FSI/io'
+ /bin/mkdir -p '/home/precice/su2-bin/bin/SU2/util'
+ /usr/bin/install -c -m 644  SU2/util/bunch.py SU2/util/filter_adjoint.py SU2/util/lhc_unif.py SU2/util/misc.py SU2/util/mp_eval.py SU2/util/ordered_bunch.py SU2/util/ordered_dict.py SU2/util/plot.py SU2/util/polarSweepLib.py SU2/util/pyCppTap.py SU2/util/switch.py SU2/util/which.py SU2/util/__init__.py '/home/precice/su2-bin/bin/SU2/util'
+make[2]: Leaving directory '/home/precice/su2-source/SU2_PY'
+make[1]: Leaving directory '/home/precice/su2-source/SU2_PY'
+Making install in SU2_CFD/obj
+make[1]: Entering directory '/home/precice/su2-source/SU2_CFD/obj'
+  CXX      ../src/libSU2Core_a-definition_structure.o
+  CXX      ../src/libSU2Core_a-fluid_model.o
+  CXX      ../src/libSU2Core_a-fluid_model_pig.o
+  CXX      ../src/libSU2Core_a-fluid_model_pvdw.o
+  CXX      ../src/libSU2Core_a-fluid_model_ppr.o
+  CXX      ../src/libSU2Core_a-integration_structure.o
+  CXX      ../src/libSU2Core_a-integration_time.o
+  CXX      ../src/libSU2Core_a-driver_structure.o
+  CXX      ../src/libSU2Core_a-iteration_structure.o
+  CXX      ../src/libSU2Core_a-numerics_adjoint_mean.o
+  CXX      ../src/libSU2Core_a-numerics_adjoint_mean_inc.o
+  CXX      ../src/libSU2Core_a-numerics_adjoint_turbulent.o
+  CXX      ../src/libSU2Core_a-numerics_direct_poisson.o
+  CXX      ../src/libSU2Core_a-numerics_direct_heat.o
+  CXX      ../src/libSU2Core_a-numerics_direct_mean.o
+  CXX      ../src/libSU2Core_a-numerics_direct_mean_inc.o
+  CXX      ../src/libSU2Core_a-numerics_direct_transition.o
+  CXX      ../src/libSU2Core_a-numerics_direct_turbulent.o
+  CXX      ../src/libSU2Core_a-numerics_direct_wave.o
+  CXX      ../src/libSU2Core_a-numerics_direct_elasticity_nonlinear.o
+  CXX      ../src/libSU2Core_a-numerics_direct_elasticity_linear.o
+  CXX      ../src/libSU2Core_a-numerics_direct_elasticity.o
+  CXX      ../src/libSU2Core_a-numerics_structure.o
+  CXX      ../src/libSU2Core_a-numerics_template.o
+  CXX      ../src/libSU2Core_a-output_cgns.o
+  CXX      ../src/libSU2Core_a-output_structure.o
+  CXX      ../src/libSU2Core_a-output_physics.o
+  CXX      ../src/libSU2Core_a-output_tecplot.o
+  CXX      ../src/libSU2Core_a-output_fieldview.o
+  CXX      ../src/libSU2Core_a-output_su2.o
+  CXX      ../src/libSU2Core_a-output_paraview.o
+  CXX      ../src/libSU2Core_a-python_wrapper_structure.o
+  CXX      ../src/libSU2Core_a-solver_adjoint_mean.o
+  CXX      ../src/libSU2Core_a-solver_adjoint_mean_inc.o
+  CXX      ../src/libSU2Core_a-solver_adjoint_turbulent.o
+  CXX      ../src/libSU2Core_a-solver_adjoint_discrete.o
+  CXX      ../src/libSU2Core_a-solver_adjoint_elasticity.o
+  CXX      ../src/libSU2Core_a-solver_direct_poisson.o
+  CXX      ../src/libSU2Core_a-solver_direct_heat.o
+  CXX      ../src/libSU2Core_a-solver_direct_mean.o
+  CXX      ../src/libSU2Core_a-solver_direct_mean_inc.o
+  CXX      ../src/libSU2Core_a-solver_direct_transition.o
+  CXX      ../src/libSU2Core_a-solver_direct_turbulent.o
+  CXX      ../src/libSU2Core_a-solver_direct_wave.o
+  CXX      ../src/libSU2Core_a-solver_direct_elasticity.o
+  CXX      ../src/libSU2Core_a-solver_structure.o
+  CXX      ../src/libSU2Core_a-solver_template.o
+  CXX      ../src/libSU2Core_a-transfer_physics.o
+  CXX      ../src/libSU2Core_a-transfer_structure.o
+  CXX      ../src/libSU2Core_a-transport_model.o
+  CXX      ../src/libSU2Core_a-variable_adjoint_mean.o
+  CXX      ../src/libSU2Core_a-variable_adjoint_mean_inc.o
+  CXX      ../src/libSU2Core_a-variable_adjoint_turbulent.o
+  CXX      ../src/libSU2Core_a-variable_adjoint_discrete.o
+  CXX      ../src/libSU2Core_a-variable_adjoint_elasticity.o
+  CXX      ../src/libSU2Core_a-variable_direct_poisson.o
+  CXX      ../src/libSU2Core_a-variable_direct_heat.o
+  CXX      ../src/libSU2Core_a-variable_direct_mean.o
+  CXX      ../src/libSU2Core_a-variable_direct_mean_inc.o
+  CXX      ../src/libSU2Core_a-variable_direct_transition.o
+  CXX      ../src/libSU2Core_a-variable_direct_turbulent.o
+  CXX      ../src/libSU2Core_a-variable_direct_wave.o
+  CXX      ../src/libSU2Core_a-variable_direct_elasticity.o
+  CXX      ../src/libSU2Core_a-variable_structure.o
+  CXX      ../src/libSU2Core_a-variable_template.o
+  CXX      ../src/libSU2Core_a-precice.o
+  CXX      ../src/___bin_SU2_CFD-SU2_CFD.o
+  AR       libSU2Core.a
+[91mar: `u' modifier ignored since `D' is the default (see `U')
+[0m  CXXLD    ../bin/SU2_CFD
+make[2]: Entering directory '/home/precice/su2-source/SU2_CFD/obj'
+make[2]: Nothing to be done for 'install-data-am'.
+ /bin/mkdir -p '/home/precice/su2-bin/bin'
+  /usr/bin/install -c ../bin/SU2_CFD '/home/precice/su2-bin/bin'
+make[2]: Leaving directory '/home/precice/su2-source/SU2_CFD/obj'
+make[1]: Leaving directory '/home/precice/su2-source/SU2_CFD/obj'
+make[1]: Entering directory '/home/precice/su2-source'
+make[2]: Entering directory '/home/precice/su2-source'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/home/precice/su2-source'
+make[1]: Leaving directory '/home/precice/su2-source'
+Removing intermediate container 1481f0a67e73
+ ---> 903649fcc835
+Step 17/17 : WORKDIR /home/precice/su2-bin/bin/
+ ---> Running in a8c71b4c89e7
+Removing intermediate container a8c71b4c89e7
+ ---> 310e6b4d6cf1
+Successfully built 310e6b4d6cf1
+Successfully tagged precice/su2-adapter-ubuntu1804.package-develop:latest
+Building su2-adapter image with the following features: {'os': 'ubuntu1804', 'installation': 'package'}
+EXECUTING: echo $DOCKER_PASSWORD | docker login -u $DOCKER_USERNAME --password-stdin && docker build --network=host --file adapters/Dockerfile.su2-adapter --tag precice/su2-adapter-ubuntu1804.package-develop:latest --build-arg branch=develop --build-arg adapter_branch=develop --build-arg from=precice/precice-ubuntu1804.package-develop .
+travis_time:end:07ca9cee:start=1611332063664406368,finish=1611332631280456926,duration=567616050558,event=script[0K[32;1mThe command "python build_adapter.py --dockerfile adapters/Dockerfile.su2-adapter --operating-system ubuntu1804 --precice-installation package --docker-username $DOCKER_USERNAME" exited with 0.[0m
+travis_time:start:0c6c4c3f[0K$ python push_adapter.py --dockerfile adapters/Dockerfile.su2-adapter --operating-system ubuntu1804 --precice-installation package --docker-username $DOCKER_USERNAME
+WARNING! Your password will be stored unencrypted in /home/travis/.docker/config.json.
+Configure a credential helper to remove this warning. See
+https://docs.docker.com/engine/reference/commandline/login/#credentials-store
+
+Login Succeeded
+The push refers to repository [docker.io/precice/su2-adapter-ubuntu1804.package-develop]
+ac687625556c: Preparing
+7d36a902cc4b: Preparing
+3d2a75b295de: Preparing
+728098b9eed4: Preparing
+dd1a18afae5b: Preparing
+d969a0b6d28e: Preparing
+16e91190eb0d: Preparing
+f35eee8e8b2e: Preparing
+4a6a6703ecf5: Preparing
+d21b451c5624: Preparing
+85118c78ef56: Preparing
+67102bc0e8d0: Preparing
+e6dd13f53afe: Preparing
+d85d5988e4df: Preparing
+9f10818f1f96: Preparing
+27502392e386: Preparing
+c95d2191d777: Preparing
+d969a0b6d28e: Waiting
+16e91190eb0d: Waiting
+f35eee8e8b2e: Waiting
+4a6a6703ecf5: Waiting
+d21b451c5624: Waiting
+85118c78ef56: Waiting
+67102bc0e8d0: Waiting
+e6dd13f53afe: Waiting
+d85d5988e4df: Waiting
+9f10818f1f96: Waiting
+27502392e386: Waiting
+c95d2191d777: Waiting
+728098b9eed4: Pushed
+d969a0b6d28e: Mounted from precice/precice-ubuntu1804.package-develop
+16e91190eb0d: Mounted from precice/precice-ubuntu1804.package-develop
+7d36a902cc4b: Pushed
+f35eee8e8b2e: Mounted from precice/precice-ubuntu1804.package-develop
+4a6a6703ecf5: Mounted from precice/precice-ubuntu1804.package-develop
+d21b451c5624: Mounted from precice/precice-ubuntu1804.package-develop
+67102bc0e8d0: Mounted from precice/precice-ubuntu1804.package-develop
+85118c78ef56: Mounted from precice/precice-ubuntu1804.package-develop
+3d2a75b295de: Pushed
+e6dd13f53afe: Mounted from precice/precice-ubuntu1804.package-develop
+9f10818f1f96: Layer already exists
+27502392e386: Layer already exists
+dd1a18afae5b: Pushed
+c95d2191d777: Layer already exists
+d85d5988e4df: Mounted from precice/precice-ubuntu1804.package-develop
+ac687625556c: Pushed
+latest: digest: sha256:da8e675acaebefc74d30eed4d3959b19247c6e15b773a835011ec3bc411cb434 size: 3895
+EXECUTING: echo $DOCKER_PASSWORD | docker login -u $DOCKER_USERNAME --password-stdin && docker push precice/su2-adapter-ubuntu1804.package-develop:latest
+travis_time:end:0c6c4c3f:start=1611332631287843113,finish=1611332657428769132,duration=26140926019,event=script[0K[32;1mThe command "python push_adapter.py --dockerfile adapters/Dockerfile.su2-adapter --operating-system ubuntu1804 --precice-installation package --docker-username $DOCKER_USERNAME" exited with 0.[0m
+travis_time:start:0f9463af[0K$ python push.py
+Cloning into 'precice_st_output'...
+Updating files:  15% (6741/42228)Updating files:  16% (6757/42228)Updating files:  17% (7179/42228)Updating files:  18% (7602/42228)Updating files:  19% (8024/42228)Updating files:  20% (8446/42228)Updating files:  21% (8868/42228)Updating files:  22% (9291/42228)Updating files:  23% (9713/42228)Updating files:  24% (10135/42228)Updating files:  25% (10557/42228)Updating files:  26% (10980/42228)Updating files:  27% (11402/42228)Updating files:  28% (11824/42228)Updating files:  29% (12247/42228)Updating files:  30% (12669/42228)Updating files:  31% (13091/42228)Updating files:  32% (13513/42228)Updating files:  32% (13664/42228)Updating files:  33% (13936/42228)Updating files:  34% (14358/42228)Updating files:  35% (14780/42228)Updating files:  36% (15203/42228)Updating files:  37% (15625/42228)Updating files:  38% (16047/42228)Updating files:  39% (16469/42228)Updating files:  40% (16892/42228)Updating files:  41% (17314/42228)Updating files:  42% (17736/42228)Updating files:  43% (18159/42228)Updating files:  44% (18581/42228)Updating files:  44% (18946/42228)Updating files:  45% (19003/42228)Updating files:  46% (19425/42228)Updating files:  47% (19848/42228)Updating files:  48% (20270/42228)Updating files:  49% (20692/42228)Updating files:  50% (21114/42228)Updating files:  51% (21537/42228)Updating files:  52% (21959/42228)Updating files:  53% (22381/42228)Updating files:  54% (22804/42228)Updating files:  55% (23226/42228)Updating files:  56% (23648/42228)Updating files:  56% (23909/42228)Updating files:  57% (24070/42228)Updating files:  58% (24493/42228)Updating files:  59% (24915/42228)Updating files:  60% (25337/42228)Updating files:  61% (25760/42228)Updating files:  62% (26182/42228)Updating files:  63% (26604/42228)Updating files:  64% (27026/42228)Updating files:  65% (27449/42228)Updating files:  66% (27871/42228)Updating files:  67% (28293/42228)Updating files:  67% (28631/42228)Updating files:  68% (28716/42228)Updating files:  69% (29138/42228)Updating files:  69% (29284/42228)Updating files:  70% (29560/42228)Updating files:  71% (29982/42228)Updating files:  71% (29985/42228)Updating files:  72% (30405/42228)Updating files:  73% (30827/42228)Updating files:  74% (31249/42228)Updating files:  75% (31671/42228)Updating files:  76% (32094/42228)Updating files:  77% (32516/42228)Updating files:  78% (32938/42228)Updating files:  79% (33361/42228)Updating files:  79% (33383/42228)Updating files:  80% (33783/42228)Updating files:  81% (34205/42228)Updating files:  81% (34303/42228)Updating files:  81% (34570/42228)Updating files:  82% (34627/42228)Updating files:  82% (34765/42228)Updating files:  82% (34879/42228)Updating files:  82% (35009/42228)Updating files:  83% (35050/42228)Updating files:  83% (35082/42228)Updating files:  83% (35168/42228)Updating files:  83% (35237/42228)Updating files:  83% (35273/42228)Updating files:  83% (35342/42228)Updating files:  83% (35385/42228)Updating files:  83% (35456/42228)Updating files:  83% (35457/42228)Updating files:  84% (35472/42228)Updating files:  84% (35543/42228)Updating files:  84% (35660/42228)Updating files:  84% (35744/42228)Updating files:  84% (35785/42228)Updating files:  84% (35835/42228)Updating files:  85% (35894/42228)Updating files:  85% (35963/42228)Updating files:  85% (36044/42228)Updating files:  85% (36114/42228)Updating files:  85% (36150/42228)Updating files:  85% (36221/42228)Updating files:  85% (36312/42228)Updating files:  86% (36317/42228)Updating files:  86% (36393/42228)Updating files:  86% (36477/42228)Updating files:  86% (36554/42228)Updating files:  86% (36585/42228)Updating files:  86% (36722/42228)Updating files:  87% (36739/42228)Updating files:  87% (36816/42228)Updating files:  87% (36852/42228)Updating files:  87% (36938/42228)Updating files:  87% (36941/42228)Updating files:  87% (37014/42228)Updating files:  87% (37083/42228)Updating files:  88% (37161/42228)Updating files:  88% (37182/42228)Updating files:  88% (37253/42228)Updating files:  88% (37310/42228)Updating files:  88% (37452/42228)Updating files:  88% (37548/42228)Updating files:  89% (37583/42228)Updating files:  89% (37634/42228)Updating files:  89% (37721/42228)Updating files:  89% (37815/42228)Updating files:  89% (37895/42228)Updating files:  89% (37976/42228)Updating files:  90% (38006/42228)Updating files:  90% (38060/42228)Updating files:  91% (38428/42228)Updating files:  92% (38850/42228)Updating files:  92% (39220/42228)Updating files:  92% (39222/42228)Updating files:  93% (39273/42228)Updating files:  93% (39328/42228)Updating files:  93% (39495/42228)Updating files:  93% (39594/42228)Updating files:  94% (39695/42228)Updating files:  94% (39698/42228)Updating files:  94% (39716/42228)Updating files:  94% (39875/42228)Updating files:  94% (39959/42228)Updating files:  94% (40040/42228)Updating files:  95% (40117/42228)Updating files:  95% (40128/42228)Updating files:  95% (40218/42228)Updating files:  95% (40314/42228)Updating files:  95% (40400/42228)Updating files:  95% (40480/42228)Updating files:  96% (40539/42228)Updating files:  96% (40566/42228)Updating files:  96% (40653/42228)Updating files:  96% (40736/42228)Updating files:  96% (40833/42228)Updating files:  96% (40932/42228)Updating files:  97% (40962/42228)Updating files:  97% (41042/42228)Updating files:  97% (41111/42228)Updating files:  97% (41274/42228)Updating files:  97% (41357/42228)Updating files:  98% (41384/42228)Updating files:  98% (41456/42228)Updating files:  98% (41532/42228)Updating files:  98% (41572/42228)Updating files:  98% (41696/42228)Updating files:  98% (41746/42228)Updating files:  99% (41806/42228)Updating files:  99% (41831/42228)Updating files:  99% (41906/42228)Updating files:  99% (41929/42228)Updating files:  99% (42083/42228)Updating files:  99% (42179/42228)Updating files: 100% (42228/42228)Updating files: 100% (42228/42228), done.
