@@ -1,0 +1,857 @@
+travis_fold:start:worker_info[0K[33;1mWorker information[0m
+hostname: 0c4c73cb-9f25-4631-9cba-96438e447abe@1.worker-com-oss-bb6d69d68-289wh.gce-production-3
+version: v6.2.21 https://github.com/travis-ci/worker/tree/cd59585215f5a19c00baad33031b8ed10144ad72
+instance: travis-job-b9f5623b-5c74-41fd-863a-3bf4bdf4c718 travis-ci-ubuntu-1804-1609168422-6c7eba12 (via amqp)
+startup: 5.925283548s
+travis_fold:end:worker_info[0Ktravis_time:start:00944c10[0Ktravis_time:end:00944c10:start=1611851512631388034,finish=1611851512857803857,duration=226415823,event=no_world_writable_dirs[0Ktravis_time:start:0e421941[0Ktravis_time:end:0e421941:start=1611851512861641097,finish=1611851512865737894,duration=4096797,event=setup_filter[0Ktravis_time:start:07475e03[0Ktravis_time:end:07475e03:start=1611851512874153201,finish=1611851512884470305,duration=10317104,event=agent[0Ktravis_time:start:17951088[0Ktravis_time:end:17951088:start=1611851512888253782,finish=1611851512890895983,duration=2642201,event=check_unsupported[0Ktravis_time:start:0944a20a[0Ktravis_fold:start:system_info[0K[33;1mBuild system information[0m
+Build language: python
+Build group: stable
+Build dist: bionic
+Build id: 215096651
+Job id: 477830163
+Runtime kernel version: 5.4.0-1032-gcp
+travis-build version: 091d532a
+[34m[1mBuild image provisioning date and time[0m
+Mon Dec 28 15:53:02 UTC 2020
+[34m[1mOperating System Details[0m
+Distributor ID:	Ubuntu
+Description:	Ubuntu 18.04.5 LTS
+Release:	18.04
+Codename:	bionic
+[34m[1mSystemd Version[0m
+systemd 237
+[34m[1mCookbooks Version[0m
+10a7b34 https://github.com/travis-ci/travis-cookbooks/tree/10a7b34
+[34m[1mgit version[0m
+git version 2.29.2
+[34m[1mbash version[0m
+GNU bash, version 4.4.20(1)-release (x86_64-pc-linux-gnu)
+[34m[1mgcc version[0m
+gcc (Ubuntu 7.5.0-3ubuntu1~18.04) 7.5.0
+[34m[1mdocker version[0m
+Client:
+ Version:           18.06.0-ce
+ API version:       1.38
+ Go version:        go1.10.3
+ Git commit:        0ffa825
+ Built:             Wed Jul 18 19:09:54 2018
+ OS/Arch:           linux/amd64
+ Experimental:      false
+
+Server:
+ Engine:
+  Version:          18.06.0-ce
+  API version:      1.38 (minimum version 1.12)
+  Go version:       go1.10.3
+  Git commit:       0ffa825
+  Built:            Wed Jul 18 19:07:56 2018
+  OS/Arch:          linux/amd64
+  Experimental:     false
+[34m[1mclang version[0m
+clang version 7.0.0 (tags/RELEASE_700/final)
+[34m[1mjq version[0m
+jq-1.5
+[34m[1mbats version[0m
+Bats 0.4.0
+[34m[1mshellcheck version[0m
+0.7.0
+[34m[1mshfmt version[0m
+v3.2.1
+[34m[1mccache version[0m
+3.4.1
+[34m[1mcmake version[0m
+cmake version 3.12.4
+[34m[1mheroku version[0m
+heroku/7.47.6 linux-x64 node-v12.16.2
+[34m[1mimagemagick version[0m
+Version: ImageMagick 6.9.7-4 Q16 x86_64 20170114 http://www.imagemagick.org
+[34m[1mmd5deep version[0m
+4.4
+[34m[1mmercurial version[0m
+version 4.8
+[34m[1mmysql version[0m
+mysql  Ver 14.14 Distrib 5.7.32, for Linux (x86_64) using  EditLine wrapper
+[34m[1mopenssl version[0m
+OpenSSL 1.1.1  11 Sep 2018
+[34m[1mpacker version[0m
+1.3.3
+[34m[1mpostgresql client version[0m
+psql (PostgreSQL) 11.10 (Ubuntu 11.10-1.pgdg18.04+1)
+[34m[1mragel version[0m
+Ragel State Machine Compiler version 6.10 March 2017
+[34m[1msudo version[0m
+1.8.21p2
+[34m[1mgzip version[0m
+gzip 1.6
+[34m[1mzip version[0m
+Zip 3.0
+[34m[1mvim version[0m
+VIM - Vi IMproved 8.0 (2016 Sep 12, compiled Oct 13 2020 15:49:09)
+[34m[1miptables version[0m
+iptables v1.6.1
+[34m[1mcurl version[0m
+curl 7.58.0 (x86_64-pc-linux-gnu) libcurl/7.58.0 OpenSSL/1.1.1 zlib/1.2.11 libidn2/2.0.4 libpsl/0.19.1 (+libidn2/2.0.4) nghttp2/1.30.0 librtmp/2.3
+[34m[1mwget version[0m
+GNU Wget 1.19.4 built on linux-gnu.
+[34m[1mrsync version[0m
+rsync  version 3.1.2  protocol version 31
+[34m[1mgimme version[0m
+v1.5.4
+[34m[1mnvm version[0m
+0.37.2
+[34m[1mperlbrew version[0m
+/home/travis/perl5/perlbrew/bin/perlbrew  - App::perlbrew/0.88
+[34m[1mphpenv version[0m
+rbenv 1.1.2-40-g62d7798
+[34m[1mrvm version[0m
+rvm 1.29.10 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
+[34m[1mdefault ruby version[0m
+ruby 2.6.5p114 (2019-10-01 revision 67812) [x86_64-linux]
+[34m[1mElasticSearch version[0m
+5.5.0
+[34m[1mInstalled Firefox version[0m
+firefox 63.0.1
+[34m[1mMongoDB version[0m
+MongoDB 4.0.22
+[34m[1mPhantomJS version[0m
+2.1.1
+[34m[1mPre-installed PostgreSQL versions[0m
+9.3.25
+9.4.26
+9.5.24
+9.6.20
+[34m[1mRedis version[0m
+redis-server 6.0.6
+[34m[1mPre-installed Go versions[0m
+1.11.1
+[34m[1mant version[0m
+Apache Ant(TM) version 1.10.5 compiled on March 28 2019
+[34m[1mmvn version[0m
+Apache Maven 3.6.3 (cecedd343002696d0abb50b32b541b8a6ba2883f)
+[34m[1mgradle version[0m
+Gradle 5.1.1!
+[34m[1mlein version[0m
+Leiningen 2.9.5 on Java 11.0.2 OpenJDK 64-Bit Server VM
+[34m[1mPre-installed Node.js versions[0m
+v10.16.0
+v10.23.0
+v11.15.0
+v12.13.1
+v12.20.0
+v13.3.0
+v14.15.3
+v4.9.1
+v6.17.1
+v8.16.2
+v8.17.0
+v8.9
+[34m[1mphpenv versions[0m
+  system
+  7.1
+  7.1.33
+  7.2
+* 7.2.27 (set by /home/travis/.phpenv/version)
+  7.3
+  7.3.14
+  7.4
+  7.4.2
+  hhvm
+  hhvm-stable
+[34m[1mcomposer --version[0m
+Composer version 1.9.2 2020-01-14 16:30:31
+[34m[1mPre-installed Ruby versions[0m
+ruby-2.4.9
+ruby-2.5.3
+ruby-2.5.7
+ruby-2.6.5
+ruby-2.7.0
+travis_fold:end:system_info[0K
+travis_time:end:0944a20a:start=1611851512893845334,finish=1611851512913302737,duration=19457403,event=show_system_info[0Ktravis_time:start:002f6839[0Ktravis_time:end:002f6839:start=1611851512917085883,finish=1611851512933259698,duration=16173815,event=rm_riak_source[0Ktravis_time:start:0f9d35d8[0Ktravis_time:end:0f9d35d8:start=1611851512936848634,finish=1611851512942978170,duration=6129536,event=fix_rwky_redis[0Ktravis_time:start:25856154[0Ktravis_time:end:25856154:start=1611851512946698409,finish=1611851513330259980,duration=383561571,event=wait_for_network[0Ktravis_time:start:049779c7[0Ktravis_time:end:049779c7:start=1611851513335660526,finish=1611851513592069178,duration=256408652,event=update_apt_keys[0Ktravis_time:start:397baae1[0Ktravis_time:end:397baae1:start=1611851513596147763,finish=1611851513651550642,duration=55402879,event=fix_hhvm_source[0Ktravis_time:start:01f3d4fc[0Ktravis_time:end:01f3d4fc:start=1611851513655611061,finish=1611851513658485668,duration=2874607,event=update_mongo_arch[0Ktravis_time:start:023e3242[0Ktravis_time:end:023e3242:start=1611851513662037913,finish=1611851513703114527,duration=41076614,event=fix_sudo_enabled_trusty[0Ktravis_time:start:33f532b0[0Ktravis_time:end:33f532b0:start=1611851513706859382,finish=1611851513709486376,duration=2626994,event=update_glibc[0Ktravis_time:start:0188e917[0Ktravis_time:end:0188e917:start=1611851513713952754,finish=1611851513722523912,duration=8571158,event=clean_up_path[0Ktravis_time:start:0578da4e[0Ktravis_time:end:0578da4e:start=1611851513727185658,finish=1611851513736640745,duration=9455087,event=fix_resolv_conf[0Ktravis_time:start:1265c0d8[0Ktravis_time:end:1265c0d8:start=1611851513740700422,finish=1611851513770685341,duration=29984919,event=fix_etc_hosts[0Ktravis_time:start:00c1ded0[0Ktravis_time:end:00c1ded0:start=1611851513776246851,finish=1611851513785425468,duration=9178617,event=fix_mvn_settings_xml[0Ktravis_time:start:14957be3[0Ktravis_time:end:14957be3:start=1611851513793187256,finish=1611851513803858116,duration=10670860,event=no_ipv6_localhost[0Ktravis_time:start:13bb62b4[0Ktravis_time:end:13bb62b4:start=1611851513807896739,finish=1611851513810019753,duration=2123014,event=fix_etc_mavenrc[0Ktravis_time:start:12697be9[0Ktravis_time:end:12697be9:start=1611851513813951349,finish=1611851513817392916,duration=3441567,event=fix_wwdr_certificate[0Ktravis_time:start:0a52f967[0Ktravis_time:end:0a52f967:start=1611851513823810889,finish=1611851513875753950,duration=51943061,event=put_localhost_first[0Ktravis_time:start:2266df20[0Ktravis_time:end:2266df20:start=1611851513879469583,finish=1611851513882939654,duration=3470071,event=home_paths[0Ktravis_time:start:1c6eba33[0Ktravis_time:end:1c6eba33:start=1611851513887542138,finish=1611851513900592985,duration=13050847,event=disable_initramfs[0Ktravis_time:start:216bc370[0Ktravis_time:end:216bc370:start=1611851513904429290,finish=1611851514048495854,duration=144066564,event=disable_ssh_roaming[0Ktravis_time:start:00d45140[0Ktravis_time:end:00d45140:start=1611851514053755965,finish=1611851514056133277,duration=2377312,event=debug_tools[0Ktravis_time:start:0826dd5a[0Ktravis_time:end:0826dd5a:start=1611851514060363525,finish=1611851514063854895,duration=3491370,event=uninstall_oclint[0Ktravis_time:start:0170723a[0Ktravis_time:end:0170723a:start=1611851514068604276,finish=1611851514072095932,duration=3491656,event=rvm_use[0Ktravis_time:start:36975289[0Ktravis_time:end:36975289:start=1611851514079743929,finish=1611851514088743592,duration=8999663,event=rm_etc_boto_cfg[0Ktravis_time:start:0158ae02[0Ktravis_time:end:0158ae02:start=1611851514093271802,finish=1611851514096146066,duration=2874264,event=rm_oraclejdk8_symlink[0Ktravis_time:start:02f34fe4[0Ktravis_time:end:02f34fe4:start=1611851514102948678,finish=1611851514194730303,duration=91781625,event=enable_i386[0Ktravis_time:start:3d9e3818[0Ktravis_time:end:3d9e3818:start=1611851514199923389,finish=1611851514203778395,duration=3855006,event=update_rubygems[0Ktravis_time:start:15a95480[0Ktravis_time:end:15a95480:start=1611851514210686142,finish=1611851515245210556,duration=1034524414,event=ensure_path_components[0Ktravis_time:start:06d39cce[0Ktravis_time:end:06d39cce:start=1611851515251230412,finish=1611851515254095224,duration=2864812,event=redefine_curl[0Ktravis_time:start:09d0c92c[0Ktravis_time:end:09d0c92c:start=1611851515259630404,finish=1611851515357627952,duration=97997548,event=nonblock_pipe[0Ktravis_time:start:0c3d281e[0Ktravis_time:end:0c3d281e:start=1611851515362764334,finish=1611851521400075676,duration=6037311342,event=apt_get_update[0Ktravis_time:start:1611b358[0Ktravis_time:end:1611b358:start=1611851521404318414,finish=1611851521406998502,duration=2680088,event=deprecate_xcode_64[0Ktravis_time:start:20040a8f[0Ktravis_time:end:20040a8f:start=1611851521410871079,finish=1611851524302894550,duration=2892023471,event=update_heroku[0Ktravis_time:start:11f55564[0Ktravis_time:end:11f55564:start=1611851524307562966,finish=1611851524310148828,duration=2585862,event=shell_session_update[0Ktravis_time:start:00bf2080[0Ktravis_fold:start:docker_mtu_and_registry_mirrors[0Ktravis_fold:end:docker_mtu_and_registry_mirrors[0Ktravis_time:end:00bf2080:start=1611851524314645240,finish=1611851526737423134,duration=2422777894,event=set_docker_mtu_and_registry_mirrors[0Ktravis_time:start:00101816[0Ktravis_fold:start:resolvconf[0Ktravis_fold:end:resolvconf[0Ktravis_time:end:00101816:start=1611851526742201589,finish=1611851526818797899,duration=76596310,event=resolvconf[0Ktravis_time:start:23f8732b[0Ktravis_time:end:23f8732b:start=1611851526823304251,finish=1611851526991355119,duration=168050868,event=maven_central_mirror[0Ktravis_time:start:0cabc6cf[0Ktravis_time:end:0cabc6cf:start=1611851526996829120,finish=1611851527099566618,duration=102737498,event=maven_https[0Ktravis_time:start:04aa8594[0Ktravis_fold:start:services[0Ktravis_time:start:003e033c[0K$ sudo systemctl start docker
+travis_time:end:003e033c:start=1611851527113116789,finish=1611851527127137720,duration=14020931,event=prepare[0Ktravis_fold:end:services[0Ktravis_time:end:003e033c:start=1611851527113116789,finish=1611851530133939888,duration=3020823099,event=services[0Ktravis_time:start:002a0f45[0Ktravis_time:end:002a0f45:start=1611851530139615745,finish=1611851530142500469,duration=2884724,event=fix_ps4[0Ktravis_time:start:1660748d[0K
+travis_fold:start:git.checkout[0Ktravis_time:start:00f0331e[0K$ git clone --depth=50 --branch=develop https://github.com/precice/systemtests.git precice/systemtests
+Cloning into 'precice/systemtests'...
+Updating files:  81% (3909/4769)Updating files:  82% (3911/4769)Updating files:  83% (3959/4769)Updating files:  84% (4006/4769)Updating files:  85% (4054/4769)Updating files:  86% (4102/4769)Updating files:  87% (4150/4769)Updating files:  88% (4197/4769)Updating files:  89% (4245/4769)Updating files:  90% (4293/4769)Updating files:  91% (4340/4769)Updating files:  92% (4388/4769)Updating files:  93% (4436/4769)Updating files:  94% (4483/4769)Updating files:  95% (4531/4769)Updating files:  96% (4579/4769)Updating files:  97% (4626/4769)Updating files:  98% (4674/4769)Updating files:  99% (4722/4769)Updating files: 100% (4769/4769)Updating files: 100% (4769/4769), done.
+travis_time:end:00f0331e:start=1611851530151878243,finish=1611851543282540294,duration=13130662051,event=checkout[0K$ cd precice/systemtests
+$ git checkout -qf dae082c35c897a15f206f775c8ebe1399f51b525
+travis_fold:end:git.checkout[0K
+travis_time:end:00f0331e:start=1611851530151878243,finish=1611851543643484949,duration=13491606706,event=checkout[0Ktravis_time:start:0026c9b0[0K
+[33;1mSetting environment variables from repository settings[0m
+$ export DOCKER_PASSWORD=[secure]
+$ export PRECICE_BOT_EMAIL=[secure]
+$ export GH_TOKEN=[secure]
+$ export DOCKER_USERNAME=precice
+$ export TRAVIS_ACCESS_TOKEN=[secure]
+
+travis_time:end:0026c9b0:start=1611851543648769489,finish=1611851543659376077,duration=10606588,event=env[0Ktravis_time:start:1125ad1c[0K$ source ~/virtualenv/python3.8/bin/activate
+travis_time:end:1125ad1c:start=1611851543663688827,finish=1611851543670772833,duration=7084006,event=[0K$ python --version
+Python 3.8.1
+$ pip --version
+pip 20.3.3 from /home/travis/virtualenv/python3.8.1/lib/python3.8/site-packages/pip (python 3.8)
+travis_fold:start:install[0Ktravis_time:start:028a9eb6[0K$ pip install Jinja2
+Collecting Jinja2
+  Downloading Jinja2-2.11.2-py2.py3-none-any.whl (125 kB)
+Collecting MarkupSafe>=0.23
+  Downloading MarkupSafe-1.1.1-cp38-cp38-manylinux1_x86_64.whl (32 kB)
+Installing collected packages: MarkupSafe, Jinja2
+Successfully installed Jinja2-2.11.2 MarkupSafe-1.1.1
+travis_time:end:028a9eb6:start=1611851544148008583,finish=1611851545392014096,duration=1244005513,event=install[0Ktravis_fold:end:install[0Ktravis_time:start:1aa92288[0K$ python build_adapter.py --dockerfile adapters/Dockerfile.openfoam-adapter --operating-system ubuntu1804 --precice-installation home --petsc yes --docker-username $DOCKER_USERNAME
+WARNING! Your password will be stored unencrypted in /home/travis/.docker/config.json.
+Configure a credential helper to remove this warning. See
+https://docs.docker.com/engine/reference/commandline/login/#credentials-store
+
+Login Succeeded
+Sending build context to Docker daemon  4.096kB
+Step 1/17 : ARG branch=develop
+Step 2/17 : ARG from=precice/precice-ubuntu1804.home-${branch}
+Step 3/17 : FROM $from
+latest: Pulling from precice/precice-ubuntu1804.home.petsc-develop
+d519e2592276: Pulling fs layer
+d22d2dfcfa9c: Pulling fs layer
+b3afe92c540b: Pulling fs layer
+618d423ad26b: Pulling fs layer
+65c541586eef: Pulling fs layer
+4de821ff86d7: Pulling fs layer
+1663160531c9: Pulling fs layer
+c1af08234aec: Pulling fs layer
+490b3a0915bd: Pulling fs layer
+7411723870d5: Pulling fs layer
+fdb287594fd9: Pulling fs layer
+618d423ad26b: Waiting
+65c541586eef: Waiting
+4de821ff86d7: Waiting
+1663160531c9: Waiting
+c1af08234aec: Waiting
+490b3a0915bd: Waiting
+7411723870d5: Waiting
+fdb287594fd9: Waiting
+b3afe92c540b: Verifying Checksum
+b3afe92c540b: Download complete
+d22d2dfcfa9c: Verifying Checksum
+d22d2dfcfa9c: Download complete
+d519e2592276: Download complete
+65c541586eef: Verifying Checksum
+65c541586eef: Download complete
+1663160531c9: Verifying Checksum
+1663160531c9: Download complete
+4de821ff86d7: Verifying Checksum
+4de821ff86d7: Download complete
+d519e2592276: Pull complete
+d22d2dfcfa9c: Pull complete
+b3afe92c540b: Pull complete
+490b3a0915bd: Verifying Checksum
+490b3a0915bd: Download complete
+7411723870d5: Verifying Checksum
+7411723870d5: Download complete
+c1af08234aec: Verifying Checksum
+c1af08234aec: Download complete
+fdb287594fd9: Verifying Checksum
+fdb287594fd9: Download complete
+618d423ad26b: Verifying Checksum
+618d423ad26b: Download complete
+618d423ad26b: Pull complete
+65c541586eef: Pull complete
+4de821ff86d7: Pull complete
+1663160531c9: Pull complete
+c1af08234aec: Pull complete
+490b3a0915bd: Pull complete
+7411723870d5: Pull complete
+fdb287594fd9: Pull complete
+Digest: sha256:b694a89f444597106c9fd9d8e16fb2ec75bc5d205011c9b01d438f85f1f1e644
+Status: Downloaded newer image for precice/precice-ubuntu1804.home.petsc-develop:latest
+ ---> b207abd7641e
+Step 4/17 : USER root
+ ---> Running in ec8a107b3e9e
+Removing intermediate container ec8a107b3e9e
+ ---> 74658ea8b587
+Step 5/17 : ENV USER=root
+ ---> Running in 62bfc8cd624c
+Removing intermediate container 62bfc8cd624c
+ ---> a4d6aac71484
+Step 6/17 : RUN apt-get -qq update && apt-get -qq install     software-properties-common     wget apt-transport-https &&     rm -rf /var/lib/apt/lists/*
+ ---> Running in 310a21274425
+[91mdebconf: delaying package configuration, since apt-utils is not installed
+[0mSelecting previously unselected package cron.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 39160 files and directories currently installed.)
+Preparing to unpack .../00-cron_3.0pl1-128.1ubuntu1_amd64.deb ...
+Unpacking cron (3.0pl1-128.1ubuntu1) ...
+Selecting previously unselected package libapparmor1:amd64.
+Preparing to unpack .../01-libapparmor1_2.12-4ubuntu5.1_amd64.deb ...
+Unpacking libapparmor1:amd64 (2.12-4ubuntu5.1) ...
+Selecting previously unselected package libdbus-1-3:amd64.
+Preparing to unpack .../02-libdbus-1-3_1.12.2-1ubuntu1.2_amd64.deb ...
+Unpacking libdbus-1-3:amd64 (1.12.2-1ubuntu1.2) ...
+Selecting previously unselected package dbus.
+Preparing to unpack .../03-dbus_1.12.2-1ubuntu1.2_amd64.deb ...
+Unpacking dbus (1.12.2-1ubuntu1.2) ...
+Selecting previously unselected package distro-info-data.
+Preparing to unpack .../04-distro-info-data_0.37ubuntu0.9_all.deb ...
+Unpacking distro-info-data (0.37ubuntu0.9) ...
+Selecting previously unselected package libapt-inst2.0:amd64.
+Preparing to unpack .../05-libapt-inst2.0_1.6.12ubuntu0.2_amd64.deb ...
+Unpacking libapt-inst2.0:amd64 (1.6.12ubuntu0.2) ...
+Selecting previously unselected package lsb-release.
+Preparing to unpack .../06-lsb-release_9.20170808ubuntu1_all.deb ...
+Unpacking lsb-release (9.20170808ubuntu1) ...
+Selecting previously unselected package python3-dbus.
+Preparing to unpack .../07-python3-dbus_1.2.6-1_amd64.deb ...
+Unpacking python3-dbus (1.2.6-1) ...
+Selecting previously unselected package python3-gi.
+Preparing to unpack .../08-python3-gi_3.26.1-2ubuntu1_amd64.deb ...
+Unpacking python3-gi (3.26.1-2ubuntu1) ...
+Selecting previously unselected package ucf.
+Preparing to unpack .../09-ucf_3.0038_all.deb ...
+Moving old data out of the way
+Unpacking ucf (3.0038) ...
+Selecting previously unselected package iso-codes.
+Preparing to unpack .../10-iso-codes_3.79-1_all.deb ...
+Unpacking iso-codes (3.79-1) ...
+Selecting previously unselected package powermgmt-base.
+Preparing to unpack .../11-powermgmt-base_1.33_all.deb ...
+Unpacking powermgmt-base (1.33) ...
+Selecting previously unselected package python-apt-common.
+Preparing to unpack .../12-python-apt-common_1.6.5ubuntu0.5_all.deb ...
+Unpacking python-apt-common (1.6.5ubuntu0.5) ...
+Selecting previously unselected package python3-apt.
+Preparing to unpack .../13-python3-apt_1.6.5ubuntu0.5_amd64.deb ...
+Unpacking python3-apt (1.6.5ubuntu0.5) ...
+Selecting previously unselected package apt-transport-https.
+Preparing to unpack .../14-apt-transport-https_1.6.12ubuntu0.2_all.deb ...
+Unpacking apt-transport-https (1.6.12ubuntu0.2) ...
+Selecting previously unselected package python3-software-properties.
+Preparing to unpack .../15-python3-software-properties_0.96.24.32.14_all.deb ...
+Unpacking python3-software-properties (0.96.24.32.14) ...
+Selecting previously unselected package software-properties-common.
+Preparing to unpack .../16-software-properties-common_0.96.24.32.14_all.deb ...
+Unpacking software-properties-common (0.96.24.32.14) ...
+Selecting previously unselected package unattended-upgrades.
+Preparing to unpack .../17-unattended-upgrades_1.1ubuntu1.18.04.14_all.deb ...
+Unpacking unattended-upgrades (1.1ubuntu1.18.04.14) ...
+Setting up python-apt-common (1.6.5ubuntu0.5) ...
+Setting up libapt-inst2.0:amd64 (1.6.12ubuntu0.2) ...
+Setting up powermgmt-base (1.33) ...
+Setting up apt-transport-https (1.6.12ubuntu0.2) ...
+Setting up python3-apt (1.6.5ubuntu0.5) ...
+Setting up iso-codes (3.79-1) ...
+Setting up distro-info-data (0.37ubuntu0.9) ...
+Setting up python3-gi (3.26.1-2ubuntu1) ...
+Setting up lsb-release (9.20170808ubuntu1) ...
+Setting up ucf (3.0038) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (TERM is not set, so the dialog frontend is not usable.)
+debconf: falling back to frontend: Readline
+Setting up libapparmor1:amd64 (2.12-4ubuntu5.1) ...
+Setting up python3-software-properties (0.96.24.32.14) ...
+Setting up cron (3.0pl1-128.1ubuntu1) ...
+Adding group `crontab' (GID 103) ...
+Done.
+update-rc.d: warning: start and stop actions are no longer supported; falling back to defaults
+invoke-rc.d: could not determine current runlevel
+invoke-rc.d: policy-rc.d denied execution of start.
+Setting up libdbus-1-3:amd64 (1.12.2-1ubuntu1.2) ...
+Setting up python3-dbus (1.2.6-1) ...
+Setting up unattended-upgrades (1.1ubuntu1.18.04.14) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (TERM is not set, so the dialog frontend is not usable.)
+debconf: falling back to frontend: Readline
+
+Creating config file /etc/apt/apt.conf.d/20auto-upgrades with new version
+
+Creating config file /etc/apt/apt.conf.d/50unattended-upgrades with new version
+Setting up dbus (1.12.2-1ubuntu1.2) ...
+Setting up software-properties-common (0.96.24.32.14) ...
+Processing triggers for libc-bin (2.27-3ubuntu1.4) ...
+Processing triggers for dbus (1.12.2-1ubuntu1.2) ...
+Removing intermediate container 310a21274425
+ ---> 6465ce21c4cf
+Step 7/17 : ARG CACHEBUST
+ ---> Running in 3b771695997a
+Removing intermediate container 3b771695997a
+ ---> f77d7f7f29b9
+Step 8/17 : RUN wget -q -O - https://dl.openfoam.com/add-debian-repo.sh | bash &&     apt-get install -y openfoam2006-default
+ ---> Running in c975cf0feb24
+Detected distribution code-name: bionic
+Added /etc/apt/sources.list.d/openfoam.list
+Importing openfoam gpg key... done
+Overwrote /etc/apt/trusted.gpg.d/openfoam.gpg
+Running apt-get update... done
+
+The repository is setup! You can now install packages.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  flex libcgal-dev libcgal13 libfl-dev libfl2 libgmp-dev libgmpxx4ldbl
+  libmpfr-dev libreadline-dev libsigsegv2 libtinfo-dev m4 openfoam-selector
+  openfoam2006 openfoam2006-common openfoam2006-dev openfoam2006-tools
+  openfoam2006-tutorials
+Suggested packages:
+  bison flex-doc libmpfi-dev libntl-dev libtbb-dev gmp-doc libgmp10-doc
+  libmpfr-doc readline-doc m4-doc gnuplot
+The following NEW packages will be installed:
+  flex libcgal-dev libcgal13 libfl-dev libfl2 libgmp-dev libgmpxx4ldbl
+  libmpfr-dev libreadline-dev libsigsegv2 libtinfo-dev m4 openfoam-selector
+  openfoam2006 openfoam2006-common openfoam2006-default openfoam2006-dev
+  openfoam2006-tools openfoam2006-tutorials
+0 upgraded, 19 newly installed, 0 to remove and 2 not upgraded.
+Need to get 123 MB of archives.
+After this operation, 728 MB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu bionic/main amd64 libsigsegv2 amd64 2.12-1 [14.7 kB]
+Get:2 http://archive.ubuntu.com/ubuntu bionic/main amd64 m4 amd64 1.4.18-1 [197 kB]
+Get:10 http://archive.ubuntu.com/ubuntu bionic/main amd64 flex amd64 2.6.4-6 [316 kB]
+Get:11 http://archive.ubuntu.com/ubuntu bionic/universe amd64 libcgal13 amd64 4.11-2build1 [275 kB]
+Get:12 http://archive.ubuntu.com/ubuntu bionic/main amd64 libgmpxx4ldbl amd64 2:6.1.2+dfsg-2 [8,964 B]
+Get:13 http://archive.ubuntu.com/ubuntu bionic/main amd64 libgmp-dev amd64 2:6.1.2+dfsg-2 [316 kB]
+Get:14 http://archive.ubuntu.com/ubuntu bionic/main amd64 libmpfr-dev amd64 4.0.1-1 [249 kB]
+Get:15 http://archive.ubuntu.com/ubuntu bionic/universe amd64 libcgal-dev amd64 4.11-2build1 [4,410 kB]
+Get:16 http://archive.ubuntu.com/ubuntu bionic/main amd64 libfl2 amd64 2.6.4-6 [11.4 kB]
+Get:17 http://archive.ubuntu.com/ubuntu bionic/main amd64 libfl-dev amd64 2.6.4-6 [6,320 B]
+Get:18 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libtinfo-dev amd64 6.1-1ubuntu1.18.04 [81.3 kB]
+Get:19 http://archive.ubuntu.com/ubuntu bionic/main amd64 libreadline-dev amd64 7.0-3 [133 kB]
+Get:3 https://sourceforge.net/projects/openfoam/files/repos/deb bionic/main amd64 openfoam-selector all 1.0.6-1 [20.3 kB]
+Get:4 https://sourceforge.net/projects/openfoam/files/repos/deb bionic/main amd64 openfoam2006-common all 201012-1 [577 kB]
+Get:5 https://sourceforge.net/projects/openfoam/files/repos/deb bionic/main amd64 openfoam2006 amd64 201012-1 [66.7 MB]
+Get:6 https://sourceforge.net/projects/openfoam/files/repos/deb bionic/main amd64 openfoam2006-tools amd64 201012-1 [49.0 kB]
+Get:7 https://sourceforge.net/projects/openfoam/files/repos/deb bionic/main amd64 openfoam2006-dev amd64 201012-1 [6,291 kB]
+Get:8 https://sourceforge.net/projects/openfoam/files/repos/deb bionic/main amd64 openfoam2006-tutorials all 201012-1 [43.0 MB]
+Get:9 https://sourceforge.net/projects/openfoam/files/repos/deb bionic/main amd64 openfoam2006-default amd64 201012-1 [4,024 B]
+[91mdebconf: delaying package configuration, since apt-utils is not installed
+[0mFetched 123 MB in 31s (3,927 kB/s)
+Selecting previously unselected package libsigsegv2:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 40640 files and directories currently installed.)
+Preparing to unpack .../00-libsigsegv2_2.12-1_amd64.deb ...
+Unpacking libsigsegv2:amd64 (2.12-1) ...
+Selecting previously unselected package m4.
+Preparing to unpack .../01-m4_1.4.18-1_amd64.deb ...
+Unpacking m4 (1.4.18-1) ...
+Selecting previously unselected package flex.
+Preparing to unpack .../02-flex_2.6.4-6_amd64.deb ...
+Unpacking flex (2.6.4-6) ...
+Selecting previously unselected package libcgal13:amd64.
+Preparing to unpack .../03-libcgal13_4.11-2build1_amd64.deb ...
+Unpacking libcgal13:amd64 (4.11-2build1) ...
+Selecting previously unselected package libgmpxx4ldbl:amd64.
+Preparing to unpack .../04-libgmpxx4ldbl_2%3a6.1.2+dfsg-2_amd64.deb ...
+Unpacking libgmpxx4ldbl:amd64 (2:6.1.2+dfsg-2) ...
+Selecting previously unselected package libgmp-dev:amd64.
+Preparing to unpack .../05-libgmp-dev_2%3a6.1.2+dfsg-2_amd64.deb ...
+Unpacking libgmp-dev:amd64 (2:6.1.2+dfsg-2) ...
+Selecting previously unselected package libmpfr-dev:amd64.
+Preparing to unpack .../06-libmpfr-dev_4.0.1-1_amd64.deb ...
+Unpacking libmpfr-dev:amd64 (4.0.1-1) ...
+Selecting previously unselected package libcgal-dev:amd64.
+Preparing to unpack .../07-libcgal-dev_4.11-2build1_amd64.deb ...
+Unpacking libcgal-dev:amd64 (4.11-2build1) ...
+Selecting previously unselected package libfl2:amd64.
+Preparing to unpack .../08-libfl2_2.6.4-6_amd64.deb ...
+Unpacking libfl2:amd64 (2.6.4-6) ...
+Selecting previously unselected package libfl-dev:amd64.
+Preparing to unpack .../09-libfl-dev_2.6.4-6_amd64.deb ...
+Unpacking libfl-dev:amd64 (2.6.4-6) ...
+Selecting previously unselected package libtinfo-dev:amd64.
+Preparing to unpack .../10-libtinfo-dev_6.1-1ubuntu1.18.04_amd64.deb ...
+Unpacking libtinfo-dev:amd64 (6.1-1ubuntu1.18.04) ...
+Selecting previously unselected package libreadline-dev:amd64.
+Preparing to unpack .../11-libreadline-dev_7.0-3_amd64.deb ...
+Unpacking libreadline-dev:amd64 (7.0-3) ...
+Selecting previously unselected package openfoam-selector.
+Preparing to unpack .../12-openfoam-selector_1.0.6-1_all.deb ...
+Unpacking openfoam-selector (1.0.6-1) ...
+Selecting previously unselected package openfoam2006-common.
+Preparing to unpack .../13-openfoam2006-common_201012-1_all.deb ...
+Unpacking openfoam2006-common (201012-1) ...
+Selecting previously unselected package openfoam2006:amd64.
+Preparing to unpack .../14-openfoam2006_201012-1_amd64.deb ...
+Unpacking openfoam2006:amd64 (201012-1) ...
+Selecting previously unselected package openfoam2006-tools:amd64.
+Preparing to unpack .../15-openfoam2006-tools_201012-1_amd64.deb ...
+Unpacking openfoam2006-tools:amd64 (201012-1) ...
+Selecting previously unselected package openfoam2006-dev:amd64.
+Preparing to unpack .../16-openfoam2006-dev_201012-1_amd64.deb ...
+Unpacking openfoam2006-dev:amd64 (201012-1) ...
+Selecting previously unselected package openfoam2006-tutorials.
+Preparing to unpack .../17-openfoam2006-tutorials_201012-1_all.deb ...
+Unpacking openfoam2006-tutorials (201012-1) ...
+Selecting previously unselected package openfoam2006-default:amd64.
+Preparing to unpack .../18-openfoam2006-default_201012-1_amd64.deb ...
+Unpacking openfoam2006-default:amd64 (201012-1) ...
+Setting up libsigsegv2:amd64 (2.12-1) ...
+Setting up openfoam2006-common (201012-1) ...
+Setting up libtinfo-dev:amd64 (6.1-1ubuntu1.18.04) ...
+Setting up m4 (1.4.18-1) ...
+Setting up openfoam2006-tutorials (201012-1) ...
+Setting up openfoam-selector (1.0.6-1) ...
+Setting up libreadline-dev:amd64 (7.0-3) ...
+Setting up libfl2:amd64 (2.6.4-6) ...
+Setting up libcgal13:amd64 (4.11-2build1) ...
+Setting up libgmpxx4ldbl:amd64 (2:6.1.2+dfsg-2) ...
+Setting up openfoam2006:amd64 (201012-1) ...
+Update installation directory for openfoam2006
+Configuring OpenFOAM (/usr/lib/openfoam/openfoam2006)
+    Replaced WM_PROJECT_DIR by '"/usr/lib/openfoam/openfoam2006"'  (etc/bashrc)
+    Replaced WM_PROJECT_DIR by '"/usr/lib/openfoam/openfoam2006"'  (etc/cshrc)
+    Remove automatic projectDir setting (etc/bashrc)
+    Remove automatic projectDir setting (etc/cshrc)
+Registered 'openfoam2006' with openfoam-selector
+**
+** Different ways to setup OpenFOAM (www.openfoam.com)
+** - shell session:                 /usr/bin/openfoam2006
+** - select for login shell:        openfoam-selector --set openfoam2006
+** - source from ~/.bashrc file:  . /usr/lib/openfoam/openfoam2006/etc/bashrc
+**
+** Upgrade information: www.openfoam.com/documentation/
+**
+Setting up libgmp-dev:amd64 (2:6.1.2+dfsg-2) ...
+Setting up openfoam2006-tools:amd64 (201012-1) ...
+Setting up flex (2.6.4-6) ...
+Setting up libfl-dev:amd64 (2.6.4-6) ...
+Setting up libmpfr-dev:amd64 (4.0.1-1) ...
+Setting up libcgal-dev:amd64 (4.11-2build1) ...
+Setting up openfoam2006-dev:amd64 (201012-1) ...
+Setting up openfoam2006-default:amd64 (201012-1) ...
+Processing triggers for libc-bin (2.27-3ubuntu1.4) ...
+Removing intermediate container c975cf0feb24
+ ---> 2d30662337a7
+Step 9/17 : USER precice
+ ---> Running in cf065d8e5240
+Removing intermediate container cf065d8e5240
+ ---> 9af77b4f4d88
+Step 10/17 : SHELL ["/bin/bash", "-c"]  # without this command /opt/openfoam5/etc/bashrc cannot be sourced
+ ---> Running in e290df79d06e
+Removing intermediate container e290df79d06e
+ ---> e452785e7a62
+Step 11/17 : WORKDIR /home/precice
+ ---> Running in 56ca366ab39e
+Removing intermediate container 56ca366ab39e
+ ---> 420d0afb388c
+Step 12/17 : RUN mkdir -p Logs Data/Input Data/Output Data/Exchange
+ ---> Running in c05bbe4b8f47
+Removing intermediate container c05bbe4b8f47
+ ---> e13889e48f7c
+Step 13/17 : ARG adapter_branch=develop
+ ---> Running in f125f70cfe96
+Removing intermediate container f125f70cfe96
+ ---> c2f584c0bd62
+Step 14/17 : RUN git clone --depth 1 --branch $adapter_branch https://github.com/precice/openfoam-adapter.git
+ ---> Running in c451b02270e0
+[91mCloning into 'openfoam-adapter'...
+[0mRemoving intermediate container c451b02270e0
+ ---> 5d3676218a43
+Step 15/17 : WORKDIR /home/precice/openfoam-adapter
+ ---> Running in b8401ae170e0
+Removing intermediate container b8401ae170e0
+ ---> ae1088b906aa
+Step 16/17 : RUN . /usr/lib/openfoam/openfoam2006/etc/bashrc && ./Allwmake; cat wmake.log && cp wmake.log Allwmake.log ldd.log $HOME/Logs
+ ---> Running in ee6902f538e3
+Building the OpenFOAM adapter for preCICE...
+
+Current OpenFOAM environment:
+  WM_PROJECT = OpenFOAM
+  WM_PROJECT_VERSION = v2006
+
+The adapter will be built into:
+  ADAPTER_TARGET_DIR    = /home/precice/OpenFOAM/root-v2006/platforms/linux64GccDPInt32Opt/lib
+
+The following building options will be used:
+  ADAPTER_PREP_FLAGS    = -DADAPTER_DEBUG_MODE
+  ADAPTER_WMAKE_OPTIONS = 
+
+Dependencies (preCICE) will be located using the following environment variables:
+  ADAPTER_PRECICE_ROOT  = /home/precice/precice
+      preCICE dependencies: not specified (ok if preCICE is built as a shared library)
+  ADAPTER_PKG_CONFIG_CFLAGS       = -I/home/precice/precice-install/include
+  ADAPTER_PKG_CONFIG_LIBS         = -L/home/precice/precice-install/lib -lprecice
+  ADAPTER_GLOBAL_CPLUS_INC_PATHS  = -I/usr/include/eigen3 
+  ADAPTER_GLOBAL_LD_LIBRARY_PATHS = -L/usr/lib/openfoam/openfoam2006/platforms/linux64GccDPInt32Opt/lib/openmpi-system -L/usr/lib/x86_64-linux-gnu/openmpi/lib -L/home/precice/OpenFOAM/root-v2006/platforms/linux64GccDPInt32Opt/lib -L/usr/lib/openfoam/openfoam2006/site/2006/platforms/linux64GccDPInt32Opt/lib -L/usr/lib/openfoam/openfoam2006/platforms/linux64GccDPInt32Opt/lib -L/usr/lib/openfoam/openfoam2006/platforms/linux64GccDPInt32Opt/lib/dummy -L/home/precice/precice-install/lib -L/petsc/petsc-3.12.5/arch-linux2-c-debug/lib 
+  ADAPTER_GLOBAL_LIBRARY_PATHS    = -L/home/precice/precice-install/lib 
+
+Building with WMake (see the wmake.log log file)...
+
+=== OK: Building completed successfully! ===
+Next step: Run an example from the tutorials/ directory.
+wmake libso (openfoam-adapter)
+    ln: ./lnInclude
+Making dependency list for source file preciceAdapterFunctionObject.C
+wmkdepend: parse error while scanning 'FF/Velocity.H' ... perhaps missing a final newline
+wmkdepend: parse error while scanning 'FF/Pressure.H' ... perhaps missing a final newline
+wmkdepend: parse error while scanning 'FF/PressureGradient.H' ... perhaps missing a final newline
+wmkdepend: parse error while scanning 'FF/VelocityGradient.H' ... perhaps missing a final newline
+wmkdepend: parse error while scanning 'FF/FF.H' ... perhaps missing a final newline
+Making dependency list for source file Adapter.C
+wmkdepend: parse error while scanning 'FF/Velocity.H' ... perhaps missing a final newline
+wmkdepend: parse error while scanning 'FF/Pressure.H' ... perhaps missing a final newline
+wmkdepend: parse error while scanning 'FF/PressureGradient.H' ... perhaps missing a final newline
+wmkdepend: parse error while scanning 'FF/VelocityGradient.H' ... perhaps missing a final newline
+wmkdepend: parse error while scanning 'FF/FF.H' ... perhaps missing a final newline
+Making dependency list for source file PressureGradient.C
+wmkdepend: parse error while scanning 'PressureGradient.H' ... perhaps missing a final newline
+wmkdepend: parse error while scanning 'FF/PressureGradient.C' ... perhaps missing a final newline
+Making dependency list for source file Pressure.C
+wmkdepend: parse error while scanning 'Pressure.H' ... perhaps missing a final newline
+wmkdepend: parse error while scanning 'FF/Pressure.C' ... perhaps missing a final newline
+Making dependency list for source file VelocityGradient.C
+wmkdepend: parse error while scanning 'VelocityGradient.H' ... perhaps missing a final newline
+wmkdepend: parse error while scanning 'FF/VelocityGradient.C' ... perhaps missing a final newline
+Making dependency list for source file Velocity.C
+wmkdepend: parse error while scanning 'Velocity.H' ... perhaps missing a final newline
+wmkdepend: parse error while scanning 'FF/Velocity.C' ... perhaps missing a final newline
+Making dependency list for source file FF.C
+wmkdepend: parse error while scanning 'FF/Velocity.H' ... perhaps missing a final newline
+wmkdepend: parse error while scanning 'FF/Pressure.H' ... perhaps missing a final newline
+wmkdepend: parse error while scanning 'FF/PressureGradient.H' ... perhaps missing a final newline
+wmkdepend: parse error while scanning 'FF/VelocityGradient.H' ... perhaps missing a final newline
+wmkdepend: parse error while scanning 'FF.H' ... perhaps missing a final newline
+Making dependency list for source file DisplacementDelta.C
+Making dependency list for source file Displacement.C
+Making dependency list for source file Stress.C
+Making dependency list for source file Force.C
+Making dependency list for source file ForceBase.C
+Making dependency list for source file FSI.C
+Making dependency list for source file CHT.C
+Making dependency list for source file SinkTemperature.C
+Making dependency list for source file HeatTransferCoefficient.C
+Making dependency list for source file HeatFlux.C
+Making dependency list for source file KappaEffective.C
+Making dependency list for source file Temperature.C
+Making dependency list for source file CouplingDataUser.C
+Making dependency list for source file Interface.C
+Making dependency list for source file Utilities.C
+g++ -std=c++14 -m64 -pthread -DOPENFOAM=2006 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -Wno-unknown-pragmas  -O3  -DNoRepository -ftemplate-depth-100 -I/usr/lib/openfoam/openfoam2006/src/finiteVolume/lnInclude -I/usr/lib/openfoam/openfoam2006/src/meshTools/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/ -I/usr/lib/openfoam/openfoam2006/src/transportModels/incompressible/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/compressible/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/twoPhaseMixture/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/interfaceProperties/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/immiscibleIncompressibleTwoPhaseMixture/lnInclude -I/usr/lib/openfoam/openfoam2006/src/thermophysicalModels/basic/lnInclude -I/usr/lib/openfoam/openfoam2006/src/TurbulenceModels/turbulenceModels/lnInclude -I/usr/lib/openfoam/openfoam2006/src/TurbulenceModels/compressible/lnInclude -I/usr/lib/openfoam/openfoam2006/src/TurbulenceModels/incompressible/lnInclude -I/usr/lib/openfoam/openfoam2006/src/triSurface/lnInclude -I/usr/include/eigen3  -I/home/precice/precice/src -I/home/precice/precice-install/include -I../ -DADAPTER_DEBUG_MODE -iquote. -IlnInclude -I/usr/lib/openfoam/openfoam2006/src/OpenFOAM/lnInclude -I/usr/lib/openfoam/openfoam2006/src/OSspecific/POSIX/lnInclude   -fPIC -c Utilities.C -o Make/linux64GccDPInt32Opt/Utilities.o
+g++ -std=c++14 -m64 -pthread -DOPENFOAM=2006 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -Wno-unknown-pragmas  -O3  -DNoRepository -ftemplate-depth-100 -I/usr/lib/openfoam/openfoam2006/src/finiteVolume/lnInclude -I/usr/lib/openfoam/openfoam2006/src/meshTools/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/ -I/usr/lib/openfoam/openfoam2006/src/transportModels/incompressible/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/compressible/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/twoPhaseMixture/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/interfaceProperties/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/immiscibleIncompressibleTwoPhaseMixture/lnInclude -I/usr/lib/openfoam/openfoam2006/src/thermophysicalModels/basic/lnInclude -I/usr/lib/openfoam/openfoam2006/src/TurbulenceModels/turbulenceModels/lnInclude -I/usr/lib/openfoam/openfoam2006/src/TurbulenceModels/compressible/lnInclude -I/usr/lib/openfoam/openfoam2006/src/TurbulenceModels/incompressible/lnInclude -I/usr/lib/openfoam/openfoam2006/src/triSurface/lnInclude -I/usr/include/eigen3  -I/home/precice/precice/src -I/home/precice/precice-install/include -I../ -DADAPTER_DEBUG_MODE -iquote. -IlnInclude -I/usr/lib/openfoam/openfoam2006/src/OpenFOAM/lnInclude -I/usr/lib/openfoam/openfoam2006/src/OSspecific/POSIX/lnInclude   -fPIC -c Interface.C -o Make/linux64GccDPInt32Opt/Interface.o
+g++ -std=c++14 -m64 -pthread -DOPENFOAM=2006 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -Wno-unknown-pragmas  -O3  -DNoRepository -ftemplate-depth-100 -I/usr/lib/openfoam/openfoam2006/src/finiteVolume/lnInclude -I/usr/lib/openfoam/openfoam2006/src/meshTools/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/ -I/usr/lib/openfoam/openfoam2006/src/transportModels/incompressible/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/compressible/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/twoPhaseMixture/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/interfaceProperties/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/immiscibleIncompressibleTwoPhaseMixture/lnInclude -I/usr/lib/openfoam/openfoam2006/src/thermophysicalModels/basic/lnInclude -I/usr/lib/openfoam/openfoam2006/src/TurbulenceModels/turbulenceModels/lnInclude -I/usr/lib/openfoam/openfoam2006/src/TurbulenceModels/compressible/lnInclude -I/usr/lib/openfoam/openfoam2006/src/TurbulenceModels/incompressible/lnInclude -I/usr/lib/openfoam/openfoam2006/src/triSurface/lnInclude -I/usr/include/eigen3  -I/home/precice/precice/src -I/home/precice/precice-install/include -I../ -DADAPTER_DEBUG_MODE -iquote. -IlnInclude -I/usr/lib/openfoam/openfoam2006/src/OpenFOAM/lnInclude -I/usr/lib/openfoam/openfoam2006/src/OSspecific/POSIX/lnInclude   -fPIC -c CouplingDataUser.C -o Make/linux64GccDPInt32Opt/CouplingDataUser.o
+g++ -std=c++14 -m64 -pthread -DOPENFOAM=2006 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -Wno-unknown-pragmas  -O3  -DNoRepository -ftemplate-depth-100 -I/usr/lib/openfoam/openfoam2006/src/finiteVolume/lnInclude -I/usr/lib/openfoam/openfoam2006/src/meshTools/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/ -I/usr/lib/openfoam/openfoam2006/src/transportModels/incompressible/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/compressible/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/twoPhaseMixture/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/interfaceProperties/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/immiscibleIncompressibleTwoPhaseMixture/lnInclude -I/usr/lib/openfoam/openfoam2006/src/thermophysicalModels/basic/lnInclude -I/usr/lib/openfoam/openfoam2006/src/TurbulenceModels/turbulenceModels/lnInclude -I/usr/lib/openfoam/openfoam2006/src/TurbulenceModels/compressible/lnInclude -I/usr/lib/openfoam/openfoam2006/src/TurbulenceModels/incompressible/lnInclude -I/usr/lib/openfoam/openfoam2006/src/triSurface/lnInclude -I/usr/include/eigen3  -I/home/precice/precice/src -I/home/precice/precice-install/include -I../ -DADAPTER_DEBUG_MODE -iquote. -IlnInclude -I/usr/lib/openfoam/openfoam2006/src/OpenFOAM/lnInclude -I/usr/lib/openfoam/openfoam2006/src/OSspecific/POSIX/lnInclude   -fPIC -c CHT/Temperature.C -o Make/linux64GccDPInt32Opt/CHT/Temperature.o
+g++ -std=c++14 -m64 -pthread -DOPENFOAM=2006 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -Wno-unknown-pragmas  -O3  -DNoRepository -ftemplate-depth-100 -I/usr/lib/openfoam/openfoam2006/src/finiteVolume/lnInclude -I/usr/lib/openfoam/openfoam2006/src/meshTools/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/ -I/usr/lib/openfoam/openfoam2006/src/transportModels/incompressible/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/compressible/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/twoPhaseMixture/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/interfaceProperties/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/immiscibleIncompressibleTwoPhaseMixture/lnInclude -I/usr/lib/openfoam/openfoam2006/src/thermophysicalModels/basic/lnInclude -I/usr/lib/openfoam/openfoam2006/src/TurbulenceModels/turbulenceModels/lnInclude -I/usr/lib/openfoam/openfoam2006/src/TurbulenceModels/compressible/lnInclude -I/usr/lib/openfoam/openfoam2006/src/TurbulenceModels/incompressible/lnInclude -I/usr/lib/openfoam/openfoam2006/src/triSurface/lnInclude -I/usr/include/eigen3  -I/home/precice/precice/src -I/home/precice/precice-install/include -I../ -DADAPTER_DEBUG_MODE -iquote. -IlnInclude -I/usr/lib/openfoam/openfoam2006/src/OpenFOAM/lnInclude -I/usr/lib/openfoam/openfoam2006/src/OSspecific/POSIX/lnInclude   -fPIC -c CHT/KappaEffective.C -o Make/linux64GccDPInt32Opt/CHT/KappaEffective.o
+g++ -std=c++14 -m64 -pthread -DOPENFOAM=2006 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -Wno-unknown-pragmas  -O3  -DNoRepository -ftemplate-depth-100 -I/usr/lib/openfoam/openfoam2006/src/finiteVolume/lnInclude -I/usr/lib/openfoam/openfoam2006/src/meshTools/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/ -I/usr/lib/openfoam/openfoam2006/src/transportModels/incompressible/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/compressible/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/twoPhaseMixture/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/interfaceProperties/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/immiscibleIncompressibleTwoPhaseMixture/lnInclude -I/usr/lib/openfoam/openfoam2006/src/thermophysicalModels/basic/lnInclude -I/usr/lib/openfoam/openfoam2006/src/TurbulenceModels/turbulenceModels/lnInclude -I/usr/lib/openfoam/openfoam2006/src/TurbulenceModels/compressible/lnInclude -I/usr/lib/openfoam/openfoam2006/src/TurbulenceModels/incompressible/lnInclude -I/usr/lib/openfoam/openfoam2006/src/triSurface/lnInclude -I/usr/include/eigen3  -I/home/precice/precice/src -I/home/precice/precice-install/include -I../ -DADAPTER_DEBUG_MODE -iquote. -IlnInclude -I/usr/lib/openfoam/openfoam2006/src/OpenFOAM/lnInclude -I/usr/lib/openfoam/openfoam2006/src/OSspecific/POSIX/lnInclude   -fPIC -c CHT/HeatFlux.C -o Make/linux64GccDPInt32Opt/CHT/HeatFlux.o
+g++ -std=c++14 -m64 -pthread -DOPENFOAM=2006 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -Wno-unknown-pragmas  -O3  -DNoRepository -ftemplate-depth-100 -I/usr/lib/openfoam/openfoam2006/src/finiteVolume/lnInclude -I/usr/lib/openfoam/openfoam2006/src/meshTools/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/ -I/usr/lib/openfoam/openfoam2006/src/transportModels/incompressible/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/compressible/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/twoPhaseMixture/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/interfaceProperties/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/immiscibleIncompressibleTwoPhaseMixture/lnInclude -I/usr/lib/openfoam/openfoam2006/src/thermophysicalModels/basic/lnInclude -I/usr/lib/openfoam/openfoam2006/src/TurbulenceModels/turbulenceModels/lnInclude -I/usr/lib/openfoam/openfoam2006/src/TurbulenceModels/compressible/lnInclude -I/usr/lib/openfoam/openfoam2006/src/TurbulenceModels/incompressible/lnInclude -I/usr/lib/openfoam/openfoam2006/src/triSurface/lnInclude -I/usr/include/eigen3  -I/home/precice/precice/src -I/home/precice/precice-install/include -I../ -DADAPTER_DEBUG_MODE -iquote. -IlnInclude -I/usr/lib/openfoam/openfoam2006/src/OpenFOAM/lnInclude -I/usr/lib/openfoam/openfoam2006/src/OSspecific/POSIX/lnInclude   -fPIC -c CHT/HeatTransferCoefficient.C -o Make/linux64GccDPInt32Opt/CHT/HeatTransferCoefficient.o
+g++ -std=c++14 -m64 -pthread -DOPENFOAM=2006 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -Wno-unknown-pragmas  -O3  -DNoRepository -ftemplate-depth-100 -I/usr/lib/openfoam/openfoam2006/src/finiteVolume/lnInclude -I/usr/lib/openfoam/openfoam2006/src/meshTools/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/ -I/usr/lib/openfoam/openfoam2006/src/transportModels/incompressible/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/compressible/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/twoPhaseMixture/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/interfaceProperties/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/immiscibleIncompressibleTwoPhaseMixture/lnInclude -I/usr/lib/openfoam/openfoam2006/src/thermophysicalModels/basic/lnInclude -I/usr/lib/openfoam/openfoam2006/src/TurbulenceModels/turbulenceModels/lnInclude -I/usr/lib/openfoam/openfoam2006/src/TurbulenceModels/compressible/lnInclude -I/usr/lib/openfoam/openfoam2006/src/TurbulenceModels/incompressible/lnInclude -I/usr/lib/openfoam/openfoam2006/src/triSurface/lnInclude -I/usr/include/eigen3  -I/home/precice/precice/src -I/home/precice/precice-install/include -I../ -DADAPTER_DEBUG_MODE -iquote. -IlnInclude -I/usr/lib/openfoam/openfoam2006/src/OpenFOAM/lnInclude -I/usr/lib/openfoam/openfoam2006/src/OSspecific/POSIX/lnInclude   -fPIC -c CHT/SinkTemperature.C -o Make/linux64GccDPInt32Opt/CHT/SinkTemperature.o
+g++ -std=c++14 -m64 -pthread -DOPENFOAM=2006 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -Wno-unknown-pragmas  -O3  -DNoRepository -ftemplate-depth-100 -I/usr/lib/openfoam/openfoam2006/src/finiteVolume/lnInclude -I/usr/lib/openfoam/openfoam2006/src/meshTools/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/ -I/usr/lib/openfoam/openfoam2006/src/transportModels/incompressible/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/compressible/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/twoPhaseMixture/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/interfaceProperties/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/immiscibleIncompressibleTwoPhaseMixture/lnInclude -I/usr/lib/openfoam/openfoam2006/src/thermophysicalModels/basic/lnInclude -I/usr/lib/openfoam/openfoam2006/src/TurbulenceModels/turbulenceModels/lnInclude -I/usr/lib/openfoam/openfoam2006/src/TurbulenceModels/compressible/lnInclude -I/usr/lib/openfoam/openfoam2006/src/TurbulenceModels/incompressible/lnInclude -I/usr/lib/openfoam/openfoam2006/src/triSurface/lnInclude -I/usr/include/eigen3  -I/home/precice/precice/src -I/home/precice/precice-install/include -I../ -DADAPTER_DEBUG_MODE -iquote. -IlnInclude -I/usr/lib/openfoam/openfoam2006/src/OpenFOAM/lnInclude -I/usr/lib/openfoam/openfoam2006/src/OSspecific/POSIX/lnInclude   -fPIC -c CHT/CHT.C -o Make/linux64GccDPInt32Opt/CHT/CHT.o
+g++ -std=c++14 -m64 -pthread -DOPENFOAM=2006 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -Wno-unknown-pragmas  -O3  -DNoRepository -ftemplate-depth-100 -I/usr/lib/openfoam/openfoam2006/src/finiteVolume/lnInclude -I/usr/lib/openfoam/openfoam2006/src/meshTools/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/ -I/usr/lib/openfoam/openfoam2006/src/transportModels/incompressible/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/compressible/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/twoPhaseMixture/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/interfaceProperties/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/immiscibleIncompressibleTwoPhaseMixture/lnInclude -I/usr/lib/openfoam/openfoam2006/src/thermophysicalModels/basic/lnInclude -I/usr/lib/openfoam/openfoam2006/src/TurbulenceModels/turbulenceModels/lnInclude -I/usr/lib/openfoam/openfoam2006/src/TurbulenceModels/compressible/lnInclude -I/usr/lib/openfoam/openfoam2006/src/TurbulenceModels/incompressible/lnInclude -I/usr/lib/openfoam/openfoam2006/src/triSurface/lnInclude -I/usr/include/eigen3  -I/home/precice/precice/src -I/home/precice/precice-install/include -I../ -DADAPTER_DEBUG_MODE -iquote. -IlnInclude -I/usr/lib/openfoam/openfoam2006/src/OpenFOAM/lnInclude -I/usr/lib/openfoam/openfoam2006/src/OSspecific/POSIX/lnInclude   -fPIC -c FSI/FSI.C -o Make/linux64GccDPInt32Opt/FSI/FSI.o
+g++ -std=c++14 -m64 -pthread -DOPENFOAM=2006 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -Wno-unknown-pragmas  -O3  -DNoRepository -ftemplate-depth-100 -I/usr/lib/openfoam/openfoam2006/src/finiteVolume/lnInclude -I/usr/lib/openfoam/openfoam2006/src/meshTools/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/ -I/usr/lib/openfoam/openfoam2006/src/transportModels/incompressible/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/compressible/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/twoPhaseMixture/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/interfaceProperties/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/immiscibleIncompressibleTwoPhaseMixture/lnInclude -I/usr/lib/openfoam/openfoam2006/src/thermophysicalModels/basic/lnInclude -I/usr/lib/openfoam/openfoam2006/src/TurbulenceModels/turbulenceModels/lnInclude -I/usr/lib/openfoam/openfoam2006/src/TurbulenceModels/compressible/lnInclude -I/usr/lib/openfoam/openfoam2006/src/TurbulenceModels/incompressible/lnInclude -I/usr/lib/openfoam/openfoam2006/src/triSurface/lnInclude -I/usr/include/eigen3  -I/home/precice/precice/src -I/home/precice/precice-install/include -I../ -DADAPTER_DEBUG_MODE -iquote. -IlnInclude -I/usr/lib/openfoam/openfoam2006/src/OpenFOAM/lnInclude -I/usr/lib/openfoam/openfoam2006/src/OSspecific/POSIX/lnInclude   -fPIC -c FSI/ForceBase.C -o Make/linux64GccDPInt32Opt/FSI/ForceBase.o
+FSI/ForceBase.C: In member function ‘Foam::tmp<Foam::GeometricField<double, Foam::fvPatchField, Foam::volMesh> > preciceAdapter::FSI::ForceBase::rho() const’:
+FSI/ForceBase.C:93:56: warning: ‘Foam::dimensioned<Type>::dimensioned(Foam::Istream&) [with Type = double]’ is deprecated: Since 2018-11 [-Wdeprecated-declarations]
+                 dimensionedScalar(FSIDict.lookup("rho"))
+                                                        ^
+In file included from /usr/lib/openfoam/openfoam2006/src/OpenFOAM/lnInclude/dimensionedType.H:571:0,
+                 from /usr/lib/openfoam/openfoam2006/src/OpenFOAM/lnInclude/dimensionedScalar.H:41,
+                 from /usr/lib/openfoam/openfoam2006/src/OpenFOAM/lnInclude/TimeState.H:41,
+                 from /usr/lib/openfoam/openfoam2006/src/OpenFOAM/lnInclude/Time.H:50,
+                 from /usr/lib/openfoam/openfoam2006/src/finiteVolume/lnInclude/fvCFD.H:6,
+                 from FSI/ForceBase.H:7,
+                 from FSI/ForceBase.C:1:
+/usr/lib/openfoam/openfoam2006/src/OpenFOAM/lnInclude/dimensionedType.C:305:1: note: declared here
+ Foam::dimensioned<Type>::dimensioned(Istream& is)
+ ^~~~
+FSI/ForceBase.C: In member function ‘Foam::tmp<Foam::GeometricField<double, Foam::fvPatchField, Foam::volMesh> > preciceAdapter::FSI::ForceBase::mu() const’:
+FSI/ForceBase.C:130:54: warning: ‘Foam::dimensioned<Type>::dimensioned(Foam::Istream&) [with Type = double]’ is deprecated: Since 2018-11 [-Wdeprecated-declarations]
+             dimensionedScalar nu(FSIDict.lookup("nu"));
+                                                      ^
+In file included from /usr/lib/openfoam/openfoam2006/src/OpenFOAM/lnInclude/dimensionedType.H:571:0,
+                 from /usr/lib/openfoam/openfoam2006/src/OpenFOAM/lnInclude/dimensionedScalar.H:41,
+                 from /usr/lib/openfoam/openfoam2006/src/OpenFOAM/lnInclude/TimeState.H:41,
+                 from /usr/lib/openfoam/openfoam2006/src/OpenFOAM/lnInclude/Time.H:50,
+                 from /usr/lib/openfoam/openfoam2006/src/finiteVolume/lnInclude/fvCFD.H:6,
+                 from FSI/ForceBase.H:7,
+                 from FSI/ForceBase.C:1:
+/usr/lib/openfoam/openfoam2006/src/OpenFOAM/lnInclude/dimensionedType.C:305:1: note: declared here
+ Foam::dimensioned<Type>::dimensioned(Istream& is)
+ ^~~~
+g++ -std=c++14 -m64 -pthread -DOPENFOAM=2006 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -Wno-unknown-pragmas  -O3  -DNoRepository -ftemplate-depth-100 -I/usr/lib/openfoam/openfoam2006/src/finiteVolume/lnInclude -I/usr/lib/openfoam/openfoam2006/src/meshTools/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/ -I/usr/lib/openfoam/openfoam2006/src/transportModels/incompressible/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/compressible/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/twoPhaseMixture/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/interfaceProperties/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/immiscibleIncompressibleTwoPhaseMixture/lnInclude -I/usr/lib/openfoam/openfoam2006/src/thermophysicalModels/basic/lnInclude -I/usr/lib/openfoam/openfoam2006/src/TurbulenceModels/turbulenceModels/lnInclude -I/usr/lib/openfoam/openfoam2006/src/TurbulenceModels/compressible/lnInclude -I/usr/lib/openfoam/openfoam2006/src/TurbulenceModels/incompressible/lnInclude -I/usr/lib/openfoam/openfoam2006/src/triSurface/lnInclude -I/usr/include/eigen3  -I/home/precice/precice/src -I/home/precice/precice-install/include -I../ -DADAPTER_DEBUG_MODE -iquote. -IlnInclude -I/usr/lib/openfoam/openfoam2006/src/OpenFOAM/lnInclude -I/usr/lib/openfoam/openfoam2006/src/OSspecific/POSIX/lnInclude   -fPIC -c FSI/Force.C -o Make/linux64GccDPInt32Opt/FSI/Force.o
+g++ -std=c++14 -m64 -pthread -DOPENFOAM=2006 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -Wno-unknown-pragmas  -O3  -DNoRepository -ftemplate-depth-100 -I/usr/lib/openfoam/openfoam2006/src/finiteVolume/lnInclude -I/usr/lib/openfoam/openfoam2006/src/meshTools/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/ -I/usr/lib/openfoam/openfoam2006/src/transportModels/incompressible/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/compressible/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/twoPhaseMixture/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/interfaceProperties/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/immiscibleIncompressibleTwoPhaseMixture/lnInclude -I/usr/lib/openfoam/openfoam2006/src/thermophysicalModels/basic/lnInclude -I/usr/lib/openfoam/openfoam2006/src/TurbulenceModels/turbulenceModels/lnInclude -I/usr/lib/openfoam/openfoam2006/src/TurbulenceModels/compressible/lnInclude -I/usr/lib/openfoam/openfoam2006/src/TurbulenceModels/incompressible/lnInclude -I/usr/lib/openfoam/openfoam2006/src/triSurface/lnInclude -I/usr/include/eigen3  -I/home/precice/precice/src -I/home/precice/precice-install/include -I../ -DADAPTER_DEBUG_MODE -iquote. -IlnInclude -I/usr/lib/openfoam/openfoam2006/src/OpenFOAM/lnInclude -I/usr/lib/openfoam/openfoam2006/src/OSspecific/POSIX/lnInclude   -fPIC -c FSI/Stress.C -o Make/linux64GccDPInt32Opt/FSI/Stress.o
+g++ -std=c++14 -m64 -pthread -DOPENFOAM=2006 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -Wno-unknown-pragmas  -O3  -DNoRepository -ftemplate-depth-100 -I/usr/lib/openfoam/openfoam2006/src/finiteVolume/lnInclude -I/usr/lib/openfoam/openfoam2006/src/meshTools/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/ -I/usr/lib/openfoam/openfoam2006/src/transportModels/incompressible/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/compressible/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/twoPhaseMixture/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/interfaceProperties/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/immiscibleIncompressibleTwoPhaseMixture/lnInclude -I/usr/lib/openfoam/openfoam2006/src/thermophysicalModels/basic/lnInclude -I/usr/lib/openfoam/openfoam2006/src/TurbulenceModels/turbulenceModels/lnInclude -I/usr/lib/openfoam/openfoam2006/src/TurbulenceModels/compressible/lnInclude -I/usr/lib/openfoam/openfoam2006/src/TurbulenceModels/incompressible/lnInclude -I/usr/lib/openfoam/openfoam2006/src/triSurface/lnInclude -I/usr/include/eigen3  -I/home/precice/precice/src -I/home/precice/precice-install/include -I../ -DADAPTER_DEBUG_MODE -iquote. -IlnInclude -I/usr/lib/openfoam/openfoam2006/src/OpenFOAM/lnInclude -I/usr/lib/openfoam/openfoam2006/src/OSspecific/POSIX/lnInclude   -fPIC -c FSI/Displacement.C -o Make/linux64GccDPInt32Opt/FSI/Displacement.o
+g++ -std=c++14 -m64 -pthread -DOPENFOAM=2006 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -Wno-unknown-pragmas  -O3  -DNoRepository -ftemplate-depth-100 -I/usr/lib/openfoam/openfoam2006/src/finiteVolume/lnInclude -I/usr/lib/openfoam/openfoam2006/src/meshTools/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/ -I/usr/lib/openfoam/openfoam2006/src/transportModels/incompressible/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/compressible/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/twoPhaseMixture/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/interfaceProperties/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/immiscibleIncompressibleTwoPhaseMixture/lnInclude -I/usr/lib/openfoam/openfoam2006/src/thermophysicalModels/basic/lnInclude -I/usr/lib/openfoam/openfoam2006/src/TurbulenceModels/turbulenceModels/lnInclude -I/usr/lib/openfoam/openfoam2006/src/TurbulenceModels/compressible/lnInclude -I/usr/lib/openfoam/openfoam2006/src/TurbulenceModels/incompressible/lnInclude -I/usr/lib/openfoam/openfoam2006/src/triSurface/lnInclude -I/usr/include/eigen3  -I/home/precice/precice/src -I/home/precice/precice-install/include -I../ -DADAPTER_DEBUG_MODE -iquote. -IlnInclude -I/usr/lib/openfoam/openfoam2006/src/OpenFOAM/lnInclude -I/usr/lib/openfoam/openfoam2006/src/OSspecific/POSIX/lnInclude   -fPIC -c FSI/DisplacementDelta.C -o Make/linux64GccDPInt32Opt/FSI/DisplacementDelta.o
+g++ -std=c++14 -m64 -pthread -DOPENFOAM=2006 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -Wno-unknown-pragmas  -O3  -DNoRepository -ftemplate-depth-100 -I/usr/lib/openfoam/openfoam2006/src/finiteVolume/lnInclude -I/usr/lib/openfoam/openfoam2006/src/meshTools/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/ -I/usr/lib/openfoam/openfoam2006/src/transportModels/incompressible/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/compressible/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/twoPhaseMixture/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/interfaceProperties/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/immiscibleIncompressibleTwoPhaseMixture/lnInclude -I/usr/lib/openfoam/openfoam2006/src/thermophysicalModels/basic/lnInclude -I/usr/lib/openfoam/openfoam2006/src/TurbulenceModels/turbulenceModels/lnInclude -I/usr/lib/openfoam/openfoam2006/src/TurbulenceModels/compressible/lnInclude -I/usr/lib/openfoam/openfoam2006/src/TurbulenceModels/incompressible/lnInclude -I/usr/lib/openfoam/openfoam2006/src/triSurface/lnInclude -I/usr/include/eigen3  -I/home/precice/precice/src -I/home/precice/precice-install/include -I../ -DADAPTER_DEBUG_MODE -iquote. -IlnInclude -I/usr/lib/openfoam/openfoam2006/src/OpenFOAM/lnInclude -I/usr/lib/openfoam/openfoam2006/src/OSspecific/POSIX/lnInclude   -fPIC -c FF/FF.C -o Make/linux64GccDPInt32Opt/FF/FF.o
+g++ -std=c++14 -m64 -pthread -DOPENFOAM=2006 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -Wno-unknown-pragmas  -O3  -DNoRepository -ftemplate-depth-100 -I/usr/lib/openfoam/openfoam2006/src/finiteVolume/lnInclude -I/usr/lib/openfoam/openfoam2006/src/meshTools/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/ -I/usr/lib/openfoam/openfoam2006/src/transportModels/incompressible/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/compressible/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/twoPhaseMixture/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/interfaceProperties/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/immiscibleIncompressibleTwoPhaseMixture/lnInclude -I/usr/lib/openfoam/openfoam2006/src/thermophysicalModels/basic/lnInclude -I/usr/lib/openfoam/openfoam2006/src/TurbulenceModels/turbulenceModels/lnInclude -I/usr/lib/openfoam/openfoam2006/src/TurbulenceModels/compressible/lnInclude -I/usr/lib/openfoam/openfoam2006/src/TurbulenceModels/incompressible/lnInclude -I/usr/lib/openfoam/openfoam2006/src/triSurface/lnInclude -I/usr/include/eigen3  -I/home/precice/precice/src -I/home/precice/precice-install/include -I../ -DADAPTER_DEBUG_MODE -iquote. -IlnInclude -I/usr/lib/openfoam/openfoam2006/src/OpenFOAM/lnInclude -I/usr/lib/openfoam/openfoam2006/src/OSspecific/POSIX/lnInclude   -fPIC -c FF/Velocity.C -o Make/linux64GccDPInt32Opt/FF/Velocity.o
+g++ -std=c++14 -m64 -pthread -DOPENFOAM=2006 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -Wno-unknown-pragmas  -O3  -DNoRepository -ftemplate-depth-100 -I/usr/lib/openfoam/openfoam2006/src/finiteVolume/lnInclude -I/usr/lib/openfoam/openfoam2006/src/meshTools/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/ -I/usr/lib/openfoam/openfoam2006/src/transportModels/incompressible/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/compressible/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/twoPhaseMixture/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/interfaceProperties/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/immiscibleIncompressibleTwoPhaseMixture/lnInclude -I/usr/lib/openfoam/openfoam2006/src/thermophysicalModels/basic/lnInclude -I/usr/lib/openfoam/openfoam2006/src/TurbulenceModels/turbulenceModels/lnInclude -I/usr/lib/openfoam/openfoam2006/src/TurbulenceModels/compressible/lnInclude -I/usr/lib/openfoam/openfoam2006/src/TurbulenceModels/incompressible/lnInclude -I/usr/lib/openfoam/openfoam2006/src/triSurface/lnInclude -I/usr/include/eigen3  -I/home/precice/precice/src -I/home/precice/precice-install/include -I../ -DADAPTER_DEBUG_MODE -iquote. -IlnInclude -I/usr/lib/openfoam/openfoam2006/src/OpenFOAM/lnInclude -I/usr/lib/openfoam/openfoam2006/src/OSspecific/POSIX/lnInclude   -fPIC -c FF/VelocityGradient.C -o Make/linux64GccDPInt32Opt/FF/VelocityGradient.o
+g++ -std=c++14 -m64 -pthread -DOPENFOAM=2006 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -Wno-unknown-pragmas  -O3  -DNoRepository -ftemplate-depth-100 -I/usr/lib/openfoam/openfoam2006/src/finiteVolume/lnInclude -I/usr/lib/openfoam/openfoam2006/src/meshTools/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/ -I/usr/lib/openfoam/openfoam2006/src/transportModels/incompressible/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/compressible/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/twoPhaseMixture/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/interfaceProperties/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/immiscibleIncompressibleTwoPhaseMixture/lnInclude -I/usr/lib/openfoam/openfoam2006/src/thermophysicalModels/basic/lnInclude -I/usr/lib/openfoam/openfoam2006/src/TurbulenceModels/turbulenceModels/lnInclude -I/usr/lib/openfoam/openfoam2006/src/TurbulenceModels/compressible/lnInclude -I/usr/lib/openfoam/openfoam2006/src/TurbulenceModels/incompressible/lnInclude -I/usr/lib/openfoam/openfoam2006/src/triSurface/lnInclude -I/usr/include/eigen3  -I/home/precice/precice/src -I/home/precice/precice-install/include -I../ -DADAPTER_DEBUG_MODE -iquote. -IlnInclude -I/usr/lib/openfoam/openfoam2006/src/OpenFOAM/lnInclude -I/usr/lib/openfoam/openfoam2006/src/OSspecific/POSIX/lnInclude   -fPIC -c FF/Pressure.C -o Make/linux64GccDPInt32Opt/FF/Pressure.o
+g++ -std=c++14 -m64 -pthread -DOPENFOAM=2006 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -Wno-unknown-pragmas  -O3  -DNoRepository -ftemplate-depth-100 -I/usr/lib/openfoam/openfoam2006/src/finiteVolume/lnInclude -I/usr/lib/openfoam/openfoam2006/src/meshTools/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/ -I/usr/lib/openfoam/openfoam2006/src/transportModels/incompressible/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/compressible/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/twoPhaseMixture/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/interfaceProperties/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/immiscibleIncompressibleTwoPhaseMixture/lnInclude -I/usr/lib/openfoam/openfoam2006/src/thermophysicalModels/basic/lnInclude -I/usr/lib/openfoam/openfoam2006/src/TurbulenceModels/turbulenceModels/lnInclude -I/usr/lib/openfoam/openfoam2006/src/TurbulenceModels/compressible/lnInclude -I/usr/lib/openfoam/openfoam2006/src/TurbulenceModels/incompressible/lnInclude -I/usr/lib/openfoam/openfoam2006/src/triSurface/lnInclude -I/usr/include/eigen3  -I/home/precice/precice/src -I/home/precice/precice-install/include -I../ -DADAPTER_DEBUG_MODE -iquote. -IlnInclude -I/usr/lib/openfoam/openfoam2006/src/OpenFOAM/lnInclude -I/usr/lib/openfoam/openfoam2006/src/OSspecific/POSIX/lnInclude   -fPIC -c FF/PressureGradient.C -o Make/linux64GccDPInt32Opt/FF/PressureGradient.o
+g++ -std=c++14 -m64 -pthread -DOPENFOAM=2006 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -Wno-unknown-pragmas  -O3  -DNoRepository -ftemplate-depth-100 -I/usr/lib/openfoam/openfoam2006/src/finiteVolume/lnInclude -I/usr/lib/openfoam/openfoam2006/src/meshTools/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/ -I/usr/lib/openfoam/openfoam2006/src/transportModels/incompressible/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/compressible/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/twoPhaseMixture/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/interfaceProperties/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/immiscibleIncompressibleTwoPhaseMixture/lnInclude -I/usr/lib/openfoam/openfoam2006/src/thermophysicalModels/basic/lnInclude -I/usr/lib/openfoam/openfoam2006/src/TurbulenceModels/turbulenceModels/lnInclude -I/usr/lib/openfoam/openfoam2006/src/TurbulenceModels/compressible/lnInclude -I/usr/lib/openfoam/openfoam2006/src/TurbulenceModels/incompressible/lnInclude -I/usr/lib/openfoam/openfoam2006/src/triSurface/lnInclude -I/usr/include/eigen3  -I/home/precice/precice/src -I/home/precice/precice-install/include -I../ -DADAPTER_DEBUG_MODE -iquote. -IlnInclude -I/usr/lib/openfoam/openfoam2006/src/OpenFOAM/lnInclude -I/usr/lib/openfoam/openfoam2006/src/OSspecific/POSIX/lnInclude   -fPIC -c Adapter.C -o Make/linux64GccDPInt32Opt/Adapter.o
+Adapter.C: In member function ‘bool preciceAdapter::Adapter::configFileRead()’:
+Adapter.C:47:78: warning: ‘T Foam::dictionary::lookupType(const Foam::word&, bool, bool) const [with T = Foam::fileName]’ is deprecated: Since 2018-10; use "get() method" [-Wdeprecated-declarations]
+     preciceConfigFilename_ = preciceDict.lookupType<fileName>("preciceConfig");
+                                                                              ^
+In file included from /usr/lib/openfoam/openfoam2006/src/OpenFOAM/lnInclude/Enum.C:29:0,
+                 from /usr/lib/openfoam/openfoam2006/src/OpenFOAM/lnInclude/Enum.H:313,
+                 from /usr/lib/openfoam/openfoam2006/src/OpenFOAM/lnInclude/UPstream.H:49,
+                 from /usr/lib/openfoam/openfoam2006/src/OpenFOAM/lnInclude/Pstream.H:45,
+                 from /usr/lib/openfoam/openfoam2006/src/OpenFOAM/lnInclude/parRun.H:39,
+                 from /usr/lib/openfoam/openfoam2006/src/finiteVolume/lnInclude/fvCFD.H:4,
+                 from Interface.H:6,
+                 from Adapter.H:4,
+                 from Adapter.C:1:
+/usr/lib/openfoam/openfoam2006/src/OpenFOAM/lnInclude/dictionary.H:1304:11: note: declared here
+         T lookupType
+           ^~~~~~~~~~
+Adapter.C:51:66: warning: ‘T Foam::dictionary::lookupType(const Foam::word&, bool, bool) const [with T = Foam::word]’ is deprecated: Since 2018-10; use "get() method" [-Wdeprecated-declarations]
+     participantName_ = preciceDict.lookupType<word>("participant");
+                                                                  ^
+In file included from /usr/lib/openfoam/openfoam2006/src/OpenFOAM/lnInclude/Enum.C:29:0,
+                 from /usr/lib/openfoam/openfoam2006/src/OpenFOAM/lnInclude/Enum.H:313,
+                 from /usr/lib/openfoam/openfoam2006/src/OpenFOAM/lnInclude/UPstream.H:49,
+                 from /usr/lib/openfoam/openfoam2006/src/OpenFOAM/lnInclude/Pstream.H:45,
+                 from /usr/lib/openfoam/openfoam2006/src/OpenFOAM/lnInclude/parRun.H:39,
+                 from /usr/lib/openfoam/openfoam2006/src/finiteVolume/lnInclude/fvCFD.H:4,
+                 from Interface.H:6,
+                 from Adapter.H:4,
+                 from Adapter.C:1:
+/usr/lib/openfoam/openfoam2006/src/OpenFOAM/lnInclude/dictionary.H:1304:11: note: declared here
+         T lookupType
+           ^~~~~~~~~~
+Adapter.C:56:67: warning: ‘T Foam::dictionary::lookupType(const Foam::word&, bool, bool) const [with T = Foam::List<Foam::word>]’ is deprecated: Since 2018-10; use "get() method" [-Wdeprecated-declarations]
+     wordList modules_ = preciceDict.lookupType<wordList>("modules");
+                                                                   ^
+In file included from /usr/lib/openfoam/openfoam2006/src/OpenFOAM/lnInclude/Enum.C:29:0,
+                 from /usr/lib/openfoam/openfoam2006/src/OpenFOAM/lnInclude/Enum.H:313,
+                 from /usr/lib/openfoam/openfoam2006/src/OpenFOAM/lnInclude/UPstream.H:49,
+                 from /usr/lib/openfoam/openfoam2006/src/OpenFOAM/lnInclude/Pstream.H:45,
+                 from /usr/lib/openfoam/openfoam2006/src/OpenFOAM/lnInclude/parRun.H:39,
+                 from /usr/lib/openfoam/openfoam2006/src/finiteVolume/lnInclude/fvCFD.H:4,
+                 from Interface.H:6,
+                 from Adapter.H:4,
+                 from Adapter.C:1:
+/usr/lib/openfoam/openfoam2006/src/OpenFOAM/lnInclude/dictionary.H:1304:11: note: declared here
+         T lookupType
+           ^~~~~~~~~~
+Adapter.C:70:78: warning: ‘Foam::dictionary* Foam::dictionary::subDictPtr(const Foam::word&)’ is deprecated: Since 2018-10; use "findDict() method" [-Wdeprecated-declarations]
+     const dictionary * interfaceDictPtr = preciceDict.subDictPtr("interfaces");
+                                                                              ^
+In file included from /usr/lib/openfoam/openfoam2006/src/OpenFOAM/lnInclude/Enum.C:29:0,
+                 from /usr/lib/openfoam/openfoam2006/src/OpenFOAM/lnInclude/Enum.H:313,
+                 from /usr/lib/openfoam/openfoam2006/src/OpenFOAM/lnInclude/UPstream.H:49,
+                 from /usr/lib/openfoam/openfoam2006/src/OpenFOAM/lnInclude/Pstream.H:45,
+                 from /usr/lib/openfoam/openfoam2006/src/OpenFOAM/lnInclude/parRun.H:39,
+                 from /usr/lib/openfoam/openfoam2006/src/finiteVolume/lnInclude/fvCFD.H:4,
+                 from Interface.H:6,
+                 from Adapter.H:4,
+                 from Adapter.C:1:
+/usr/lib/openfoam/openfoam2006/src/OpenFOAM/lnInclude/dictionary.H:1385:21: note: declared here
+         dictionary* subDictPtr(const word& keyword)
+                     ^~~~~~~~~~
+Adapter.C:89:81: warning: ‘T Foam::dictionary::lookupType(const Foam::word&, bool, bool) const [with T = Foam::word]’ is deprecated: Since 2018-10; use "get() method" [-Wdeprecated-declarations]
+                 interfaceConfig.meshName = interfaceDict.lookupType<word>("mesh");
+                                                                                 ^
+In file included from /usr/lib/openfoam/openfoam2006/src/OpenFOAM/lnInclude/Enum.C:29:0,
+                 from /usr/lib/openfoam/openfoam2006/src/OpenFOAM/lnInclude/Enum.H:313,
+                 from /usr/lib/openfoam/openfoam2006/src/OpenFOAM/lnInclude/UPstream.H:49,
+                 from /usr/lib/openfoam/openfoam2006/src/OpenFOAM/lnInclude/Pstream.H:45,
+                 from /usr/lib/openfoam/openfoam2006/src/OpenFOAM/lnInclude/parRun.H:39,
+                 from /usr/lib/openfoam/openfoam2006/src/finiteVolume/lnInclude/fvCFD.H:4,
+                 from Interface.H:6,
+                 from Adapter.H:4,
+                 from Adapter.C:1:
+/usr/lib/openfoam/openfoam2006/src/OpenFOAM/lnInclude/dictionary.H:1304:11: note: declared here
+         T lookupType
+           ^~~~~~~~~~
+Adapter.C:109:80: warning: ‘T Foam::dictionary::lookupType(const Foam::word&, bool, bool) const [with T = Foam::List<Foam::word>]’ is deprecated: Since 2018-10; use "get() method" [-Wdeprecated-declarations]
+                 wordList patches = interfaceDict.lookupType<wordList>("patches");
+                                                                                ^
+In file included from /usr/lib/openfoam/openfoam2006/src/OpenFOAM/lnInclude/Enum.C:29:0,
+                 from /usr/lib/openfoam/openfoam2006/src/OpenFOAM/lnInclude/Enum.H:313,
+                 from /usr/lib/openfoam/openfoam2006/src/OpenFOAM/lnInclude/UPstream.H:49,
+                 from /usr/lib/openfoam/openfoam2006/src/OpenFOAM/lnInclude/Pstream.H:45,
+                 from /usr/lib/openfoam/openfoam2006/src/OpenFOAM/lnInclude/parRun.H:39,
+                 from /usr/lib/openfoam/openfoam2006/src/finiteVolume/lnInclude/fvCFD.H:4,
+                 from Interface.H:6,
+                 from Adapter.H:4,
+                 from Adapter.C:1:
+/usr/lib/openfoam/openfoam2006/src/OpenFOAM/lnInclude/dictionary.H:1304:11: note: declared here
+         T lookupType
+           ^~~~~~~~~~
+Adapter.C:117:84: warning: ‘T Foam::dictionary::lookupType(const Foam::word&, bool, bool) const [with T = Foam::List<Foam::word>]’ is deprecated: Since 2018-10; use "get() method" [-Wdeprecated-declarations]
+                 wordList writeData = interfaceDict.lookupType<wordList>("writeData");
+                                                                                    ^
+In file included from /usr/lib/openfoam/openfoam2006/src/OpenFOAM/lnInclude/Enum.C:29:0,
+                 from /usr/lib/openfoam/openfoam2006/src/OpenFOAM/lnInclude/Enum.H:313,
+                 from /usr/lib/openfoam/openfoam2006/src/OpenFOAM/lnInclude/UPstream.H:49,
+                 from /usr/lib/openfoam/openfoam2006/src/OpenFOAM/lnInclude/Pstream.H:45,
+                 from /usr/lib/openfoam/openfoam2006/src/OpenFOAM/lnInclude/parRun.H:39,
+                 from /usr/lib/openfoam/openfoam2006/src/finiteVolume/lnInclude/fvCFD.H:4,
+                 from Interface.H:6,
+                 from Adapter.H:4,
+                 from Adapter.C:1:
+/usr/lib/openfoam/openfoam2006/src/OpenFOAM/lnInclude/dictionary.H:1304:11: note: declared here
+         T lookupType
+           ^~~~~~~~~~
+Adapter.C:125:82: warning: ‘T Foam::dictionary::lookupType(const Foam::word&, bool, bool) const [with T = Foam::List<Foam::word>]’ is deprecated: Since 2018-10; use "get() method" [-Wdeprecated-declarations]
+                 wordList readData = interfaceDict.lookupType<wordList>("readData");
+                                                                                  ^
+In file included from /usr/lib/openfoam/openfoam2006/src/OpenFOAM/lnInclude/Enum.C:29:0,
+                 from /usr/lib/openfoam/openfoam2006/src/OpenFOAM/lnInclude/Enum.H:313,
+                 from /usr/lib/openfoam/openfoam2006/src/OpenFOAM/lnInclude/UPstream.H:49,
+                 from /usr/lib/openfoam/openfoam2006/src/OpenFOAM/lnInclude/Pstream.H:45,
+                 from /usr/lib/openfoam/openfoam2006/src/OpenFOAM/lnInclude/parRun.H:39,
+                 from /usr/lib/openfoam/openfoam2006/src/finiteVolume/lnInclude/fvCFD.H:4,
+                 from Interface.H:6,
+                 from Adapter.H:4,
+                 from Adapter.C:1:
+/usr/lib/openfoam/openfoam2006/src/OpenFOAM/lnInclude/dictionary.H:1304:11: note: declared here
+         T lookupType
+           ^~~~~~~~~~
+g++ -std=c++14 -m64 -pthread -DOPENFOAM=2006 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -Wno-unknown-pragmas  -O3  -DNoRepository -ftemplate-depth-100 -I/usr/lib/openfoam/openfoam2006/src/finiteVolume/lnInclude -I/usr/lib/openfoam/openfoam2006/src/meshTools/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/ -I/usr/lib/openfoam/openfoam2006/src/transportModels/incompressible/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/compressible/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/twoPhaseMixture/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/interfaceProperties/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/immiscibleIncompressibleTwoPhaseMixture/lnInclude -I/usr/lib/openfoam/openfoam2006/src/thermophysicalModels/basic/lnInclude -I/usr/lib/openfoam/openfoam2006/src/TurbulenceModels/turbulenceModels/lnInclude -I/usr/lib/openfoam/openfoam2006/src/TurbulenceModels/compressible/lnInclude -I/usr/lib/openfoam/openfoam2006/src/TurbulenceModels/incompressible/lnInclude -I/usr/lib/openfoam/openfoam2006/src/triSurface/lnInclude -I/usr/include/eigen3  -I/home/precice/precice/src -I/home/precice/precice-install/include -I../ -DADAPTER_DEBUG_MODE -iquote. -IlnInclude -I/usr/lib/openfoam/openfoam2006/src/OpenFOAM/lnInclude -I/usr/lib/openfoam/openfoam2006/src/OSspecific/POSIX/lnInclude   -fPIC -c preciceAdapterFunctionObject.C -o Make/linux64GccDPInt32Opt/preciceAdapterFunctionObject.o
+g++ -std=c++14 -m64 -pthread -DOPENFOAM=2006 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -Wno-unknown-pragmas  -O3  -DNoRepository -ftemplate-depth-100 -I/usr/lib/openfoam/openfoam2006/src/finiteVolume/lnInclude -I/usr/lib/openfoam/openfoam2006/src/meshTools/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/ -I/usr/lib/openfoam/openfoam2006/src/transportModels/incompressible/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/compressible/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/twoPhaseMixture/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/interfaceProperties/lnInclude -I/usr/lib/openfoam/openfoam2006/src/transportModels/immiscibleIncompressibleTwoPhaseMixture/lnInclude -I/usr/lib/openfoam/openfoam2006/src/thermophysicalModels/basic/lnInclude -I/usr/lib/openfoam/openfoam2006/src/TurbulenceModels/turbulenceModels/lnInclude -I/usr/lib/openfoam/openfoam2006/src/TurbulenceModels/compressible/lnInclude -I/usr/lib/openfoam/openfoam2006/src/TurbulenceModels/incompressible/lnInclude -I/usr/lib/openfoam/openfoam2006/src/triSurface/lnInclude -I/usr/include/eigen3  -I/home/precice/precice/src -I/home/precice/precice-install/include -I../ -DADAPTER_DEBUG_MODE -iquote. -IlnInclude -I/usr/lib/openfoam/openfoam2006/src/OpenFOAM/lnInclude -I/usr/lib/openfoam/openfoam2006/src/OSspecific/POSIX/lnInclude   -fPIC -shared -Xlinker --add-needed -Xlinker --no-as-needed  Make/linux64GccDPInt32Opt/Utilities.o Make/linux64GccDPInt32Opt/Interface.o Make/linux64GccDPInt32Opt/CouplingDataUser.o Make/linux64GccDPInt32Opt/CHT/Temperature.o Make/linux64GccDPInt32Opt/CHT/KappaEffective.o Make/linux64GccDPInt32Opt/CHT/HeatFlux.o Make/linux64GccDPInt32Opt/CHT/HeatTransferCoefficient.o Make/linux64GccDPInt32Opt/CHT/SinkTemperature.o Make/linux64GccDPInt32Opt/CHT/CHT.o Make/linux64GccDPInt32Opt/FSI/FSI.o Make/linux64GccDPInt32Opt/FSI/ForceBase.o Make/linux64GccDPInt32Opt/FSI/Force.o Make/linux64GccDPInt32Opt/FSI/Stress.o Make/linux64GccDPInt32Opt/FSI/Displacement.o Make/linux64GccDPInt32Opt/FSI/DisplacementDelta.o Make/linux64GccDPInt32Opt/FF/FF.o Make/linux64GccDPInt32Opt/FF/Velocity.o Make/linux64GccDPInt32Opt/FF/VelocityGradient.o Make/linux64GccDPInt32Opt/FF/Pressure.o Make/linux64GccDPInt32Opt/FF/PressureGradient.o Make/linux64GccDPInt32Opt/Adapter.o Make/linux64GccDPInt32Opt/preciceAdapterFunctionObject.o -L/usr/lib/openfoam/openfoam2006/platforms/linux64GccDPInt32Opt/lib \
+    -lfiniteVolume -lmeshTools -lcompressibleTurbulenceModels -lincompressibleTurbulenceModels -limmiscibleIncompressibleTwoPhaseMixture -L/home/precice/precice-install/lib  -L/usr/lib/openfoam/openfoam2006/platforms/linux64GccDPInt32Opt/lib/openmpi-system -L/usr/lib/x86_64-linux-gnu/openmpi/lib -L/home/precice/OpenFOAM/root-v2006/platforms/linux64GccDPInt32Opt/lib -L/usr/lib/openfoam/openfoam2006/site/2006/platforms/linux64GccDPInt32Opt/lib -L/usr/lib/openfoam/openfoam2006/platforms/linux64GccDPInt32Opt/lib -L/usr/lib/openfoam/openfoam2006/platforms/linux64GccDPInt32Opt/lib/dummy -L/home/precice/precice-install/lib -L/petsc/petsc-3.12.5/arch-linux2-c-debug/lib  -L/home/precice/precice/build/last -L/home/precice/precice-install/lib -lprecice -lprecice   -o /home/precice/OpenFOAM/root-v2006/platforms/linux64GccDPInt32Opt/lib/libpreciceAdapterFunctionObject.so
+Removing intermediate container ee6902f538e3
+ ---> 192e04e4625d
+Step 17/17 : ENV LD_LIBRARY_PATH="/usr/lib:${LD_LIBRARY_PATH}"
+ ---> Running in 65c95a426e2f
+Removing intermediate container 65c95a426e2f
+ ---> f506cfbcb75a
+Successfully built f506cfbcb75a
+Successfully tagged precice/openfoam-adapter-ubuntu1804.home.petsc-develop:latest
+Building openfoam-adapter image with the following features: {'os': 'ubuntu1804', 'installation': 'home', 'petsc': 'yes'}
+EXECUTING: echo $DOCKER_PASSWORD | docker login -u $DOCKER_USERNAME --password-stdin && docker build --network=host --file adapters/Dockerfile.openfoam-adapter --tag precice/openfoam-adapter-ubuntu1804.home.petsc-develop:latest --build-arg branch=develop --build-arg adapter_branch=develop --build-arg from=precice/precice-ubuntu1804.home.petsc-develop .
+travis_time:end:1aa92288:start=1611851545398733417,finish=1611851844190554248,duration=298791820831,event=script[0K[32;1mThe command "python build_adapter.py --dockerfile adapters/Dockerfile.openfoam-adapter --operating-system ubuntu1804 --precice-installation home --petsc yes --docker-username $DOCKER_USERNAME" exited with 0.[0m
+travis_time:start:0a540be7[0K$ python push_adapter.py --dockerfile adapters/Dockerfile.openfoam-adapter --operating-system ubuntu1804 --precice-installation home --petsc yes --docker-username $DOCKER_USERNAME
+WARNING! Your password will be stored unencrypted in /home/travis/.docker/config.json.
+Configure a credential helper to remove this warning. See
+https://docs.docker.com/engine/reference/commandline/login/#credentials-store
+
+Login Succeeded
+The push refers to repository [docker.io/precice/openfoam-adapter-ubuntu1804.home.petsc-develop]
+b44dad4d86d2: Preparing
+d1cbc222aa69: Preparing
+6a1c00a05f5a: Preparing
+4bb557c82fde: Preparing
+6e5e643bd63b: Preparing
+ce48d325650f: Preparing
+e349a7082999: Preparing
+eeafa8c6c374: Preparing
+67438fdcbd26: Preparing
+36555933cfcb: Preparing
+db28b367e049: Preparing
+eaaa5062350b: Preparing
+fc0a9fa5826d: Preparing
+9f10818f1f96: Preparing
+27502392e386: Preparing
+c95d2191d777: Preparing
+ce48d325650f: Waiting
+e349a7082999: Waiting
+eeafa8c6c374: Waiting
+67438fdcbd26: Waiting
+36555933cfcb: Waiting
+db28b367e049: Waiting
+eaaa5062350b: Waiting
+fc0a9fa5826d: Waiting
+9f10818f1f96: Waiting
+27502392e386: Waiting
+c95d2191d777: Waiting
+6a1c00a05f5a: Pushed
+ce48d325650f: Mounted from precice/precice-ubuntu1804.home.petsc-develop
+d1cbc222aa69: Pushed
+e349a7082999: Mounted from precice/precice-ubuntu1804.home.petsc-develop
+b44dad4d86d2: Pushed
+eeafa8c6c374: Mounted from precice/precice-ubuntu1804.home.petsc-develop
+67438fdcbd26: Mounted from precice/precice-ubuntu1804.home.petsc-develop
+36555933cfcb: Mounted from precice/precice-ubuntu1804.home.petsc-develop
+6e5e643bd63b: Pushed
+db28b367e049: Mounted from precice/precice-ubuntu1804.home.petsc-develop
+9f10818f1f96: Layer already exists
+fc0a9fa5826d: Mounted from precice/precice-ubuntu1804.home.petsc-develop
+27502392e386: Layer already exists
+c95d2191d777: Layer already exists
+eaaa5062350b: Mounted from precice/precice-ubuntu1804.home.petsc-develop
+4bb557c82fde: Pushed
+latest: digest: sha256:6f24ab884b80bcfae8821b572c13c2a831fb8e05761912131f4a5ac0e901ef85 size: 3683
+EXECUTING: echo $DOCKER_PASSWORD | docker login -u $DOCKER_USERNAME --password-stdin && docker push precice/openfoam-adapter-ubuntu1804.home.petsc-develop:latest
+travis_time:end:0a540be7:start=1611851844200783160,finish=1611851884590352065,duration=40389568905,event=script[0K[32;1mThe command "python push_adapter.py --dockerfile adapters/Dockerfile.openfoam-adapter --operating-system ubuntu1804 --precice-installation home --petsc yes --docker-username $DOCKER_USERNAME" exited with 0.[0m
+travis_time:start:014d4810[0K$ python push.py
+Cloning into 'precice_st_output'...
+Updating files:  15% (6446/42736)Updating files:  16% (6838/42736)Updating files:  17% (7266/42736)Updating files:  18% (7693/42736)Updating files:  19% (8120/42736)Updating files:  20% (8548/42736)Updating files:  21% (8975/42736)Updating files:  22% (9402/42736)Updating files:  23% (9830/42736)Updating files:  24% (10257/42736)Updating files:  25% (10684/42736)Updating files:  26% (11112/42736)Updating files:  27% (11539/42736)Updating files:  28% (11967/42736)Updating files:  29% (12394/42736)Updating files:  30% (12821/42736)Updating files:  30% (13051/42736)Updating files:  31% (13249/42736)Updating files:  32% (13676/42736)Updating files:  33% (14103/42736)Updating files:  34% (14531/42736)Updating files:  35% (14958/42736)Updating files:  36% (15385/42736)Updating files:  37% (15813/42736)Updating files:  38% (16240/42736)Updating files:  39% (16668/42736)Updating files:  40% (17095/42736)Updating files:  41% (17522/42736)Updating files:  42% (17950/42736)Updating files:  43% (18377/42736)Updating files:  43% (18533/42736)Updating files:  44% (18804/42736)Updating files:  45% (19232/42736)Updating files:  46% (19659/42736)Updating files:  47% (20086/42736)Updating files:  48% (20514/42736)Updating files:  49% (20941/42736)Updating files:  50% (21368/42736)Updating files:  51% (21796/42736)Updating files:  52% (22223/42736)Updating files:  53% (22651/42736)Updating files:  54% (23078/42736)Updating files:  54% (23432/42736)Updating files:  55% (23505/42736)Updating files:  56% (23933/42736)Updating files:  57% (24360/42736)Updating files:  58% (24787/42736)Updating files:  59% (25215/42736)Updating files:  60% (25642/42736)Updating files:  61% (26069/42736)Updating files:  62% (26497/42736)Updating files:  63% (26924/42736)Updating files:  64% (27352/42736)Updating files:  65% (27779/42736)Updating files:  66% (28206/42736)Updating files:  66% (28492/42736)Updating files:  67% (28634/42736)Updating files:  68% (29061/42736)Updating files:  68% (29243/42736)Updating files:  69% (29488/42736)Updating files:  70% (29916/42736)Updating files:  70% (29983/42736)Updating files:  71% (30343/42736)Updating files:  72% (30770/42736)Updating files:  73% (31198/42736)Updating files:  74% (31625/42736)Updating files:  75% (32052/42736)Updating files:  75% (32422/42736)Updating files:  76% (32480/42736)Updating files:  77% (32907/42736)Updating files:  78% (33335/42736)Updating files:  79% (33762/42736)Updating files:  80% (34189/42736)Updating files:  80% (34222/42736)Updating files:  80% (34485/42736)Updating files:  80% (34486/42736)Updating files:  81% (34617/42736)Updating files:  81% (34719/42736)Updating files:  81% (34882/42736)Updating files:  82% (35044/42736)Updating files:  82% (35058/42736)Updating files:  82% (35097/42736)Updating files:  82% (35178/42736)Updating files:  82% (35252/42736)Updating files:  82% (35274/42736)Updating files:  82% (35348/42736)Updating files:  82% (35420/42736)Updating files:  82% (35436/42736)Updating files:  83% (35471/42736)Updating files:  83% (35543/42736)Updating files:  83% (35637/42736)Updating files:  83% (35681/42736)Updating files:  83% (35762/42736)Updating files:  83% (35792/42736)Updating files:  84% (35899/42736)Updating files:  84% (35925/42736)Updating files:  84% (35966/42736)Updating files:  84% (36045/42736)Updating files:  84% (36114/42736)Updating files:  84% (36131/42736)Updating files:  84% (36246/42736)Updating files:  84% (36325/42736)Updating files:  85% (36326/42736)Updating files:  85% (36411/42736)Updating files:  85% (36498/42736)Updating files:  85% (36512/42736)Updating files:  85% (36577/42736)Updating files:  85% (36663/42736)Updating files:  85% (36748/42736)Updating files:  86% (36753/42736)Updating files:  86% (36848/42736)Updating files:  86% (36922/42736)Updating files:  86% (36938/42736)Updating files:  86% (37020/42736)Updating files:  86% (37104/42736)Updating files:  87% (37181/42736)Updating files:  87% (37223/42736)Updating files:  87% (37308/42736)Updating files:  87% (37426/42736)Updating files:  87% (37511/42736)Updating files:  87% (37573/42736)Updating files:  88% (37608/42736)Updating files:  88% (37653/42736)Updating files:  88% (37726/42736)Updating files:  88% (37854/42736)Updating files:  88% (37973/42736)Updating files:  89% (38036/42736)Updating files:  89% (38049/42736)Updating files:  90% (38463/42736)Updating files:  91% (38890/42736)Updating files:  91% (38936/42736)Updating files:  91% (39282/42736)Updating files:  92% (39318/42736)Updating files:  92% (39370/42736)Updating files:  92% (39516/42736)Updating files:  92% (39594/42736)Updating files:  92% (39684/42736)Updating files:  92% (39720/42736)Updating files:  93% (39745/42736)Updating files:  93% (39782/42736)Updating files:  93% (39891/42736)Updating files:  93% (39978/42736)Updating files:  93% (40064/42736)Updating files:  93% (40135/42736)Updating files:  93% (40151/42736)Updating files:  94% (40172/42736)Updating files:  94% (40337/42736)Updating files:  94% (40425/42736)Updating files:  94% (40512/42736)Updating files:  94% (40584/42736)Updating files:  95% (40600/42736)Updating files:  95% (40736/42736)Updating files:  95% (40831/42736)Updating files:  95% (40921/42736)Updating files:  96% (41027/42736)Updating files:  96% (41034/42736)Updating files:  96% (41112/42736)Updating files:  96% (41270/42736)Updating files:  96% (41312/42736)Updating files:  97% (41454/42736)Updating files:  97% (41455/42736)Updating files:  97% (41531/42736)Updating files:  97% (41568/42736)Updating files:  97% (41679/42736)Updating files:  97% (41741/42736)Updating files:  97% (41830/42736)Updating files:  98% (41882/42736)Updating files:  98% (41903/42736)Updating files:  98% (41930/42736)Updating files:  98% (41984/42736)Updating files:  98% (42098/42736)Updating files:  98% (42197/42736)Updating files:  98% (42283/42736)Updating files:  99% (42309/42736)Updating files:  99% (42348/42736)Updating files:  99% (42359/42736)Updating files:  99% (42515/42736)Updating files:  99% (42611/42736)Updating files:  99% (42695/42736)Updating files: 100% (42736/42736)Updating files: 100% (42736/42736), done.
