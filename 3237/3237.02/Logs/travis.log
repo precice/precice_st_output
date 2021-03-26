@@ -1,0 +1,842 @@
+travis_fold:start:worker_info[0K[33;1mWorker information[0m
+hostname: add42a20-4fe7-4b57-a710-dcd3ab1bc15c@1.worker-com-oss-56c8fb7c6b-55pxf.gce-production-3
+version: v6.2.21 https://github.com/travis-ci/worker/tree/cd59585215f5a19c00baad33031b8ed10144ad72
+instance: travis-job-2706d9a4-0eab-4d85-84dd-e36e1df467ac travis-ci-ubuntu-1804-1609168422-6c7eba12 (via amqp)
+startup: 6.256845238s
+travis_fold:end:worker_info[0Ktravis_time:start:075a4800[0Ktravis_time:end:075a4800:start=1616791386162951715,finish=1616791386356677552,duration=193725837,event=no_world_writable_dirs[0Ktravis_time:start:04435464[0Ktravis_time:end:04435464:start=1616791386359709925,finish=1616791386363036887,duration=3326962,event=setup_filter[0Ktravis_time:start:01210402[0Ktravis_time:end:01210402:start=1616791386371532352,finish=1616791386379104995,duration=7572643,event=agent[0Ktravis_time:start:133d8bc9[0Ktravis_time:end:133d8bc9:start=1616791386381570962,finish=1616791386383373126,duration=1802164,event=check_unsupported[0Ktravis_time:start:09b3cef2[0Ktravis_fold:start:system_info[0K[33;1mBuild system information[0m
+Build language: python
+Build group: stable
+Build dist: bionic
+Build id: 221344172
+Job id: 494103696
+Runtime kernel version: 5.4.0-1032-gcp
+travis-build version: 091d532a
+[34m[1mBuild image provisioning date and time[0m
+Mon Dec 28 15:53:02 UTC 2020
+[34m[1mOperating System Details[0m
+Distributor ID:	Ubuntu
+Description:	Ubuntu 18.04.5 LTS
+Release:	18.04
+Codename:	bionic
+[34m[1mSystemd Version[0m
+systemd 237
+[34m[1mCookbooks Version[0m
+10a7b34 https://github.com/travis-ci/travis-cookbooks/tree/10a7b34
+[34m[1mgit version[0m
+git version 2.29.2
+[34m[1mbash version[0m
+GNU bash, version 4.4.20(1)-release (x86_64-pc-linux-gnu)
+[34m[1mgcc version[0m
+gcc (Ubuntu 7.5.0-3ubuntu1~18.04) 7.5.0
+[34m[1mdocker version[0m
+Client:
+ Version:           18.06.0-ce
+ API version:       1.38
+ Go version:        go1.10.3
+ Git commit:        0ffa825
+ Built:             Wed Jul 18 19:09:54 2018
+ OS/Arch:           linux/amd64
+ Experimental:      false
+
+Server:
+ Engine:
+  Version:          18.06.0-ce
+  API version:      1.38 (minimum version 1.12)
+  Go version:       go1.10.3
+  Git commit:       0ffa825
+  Built:            Wed Jul 18 19:07:56 2018
+  OS/Arch:          linux/amd64
+  Experimental:     false
+[34m[1mclang version[0m
+clang version 7.0.0 (tags/RELEASE_700/final)
+[34m[1mjq version[0m
+jq-1.5
+[34m[1mbats version[0m
+Bats 0.4.0
+[34m[1mshellcheck version[0m
+0.7.0
+[34m[1mshfmt version[0m
+v3.2.1
+[34m[1mccache version[0m
+3.4.1
+[34m[1mcmake version[0m
+cmake version 3.12.4
+[34m[1mheroku version[0m
+heroku/7.47.6 linux-x64 node-v12.16.2
+[34m[1mimagemagick version[0m
+Version: ImageMagick 6.9.7-4 Q16 x86_64 20170114 http://www.imagemagick.org
+[34m[1mmd5deep version[0m
+4.4
+[34m[1mmercurial version[0m
+version 4.8
+[34m[1mmysql version[0m
+mysql  Ver 14.14 Distrib 5.7.32, for Linux (x86_64) using  EditLine wrapper
+[34m[1mopenssl version[0m
+OpenSSL 1.1.1  11 Sep 2018
+[34m[1mpacker version[0m
+1.3.3
+[34m[1mpostgresql client version[0m
+psql (PostgreSQL) 11.10 (Ubuntu 11.10-1.pgdg18.04+1)
+[34m[1mragel version[0m
+Ragel State Machine Compiler version 6.10 March 2017
+[34m[1msudo version[0m
+1.8.21p2
+[34m[1mgzip version[0m
+gzip 1.6
+[34m[1mzip version[0m
+Zip 3.0
+[34m[1mvim version[0m
+VIM - Vi IMproved 8.0 (2016 Sep 12, compiled Oct 13 2020 15:49:09)
+[34m[1miptables version[0m
+iptables v1.6.1
+[34m[1mcurl version[0m
+curl 7.58.0 (x86_64-pc-linux-gnu) libcurl/7.58.0 OpenSSL/1.1.1 zlib/1.2.11 libidn2/2.0.4 libpsl/0.19.1 (+libidn2/2.0.4) nghttp2/1.30.0 librtmp/2.3
+[34m[1mwget version[0m
+GNU Wget 1.19.4 built on linux-gnu.
+[34m[1mrsync version[0m
+rsync  version 3.1.2  protocol version 31
+[34m[1mgimme version[0m
+v1.5.4
+[34m[1mnvm version[0m
+0.37.2
+[34m[1mperlbrew version[0m
+/home/travis/perl5/perlbrew/bin/perlbrew  - App::perlbrew/0.88
+[34m[1mphpenv version[0m
+rbenv 1.1.2-40-g62d7798
+[34m[1mrvm version[0m
+rvm 1.29.10 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
+[34m[1mdefault ruby version[0m
+ruby 2.6.5p114 (2019-10-01 revision 67812) [x86_64-linux]
+[34m[1mElasticSearch version[0m
+5.5.0
+[34m[1mInstalled Firefox version[0m
+firefox 63.0.1
+[34m[1mMongoDB version[0m
+MongoDB 4.0.22
+[34m[1mPhantomJS version[0m
+2.1.1
+[34m[1mPre-installed PostgreSQL versions[0m
+9.3.25
+9.4.26
+9.5.24
+9.6.20
+[34m[1mRedis version[0m
+redis-server 6.0.6
+[34m[1mPre-installed Go versions[0m
+1.11.1
+[34m[1mant version[0m
+Apache Ant(TM) version 1.10.5 compiled on March 28 2019
+[34m[1mmvn version[0m
+Apache Maven 3.6.3 (cecedd343002696d0abb50b32b541b8a6ba2883f)
+[34m[1mgradle version[0m
+Gradle 5.1.1!
+[34m[1mlein version[0m
+Leiningen 2.9.5 on Java 11.0.2 OpenJDK 64-Bit Server VM
+[34m[1mPre-installed Node.js versions[0m
+v10.16.0
+v10.23.0
+v11.15.0
+v12.13.1
+v12.20.0
+v13.3.0
+v14.15.3
+v4.9.1
+v6.17.1
+v8.16.2
+v8.17.0
+v8.9
+[34m[1mphpenv versions[0m
+  system
+  7.1
+  7.1.33
+  7.2
+* 7.2.27 (set by /home/travis/.phpenv/version)
+  7.3
+  7.3.14
+  7.4
+  7.4.2
+  hhvm
+  hhvm-stable
+[34m[1mcomposer --version[0m
+Composer version 1.9.2 2020-01-14 16:30:31
+[34m[1mPre-installed Ruby versions[0m
+ruby-2.4.9
+ruby-2.5.3
+ruby-2.5.7
+ruby-2.6.5
+ruby-2.7.0
+travis_fold:end:system_info[0K
+travis_time:end:09b3cef2:start=1616791386386109915,finish=1616791386402860553,duration=16750638,event=show_system_info[0Ktravis_time:start:1b694d32[0Ktravis_time:end:1b694d32:start=1616791386414199503,finish=1616791386431507362,duration=17307859,event=rm_riak_source[0Ktravis_time:start:034f5eb5[0Ktravis_time:end:034f5eb5:start=1616791386434813041,finish=1616791386440579117,duration=5766076,event=fix_rwky_redis[0Ktravis_time:start:33c5e0ef[0Ktravis_time:end:33c5e0ef:start=1616791386444966241,finish=1616791387019826772,duration=574860531,event=wait_for_network[0Ktravis_time:start:0445f48c[0Ktravis_time:end:0445f48c:start=1616791387023853908,finish=1616791387276316102,duration=252462194,event=update_apt_keys[0Ktravis_time:start:179003be[0Ktravis_time:end:179003be:start=1616791387280662268,finish=1616791387335579943,duration=54917675,event=fix_hhvm_source[0Ktravis_time:start:10ca116e[0Ktravis_time:end:10ca116e:start=1616791387339904295,finish=1616791387342688933,duration=2784638,event=update_mongo_arch[0Ktravis_time:start:062459a0[0Ktravis_time:end:062459a0:start=1616791387346460511,finish=1616791387388144122,duration=41683611,event=fix_sudo_enabled_trusty[0Ktravis_time:start:01494018[0Ktravis_time:end:01494018:start=1616791387392370822,finish=1616791387394751776,duration=2380954,event=update_glibc[0Ktravis_time:start:085a5e54[0Ktravis_time:end:085a5e54:start=1616791387398630948,finish=1616791387407067581,duration=8436633,event=clean_up_path[0Ktravis_time:start:2ae23434[0Ktravis_time:end:2ae23434:start=1616791387413148453,finish=1616791387422139679,duration=8991226,event=fix_resolv_conf[0Ktravis_time:start:03820575[0Ktravis_time:end:03820575:start=1616791387425768946,finish=1616791387452647164,duration=26878218,event=fix_etc_hosts[0Ktravis_time:start:174c3690[0Ktravis_time:end:174c3690:start=1616791387457950761,finish=1616791387466591585,duration=8640824,event=fix_mvn_settings_xml[0Ktravis_time:start:0113271f[0Ktravis_time:end:0113271f:start=1616791387471358269,finish=1616791387481083078,duration=9724809,event=no_ipv6_localhost[0Ktravis_time:start:392e8621[0Ktravis_time:end:392e8621:start=1616791387484776858,finish=1616791387487078372,duration=2301514,event=fix_etc_mavenrc[0Ktravis_time:start:040170ce[0Ktravis_time:end:040170ce:start=1616791387492584287,finish=1616791387496099665,duration=3515378,event=fix_wwdr_certificate[0Ktravis_time:start:172239a4[0Ktravis_time:end:172239a4:start=1616791387502368814,finish=1616791387561380791,duration=59011977,event=put_localhost_first[0Ktravis_time:start:054328e4[0Ktravis_time:end:054328e4:start=1616791387565504437,finish=1616791387570127792,duration=4623355,event=home_paths[0Ktravis_time:start:0064c78b[0Ktravis_time:end:0064c78b:start=1616791387575619314,finish=1616791387588822188,duration=13202874,event=disable_initramfs[0Ktravis_time:start:1d5138bc[0Ktravis_time:end:1d5138bc:start=1616791387594204083,finish=1616791387747917219,duration=153713136,event=disable_ssh_roaming[0Ktravis_time:start:35832b8b[0Ktravis_time:end:35832b8b:start=1616791387753384255,finish=1616791387755577234,duration=2192979,event=debug_tools[0Ktravis_time:start:1011c3e8[0Ktravis_time:end:1011c3e8:start=1616791387759370372,finish=1616791387762519273,duration=3148901,event=uninstall_oclint[0Ktravis_time:start:00a678cc[0Ktravis_time:end:00a678cc:start=1616791387766933726,finish=1616791387769528517,duration=2594791,event=rvm_use[0Ktravis_time:start:0ed397fe[0Ktravis_time:end:0ed397fe:start=1616791387772694511,finish=1616791387780206066,duration=7511555,event=rm_etc_boto_cfg[0Ktravis_time:start:03d5eca0[0Ktravis_time:end:03d5eca0:start=1616791387783645131,finish=1616791387786317029,duration=2671898,event=rm_oraclejdk8_symlink[0Ktravis_time:start:0afe4c00[0Ktravis_time:end:0afe4c00:start=1616791387789621355,finish=1616791387883453853,duration=93832498,event=enable_i386[0Ktravis_time:start:11acc31f[0Ktravis_time:end:11acc31f:start=1616791387887832248,finish=1616791387891670271,duration=3838023,event=update_rubygems[0Ktravis_time:start:208dbd70[0Ktravis_time:end:208dbd70:start=1616791387896035665,finish=1616791388917515923,duration=1021480258,event=ensure_path_components[0Ktravis_time:start:260b9e5c[0Ktravis_time:end:260b9e5c:start=1616791388922021238,finish=1616791388924332738,duration=2311500,event=redefine_curl[0Ktravis_time:start:08318fd3[0Ktravis_time:end:08318fd3:start=1616791388928233144,finish=1616791389031686574,duration=103453430,event=nonblock_pipe[0Ktravis_time:start:050dd974[0Ktravis_time:end:050dd974:start=1616791389035633023,finish=1616791395069829994,duration=6034196971,event=apt_get_update[0Ktravis_time:start:03a32900[0Ktravis_time:end:03a32900:start=1616791395073440306,finish=1616791395076168563,duration=2728257,event=deprecate_xcode_64[0Ktravis_time:start:0db810ab[0Ktravis_time:end:0db810ab:start=1616791395079787854,finish=1616791397940880832,duration=2861092978,event=update_heroku[0Ktravis_time:start:0e7aa9b0[0Ktravis_time:end:0e7aa9b0:start=1616791397946451016,finish=1616791397948645574,duration=2194558,event=shell_session_update[0Ktravis_time:start:09931fb4[0Ktravis_fold:start:docker_mtu_and_registry_mirrors[0Ktravis_fold:end:docker_mtu_and_registry_mirrors[0Ktravis_time:end:09931fb4:start=1616791397952698893,finish=1616791400396047161,duration=2443348268,event=set_docker_mtu_and_registry_mirrors[0Ktravis_time:start:033bc99a[0Ktravis_fold:start:resolvconf[0Ktravis_fold:end:resolvconf[0Ktravis_time:end:033bc99a:start=1616791400401786896,finish=1616791400468253322,duration=66466426,event=resolvconf[0Ktravis_time:start:0034232b[0Ktravis_time:end:0034232b:start=1616791400473785051,finish=1616791400627141516,duration=153356465,event=maven_central_mirror[0Ktravis_time:start:0453b28c[0Ktravis_time:end:0453b28c:start=1616791400631019456,finish=1616791400730172847,duration=99153391,event=maven_https[0Ktravis_time:start:1127b274[0Ktravis_fold:start:services[0Ktravis_time:start:21b3f620[0K$ sudo systemctl start docker
+travis_time:end:21b3f620:start=1616791400746114874,finish=1616791400759497803,duration=13382929,event=prepare[0Ktravis_fold:end:services[0Ktravis_time:end:21b3f620:start=1616791400746114874,finish=1616791403767134309,duration=3021019435,event=services[0Ktravis_time:start:0ae1e583[0Ktravis_time:end:0ae1e583:start=1616791403772519829,finish=1616791403775654268,duration=3134439,event=fix_ps4[0Ktravis_time:start:0da08617[0K
+travis_fold:start:git.checkout[0Ktravis_time:start:24960b11[0K$ git clone --depth=50 --branch=develop https://github.com/precice/systemtests.git precice/systemtests
+Cloning into 'precice/systemtests'...
+Updating files:  89% (3731/4150)Updating files:  90% (3735/4150)Updating files:  91% (3777/4150)Updating files:  92% (3818/4150)Updating files:  93% (3860/4150)Updating files:  94% (3901/4150)Updating files:  95% (3943/4150)Updating files:  96% (3984/4150)Updating files:  97% (4026/4150)Updating files:  98% (4067/4150)Updating files:  99% (4109/4150)Updating files: 100% (4150/4150)Updating files: 100% (4150/4150), done.
+travis_time:end:24960b11:start=1616791403785016480,finish=1616791418997938623,duration=15212922143,event=checkout[0K$ cd precice/systemtests
+$ git checkout -qf 8edbc93843fbcd7f84e55517b5c6ec68e50e907e
+travis_fold:end:git.checkout[0K
+travis_time:end:24960b11:start=1616791403785016480,finish=1616791420619497172,duration=16834480692,event=checkout[0Ktravis_time:start:0d2dd187[0K
+[33;1mSetting environment variables from repository settings[0m
+$ export DOCKER_PASSWORD=[secure]
+$ export PRECICE_BOT_EMAIL=[secure]
+$ export GH_TOKEN=[secure]
+$ export DOCKER_USERNAME=precice
+$ export TRAVIS_ACCESS_TOKEN=[secure]
+
+travis_time:end:0d2dd187:start=1616791420625549430,finish=1616791420637893593,duration=12344163,event=env[0Ktravis_time:start:0c2559a2[0K$ source ~/virtualenv/python3.8/bin/activate
+travis_time:end:0c2559a2:start=1616791420643428820,finish=1616791420649929127,duration=6500307,event=[0K$ python --version
+Python 3.8.1
+$ pip --version
+pip 20.3.3 from /home/travis/virtualenv/python3.8.1/lib/python3.8/site-packages/pip (python 3.8)
+travis_fold:start:install[0Ktravis_time:start:0158da08[0K$ pip install Jinja2
+Collecting Jinja2
+  Downloading Jinja2-2.11.3-py2.py3-none-any.whl (125 kB)
+Collecting MarkupSafe>=0.23
+  Downloading MarkupSafe-1.1.1-cp38-cp38-manylinux2010_x86_64.whl (32 kB)
+Installing collected packages: MarkupSafe, Jinja2
+Successfully installed Jinja2-2.11.3 MarkupSafe-1.1.1
+travis_time:end:0158da08:start=1616791421132630462,finish=1616791422321795473,duration=1189165011,event=install[0Ktravis_fold:end:install[0Ktravis_time:start:021a14e0[0K$ export FENICS_TAG=develop.pr120; 
+travis_time:end:021a14e0:start=1616791422327693635,finish=1616791422331361039,duration=3667404,event=script[0K[32;1mThe command "export FENICS_TAG=develop.pr120; " exited with 0.[0m
+travis_time:start:10914f64[0K$ python system_testing.py -s fe-fe --base Ubuntu1804.package -v
+Total reclaimed space: 0B
+networks:
+  precicecomm: {}
+services:
+  fenics-adapter-dirichlet:
+    command: '/bin/bash -c "cd /home/precice && python3 /home/precice/Data/Input/fenics/heat.py
+      -d && mkdir /home/precice/Data/Output/Dirichlet && cp -r precice-output *.log
+      /home/precice/Data/Output/Dirichlet"
+
+      '
+    container_name: fenics-adapter-dirichlet
+    depends_on:
+    - tutorial-data
+    image: precice/fenics-adapter-ubuntu1804.package-develop:develop.pr120
+    networks:
+      precicecomm: null
+    volumes:
+    - exchange:/home/precice/Data/Exchange:rw
+    - output:/home/precice/Data/Output:rw
+    - input:/home/precice/Data/Input:rw
+  fenics-adapter-neumann:
+    command: '/bin/bash -c "cd /home/precice && python3 /home/precice/Data/Input/fenics/heat.py
+      -n && mkdir /home/precice/Data/Output/Neumann && cp -r precice-output *.log
+      /home/precice/Data/Output/Neumann"
+
+      '
+    container_name: fenics-adapter-neumann
+    depends_on:
+    - tutorial-data
+    image: precice/fenics-adapter-ubuntu1804.package-develop:develop.pr120
+    networks:
+      precicecomm: null
+    volumes:
+    - exchange:/home/precice/Data/Exchange:rw
+    - output:/home/precice/Data/Output:rw
+    - input:/home/precice/Data/Input:rw
+  tutorial-data:
+    build:
+      context: /home/travis/build/precice/systemtests/tests/TestCompose_fe-fe
+      dockerfile: Dockerfile.tutorial_data
+      network: host
+    container_name: tutorial-data
+    volumes:
+    - output:/Output:rw
+    - input:/tutorials/partitioned-heat-conduction:rw
+version: '3.4'
+volumes:
+  exchange: {}
+  input: {}
+  output: {}
+
+Creating network "testcompose_fe-fe_default" with the default driver
+Creating network "testcompose_fe-fe_precicecomm" with the default driver
+Creating volume "testcompose_fe-fe_exchange" with default driver
+Creating volume "testcompose_fe-fe_output" with default driver
+Creating volume "testcompose_fe-fe_input" with default driver
+Building tutorial-data
+Step 1/8 : from alpine
+latest: Pulling from library/alpine
+Digest: sha256:826f70e0ac33e99a72cf20fb0571245a8fee52d68cb26d8bc58e53bfa65dcdfa
+Status: Downloaded newer image for alpine:latest
+ ---> 302aba9ce190
+Step 2/8 : ENV tutorial_path tutorials/partitioned-heat-conduction
+ ---> Running in 332476f7767d
+Removing intermediate container 332476f7767d
+ ---> 2f3143f95b86
+Step 3/8 : RUN apk add git
+ ---> Running in 6dfc54968375
+fetch https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/APKINDEX.tar.gz
+fetch https://dl-cdn.alpinelinux.org/alpine/v3.13/community/x86_64/APKINDEX.tar.gz
+(1/7) Installing ca-certificates (20191127-r5)
+(2/7) Installing brotli-libs (1.0.9-r3)
+(3/7) Installing nghttp2-libs (1.42.0-r1)
+(4/7) Installing libcurl (7.74.0-r1)
+(5/7) Installing expat (2.2.10-r1)
+(6/7) Installing pcre2 (10.36-r0)
+(7/7) Installing git (2.30.2-r0)
+Executing busybox-1.32.1-r3.trigger
+Executing ca-certificates-20191127-r5.trigger
+OK: 19 MiB in 21 packages
+Removing intermediate container 6dfc54968375
+ ---> b2733cb9273a
+Step 4/8 : ARG branch=develop
+ ---> Running in 5e9a7cf3625b
+Removing intermediate container 5e9a7cf3625b
+ ---> 274cd7bfa9bb
+Step 5/8 : RUN git clone --depth 1 --branch $branch https://github.com/precice/tutorials
+ ---> Running in 0bbc9bfc24e8
+[91mCloning into 'tutorials'...
+[0mRemoving intermediate container 0bbc9bfc24e8
+ ---> 25031fe1bee5
+Step 6/8 : RUN mkdir configs &&     sed -i 's|<m2n:sockets from="Dirichlet" to="Neumann" exchange-directory=".."/>|<m2n:sockets from="Dirichlet" to="Neumann" exchange-directory="/home/precice/Data/Exchange/" network="eth0"/>|g;             s|\(\s\+\)\(</participant>\)|\1   <export:vtk directory="precice-output" />\n\1\2|g' $tutorial_path/precice-config.xml
+ ---> Running in f43a71b1b06f
+Removing intermediate container f43a71b1b06f
+ ---> c7bf718891bf
+Step 7/8 : RUN addgroup -g 1000 precice && adduser -u 1000 -G precice -D precice && chown -R precice:precice tutorials configs
+ ---> Running in 3dbbd23e7241
+Removing intermediate container 3dbbd23e7241
+ ---> b9ef1f010d62
+Step 8/8 : USER precice
+ ---> Running in e5ff27ecda64
+Removing intermediate container e5ff27ecda64
+ ---> af982390aaef
+
+Successfully built af982390aaef
+Successfully tagged testcompose_fe-fe_tutorial-data:latest
+Image for service tutorial-data was built because it did not already exist. To rebuild this image you must use `docker-compose build` or `docker-compose up --build`.
+Pulling fenics-adapter-neumann (precice/fenics-adapter-ubuntu1804.package-develop:develop.pr120)...
+develop.pr120: Pulling from precice/fenics-adapter-ubuntu1804.package-develop
+Pulling fenics-adapter-dirichlet (precice/fenics-adapter-ubuntu1804.package-develop:develop.pr120)...
+develop.pr120: Pulling from precice/fenics-adapter-ubuntu1804.package-develop
+Creating tutorial-data ... 
+[1A[2KCreating tutorial-data ... [32mdone[0m[1BCreating fenics-adapter-neumann ... 
+Creating fenics-adapter-dirichlet ... 
+[1A[2KCreating fenics-adapter-dirichlet ... [32mdone[0m[1B[2A[2KCreating fenics-adapter-neumann   ... [32mdone[0m[2BAttaching to tutorial-data, fenics-adapter-dirichlet, fenics-adapter-neumann
+[33mfenics-adapter-dirichlet    |[0m --------------------------------------------------------------------------
+[33mfenics-adapter-dirichlet    |[0m [[34434,1],0]: A high-performance Open MPI point-to-point messaging module
+[33mfenics-adapter-dirichlet    |[0m was unable to find any relevant network interfaces:
+[33mfenics-adapter-dirichlet    |[0m 
+[33mfenics-adapter-dirichlet    |[0m Module: OpenFabrics (openib)
+[33mfenics-adapter-dirichlet    |[0m   Host: 8da0218de54d
+[33mfenics-adapter-dirichlet    |[0m 
+[33mfenics-adapter-dirichlet    |[0m Another transport will be used instead, although this may result in
+[33mfenics-adapter-dirichlet    |[0m lower performance.
+[33mfenics-adapter-dirichlet    |[0m 
+[33mfenics-adapter-dirichlet    |[0m NOTE: You can disable this warning by setting the MCA parameter
+[33mfenics-adapter-dirichlet    |[0m btl_base_warn_component_unused to 0.
+[33mfenics-adapter-dirichlet    |[0m --------------------------------------------------------------------------
+[33mfenics-adapter-dirichlet    |[0m Calling FFC just-in-time (JIT) compiler, this may take some time.
+[36mtutorial-data exited with code 0
+[0m[32mfenics-adapter-neumann      |[0m --------------------------------------------------------------------------
+[32mfenics-adapter-neumann      |[0m [[20215,1],0]: A high-performance Open MPI point-to-point messaging module
+[32mfenics-adapter-neumann      |[0m was unable to find any relevant network interfaces:
+[32mfenics-adapter-neumann      |[0m 
+[32mfenics-adapter-neumann      |[0m Module: OpenFabrics (openib)
+[32mfenics-adapter-neumann      |[0m   Host: 15a1e1f603a9
+[32mfenics-adapter-neumann      |[0m 
+[32mfenics-adapter-neumann      |[0m Another transport will be used instead, although this may result in
+[32mfenics-adapter-neumann      |[0m lower performance.
+[32mfenics-adapter-neumann      |[0m 
+[32mfenics-adapter-neumann      |[0m NOTE: You can disable this warning by setting the MCA parameter
+[32mfenics-adapter-neumann      |[0m btl_base_warn_component_unused to 0.
+[32mfenics-adapter-neumann      |[0m --------------------------------------------------------------------------
+[33mfenics-adapter-dirichlet    |[0m Calling FFC just-in-time (JIT) compiler, this may take some time.
+[32mfenics-adapter-neumann      |[0m Calling FFC just-in-time (JIT) compiler, this may take some time.
+[33mfenics-adapter-dirichlet    |[0m Calling FFC just-in-time (JIT) compiler, this may take some time.
+[32mfenics-adapter-neumann      |[0m Calling FFC just-in-time (JIT) compiler, this may take some time.
+[32mfenics-adapter-neumann      |[0m Calling FFC just-in-time (JIT) compiler, this may take some time.
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m This is preCICE version 2.2.0
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m Revision info: no-info [Git failed/Not a repository]
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m Configuration: Debug
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m Configuring preCICE with configuration "/home/precice/Data/Input/fenics/../precice-config.xml"
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m I am participant "Neumann"
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m Setting up master communication to coupling partner/s
+[33mfenics-adapter-dirichlet    |[0m ---[precice] [0m This is preCICE version 2.2.0
+[33mfenics-adapter-dirichlet    |[0m ---[precice] [0m Revision info: no-info [Git failed/Not a repository]
+[33mfenics-adapter-dirichlet    |[0m ---[precice] [0m Configuration: Debug
+[33mfenics-adapter-dirichlet    |[0m ---[precice] [0m Configuring preCICE with configuration "/home/precice/Data/Input/fenics/../precice-config.xml"
+[33mfenics-adapter-dirichlet    |[0m ---[precice] [0m I am participant "Dirichlet"
+[33mfenics-adapter-dirichlet    |[0m ---[precice] [0m Setting up master communication to coupling partner/s
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m Masters are connected
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m Setting up preliminary slaves communication to coupling partner/s
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m Receive global mesh Dirichlet-Mesh
+[33mfenics-adapter-dirichlet    |[0m ---[precice] [0m Masters are connected
+[33mfenics-adapter-dirichlet    |[0m ---[precice] [0m Setting up preliminary slaves communication to coupling partner/s
+[33mfenics-adapter-dirichlet    |[0m ---[precice] [0m Prepare partition for mesh Dirichlet-Mesh
+[33mfenics-adapter-dirichlet    |[0m ---[precice] [0m Gather mesh Dirichlet-Mesh
+[33mfenics-adapter-dirichlet    |[0m ---[precice] [0m Send global mesh Dirichlet-Mesh
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m Prepare partition for mesh Neumann-Mesh
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m Gather mesh Neumann-Mesh
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m Send global mesh Neumann-Mesh
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m Setting up slaves communication to coupling partner/s
+[33mfenics-adapter-dirichlet    |[0m ---[precice] [0m Receive global mesh Neumann-Mesh
+[33mfenics-adapter-dirichlet    |[0m ---[precice] [0m Setting up slaves communication to coupling partner/s
+[33mfenics-adapter-dirichlet    |[0m ---[precice] [0m Slaves are connected
+[33mfenics-adapter-dirichlet    |[0m ---[precice] [0m iteration: 1 of 100, time-window: 1, time: 0 of 1, time-window-size: 0.1, max-timestep-length: 0.1, ongoing: yes, time-window-complete: no, write-iteration-checkpoint 
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m Slaves are connected
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m iteration: 1 of 100, time-window: 1, time: 0 of 1, time-window-size: 0.1, max-timestep-length: 0.1, ongoing: yes, time-window-complete: no, write-initial-data write-iteration-checkpoint 
+[33mfenics-adapter-dirichlet    |[0m ---[precice] [0m Compute read mapping from mesh "Neumann-Mesh" to mesh "Dirichlet-Mesh".
+[33mfenics-adapter-dirichlet    |[0m output u^0 and u_ref^0
+[33mfenics-adapter-dirichlet    |[0m Calling FFC just-in-time (JIT) compiler, this may take some time.
+[33mfenics-adapter-dirichlet    |[0m Calling FFC just-in-time (JIT) compiler, this may take some time.
+[33mfenics-adapter-dirichlet    |[0m Calling FFC just-in-time (JIT) compiler, this may take some time.
+[33mfenics-adapter-dirichlet    |[0m Calling FFC just-in-time (JIT) compiler, this may take some time.
+[33mfenics-adapter-dirichlet    |[0m Calling FFC just-in-time (JIT) compiler, this may take some time.
+[33mfenics-adapter-dirichlet    |[0m Calling FFC just-in-time (JIT) compiler, this may take some time.
+[33mfenics-adapter-dirichlet    |[0m Calling FFC just-in-time (JIT) compiler, this may take some time.
+[33mfenics-adapter-dirichlet    |[0m Calling FFC just-in-time (JIT) compiler, this may take some time.
+[33mfenics-adapter-dirichlet    |[0m Calling FFC just-in-time (JIT) compiler, this may take some time.
+[33mfenics-adapter-dirichlet    |[0m Calling FFC just-in-time (JIT) compiler, this may take some time.
+[33mfenics-adapter-dirichlet    |[0m Calling FFC just-in-time (JIT) compiler, this may take some time.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Calling FFC just-in-time (JIT) compiler, this may take some time.
+[33mfenics-adapter-dirichlet    |[0m Calling FFC just-in-time (JIT) compiler, this may take some time.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m Compute read mapping from mesh "Dirichlet-Mesh" to mesh "Neumann-Mesh".
+[32mfenics-adapter-neumann      |[0m output u^0 and u_ref^0
+[32mfenics-adapter-neumann      |[0m Calling FFC just-in-time (JIT) compiler, this may take some time.
+[32mfenics-adapter-neumann      |[0m Calling FFC just-in-time (JIT) compiler, this may take some time.
+[32mfenics-adapter-neumann      |[0m Calling FFC just-in-time (JIT) compiler, this may take some time.
+[32mfenics-adapter-neumann      |[0m Calling FFC just-in-time (JIT) compiler, this may take some time.
+[32mfenics-adapter-neumann      |[0m Calling FFC just-in-time (JIT) compiler, this may take some time.
+[32mfenics-adapter-neumann      |[0m Calling FFC just-in-time (JIT) compiler, this may take some time.
+[32mfenics-adapter-neumann      |[0m Calling FFC just-in-time (JIT) compiler, this may take some time.
+[32mfenics-adapter-neumann      |[0m Calling FFC just-in-time (JIT) compiler, this may take some time.
+[32mfenics-adapter-neumann      |[0m Calling FFC just-in-time (JIT) compiler, this may take some time.
+[32mfenics-adapter-neumann      |[0m Calling FFC just-in-time (JIT) compiler, this may take some time.
+[32mfenics-adapter-neumann      |[0m Calling FFC just-in-time (JIT) compiler, this may take some time.
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m relative convergence measure: relative two-norm diff = 1, limit = 1e-05, normalization = 5.48611, conv = false
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m relative convergence measure: relative two-norm diff = 0.0735068, limit = 1e-05, normalization = 15.5875, conv = false
+[33mfenics-adapter-dirichlet    |[0m ---[precice] [0m iteration: 2 of 100, time-window: 1, time: 0 of 1, time-window-size: 0.1, max-timestep-length: 0.1, ongoing: yes, time-window-complete: no, read-iteration-checkpoint 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m iteration: 2 of 100, time-window: 1, time: 0 of 1, time-window-size: 0.1, max-timestep-length: 0.1, ongoing: yes, time-window-complete: no, read-iteration-checkpoint 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m relative convergence measure: relative two-norm diff = 0.140436, limit = 1e-05, normalization = 5.4256, conv = false
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m relative convergence measure: relative two-norm diff = 0.0595356, limit = 1e-05, normalization = 15.4893, conv = false
+[33mfenics-adapter-dirichlet    |[0m ---[precice] [0m iteration: 3 of 100, time-window: 1, time: 0 of 1, time-window-size: 0.1, max-timestep-length: 0.1, ongoing: yes, time-window-complete: no, read-iteration-checkpoint 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m iteration: 3 of 100, time-window: 1, time: 0 of 1, time-window-size: 0.1, max-timestep-length: 0.1, ongoing: yes, time-window-complete: no, read-iteration-checkpoint 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m relative convergence measure: relative two-norm diff = 0.871423, limit = 1e-05, normalization = 6.64091, conv = false
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m relative convergence measure: relative two-norm diff = 0.0031642, limit = 1e-05, normalization = 15.0913, conv = false
+[33mfenics-adapter-dirichlet    |[0m ---[precice] [0m iteration: 4 of 100, time-window: 1, time: 0 of 1, time-window-size: 0.1, max-timestep-length: 0.1, ongoing: yes, time-window-complete: no, read-iteration-checkpoint 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m iteration: 4 of 100, time-window: 1, time: 0 of 1, time-window-size: 0.1, max-timestep-length: 0.1, ongoing: yes, time-window-complete: no, read-iteration-checkpoint 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m relative convergence measure: relative two-norm diff = 0.0346742, limit = 1e-05, normalization = 6.63085, conv = false
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m relative convergence measure: relative two-norm diff = 0.000667206, limit = 1e-05, normalization = 15.0863, conv = false
+[33mfenics-adapter-dirichlet    |[0m ---[precice] [0m iteration: 5 of 100, time-window: 1, time: 0 of 1, time-window-size: 0.1, max-timestep-length: 0.1, ongoing: yes, time-window-complete: no, read-iteration-checkpoint 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m iteration: 5 of 100, time-window: 1, time: 0 of 1, time-window-size: 0.1, max-timestep-length: 0.1, ongoing: yes, time-window-complete: no, read-iteration-checkpoint 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m relative convergence measure: relative two-norm diff = 0.0138708, limit = 1e-05, normalization = 6.64105, conv = false
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m relative convergence measure: relative two-norm diff = 0.000450228, limit = 1e-05, normalization = 15.0864, conv = false
+[33mfenics-adapter-dirichlet    |[0m ---[precice] [0m iteration: 6 of 100, time-window: 1, time: 0 of 1, time-window-size: 0.1, max-timestep-length: 0.1, ongoing: yes, time-window-complete: no, read-iteration-checkpoint 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m iteration: 6 of 100, time-window: 1, time: 0 of 1, time-window-size: 0.1, max-timestep-length: 0.1, ongoing: yes, time-window-complete: no, read-iteration-checkpoint 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m relative convergence measure: relative two-norm diff = 0.0060809, limit = 1e-05, normalization = 6.63392, conv = false
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m relative convergence measure: relative two-norm diff = 7.46943e-05, limit = 1e-05, normalization = 15.0871, conv = false
+[33mfenics-adapter-dirichlet    |[0m ---[precice] [0m iteration: 7 of 100, time-window: 1, time: 0 of 1, time-window-size: 0.1, max-timestep-length: 0.1, ongoing: yes, time-window-complete: no, read-iteration-checkpoint 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m iteration: 7 of 100, time-window: 1, time: 0 of 1, time-window-size: 0.1, max-timestep-length: 0.1, ongoing: yes, time-window-complete: no, read-iteration-checkpoint 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m relative convergence measure: relative two-norm diff = 0.00136184, limit = 1e-05, normalization = 6.63335, conv = false
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m relative convergence measure: relative two-norm diff = 1.04597e-05, limit = 1e-05, normalization = 15.0871, conv = false
+[33mfenics-adapter-dirichlet    |[0m ---[precice] [0m iteration: 8 of 100, time-window: 1, time: 0 of 1, time-window-size: 0.1, max-timestep-length: 0.1, ongoing: yes, time-window-complete: no, read-iteration-checkpoint 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m iteration: 8 of 100, time-window: 1, time: 0 of 1, time-window-size: 0.1, max-timestep-length: 0.1, ongoing: yes, time-window-complete: no, read-iteration-checkpoint 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m relative convergence measure: relative two-norm diff = 0.000187195, limit = 1e-05, normalization = 6.63325, conv = false
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m relative convergence measure: relative two-norm diff = 1.51219e-06, limit = 1e-05, normalization = 15.0871, conv = true
+[33mfenics-adapter-dirichlet    |[0m ---[precice] [0m iteration: 9 of 100, time-window: 1, time: 0 of 1, time-window-size: 0.1, max-timestep-length: 0.1, ongoing: yes, time-window-complete: no, read-iteration-checkpoint 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m iteration: 9 of 100, time-window: 1, time: 0 of 1, time-window-size: 0.1, max-timestep-length: 0.1, ongoing: yes, time-window-complete: no, read-iteration-checkpoint 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m relative convergence measure: relative two-norm diff = 2.71399e-05, limit = 1e-05, normalization = 6.63325, conv = false
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m relative convergence measure: relative two-norm diff = 2.1745e-07, limit = 1e-05, normalization = 15.0871, conv = true
+[33mfenics-adapter-dirichlet    |[0m ---[precice] [0m iteration: 10 of 100, time-window: 1, time: 0 of 1, time-window-size: 0.1, max-timestep-length: 0.1, ongoing: yes, time-window-complete: no, read-iteration-checkpoint 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m iteration: 10 of 100, time-window: 1, time: 0 of 1, time-window-size: 0.1, max-timestep-length: 0.1, ongoing: yes, time-window-complete: no, read-iteration-checkpoint 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m relative convergence measure: relative two-norm diff = 3.87694e-06, limit = 1e-05, normalization = 6.63325, conv = true
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m relative convergence measure: relative two-norm diff = 3.30154e-08, limit = 1e-05, normalization = 15.0871, conv = true
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m All converged
+[33mfenics-adapter-dirichlet    |[0m ---[precice] [0m Time window completed
+[33mfenics-adapter-dirichlet    |[0m ---[precice] [0m iteration: 1 of 100, time-window: 2, time: 0.1 of 1, time-window-size: 0.1, max-timestep-length: 0.1, ongoing: yes, time-window-complete: yes, write-iteration-checkpoint 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m Time window completed
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m iteration: 1 of 100, time-window: 2, time: 0.1 of 1, time-window-size: 0.1, max-timestep-length: 0.1, ongoing: yes, time-window-complete: yes, write-iteration-checkpoint 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m relative convergence measure: relative two-norm diff = 1.18122, limit = 1e-05, normalization = 5.48611, conv = false
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m relative convergence measure: relative two-norm diff = 0.0708966, limit = 1e-05, normalization = 16.1614, conv = false
+[33mfenics-adapter-dirichlet    |[0m ---[precice] [0m iteration: 2 of 100, time-window: 2, time: 0.1 of 1, time-window-size: 0.1, max-timestep-length: 0.1, ongoing: yes, time-window-complete: no, read-iteration-checkpoint 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m iteration: 2 of 100, time-window: 2, time: 0.1 of 1, time-window-size: 0.1, max-timestep-length: 0.1, ongoing: yes, time-window-complete: no, read-iteration-checkpoint 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m relative convergence measure: relative two-norm diff = 0.976946, limit = 1e-05, normalization = 6.63325, conv = false
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m relative convergence measure: relative two-norm diff = 4.51763e-09, limit = 1e-05, normalization = 15.6589, conv = true
+[33mfenics-adapter-dirichlet    |[0m ---[precice] [0m iteration: 3 of 100, time-window: 2, time: 0.1 of 1, time-window-size: 0.1, max-timestep-length: 0.1, ongoing: yes, time-window-complete: no, read-iteration-checkpoint 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m iteration: 3 of 100, time-window: 2, time: 0.1 of 1, time-window-size: 0.1, max-timestep-length: 0.1, ongoing: yes, time-window-complete: no, read-iteration-checkpoint 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m relative convergence measure: relative two-norm diff = 1.02094e-07, limit = 1e-05, normalization = 6.63325, conv = true
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m relative convergence measure: relative two-norm diff = 3.96548e-09, limit = 1e-05, normalization = 15.6589, conv = true
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m All converged
+[33mfenics-adapter-dirichlet    |[0m ---[precice] [0m Time window completed
+[33mfenics-adapter-dirichlet    |[0m ---[precice] [0m iteration: 1 of 100, time-window: 3, time: 0.2 of 1, time-window-size: 0.1, max-timestep-length: 0.1, ongoing: yes, time-window-complete: yes, write-iteration-checkpoint 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m Time window completed
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m iteration: 1 of 100, time-window: 3, time: 0.2 of 1, time-window-size: 0.1, max-timestep-length: 0.1, ongoing: yes, time-window-complete: yes, write-iteration-checkpoint 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m relative convergence measure: relative two-norm diff = 1.18122, limit = 1e-05, normalization = 5.48611, conv = false
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m relative convergence measure: relative two-norm diff = 0.0684592, limit = 1e-05, normalization = 16.7368, conv = false
+[33mfenics-adapter-dirichlet    |[0m ---[precice] [0m iteration: 2 of 100, time-window: 3, time: 0.2 of 1, time-window-size: 0.1, max-timestep-length: 0.1, ongoing: yes, time-window-complete: no, read-iteration-checkpoint 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m iteration: 2 of 100, time-window: 3, time: 0.2 of 1, time-window-size: 0.1, max-timestep-length: 0.1, ongoing: yes, time-window-complete: no, read-iteration-checkpoint 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m relative convergence measure: relative two-norm diff = 0.976946, limit = 1e-05, normalization = 6.63325, conv = false
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m relative convergence measure: relative two-norm diff = 7.21e-10, limit = 1e-05, normalization = 16.2325, conv = true
+[33mfenics-adapter-dirichlet    |[0m ---[precice] [0m iteration: 3 of 100, time-window: 3, time: 0.2 of 1, time-window-size: 0.1, max-timestep-length: 0.1, ongoing: yes, time-window-complete: no, read-iteration-checkpoint 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m iteration: 3 of 100, time-window: 3, time: 0.2 of 1, time-window-size: 0.1, max-timestep-length: 0.1, ongoing: yes, time-window-complete: no, read-iteration-checkpoint 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m relative convergence measure: relative two-norm diff = 1.28731e-08, limit = 1e-05, normalization = 6.63325, conv = true
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m relative convergence measure: relative two-norm diff = 7.03351e-10, limit = 1e-05, normalization = 16.2325, conv = true
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m All converged
+[33mfenics-adapter-dirichlet    |[0m ---[precice] [0m Time window completed
+[33mfenics-adapter-dirichlet    |[0m ---[precice] [0m iteration: 1 of 100, time-window: 4, time: 0.3 of 1, time-window-size: 0.1, max-timestep-length: 0.1, ongoing: yes, time-window-complete: yes, write-iteration-checkpoint 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m Time window completed
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m iteration: 1 of 100, time-window: 4, time: 0.3 of 1, time-window-size: 0.1, max-timestep-length: 0.1, ongoing: yes, time-window-complete: yes, write-iteration-checkpoint 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m relative convergence measure: relative two-norm diff = 1.18122, limit = 1e-05, normalization = 5.48611, conv = false
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m relative convergence measure: relative two-norm diff = 0.0661786, limit = 1e-05, normalization = 17.3136, conv = false
+[33mfenics-adapter-dirichlet    |[0m ---[precice] [0m iteration: 2 of 100, time-window: 4, time: 0.3 of 1, time-window-size: 0.1, max-timestep-length: 0.1, ongoing: yes, time-window-complete: no, read-iteration-checkpoint 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m iteration: 2 of 100, time-window: 4, time: 0.3 of 1, time-window-size: 0.1, max-timestep-length: 0.1, ongoing: yes, time-window-complete: no, read-iteration-checkpoint 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m relative convergence measure: relative two-norm diff = 0.976946, limit = 1e-05, normalization = 6.63325, conv = false
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m relative convergence measure: relative two-norm diff = 4.94204e-11, limit = 1e-05, normalization = 16.8076, conv = true
+[33mfenics-adapter-dirichlet    |[0m ---[precice] [0m iteration: 3 of 100, time-window: 4, time: 0.3 of 1, time-window-size: 0.1, max-timestep-length: 0.1, ongoing: yes, time-window-complete: no, read-iteration-checkpoint 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m iteration: 3 of 100, time-window: 4, time: 0.3 of 1, time-window-size: 0.1, max-timestep-length: 0.1, ongoing: yes, time-window-complete: no, read-iteration-checkpoint 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m relative convergence measure: relative two-norm diff = 1.82553e-09, limit = 1e-05, normalization = 6.63325, conv = true
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m relative convergence measure: relative two-norm diff = 2.59107e-11, limit = 1e-05, normalization = 16.8076, conv = true
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m All converged
+[33mfenics-adapter-dirichlet    |[0m ---[precice] [0m Time window completed
+[33mfenics-adapter-dirichlet    |[0m ---[precice] [0m iteration: 1 of 100, time-window: 5, time: 0.4 of 1, time-window-size: 0.1, max-timestep-length: 0.1, ongoing: yes, time-window-complete: yes, write-iteration-checkpoint 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m Time window completed
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m iteration: 1 of 100, time-window: 5, time: 0.4 of 1, time-window-size: 0.1, max-timestep-length: 0.1, ongoing: yes, time-window-complete: yes, write-iteration-checkpoint 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m relative convergence measure: relative two-norm diff = 1.18122, limit = 1e-05, normalization = 5.48611, conv = false
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m relative convergence measure: relative two-norm diff = 0.0640405, limit = 1e-05, normalization = 17.8916, conv = false
+[33mfenics-adapter-dirichlet    |[0m ---[precice] [0m iteration: 2 of 100, time-window: 5, time: 0.4 of 1, time-window-size: 0.1, max-timestep-length: 0.1, ongoing: yes, time-window-complete: no, read-iteration-checkpoint 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m iteration: 2 of 100, time-window: 5, time: 0.4 of 1, time-window-size: 0.1, max-timestep-length: 0.1, ongoing: yes, time-window-complete: no, read-iteration-checkpoint 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m relative convergence measure: relative two-norm diff = 0.976946, limit = 1e-05, normalization = 6.63325, conv = false
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m relative convergence measure: relative two-norm diff = 1.20334e-12, limit = 1e-05, normalization = 17.384, conv = true
+[33mfenics-adapter-dirichlet    |[0m ---[precice] [0m iteration: 3 of 100, time-window: 5, time: 0.4 of 1, time-window-size: 0.1, max-timestep-length: 0.1, ongoing: yes, time-window-complete: no, read-iteration-checkpoint 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m iteration: 3 of 100, time-window: 5, time: 0.4 of 1, time-window-size: 0.1, max-timestep-length: 0.1, ongoing: yes, time-window-complete: no, read-iteration-checkpoint 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m relative convergence measure: relative two-norm diff = 7.77874e-12, limit = 1e-05, normalization = 6.63325, conv = true
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m relative convergence measure: relative two-norm diff = 3.1716e-13, limit = 1e-05, normalization = 17.384, conv = true
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m All converged
+[33mfenics-adapter-dirichlet    |[0m ---[precice] [0m Time window completed
+[33mfenics-adapter-dirichlet    |[0m ---[precice] [0m iteration: 1 of 100, time-window: 6, time: 0.5 of 1, time-window-size: 0.1, max-timestep-length: 0.1, ongoing: yes, time-window-complete: yes, write-iteration-checkpoint 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m Time window completed
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m iteration: 1 of 100, time-window: 6, time: 0.5 of 1, time-window-size: 0.1, max-timestep-length: 0.1, ongoing: yes, time-window-complete: yes, write-iteration-checkpoint 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m relative convergence measure: relative two-norm diff = 1.18122, limit = 1e-05, normalization = 5.48611, conv = false
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m relative convergence measure: relative two-norm diff = 0.0620325, limit = 1e-05, normalization = 18.4707, conv = false
+[33mfenics-adapter-dirichlet    |[0m ---[precice] [0m iteration: 2 of 100, time-window: 6, time: 0.5 of 1, time-window-size: 0.1, max-timestep-length: 0.1, ongoing: yes, time-window-complete: no, read-iteration-checkpoint 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m iteration: 2 of 100, time-window: 6, time: 0.5 of 1, time-window-size: 0.1, max-timestep-length: 0.1, ongoing: yes, time-window-complete: no, read-iteration-checkpoint 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m relative convergence measure: relative two-norm diff = 0.976946, limit = 1e-05, normalization = 6.63325, conv = false
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m relative convergence measure: relative two-norm diff = 3.01707e-13, limit = 1e-05, normalization = 17.9618, conv = true
+[33mfenics-adapter-dirichlet    |[0m ---[precice] [0m iteration: 3 of 100, time-window: 6, time: 0.5 of 1, time-window-size: 0.1, max-timestep-length: 0.1, ongoing: yes, time-window-complete: no, read-iteration-checkpoint 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m iteration: 3 of 100, time-window: 6, time: 0.5 of 1, time-window-size: 0.1, max-timestep-length: 0.1, ongoing: yes, time-window-complete: no, read-iteration-checkpoint 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m relative convergence measure: relative two-norm diff = 4.27477e-12, limit = 1e-05, normalization = 6.63325, conv = true
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m relative convergence measure: relative two-norm diff = 7.0766e-14, limit = 1e-05, normalization = 17.9618, conv = true
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m All converged
+[33mfenics-adapter-dirichlet    |[0m ---[precice] [0m Time window completed
+[33mfenics-adapter-dirichlet    |[0m ---[precice] [0m iteration: 1 of 100, time-window: 7, time: 0.6 of 1, time-window-size: 0.1, max-timestep-length: 0.1, ongoing: yes, time-window-complete: yes, write-iteration-checkpoint 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m Time window completed
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m iteration: 1 of 100, time-window: 7, time: 0.6 of 1, time-window-size: 0.1, max-timestep-length: 0.1, ongoing: yes, time-window-complete: yes, write-iteration-checkpoint 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m relative convergence measure: relative two-norm diff = 1.18122, limit = 1e-05, normalization = 5.48611, conv = false
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m relative convergence measure: relative two-norm diff = 0.0601434, limit = 1e-05, normalization = 19.0509, conv = false
+[33mfenics-adapter-dirichlet    |[0m ---[precice] [0m iteration: 2 of 100, time-window: 7, time: 0.6 of 1, time-window-size: 0.1, max-timestep-length: 0.1, ongoing: yes, time-window-complete: no, read-iteration-checkpoint 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m iteration: 2 of 100, time-window: 7, time: 0.6 of 1, time-window-size: 0.1, max-timestep-length: 0.1, ongoing: yes, time-window-complete: no, read-iteration-checkpoint 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m relative convergence measure: relative two-norm diff = 0.976946, limit = 1e-05, normalization = 6.63325, conv = false
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m relative convergence measure: relative two-norm diff = 3.57033e-13, limit = 1e-05, normalization = 18.5406, conv = true
+[33mfenics-adapter-dirichlet    |[0m ---[precice] [0m iteration: 3 of 100, time-window: 7, time: 0.6 of 1, time-window-size: 0.1, max-timestep-length: 0.1, ongoing: yes, time-window-complete: no, read-iteration-checkpoint 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m iteration: 3 of 100, time-window: 7, time: 0.6 of 1, time-window-size: 0.1, max-timestep-length: 0.1, ongoing: yes, time-window-complete: no, read-iteration-checkpoint 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m relative convergence measure: relative two-norm diff = 7.87784e-12, limit = 1e-05, normalization = 6.63325, conv = true
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m relative convergence measure: relative two-norm diff = 3.09173e-13, limit = 1e-05, normalization = 18.5406, conv = true
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m All converged
+[33mfenics-adapter-dirichlet    |[0m ---[precice] [0m Time window completed
+[33mfenics-adapter-dirichlet    |[0m ---[precice] [0m iteration: 1 of 100, time-window: 8, time: 0.7 of 1, time-window-size: 0.1, max-timestep-length: 0.1, ongoing: yes, time-window-complete: yes, write-iteration-checkpoint 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m Time window completed
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m iteration: 1 of 100, time-window: 8, time: 0.7 of 1, time-window-size: 0.1, max-timestep-length: 0.1, ongoing: yes, time-window-complete: yes, write-iteration-checkpoint 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m relative convergence measure: relative two-norm diff = 1.18122, limit = 1e-05, normalization = 5.48611, conv = false
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m relative convergence measure: relative two-norm diff = 0.0583632, limit = 1e-05, normalization = 19.632, conv = false
+[33mfenics-adapter-dirichlet    |[0m ---[precice] [0m iteration: 2 of 100, time-window: 8, time: 0.7 of 1, time-window-size: 0.1, max-timestep-length: 0.1, ongoing: yes, time-window-complete: no, read-iteration-checkpoint 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m iteration: 2 of 100, time-window: 8, time: 0.7 of 1, time-window-size: 0.1, max-timestep-length: 0.1, ongoing: yes, time-window-complete: no, read-iteration-checkpoint 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m relative convergence measure: relative two-norm diff = 0.976946, limit = 1e-05, normalization = 6.63325, conv = false
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m relative convergence measure: relative two-norm diff = 1.3968e-13, limit = 1e-05, normalization = 19.1206, conv = true
+[33mfenics-adapter-dirichlet    |[0m ---[precice] [0m iteration: 3 of 100, time-window: 8, time: 0.7 of 1, time-window-size: 0.1, max-timestep-length: 0.1, ongoing: yes, time-window-complete: no, read-iteration-checkpoint 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m iteration: 3 of 100, time-window: 8, time: 0.7 of 1, time-window-size: 0.1, max-timestep-length: 0.1, ongoing: yes, time-window-complete: no, read-iteration-checkpoint 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m relative convergence measure: relative two-norm diff = 3.77967e-12, limit = 1e-05, normalization = 6.63325, conv = true
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m relative convergence measure: relative two-norm diff = 1.04226e-13, limit = 1e-05, normalization = 19.1206, conv = true
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m All converged
+[33mfenics-adapter-dirichlet    |[0m ---[precice] [0m Time window completed
+[33mfenics-adapter-dirichlet    |[0m ---[precice] [0m iteration: 1 of 100, time-window: 9, time: 0.8 of 1, time-window-size: 0.1, max-timestep-length: 0.1, ongoing: yes, time-window-complete: yes, write-iteration-checkpoint 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m Time window completed
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m iteration: 1 of 100, time-window: 9, time: 0.8 of 1, time-window-size: 0.1, max-timestep-length: 0.1, ongoing: yes, time-window-complete: yes, write-iteration-checkpoint 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m relative convergence measure: relative two-norm diff = 1.18122, limit = 1e-05, normalization = 5.48611, conv = false
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m relative convergence measure: relative two-norm diff = 0.0566829, limit = 1e-05, normalization = 20.214, conv = false
+[33mfenics-adapter-dirichlet    |[0m ---[precice] [0m iteration: 2 of 100, time-window: 9, time: 0.8 of 1, time-window-size: 0.1, max-timestep-length: 0.1, ongoing: yes, time-window-complete: no, read-iteration-checkpoint 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m iteration: 2 of 100, time-window: 9, time: 0.8 of 1, time-window-size: 0.1, max-timestep-length: 0.1, ongoing: yes, time-window-complete: no, read-iteration-checkpoint 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m relative convergence measure: relative two-norm diff = 0.976946, limit = 1e-05, normalization = 6.63325, conv = false
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m relative convergence measure: relative two-norm diff = 4.24376e-14, limit = 1e-05, normalization = 19.7014, conv = true
+[33mfenics-adapter-dirichlet    |[0m ---[precice] [0m iteration: 3 of 100, time-window: 9, time: 0.8 of 1, time-window-size: 0.1, max-timestep-length: 0.1, ongoing: yes, time-window-complete: no, read-iteration-checkpoint 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m iteration: 3 of 100, time-window: 9, time: 0.8 of 1, time-window-size: 0.1, max-timestep-length: 0.1, ongoing: yes, time-window-complete: no, read-iteration-checkpoint 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m relative convergence measure: relative two-norm diff = 1.13876e-12, limit = 1e-05, normalization = 6.63325, conv = true
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m relative convergence measure: relative two-norm diff = 2.52787e-14, limit = 1e-05, normalization = 19.7014, conv = true
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m All converged
+[33mfenics-adapter-dirichlet    |[0m ---[precice] [0m Time window completed
+[33mfenics-adapter-dirichlet    |[0m ---[precice] [0m iteration: 1 of 100, time-window: 10, time: 0.9 of 1, time-window-size: 0.1, max-timestep-length: 0.1, ongoing: yes, time-window-complete: yes, write-iteration-checkpoint 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m Time window completed
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m iteration: 1 of 100, time-window: 10, time: 0.9 of 1, time-window-size: 0.1, max-timestep-length: 0.1, ongoing: yes, time-window-complete: yes, write-iteration-checkpoint 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m relative convergence measure: relative two-norm diff = 1.18122, limit = 1e-05, normalization = 5.48611, conv = false
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m relative convergence measure: relative two-norm diff = 0.0550946, limit = 1e-05, normalization = 20.7967, conv = false
+[33mfenics-adapter-dirichlet    |[0m ---[precice] [0m iteration: 2 of 100, time-window: 10, time: 0.9 of 1, time-window-size: 0.1, max-timestep-length: 0.1, ongoing: yes, time-window-complete: no, read-iteration-checkpoint 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m iteration: 2 of 100, time-window: 10, time: 0.9 of 1, time-window-size: 0.1, max-timestep-length: 0.1, ongoing: yes, time-window-complete: no, read-iteration-checkpoint 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m relative convergence measure: relative two-norm diff = 0.976946, limit = 1e-05, normalization = 6.63325, conv = false
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m relative convergence measure: relative two-norm diff = 1.85201e-14, limit = 1e-05, normalization = 20.2831, conv = true
+[33mfenics-adapter-dirichlet    |[0m ---[precice] [0m iteration: 3 of 100, time-window: 10, time: 0.9 of 1, time-window-size: 0.1, max-timestep-length: 0.1, ongoing: yes, time-window-complete: no, read-iteration-checkpoint 
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[33mfenics-adapter-dirichlet    |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m iteration: 3 of 100, time-window: 10, time: 0.9 of 1, time-window-size: 0.1, max-timestep-length: 0.1, ongoing: yes, time-window-complete: no, read-iteration-checkpoint 
+[32mfenics-adapter-neumann      |[0m Solving linear variational problem.
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m relative convergence measure: relative two-norm diff = 5.28625e-13, limit = 1e-05, normalization = 6.63325, conv = true
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m relative convergence measure: relative two-norm diff = 5.14428e-15, limit = 1e-05, normalization = 20.2831, conv = true
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m All converged
+[33mfenics-adapter-dirichlet    |[0m ---[precice] [0m Time window completed
+[33mfenics-adapter-dirichlet    |[0m ---[precice] [0m iteration: 1 of 100, time-window: 11, time: 1 of 1, time-window-size: 0.1, max-timestep-length: 0.1, ongoing: no, time-window-complete: yes, 
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m Time window completed
+[32mfenics-adapter-neumann      |[0m ---[precice] [0m iteration: 1 of 100, time-window: 11, time: 1 of 1, time-window-size: 0.1, max-timestep-length: 0.1, ongoing: no, time-window-complete: yes, 
+[33mfenics-adapter-dirichlet    |[0m n = 1, t = 0.10: L2 error on domain = 3.29e-09
+[33mfenics-adapter-dirichlet    |[0m output u^1 and u_ref^1
+[33mfenics-adapter-dirichlet    |[0m n = 2, t = 0.20: L2 error on domain = 4.17e-10
+[33mfenics-adapter-dirichlet    |[0m output u^2 and u_ref^2
+[33mfenics-adapter-dirichlet    |[0m n = 3, t = 0.30: L2 error on domain = 1.2e-10
+[33mfenics-adapter-dirichlet    |[0m output u^3 and u_ref^3
+[33mfenics-adapter-dirichlet    |[0m n = 4, t = 0.40: L2 error on domain = 1.14e-11
+[33mfenics-adapter-dirichlet    |[0m output u^4 and u_ref^4
+[33mfenics-adapter-dirichlet    |[0m n = 5, t = 0.50: L2 error on domain = 2.99e-12
+[33mfenics-adapter-dirichlet    |[0m output u^5 and u_ref^5
+[33mfenics-adapter-dirichlet    |[0m n = 6, t = 0.60: L2 error on domain = 1.18e-12
+[33mfenics-adapter-dirichlet    |[0m output u^6 and u_ref^6
+[33mfenics-adapter-dirichlet    |[0m n = 7, t = 0.70: L2 error on domain = 5.01e-13
+[33mfenics-adapter-dirichlet    |[0m output u^7 and u_ref^7
+[33mfenics-adapter-dirichlet    |[0m n = 8, t = 0.80: L2 error on domain = 2.15e-13
+[33mfenics-adapter-dirichlet    |[0m output u^8 and u_ref^8
+[33mfenics-adapter-dirichlet    |[0m n = 9, t = 0.90: L2 error on domain = 9.22e-14
+[33mfenics-adapter-dirichlet    |[0m output u^9 and u_ref^9
+[33mfenics-adapter-dirichlet    |[0m n = 10, t = 1.00: L2 error on domain = 3.73e-14
+[33mfenics-adapter-dirichlet    |[0m output u^10 and u_ref^10
+[32mfenics-adapter-neumann      |[0m n = 1, t = 0.10: L2 error on domain = 2.94e-09
+[32mfenics-adapter-neumann      |[0m output u^1 and u_ref^1
+[32mfenics-adapter-neumann      |[0m n = 2, t = 0.20: L2 error on domain = 3.89e-10
+[32mfenics-adapter-neumann      |[0m output u^2 and u_ref^2
+[32mfenics-adapter-neumann      |[0m n = 3, t = 0.30: L2 error on domain = 1.11e-10
+[32mfenics-adapter-neumann      |[0m output u^3 and u_ref^3
+[32mfenics-adapter-neumann      |[0m n = 4, t = 0.40: L2 error on domain = 9.69e-12
+[32mfenics-adapter-neumann      |[0m output u^4 and u_ref^4
+[32mfenics-adapter-neumann      |[0m n = 5, t = 0.50: L2 error on domain = 2.73e-12
+[32mfenics-adapter-neumann      |[0m output u^5 and u_ref^5
+[32mfenics-adapter-neumann      |[0m n = 6, t = 0.60: L2 error on domain = 1.1e-12
+[32mfenics-adapter-neumann      |[0m output u^6 and u_ref^6
+[32mfenics-adapter-neumann      |[0m n = 7, t = 0.70: L2 error on domain = 4.8e-13
+[32mfenics-adapter-neumann      |[0m output u^7 and u_ref^7
+[32mfenics-adapter-neumann      |[0m n = 8, t = 0.80: L2 error on domain = 2.09e-13
+[32mfenics-adapter-neumann      |[0m output u^8 and u_ref^8
+[32mfenics-adapter-neumann      |[0m n = 9, t = 0.90: L2 error on domain = 9.21e-14
+[32mfenics-adapter-neumann      |[0m output u^9 and u_ref^9
+[32mfenics-adapter-neumann      |[0m n = 10, t = 1.00: L2 error on domain = 4.41e-14
+[32mfenics-adapter-neumann      |[0m output u^10 and u_ref^10
+[33mfenics-adapter-dirichlet exited with code 0
+[0m[32mfenics-adapter-neumann exited with code 0
+[0m------------- Comparing files -------------
+Comparing values in 'Dirichlet-Mesh-Dirichlet.dt10.vtk'...
+Comparing values in 'Dirichlet-Mesh-Dirichlet.dt1.vtk'...
+Comparing values in 'Dirichlet-Mesh-Dirichlet.dt2.vtk'...
+Comparing values in 'Dirichlet-Mesh-Dirichlet.dt3.vtk'...
+Comparing values in 'Dirichlet-Mesh-Dirichlet.dt4.vtk'...
+Comparing values in 'Dirichlet-Mesh-Dirichlet.dt5.vtk'...
+Comparing values in 'Dirichlet-Mesh-Dirichlet.dt6.vtk'...
+Comparing values in 'Dirichlet-Mesh-Dirichlet.dt7.vtk'...
+Comparing values in 'Dirichlet-Mesh-Dirichlet.dt8.vtk'...
+Comparing values in 'Dirichlet-Mesh-Dirichlet.dt9.vtk'...
+Comparing values in 'Dirichlet-Mesh-Dirichlet.final.vtk'...
+Comparing values in 'Dirichlet-Mesh-Dirichlet.init.vtk'...
+Comparing values in 'Neumann-Mesh-Dirichlet.dt10.vtk'...
+Comparing values in 'Neumann-Mesh-Dirichlet.dt1.vtk'...
+Comparing values in 'Neumann-Mesh-Dirichlet.dt2.vtk'...
+Comparing values in 'Neumann-Mesh-Dirichlet.dt3.vtk'...
+Comparing values in 'Neumann-Mesh-Dirichlet.dt4.vtk'...
+Comparing values in 'Neumann-Mesh-Dirichlet.dt5.vtk'...
+Comparing values in 'Neumann-Mesh-Dirichlet.dt6.vtk'...
+Comparing values in 'Neumann-Mesh-Dirichlet.dt7.vtk'...
+Comparing values in 'Neumann-Mesh-Dirichlet.dt8.vtk'...
+Comparing values in 'Neumann-Mesh-Dirichlet.dt9.vtk'...
+Comparing values in 'Neumann-Mesh-Dirichlet.final.vtk'...
+Comparing values in 'precice-Neumann-convergence.log'...
+> Numerical difference in precice-Neumann-convergence.log
+Average: 0.09732 ; Maximum: 6.18578 
+Comparing values in 'Dirichlet-Mesh-Neumann.dt10.vtk'...
+Comparing values in 'Dirichlet-Mesh-Neumann.dt1.vtk'...
+Comparing values in 'Dirichlet-Mesh-Neumann.dt2.vtk'...
+Comparing values in 'Dirichlet-Mesh-Neumann.dt3.vtk'...
+Comparing values in 'Dirichlet-Mesh-Neumann.dt4.vtk'...
+Comparing values in 'Dirichlet-Mesh-Neumann.dt5.vtk'...
+Comparing values in 'Dirichlet-Mesh-Neumann.dt6.vtk'...
+Comparing values in 'Dirichlet-Mesh-Neumann.dt7.vtk'...
+Comparing values in 'Dirichlet-Mesh-Neumann.dt8.vtk'...
+Comparing values in 'Dirichlet-Mesh-Neumann.dt9.vtk'...
+Comparing values in 'Dirichlet-Mesh-Neumann.final.vtk'...
+Comparing values in 'Dirichlet-Mesh-Neumann.init.vtk'...
+Comparing values in 'Neumann-Mesh-Neumann.dt10.vtk'...
+Comparing values in 'Neumann-Mesh-Neumann.dt1.vtk'...
+> Numerical difference in Neumann-Mesh-Neumann.dt1.vtk
+Average: 0.00316542 ; Maximum: 0.441632 
+Comparing values in 'Neumann-Mesh-Neumann.dt2.vtk'...
+> Numerical difference in Neumann-Mesh-Neumann.dt2.vtk
+Average: 0.00316543 ; Maximum: 0.441634 
+Comparing values in 'Neumann-Mesh-Neumann.dt3.vtk'...
+> Numerical difference in Neumann-Mesh-Neumann.dt3.vtk
+Average: 0.00316543 ; Maximum: 0.441634 
+Comparing values in 'Neumann-Mesh-Neumann.dt4.vtk'...
+> Numerical difference in Neumann-Mesh-Neumann.dt4.vtk
+Average: 0.00316543 ; Maximum: 0.441634 
+Comparing values in 'Neumann-Mesh-Neumann.dt5.vtk'...
+> Numerical difference in Neumann-Mesh-Neumann.dt5.vtk
+Average: 0.00316543 ; Maximum: 0.441634 
+Comparing values in 'Neumann-Mesh-Neumann.dt6.vtk'...
+> Numerical difference in Neumann-Mesh-Neumann.dt6.vtk
+Average: 0.00316543 ; Maximum: 0.441634 
+Comparing values in 'Neumann-Mesh-Neumann.dt7.vtk'...
+> Numerical difference in Neumann-Mesh-Neumann.dt7.vtk
+Average: 0.00316543 ; Maximum: 0.441634 
+Comparing values in 'Neumann-Mesh-Neumann.dt8.vtk'...
+> Numerical difference in Neumann-Mesh-Neumann.dt8.vtk
+Average: 0.00316543 ; Maximum: 0.441634 
+Comparing values in 'Neumann-Mesh-Neumann.dt9.vtk'...
+> Numerical difference in Neumann-Mesh-Neumann.dt9.vtk
+Average: 0.00316543 ; Maximum: 0.441634 
+Comparing values in 'Neumann-Mesh-Neumann.final.vtk'...
+Comparing values in 'Neumann-Mesh-Neumann.init.vtk'...
+> Numerical difference in Neumann-Mesh-Neumann.init.vtk
+Average: 0.00316543 ; Maximum: 0.441634 
+----------- Comparison finished -----------
+EXECUTING: docker container prune -f; export PRECICE_BASE=-ubuntu1804.package-develop; mkdir Logs; docker-compose config && bash ../../silent_compose.sh debug
+EXECUTING: docker cp tutorial-data:/Output .
+EXECUTING: docker-compose logs > Logs/container.log
+EXECUTING: rm -f Output/Dirichlet/precice-Dirichlet-events-summary.log
+EXECUTING: rm -f Output/Neumann/precice-Neumann-events-summary.log
+EXECUTING: bash ../../compare_results.sh /home/travis/build/precice/systemtests/tests/TestCompose_fe-fe/referenceOutput /home/travis/build/precice/systemtests/tests/TestCompose_fe-fe/Output
+TEST FAILED WITH: Output files do not match reference
+Files differing               : ['Dirichlet-Mesh-Dirichlet.dt1.vtk', 'Dirichlet-Mesh-Dirichlet.dt10.vtk', 'Dirichlet-Mesh-Dirichlet.dt2.vtk', 'Dirichlet-Mesh-Dirichlet.dt3.vtk', 'Dirichlet-Mesh-Dirichlet.dt4.vtk', 'Dirichlet-Mesh-Dirichlet.dt5.vtk', 'Dirichlet-Mesh-Dirichlet.dt6.vtk', 'Dirichlet-Mesh-Dirichlet.dt7.vtk', 'Dirichlet-Mesh-Dirichlet.dt8.vtk', 'Dirichlet-Mesh-Dirichlet.dt9.vtk', 'Dirichlet-Mesh-Dirichlet.final.vtk', 'Dirichlet-Mesh-Dirichlet.init.vtk', 'Neumann-Mesh-Dirichlet.dt1.vtk', 'Neumann-Mesh-Dirichlet.dt10.vtk', 'Neumann-Mesh-Dirichlet.dt2.vtk', 'Neumann-Mesh-Dirichlet.dt3.vtk', 'Neumann-Mesh-Dirichlet.dt4.vtk', 'Neumann-Mesh-Dirichlet.dt5.vtk', 'Neumann-Mesh-Dirichlet.dt6.vtk', 'Neumann-Mesh-Dirichlet.dt7.vtk', 'Neumann-Mesh-Dirichlet.dt8.vtk', 'Neumann-Mesh-Dirichlet.dt9.vtk', 'Neumann-Mesh-Dirichlet.final.vtk', 'precice-Neumann-convergence.log', 'Dirichlet-Mesh-Neumann.dt1.vtk', 'Dirichlet-Mesh-Neumann.dt10.vtk', 'Dirichlet-Mesh-Neumann.dt2.vtk', 'Dirichlet-Mesh-Neumann.dt3.vtk', 'Dirichlet-Mesh-Neumann.dt4.vtk', 'Dirichlet-Mesh-Neumann.dt5.vtk', 'Dirichlet-Mesh-Neumann.dt6.vtk', 'Dirichlet-Mesh-Neumann.dt7.vtk', 'Dirichlet-Mesh-Neumann.dt8.vtk', 'Dirichlet-Mesh-Neumann.dt9.vtk', 'Dirichlet-Mesh-Neumann.final.vtk', 'Dirichlet-Mesh-Neumann.init.vtk', 'Neumann-Mesh-Neumann.dt1.vtk', 'Neumann-Mesh-Neumann.dt10.vtk', 'Neumann-Mesh-Neumann.dt2.vtk', 'Neumann-Mesh-Neumann.dt3.vtk', 'Neumann-Mesh-Neumann.dt4.vtk', 'Neumann-Mesh-Neumann.dt5.vtk', 'Neumann-Mesh-Neumann.dt6.vtk', 'Neumann-Mesh-Neumann.dt7.vtk', 'Neumann-Mesh-Neumann.dt8.vtk', 'Neumann-Mesh-Neumann.dt9.vtk', 'Neumann-Mesh-Neumann.final.vtk', 'Neumann-Mesh-Neumann.init.vtk']
+Files only in reference (left): []
+Files only in output(right)   : []
+Traceback (most recent call last):
+  File "system_testing.py", line 133, in run_compose
+    comparison(path_to_ref, path_to_otp)
+  File "system_testing.py", line 210, in comparison
+    raise IncorrectOutput(*ret)
+__main__.IncorrectOutput: Output files do not match reference
+Files differing               : ['Dirichlet-Mesh-Dirichlet.dt1.vtk', 'Dirichlet-Mesh-Dirichlet.dt10.vtk', 'Dirichlet-Mesh-Dirichlet.dt2.vtk', 'Dirichlet-Mesh-Dirichlet.dt3.vtk', 'Dirichlet-Mesh-Dirichlet.dt4.vtk', 'Dirichlet-Mesh-Dirichlet.dt5.vtk', 'Dirichlet-Mesh-Dirichlet.dt6.vtk', 'Dirichlet-Mesh-Dirichlet.dt7.vtk', 'Dirichlet-Mesh-Dirichlet.dt8.vtk', 'Dirichlet-Mesh-Dirichlet.dt9.vtk', 'Dirichlet-Mesh-Dirichlet.final.vtk', 'Dirichlet-Mesh-Dirichlet.init.vtk', 'Neumann-Mesh-Dirichlet.dt1.vtk', 'Neumann-Mesh-Dirichlet.dt10.vtk', 'Neumann-Mesh-Dirichlet.dt2.vtk', 'Neumann-Mesh-Dirichlet.dt3.vtk', 'Neumann-Mesh-Dirichlet.dt4.vtk', 'Neumann-Mesh-Dirichlet.dt5.vtk', 'Neumann-Mesh-Dirichlet.dt6.vtk', 'Neumann-Mesh-Dirichlet.dt7.vtk', 'Neumann-Mesh-Dirichlet.dt8.vtk', 'Neumann-Mesh-Dirichlet.dt9.vtk', 'Neumann-Mesh-Dirichlet.final.vtk', 'precice-Neumann-convergence.log', 'Dirichlet-Mesh-Neumann.dt1.vtk', 'Dirichlet-Mesh-Neumann.dt10.vtk', 'Dirichlet-Mesh-Neumann.dt2.vtk', 'Dirichlet-Mesh-Neumann.dt3.vtk', 'Dirichlet-Mesh-Neumann.dt4.vtk', 'Dirichlet-Mesh-Neumann.dt5.vtk', 'Dirichlet-Mesh-Neumann.dt6.vtk', 'Dirichlet-Mesh-Neumann.dt7.vtk', 'Dirichlet-Mesh-Neumann.dt8.vtk', 'Dirichlet-Mesh-Neumann.dt9.vtk', 'Dirichlet-Mesh-Neumann.final.vtk', 'Dirichlet-Mesh-Neumann.init.vtk', 'Neumann-Mesh-Neumann.dt1.vtk', 'Neumann-Mesh-Neumann.dt10.vtk', 'Neumann-Mesh-Neumann.dt2.vtk', 'Neumann-Mesh-Neumann.dt3.vtk', 'Neumann-Mesh-Neumann.dt4.vtk', 'Neumann-Mesh-Neumann.dt5.vtk', 'Neumann-Mesh-Neumann.dt6.vtk', 'Neumann-Mesh-Neumann.dt7.vtk', 'Neumann-Mesh-Neumann.dt8.vtk', 'Neumann-Mesh-Neumann.dt9.vtk', 'Neumann-Mesh-Neumann.final.vtk', 'Neumann-Mesh-Neumann.init.vtk']
+Files only in reference (left): []
+Files only in output(right)   : []
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "system_testing.py", line 305, in <module>
+    build_run_compare(test, tag, args.branch.lower(), args.local,
+  File "system_testing.py", line 227, in build_run_compare
+    run_compose(test, branch, local_precice, tag, force_rebuild, rm_all, verbose)
+  File "system_testing.py", line 145, in run_compose
+    raise STValidateException()
+__main__.STValidateException: COMPARISON FAILED - An error occured while comparing test results with reference files!
+travis_time:end:10914f64:start=1616791422337162363,finish=1616791566943390428,duration=144606228065,event=script[0K[31;1mThe command "python system_testing.py -s fe-fe --base Ubuntu1804.package -v" exited with 1.[0m
+travis_time:start:08530cb2[0K$ python push.py
+Cloning into 'precice_st_output'...
+Updating files:  14% (6377/43829)Updating files:  15% (6575/43829)Updating files:  16% (7013/43829)Updating files:  17% (7451/43829)Updating files:  18% (7890/43829)Updating files:  19% (8328/43829)Updating files:  20% (8766/43829)Updating files:  21% (9205/43829)Updating files:  22% (9643/43829)Updating files:  23% (10081/43829)Updating files:  24% (10519/43829)Updating files:  25% (10958/43829)Updating files:  26% (11396/43829)Updating files:  27% (11834/43829)Updating files:  28% (12273/43829)Updating files:  29% (12711/43829)Updating files:  29% (13049/43829)Updating files:  30% (13149/43829)Updating files:  31% (13587/43829)Updating files:  32% (14026/43829)Updating files:  33% (14464/43829)Updating files:  34% (14902/43829)Updating files:  35% (15341/43829)Updating files:  36% (15779/43829)Updating files:  37% (16217/43829)Updating files:  38% (16656/43829)Updating files:  39% (17094/43829)Updating files:  40% (17532/43829)Updating files:  41% (17970/43829)Updating files:  42% (18409/43829)Updating files:  42% (18794/43829)Updating files:  43% (18847/43829)Updating files:  44% (19285/43829)Updating files:  45% (19724/43829)Updating files:  46% (20162/43829)Updating files:  47% (20600/43829)Updating files:  48% (21038/43829)Updating files:  49% (21477/43829)Updating files:  50% (21915/43829)Updating files:  51% (22353/43829)Updating files:  52% (22792/43829)Updating files:  53% (23230/43829)Updating files:  53% (23475/43829)Updating files:  54% (23668/43829)Updating files:  55% (24106/43829)Updating files:  56% (24545/43829)Updating files:  57% (24983/43829)Updating files:  58% (25421/43829)Updating files:  59% (25860/43829)Updating files:  60% (26298/43829)Updating files:  61% (26736/43829)Updating files:  62% (27174/43829)Updating files:  63% (27613/43829)Updating files:  64% (28051/43829)Updating files:  64% (28448/43829)Updating files:  65% (28489/43829)Updating files:  66% (28928/43829)Updating files:  66% (29257/43829)Updating files:  67% (29366/43829)Updating files:  68% (29804/43829)Updating files:  68% (29984/43829)Updating files:  69% (30243/43829)Updating files:  70% (30681/43829)Updating files:  71% (31119/43829)Updating files:  71% (31282/43829)Updating files:  72% (31557/43829)Updating files:  73% (31996/43829)Updating files:  74% (32434/43829)Updating files:  75% (32872/43829)Updating files:  76% (33311/43829)Updating files:  77% (33749/43829)Updating files:  78% (34187/43829)Updating files:  78% (34222/43829)Updating files:  78% (34389/43829)Updating files:  78% (34398/43829)Updating files:  79% (34625/43829)Updating files:  79% (34692/43829)Updating files:  79% (34868/43829)Updating files:  79% (35019/43829)Updating files:  80% (35064/43829)Updating files:  80% (35102/43829)Updating files:  80% (35171/43829)Updating files:  80% (35259/43829)Updating files:  80% (35327/43829)Updating files:  80% (35363/43829)Updating files:  80% (35424/43829)Updating files:  80% (35439/43829)Updating files:  81% (35502/43829)Updating files:  81% (35537/43829)Updating files:  81% (35603/43829)Updating files:  81% (35681/43829)Updating files:  81% (35780/43829)Updating files:  81% (35783/43829)Updating files:  82% (35940/43829)Updating files:  82% (35945/43829)Updating files:  82% (36021/43829)Updating files:  82% (36062/43829)Updating files:  82% (36132/43829)Updating files:  82% (36212/43829)Updating files:  82% (36289/43829)Updating files:  82% (36370/43829)Updating files:  83% (36379/43829)Updating files:  83% (36418/43829)Updating files:  83% (36487/43829)Updating files:  83% (36565/43829)Updating files:  83% (36637/43829)Updating files:  83% (36679/43829)Updating files:  83% (36810/43829)Updating files:  84% (36817/43829)Updating files:  84% (36863/43829)Updating files:  84% (36917/43829)Updating files:  84% (36941/43829)Updating files:  84% (37028/43829)Updating files:  84% (37103/43829)Updating files:  84% (37226/43829)Updating files:  84% (37234/43829)Updating files:  85% (37255/43829)Updating files:  85% (37428/43829)Updating files:  85% (37513/43829)Updating files:  85% (37577/43829)Updating files:  85% (37653/43829)Updating files:  86% (37693/43829)Updating files:  86% (37721/43829)Updating files:  86% (37835/43829)Updating files:  86% (37950/43829)Updating files:  86% (38036/43829)Updating files:  87% (38132/43829)Updating files:  87% (38350/43829)Updating files:  88% (38570/43829)Updating files:  88% (38685/43829)Updating files:  89% (39008/43829)Updating files:  89% (39367/43829)Updating files:  90% (39447/43829)Updating files:  90% (39504/43829)Updating files:  90% (39592/43829)Updating files:  90% (39675/43829)Updating files:  90% (39720/43829)Updating files:  90% (39806/43829)Updating files:  90% (39875/43829)Updating files:  91% (39885/43829)Updating files:  91% (39981/43829)Updating files:  91% (40067/43829)Updating files:  91% (40151/43829)Updating files:  91% (40251/43829)Updating files:  92% (40323/43829)Updating files:  92% (40338/43829)Updating files:  92% (40389/43829)Updating files:  92% (40515/43829)Updating files:  92% (40601/43829)Updating files:  92% (40674/43829)Updating files:  93% (40761/43829)Updating files:  93% (40771/43829)Updating files:  93% (40775/43829)Updating files:  93% (41019/43829)Updating files:  93% (41112/43829)Updating files:  93% (41195/43829)Updating files:  94% (41200/43829)Updating files:  94% (41291/43829)Updating files:  94% (41373/43829)Updating files:  94% (41477/43829)Updating files:  94% (41552/43829)Updating files:  94% (41633/43829)Updating files:  95% (41638/43829)Updating files:  95% (41719/43829)Updating files:  95% (41722/43829)Updating files:  95% (41806/43829)Updating files:  95% (41891/43829)Updating files:  95% (41995/43829)Updating files:  96% (42076/43829)Updating files:  96% (42086/43829)Updating files:  96% (42179/43829)Updating files:  96% (42281/43829)Updating files:  96% (42358/43829)Updating files:  96% (42388/43829)Updating files:  97% (42515/43829)Updating files:  97% (42535/43829)Updating files:  97% (42553/43829)Updating files:  97% (42610/43829)Updating files:  97% (42673/43829)Updating files:  97% (42772/43829)Updating files:  97% (42781/43829)Updating files:  97% (42863/43829)Updating files:  98% (42953/43829)Updating files:  98% (43086/43829)Updating files:  98% (43100/43829)Updating files:  98% (43334/43829)Updating files:  99% (43433/43829)
